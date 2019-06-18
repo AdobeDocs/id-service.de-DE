@@ -6,7 +6,7 @@ seo-title: Implementieren des Experience Cloud ID-Diensts für Analytics, Audien
 title: Implementieren des Experience Cloud ID-Diensts für Analytics, Audience Manager und Target
 uuid: 9 d 446 b 77-ca 62-4325-8 bb 0-ff 43 a 52313 c 0
 translation-type: tm+mt
-source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
@@ -132,7 +132,7 @@ Zur Festlegung, welche Tracking-Server-Variablen verwendet werden sollen:
 * Experience Cloud-Server-URL = Tracking-Server-URL
 * Sichere Experience Cloud-Server-URL = sichere Tracking-Server-URL
 
-Wenn Sie nicht genau wissen, wie Sie Ihren Tracking-Server finden, lesen Sie [Häufig gestellte Fragen](../mcvid-faq-intro/mcvid-faq.md) und [Korrektes Füllen der Variablen trackingServer und trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Wenn Sie nicht genau wissen, wie Sie Ihren Tracking-Server finden, lesen Sie [Häufig gestellte Fragen](../mcvid-faq-intro/ecid-faq.md) und [Korrektes Füllen der Variablen trackingServer und trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 ## Schritt 6: Datei appmeasurement. js aktualisieren {#section-5517e94a09bc44dfb492ebca14b43048}
 
