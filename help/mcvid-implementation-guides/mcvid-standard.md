@@ -6,7 +6,7 @@ seo-title: Implementierung mit dynamischem Tag-Management
 title: Implementierung mit dynamischem Tag-Management
 uuid: c 4 f 752 c 4-392 e -4909-b 178-911706857064
 translation-type: tm+mt
-source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
@@ -94,7 +94,7 @@ mcvid-dtm-implement.xml
    >
    >Diese Aktion füllt das Feld **[!UICONTROL &quot;Experience Cloud-Organisations-ID]** &quot; mit Ihrer Organisations-ID. Wenn Ihr DTM-Konto nicht mit der [!DNL Experience Cloud] verknüpft ist, müssen Sie diese ID angeben. Informationen zum Verknüpfen von Konten finden Sie im Thema über das [Verknüpfen von Konten in der Experience Cloud](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html). Informationen für die Suche nach Ihrer Organisations-ID finden Sie in den [Anforderungen](../mcvid-reference/mcvid-requirements.md#section-a02f537129a64ffbb690d5738d360c26).
 
-1. Geben Sie den Namen Ihres Tracking-Servers in das **[!UICONTROL Feld Tracking Server]** ein. Wenn Sie nicht sicher sind, wie Sie den Tracking-Server finden, lesen Sie [die Variablen FAQ](../mcvid-faq-intro/mcvid-faq.md) und [Korrektes Füllen der Variablen trackingserver und trackingserversecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+1. Geben Sie den Namen Ihres Tracking-Servers in das **[!UICONTROL Feld Tracking Server]** ein. Wenn Sie nicht sicher sind, wie Sie den Tracking-Server finden, lesen Sie [die Variablen FAQ](../mcvid-faq-intro/ecid-faq.md) und [Korrektes Füllen der Variablen trackingserver und trackingserversecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 1. Klicken **[!UICONTROL Sie auf Tool erstellen]** und **[!UICONTROL speichern Sie Änderungen]**.
 
    Nach dem Speichern wird der ID-Dienst als ein Tool in DTM eingerichtet. Er kann jedoch noch nicht verwendet werden. Ihr DTM-Tool muss zunächst den DTM-Veröffentlichungs-/Genehmigungsprozess durchlaufen. Zudem können Sie zusätzliche Parameter konfigurieren. Informationen über den DTM-Genehmigungsprozess finden Sie im Video mit der [Starthilfe zu den Benutzergrundlagen](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html). Informationen über die zusätzlichen Parameter, die Sie zu DTM hinzufügen können, finden Sie unter [Experience Cloud ID-Diensteinstellungen für DTM](../mcvid-implementation-guides/mcvid-standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
