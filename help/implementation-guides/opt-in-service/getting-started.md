@@ -5,7 +5,7 @@ seo-title: Einrichten des Opt-In-Dienstes
 title: Einrichten des Opt-In-Dienstes
 uuid: f 1 c 27139-cef 2-4122-af 12-c 839 cfc 82 e 6 e
 translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 Implementieren Sie den Opt-in-Dienst als einzelner Referenzpunkt, der von Experience Cloud-Lösungen (als Kategorien bei der Teilnahme bezeichnet) verwendet wird, um zu bestimmen, ob Cookies auf dem Gerät eines Besuchers erstellt werden sollen.
 
-Der Anmeldedienst ist eine javascript-Bibliothek, die mit [Experience Cloud ID (ECID) gebündelt ist](https://marketing.adobe.com/resources/help/en_US/mcvid/) und in der JS-Datei im globalen `adobe` Objekt als `adobe.optIn` Objekt vorhanden ist. Mit dem installierten Opt-in-Dienst können Sie angeben, ob ein Besucher die Adobe-Lösungen auf einmal auswählen kann oder ob Lösungen in einer Sequenz für die einzelnen Benutzer angezeigt werden sollen. Mit der Genehmigungsverwaltungsfunktion können Sie mit verschiedenen Konfigurationen für Ihre spezifischen Datenschutzanforderungen arbeiten.
+Der Anmeldedienst ist eine javascript-Bibliothek, die mit dem Adobe Experience Platform Identity Service gebündelt ist und in Visitor JS im globalen `adobe` Objekt als `adobe.optIn` Objekt vorhanden ist. Mit dem installierten Opt-in-Dienst können Sie angeben, ob ein Besucher die Adobe-Lösungen auf einmal auswählen kann oder ob Lösungen in einer Sequenz für die einzelnen Benutzer angezeigt werden sollen. Mit der Genehmigungsverwaltungsfunktion können Sie mit verschiedenen Konfigurationen für Ihre spezifischen Datenschutzanforderungen arbeiten.
 
 Mit dem Opt-in-Dienst können Sie angeben, ob ein Besucher Adobe-Lösungen auf einmal auswählen kann oder ob Lösungen in einer Sequenz für die einzelnen Benutzer angezeigt werden sollen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können CMP-Besuchergenehmigungen von allen Adobe-Lösungen abgerufen werden, um mit entsprechenden Zustimmungsaufrufen zu reagieren.
 
