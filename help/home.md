@@ -1,19 +1,19 @@
 ---
 description: 'Der Experience Platform Identity Service bietet eine universelle, beständige ID, die Ihre Besucher für alle Lösungen in der Experience Cloud identifiziert. '
 keywords: ID-Dienst
-seo-description: Der Adobe Experience Platform Identity Service bietet eine universelle, beständige ID, die Ihre Besucher für alle Lösungen in der Experience Cloud identifiziert. Sie kann ID-Generierungscode für Dienste wie Analytics, Audience Manager, Target und andere Experience Cloud-Lösungen oder -Funktionen ersetzen.
+seo-description: Der Adobe Experience Platform Identity Service (ID-Dienst) stellt eine universelle, beständige ID bereit, die Ihre Besucher für alle Lösungen in der Experience Cloud identifiziert. Sie kann ID-Generierungscode für Dienste wie Analytics, Audience Manager, Target und andere Experience Cloud-Lösungen oder -Funktionen ersetzen.
 seo-title: Experience Platform-Identitätsdienst
 title: Experience Platform-Identitätsdienst
 uuid: b 68194 b 5-e 549-4 f 6 f-bfaf -7744926 aeaac
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
 
-# Experience Platform-Identitätsdienst {#experience-cloud-id-service}
+# Adobe Experience Platform Identity Service {#experience-cloud-id-service}
 
-Der Experience Platform Identity Service (ID-Dienst) stellt eine universelle, beständige ID bereit, die Ihre Besucher für alle Lösungen in der Experience Cloud identifiziert. Sie kann ID-Generierungscode für Dienste wie Analytics, Audience Manager, Target und andere Experience Cloud-Lösungen oder -Funktionen ersetzen.
+Der Adobe Experience Platform Identity Service (Identitätsdienst) stellt eine universelle, beständige ID bereit, die Ihre Besucher für alle Lösungen in der Experience Cloud identifiziert. Sie kann ID-Generierungscode für Dienste wie Analytics, Audience Manager, Target und andere Experience Cloud-Lösungen oder -Funktionen ersetzen.
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
