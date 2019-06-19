@@ -6,7 +6,7 @@ seo-title: Versionshinweise für 2017
 title: Versionshinweise für 2017
 uuid: 79452 df 0-49 db -42 b 8-96 fe -01 aa 7629 fbb 5
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -74,7 +74,7 @@ August 2017
 
 **Überarbeitete Dokumentation**
 
-Der Abschnitt  [Häufig](/help/mcvid-faq-intro/ecid-faq-intro.md) gestellte Fragen enthalten verschiedene häufig gestellte Fragen für verschiedene [!DNL Experience Cloud] Lösungen.
+Der Abschnitt  [Häufig](/help/mcvid-faq-intro/mcvid-faq-intro.md) gestellte Fragen enthalten verschiedene häufig gestellte Fragen für verschiedene [!DNL Experience Cloud] Lösungen.
 
 ## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -134,7 +134,7 @@ Veröffentlichungsdatum: Juni 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="../mcvid-faq-intro/ecid-faq.md" format="dita" scope="local"> FAQs </a> </p> </td> 
+   <td colname="col1"> <p> <a href="../mcvid-faq-intro/mcvid-faq.md" format="dita" scope="local"> FAQs </a> </p> </td> 
    <td colname="col2"> <p>Der <span class="keyword">Analytics</span>-Abschnitt wurde mit Angaben zum Auffinden von Tracking-Serverinformationen aktualisiert. </p> </td> 
   </tr> 
  </tbody> 
