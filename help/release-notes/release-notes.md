@@ -6,7 +6,7 @@ seo-title: Versionshinweise für 2019
 title: Versionshinweise für 2019
 uuid: a 5 a 59410-7 f 5-48 f 9-a 30 a-fef 1 c 2 e 2 b 558
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -21,7 +21,7 @@ Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des [!DNL Experi
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Opt-in-Dienst**. Die Teilnahme an der Teilnahme ist eine Erweiterung des Adobe Experience Platform Identity Service, mit dem Sie steuern können, ob (und danach) Experience Cloud-Bibliotheken Cookies auf Webseiten für Besucher erstellen können. Mit [dem Experience Platform Start](https://docs.adobelaunch.com/)können Sie die Erfassung von Besuchereinträgen für die Experience Cloud-Lösung vereinfachen, indem Sie Analytics, Target, Audience Manager und andere auswählen oder die Experience Cloud-Lösungen für die Teilnahme an Ihrem Genehmigungsmanagementsystem auswählen.
+**Opt-in-Dienst**. Die Teilnahme an der Teilnahme ist eine Erweiterung der Experience Cloud ID (ECID), mit der Sie steuern können, ob (und dann) Experience Cloud-Bibliotheken Cookies auf Webseiten für Besucher erstellen können. Mit [dem Experience Platform Start](https://docs.adobelaunch.com/)können Sie die Erfassung von Besuchereinträgen für die Experience Cloud-Lösung vereinfachen, indem Sie Analytics, Target, Audience Manager und andere auswählen oder die Experience Cloud-Lösungen für die Teilnahme an Ihrem Genehmigungsmanagementsystem auswählen.
 
 ## Version 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
