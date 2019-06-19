@@ -5,7 +5,7 @@ seo-title: Anmeldedienst
 title: Anmeldedienst
 uuid: aebd 72 ad -4118-471 b -9755-d 08 a 72 caa 0 fd
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 Mit dem Anmeldedienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie beim Besuch Ihrer Site ein Cookie auf dem Gerät oder Browser des Benutzers festlegen können.
 
-Der Anmeldedienst ist eine Erweiterung des Adobe Experience Platform Identity Service, mit dem Sie steuern können, ob und welche Experience Cloud-Lösungen Cookies auf Webseiten vor der Zustimmung des Benutzers erstellen können. Mit dem Anmeldedienst können Sie außerdem Protokolle für die Integration in Ihre CMP (Opt-Management-Plattform) und Ihre vorhandenen Systeme als Teil Ihres größeren Designs festlegen.
+Der Anmeldedienst ist eine Erweiterung der Experience Cloud ID (ECID), mit der Sie steuern können, ob und welche Experience Cloud-Lösungen Cookies auf Webseiten vor der Zustimmung des Benutzers erstellen können. Mit dem Anmeldedienst können Sie außerdem Protokolle für die Integration in Ihre CMP (Opt-Management-Plattform) und Ihre vorhandenen Systeme als Teil Ihres größeren Designs festlegen.
 
 Mit dem Opt-in-Dienst können Sie angeben, ob ein Besucher Adobe-Lösungen gleichzeitig auswählen kann oder Lösungen für Berechtigungen in der Reihe präsentieren. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können Sie die CMP-Besuchergenehmigungen aus allen Adobe-Lösungen abrufen.
 
