@@ -6,7 +6,7 @@ seo-title: Versionshinweise für 2019
 title: Versionshinweise für 2019
 uuid: a 5 a 59410-7 f 5-48 f 9-a 30 a-fef 1 c 2 e 2 b 558
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -21,7 +21,7 @@ Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des [!DNL Experi
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Opt-in-Dienst**. Opt-in ist eine Erweiterung von [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/en_US/mcvid/), mit der Sie steuern können, ob (und welche) Experience Cloud-Bibliotheken Cookies auf Webseiten für Besucher erstellen können. Mit [Launch](https://docs.adobelaunch.com/) können Sie die Zustimmung von Besuchern zu Experience Cloud-Lösungen einfacher einholen, indem Sie Analytics, Target, Audience Manager und anderen oder allen ausgewählten Experience Cloud-Lösungen die Nutzung Ihres Zustimmungsverwaltungssystems ermöglichen.
+**Opt-in-Dienst**. Die Teilnahme an der Teilnahme ist eine Erweiterung des Adobe Experience Platform Identity Service, mit dem Sie steuern können, ob (und danach) Experience Cloud-Bibliotheken Cookies auf Webseiten für Besucher erstellen können. Mit [dem Experience Platform Start](https://docs.adobelaunch.com/)können Sie die Erfassung von Besuchereinträgen für die Experience Cloud-Lösung vereinfachen, indem Sie Analytics, Target, Audience Manager und andere auswählen oder die Experience Cloud-Lösungen für die Teilnahme an Ihrem Genehmigungsmanagementsystem auswählen.
 
 ## Version 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
