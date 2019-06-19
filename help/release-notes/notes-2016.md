@@ -6,7 +6,7 @@ seo-title: 2016 – Versionshinweise
 title: 2016 – Versionshinweise
 uuid: 7 a 5 a 314 a -3 ff 8-4561-9 c 64-6 c 10 d 2223887
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -24,9 +24,7 @@ November 2016
 >[!IMPORTANT]
 >
 >* Für Version 1.10 [!DNL AppMeasurement] ist 1.8.0 erforderlich.
->* Mit der Experience Platform Identity Service Library 2.0.0 + beginnt die ID-Synchronisierung standardmäßig für Adobe Media Optimizer. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-match-rates.html).
->
-
+>* Mit der Experience Platform Identity Service Library 2.0.0 + beginnt die ID-Synchronisierung standardmäßig für Adobe Media Optimizer. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](/help/introduction/match-rates.md).
 
 
 **Fehlerbehebungen und Verbesserungen**
