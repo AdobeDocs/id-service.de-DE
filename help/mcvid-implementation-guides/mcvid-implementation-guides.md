@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: Implementierungshandbücher
 uuid: null
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -34,6 +34,6 @@ Eine Standardimplementierung verwendet [Adobe Exprience Platform Launch,](https:
 * [Implementieren des Experience Cloud ID-Diensts für Analytics, Audience Manager und Target](mcvid-setup-aam-analytics-target.md)
 * [Verwenden des Experience Cloud ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente](ecid-a4t-target.md)
 * [Direkte Integration mit dem Experience Cloud ID-Dienst](mcvid-direct-integration.md)
-* [Nutzungsszenarios im Zusammenhang mit einer direkten Integration](ecid-direct-integration-examples.md)
+* [Nutzungsszenarios im Zusammenhang mit einer direkten Integration](mcvid-direct-integration-examples.md)
 * [Testen und Überprüfen des Experience Cloud ID-Diensts](mcvid-test-verify.md)
 * [Überblick über die Anmeldung](opt-in-service/mcvid-optin-overview.md)
