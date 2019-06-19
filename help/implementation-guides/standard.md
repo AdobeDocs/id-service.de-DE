@@ -6,7 +6,7 @@ seo-title: Implementierung mit dynamischem Tag-Management
 title: Implementierung mit dynamischem Tag-Management
 uuid: c 4 f 752 c 4-392 e -4909-b 178-911706857064
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 >[!NOTE]
 >
->Derzeit ist [Launch von Adobe](https://docs.adobelaunch.com/) das bevorzugte und empfohlene Implementierungstool, da es komplexe Tag-Management-Aufgaben vereinfacht und die Codeplatzierung über die Funktionen von DTM automatisiert. Siehe [Implementieren mit Launch](../implementation-guides/ecid-implement-with-launch.md).
+>Derzeit ist [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) das bevorzugte und empfohlene Implementierungstool, da es komplexe Tag-Management-Aufgaben vereinfacht und die Codeplatzierung über die Funktionen von DTM automatisiert. Siehe [Implementieren mit Launch](../implementation-guides/ecid-implement-with-launch.md).
 
 ## Dynamic Tag Management und der ID-Dienst {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
