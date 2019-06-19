@@ -5,7 +5,7 @@ audience: Endbenutzer
 user-guide-title: Hilfe zu Experience Platform Identity Service
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -81,7 +81,7 @@ source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
    + [Referenzübersicht](reference/reference.md)
    + Analytics-Referenz {#analytics-reference}
       + [Analytics-Referenzübersicht](reference/analytics-reference/analytics-reference.md)
-      + [Einstellen von Analytics und Identitys](reference/analytics-reference/analytics-ids.md)
+      + [Einrichten von Analytics- und Experience Cloud IDs](reference/analytics-reference/analytics-ids.md)
       + [Reihenfolge der Befehle für Analytics-IDs](reference/analytics-reference/analytics-order-of-operations.md)
       + [Entscheidungspunkte für die Migration von Identitätsdiensten](reference/analytics-reference/migration-decisions.md)
       + [Migrationsszenarios für Identitätsdienst](reference/analytics-reference/migration-scenarios.md)
