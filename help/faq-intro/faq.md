@@ -6,7 +6,7 @@ seo-title: Häufig gestellte Fragen zum ID-Dienst
 title: Häufig gestellte Fragen zum ID-Dienst
 uuid: e 8 d 8 f 819-3 d 73-4 fa 2-864 c -4867071 c 14 ee
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -23,27 +23,27 @@ Siehe [Überblick](../introduction/overview.md).
 
 **Warum führt der ID-Dienst keinen Aufruf durch, um die Experience Cloud ID abzurufen?**
 
-Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe [Content Security Policies und Experience Platform Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe [Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **VisitorAPI.js-Dateispeicherung**
 
 Möglicherweise treten Probleme auf, wenn Sie VisitorAPI.js als lokale Datei in mobilen Apps speichern. Es wird empfohlen, die Datei auf einem Webserver zu speichern.
 
-## Seitenladezeiten und Latenzzeiten {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## Page load times and latency {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **Wie wirkt sich die Platzierung der ID-Dienstbibliothek VisitorAPI.js auf die Seitenladezeiten aus?**
 
-Platzieren Sie die Bibliothek visitorapi. js oben auf der Seite im `<head>` Abschnitt Ihres Codes. Dadurch stellen Sie sicher, dass der Aufruf an eine ID gesendet wird, bevor der Seitentext geladen wird, und die Wahrscheinlichkeit, dass eine ID erfolgreich zurückgegeben wird, erhöht sich.
+Place the VisitorAPI.js library at the top of the page in the `<head>` section of your code. Dadurch stellen Sie sicher, dass der Aufruf an eine ID gesendet wird, bevor der Seitentext geladen wird, und die Wahrscheinlichkeit, dass eine ID erfolgreich zurückgegeben wird, erhöht sich.
 
 Der Aufruf des ID-Diensts erfolgt asynchron. Es ist der einzige Aufruf an die [demdex.net-Domäne](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
 
-[!DNL Target] Für Kunden kann das Platzieren des ID-Dienst-Codes in der `<body>` Seite die Odds erhöhen, die einen [!DNL Target] Aufruf blockieren könnten. Wenn Sie den ID-Dienst-Code im Text Ihrer Seite platzieren müssen, sollte er nach dem öffnenden `<body>` -tag platziert werden.
+[!DNL Target] Für Kunden kann das Platzieren des ID-Dienst-Codes in der `<body>` Seite die Odds erhöhen, die einen [!DNL Target] Aufruf blockieren könnten. If you must place ID service code in the body of your page, it should be placed after the open `<body>` tag.
 
 **Führt der ID-Dienst jedes Mal einen Server-Aufruf durch, wenn eine Seite geladen wird?**
 
 Nein, dieser Aufruf wird nur beim ersten Rendern der Seite durchgeführt und danach alle sieben Tage. In der Zwischenzeit sind keine Serveraufrufe erforderlich. Der ID-Dienst wird im clientseitigen Modus ausgeführt und benötigt keine Server-Aufrufe, um eine ID zurückzugeben.
 
-Siehe [Überblick](../introduction/overview.md).
+See [Overview](../introduction/overview.md).
 
 **Was kann bei der Verwendung des ID-Diensts zu langsamen Seitenladezeiten führen oder die Benutzererfahrung beeinträchtigen?**
 
@@ -67,13 +67,13 @@ Diese Änderung erhöht die Leistung bei Kunden, die Visitor 2.3.0 oder höher 
 
 Ressourcenanforderungen mit CORS sind JSONP in der Regel vorzuziehen. Bei JSONP weisen einige Browser Anforderungen eine geringere Priorität zu als anderen synchronen und asynchronen Abrufen, wenn sie diese in die Warteschlange stellen. Mit CORS können Sie sicherstellen, dass die Anforderungen eine höhere Priorität in der Aufrufliste des Browsers erhalten.
 
-Siehe [CORS-Unterstützung im Experience Platform-Identitätsdienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Siehe [CORS-Unterstützung im Experience Cloud ID-Dienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sicherheit {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Unterstützt der ID-Dienst CORS?**
 
-Ja. Siehe [CORS-Unterstützung im Experience Platform Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Ja. See [CORS Support in the Experience Cloud ID Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Was ist CORS?**
 
