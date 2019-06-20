@@ -1,19 +1,19 @@
 ---
-description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Platform-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
+description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Cloud ID-Dienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
 keywords: ID-Dienst
-seo-description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Platform-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
+seo-description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Cloud ID-Dienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
 seo-title: audienceManagerServer und audienceManagerServerSecure
 title: audienceManagerServer und audienceManagerServerSecure
 uuid: e 21 cacbf -5151-4 d 34-b 0 f 7-9 e 90275 f 4 c 7 c
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # audienceManagerServer und audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Platform-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
+Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Cloud ID-Dienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
 
 **Syntax:**
 
@@ -28,8 +28,8 @@ Normally, the [!DNL Experience Cloud] ID service makes calls to [!DNL Adobe] at 
 
 Für diese Konfigurationen müssen Sie Folgendes verwenden:
 
-* Der [!DNL Audience Manager] Subdomänenname des Datensatzes für Ihr Unternehmen. Überprüfen Sie den Namen oder fragen Sie Ihren Berater danach.
-* Der mit Ihr verknüpfte Subdomänenname [!DNL Organization ID].
+* The [!DNL Audience Manager] subdomain name of record for your company. Überprüfen Sie den Namen oder fragen Sie Ihren Berater danach.
+* The subdomain name associated with your [!DNL Organization ID].
 * *Beide* Konfigurationsparameter mit dem gleichen untergeordneten Domänennamen.
 
 **Codebeispiel**
