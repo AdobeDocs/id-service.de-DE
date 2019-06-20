@@ -1,19 +1,19 @@
 ---
-description: Gibt die Regions-ID für die Experience Platform Identity Service-ID zurück. Bei einer Regions-ID (oder einem Standorthinweis) handelt es sich um eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. Sie benötigen die Regions-ID für serverseitige API-Aufrufe an Audience Manager.
+description: Gibt die Regions-ID des Experience Cloud ID-Diensts zurück. Bei einer Regions-ID (oder einem Standorthinweis) handelt es sich um eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. Sie benötigen die Regions-ID für serverseitige API-Aufrufe an Audience Manager.
 keywords: ID-Dienst
-seo-description: Gibt die Regions-ID für die Experience Platform Identity Service-ID zurück. Bei einer Regions-ID (oder einem Standorthinweis) handelt es sich um eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. Sie benötigen die Regions-ID für serverseitige API-Aufrufe an Audience Manager.
+seo-description: Gibt die Regions-ID des Experience Cloud ID-Diensts zurück. Bei einer Regions-ID (oder einem Standorthinweis) handelt es sich um eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. Sie benötigen die Regions-ID für serverseitige API-Aufrufe an Audience Manager.
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc 312 b 7-d 270-4 a 5 c-a 2 bb -0 fbb 37 f 1 e 2 f 4
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # getLocationHint{#getlocationhint}
 
-Gibt die Regions-ID für die Experience Platform Identity Service-ID zurück. Bei einer Regions-ID (oder einem Standorthinweis) handelt es sich um eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. Sie benötigen die Regions-ID für serverseitige API-Aufrufe an Audience Manager.
+Gibt die Regions-ID des Experience Cloud ID-Diensts zurück. Bei einer Regions-ID (oder einem Standorthinweis) handelt es sich um eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. Sie benötigen die Regions-ID für serverseitige API-Aufrufe an Audience Manager.
 
 **Syntax:**` var *`Variablenname`* = visitor.getLocationHint()`
 
