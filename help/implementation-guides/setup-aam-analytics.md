@@ -1,19 +1,19 @@
 ---
-description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Platform Identity Service verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud ID-Dienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
 keywords: ID-Dienst
-seo-description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Platform Identity Service verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
-seo-title: Implementieren des Experience Platform Identity Service für Analytics und Audience Manager
-title: Implementieren des Experience Platform Identity Service für Analytics und Audience Manager
+seo-description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud ID-Dienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+seo-title: Implementieren des Experience Cloud ID-Diensts für Analytics und Audience Manager
+title: Implementieren des Experience Cloud ID-Diensts für Analytics und Audience Manager
 uuid: d 46050 ae -87 de -46 cc -911 b-d 3346 c 7 fd 511
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Implementieren des Experience Platform Identity Service für Analytics und Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Implementieren des Experience Cloud ID-Diensts für Analytics und Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Platform Identity Service verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud ID-Dienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
 
 >[!IMPORTANT]
 >
@@ -24,7 +24,7 @@ Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die de
 
 
 
-## Schritt 1: Planen der serverseitigen Weiterleitung {#section-880797cc992d4755b29cada7b831f1fc}
+## Step 1: Plan for server-side forwarding {#section-880797cc992d4755b29cada7b831f1fc}
 
 Zusätzlich zu den hier beschriebenen Schritten sollten Kunden, die [!DNL Analytics] und [!DNL Audience Manager] verwenden, zur serverseitigen Weiterleitung migrieren. Mithilfe der serverseitigen Weiterleitung können Sie DIL (den Datenerfassungscode von Audience Manager) entfernen und ihn durch das [Zielgruppen-Management-Modul](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html) ersetzen. Weitere Informationen finden Sie in der [Dokumentation zur serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/ssf.html).
 
@@ -34,19 +34,19 @@ Für die Migration zur serverseitigen Weiterleitung sind Planung und Koordinieru
 
 1. [!DNL Profiles & Audiences]Erhalten Sie eine Freischaltung. Füllen Sie zunächst das Formular auf der [Integrations- und Bereitstellungssite](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) aus.
 
-1. Implementieren Sie den ID-Dienst und gleichzeitig [!DNL Audience Management Module] . Um ordnungsgemäß zu funktionieren, müssen die [!DNL Audience Management Module] (serverseitige Weiterleitung) und der ID-Dienst für denselben Seitensatz und gleichzeitig freigegeben werden.
+1. Implement the ID service and the [!DNL Audience Management Module] simultaneously. To work properly, the [!DNL Audience Management Module] (server-side forwarding) and the ID service must be released for the same set of pages and at the same time.
 
-## Schritt 2: Herunterladen des ID-Dienst-Codes {#section-0780126cf43e4ad9b6fc5fe17bb3ef86}
+## Step 2: Download the ID Service code {#section-0780126cf43e4ad9b6fc5fe17bb3ef86}
 
 Für den ID-Dienst ist die Code-Bibliothek `VisitorAPI.js` erforderlich. Zum Herunterladen dieser Code-Bibliothek tun Sie Folgendes:
 
-1. Wechseln Sie zu **[!UICONTROL Admin]** &gt; **[!UICONTROL Code-Manager]**.
+1. Go to **[!UICONTROL Admin]** &gt; **[!UICONTROL Code Manager]**.
 
-1. Klicken Sie im Code-Manager entweder **[!UICONTROL auf javascript (Neu)]** oder **[!UICONTROL auf javascript (Legacy)]**. Dies leitet das Herunterladen der komprimierten Code-Bibliotheken ein.
+1. In Code Manager, click either **[!UICONTROL JavaScrpt (New)]** or **[!UICONTROL JavaScript (Legacy)]**. Dies leitet das Herunterladen der komprimierten Code-Bibliotheken ein.
 
 1. Entpacken Sie die Code-Datei und öffnen Sie die Datei `VisitorAPI.js`.
 
-## Schritt 3: Hinzufügen der Funktion Visitor. getinstance zum ID-Dienst-Code {#section-9e30838b4d0741658a7a492153c49f27}
+## Step 3: Add the Visitor.getInstance function to the ID Service code {#section-9e30838b4d0741658a7a492153c49f27}
 
 >[!IMPORTANT]
 >
@@ -95,9 +95,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 }); 
 ```
 
-## Schritt 4: Fügen Sie Visitor. getinstance Ihre Experience Cloud-Organisations-ID hinzu. {#section-e2947313492546789b0c3b2fc3e897d8}
+## Step 4: Add your Experience Cloud Organization ID to Visitor.getInstance {#section-e2947313492546789b0c3b2fc3e897d8}
 
-Ersetzen Sie in der `Visitor.getInstance` Funktion die `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` Experience Cloud-Organisations-ID. Sollten Sie Ihre Organisations-ID nicht kennen, finden Sie diese auf der Administrationsseite der Experience Cloud. Die bearbeitete Funktion sollte dem unten stehenden Beispiel ähnlich sehen.
+In the `Visitor.getInstance` function, replace `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` with your Experience Cloud organization ID. Sollten Sie Ihre Organisations-ID nicht kennen, finden Sie diese auf der Administrationsseite der Experience Cloud. Die bearbeitete Funktion sollte dem unten stehenden Beispiel ähnlich sehen.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -105,13 +105,13 @@ Ersetzen Sie in der `Visitor.getInstance` Funktion die `INSERT-MARKETING-CLOUD-O
 >
 >*Ändern Sie nicht* den Fall der Zeichen in Ihrer Organisations-ID. Bei der ID wird Groß- und Kleinschreibung beachtet und sie muss so eingegeben werden, wie sie von Adobe angegeben wird.
 
-## Schritt 5: Hinzufügen Ihrer Tracking-Server zu Visitor. getinstance {#section-0dfc52096ac2427f86045aab9a0e0dfc}
+## Step 5: Add your tracking servers to Visitor.getInstance {#section-0dfc52096ac2427f86045aab9a0e0dfc}
 
 Analytics verwendet Tracking-Server für die Datenerfassung.
 
 **Teil 1: Ermitteln der Tracking-Server-URLs**
 
-Überprüfen Sie Ihre `s_code.js` Dateien `AppMeasurement.js` , um die Tracking-Server-urls zu finden. Die URLs werden von folgenden Variablen spezifiziert:
+Check your `s_code.js` or `AppMeasurement.js` files to find the tracking server URLs. Die URLs werden von folgenden Variablen spezifiziert:
 
 * `s.trackingServer`
 * `s.trackingServerSecure`
@@ -135,17 +135,17 @@ Zur Festlegung, welche Tracking-Server-Variablen verwendet werden sollen:
 
 Wenn Sie nicht genau wissen, wie Sie Ihren Tracking-Server finden, lesen Sie [Häufig gestellte Fragen](../faq-intro/faq.md) und [Korrektes Füllen der Variablen trackingServer und trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
-## Schritt 6: Datei appmeasurement. js aktualisieren {#section-5517e94a09bc44dfb492ebca14b43048}
+## Step 6: Update your AppMeasurement.js file {#section-5517e94a09bc44dfb492ebca14b43048}
 
-Dieser Schritt [!DNL AppMeasurement]ist erforderlich. Sie können nicht fortfahren, wenn Sie weiterhin s_code verwenden.
+This step requires [!DNL AppMeasurement]. Sie können nicht fortfahren, wenn Sie weiterhin s_code verwenden.
 
-Fügen Sie `Visitor.getInstance` der `AppMeasurement.js` Datei die unten stehende Funktion hinzu. Platzieren Sie es im Abschnitt mit Konfigurationen wie `linkInternalFilters``charSet``trackDownloads`, usw.:
+Add the `Visitor.getInstance` function shown below to your `AppMeasurement.js` file. Place it in the section that contains configurations such as `linkInternalFilters`, `charSet`, `trackDownloads`, etc. :
 
 `s.visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");`
 
 >[!IMPORTANT]
 >
->Zu diesem Zeitpunkt sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Zielgruppen-Management-Modul ersetzen. Anweisungen finden Sie im Thema über das [Implementieren der serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
+>At this point, you should remove the [!DNL Audience Manager] DIL code and replace it with the Audience Management Module. Anweisungen finden Sie im Thema über das [Implementieren der serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
 
 ***(Optional, jedoch empfohlen)*Erstellung einer benutzerspezifischen Eigenschaft**
 
@@ -156,16 +156,16 @@ Festlegen einer benutzerdefinierten Eigenschaft zum Messen der Abdeckung in `App
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## Schritt 7: Hinzufügen des Besucher-API-Codes zur Seite {#section-c2bd096a3e484872a72967b6468d3673}
+## Step 7: Add visitor API code to the page {#section-c2bd096a3e484872a72967b6468d3673}
 
-Platzieren Sie die ` [!DNL VisitorAPI.js]` Datei in den `<head>` Tags auf jeder Seite. Wenn Sie die Datei `VisitorAPI.js` zu Ihrer Seite hinzufügen:
+Place the ` [!DNL VisitorAPI.js]` file within the `<head>` tags on each page. Wenn Sie die Datei `VisitorAPI.js` zu Ihrer Seite hinzufügen:
 
-* Platzieren Sie es am Anfang des `<head>` Abschnitts, damit er vor anderen Lösungstags angezeigt wird.
+* Put it at the beginning of the `<head>` section to it appears before other solution tags.
 * Sie muss vor AppMeasurement und dem Code für andere [!DNL Experience Cloud]-Lösungen ausgeführt werden.
 
-## Schritt 8: (Optional) Konfigurieren einer Übergangsphase {#section-aceacdb7d5794f25ac6ff46f82e148e1}
+## Step 8: (Optional) Configure a grace period {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Wenden Sie sich bei einem dieser Anwendungsfälle an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html) , um eine vorübergehende [Übergangsphase](../reference/analytics-reference/grace-period.md)einzurichten. Übergangsphasen können bis zu 180 Tage dauern. Falls erforderlich, kann eine Übergangsphase auch erneuert werden.
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Übergangsphasen können bis zu 180 Tage dauern. Falls erforderlich, kann eine Übergangsphase auch erneuert werden.
 
 **Partielle Implementierung**
 
@@ -179,17 +179,17 @@ Sie müssen eine Übergangsphase einrichten, wenn für neue Besucher nach Migrat
 
 Sobald Ihre Implementierung statt Lesen des s_vi-Cookies die MID erhält, kann die Übergangsphase abgebrochen werden.
 
-Siehe auch [Cookies und der Experience Platform Identity Service](../introduction/cookies.md).
+See also, [Cookies and the Experience Cloud ID Service](../introduction/cookies.md).
 
 **Clickstream-Datenintegration**
 
 Sie müssen eine Übergangsphase konfigurieren, wenn Sie Daten von einem Clickstream-Datenfeed an ein internes System senden und bei der Verarbeitung die Spalten `visid_high` und `visid_low` verwendet werden.
 
-Sobald der Datenerfassungsprozess die Spalten `post_visid_high` und `post_visid_low` Spalten verwenden kann, können Sie die Übergangsphase abbrechen.
+Discontinue the grace period after your data ingestion process can use the `post_visid_high` and `post_visid_low` columns.
 
 Siehe auch [Clickstream-Datenspaltenbezug](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
 
-## Schritt 9: Testen und Bereitstellen des ID-Dienst-Codes {#section-f857542bfc70496dbb9f318d6b3ae110}
+## Step 9: Test and deploy ID Service code {#section-f857542bfc70496dbb9f318d6b3ae110}
 
 Sie können wie folgt testen und bereitstellen.
 
@@ -199,7 +199,7 @@ Prüfen Sie zum Testen Ihrer ID-Dienstimplementierung Folgendes:
 
 * [AMCV-Cookie](../introduction/cookies.md) in der Domäne, auf der Ihre Seiten gehostet werden.
 * MID-Wert in der Analytics-Bildanforderung mit dem [Adobe-Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
-* Siehe auch [Testen und Überprüfen des Experience Platform Identity Service](../implementation-guides/test-verify.md).
+* See also, [Test and Verify the Experience Cloud ID Service](../implementation-guides/test-verify.md).
 
 Lesen Sie [So überprüfen Sie Ihre Implementierung der serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html), um die serverseitige Weiterleitung zu überprüfen.
 
