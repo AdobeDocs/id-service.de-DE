@@ -1,19 +1,19 @@
 ---
-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2017.
+description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2017.
 keywords: ID-Dienst
-seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2017.
+seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2017.
 seo-title: Versionshinweise für 2017
 title: Versionshinweise für 2017
 uuid: 79452 df 0-49 db -42 b 8-96 fe -01 aa 7629 fbb 5
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Versionshinweise für 2017 {#release-notes}
 
-Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2017.
+Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2017.
 
 Diese Änderungen sind auch in den [Experience Cloud-Versionshinweisen](https://marketing.adobe.com/resources/help/en_US/whatsnew/) enthalten. Ältere ID-Dienst-Versionshinweise finden Sie unter [frühere Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) oder über die Links am unteren Rand dieser Seite.
 
@@ -42,7 +42,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert <span class="codeph">visitor.FIELDS</span> steuern, welche IDs zurückgegeben werden. Siehe <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getvisitorvalues</a>. </p> </td> 
+   <td colname="col2"> <p>Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert <span class="codeph">visitor.FIELDS</span> steuern, welche IDs zurückgegeben werden. See <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Es wurde ein Problem mit Chrome behoben, bei dem der ID-Dienst beim Klick auf die Zurück-Schaltfläche im Browser einen Fehler ausgelöst hat.
 * Der ID-Dienst wiederholt die ID-Synchronisationen nun, wenn sich die Regions-ID in der Ereignisaufrufantwort ändert.
-* Es wurde neue Dokumentation hinzugefügt: [Content Security Policies und der Experience Platform Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), der erklärt, wie Whitelist-Aufrufe an die von dem ID-Dienst verwendeten Adobe-Domänen gesendet werden.
+* Es wurde neue Dokumentation hinzugefügt: [Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3). Darin wird erklärt, wie Sie Aufrufe an Adobe-Domänen, die vom ID-Dienst verwendet werden, gesondert zulassen können.
 
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -181,7 +181,7 @@ Veröffentlichungsdatum: Februar 2017
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID-Service-API-Methode, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
-   <td colname="col2"> <p>Bei dieser öffentlichen Methode wird die Zusatzdaten-ID (<span class="wintitle">Supplemental Data ID</span>/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Siehe <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendsupplementaldataidto</a>. (MCID-285) </p> </td> 
+   <td colname="col2"> <p>Bei dieser öffentlichen Methode wird die Zusatzdaten-ID (<span class="wintitle">Supplemental Data ID</span>/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. See <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -200,7 +200,7 @@ Januar 2017
 
 >[!IMPORTANT]
 >
->Der ID-Dienst-Code v 2.0 synchronisiert IDs automatisch mit Adobe Media Optimizer. Das bedeutet, dass Sie einen Aufruf von der Seite bis zu `cm.eversttech.net`einer von Ihnen gesteuerten Legacy [!DNL Media Optimizer] -Domäne sehen [!DNL Adobe]. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+>Der ID-Dienst-Code v 2.0 synchronisiert IDs automatisch mit Adobe Media Optimizer. This means you&#39;ll see a call from the page to `cm.eversttech.net`, which is a legacy [!DNL Media Optimizer] domain controlled by [!DNL Adobe]. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Fehlerbehebungen und Verbesserungen**
 
