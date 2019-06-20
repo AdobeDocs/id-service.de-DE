@@ -6,12 +6,12 @@ seo-title: Verwenden des ID-Diensts mit A 4 T und einer serverseitigen Implement
 title: Verwenden des ID-Diensts mit A 4 T und einer serverseitigen Implementierung von Target
 uuid: debbc 5 ca -7 f 8 b -4331-923 e -0 e 6339057 de 2
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Verwenden des ID-Diensts mit A 4 T und einer serverseitigen Implementierung von Target {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
+# Using the ID Service with A4T and a server-side implementation of Target {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
 Diese Anweisungen richten sich an A4T-Kunden mit kombinierten server- und clientseitigen Implementierungen von Target, Analytics und dem ID-Dienst. Kunden, die den ID-Dienst in einer NodeJS- oder Rhino-Umgebung ausführen müssen, sollten diese Informationen ebenfalls lesen. Diese ID-Dienstinstanz verwendet eine gekürzte Version der VisitorAPI.js-Codebibliothek, die Sie über den Node Package Manager (NPM) herunterladen und installieren können. Lesen Sie diesen Abschnitt zu den Installationsanweisungen und anderen Konfigurationsanforderungen.
 
@@ -20,11 +20,11 @@ Diese Anweisungen richten sich an A4T-Kunden mit kombinierten server- und client
 A4T-Kunden (und andere Kunden) können diese Version des ID-Diensts verwenden, wenn sie:
 
 * Webseiteninhalt auf ihren Servern rendern müssen und ihn für die endgültige Anzeige an einen Browser weiterleiten müssen.
-* Serverseitige [!DNL Target] Aufrufe durchführen.
+* Make server-side [!DNL Target] calls.
 * Clientseitige (im Browser) Aufrufe zu [!DNL Analytics] starten müssen.
 * Separate [!DNL Target]- und [!DNL Analytics]-IDs synchronisieren müssen, um zu bestimmen, ob ein von einer Lösung erkannter Besucher dieselbe Person ist, die von einer anderen Lösung erkannt wurde.
 
-## Code-Download und bereitgestellte Schnittstellen {#section-32d75561438b4c3dba8861be6557be8a}
+## Code download and provided interfaces {#section-32d75561438b4c3dba8861be6557be8a}
 
 Wechseln Sie zu [ID service NPM repository](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server), um das serverseitige Codepaket herunterzuladen und um die im aktuellen Build enthaltenen Schnittstellen zu prüfen.
 
@@ -34,13 +34,13 @@ In den folgenden Diagrammen und Abschnitten wird beschrieben, was Sie bei jedem 
 
 ![](assets/serverside.png)
 
-## Schritt 1: Seite anfordern {#section-c12e82633bc94e8b8a65747115d0dda8}
+## Step 1: Request page {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-Die serverseitige Aktivität beginnt, wenn ein Besucher eine HTTP-Anforderung zum Laden einer Webseite erstellt. Während dieses Schritts empfängt Ihr Server diese Anforderung und sucht nach dem [AMCV-Cookie](../introduction/cookies.md). Das AMCV-Cookie enthält die [!DNL Experience Cloud] ID (MID) des Besuchers.
+Die serverseitige Aktivität beginnt, wenn ein Besucher eine HTTP-Anforderung zum Laden einer Webseite erstellt. Während dieses Schritts empfängt Ihr Server diese Anforderung und sucht nach dem [AMCV-Cookie](../introduction/cookies.md). The AMCV cookie contains the visitor&#39;s [!DNL Experience Cloud] ID (MID).
 
-## Schritt 2: ID-Dienstnutzlast generieren {#section-c86531863db24bd9a5b761c1a2e0d964}
+## Step 2: Generate ID Service payload {#section-c86531863db24bd9a5b761c1a2e0d964}
 
-Als Nächstes müssen Sie eine serverseitige *`payload request`* zum ID-Dienst erstellen. Eine Nutzlastanforderung:
+Next, you need make a server-side *`payload request`* to the ID service. Eine Nutzlastanforderung:
 
 * gibt das AMCV-Cookie an den ID-Dienst weiter.
 * Fordert für Target und Analytics in den nachfolgenden Schritten erforderliche Daten an, die im Folgenden beschrieben werden.
@@ -100,7 +100,7 @@ Wenn Ihr Besucher über kein AMCV-Cookie verfügt, lässt die Nutzlast die folge
 * `mboxAAMB`
 * `mboxMCGLH`
 
-## Schritt 3: Dem Target-Aufruf Nutzlast hinzufügen {#section-62451aa70d2f44ceb9fd0dc2d4f780f7}
+## Step 3: Add payload to the Target call {#section-62451aa70d2f44ceb9fd0dc2d4f780f7}
 
 Nachdem Ihr Server Nutzlastdaten vom ID-Dienst erhalten hat, müssen Sie zusätzlichen Code instanziieren, um ihn mit den an [!DNL Target] weitergegebenen Daten zusammenzuführen. Das endgültige JSON-Objekt, das an [!DNL Target] weitergegeben wird, ähnelt dem folgenden:
 
@@ -122,9 +122,9 @@ Nachdem Ihr Server Nutzlastdaten vom ID-Dienst erhalten hat, müssen Sie zusätz
 } 
 ```
 
-## Schritt 4: Serverstatus für den ID-Dienst abrufen {#section-8ebfd177d42941c1893bfdde6e514280}
+## Step 4: Get server state for the ID Service {#section-8ebfd177d42941c1893bfdde6e514280}
 
-Serverstatusdaten enthalten Informationen über die auf dem Server vorgenommene Arbeit. Diese Informationen sind für den clientseitigen ID-Dienstcode erforderlich. Kunden, die den ID-Dienst über ( [!DNL Dynamic Tag Manager] DTM) implementiert haben, können DTM so konfigurieren, dass Serverstatusdaten über dieses Tool weitergegeben werden. Wenn Sie den ID-Dienst über einen benutzerdefinierten Prozess eingerichtet haben, müssen Sie den Serverstatus mit Ihrem eigenen Code zurückgeben. Der clientseitige ID-Dienst und [!DNL Analytics]-Code geben die Daten an Adobe weiter, wenn die Seite geladen wird.
+Serverstatusdaten enthalten Informationen über die auf dem Server vorgenommene Arbeit. Diese Informationen sind für den clientseitigen ID-Dienstcode erforderlich. Customers who have implemented the ID service through [!DNL Dynamic Tag Manager] (DTM) can configure DTM to pass server state data through that tool. Wenn Sie den ID-Dienst über einen benutzerdefinierten Prozess eingerichtet haben, müssen Sie den Serverstatus mit Ihrem eigenen Code zurückgeben. Der clientseitige ID-Dienst und [!DNL Analytics]-Code geben die Daten an Adobe weiter, wenn die Seite geladen wird.
 
 **Serverstatus über DTM abrufen**
 
@@ -132,7 +132,7 @@ Wenn Sie den ID-Dienst mit DTM implementiert haben, müssen Sie Ihrer Seite Code
 
 **Seiten-Code**
 
-Fügen Sie diesen Code dem `<head>` Tag Ihrer HTML-Seite hinzu:
+Add this code to the `<head>` tag of your HTML page:
 
 ```js
 //Get server state 
@@ -160,13 +160,13 @@ Fügen Sie dem Abschnitt **[!UICONTROL Allgemein &gt; Einstellungen]Ihrer ID-Di
 
    >[!IMPORTANT]
    >
-   >Der Wertname muss mit dem Variablennamen übereinstimmen, den Sie `serverState` in Ihrem Seiten-Code festgelegt haben.
+   >The value name must match the variable name you set for `serverState` in your page code.
 
 Ihre konfigurierten Einstellungen sollten wie folgt aussehen:
 
 ![](assets/server_side_dtm.png)
 
-Siehe auch [Experience Platform-Identitätsdiensteinstellungen für DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+Siehe auch [Experience Cloud ID-Diensteinstellungen für DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **Serverstatus ohne DTM abrufen**
 
@@ -189,7 +189,7 @@ Response.send("
 ...
 ```
 
-## Schritt 5: Geben Sie eine Seite an und geben Sie Experience Cloud-Daten zurück. {#section-4b5631a0d75a41febd6f43f8c214c263}
+## Step 5: Serve a page and return Experience Cloud data {#section-4b5631a0d75a41febd6f43f8c214c263}
 
 Zu diesem Zeitpunkt sendet der Webserver Seiteninhalt an den Browser des Besuchers. Ab diesem Zeitpunkt nimmt der Browser (nicht der Server) alle verbleibenden ID-Dienst- und [!DNL Analytics]-Aufrufe vor. Zum Beispiel im Browser:
 
