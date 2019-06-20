@@ -2,16 +2,16 @@
 description: Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
 keywords: ID-Dienst
 seo-description: Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
-seo-title: Data Workbench und der Experience Platform Identity Service
-title: Data Workbench und der Experience Platform Identity Service
+seo-title: Data Workbench und der Experience Cloud ID-Dienst
+title: Data Workbench und der Experience Cloud ID-Dienst
 uuid: 9448 abc 8-04 fb -47 d 2-be 08-1 dfbddb 764 e
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Data Workbench und der Experience Platform Identity Service {#data-workbench-and-the-experience-cloud-id-service}
+# Data Workbench und der Experience Cloud ID-Dienst {#data-workbench-and-the-experience-cloud-id-service}
 
 Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
 
@@ -19,7 +19,7 @@ Zur Aktualisierung von [Data Workbench](https://marketing.adobe.com/resources/he
 
 1. Suchen Sie nach der Konfigurationsdatei der aktuellen [Decoder-Gruppe.](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)
 
-   In der Regel befindet sich die Variable [!DNL Decoder Group] an [!DNL Profile Manager] folgendem Speicherort: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieren Sie das aktuelle Decoder-Format aus der Konfigurationsdatei.
+   Typically, the [!DNL Decoder Group] is located in a [!DNL Profile Manager] on this path: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieren Sie das aktuelle Decoder-Format aus der Konfigurationsdatei.
 1. Fügen Sie das Decoder-Format unterhalb des Originals ein.
 1. Öffnen Sie das Decoder-Format und fügen Sie am Ende der Liste die folgenden bestehenden Positionen hinzu:
 
