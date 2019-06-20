@@ -1,19 +1,19 @@
 ---
-description: Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Platform Identity Service den iframe für die ID-Synchronisierung lädt.
+description: Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Cloud ID-Dienst den iframe für die ID-Synchronisierung lädt.
 keywords: ID-Dienst
-seo-description: Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Platform Identity Service den iframe für die ID-Synchronisierung lädt.
+seo-description: Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Cloud ID-Dienst den iframe für die ID-Synchronisierung lädt.
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa 2 c 2 fa 4-2 cab -4 e 08-8 d 35-729 a 6 c 3 e 459 a
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
-Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Platform Identity Service den iframe für die ID-Synchronisierung lädt.
+Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Cloud ID-Dienst den iframe für die ID-Synchronisierung lädt.
 
 **Syntax:**` `Idsyncattachiframeonwindowload = true | false «(Standard ist `false`.)
 
