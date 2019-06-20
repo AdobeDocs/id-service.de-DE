@@ -1,19 +1,19 @@
 ---
-description: Rufen Sie diese ID-Dienstfunktionen auf, um den Timeout-Status für eine Experience Platform Identity Service-, Analytics- oder Audience Manager-ID-Anforderung festzulegen. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
+description: Rufen Sie diese ID-Dienstfunktionen auf, um den Timeout-Status für eine Experience Cloud ID-Dienst-, Analytics- oder Audience Manager-ID-Anforderung festzulegen. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 keywords: ID-Dienst
-seo-description: Rufen Sie diese ID-Dienstfunktionen auf, um den Timeout-Status für eine Experience Platform Identity Service-, Analytics- oder Audience Manager-ID-Anforderung festzulegen. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
+seo-description: Rufen Sie diese ID-Dienstfunktionen auf, um den Timeout-Status für eine Experience Cloud ID-Dienst-, Analytics- oder Audience Manager-ID-Anforderung festzulegen. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 seo-title: callTimeOut-Methoden
 title: callTimeOut-Methoden
 uuid: e 5047498-11 db -4945-b 356-c 92 b 7 d 447573
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # callTimeOut-Methoden{#calltimeout-methods}
 
-Rufen Sie diese ID-Dienstfunktionen auf, um den Timeout-Status für eine Experience Platform Identity Service-, Analytics- oder Audience Manager-ID-Anforderung festzulegen. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
+Rufen Sie diese ID-Dienstfunktionen auf, um den Timeout-Status für eine Experience Cloud ID-Dienst-, Analytics- oder Audience Manager-ID-Anforderung festzulegen. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 
 ## Zeitüberschreitungsfunktionen {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -26,7 +26,7 @@ Rufen Sie diese ID-Dienstfunktionen auf, um den Timeout-Status für eine Experie
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Platform-Identitätsdienst </p> </td> 
+   <td colname="col1"> <p>Experience Cloud ID-Dienst </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variablename</span> = visitor. mcidcalltimedout ()</span> </p> </td> 
   </tr> 
   <tr> 
