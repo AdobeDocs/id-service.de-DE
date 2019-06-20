@@ -1,19 +1,19 @@
 ---
-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2018.
+description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2018.
 keywords: ID-Dienst
-seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2018.
+seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2018.
 seo-title: Versionshinweise für 2018
 title: Versionshinweise für 2018
 uuid: 771 b 5 b 11-a 8 e 3-464 c-b 65 e-b 15135584 ace
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Versionshinweise für 2018 {#release-notes}
 
-Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2018.
+Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2018.
 
 ## Version 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -69,7 +69,7 @@ Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Se
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Unrealistischer Anstieg der Unique Visitor-Anzahl </p> </td> 
-   <td colname="col2"> <p>Mit der Veröffentlichung von Experience Platform Identity Service 3.1.0 wurde ein Problem gefunden, das eine unrealistische Spitze in der Anzahl der Unique Visitors verursachte, wenn diese Version implementiert wurde. Dieses Verhalten tritt nur bei der letzten Version (3.1.0) des ECID auf und wenn Benutzer die Option „Nur von aktueller Website erlauben“ in den Datenschutzeinstellungen des Safari-Browsers ausgewählt haben. Dieses Problem wurde in Version 3.1.2 behoben. </p> </td> 
+   <td colname="col2"> <p>Bei Version 3.1.0 des Experience Cloud ID-Diensts haben wir ein Problem erkannt, das bei Implementierung der Version zu einem unrealistischen Anstieg der Unique Visitor-Anzahl führte. Dieses Verhalten tritt nur bei der letzten Version (3.1.0) des ECID auf und wenn Benutzer die Option „Nur von aktueller Website erlauben“ in den Datenschutzeinstellungen des Safari-Browsers ausgewählt haben. Dieses Problem wurde in Version 3.1.2 behoben. </p> </td> 
   </tr> 
  </tbody> 
 </table>
