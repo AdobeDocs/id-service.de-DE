@@ -2,16 +2,16 @@
 description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit deren Hilfe Browser steuern können, welche Art von Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs festgelegt haben, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen zulassen. Sie müssen die hier aufgeführten Adobe-Domänen Ihren CSP-Whitelists hinzufügen.
 keywords: ID-Dienst
 seo-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit deren Hilfe Browser steuern können, welche Art von Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs festgelegt haben, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen zulassen. Sie müssen die hier aufgeführten Adobe-Domänen Ihren CSP-Whitelists hinzufügen.
-seo-title: Content Security Policies und der Experience Platform Identity Service
-title: Content Security Policies und der Experience Platform Identity Service
+seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst
+title: Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst
 uuid: 7399 eef 3-01 c 1-4730-834 e-e 2 dd 2 c 7791 FF
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Content Security Policies und der Experience Platform Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
+# Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst {#content-security-policies-and-the-experience-cloud-id-service}
 
 Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit deren Hilfe Browser steuern können, welche Art von Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs festgelegt haben, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen zulassen. Sie müssen die hier aufgeführten Adobe-Domänen Ihren CSP-Whitelists hinzufügen.
 
@@ -53,7 +53,7 @@ Fügen Sie diese Domänenamen oder URLs Ihrer CSP für alle aufgeführten Experi
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Besucher-ID-Service</b> </p> </td> 
-   <td colname="col2"> <p>Nehmen Sie <span class="codeph">*.demdex.net</span> in Ihre CSP auf. </p> <p>Aufrufe der <span class="codeph"> demdex. net-Domäne</span> werden zum Generieren der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Platform Identity Service</a> sowie für ID-Synchronisierungen verwendet. Siehe auch <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
+   <td colname="col2"> <p>Nehmen Sie <span class="codeph">*.demdex.net</span> in Ihre CSP auf. </p> <p>Calls to the <span class="codeph"> demdex.net</span> domain are used to generate the <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud ID Service</a> and for ID syncs. Siehe auch <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
