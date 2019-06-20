@@ -1,19 +1,19 @@
 ---
-description: Der Experience Platform Identity Service ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
+description: Der Experience Cloud ID-Dienst ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
 keywords: ID-Dienst
-seo-description: Der Experience Platform Identity Service ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
+seo-description: Der Experience Cloud ID-Dienst ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
 seo-title: Einrichten von Analytics- und Experience Cloud IDs
 title: Einrichten von Analytics- und Experience Cloud IDs
 uuid: 421 cf 597-a 3 e 0-4 ca 3-8 ce 8-d 0 c 80 cbb 6 aca
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Einrichten von Analytics- und Experience Cloud IDs{#setting-analytics-and-experience-cloud-ids}
 
-Der Experience Platform Identity Service ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
+Der Experience Cloud ID-Dienst ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
 
 Nach Implementierung des ID-Diensts wird dieser Code vor AppMeasurement ausgeführt. Mit dem ID-Dienst werden die IDs für Experience Cloud und Analytics abgerufen, damit diese Werte bereits vorliegen, wenn AppMeasurement geladen wird.
 
@@ -25,7 +25,7 @@ Die wesentliche Änderung bei der Migration auf den [!DNL Experience Cloud] ID-D
 
 **HTTP-Header**
 
-Eine HTTP-Antwort eines Webservers setzt Cookies in einem Browser. So wird das `s_vi` Cookie gesetzt. Das `s_vi` Cookie identifiziert Analytics-Besucher. Nachdem ein Cookie gesetzt wurde, wird er mit allen nachfolgenden HTTP-Anforderungen an den Server gesendet.
+Eine HTTP-Antwort eines Webservers setzt Cookies in einem Browser. This is how the `s_vi` cookie is set. The `s_vi` cookie identifies Analytics visitors. Nachdem ein Cookie gesetzt wurde, wird er mit allen nachfolgenden HTTP-Anforderungen an den Server gesendet.
 
 Wenn eine Anforderung an den Adobe-Datenerfassungsserver gesendet wird, wird geprüft, ob der Header einen `s_vi`-Cookie enthält. Wenn der Cookie in der Anforderung enthalten ist, wird er zur Identifizierung des Besuchers verwendet. Wenn der Cookie nicht in der Anforderung enthalten ist, generiert der Server eine eindeutige [!DNL Experience Cloud] ID, setzt sie als Cookie im HTTP-Antwort-Header und sendet diesen mit der Anforderung zurück. Der Cookie wird im Browser gespeichert und bei künftigen Besuchen der Seite an den Datenerfassungsserver zurückgesendet. Das ermöglicht die Identifikation des Besuchers über mehrere Besuche hinweg.
 
@@ -66,7 +66,7 @@ Nach der Bereitstellung des Besucher-ID-Diensts können Besucher in Analytics au
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi-Cookie)</a> </p> </td> 
-   <td colname="col3"> <p>Der Besucher hatte bereits ein s_ vi-Cookie, bevor Sie den <span class="keyword"> Experience Cloud</span> ID-Dienst bereitgestellt haben oder eine <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> Übergangsphase</a> konfiguriert haben. </p> </td> 
+   <td colname="col3"> <p>The visitor had an existing s_vi cookie before you deployed the <span class="keyword"> Experience Cloud</span> ID service, or you have a <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> grace period</a> configured. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_0A950B1A6B004387AFEE8EED882739CB" src="assets/step3_icon.png" /> </p> </td> 
@@ -76,7 +76,7 @@ Nach der Bereitstellung des Besucher-ID-Diensts können Besucher in Analytics au
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (Ausweichcookie für H.25.3 oder AppMeasurement für JavaScript)</a> </p> </td> 
-   <td colname="col3"> <p>Ein Browser akzeptiert keine Drittanbietercookies, und der Analytics-Tracking-Server ist als ein Drittanbieter-Tracking-Server eingerichtet. </p> <p> <p>Hinweis: Das Ausweichcookie <span class="codeph">fid</span> ist eine Legacy-ID und wird nicht verwendet, wenn Sie den ID-Dienst auf Ihrer Website implementiert haben. In diesem Fall ist die <span class="codeph"> FID-Datei</span> nicht erforderlich, da das <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV-Cookie</a> vom Erstanbieter veraltet ist. Es wurde für die Unterstützung von altem Code und aus Verlaufsgründen beibehalten. </p> </p> </td> 
+   <td colname="col3"> <p>Ein Browser akzeptiert keine Drittanbietercookies, und der Analytics-Tracking-Server ist als ein Drittanbieter-Tracking-Server eingerichtet. </p> <p> <p>Hinweis: Das Ausweichcookie <span class="codeph">fid</span> ist eine Legacy-ID und wird nicht verwendet, wenn Sie den ID-Dienst auf Ihrer Website implementiert haben. In this case, the <span class="codeph"> fid</span> is not needed because the first-party, <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> makes it obsolete. Es wurde für die Unterstützung von altem Code und aus Verlaufsgründen beibehalten. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
