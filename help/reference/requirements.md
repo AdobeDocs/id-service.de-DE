@@ -1,19 +1,19 @@
 ---
-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Platform-Identitätsdienst erforderlich sind.
+description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Cloud ID-Dienst erforderlich sind.
 keywords: ID-Dienst
-seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Platform-Identitätsdienst erforderlich sind.
-seo-title: Anforderungen für den Experience Platform Identity Service
-title: Anforderungen für den Experience Platform Identity Service
+seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Cloud ID-Dienst erforderlich sind.
+seo-title: Voraussetzungen für den Experience Cloud ID-Dienst
+title: Voraussetzungen für den Experience Cloud ID-Dienst
 uuid: 608 b 1082-6 e 9 e -4101-b 6 cb -60027950109 b
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Anforderungen für den Experience Platform Identity Service {#requirements-for-the-experience-cloud-id-service}
+# Voraussetzungen für den Experience Cloud ID-Dienst {#requirements-for-the-experience-cloud-id-service}
 
-Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Platform-Identitätsdienst erforderlich sind.
+Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Cloud ID-Dienst erforderlich sind.
 
 ## Anforderungen für die Gewährleistung einer erfolgreichen und unterstützten Implementierung {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
