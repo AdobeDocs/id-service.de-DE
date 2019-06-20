@@ -6,7 +6,7 @@ seo-title: Versionshinweise 2015
 title: Versionshinweise 2015
 uuid: 49423699-1 e 0 f -49 e 4-9135-2 ae 84 b 4 f 92 df
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -19,21 +19,21 @@ Versionshinweise und Aktualisierungen für das Jahr 2015
 
 November 2015
 
-Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Onlineerfassung persönlicher Informationen von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. Siehe [COPPA-Unterstützung im Experience Platform Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
+Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Onlineerfassung persönlicher Informationen von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. See [COPPA Support in the Experience Cloud ID Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 September 2015
 
 * Fehler im Safari-Browser behoben, der die Funktion der Synchronisierungsdienste verhinderte, wenn Benutzer Drittanbietercookies blockiert hatten. (AAM-20764)
-* Aufrufe des ID-Diensts enthalten jetzt die Versions-ID im `d_visid_ver=` Parameter. Die zurückgegebene ID hilft internen Teams bei der Fehlerbehebung und Supportproblemen. (AAM-20824)
+* Calls to the ID service now include the version ID in the `d_visid_ver=` parameter. Die zurückgegebene ID hilft internen Teams bei der Fehlerbehebung und Supportproblemen. (AAM-20824)
 
 ## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 August 2015
 
 * Ein Fehler wurde behoben, um zu verhindern, dass der ID-Dienst einen iframe anfordert, wenn keine zu synchronisierenden oder auszulösenden Daten vorhanden sind. (AAM-20164)
-* Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domänen-Cookies nicht ordnungsgemäß setzte. Wenn Sie beispielsweise über eine Domäne verfügen, `my_company.co.uk`würde der ID-Dienst unter bestimmten Umständen ein Cookie festlegen `co.uk` . (AN-104683)
+* Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domänen-Cookies nicht ordnungsgemäß setzte. For example, if you have a domain like `my_company.co.uk`, under some circumstances, the ID service would set a cookie in `co.uk` only. (AN-104683)
 
    Davon waren nur einige Kunden betroffen, die *alle* folgenden Kriterien erfüllten:
 
@@ -45,13 +45,13 @@ August 2015
 Dokumentationsüberarbeitungen in dieser Veröffentlichung umfassen:
 
 * [API-Methoden und Code-Bibliothek](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Neu organisierter Inhalt und Text. In den meisten Fällen erhält jede Methode eine eigene Seite.
-* [Anforderungen für den Experience Platform-Identitätsdienst](../reference/requirements.md): Überarbeiteter Inhalt und neu organisierter Text.
+* [Anforderungen für den Experience Cloud ID-Dienst](../reference/requirements.md): Überarbeiteter Inhalt und neu organisierter Text.
 
 ## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Juli 2015
 
-Der [!DNL Experience Cloud] ID-Dienst unterstützt mehrere IDs und Authentifizierungsstatus. Diese Änderung macht zudem die veraltete Unterstützung von [!DNL Audience Manager]-DPID-Zuordnungen zu Benutzern überflüssig, die von der Funktion `setCustomerIDs` verwendet wurden. Siehe [Kunden-IDs und Authentifizierungsstatus](../reference/authenticated-state.md)
+Der [!DNL Experience Cloud] ID-Dienst unterstützt mehrere IDs und Authentifizierungsstatus. Diese Änderung macht zudem die veraltete Unterstützung von [!DNL Audience Manager]-DPID-Zuordnungen zu Benutzern überflüssig, die von der Funktion `setCustomerIDs` verwendet wurden. See [Customer IDs and Authentication States](../reference/authenticated-state.md)
 
 ## Version 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
