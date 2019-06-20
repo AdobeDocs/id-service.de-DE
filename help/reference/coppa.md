@@ -1,19 +1,19 @@
 ---
-description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Platform Identity Service-Code eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
+description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Cloud ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
 keywords: ID-Dienst
-seo-description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Platform Identity Service-Code eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
-seo-title: COPPA-Unterstützung im Experience Platform Identity Service
-title: COPPA-Unterstützung im Experience Platform Identity Service
+seo-description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Cloud ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
+seo-title: COPPA-Unterstützung im Experience Cloud ID-Dienst
+title: COPPA-Unterstützung im Experience Cloud ID-Dienst
 uuid: 621 b 5 ebd -92 e 7-4635-be 85-8 d 7 e 36589 fcb
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# COPPA-Unterstützung im Experience Platform Identity Service {#coppa-support-in-the-experience-cloud-id-service}
+# COPPA-Unterstützung im Experience Cloud ID-Dienst {#coppa-support-in-the-experience-cloud-id-service}
 
-Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Platform Identity Service-Code eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
+Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Cloud ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
 
 >[!NOTE]
 >
