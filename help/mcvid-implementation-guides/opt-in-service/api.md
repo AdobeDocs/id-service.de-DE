@@ -3,8 +3,8 @@ description: Referenz für die API der Opt-in-Bibliothek und die Konfigurationse
 seo-description: Referenz für die API der Opt-in-Bibliothek und die Konfigurationseinstellungen.
 seo-title: Opt-in-Referenz
 title: Opt-in-Referenz
-uuid: d 5023 a 34-2 f 3 e -464 d-b 21 f -779 b 2 f 416 ce 6
-translation-type: tm+mt
+uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
+translation-type: ht
 source-git-commit: 1c6dc1871ee2e7b8d1f510576836519f7383b809
 
 ---
@@ -29,7 +29,7 @@ adobe.OptInCategories = {
 
 In diesem Abschnitt wird die Opt-in-Konfiguration mithilfe der API beschrieben. Ein Großteil der Konfiguration und Implementierung kann über die Launch-Erweiterung vorgenommen werden.
 
-Die Anmeldekonfigurationen werden in der Funktion Visitor javascript `getInstance()` bereitgestellt, die das globale `adobe` Objekt instanziiert. Im Folgenden werden die Besucher-JS-Konfigurationen im Zusammenhang mit dem Opt-in-Dienst aufgeführt.
+Opt-in-Konfigurationen werden in der Visitor JavaScript-Funktion `getInstance()` bereitgestellt, die das globale `adobe`-Objekt instanziiert. Im Folgenden werden die Konfigurationen von Visitor JS im Zusammenhang mit dem Opt-in-Dienst aufgelistet.
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**:
 
@@ -69,15 +69,15 @@ Funktion, die alle angegebenen Kategorien für einen Besucher ausschließt oder 
 
 **`adobe.optIn.approveAll()`**:
 
-Wenn Ihre Anforderung, für Ihre Site zu erstellen, Wortgruppen so ist, dass ein Besucher die Berechtigung für die Erstellung von Cookies oder für die Erstellung von Cookies erteilt oder ablehnt, verwenden `approveAll()` Sie oder `denyAll()`relativ zur Antwort.
+Wenn Ihre Anfrage nach einer Erlaubnis für die Erstellung Ihrer Website so formuliert ist, dass eine Besucheroberfläche Ihrer Website die Erlaubnis zur Erstellung von Cookies erteilt oder verweigert, verwenden Sie `approveAll()` oder `denyAll()`, bezogen auf deren Antwort.
 
 **`adobe.optIn.denyAll()`**:
 
-Wenn Ihre Anforderung, für Ihre Site zu erstellen, Wortgruppen so ist, dass ein Besucher die Erlaubnis für Ihre Site erteilt oder verweigert, Cookies zu erstellen, zu verwenden, verwenden `approveAll()``denyAll()`Sie oder relativ zur Antwort.
+Wenn Ihre Genehmigungsanfrage so formuliert ist, dass Besucher Ihrer Site die Berechtigung zum Erstellen von Cookies pauschal erteilen oder verweigern, verwenden Sie `approveAll()` oder `denyAll()`, je nach Antwort der Besucher.
 
 ## Parameter für Opt-in-Workflows {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
-Opt-in unterstützt einen Workflow, bei dem Berechtigungen über mehrere Anfragezyklen erfasst werden können, z. B. wenn Voreinstellungen einzeln festgelegt werden. Mit den folgenden Funktionen und durch Festlegen von *true* für `shouldWaitForComplete` kann Ihre Lösung zunächst die Zustimmung für eine Kategorie oder Untergruppe von Kategorien erfassen und dann für die nächste Kategorie oder Untergruppe von Kategorien. Ab dem ersten Aufruf wird die `adobe.optIn.status` Eigenschaft ausstehend, bis `adobe.optIn.complete()` sie am Ende des Flusses aufgerufen wird. Danach lautet der Status *Complete*.
+Opt-in unterstützt einen Workflow, bei dem Berechtigungen über mehrere Anfragezyklen erfasst werden können, z. B. wenn Voreinstellungen einzeln festgelegt werden. Mit den folgenden Funktionen und durch Festlegen von *true* für `shouldWaitForComplete` kann Ihre Lösung zunächst die Zustimmung für eine Kategorie oder Untergruppe von Kategorien erfassen und dann für die nächste Kategorie oder Untergruppe von Kategorien. Beim ersten Aufruf hat die Eigenschaft `adobe.optIn.status` den Wert „pending“, bis `adobe.optIn.complete()` am Ende des Workflows aufgerufen wird. Danach lautet der Status *Complete*.
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
@@ -109,7 +109,7 @@ Ruft die Liste der Berechtigungen asynchron auf. Der Callback wird mit der Liste
 
 **`permissions`**
 
-Ein Objekt, das alle Experience Cloud-Lösungen als Kategorien auflistet, die vom Besucherbeispiel gewährt oder abgelehnt wurden: `{ aa: true, ecid: false, aam: true... }`
+Ein Objekt, das alle Experience Cloud-Lösungen, die vom Besucher genehmigt oder abgelehnt wurden, als Kategorien aufführt. Beispiel: `{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 
@@ -133,8 +133,8 @@ Ein Objekt, das alle Experience Cloud-Lösungen als Kategorien auflistet, die vo
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`**: Eine oder mehrere Kategorien, die genehmigt werden sollen. Beispiel: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`**`shouldWaitForComplete`**
-: (optional) boolescher Parameter, false standardmäßig. Wenn Sie „true“ übergeben, schließt Opt-in den Genehmigungsprozess erst beim Aufruf von `adobe.optIn.complete()` () ab. Dieser Prozess ist einem Workflow ähnlich.
+**`categories`**: Eine oder mehrere Kategorien, die genehmigt werden sollen. Zum Beispiel: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`shouldWaitForComplete`**: (optional) boolescher Parameter, standardmäßig falsch. Wenn Sie „true“ übergeben, schließt Opt-in den Genehmigungsprozess erst beim Aufruf von `adobe.optIn.complete()` ab. Dieser Prozess ist einem Workflow ähnlich.
 
 ```
 <codeblock>
@@ -192,7 +192,7 @@ optIn.fetchPermissions(callback, true);
 
 >[!NOTE]
 >
->Verwenden Sie nur, wenn Sie den `shouldWaitForComplete` Parameter übergeben haben, um ihn zu genehmigen oder abzulehnen. Diese API schließt den Genehmigungsprozess ab. Beispiel: `adobe.optIn.complete()`.
+>Verwenden Sie dies nur, wenn Sie den `shouldWaitForComplete` Parameter zur Genehmigung oder Ablehnung übergeben haben. Diese API schließt den Genehmigungsprozess ab. Beispiel: `adobe.optIn.complete()`.
 
 **`approveAll()`:**
 
@@ -206,7 +206,7 @@ Lehnt alle vorhandenen Kategorien ab.
 
 **`complete`:**
 
-Das Complete-Ereignis wird ausgelöst, wenn der Genehmigungsprozess abgeschlossen ist. Wenn Sie genehmigen/ablehnen aufrufen, ohne dass Sie übergeben `shouldWaitForComplete`werden, `approveAll`wird `denyAll`diese Ereignisauslöserausgelöst. Wenn Sie `shouldWaitForComplete` übergeben, wird dieses Ereignis ausgelöst, nachdem `complete` aufgerufen wurde.
+Das Complete-Ereignis wird ausgelöst, wenn der Genehmigungsprozess abgeschlossen ist. Wenn Sie die Funktion „approve“ oder „deny“ aufrufen, ohne `shouldWaitForComplete` oder `approveAll`/`denyAll` zu übergeben, wird dieses Ereignis ausgelöst. Wenn Sie `shouldWaitForComplete` übergeben, wird dieses Ereignis ausgelöst, nachdem `complete` aufgerufen wurde.
 
 **Beispiel**
 
