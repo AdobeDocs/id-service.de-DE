@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
 seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7 fb 831 b 3-cf 7 e -40 e 2-a 219-07 fec 28 ad 49 c
-translation-type: tm+mt
+uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -26,12 +26,12 @@ Inhalt:
 
 ## Syntax {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-This function uses the following syntax (italics represents a placeholder for a variable): ` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
+Diese Funktion verwendet die folgende Syntax (kursiv stellt einen Platzhalter für eine Variable dar): ` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
 
 In den Funktionsparametern:
 
-* ` *`callback`*` stellt Ihren eigenen Callback-Code dar, der die zurückgegebenen IDs erhält.
-* *(Optional)* ` visitor.FIELDS. *`Der ID-Typ`*` ist ein Enum, mit dem Sie angeben können, welche [ID-Werte](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) diese Funktion zurückgeben soll.
+* ` *`callback`*` entspricht Ihrem eigenen Rückrufcode, der die zurückgegebenen IDs erhält.
+* *(Optional)* ` visitor.FIELDS. *`ID type`*` ist eine Enumeration, mit der Sie [ID-Werte](../../mcvid-library/mcvid-get-set/mcvid-getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) angeben können, die von dieser Funktion zurückgegeben werden sollen.
 
 Weitere Informationen finden Sie in den folgenden Nutzungsszenarios und Definitionen.
 
@@ -100,7 +100,7 @@ In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Di
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>Die Regions-ID für die Datenerfassung. Hierbei handelt es sich um eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> DCS Regions-IDs, Speicherorte und Hostnamen </a> und <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getlocationhint </a>. </p> </td> 
+   <td colname="col2"> <p>Die Regions-ID für die Datenerfassung. Hierbei handelt es sich um eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> DCS-Regions-IDs, Standorte und Hostnamen </a> und <a href="../../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
