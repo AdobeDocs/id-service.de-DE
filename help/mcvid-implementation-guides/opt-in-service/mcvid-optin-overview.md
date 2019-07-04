@@ -1,48 +1,48 @@
 ---
-description: Mit dem Anmeldedienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie beim Besuch Ihrer Site ein Cookie auf dem Gerät oder Browser des Benutzers festlegen können.
-seo-description: Mit dem Anmeldedienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie beim Besuch Ihrer Site ein Cookie auf dem Gerät oder Browser des Benutzers festlegen können.
-seo-title: Anmeldedienst
-title: Anmeldedienst
-uuid: aebd 72 ad -4118-471 b -9755-d 08 a 72 caa 0 fd
-translation-type: tm+mt
+description: Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie ein Cookie auf dem Gerät oder Browser des Benutzers erstellen können, wenn dieser Ihre Site besucht.
+seo-description: Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie ein Cookie auf dem Gerät oder Browser des Benutzers erstellen können, wenn dieser Ihre Site besucht.
+seo-title: Opt-in-Dienst
+title: Opt-in-Dienst
+uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
 
 
-# Anmeldedienst{#opt-in-service}
+# Opt-in-Dienst{#opt-in-service}
 
-Mit dem Anmeldedienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie beim Besuch Ihrer Site ein Cookie auf dem Gerät oder Browser des Benutzers festlegen können.
+Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie ein Cookie auf dem Gerät oder Browser des Benutzers erstellen können, wenn dieser Ihre Site besucht.
 
-Der Anmeldedienst ist eine Erweiterung des [Experience Cloud ID-](https://marketing.adobe.com/resources/help/en_US/mcvid/) Diensts (ECID), mit dem Sie steuern können, ob und welche Erlebniscloud-Lösungen Cookies auf Webseiten vor der Zustimmung des Benutzers erstellen können. Mit dem Anmeldedienst können Sie außerdem Protokolle für die Integration in Ihre CMP (Opt-Management-Plattform) und Ihre vorhandenen Systeme als Teil Ihres größeren Designs festlegen.
+Der Opt-in-Dienst ist eine Erweiterung des Dienstes [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/de_DE/mcvid/) und ermöglicht Ihnen zu steuern, ob und welche Experience Cloud-Lösungen Cookies auf Webseiten für Besucher erstellen können, bevor die Besucher zugestimmt haben. Mit dem Opt-in-Dienst können Sie auch Protokolle festlegen, die sich im Rahmen Ihres größeren Designs in Ihre Consent Management Platform (CMP) und bestehende Systeme integrieren lassen.
 
-Mit dem Opt-in-Dienst können Sie angeben, ob ein Besucher Adobe-Lösungen gleichzeitig auswählen kann oder Lösungen für Berechtigungen in der Reihe präsentieren. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können Sie die CMP-Besuchergenehmigungen aus allen Adobe-Lösungen abrufen.
+Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen einzeln angezeigt werden, um die Zustimmung einzuholen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können Sie die CMP-Besuchergenehmigungen aus allen Adobe-Lösungen abrufen.
 
-Der Anmeldedienst wird mit Adobe [Launch](https://docs.adobelaunch.com/) mit der [Teilnahme an der Teilnahme implementiert und konfiguriert](../../mcvid-implementation-guides/opt-in-service/launch.md). Sie kann auch mithilfe von [DTM implementiert und](../../mcvid-implementation-guides/opt-in-service/optin-dtm.md)konfiguriert werden.
+Der Opt-in-Dienst ist einfach zu implementieren und zu konfigurieren über [Adobe Launch](https://docs.adobelaunch.com/) mit der [Opt-in-Erweiterung](../../mcvid-implementation-guides/opt-in-service/launch.md). Ebenfalls möglich ist eine Implementierung und Konfiguration mit [DTM](../../mcvid-implementation-guides/opt-in-service/optin-dtm.md).
 
-Weitere [Informationen finden Sie unter Einrichten des Opt-in-Diensts](../../mcvid-implementation-guides/opt-in-service/getting-started.md) .
+Siehe [Einrichtung des Opt-in-Dienstes](../../mcvid-implementation-guides/opt-in-service/getting-started.md) zu den ersten Schritten.
 
 >[!NOTE]
 >
->Mit dem Anmeldedienst können Sie ein System einrichten, das das Herunterladen von Adobe-Cookies genehmigen oder verweigern kann. Es können keine Zustimmungsvoreinstellungen von Benutzern erfasst werden und das Objekt kann auch nicht als Repository für Voreinstellungen verwendet werden.
+>Der Opt-in-Dienst kann nur zur Einrichtung eines Systems verwendet werden, mit dem die Zustimmung der Benutzer zum Herunterladen von Adobe-Cookies eingeholt wird. Es können keine Zustimmungsvoreinstellungen von Benutzern erfasst werden und das Objekt kann auch nicht als Repository für Voreinstellungen verwendet werden.
 
 >[!IMPORTANT]
 >
->Der Inhalt dieses Dokuments ist keine rechtliche Beratung und soll keine rechtlichen Hinweise ersetzen. Wenden Sie sich an die Rechtsabteilung Ihres Unternehmens, um sich über die Zustimmung und die Vorgehensweisen bei der Einrichtung Ihrer Opt-in-Implementierung zu informieren.
+>Der Inhalt dieses Dokuments ist keine Rechtsberatung und soll keine Rechtsberatung ersetzen. Wenden Sie sich an die Rechtsabteilung Ihres Unternehmens, um sich über die Zustimmung und die Vorgehensweisen bei der Einrichtung Ihrer Opt-in-Implementierung zu informieren.
 
 ## Opt-in für mehrere Experience Cloud-Lösungen {#section-053e6224505542cf961896f0ca869e52}
 
-Der &quot;Opt-in&quot; -Dienst ist ein Tool zum Erstellen einer Einwilligung zur Teilnahme an einem Arbeitsablauf, die Ihren eigenen Anforderungen entspricht. So können Sie einen Workflow entwerfen, der vor und nach der Bestätigung vom Benutzer oder vom Controller zu reagieren (Feuer-Tags).
+Der Opt-in-Dienst ist ein Tool zum Einrichten eines Opt-in-Workflows, der Ihren Anforderungen entspricht. Es ermöglicht Ihnen, einen Workflow zu entwerfen, der vor und nach der Zustimmung des Benutzers oder Ihres Zustimmungsverantwortlichen durch Auslösen von Tags reagiert.
 
-Mit dem Opt-In-Dienst können Sie die Praktiken zur Genehmigungsverwaltung für Adobe-Lösungen einrichten:
+Mit dem Opt-in-Dienst können Sie Folgendes für die Zustimmungsverwaltung von Adobe-Lösungen einstellen:
 
 * Sie können angeben, ob die Anforderungen für die Zustimmungserfassung im Allgemeinen auf einen Benutzer zutreffen.
 * Sie können festlegen, welche Lösungen Cookies generieren dürfen.
 * Sie können Standardeinstellungen für alle Lösungen anwenden, deren Kategorien nicht ausdrücklich vom Benutzer genehmigt oder abgelehnt werden.
 * Sie können eine benutzerdefinierte Reaktion auf Änderungen an den Zustimmungseinstellungen eines Benutzers auslösen, um die Einstellungen des Benutzers beizubehalten oder zu aktualisieren.
 
-Mithilfe der Opt-in-Dienste können Sie Ihre Site so konfigurieren, dass einige Cookies mit vorab einwilligtem Einverständnis geladen werden können, bevor die Benutzer die Auswahl treffen. Sie können die Opt-in-Dienste für neue Kunden festlegen, damit Cookies geladen werden können, nachdem der Benutzer zugestimmt hat oder nachdem eine Auswahl verfügbar gemacht wurde. Außerdem können Sie die Zustimmung in Ihrer bestehenden Consent Management-Plattform speichern und abrufen oder Opt-in-Berechtigungen einfach in einem Cookie speichern.
+Mit dem Opt-in-Dienst können Sie Ihre Site so konfigurieren, dass einige Cookies mit einer Vorabzustimmung geladen werden, bevor der Benutzer eine Auswahl vornimmt. Sie können Opt-in-Dienste für Neukunden so einstellen, dass Cookies nach Zustimmung des Benutzers oder nach Bereitstellung einer Auswahl geladen werden können. Außerdem können Sie die Zustimmung in Ihrer bestehenden Consent Management-Plattform speichern und abrufen oder Opt-in-Berechtigungen einfach in einem Cookie speichern.
 
 ![](assets/Opt-in-approval.png)
 
-Adobe-Lösungen können dann überprüfen, ob das Tag genehmigt wurde, Änderungen abonnieren und alle Opt-in-Kunden abrufen. Mit dem Anmeldedienst können Sie Berechtigungen direkt über die javascript-Bibliotheken oder über ECID erhalten, wenn sie implementiert sind.
+Adobe-Lösungen können dann überprüfen, ob das Tag genehmigt wurde, Änderungen abonnieren und alle Opt-in-Kunden abrufen. Der Opt-in-Dienst ermöglicht Ihnen, Berechtigungen direkt über die JavaScript-Bibliotheken der Lösung oder über ECID (falls implementiert) abzurufen.
