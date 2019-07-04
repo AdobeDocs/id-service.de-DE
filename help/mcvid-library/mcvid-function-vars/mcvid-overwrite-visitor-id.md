@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Diese Eigenschaft überschreibt die Experience Cloud- und Analytics-ID eines Besuchers, wenn er von einer zu einer zweiten Domäne wechselt. Zum Überschreiben einer ID müssen Sie Inhaber des ID-Diensts auf jeder Domäne sein und die ID implementiert haben. Mit diesem Code können Sie keine IDs auf Domänen überschreiben, die Sie nicht steuern.
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
-uuid: 8 e 48127 a-ac 62-4 ea 0-9756-2 a 27 b 20 ecbcf
-translation-type: tm+mt
+uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Diese Eigenschaft überschreibt die Experience Cloud- und Analytics-ID eines Besuchers, wenn er von einer zu einer zweiten Domäne wechselt. Zum Überschreiben einer ID müssen Sie Inhaber des ID-Diensts auf jeder Domäne sein und die ID implementiert haben. Mit diesem Code können Sie keine IDs auf Domänen überschreiben, die Sie nicht steuern.
 
-**Syntax:**`Visitor.overwriteCrossDomainMCIDAndAID: true|false` (Standard ist `false`)
+**Syntax:** `Visitor.overwriteCrossDomainMCIDAndAID: true|false` (Standard ist `false`)
 
 **Codebeispiel**
 
@@ -53,11 +53,11 @@ Zum Nachverfolgen von Sitebesuchern schreibt der ID-Dienst eine [!DNL Experience
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Besucher über Landingpages und Konvertierungsseiten hinweg identifizieren</b> </p> </td> 
+   <td colname="col1"> <p> <b>Besucher über Landingpages und Konversionsseiten hinweg identifizieren</b> </p> </td> 
    <td colname="col2"> <p>Angenommen, Ihnen gehören die Domänen A und B. In diesem Fall können Sie <span class="codeph">Visitor.overwriteCrossDomainMCIDAndAID: true</span> festlegen, sofern: </p> 
     <ul id="ul_7BEBFD523A2F47AFB6963536E43692D0"> 
      <li id="li_71586080489340E2A6C0B263F231E3DE">Domäne A eine Landingpage ist, </li> 
-     <li id="li_4E3D3CB380EE4F1BAC4CD752194AE8DE">Domäne B eine separate Konvertierungs-, Buchungs- oder andere Ende-des-Workflows-Seite ist, </li> 
+     <li id="li_4E3D3CB380EE4F1BAC4CD752194AE8DE">Domäne B eine separate Konversions-, Buchungs- oder andere Ende-des-Workflows-Seite ist, </li> 
      <li id="li_FB393B16CFAC4D2D9B2328EBA4573C1A">Für einen Besucher bereits über den vorherigen Aufruf von Domäne B ein Cookie (und eine MID) festgelegt ist und Sie wissen, dass es sich hierbei im Vergleich zu serverseitigen MIDs um weniger wünschenswerte clientseitige MIDs handelt, </li> 
      <li id="li_36FC138530A4476A995C0F9FD73C41DE">Sie einen Besucher einheitlich identifizieren möchten, wenn er von Domäne A zur Domäne B wechselt. </li> 
     </ul> </td> 
