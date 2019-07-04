@@ -1,28 +1,28 @@
 ---
-description: Implementieren Sie den Opt-in-Dienst als einzelner Referenzpunkt, der von Experience Cloud-Lösungen (als Kategorien bei der Teilnahme bezeichnet) verwendet wird, um zu bestimmen, ob Cookies auf dem Gerät eines Besuchers erstellt werden sollen.
-seo-description: Implementieren Sie den Opt-in-Dienst als einzelner Referenzpunkt, der von Experience Cloud-Lösungen (als Kategorien bei der Teilnahme bezeichnet) verwendet wird, um zu bestimmen, ob Cookies auf dem Gerät eines Besuchers erstellt werden sollen.
-seo-title: Einrichten des Opt-In-Dienstes
-title: Einrichten des Opt-In-Dienstes
-uuid: f 1 c 27139-cef 2-4122-af 12-c 839 cfc 82 e 6 e
-translation-type: tm+mt
+description: Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspunkt für Experience Cloud-Lösungen (bei Opt-in als „Kategorien“ bezeichnet), um zu ermitteln, ob Cookies auf dem Gerät eines Besuchers erstellt werden dürfen.
+seo-description: Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspunkt für Experience Cloud-Lösungen (bei Opt-in als „Kategorien“ bezeichnet), um zu ermitteln, ob Cookies auf dem Gerät eines Besuchers erstellt werden dürfen.
+seo-title: Einrichten des Opt-in-Dienstes
+title: Einrichten des Opt-in-Dienstes
+uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
+translation-type: ht
 source-git-commit: ae65e9c7da5ac9cbe22de3f956bcd7cbef2052a7
 
 ---
 
 
-# Einrichten des Opt-In-Dienstes{#setting-up-opt-in-service}
+# Einrichten des Opt-in-Dienstes{#setting-up-opt-in-service}
 
-Implementieren Sie den Opt-in-Dienst als einzelner Referenzpunkt, der von Experience Cloud-Lösungen (als Kategorien bei der Teilnahme bezeichnet) verwendet wird, um zu bestimmen, ob Cookies auf dem Gerät eines Besuchers erstellt werden sollen.
+Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspunkt für Experience Cloud-Lösungen (bei Opt-in als „Kategorien“ bezeichnet), um zu ermitteln, ob Cookies auf dem Gerät eines Besuchers erstellt werden dürfen.
 
-Der Anmeldedienst ist eine javascript-Bibliothek, die mit [Experience Cloud ID (ECID) gebündelt ist](https://marketing.adobe.com/resources/help/en_US/mcvid/) und in der JS-Datei im globalen `adobe` Objekt als `adobe.optIn` Objekt vorhanden ist. Mit dem installierten Opt-in-Dienst können Sie angeben, ob ein Besucher die Adobe-Lösungen auf einmal auswählen kann oder ob Lösungen in einer Sequenz für die einzelnen Benutzer angezeigt werden sollen. Mit der Genehmigungsverwaltungsfunktion können Sie mit verschiedenen Konfigurationen für Ihre spezifischen Datenschutzanforderungen arbeiten.
+Der Opt-in-Dienst ist eine JavaScript-Bibliothek, die mit [Experience Cloud ID (ECID)](https://marketing.adobe.com/resources/help/de_DE/mcvid/) verknüpft ist und in Visitor JS im globalen `adobe`-Objekt als `adobe.optIn`-Objekt enthalten ist. Nachdem Sie den Opt-in-Dienst installiert haben, können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen dem Besucher einzeln angezeigt werden, um seine Zustimmung einzuholen. Der Opt-in-Dienst zur Zustimmungsverwaltung kann mit verschiedenen Konfigurationen abhängig von Ihren speziellen Datenschutzanforderungen implementiert werden.
 
-Mit dem Opt-in-Dienst können Sie angeben, ob ein Besucher Adobe-Lösungen auf einmal auswählen kann oder ob Lösungen in einer Sequenz für die einzelnen Benutzer angezeigt werden sollen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können CMP-Besuchergenehmigungen von allen Adobe-Lösungen abgerufen werden, um mit entsprechenden Zustimmungsaufrufen zu reagieren.
+Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen dem Besucher einzeln angezeigt werden, um seine Zustimmung einzuholen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können CMP-Besuchergenehmigungen von allen Adobe-Lösungen abgerufen werden, um mit entsprechenden Zustimmungsaufrufen zu reagieren.
 
 ## Voraussetzungen {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
 
 1. ECID Version 4.0.
 
-   Laden Sie die neueste ECID-Version [herunter](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+   [Laden Sie](https://github.com/Adobe-Marketing-Cloud/id-service/releases) die neueste ECID-Version herunter.
 
 1. Unterstützende Bibliotheken:
 
@@ -42,11 +42,11 @@ Mit dem Opt-in-Dienst können Sie angeben, ob ein Besucher Adobe-Lösungen auf e
 
 1. Die Datenschutzanforderungen Ihres Unternehmens enthalten die Einzelheiten zur Einhaltung der DSGVO in Ihrem Unternehmen. Achten Sie darauf, welche Bibliotheken die Datenschutzteams in Ihrem Unternehmen zulassen, solange noch keine Zustimmung vorliegt.
 
-Wenn Sie [Adobe Launch](https://docs.adobelaunch.com/) verwenden, nutzen Sie die [Teilnahme an der](../../mcvid-implementation-guides/opt-in-service/launch.md) Teilnahme an der Anmeldung.
+Wenn Sie [Adobe Launch](https://docs.adobelaunch.com/)verwenden, nutzen Sie die [Opt-in-Erweiterung](../../mcvid-implementation-guides/opt-in-service/launch.md), um den Opt-in-Dienst zu konfigurieren.
 
-## Kategorien für die Teilnahme {#section-9ab0492ab4414f0ca16dc08d3a905f47}
+## Opt-in-Kategorien {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
-Die Opt-in-Voreinstellungen eines Besuchers beziehen sich auf eine Adobe Experience Cloud-Lösung, wobei jede Lösung einer Kategorie entspricht. Kategorien werden durch das Objekt `adobe.OptInCategories` bereitgestellt. Die ECID-Komponente entspricht beispielsweise `adobe.OptInCategories`. `ECID`. Die Definition von `adobe.OptInCategories` lautet:
+Die Opt-in-Voreinstellungen eines Besuchers beziehen sich auf eine Adobe Experience Cloud-Lösung, wobei jede Lösung einer Kategorie entspricht. Kategorien werden durch das `adobe.OptInCategories` Objekt bereitgestellt. Die ECID-Komponente entspricht beispielsweise `adobe.OptInCategories`. `ECID`. Die Definition von `adobe.OptInCategories` lautet:
 
 Opt-in-Einstellungen werden pro Kategorie verwaltet, wobei jede Experience Cloud-Lösung einer Kategorie entspricht:
 
@@ -60,10 +60,10 @@ adobe.OptInCategories = {
 };
 ```
 
-Mit dem Anmeldungs-Service können Sie die Berechtigungseinstellungen der Besucher pro einzelnen auf Ihrer Site verwendeten Lösungen festlegen. Das Objekt umfasst eine Bibliothek zum Speichern der Einstellungen eines Besuchers nach genehmigter Kategorie und unterstützt einen sequenziellen Ablauf, bei dem der Genehmigungsprozess Voreinstellungen zum Bestätigen oder Ablehnen jeder Kategorie erhält. Sie können festlegen, dass den Lösungen/Kategorien gleichzeitig oder einzeln zugestimmt wird.
-clientseitige Bibliotheken von Adobe-Lösungen hängen vom Opt-in-Dienst ab und generieren keine Cookies, es sei denn, die Lösung hat eine Berechtigung. Opt-in unterstützt verschiedene Ansätze zur Bereitstellung und Aktualisierung von Zustimmungseinstellungen für den aktuellen Besucher. In diesem Abschnitt finden Sie Beispiele zum Festlegen der Voreinstellungen für den Opt-in-Dienst. Eine vollständige Liste der Funktionen und Parameter finden Sie in der [Anmeldeapi-Referenz](../../mcvid-implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) .
+Mit dem Opt-in-Dienst können Sie die Berechtigungsvoreinstellungen der Besucher für jede Adobe-Lösung auf Ihrer Site festlegen. Das Objekt umfasst eine Bibliothek zum Speichern der Einstellungen eines Besuchers nach genehmigter Kategorie und unterstützt einen sequenziellen Ablauf, bei dem der Genehmigungsprozess Voreinstellungen zum Bestätigen oder Ablehnen jeder Kategorie erhält. Sie können festlegen, dass den Lösungen/Kategorien gleichzeitig oder einzeln zugestimmt wird. 
+Die clientseitigen Bibliotheken aller Adobe-Lösungen sind vom Opt-in-Dienst abhängig. Es werden nur Cookies generiert, wenn eine Berechtigung dafür erteilt wurde. Opt-in unterstützt verschiedene Ansätze zur Bereitstellung und Aktualisierung von Zustimmungseinstellungen für den aktuellen Besucher. Dieser Abschnitt enthält Beispiele für die Festlegung von Opt-in-Dienstvoreinstellungen. Eine vollständige Liste der Funktionen und Parameter finden Sie in der [Opt-in-API-Referenz](../../mcvid-implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867).
 
-Die Opt-in-Dienstkonfigurationen werden in der Funktion &quot;Visitor JS `getInstance()` «bereitgestellt, die das globale `adobe` Objekt instanziiert. Im Folgenden werden die JS- [Konfigurationseinstellungen für Besucher](../../mcvid-implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) für den Opt-in-Dienst aufgeführt.
+Opt-in-Dienstkonfigurationen werden in der Visitor `getInstance()` JS-Funktion bereitgestellt, die das globale `adobe`-Objekt instanziiert. Im Folgenden werden die Visitor JS-[Konfigurationseinstellungen](../../mcvid-implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) für den Opt-in-Dienst aufgeführt.
 
 **Beispiel für eine Opt-in-Konfiguration bei der Initialisierung des globalen`Visitor`-Objekts**
 
@@ -90,15 +90,15 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 **Zustimmungsänderungen verarbeiten**
 
-Besucher können jederzeit während des Besuchs Ihrer Site erstmals Voreinstellungen festlegen oder ihre Voreinstellungen mithilfe Ihrer CMP ändern. Nachdem Visitor JS mit den Anfangseinstellungen initialisiert wurde, können die Berechtigungen des Besuchers geändert werden. Siehe [Änderungen an der Einwilligung](../../mcvid-implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc) für eine Liste der Funktionen zur Genehmigungsverwaltung.
+Besucher können jederzeit während des Besuchs Ihrer Site erstmals Voreinstellungen festlegen oder ihre Voreinstellungen mithilfe Ihrer CMP ändern. Nachdem Visitor JS mit den Anfangseinstellungen initialisiert wurde, können die Berechtigungen des Besuchers geändert werden. Eine Liste der Funktionen zur Zustimmungsverwaltung finden Sie unter [Änderungen an den Zustimmungsparametern](../../mcvid-implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc).
 
 <!--
 <p> *** <b>sample code block </b>*** </p>
 -->
 
-## Abmeldearbeitsabläufe {#section-70cd243dec834c8ea096488640ae20a5}
+## Opt-in-Workflows {#section-70cd243dec834c8ea096488640ae20a5}
 
-Der Anmeldedienst unterstützt einen Arbeitsablauf, in dem Berechtigungen über mehr als einen Anforderungszyklus erfasst werden können und die Voreinstellungen einzeln angegeben werden. Mit folgenden Funktionen und durch Festlegen von *true* für `shouldWaitForComplete` kann Ihre Lösung zunächst die Zustimmung für eine Kategorie oder Untergruppe von Kategorien erfassen und dann für die nächste Kategorie oder Untergruppe von Kategorien. Ab dem ersten Aufruf wird die `adobe.optIn.status` Eigenschaft *ausstehend,* bis `adobe.optIn.complete()` sie am Ende des Flusses aufgerufen wird. Danach lautet der Status *complete*.
+Der Opt-in-Dienst unterstützt einen Workflow, bei dem Berechtigungen über mehrere Anfragezyklen erfasst werden können und Voreinstellungen einzeln festgelegt werden. Mit folgenden Funktionen und durch Festlegen von *true* für `shouldWaitForComplete` kann Ihre Lösung zunächst die Zustimmung für eine Kategorie oder Untergruppe von Kategorien erfassen und dann für die nächste Kategorie oder Untergruppe von Kategorien. Beim ersten Aufruf hat die Eigenschaft `adobe.optIn.status` den Wert *pending*, bis `adobe.optIn.complete()` am Ende des Workflows aufgerufen wird. Danach lautet der Status *complete*.
 
 ```
 adobe.optIn.approve(['AAM', 'ECID'], true); 
@@ -110,7 +110,7 @@ Siehe [Workflow-Konfigurationseinstellungen](../../mcvid-implementation-guides/o
 
 ## Opt-in-Berechtigungen des Benutzers prüfen {#section-f136a9024e054d84881e6667fb7c94eb}
 
-Wenn Ihre Besucher Änderungen an ihren Berechtigungen vornehmen, benötigen Sie Einblicke in die resultierenden Berechtigungen, um Ihren Bestätigungsstore mit den Änderungen zu synchronisieren, die in der Anmeldung vorgenommen wurden. Prüfen Sie die Voreinstellungen Ihrer Besucher mit [Berechtigungsfunktionen](../../mcvid-implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155). Beispiel:
+Wenn Besucher ihre Berechtigungen ändern, müssen Sie das Ergebnis dieser Änderungen in Erfahrung bringen, um Ihre gespeicherten Zustimmungen mit den Änderungen am Opt-in-Dienst zu synchronisieren. Prüfen Sie die Voreinstellungen Ihrer Besucher mit [Berechtigungsfunktionen](../../mcvid-implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155). Beispiel:
 
 **Beispiel für „fetchPermissions“**
 
@@ -138,10 +138,10 @@ In der [API-Dokumentation](../../mcvid-implementation-guides/opt-in-service/api.
 
 ## Speichern von Besuchervoreinstellungen {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
-Der Anmeldedienst bietet eine Option zum Speichern der Voreinstellungen für die Genehmigung, die für eine Entwicklungsumgebung oder eine Umgebung, in der es nicht möglich ist, ein CRM-System zu verwenden, gespeichert werden kann. Wenn Sie die Konfigurationseigenschaft `isOptInStorageEnabled` als *&quot;true&quot; auswählen,* löst sie den Anmeldungs-Dienst aus, um ein Cookie auf dem System des Besuchers innerhalb Ihrer Domäne zu erstellen.
+Der Opt-in-Dienst ist eine Möglichkeit zum Speichern von Zustimmungsvoreinstellungen, die für eine Entwicklungs- oder andere Umgebung geeignet ist, in der kein CRM verwendet werden kann. Wenn die Konfigurationseigenschaft `isOptInStorageEnabled` den Wert *true* hat, erstellt der Opt-in-Dienst ein Cookie im System des Besuchers innerhalb Ihrer Domäne.
 
-Das `adobe.optIn`-Objekt ist zustandslos und bietet keinen Speichermechanismus. Stattdessen müssen Sie die Adobe-Zustimmungseinstellungen in Ihrer bestehenden Consent Management Platform (CMP) verwalten, wenn diese die Speicherung benutzerdefinierter Daten ermöglicht. Sie können die Besuchervoreinstellungen auch in einem Cookie im Browser des Besuchers speichern. Sie haben zwei Möglichkeiten zum Bereitstellen der Benutzervoreinstellungen für den Opt-in-Dienst:
+Das `adobe.optIn`-Objekt ist zustandslos und bietet keinen Speichermechanismus. Stattdessen müssen Sie die Adobe-Zustimmungseinstellungen in Ihrer bestehenden Consent Management Platform (CMP) verwalten, wenn diese die Speicherung benutzerdefinierter Daten ermöglicht. Sie können die Besuchervoreinstellungen auch in einem Cookie im Browser des Besuchers speichern. Sie haben zwei Möglichkeiten, die Voreinstellungen des Benutzers an den Opt-in-Dienst zu übergeben:
 
-* Wenn Ihre Persistenzlösung, ob es sich um ein CMP oder ein Cookie im Browser des Besuchers handelt, ein zeitnaher Abruf der Besuchervoreinstellungen ermöglicht, können Sie diese dem Opt-in-Dienst während der Besucherinitialisierung bereitstellen.
-* Wenn das Abrufen jedoch ein langwieriger Prozess sein kann oder andernfalls als asynchrone Verarbeitung am besten bedient wird, können Sie die Funktion des Dienstes `approve()` verwenden, um diese Einstellungen zu senden, sobald sie erfolgreich geladen wurden.
+* Wenn die Voreinstellungen von Besuchern mit Ihrer Lösung zum Speichern der Zustimmung, also einer CMP oder einem Cookie im Browser des Besuchers, zeitnah abgerufen werden können, dann können Sie diese während der Visitor-Initialisierung an den Opt-in-Dienst übergeben.
+* Wenn das Abrufen der Voreinstellungen jedoch länger dauert oder aus anderen Gründen als asynchroner Prozess durchgeführt werden sollte, können Sie die `approve()` Funktion des Dienstes verwenden, um diese Einstellungen bereitzustellen, nachdem sie erfolgreich geladen wurden.
 
