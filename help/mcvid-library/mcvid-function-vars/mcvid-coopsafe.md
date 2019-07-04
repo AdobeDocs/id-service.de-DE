@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
 seo-title: isCoopSafe
 title: isCoopSafe
-uuid: 4 dfa 1 f 35-0 a 88-48 d 1-9484-d 88 cb 53 ad 461
-translation-type: tm+mt
+uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -27,10 +27,10 @@ Inhalt:
 
 ## Voraussetzungen {#section-4883eda6beb8437182bcc82bb58fae41}
 
-Um Sie zu verwenden `isCoopSafe` , müssen Sie Folgendes tun:
+Voraussetzungen zur Verwendung von `isCoopSafe`:
 
 * Verwendung von ID-Dienstcode der Version 2.4 oder höher
-* Teilnahme an der [Experience Cloud-Gerätekooperation](https://marketing.adobe.com/resources/help/en_US/mcdc/). Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
+* Nehmen Sie teil an [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/de_DE/mcdc/). Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
 
 * Wenden Sie sich an Ihren [!DNL Adobe]-Berater, wenn Sie eine Whitelist- oder Blacklist-Kennzeichnung für Ihr Gerätekooperationskonto erstellen möchten. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
@@ -137,7 +137,7 @@ Mit diesen APIs können Sie den Status von `isCoopSafe` überschreiben. Sie erm�
 Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 -->
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
 
