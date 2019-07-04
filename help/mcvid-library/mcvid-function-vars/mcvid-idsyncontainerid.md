@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Diese Eigenschaft legt die Container-ID der Datenquelle fest, die Sie für ID-Synchronisierungen verwenden möchten.
 seo-title: idSyncContainerID
 title: idSyncContainerID
-uuid: e 35 dc 48 b -1 aa 1-41 e 3-91 c 1-ef 1 e 9 d 2 d 8 b 90
-translation-type: tm+mt
+uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -25,7 +25,7 @@ Inhalt:
 
 ## Syntax und Codebeispiel {#section-b0c50732b1c84bed8616e82e8e83d58c}
 
-**Syntax:**` idSyncContainerID: *`Container-ID-Wert`*`
+**Syntax:** ` idSyncContainerID: *`container ID value`*`
 
 **Codebeispiel:**
 
@@ -41,7 +41,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 **Behälter**
 
-Behälter sind Objekte, die erstellt [!DNL Audience Manager]werden. Auf Container ist zwar kein externer Zugriff möglich, sie enthalten jedoch alle Datenquellen, die:
+Container sind Objekte, die von [!DNL Audience Manager] erstellt werden. Auf Container ist zwar kein externer Zugriff möglich, sie enthalten jedoch alle Datenquellen, die:
 
 * Ihnen für die ID-Synchronisierung zur Verfügung stehen, jedoch nicht verwendet werden
 * zur ID-Synchronisierung verwendet werden.
@@ -72,7 +72,7 @@ Je nachdem, in welcher Situation Sie sich befinden, müssen Sie diese Konfigurat
    <td colname="col1"> <p> <b>Benötigt</b> </p> </td> 
    <td colname="col2"> <p>Sie benötigen diese Konfiguration, wenn alle folgenden Bedingungen zutreffen: </p> <p> 
      <ul id="ul_9AFD14FC5A2745F7BD7BE7B64545DA62"> 
-      <li id="li_04F0EFBBD71B43608CAAA7E7409D33FE">Sie verwenden <span class="keyword">Audience Manager</span> nicht . </li> 
+      <li id="li_04F0EFBBD71B43608CAAA7E7409D33FE">Sie verwenden <span class="keyword">Audience Manager</span> nicht. </li> 
       <li id="li_4BFA6DC76CE9455EBBC337FD2FE820BF">Sie müssen IDs mit anderen Datenquellen synchronisieren, die in Containern organisiert sind. </li> 
       <li id="li_731DA5D1CBF244F8BEBE57C0E2EBA713">Sie müssen IDs mit Datenquellen in verschiedenen Containern auf unterschiedlichen Seiten Ihrer Domäne synchronisieren. </li> 
      </ul> </p> </td> 
