@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Diese Implementierung ermöglicht es Kunden, den ID-Dienst auf Geräten zu verwenden, die unseren JavaScript- oder SDK-Code nicht unterstützen. Dazu zählen Spielkonsolen, Smart-TVs und andere Internet-fähige Geräte. Die folgenden Abschnitte enthalten Syntax, Codebeispiele und Definitionen.
 seo-title: Direkte Integration mit dem Experience Cloud ID-Dienst
 title: Direkte Integration mit dem Experience Cloud ID-Dienst
-uuid: de 502 f 7 e-cffd -4130-b 3 ca -7 d 6 b 9 a 9 caae 9
-translation-type: tm+mt
+uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -21,7 +21,7 @@ Geräte, die weder die VisitorAPI.js- noch die SDK-Codebibliothek unterstützen,
 
 ![](assets/directSyntax.png)
 
-In diesem Syntaxbeispiel identifiziert das `d_` Präfix die Schlüssel/Wert-Paare im Aufruf als Variable auf Systemebene. Sie können einige `d_` Parameter an den ID-Dienst übergeben, konzentrieren sich jedoch weiterhin auf die Schlüssel-Wert-Paare, wie im obigen Code gezeigt. Weitere Informationen über andere Variablen finden Sie unter [Unterstützte Attribute für DCS-API-Aufrufe](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+In diesem Syntaxbeispiel kennzeichnet das `d_` Präfix die Schlüssel-Wert-Paare im Aufruf als Variablen auf Systemebene. Sie können einige `d_`-Parameter an den ID-Dienst übergeben, konzentrieren Sie sich jedoch auf die Schlüssel-Wert-Paare, wie im Code oben gezeigt. Weitere Informationen zu anderen Variablen finden Sie unter [Unterstützte Attribute für DCS-API-Aufrufe](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
 
 Der ID-Dienst unterstützt HTTP- und HTTPS-Aufrufe. Verwenden Sie HTTPS, um Daten von einer vertrauenswürdigen Seite zu übergeben.
 
@@ -44,7 +44,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten gezeigt. Ihre A
 }
 ```
 
-## Anforderungs- und Antwortparameter definiert {#section-4a9912b545364dc4acad4f1ea5ec641d}
+## Definierte Anforderungs- und Antwortparameter {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
 **Anforderungsparameter**
 
@@ -62,7 +62,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten gezeigt. Ihre A
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Die Experience Cloud-Besucher-ID. Siehe <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> Cookies und der Experience Cloud ID-Dienst</a>. </p> </td> 
+   <td colname="col2"> <p>Die Experience Cloud-Besucher-ID. Siehe <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local">Cookies und der Experience Cloud ID-Dienst</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
@@ -70,10 +70,10 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten gezeigt. Ihre A
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>Ein optionaler Parameter, der die Data Provider-ID (DPID), die Unique User ID (DPUUID) und eine <a href="../mcvid-reference/mcvid-authenticated-state.md" format="dita" scope="local"> authentifizierte Status-ID</a> an den ID-Dienst weiterleitet. Trennen Sie DPID und DPUUID durch das nicht druckbare Steuerzeichen <span class="codeph">%01</span>, wie im Codebeispiel gezeigt. </p> <p> <b>DPID und DPUUID</b> </p> <p>Weisen Sie im Parameter <span class="codeph">d_cid</span> alle zusammengehörigen Kombinationen aus DPID und DPUUID demselben <span class="codeph">d_cid</span>-Parameter zu. Dadurch können Sie mehrere IDs in einer einzigen Anforderung übergeben. Trennen Sie außerdem DPID, DPUUID und die optionale Authentifizierungskennzeichnung durch das nicht druckbare Steuerzeichen <span class="codeph">%01</span>. In den Beispielen weiter unten werden die Anbieter- und Benutzer-IDs durch <b>Fettdruck</b> hervorgehoben. </p> 
+   <td colname="col2"> <p>Ein optionaler Parameter, der die Data Provider ID (DPID), die Unique User ID (DPUUID) und eine <a href="../mcvid-reference/mcvid-authenticated-state.md" format="dita" scope="local"> authentifizierte Zustands-ID</a> an den ID-Dienst übergibt. Trennen Sie DPID und DPUUID durch das nicht druckbare Steuerzeichen <span class="codeph">%01</span>, wie im Codebeispiel gezeigt. </p> <p> <b>DPID und DPUUID</b> </p> <p>Weisen Sie im Parameter <span class="codeph">d_cid</span> alle zusammengehörigen Kombinationen aus DPID und DPUUID demselben <span class="codeph">d_cid</span>-Parameter zu. Dadurch können Sie mehrere IDs in einer einzigen Anforderung übergeben. Trennen Sie außerdem DPID, DPUUID und die optionale Authentifizierungskennzeichnung durch das nicht druckbare Steuerzeichen <span class="codeph">%01</span>. In den Beispielen weiter unten werden die Anbieter- und Benutzer-IDs durch <b>Fettdruck</b> hervorgehoben. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Syntax: <span class="codeph">...d_cid=DPID%01DPUUID%01authentication state...</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Beispiel: <span class="codeph">… d_ cid = 123% 1456% 011…</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Beispiel: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>Authentifizierungsstatus</b> </p> <p>Dies ist eine optionale ID im Parameter <span class="codeph">d_cid</span>. Sie wird als Ganzzahl ausgedrückt und gibt den Authentifizierungsstatus von Benutzern an, wie unten gezeigt: </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph"> 0</span> (Unbekannt) </li> 
