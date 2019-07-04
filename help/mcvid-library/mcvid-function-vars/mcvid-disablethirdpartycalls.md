@@ -1,11 +1,11 @@
 ---
 description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der ID-Dienst andere Domänen aufruft.
-keywords: domänenübergreifende Verfolgung; ID-Dienst
+keywords: domänenübergreifendes Tracking, ID-Dienst
 seo-description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der ID-Dienst andere Domänen aufruft.
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
-uuid: e 92 ce 1 f 5-67 a 4-476 c -9 d 04-41 d 4 e 96 b 1592
-translation-type: tm+mt
+uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Eine optionale boolesche Kennzeichnung, die verhindert, dass der ID-Dienst andere Domänen aufruft.
 
-**Syntax:**` `Disablethirdpartycalls: true | false «(Standard ist `false`.)
+**Syntax:** ` `disableThirdPartyCalls: true|false`` (Standard ist `false`.)
 
 Bei `disableThirdPartyCalls: true` gibt der ID-Dienst keine Aufrufe an andere Domänen aus.
 
