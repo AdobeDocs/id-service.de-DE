@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vor der Implementierung des Experience Cloud ID-Diensts im s_vi cookie-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
-uuid: 6 bb 8 ddfc -9 fc 1-4105-b 377-d 9 b 4 d 247 a 0 f 8
-translation-type: tm+mt
+uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -33,24 +33,24 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->Wenn Sie [!DNL Analytics] Kunde sind, suchen Sie nach der [!DNL Analytics] ID und senden Sie sie an Ihre Funktion. Beispielsweise ist es wünschenswert, bei der Weiterleitung einer Besucher-ID in versteckter Form an eine serverseitige Anwendung, die die Dateneingabe-API verwendet, beide Identifikatoren zur Verfügung zu haben. In diesem Fall sollten Sie die [!DNL Experience Cloud] Besucher- und [!DNL Analytics] Besucher-IDs erfassen und zurückgeben. Siehe [getmarketingcloudvisitorid](../../mcvid-library/mcvid-get-set/mcvid-getmcvid.md).
+>Wenn Sie [!DNL Analytics]-Kunde sind, suchen Sie nach der [!DNL Analytics]-ID und senden Sie diese an Ihre Funktion. Beispielsweise ist es wünschenswert, bei der Weiterleitung einer Besucher-ID in versteckter Form an eine serverseitige Anwendung, die die Dateneingabe-API verwendet, beide Identifikatoren zur Verfügung zu haben. In diesem Fall sollten Sie die [!DNL Experience Cloud]- und [!DNL Analytics]-Besucher-IDs erfassen und zurückgeben. Siehe [getMarketingCloudVisitorID](../../mcvid-library/mcvid-get-set/mcvid-getmcvid.md).
 
 **Der Parameter „aid“ ist ein veralteter Wert**
 
-Der Parameter `aid` taucht in einer Abfragezeichenfolge unter zweierlei verschiedenen Bedingungen auf.
+Der `aid` Parameter taucht in einer Abfragezeichenfolge unter zweierlei verschiedenen Bedingungen auf.
 
 **1. Fall**
 
 Der Parameter `aid` taucht in einer Abfragezeichenfolge auf, wenn:
 
-* Der [!DNL Experience Cloud] ID-Dienst wird ordnungsgemäß bereitgestellt.
-* im [!DNL Analytics]s_vi-Cookie[ des eine Site besuchenden Benutzers bereits eine ](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html)-ID gespeichert ist.
+* der [!DNL Experience Cloud] ID-Dienst ordnungsgemäß bereitgestellt wurde.
+* Der Benutzer, der eine Site besucht, hat eine bereits vorhandene [!DNL Analytics]-ID, die in seinem [s_vi Cookie](https://marketing.adobe.com/resources/help/de_DE/whitepapers/cookies/?f=cookies_analytics.html) gespeichert ist.
 
 **2. Fall**
 
-Der `aid` Parameter in einer Abfragezeichenfolge wird angezeigt, wenn Ihr Unternehmen eine [Übergangsphase](../../mcvid-reference/mcvid-analytics-reference/mcvid-grace-period.md) verwendet, bevor der ID-Dienst vollständig implementiert wird. Wenn der Benutzer, der Ihre Site besucht, neu ist und Sie keine Übergangsphase verwenden, ruft der Besucher den `mid` Parameter ( [!DNL Experience Cloud] ID) ab.
+Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen eine [Übergangsphase](../../mcvid-reference/mcvid-analytics-reference/mcvid-grace-period.md) verwendet, bevor es den ID-Dienst vollständig implementiert. Hat der aktuelle Besucher Ihre Seite zuvor noch nie aufgerufen und sollten Sie keine Übergangsphase festgelegt haben, erhält der Besucher den Parameter `mid` ([!DNL Experience Cloud] ID).
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
->* [Analytics-Cookies](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Analytics Cookies](https://marketing.adobe.com/resources/help/de_DE/whitepapers/cookies/cookies_analytics.html)
 
