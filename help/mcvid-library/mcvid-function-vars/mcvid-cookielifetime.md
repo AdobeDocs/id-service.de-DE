@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Mit dieser Variablen können Sie das standardmäßige Lebensdauerintervall für das AMCV-Cookie überschreiben.
 seo-title: cookieLifetime
 title: cookieLifetime
-uuid: cd 945 db 3-429 a -4625-ac 3 f -69 ac 259377 a 3
-translation-type: tm+mt
+uuid: cd945db3-429a-4625-ac3f-69ac259377a3
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Mit dieser Variablen können Sie das standardmäßige Lebensdauerintervall für das AMCV-Cookie überschreiben.
 
-Standardmäßig laufen [!DNL Experience Cloud] ID-Dienst-Cookies nach 24 Monaten ab. Legen Sie den Zeitraum in Sekunden fest.
+Standardmäßig laufen [!DNL Experience Cloud] ID-Dienst-Cookies nach 24 Monaten ab. Legen Sie den Zeitraum in Sekunden fest.
 
-**Syntax:**` cookieLifetime: *`Lebensdauer in Sekunden`*`
+**Syntax:** ` cookieLifetime: *`Lebensdauer in Sekunden`*`
 
 **Codebeispiel**
 
