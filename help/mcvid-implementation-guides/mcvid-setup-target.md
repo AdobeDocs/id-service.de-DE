@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud ID-Dienst verwenden möchten, nicht aber das Dynamic Tag Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
 seo-title: Implementieren des Experience Cloud ID-Diensts für Target
 title: Implementieren des Experience Cloud ID-Diensts für Target
-uuid: cb 3581 fa -4 c 4 b -43 aa-bb 8 e -8 db 85 a 6 a 1 ef 2
-translation-type: tm+mt
+uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -23,11 +23,11 @@ Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud ID-Die
 
 
 
-## Schritt 1: ID-Dienst-Code abrufen {#section-b32ba0548aa546a79dd38be59832a53e}
+## Schritt 1: Herunterladen des ID-Dienst-Codes {#section-b32ba0548aa546a79dd38be59832a53e}.
 
-Für den Code [!DNL ID Service] ist die `VisitorAPI.js` Codebibliothek erforderlich. Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html), um diesen Code zu erhalten.
+Für den [!DNL ID Service] ist die `VisitorAPI.js` Code-Bibliothek erforderlich. Wenden Sie sich an [Customer Care](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um diesen Code zu erhalten.
 
-## Schritt 2: Hinzufügen der Funktion Visitor. getinstance zum ID-Dienst-Code {#section-287ef2958e9f43858fe9d630ae519e22}
+## Schritt 2: Hinzufügen der Funktion „Visitor.getInstance“ zum ID-Dienst-Code {#section-287ef2958e9f43858fe9d630ae519e22}
 
 **Teil 1: Kopieren Sie die unten stehende Funktion Visitor.getInstance**
 
@@ -35,9 +35,9 @@ Für den Code [!DNL ID Service] ist die `VisitorAPI.js` Codebibliothek erforderl
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE"); 
 ```
 
-**Teil 2: Fügen Sie der Datei VistorAPI.js Funktions-Code hinzu**
+**Teil 2: Fügen Sie der Datei VisitorAPI.js Funktions-Code hinzu**
 
-Platzieren Sie die Funktion `Visitor.getInstance` am Ende der Datei nach dem Code-Block. Die bearbeitete Datei sollte wie folgt aussehen:
+Platzieren Sie die `Visitor.getInstance` Funktion am Ende der Datei nach dem Code-Block. Die bearbeitete Datei sollte wie folgt aussehen:
 
 ```js
 /* 
@@ -52,32 +52,32 @@ Version and copyright section
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE");
 ```
 
-## Schritt 3: Fügen Sie Visitor. getinstance Ihre Experience Cloud-Organisations-ID hinzu. {#section-522b1877be9243c39b222859b821f0ce}
+## Schritt 3: Hinzufügen der Experience Cloud-Organisations-ID zu Visitor.getInstance {#section-522b1877be9243c39b222859b821f0ce}
 
-Ersetzen Sie in der `Visitor.getInstance` Funktion die `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` ID Ihres [!DNL Experience Cloud] Unternehmens. Sollten Sie Ihre Organisations-ID nicht kennen, finden Sie diese auf der Administrationsseite der [!DNL Experience Cloud]. Siehe auch [Administration – Kerndienste.](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html) Die bearbeitete Funktion sollte dem unten stehenden Beispiel ähnlich sehen.
+Ersetzen Sie in der `Visitor.getInstance` Funktion den Ausdruck `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` durch Ihre [!DNL Experience Cloud]-Organisations-ID. Sollten Sie Ihre Organisations-ID nicht kennen, finden Sie diese auf der [!DNL Experience Cloud]Administrationsseite der. Siehe auch [Verwalten - Kerndienste](https://marketing.adobe.com/resources/help/de_DE/mcloud/admin_getting_started.html). Die bearbeitete Funktion sollte dem unten stehenden Beispiel ähnlich sehen.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
 >[!IMPORTANT]
 >
->*Ändern Sie nicht* den Fall der Zeichen in Ihrer Organisations-ID. Bei der ID wird Groß- und Kleinschreibung beachtet und sie muss so eingegeben werden, wie sie von Adobe angegeben wird.
+>*Wichtig:* Ändern Sie die Groß- oder Kleinschreibung Ihrer Organisations-ID nicht. Bei der ID wird Groß- und Kleinschreibung beachtet und sie muss so eingegeben werden, wie sie von Adobe angegeben wird.
 
 ## Schritt 4: Hinzufügen des Besucher-API-Codes zur Seite {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
-Stellen Sie die `VisitorAPI.js` Datei auf Ihrer Site `<head>` vor dem Verweis auf die `mbox.js` Datei bereit. Der [!DNL Experience Cloud] ID-Dienst muss vor dem ersten [!DNL Target] Netzwerkaufruf ausgeführt werden. Versetzen Sie diesen Code nach dem Testen und Überprüfen in die Produktionsumgebung.
+Stellen Sie die Datei `VisitorAPI.js` im Tag `<head>` Ihrer Seite bereit, bevor Sie den Bezug auf die Datei `mbox.js` einfügen. Der [!DNL Experience Cloud] ID-Dienst muss vor der Generierung des ersten [!DNL Target]-Netzwerkaufrufs ausgeführt werden. Versetzen Sie diesen Code nach dem Testen und Überprüfen in die Produktionsumgebung.
 
 ## Schritt 5: Testen und Bereitstellen des ID-Dienst-Codes {#section-e81ee439bb8a4c2abea43d76f3112e9c}
 
-Sie können wie folgt testen und bereitstellen.
+Sie können dies wie folgt testen und bereitstellen.
 
-**Testen und überprüfen**
+**Testen und Verifizieren**
 
 Zum Testen der ID-Dienstimplementierung:
 
 * AMCV-Cookie in der Domäne suchen, in der Ihre Seite gehostet wird.
-* Die Verifizierung `mboxMCGVID` wird in Ihrer [!DNL Target] Anforderung angezeigt und enthält die [!DNL Experience Cloud] ID (MID).
+* Sicherstellen, dass `mboxMCGVID` in Ihrer [!DNL Target]-Anforderung erscheint und dass es die [!DNL Experience Cloud]-ID (MID) enthält.
 
-Informationen zum AMCV-Cookie und zur MID finden Sie unter [Cookies und Experience Cloud ID-Dienst](../mcvid-introduction/mcvid-cookies.md) .
+Weitere Informationen zu AMCV-Cookie und MID siehe [Cookies und der Experience Cloud ID-Dienst](../mcvid-introduction/mcvid-cookies.md)
 
 **Bereitstellung**
 
