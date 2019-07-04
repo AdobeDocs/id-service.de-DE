@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Eine optionale boolesche Kennzeichnung, die steuert, wie Browser Ressourcen vom Experience Cloud ID-Dienst anfordern.
 seo-title: useCORSOnly
 title: useCORSOnly
-uuid: 607 dc 035-dffc -4 f 4 d-be 51-08 ef 6 c 0 a 8 mode
-translation-type: tm+mt
+uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Eine optionale boolesche Kennzeichnung, die steuert, wie Browser Ressourcen vom Experience Cloud ID-Dienst anfordern.
 
-** Syntax: ** `useCORSOnly: true|false` (Standard ist `false`.)
+**Syntax: ** `useCORSOnly: true|false` (Standard ist `false`.)
 
 **Übersicht**
 
@@ -23,7 +23,7 @@ Wenn der Wert auf `false` festgelegt ist, führt der Browser Ressourcenprüfunge
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` wenn Sie über strenge Sicherheitsanforderungen verfügen. Sie sollten diesen Modus nur dann aktivieren, wenn Sie davon überzeugt sind, dass alle Besucher Browser verwenden, die CORS unterstützen. Die Benutzeroberfläche wird durch Browser, die CORS nicht unterstützen, nicht beeinflusst. Browser ohne CORS-Unterstützung können mit [!DNL Adobe Experience Cloud] jedoch weder Ressourcen anfordern noch Daten austauschen.
+>`Set useCORSOnly: true` Wenn Sie strenge Sicherheitsanforderungen haben. Sie sollten diesen Modus nur dann aktivieren, wenn Sie davon überzeugt sind, dass alle Besucher Browser verwenden, die CORS unterstützen. Die Benutzeroberfläche wird durch Browser, die CORS nicht unterstützen, nicht beeinflusst. Browser ohne CORS-Unterstützung können mit [!DNL Adobe Experience Cloud] jedoch weder Ressourcen anfordern noch Daten austauschen.
 
 **Codebeispiel**
 
