@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
 seo-title: Data Workbench und der Experience Cloud ID-Dienst
 title: Data Workbench und der Experience Cloud ID-Dienst
-uuid: 9448 abc 8-04 fb -47 d 2-be 08-1 dfbddb 764 e
-translation-type: tm+mt
+uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,17 +15,17 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
 
-Zur Aktualisierung von [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) für die Verwendung mit dem ID-Dienst:
+Um [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) zu aktualisieren, verwenden Sie den ID-Dienst:
 
-1. Suchen Sie nach der Konfigurationsdatei der aktuellen [Decoder-Gruppe.](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)
+1. Suchen Sie die aktuelle [Decoder-Gruppe](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)-Konfigurationsdatei.
 
-   In der Regel befindet sich die Variable [!DNL Decoder Group] an [!DNL Profile Manager] folgendem Speicherort: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieren Sie das aktuelle Decoder-Format aus der Konfigurationsdatei.
+   Normalerweise befindet sich das [!DNL Decoder Group] in einem [!DNL Profile Manager] auf diesem Pfad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieren Sie das aktuelle Decoderformat aus der Konfigurationsdatei.
 1. Fügen Sie das Decoder-Format unterhalb des Originals ein.
 1. Öffnen Sie das Decoder-Format und fügen Sie am Ende der Liste die folgenden bestehenden Positionen hinzu:
 
    * `x-mcvisid`
    * `x-tnt-action`
-   Lassen Sie die Felder leer, wenn Sie sie noch nicht verwenden oder definieren können.  **Decodierungsanweisungen**
+   Lassen Sie die Felder leer, wenn Sie sie noch nicht verwenden oder definieren können. **Decodierungsanweisungen**
 
 Unten finden Sie die vollständigen Inhalte zur Decodierung, einschließlich der oben erwähnten Felder.
 
