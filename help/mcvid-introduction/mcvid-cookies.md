@@ -1,11 +1,11 @@
 ---
 description: Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und beständige IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
-keywords: playstation; ID-Dienst
+keywords: Playstation; ID-Dienst
 seo-description: Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und beständige IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
 seo-title: Cookies und der Experience Cloud ID-Dienst
 title: Cookies und der Experience Cloud ID-Dienst
-uuid: c 5 cbd 35-37 ee -4605-8792-b 1 a 991 e 190 ad
-translation-type: tm+mt
+uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,17 +15,17 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und beständige IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
 
-## Cookies des ID-Diensts {#section-f438168beaec409ab8b2cc58bd021e26}
+## Grundlegendes zu ID-Dienst-Cookies {#section-f438168beaec409ab8b2cc58bd021e26}
 
-Für den ID-Dienst müssen AMCV-, AMCVS- und Demdex-Cookies ordnungsgemäß funktionieren. Bei diesen Cookies handelt es sich einfach nur um Dateien, in denen die vom ID-Dienst verwendeten Daten gespeichert sind. Diese ID-Dienst-Cookies sind weder gefährlich noch böswillig und unterscheiden sich nicht von anderen Erstanbieter- oder Drittanbieter-Cookies, die auf einer Website oder von einem Dienst in einem Browser gespeichert werden. Sie unterliegen denselben Regeln, die für Erstanbieter- und Drittanbieter-Cookies gelten. Weitere Informationen zu Cookies, die vom ID-Dienst verwendet werden, finden Sie in den folgenden Abschnitten.
+Für den ID-Dienst müssen AMCV-, AMCVS- und Demdex-Cookies ordnungsgemäß funktionieren. Bei diesen Cookies handelt es sich einfach nur um Dateien, in denen die vom ID-Dienst verwendeten Daten gespeichert sind. Diese ID-Dienst-Cookies sind weder gefährlich noch böswillig und unterscheiden sich nicht von anderen Erstanbieter- oder Drittanbieter-Cookies, die auf einer Website oder von einem Dienst in einem Browser gespeichert werden. Sie unterliegen denselben Regeln, die für Erstanbieter- und Drittanbieter-Cookies gelten. Weitere Informationen zu den vom ID-Dienst verwendeten Cookies erhalten Sie in der nachstehenden Tabelle und den darauf folgenden Abschnitten.
 
-**Was die ID-Dienst-Cookies tun können**
+**Was die ID-Dienst-Cookies können**
 
 * Eine eindeutige ID für Ihre Site-Besucher (MID) festlegen und speichern.
 * Diese eindeutige ID beibehalten, sodass der ID-Dienst Daten erfassen und an Experience Cloud-Lösungen weitergeben kann.
 * Benutzer domänenübergreifend verfolgen. Dafür müssen Sie jedoch Inhaber dieser anderen Domänen sein und den ID-Dienstcode in diesen Domänen implementiert haben.
 
-** Was die ID-Dienst-Ookies nicht tun können**
+**Was die ID-Dienst-Cookies nicht können **
 
 * Computerviren speichern, übertragen oder ausführen
 * Auf personenbezogene Informationen (PII), beispielsweise Ihre E-Mail-Adresse, zugreifen und sie speichern
@@ -35,11 +35,11 @@ Für den ID-Dienst müssen AMCV-, AMCVS- und Demdex-Cookies ordnungsgemäß funk
 
 ## AMCV-Cookie {#section-c55af54828dc4cce89f6118655d694c8}
 
-Die folgenden Attribute des vom ID-Dienst festgelegten Cookies.
+Die folgenden Attribute des Cookies werden vom ID-Dienst gesetzt.
 
 **Name**
 
-Der Name des AMCV-Cookies folgt der Syntax `AMCV_<variable name>@AdobeOrg`. Im Namen sind die `<variable name>` Elemente Platzhalter für einen Teil Ihrer Experience Cloud-Organisations-ID. Diese ID wird von der Funktion `Visitor.getInstance` im ID-Dienst-Code an den DES weitergeleitet.
+Der Name des AMCV-Cookies folgt der Syntax `AMCV_<variable name>@AdobeOrg`. Im Namen sind die `<variable name>` Elemente Platzhalter für einen Teil Ihrer Experience Cloud Organisations-ID. Diese ID wird von der `Visitor.getInstance` Funktion im ID-Dienst-Code an den DES weitergeleitet.
 
 Ein vollständiger Cookie-Name würde in etwa wie folgt aussehen:
 
@@ -49,7 +49,7 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **Inhalt**
 
-Der AMCV-Cookie enthält die Experience Cloud-Benutzer-ID, auch als MID bezeichnet. The MID is stored in a key-value pair that follows this syntax, `mid|<Experience Cloud ID>`.
+Der AMCV-Cookie enthält die Experience Cloud-Benutzer-ID, auch als MID bezeichnet. Die MID wird in einem Schlüssel-Wert-Paar gespeichert, das dieser Syntax folgt: `mid|<Experience Cloud ID>`.
 
 Ein vollständiges Schlüsselwertpaar würde in etwa wie folgt aussehen:
 
@@ -69,7 +69,7 @@ Da der AMCV-Cookie jedoch als Erstanbieterdomäne festgelegt ist, kann er nicht 
 
 **Name**
 
-Der Name des AMCVS-Cookies folgt der Syntax `AMCVS_####@AdobeOrg`. Die Zeichen #### im Namen sind Platzhalter für einen Teil Ihrer Experience Cloud-Organisations-ID. Diese ID wird per `theVisitor.getInstance` Funktion im ID-Dienst-Code an das DCS weitergegeben.
+Der Name des AMCVS-Cookies folgt der Syntax `AMCVS_####@AdobeOrg`. Die Zeichen #### im Namen sind Platzhalter für einen Teil Ihrer Experience Cloud-Organisations-ID. Diese ID wird von der `theVisitor.getInstance` Funktion im ID-Dienst-Code an den DCS weitergeleitet.
 
 Ein vollständiger Cookie-Name würde in etwa wie folgt aussehen:
 
@@ -79,7 +79,7 @@ AMCVS_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **Inhalt**
 
-Das AMCVS-Cookie dient als Kennzeichnung und gibt an, dass die Sitzung initialisiert wurde. Der Wert wird immer `1` eingestellt, wenn die Sitzung beendet wurde.
+Das AMCVS-Cookie dient als Kennzeichnung und gibt an, dass die Sitzung initialisiert wurde. Der Wert entspricht immer `1` und wird nur bis zum Ende der Sitzung beibehalten.
 
 **Domäne**
 
@@ -114,14 +114,14 @@ In der folgenden Tabelle finden Sie eine Auflistung und Definition einiger wicht
  </tbody> 
 </table>
 
-Weitere Informationen finden Sie [unter Grundlegendes zu Aufrufen der Demdex-Domäne](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+Weitere Informationen finden Sie unter [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Generieren der Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
 Die Experience Cloud ID (MID) wird mathematisch aus Ihrer Organisations-ID und der demdex-ID abgeleitet. Solange diese IDs konstant bleiben, ist das Generieren der richtigen MID für einen bestimmten Benutzer einfach nur eine Rechenaufgabe. Mit der gleichen Organisations-ID und demdex-ID erhalten Sie jedes Mal den gleichen MID-Wert. So kann der ID-Dienst Besucher in allen Domänen verfolgen, die Sie verwalten und mit dem Code des ID-Diensts konfiguriert haben.
 
-Der ID-Dienst beginnt mit der Erstellung einer MID, während Ihre Seite geladen wird. Bei diesem Vorgang sendet der von der Code-Bibliothek `visitorAPI.js` bereitgestellte Code Ihre Organisations-ID in einem Ereignisaufruf an den ID-Dienst. Der ID-Dienst erstellt die MID und eine demdex-ID und gibt sie im AMCV- bzw. demdex-Cookie zurück.
+Der ID-Dienst beginnt mit der Erstellung einer MID, während Ihre Seite geladen wird. Bei diesem Vorgang sendet der von der `visitorAPI.js` Code-Bibliothek bereitgestellte Code Ihre Organisations-ID in einem Ereignisaufruf an den ID-Dienst. Der ID-Dienst erstellt die MID und eine demdex-ID und gibt sie im AMCV- bzw. demdex-Cookie zurück.
 
 ## Nächste Schritte {#section-8db1727a63bc4ff68b495f270315d453}
 
-Informationen [zum Anfordern und Festlegen von IDs durch Experience Cloud ID-Dienst…](../mcvid-introduction/mcvid-id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+Siehe [Anfordern und Festlegen von IDs durch den Experience Cloud ID-Dienst](../mcvid-introduction/mcvid-id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
