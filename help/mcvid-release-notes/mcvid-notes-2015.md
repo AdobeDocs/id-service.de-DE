@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Versionshinweise und Aktualisierungen für das Jahr 2015
 seo-title: Versionshinweise 2015
 title: Versionshinweise 2015
-uuid: 49423699-1 e 0 f -49 e 4-9135-2 ae 84 b 4 f 92 df
-translation-type: tm+mt
+uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -19,21 +19,21 @@ Versionshinweise und Aktualisierungen für das Jahr 2015
 
 November 2015
 
-Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Onlineerfassung persönlicher Informationen von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. Siehe [COPPA-Unterstützung im Experience Cloud ID-Dienst](../mcvid-reference/mcvid-coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
+Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Online-Erfassung personenbezogener Daten von Kindern unter 13 Jahren ohne nachprüfbare elterliche Zustimmung. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. Siehe [COPPA-Support im Experience Cloud ID-Dienst](../mcvid-reference/mcvid-coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 September 2015
 
 * Fehler im Safari-Browser behoben, der die Funktion der Synchronisierungsdienste verhinderte, wenn Benutzer Drittanbietercookies blockiert hatten. (AAM-20764)
-* Aufrufe des ID-Diensts enthalten jetzt die Versions-ID im `d_visid_ver=` Parameter. Die zurückgegebene ID hilft internen Teams bei der Fehlerbehebung und Supportproblemen. (AAM-20824)
+* Aufrufe des ID-Dienstes enthalten nun die Versions-ID im Parameter `d_visid_ver=`. Die zurückgegebene ID hilft internen Teams bei der Fehlerbehebung und Supportproblemen. (AAM-20824)
 
-## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
+## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 August 2015
 
 * Ein Fehler wurde behoben, um zu verhindern, dass der ID-Dienst einen iframe anfordert, wenn keine zu synchronisierenden oder auszulösenden Daten vorhanden sind. (AAM-20164)
-* Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domänen-Cookies nicht ordnungsgemäß setzte. Wenn Sie beispielsweise über eine Domäne verfügen, `my_company.co.uk`würde der ID-Dienst unter bestimmten Umständen ein Cookie festlegen `co.uk` . (AN-104683)
+* Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domänen-Cookies nicht ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domäne wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
 
    Davon waren nur einige Kunden betroffen, die *alle* folgenden Kriterien erfüllten:
 
@@ -44,16 +44,16 @@ August 2015
 
 Dokumentationsüberarbeitungen in dieser Veröffentlichung umfassen:
 
-* [API-Methoden und Code-Bibliothek](../mcvid-library/mcvid-library.md#concept-ff27497375644a898d47984aefb21c97): Neu organisierter Inhalt und Text. In den meisten Fällen erhält jede Methode eine eigene Seite.
+* [API-Methoden und Codebibliothek](../mcvid-library/mcvid-library.md#concept-ff27497375644a898d47984aefb21c97): Reorganisierter Inhalt und Text. In den meisten Fällen erhält jede Methode eine eigene Seite.
 * [Anforderungen für den Experience Cloud ID-Dienst](../mcvid-reference/mcvid-requirements.md): Überarbeiteter Inhalt und neu organisierter Text.
 
 ## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Juli 2015
 
-Der [!DNL Experience Cloud] ID-Dienst unterstützt mehrere IDs und Authentifizierungsstatus. Diese Änderung macht zudem die veraltete Unterstützung von [!DNL Audience Manager]-DPID-Zuordnungen zu Benutzern überflüssig, die von der Funktion `setCustomerIDs` verwendet wurden. Siehe [Kunden-IDs und Authentifizierungsstatus](../mcvid-reference/mcvid-authenticated-state.md)
+Der [!DNL Experience Cloud] ID-Dienst unterstützt mehrere IDs und Authentifizierungsstatus. Diese Änderung macht zudem die veraltete Unterstützung von [!DNL Audience Manager]-DPID-Zuordnungen zu Benutzern überflüssig, die von der `setCustomerIDs` Funktion verwendet wurden. Siehe [Kunden-IDs und Authentifizierungsstatus](../mcvid-reference/mcvid-authenticated-state.md).
 
-## Version 1.4 {#section-f5c596f355b14da28f45c798df513572}
+## Version 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
 Mai 2015
 
@@ -69,7 +69,7 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 Weitere Informationen finden Sie unter [Experience Cloud](../mcvid-implementation-guides/mcvid-setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd).
 
-## Version 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
+## Version 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
 
 Februar 2015
 
@@ -79,4 +79,4 @@ Fehlerbehebung der Zeitüberschreitung bei Anforderungen für AAM Blob und Locat
 
 Januar 2015
 
-`<head>/<body>` Die Tag-Suche für den JSONP-Anforderungs- `<script>` Container sowie die Erstellung des `<script>` Tags wurde überarbeitet, um verschiedene DOM-Implementierungen (HTML vs. XHTML) mit möglicherweise unterschiedlichen Einstellungen für die Groß-/Kleinschreibung zu berücksichtigen. (AN-9355)
+Überarbeitete `<head>/<body>` Tag-Suche für JSONP-Request `<script>` Tag-Container, sowie die Erstellung des `<script>`-Tags zur Berücksichtigung verschiedener DOM-Implementierungen (HTML vs. XHTML) mit möglicherweise unterschiedlichen Groß-/Kleinschreibungseinstellungen. (AN-9355)
