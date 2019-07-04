@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Eine Übersicht über den ID-Anforderungs- und -Ausgabeprozess. Diese Beispiele decken die ID-Zuweisung auf individuellen Sites, Site-übergreifend und für durch verschiedene Experience Cloud-Kunden verwaltete Sites mit eigenen Kunden-IDs ab.
 seo-title: Anfordern und Festlegen von IDs durch den Experience Cloud ID-Dienst
 title: Anfordern und Festlegen von IDs durch den Experience Cloud ID-Dienst
-uuid: ff 7 f 5 b 7 e-e 959-4391-b 75 c-b 7 a 36286 e 0 ea
-translation-type: tm+mt
+uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,28 +17,28 @@ Eine Übersicht über den ID-Anforderungs- und -Ausgabeprozess. Diese Beispiele 
 
 >[!NOTE]
 >
->Wenn Sie nicht wissen, wie der Experience Cloud ID-Dienst die Besucher-ID erstellt, nehmen Sie sich einen Moment Zeit, um die [Experience Cloud zu überprüfen](../mcvid-introduction/mcvid-cookies.md).
+>Wenn Sie nicht genau wissen, wie der Experience Cloud ID-Dienst die Besucher-ID erstellt, lesen Sie [Experience Cloud](../mcvid-introduction/mcvid-cookies.md).
 
-**Tipp:** Sehen Sie sich auch das [Video zum domänenübergreifenden Tracking mit dem ID-Dienst](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html) an.
+**Tipp:** Siehe auch unser [ID-Dienst-Video zum domänenübergreifenden Tracking](https://helpx.adobe.com/de/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
 ## Anfordern einer Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
-In den folgenden Beispielen wird dargestellt, wie der ID-Dienst die Experience Cloud-Besucher-ID anfordert und erhält. Diese Beispiele verwenden zwei fiktive Unternehmen, die Food Company und die Sports Company, um Datenflüsse für ID-Anforderungen und -antworten zu demonstrieren. Jedes Unternehmen verfügt über eine eindeutige Experience Cloud-Organisations-ID und hat den ID-Dienstcode auf jeder Site implementiert. In diesen Anwendungsfällen werden die Datenströme für eine allgemeine ID-Dienstimplementierung ohne Analytics, Legacy-IDs oder Drittanbieter-Cookies blockierende Browser dargestellt.
+In den folgenden Beispielen wird dargestellt, wie der ID-Dienst die Experience Cloud-Besucher-ID anfordert und erhält. Es wird anhand zweier fiktiver Unternehmen, „Food Company“ und „Sports Company“, erklärt, wie die Datenflüsse für ID-Anforderungen und -Antworten funktionieren. Jedes Unternehmen verfügt über eine eindeutige Experience Cloud-Organisations-ID und hat den ID-Dienstcode auf jeder Site implementiert. In diesen Anwendungsfällen werden die Datenströme für eine allgemeine ID-Dienstimplementierung ohne Analytics, Legacy-IDs oder Drittanbieter-Cookies blockierende Browser dargestellt.
 
 ![](assets/sample_sites.png)
 
-**Erste Anforderung**
+**Erste Anfrage**
 
 In diesem Beispiel besucht ein Neukunde die Pizza-Site, die von der Food Company verwaltet wird. Die Food Company hat auf der Pizza-Site ID-Dienst-Code implementiert. Beim Laden der Site wird vom ID-Dienst-Code der AMCV-Cookie in der Pizzadomäne gesucht.
 
-* Ist der AMCV-Cookie gesetzt, verfügt der Site-Besucher über eine Experience Cloud ID. In diesem Fall verfolgt das Cookie den Besucher und gibt Daten mit anderen Experience Cloud-Lösungen frei.
-* Wenn der AMCV-Cookie nicht gesetzt ist, ruft der ID-Dienstcode einen regionalen [Datenerfassungsserver](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DES) unter `dpm.demdex.net/id` auf (siehe auch [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). Im Aufruf enthalten ist auch die Organisations-ID der Food Company. Die Organisations-ID wird in der Funktion `Visitor.getInstance` des ID-Dienst-Codes festgelegt.
+* Ist der AMCV-Cookie gesetzt, verfügt der Site-Besucher über eine Experience Cloud ID. In diesem Fall verfolgt das Cookie den Besucher und teilt Daten mit anderen Experience Cloud-Lösungen.
+* Wenn das AMCV-Cookie nicht gesetzt ist, ruft der ID-Dienst-Code einen regionalen [Datenerfassungsserver](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DCS) auf unter `dpm.demdex.net/id` (siehe auch [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). Im Aufruf enthalten ist auch die Organisations-ID der Food Company. Die Organisations-ID wird in der Funktion `Visitor.getInstance` des ID-Dienst-Codes festgelegt.
 
 ![](assets/request1.png)
 
 **Erste Antwort**
 
-In der Antwort gibt der DES die [!DNL Experience Cloud] ID (MID) und den demdex-Cookie zurück. Der ID-Dienst-Code schreibt den MID-Wert in den AMCV-Cookie. Wenn der DES beispielswiese einen MID-Wert von 1234 zurückgibt, würde dieser als `mid|1234` im AMCV-Cookie gespeichert und in der Erstanbieter-Pizzadomäne gesetzt werden. Der demdex-Cookie enthält zudem eine eindeutige ID (nennen wir diese einmal 5678). Dieser Cookie wird in der Drittanbieter-demdex.net-Domäne gesetzt, die von der Pizzadomäne unabhängig ist.
+In der Antwort gibt der DES die [!DNL Experience Cloud] ID (MID) und den demdex-Cookie zurück. Der ID-Dienst-Code schreibt den MID-Wert in das AMCV-Cookie. Wenn der DES beispielswiese einen MID-Wert von 1234 zurückgibt, würde dieser als `mid|1234` im AMCV-Cookie gespeichert und in der Erstanbieter-Pizzadomäne gesetzt werden. Der demdex-Cookie enthält zudem eine eindeutige ID (nennen wir diese einmal 5678). Dieser Cookie wird in der Drittanbieter-demdex.net-Domäne gesetzt, die von der Pizzadomäne unabhängig ist.
 
 ![](assets/response1.png)
 
