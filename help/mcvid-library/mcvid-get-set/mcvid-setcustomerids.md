@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: setCustomerIDs legt einen oder mehr Schlüsselwertpaare fest, die Kunden-IDs und deren Authentifizierungsstatus identifizieren.
 seo-title: „setCustomerIDs“
 title: „setCustomerIDs“
-uuid: 4 f 960 f 98-cec 2-4 db 6-84 ea -0259 e 2128 ea 2
-translation-type: tm+mt
+uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,7 +17,7 @@ setCustomerIDs legt einen oder mehr Schlüsselwertpaare fest, die Kunden-IDs und
 
 **Syntax:** `visitor.setCustomerIDs()`
 
-Sie können, wie im Code-Beispiel unten dargestellt, einzelne oder mehrere IDs festlegen. Siehe [Kunden-IDs und Authentifizierungsstatus](../../mcvid-reference/mcvid-authenticated-state.md) für weitere Informationen und Beispiele.
+Sie können, wie im Code-Beispiel unten dargestellt, einzelne oder mehrere IDs festlegen. Siehe [Kunden-IDs und Authentifizierungsstatus](../../mcvid-reference/mcvid-authenticated-state.md) mit weiteren Informationen und Beispielen.
 
 ```js
 // Single ID with a single authentication state 
