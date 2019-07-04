@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Bei manchen Implementierungen werden Besucher-IDs von JavaScript an einen Server übergeben, sodass vom Server weitere Analytics-Ereignisse (z. B. ein Kauf) gesendet werden können.
 seo-title: Serverseitige Implementierung zusammen mit JavaScript
 title: Serverseitige Implementierung zusammen mit JavaScript
-uuid: 256 ea 0 e 7-1 eb 4-4 c 92-9 a 7 e-f 61 cb 1 ed 13 c 7
-translation-type: tm+mt
+uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -21,15 +21,15 @@ Stellen Sie sicher, dass sowohl die Experience Cloud-Besucher-ID als auch die An
 
 >[!IMPORTANT]
 >
->Appmeasurement for Java unterstützt den Experience Cloud ID-Dienst derzeit nicht.
+>AppMeasurement for Java unterstützt den Experience Cloud ID-Dienst derzeit nicht.
 
 ## Dateneinfüge-API {#section-955ce7664a4646d38b3005cb2df40baf}
 
-Schließen Sie die Analytics-Besucher-ID (sofern festgelegt) im `<visitorID>` Element ein.
+Schließen Sie die Analytics-Besucher-ID (sofern festgelegt) in das Element `<visitorID>` ein.
 
-Schließen Sie die Experience Cloud-Besucher-ID in das `<marketingCloudVisitorID>` Element ein.
+Schließen Sie die Experience Cloud-Besucher-ID in das Element `<marketingCloudVisitorID>` ein.
 
-Siehe [Unterstützte XML-Tags](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags).
+Siehe [Supported XML Tags](https://marketing.adobe.com/developer/de_DE/documentation/data-insertion/r-supported-tags).
 
 ## AppMeasurement für Java {#section-d664b94934924d048300d9c2b6560085}
 
