@@ -2,11 +2,11 @@
 description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bezüglich des ID-Diensts.
 keywords: ID-Dienst
 seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bezüglich des ID-Diensts.
-seo-title: Häufig gestellte Fragen zum ID-Dienst
+seo-title: ID-Dienst Häufig gestellte Fragen (FAQ)
 title: Häufig gestellte Fragen zum ID-Dienst
-uuid: e 8 d 8 f 819-3 d 73-4 fa 2-864 c -4867071 c 14 ee
+uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -19,31 +19,31 @@ Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Probleme
 
 **Welche Art von Funktionalität oder Funktionen bietet der ID-Dienst?**
 
-Siehe [Überblick](../introduction/overview.md).
+Siehe [Übersicht](../introduction/overview.md).
 
 **Warum führt der ID-Dienst keinen Aufruf durch, um die Experience Cloud ID abzurufen?**
 
-Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe [Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe [Content Security Policies und Experience Platform Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **VisitorAPI.js-Dateispeicherung**
 
 Möglicherweise treten Probleme auf, wenn Sie VisitorAPI.js als lokale Datei in mobilen Apps speichern. Es wird empfohlen, die Datei auf einem Webserver zu speichern.
 
-## Page load times and latency {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## Seitenladezeiten und Latenz {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **Wie wirkt sich die Platzierung der ID-Dienstbibliothek VisitorAPI.js auf die Seitenladezeiten aus?**
 
-Place the VisitorAPI.js library at the top of the page in the `<head>` section of your code. Dadurch stellen Sie sicher, dass der Aufruf an eine ID gesendet wird, bevor der Seitentext geladen wird, und die Wahrscheinlichkeit, dass eine ID erfolgreich zurückgegeben wird, erhöht sich.
+Platzieren Sie die Bibliothek VisitorAPI.js oben auf der Seite in den `<head>` Abschnitt Ihres Codes. Dadurch stellen Sie sicher, dass der Aufruf an eine ID gesendet wird, bevor der Seitentext geladen wird, und die Wahrscheinlichkeit, dass eine ID erfolgreich zurückgegeben wird, erhöht sich.
 
 Der Aufruf des ID-Diensts erfolgt asynchron. Es ist der einzige Aufruf an die [demdex.net-Domäne](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
 
-[!DNL Target] Für Kunden kann das Platzieren des ID-Dienst-Codes in der `<body>` Seite die Odds erhöhen, die einen [!DNL Target] Aufruf blockieren könnten. If you must place ID service code in the body of your page, it should be placed after the open `<body>` tag.
+Für [!DNL Target]-Kunden kann die Platzierung von ID-Dienst-Code in `<body>` der Seite die Wahrscheinlichkeit erhöhen, dass ein [!DNL Target]-Aufruf blockiert wird. Wenn Sie ID-Dienst-Code im Haupttext Ihrer Seite platzieren müssen, dann sollten Sie ihn nach dem öffnenden `<body>`-Tag einfügen.
 
 **Führt der ID-Dienst jedes Mal einen Server-Aufruf durch, wenn eine Seite geladen wird?**
 
 Nein, dieser Aufruf wird nur beim ersten Rendern der Seite durchgeführt und danach alle sieben Tage. In der Zwischenzeit sind keine Serveraufrufe erforderlich. Der ID-Dienst wird im clientseitigen Modus ausgeführt und benötigt keine Server-Aufrufe, um eine ID zurückzugeben.
 
-See [Overview](../introduction/overview.md).
+Siehe [Übersicht](../introduction/overview.md).
 
 **Was kann bei der Verwendung des ID-Diensts zu langsamen Seitenladezeiten führen oder die Benutzererfahrung beeinträchtigen?**
 
@@ -67,25 +67,25 @@ Diese Änderung erhöht die Leistung bei Kunden, die Visitor 2.3.0 oder höher 
 
 Ressourcenanforderungen mit CORS sind JSONP in der Regel vorzuziehen. Bei JSONP weisen einige Browser Anforderungen eine geringere Priorität zu als anderen synchronen und asynchronen Abrufen, wenn sie diese in die Warteschlange stellen. Mit CORS können Sie sicherstellen, dass die Anforderungen eine höhere Priorität in der Aufrufliste des Browsers erhalten.
 
-Siehe [CORS-Unterstützung im Experience Cloud ID-Dienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Siehe [CORS-Unterstützung im Experience Platform-Identitätsdienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sicherheit {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Unterstützt der ID-Dienst CORS?**
 
-Ja. See [CORS Support in the Experience Cloud ID Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Ja. See [CORS Support in the Experience Platform Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Was ist CORS?**
 
-*`Cross-Origin Resource Sharing`* oder CORS ist eine Methode, mit der Browser Ressourcen anfordern. In Browsern, die CORS unterstützen, fordert der ID-Dienst Ressourcen immer mit CORS an. Der ID-Dienst fordert Ressourcen mit JSONP in älteren Browsern an, die CORS nicht unterstützen. Siehe [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+*`Cross-Origin Resource Sharing`* oder CORS ist eine Methode, mit der Browser Ressourcen anfordern. In Browsern, die CORS unterstützen, fordert der ID-Dienst Ressourcen immer mit CORS an. Der ID-Dienst fordert Ressourcen mit JSONP in älteren Browsern an, die CORS nicht unterstützen. Weitere Informationen finden Sie unter [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Was geschieht, wenn meine Sicherheitsanforderungen so streng sind, dass ich JSONP nie verwenden möchte?**
 
 Wenn Sie strenge Sicherheitsanforderungen haben, legen Sie in der Konfiguration der ID-Dienst-API `useCORSOnly: true` fest. Sie sollten diesen Modus nur dann aktivieren, wenn Sie davon überzeugt sind, dass alle Site-Besucher Browser verwenden, die CORS unterstützen.
 
-Siehe [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) und [usecorsonly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Siehe [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) und [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
