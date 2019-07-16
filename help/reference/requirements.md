@@ -1,19 +1,19 @@
 ---
-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Cloud ID-Dienst erforderlich sind.
+description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Platform-Identitätsdienst erforderlich sind.
 keywords: ID-Dienst
-seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Cloud ID-Dienst erforderlich sind.
-seo-title: Voraussetzungen für den Experience Cloud ID-Dienst
-title: Voraussetzungen für den Experience Cloud ID-Dienst
-uuid: 608 b 1082-6 e 9 e -4101-b 6 cb -60027950109 b
+seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Platform-Identitätsdienst erforderlich sind.
+seo-title: Anforderungen für den Experience Platform Identity Service
+title: Anforderungen für den Experience Platform Identity Service
+uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Voraussetzungen für den Experience Cloud ID-Dienst {#requirements-for-the-experience-cloud-id-service}
+# Requirements for the Experience Platform Identity Service {#requirements-for-the-experience-cloud-id-service}
 
-Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Cloud ID-Dienst erforderlich sind.
+Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Platform-Identitätsdienst erforderlich sind.
 
 ## Anforderungen für die Gewährleistung einer erfolgreichen und unterstützten Implementierung {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -53,7 +53,7 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
 
 >[!IMPORTANT]
 >
->Bei der Organisations-ID muss die Groß-/Kleinschreibung beachtet werden und muss genau wie angegeben verwendet werden.
+>Wichtig: Bei der Organisations-ID wird die Groß-/Kleinschreibung beachtet. Zudem muss sie genau in der Form verwendet werden, in der sie bereitgestellt wird.
 
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
@@ -80,7 +80,7 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
 
 ## Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle Tracking-Server wurden in RDC konvertiert, sodass der Analytics-Tracking-Server nicht geändert werden muss. [Weitere Infos...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
 ## Code-Bibliotheken und Versionsvoraussetzungen {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -88,7 +88,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
 
 >[!TIP]
 >
->Es wird empfohlen, anstelle der erforderlichen minimalen Werte die neuesten Codeversionen zu verwenden.
+>Tipp: Sie sollten anstelle der erforderlichen minimalen die neuesten Codeversionen verwenden.
 
 **JavaScript**
 
@@ -102,7 +102,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"></span>  Experience Cloud ID-Dienst</b> </p> </td> 
+   <td colname="col1"> <p> <b> <span class="keyword"> Experience Cloud</span> ID-Dienst</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 oder höher </p> </td> 
   </tr> 
@@ -148,7 +148,7 @@ Für den ID-Dienst sind mindestens die im Folgenden aufgeführten SDK-Versionen 
 
 >[!TIP]
 >
->Es wird empfohlen, anstelle der erforderlichen minimalen Werte die neuesten Codeversionen zu verwenden.
+>Tipp: Sie sollten anstelle der erforderlichen minimalen die neuesten Codeversionen verwenden.
 
 Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Aktivieren und laden Sie den neuesten SDK-Code für jede Anwendung über Ihr [Adobe Mobile Services](https://mobilemarketing.adobe.com/)-Konto herunter. Siehe auch:
 
@@ -156,7 +156,7 @@ Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Aktivieren und laden Sie 
 * [Android SDK-Methoden](https://marketing.adobe.com/resources/help/en_US/mobile/android/c_marketing_cloud.html)
 * [iOS-SDK-Methoden](https://marketing.adobe.com/resources/help/en_US/mobile/ios/marketing_cloud.html)
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Code-Bibliothek](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
 
