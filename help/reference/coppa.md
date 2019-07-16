@@ -1,19 +1,19 @@
 ---
-description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Cloud ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
+description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Platform Identity Service-Code eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
 keywords: ID-Dienst
-seo-description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Cloud ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
-seo-title: COPPA-Unterstützung im Experience Cloud ID-Dienst
-title: COPPA-Unterstützung im Experience Cloud ID-Dienst
-uuid: 621 b 5 ebd -92 e 7-4635-be 85-8 d 7 e 36589 fcb
+seo-description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Platform Identity Service-Code eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
+seo-title: COPPA-Unterstützung im Experience Platform Identity Service
+title: COPPA-Unterstützung im Experience Platform Identity Service
+uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# COPPA-Unterstützung im Experience Cloud ID-Dienst {#coppa-support-in-the-experience-cloud-id-service}
+# COPPA Support in the Experience Platform Identity Service {#coppa-support-in-the-experience-cloud-id-service}
 
-Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Cloud ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
+Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken nach COPPA haben, können ihrem Experience Platform Identity Service-Code eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Beim Laden einer Webseite wird vom [!DNL Experience Cloud] ID-Dienst ein [!DNL A
 
 **Cookies und Einhaltung von COPPA**
 
-Drittanbieter-Cookies, die Besucher domänenübergreifend auf Websites verfolgen, die für Kinder (oder primär für Kinder) vorgesehen sind, lösen in Einklang mit COPPA eine Anforderung der elterlichen Zustimmung aus. Damit die Forderungen von COPPA für interne Website-Analysen problemlos eingehalten werden können, kann – wie unten gezeigt – die Variable `disableThirdPartyCookies:true` der Funktion `Visitor.getInstance` hinzugefügt werden.
+Drittanbieter-Cookies, die Besucher domänenübergreifend auf Websites verfolgen, die für Kinder (oder primär für Kinder) vorgesehen sind, lösen in Einklang mit COPPA eine Anforderung der elterlichen Zustimmung aus. Damit die Forderungen von COPPA für interne Website-Analysen problemlos eingehalten werden können, kann – wie unten gezeigt – die Variable `disableThirdPartyCookies:true` der `Visitor.getInstance` Funktion hinzugefügt werden.
 
 ```js
 //Call the ID service 
@@ -41,9 +41,9 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 });
 ```
 
-Ist die Variable auf `true` festgelegt, verhindert das Objekt `disableThirdPartyCookies`, dass der DES den Drittanbieter-Cookie demdex.net zurückgibt. Sollte der Cookie bereits im Browser des Besuchers gespeichert sein, wird dieser vom ID-Dienst nicht zur Erstellung einer neuen [!DNL Experience Cloud] ID oder Ausgabe einer bestehenden ID eingesetzt. Stattdessen wird vom [!DNL Experience Cloud] ID-Dienst eine neue, zufällige ID im Erstanbieter-Cookie erstellt. Nach der Aktivierung können mit dem ID-Dienst Daten gesammelt und über verschiedene [!DNL Experience Cloud]-Lösungen hinweg freigegeben werden, darunter auch andere, laut COPPA zulässige interne Operationen.
+Ist die Variable auf `true` festgelegt, verhindert das `disableThirdPartyCookies` Objekt, dass der DES den Drittanbieter-Cookie demdex.net zurückgibt. Sollte der Cookie bereits im Browser des Besuchers gespeichert sein, wird dieser vom ID-Dienst nicht zur Erstellung einer neuen [!DNL Experience Cloud] ID oder Ausgabe einer bestehenden ID eingesetzt. Stattdessen wird vom [!DNL Experience Cloud] ID-Dienst eine neue, zufällige ID im Erstanbieter-Cookie erstellt. Nach der Aktivierung können mit dem ID-Dienst Daten gesammelt und über verschiedene [!DNL Experience Cloud]-Lösungen hinweg freigegeben werden, darunter auch andere, laut COPPA zulässige interne Operationen.
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Adobe Datenschutzcenter](http://www.adobe.com/privacy.html)
 >* [Was ist COPPA?](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
