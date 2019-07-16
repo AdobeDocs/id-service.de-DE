@@ -1,19 +1,19 @@
 ---
-description: Vor der Bereitstellung des Experience Cloud ID-Diensts sollten Sie verstehen, wie sich dieser Dienst auf die Besucherverfolgung bei mehreren Domänen auswirkt und potenzielle Probleme auftreten, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
+description: Vor der Bereitstellung des Experience Platform Identity Service müssen Sie verstehen, wie dieser Dienst die Verfolgung der Besucher bei mehreren Domänen und potenzielle Probleme beeinflusst, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
 keywords: ID-Dienst
-seo-description: Vor der Bereitstellung des Experience Cloud ID-Diensts sollten Sie verstehen, wie sich dieser Dienst auf die Besucherverfolgung bei mehreren Domänen auswirkt und potenzielle Probleme auftreten, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
-seo-title: Entscheidungspunkte bei der Migration zum Experience Cloud ID-Dienst
-title: Entscheidungspunkte bei der Migration zum Experience Cloud ID-Dienst
-uuid: ee 56 b 5 de-fcf 3-4 cfb -9 e 53-762 af 7 c 4 d 2 ff
+seo-description: Vor der Bereitstellung des Experience Platform Identity Service müssen Sie verstehen, wie dieser Dienst die Verfolgung der Besucher bei mehreren Domänen und potenzielle Probleme beeinflusst, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
+seo-title: Entscheidungspunkte für die Migration von Experience Platform Identity Service
+title: Entscheidungspunkte für die Migration von Experience Platform Identity Service
+uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Entscheidungspunkte bei der Migration zum Experience Cloud ID-Dienst
+# Entscheidungspunkte für die Migration von Experience Platform Identity Service
 
-Vor der Bereitstellung des Experience Cloud ID-Diensts sollten Sie verstehen, wie sich dieser Dienst auf die Besucherverfolgung bei mehreren Domänen auswirkt und potenzielle Probleme auftreten, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
+Vor der Bereitstellung des Experience Platform Identity Service müssen Sie verstehen, wie dieser Dienst die Verfolgung der Besucher bei mehreren Domänen und potenzielle Probleme beeinflusst, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
 
 Ihre Antworten auf die Fragen in diesem Abschnitt helfen Ihnen dabei, weitere Migrationsschritte zu bestimmen.
 
@@ -87,7 +87,7 @@ Wenn die Site mehrere Analytics-JavaScript-Dateien, Flash-Anwendungen oder Video
      <li id="li_4366CC8EB7A54A959568E3761ABBBF23">Mehrere Analytics-Javascript-Dateien </li> 
      <li id="li_B8A8132019EA48088E4F37E36F153D76">Weitere Datenerfassungsmethoden </li> 
     </ul> </td> 
-   <td colname="col2"> <p>Konfigurieren Sie eine Übergangsphase für den Besucher-ID-Dienst, damit Sie ihn für jede JavaScript-Datei und alle sonstigen Datenerfassungsbibliotheken bereitstellen können. See <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> ID Service Grace Period</a>. </p> </td> 
+   <td colname="col2"> <p>Konfigurieren Sie eine Übergangsphase für den Besucher-ID-Dienst, damit Sie ihn für jede JavaScript-Datei und alle sonstigen Datenerfassungsbibliotheken bereitstellen können. Siehe <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">Übergangsphase für den ID-Dienst</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Einzelne Analytics-JavaScript-Datei </p> </td> 
@@ -110,7 +110,7 @@ Unter Umständen müssen Sie das Linktracking aktualisieren oder Silverlight eli
  <tbody> 
   <tr> 
    <td colname="col1"> <p>JavaScript und/oder Flash </p> </td> 
-   <td colname="col2"> <p>Keine. Der <span class="keyword">Experience Cloud</span> ID-Dienst unterstützt diese Datenerfassungsmethoden. </p> </td> 
+   <td colname="col2"> <p>Kein. Der <span class="keyword">Experience Cloud</span> ID-Dienst unterstützt diese Datenerfassungsmethoden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
