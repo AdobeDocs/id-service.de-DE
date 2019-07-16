@@ -1,19 +1,19 @@
 ---
-description: Häufig gestellte Fragen zum Experience Cloud ID-Dienst selbst und Abschnitte zum ID-Dienst sowie weiteren Experience Cloud-Lösungskombinationen.
+description: Häufig gestellte Fragen zum Experience Platform Identity Service sowie Abschnitten zum ID-Dienst und anderen Experience Cloud-Lösungskombinationen.
 keywords: ID-Dienst
-seo-description: Häufig gestellte Fragen zum Experience Cloud ID-Dienst selbst und Abschnitte zum ID-Dienst sowie weiteren Experience Cloud-Lösungskombinationen.
+seo-description: Häufig gestellte Fragen zum Experience Platform Identity Service sowie Abschnitten zum ID-Dienst und anderen Experience Cloud-Lösungskombinationen.
 seo-title: Häufig gestellte Fragen (FAQ)
 title: Häufig gestellte Fragen (FAQ)
-uuid: b 075957 b -165 f -4087-99 ad-bf 608 b 4 d 4967
+uuid: b075957b-165f-4087-99ad-bf608b4d4967
 translation-type: tm+mt
-source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Häufig gestellte Fragen (FAQ){#faqs}
 
-Häufig gestellte Fragen zum Experience Cloud ID-Dienst selbst und Abschnitte zum ID-Dienst sowie weiteren Experience Cloud-Lösungskombinationen.
+Häufig gestellte Fragen zum Experience Platform Identity Service sowie Abschnitten zum ID-Dienst und anderen Experience Cloud-Lösungskombinationen.
 
 * [Häufig gestellte Fragen zum ID-Dienst](faq.md)
 * [Häufig gestellte Fragen zu Analytics und zum ID-Dienst](analytics-faq.md)
