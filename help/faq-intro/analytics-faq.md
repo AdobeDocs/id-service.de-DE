@@ -1,19 +1,19 @@
 ---
-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bezüglich Analytics und des ID-Diensts.
-keywords: ID-Dienst
-seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bezüglich Analytics und des ID-Diensts.
-seo-title: Häufig gestellte Fragen zu Analytics und zum ID-Dienst
-title: Häufig gestellte Fragen zu Analytics und zum ID-Dienst
-uuid: 35 ed 79 a 9-eccc -4 b 54-8451-606 f 091 c 73 b 7
+description: Häufig gestellte Fragen zu Funktionen, Funktionen und Problemen im Zusammenhang mit der Verwendung von Analytics mit dem Experience Platform-Identitätsdienst
+keywords: Experience Platform-Identitätsdienst
+seo-description: Häufig gestellte Fragen zu Funktionen, Funktionen und Problemen im Zusammenhang mit der Verwendung von Analytics mit dem Identitätsdienst.
+seo-title: Häufig gestellte Fragen zu Analytics und Identitätsdienst
+title: Häufig gestellte Fragen zu Analytics und Identitätsdienst
+uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Häufig gestellte Fragen zu Analytics und zum ID-Dienst{#analytics-and-id-service-faqs}
+# Analytics and Identity Service FAQs{#analytics-and-id-service-faqs}
 
-Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bezüglich Analytics und des ID-Diensts.
+Häufig gestellte Fragen zu Funktionen, Funktionen und Problemen im Zusammenhang mit der Verwendung von Analytics mit dem Identitätsdienst.
 
 ## Tracking-Server {#section-9a2ad7842e364c869e1650480d17f8ef}
 
@@ -23,11 +23,11 @@ Jeder richtig konfigurierte AppMeasurement-Codeabschnitt enthält die Informatio
 
 In einigen Fällen teilen Kunden ihre Analytics AppMeasurement-Datei jedoch auf verschiedene Dateien auf. Beispielsweise verwenden einige Kunden eine Datei für Konfigurationsvariablen, eine zweite für Plug-ins und eine dritte für AppMeasurement-Code. Dies wird nicht empfohlen.
 
-Wenn Sie die Informationen für Ihren Tracking-Server nicht finden, ist Ihre Analytics-Instanz möglicherweise nicht richtig konfiguriert. Wenden Sie sich an den [Kundendienst](https://helpx.adobe.com/marketing-cloud/contact-support.html), wenn Sie die Informationen für Ihren Tracking-Server nicht finden.
+Wenn Sie Ihre Tracking-Server-Informationen nicht finden können, ist Ihre Analytics-Instanz möglicherweise nicht richtig konfiguriert. Wenden Sie sich an den [Kundendienst](https://helpx.adobe.com/marketing-cloud/contact-support.html), wenn Sie die Informationen für Ihren Tracking-Server nicht finden.
 
-**Was geschieht, wenn ich den ID-Dienst verwende und meinen Tracking-Server ändere?**
+**Was passiert, wenn ich den Identitätsdienst verwende und meinen Tracking-Server ändere?**
 
-Es ändert sich nichts für Benutzer, die bereits durch den ID-Dienst identifiziert wurden. Bestehende Besucher, die nicht zum ID-Dienst migriert haben und weiterhin mit einem Analytics-Cookie identifiziert werden, befinden sich in diesem Fall in der Schwebe. Die Anzahl der betroffenen Benutzer hängt davon ab, wie lange der ID-Dienst aktiv war. Zum Beispiel verfügt eine Implementierung, bei der der ID-Dienst für 1 Woche aktiv war, möglicherweise über mehr bestehende Benutzer als bei einer Implementierung, bei der der ID-Dienst für 6 Monate aktiv war, da die zu dieser Site zurückkehrenden Benutzer migriert würden.
+Für Benutzer, die bereits durch den Identitätsdienst identifiziert wurden, ändert sich nichts. Veraltete Besucher, die nicht zum Identitätsdienst migriert wurden und weiterhin mit einem Analytics-Cookie identifiziert wurden, werden abgeschnitten. Die Anzahl der betroffenen Benutzer hängt davon ab, wie lange der Identitätsdienst aktiv war. Beispielsweise verfügt eine Implementierung, bei der der Identitätsdienst für 1 Woche aktiv war, möglicherweise über mehr alte Benutzer als eine Implementierung, bei der der Identitätsdienst für 6 Monate aktiv war, da die Benutzer, die zur Site zurückkehren, migriert worden wären.
 
 ## Implementierung und Konfiguration {#section-6028f55d5b514ae6a631c6a79f42fb89}
 
@@ -35,15 +35,15 @@ Es ändert sich nichts für Benutzer, die bereits durch den ID-Dienst identifizi
 
 Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das domänenübergreifende Tracking für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren (z. B. Safari).
 
-In Browsern, die Drittanbieter-Cookies akzeptieren, wird bei der Anforderung ein Cookie in der [demdex.net-Domäne](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) gesetzt, um eine Besucher-ID abzurufen. Mit diesem Cookie kann der ID-Dienst für alle Domänen, die mit derselben Organisations-ID konfiguriert sind, dieselbe Experience Cloud-Besucher-ID zurückgeben. Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domäne eine neue Experience Cloud-Besucher-ID zugewiesen.
+In Browsern, die Drittanbieter-Cookies akzeptieren, wird bei der Anforderung ein Cookie in der [demdex.net-Domäne](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) gesetzt, um eine Besucher-ID abzurufen. Mit diesem Cookie kann der Identitätsdienst dieselbe Experience Cloud-Besucher-ID für alle Domänen zurückgeben, die mit derselben Organisations-ID konfiguriert sind. Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domäne eine neue Experience Cloud-Besucher-ID zugewiesen.
 
 Auch wenn ein CNAME konfiguriert ist, werden Besucher bei Browsern, die keine Drittanbieter-Cookies akzeptieren, auf sekundärer Site und Hauptsite auf unterschiedliche Weise identifiziert, wenn nicht zuerst die Haupteinstiegssite besucht wird.
 
 **Warum ist der Experience Cloud ID-Parameter (MID) nicht in der Analytics-Anforderung enthalten?**
 
-Gibt der ID-Dienst Informationen richtig zurück, ohne dass der `MID`-Parameter angezeigt wird, überprüfen Sie, ob Sie auf eine unterstützte Version von AppMeasurement aktualisiert haben.
+If the Identity Service is returning information correctly but you do not see the `MID` parameter, make sure that you&#39;ve upgraded to a supported version of AppMeasurement.
 
-**Können mit dem ID-Dienst für eine Site H-Code und AppMeasurement für JavaScript verwendet werden**?
+**Kann meine Site H-Code und appmeasurement für javascript mit dem Identitätsdienst verwenden?**
 
 Ja. Vorausgesetzt, dass beide Dateien auf dieselbe VisitorAPI.js-Datei verweisen, können Sie eine Kombination aus H-Code und AppMeasurement für JavaScript für eine Site verwenden.
 
@@ -51,44 +51,44 @@ Auch wenn der H-Code im visitorAPI.js-Code Version 1.6 oder höher nicht unters
 
 **Was ist eine Übergangsphase und wie konfiguriere ich sie?**
 
-Weitere Informationen finden Sie unter [Die Übergangsphase für den ID-Dienst](../reference/analytics-reference/grace-period.md) und wenden [Sie sich an den Kundendienst](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+See [The Identity Service Grace Period](../reference/analytics-reference/grace-period.md) and contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
-**Warum muss ich zur Echtzeit-Datenerfassung (Real-time Data Collection, RDC) migrieren, um den ID-Dienst zu verwenden?**
+**Warum muss ich zur Echtzeit-Datenerfassung (Real-Time Data Collection, RDC) migrieren, um den Identitätsdienst zu verwenden?**
 
 RDC bietet globale Leistungsverbesserungen und ist erforderlich, um sicherzustellen, dass Ihre Implementierung für künftige Funktionen bereit ist, die das globale Netzwerk der Edge-Hinweise von Adobe nutzen. Siehe [Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f)).
 
 ## Berichterstellung {#section-123cd55a32e54a45a23beb140becfa8f}
 
-**Was sind mögliche Ursachen für Diskrepanzen bei der Verwendung von Analytics mit dem ID-Dienst?**
+**Was sind mögliche Ursachen für Diskrepanzen bei der Verwendung von Analytics mit dem Identitätsdienst?**
 
-Häufige Ursachen für Diskrepanzen bei der Verwendung des ID-Diensts:
+Häufige Ursachen für Diskrepanzen bei der Verwendung des Identitätsdiensts:
 
 * Älterer Cookie s_vi wird weiterverwendet. Dies führt zu Diskrepanzen bei der Datenerfassung.
 * Besucher, die von einer Umfrage zu einem Popup navigieren, werden doppelt gezählt.
 
 ## Cookies {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
-**Was geschieht in Analytics, wenn der ID-Dienst keinen AMCV-Cookie setzen kann?**
+**Was geschieht in Analytics, wenn der Identitätsdienst das AMCV-Cookie nicht festlegen kann?**
 
 Es gibt drei mögliche Szenarios, in denen sich dies auf Analytics-Daten für neue Besucher auswirkt:
 
 1. Ein Endbenutzer verlässt eine Seite, bevor die AMCV-Cookies erfolgreich gesetzt wurden (innerhalb eines Zeitüberschreitungsintervalls von 30 Sekunden).
 
-   Wenn ein Besucher eine Seite verlässt, bevor sie geladen wurde, wird der Analytics-Treffer nicht gesendet. In diesem Szenario erhält Analytics keine Daten, die als verloren betrachtet werden, da die Seite zu früh geschlossen wurde. Im Rahmen von Tests, in denen auch entlegene Regionen berücksichtigt wurden, wurde festgestellt, dass dieses Szenario im Durchschnitt auf weniger als 1 % des Datenverkehrs zutrifft. Beachten Sie, dass dieses Szenario manchmal auch ohne den MCID-Dienst auftritt. Es handelt sich um ein Artefakt der Einbeziehung des Analytics-Datenerfassungscodes am unteren Rand der Seite.
+   Wenn ein Besucher eine Seite verlässt, bevor sie geladen wurde, wird der Analytics-Treffer nicht gesendet. In diesem Szenario erhält Analytics keine Daten, die als verloren betrachtet werden, da die Seite zu früh geschlossen wurde. Im Rahmen von Tests, in denen auch entlegene Regionen berücksichtigt wurden, wurde festgestellt, dass dieses Szenario im Durchschnitt auf weniger als 1 % des Datenverkehrs zutrifft. Beachten Sie, dass dieses Szenario manchmal auch ohne den Identitätsdienst auftritt. Es handelt sich um ein Artefakt der Einbeziehung des Analytics-Datenerfassungscodes am unteren Rand der Seite.
 
-1. Einem Endbenutzer wird kein ID-Dienst oder keine Analytics-ID innerhalb des Zeitüberschreitungsintervalls von 30 Sekunden zugewiesen, da die Verbindung zu langsam ist oder das Ladesymbol im Browser „rotiert“.
+1. Dem Endbenutzer wird aufgrund langsamer Verbindungen oder Browser &quot;roinning&quot; kein Identitätsdienst oder eine Analytics-ID innerhalb des 30-Sekunden-Zeitlimits zugewiesen.
 
-   Weder der ID-Dienst noch die Analytics-ID werden festgelegt und dem Besucher wird eine clientseitige ID zugewiesen. Dadurch können zwar Analytics-Daten erfasst werden, das Besucherprofil wird jedoch unterbrochen, wenn auf einer nachfolgenden Seite eine Analytics-ID festgelegt wird. Die clientseitige ID entspricht auch keinem bestehenden Besucherprofil, das in Audience Manager oder Analytics gespeichert ist. Darüber hinaus führt diese clientseitige ID in Analytics zu zwei unterschiedlichen Besuchern, wenn zwei verschiedene Domänen an dieselbe Report Suite gesendet werden.
+   Sowohl der Identitätsdienst als auch die Analytics-ID würden nicht festgelegt und dem Besucher würde eine clientseitige ID zugewiesen. Dadurch können zwar Analytics-Daten erfasst werden, das Besucherprofil wird jedoch unterbrochen, wenn auf einer nachfolgenden Seite eine Analytics-ID festgelegt wird. Die clientseitige ID entspricht auch keinem bestehenden Besucherprofil, das in Audience Manager oder Analytics gespeichert ist. Darüber hinaus führt diese clientseitige ID in Analytics zu zwei unterschiedlichen Besuchern, wenn zwei verschiedene Domänen an dieselbe Report Suite gesendet werden.
 
-1. Einem Endbenutzer wird innerhalb des Zeitüberschreitungsintervalls von 30 Sekunden statt einer ID des ID-Diensts eine standardmäßige Analytics-Tracking-ID zugewiesen und die Übergangsphase wird nicht aktiviert.
+1. Dem Endbenutzer wird innerhalb des 30-Sekunden-Zeitfensters keine Identitätsdienst-ID zugewiesen, es wird jedoch eine Standard-Analytics-Tracking-ID zugewiesen und die Übergangsphase ist nicht aktiviert.
 
    Szenario 3 führt zu dem gleichen Ergebnis wie Szenario 2, da eine clientseitige ID verwendet wird.
 
 >[!TIP]
 >
->Die Verwendung der aktuellen Updates für visitorapi. js und appmeasurement. js mit den Standardeinstellungen sollte schwerwiegende oder spürbare Auswirkungen aus den drei obigen Szenarien vermeiden.
+>Wenn Sie die neuesten Versionen von VisitorAPI.js und AppMeasurement.js mit den Standardeinstellungen verwenden, sollten Sie alle schwerwiegenden oder spürbaren Folgen der drei oben beschriebenen Szenarios vermeiden können.
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
