@@ -1,19 +1,19 @@
 ---
-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst.
+description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service.
 keywords: ID-Dienst
-seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst.
+seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service.
 seo-title: Versionshinweise für 2019
 title: Versionshinweise für 2019
-uuid: a 5 a 59410-7 f 5-48 f 9-a 30 a-fef 1 c 2 e 2 b 558
+uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Versionshinweise für 2019 {#release-notes}
 
-Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst.
+Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service.
 
 ## Versionshinweise für 2019 {#topic-1b9a1c3ec5044e1c987785950f697e25}
 
@@ -27,6 +27,6 @@ Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des [!DNL Experi
 
 | Element | Beschreibung |
 |---|---|
-| Die Kennzeichnung `disableIdSyncs` funktioniert nicht, nachdem eine Zeichenfolge übergeben wurde. | Behoben. Values set on `disableidSyncs` parameter for `getInstance` function are now being honored. |
+| Die Kennzeichnung `disableIdSyncs` funktioniert nicht, nachdem eine Zeichenfolge übergeben wurde. | Behoben. Werte, die für den `disableidSyncs` Parameter in der `getInstance` Funktion festgelegt wurden, werden jetzt berücksichtigt. |
 | Drittanbieter-iFrames erhalten die ECID nicht. | ECIDs, die in der mobilen Version von Safari und in verschiedenen iFrames nicht funktionierten, wurden korrigiert. |
 
