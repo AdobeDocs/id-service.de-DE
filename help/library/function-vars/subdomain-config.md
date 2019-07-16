@@ -1,19 +1,19 @@
 ---
-description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Cloud ID-Dienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
+description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Platform-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
 keywords: ID-Dienst
-seo-description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Cloud ID-Dienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
+seo-description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Platform-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
 seo-title: audienceManagerServer und audienceManagerServerSecure
 title: audienceManagerServer und audienceManagerServerSecure
-uuid: e 21 cacbf -5151-4 d 34-b 0 f 7-9 e 90275 f 4 c 7 c
+uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # audienceManagerServer und audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Cloud ID-Dienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
+Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Platform-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
 
 **Syntax:**
 
@@ -22,14 +22,14 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 **Zielsetzung**
 
-Normally, the [!DNL Experience Cloud] ID service makes calls to [!DNL Adobe] at `dpm.demdex.net`. In bestimmten Fällen möchten Sie nicht, dass dieses Ziel aufgerufen wird, weil es zu allgemein oder zu sehr nach einem Drittanbieter aussieht. Damit der Aufruf des ID-Diensts mehr wie ein Erstanbieter-Aufruf aussieht, können Sie mit den folgenden Konfigurationen den Namen Ihrer untergeordneten [!DNL Audience Manager]-Domäne `demdex.net` hinzuzufügen (siehe unten). Weitere Informationen über den `dpm.demdex.net`-Aufruf finden Sie unter [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+Normalerweise führt der [!DNL Experience Cloud] ID-Dienst Aufrufe an [!DNL Adobe] unter Verwendung von `dpm.demdex.net` durch. In bestimmten Fällen möchten Sie nicht, dass dieses Ziel aufgerufen wird, weil es zu allgemein oder zu sehr nach einem Drittanbieter aussieht. Damit der Aufruf des ID-Diensts mehr wie ein Erstanbieter-Aufruf aussieht, können Sie mit den folgenden Konfigurationen den Namen Ihrer untergeordneten [!DNL Audience Manager]-Domäne `demdex.net` hinzuzufügen (siehe unten). Weitere Informationen über den `dpm.demdex.net`-Aufruf finden Sie unter [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
-**Voraussetzungen**
+**Anforderungen**
 
 Für diese Konfigurationen müssen Sie Folgendes verwenden:
 
-* The [!DNL Audience Manager] subdomain name of record for your company. Überprüfen Sie den Namen oder fragen Sie Ihren Berater danach.
-* The subdomain name associated with your [!DNL Organization ID].
+* Den Namen der untergeordneten [!DNL Audience Manager]-Domäne für den Datensatz Ihres Unternehmens. Überprüfen Sie den Namen oder fragen Sie Ihren Berater danach.
+* Den Namen der untergeordneten Domäne, der Ihrer [!DNL Organization ID] zugewiesen ist.
 * *Beide* Konfigurationsparameter mit dem gleichen untergeordneten Domänennamen.
 
 **Codebeispiel**
