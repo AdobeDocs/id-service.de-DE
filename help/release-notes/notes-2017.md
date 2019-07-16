@@ -1,25 +1,25 @@
 ---
-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2017.
+description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2017.
 keywords: ID-Dienst
-seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2017.
+seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2017.
 seo-title: Versionshinweise für 2017
 title: Versionshinweise für 2017
-uuid: 79452 df 0-49 db -42 b 8-96 fe -01 aa 7629 fbb 5
+uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Versionshinweise für 2017 {#release-notes}
 
-Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2017.
+Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2017.
 
 Diese Änderungen sind auch in den [Experience Cloud-Versionshinweisen](https://marketing.adobe.com/resources/help/en_US/whatsnew/) enthalten. Ältere ID-Dienst-Versionshinweise finden Sie unter [frühere Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) oder über die Links am unteren Rand dieser Seite.
 
 >[!NOTE]
 >
->Für März, April, Mai und Oktober 2017 wurden keine kundenrelevanten Versionshinweise oder Codeänderungen vorgenommen. Für diese Monate blieb der ID-Dienstcode unverändert auf dem Stand von Version 2.1.
+>Für die Monate März, April, Mai und Oktober 2017 gibt es keine kundenbezogenen Versionshinweise oder Code-Änderungen. Für diese Monate blieb der ID-Dienstcode unverändert auf dem Stand von Version 2.1.
 
 ## Version 2.5 {#section-27b441509124493f80984ed09bd9e88b}
 
@@ -42,7 +42,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert <span class="codeph">visitor.FIELDS</span> steuern, welche IDs zurückgegeben werden. See <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
+   <td colname="col2"> <p>Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert <span class="codeph"> visitor.FIELDS</span> steuern, welche IDs zurückgegeben werden. Siehe <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,9 +51,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Es wurde ein Problem mit Chrome behoben, bei dem der ID-Dienst beim Klick auf die Zurück-Schaltfläche im Browser einen Fehler ausgelöst hat.
 * Der ID-Dienst wiederholt die ID-Synchronisationen nun, wenn sich die Regions-ID in der Ereignisaufrufantwort ändert.
-* Es wurde neue Dokumentation hinzugefügt: [Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3). Darin wird erklärt, wie Sie Aufrufe an Adobe-Domänen, die vom ID-Dienst verwendet werden, gesondert zulassen können.
+* Es wurde neue Dokumentation hinzugefügt: [Content Security Policies und der Experience Platform Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), der erklärt, wie Whitelist-Aufrufe an die von dem ID-Dienst verwendeten Adobe-Domänen gesendet werden.
 
-## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
+## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
 August 2017
 
@@ -74,9 +74,9 @@ August 2017
 
 **Überarbeitete Dokumentation**
 
-Der Abschnitt  [Häufig](/help/faq-intro/faq-intro.md) gestellte Fragen enthalten verschiedene häufig gestellte Fragen für verschiedene [!DNL Experience Cloud] Lösungen.
+Der Abschnitt [Häufig gestellte Fragen (FAQ)](/help/faq-intro/faq-intro.md) wurde aktualisiert und überarbeitet und enthält jetzt separate häufig gestellte Fragen für unterschiedliche [!DNL Experience Cloud]-Lösungen.
 
-## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
+## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
 Juli 2017
 
@@ -106,7 +106,7 @@ Juli 2017
 
 ## Version 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
-Veröffentlichungsdatum: Juni 2017
+Veröffentlichung: Juni 2017
 
 <table id="table_7E412383E89D46759B00FE7328C9946F"> 
  <thead> 
@@ -118,7 +118,7 @@ Veröffentlichungsdatum: Juni 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain und whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>Diese Konfigurationen ermöglichen die Kommunikation zwischen verschiedenen Instanzen von ID-Dienstcode, die in einem iFrame implementiert sind, und solchen, die in die übergeordnete Seite implementiert sind. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird.  </p> </td> 
+   <td colname="col2"> <p>Diese Konfigurationen ermöglichen die Kommunikation zwischen verschiedenen Instanzen von ID-Dienstcode, die in einem iFrame implementiert sind, und solchen, die in die übergeordnete Seite implementiert sind. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -161,7 +161,7 @@ Veröffentlichungsdatum: Juni 2017
  </tbody> 
 </table>
 
-## Version 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
+## Version 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
 
 Veröffentlichungsdatum: Februar 2017
 
@@ -176,31 +176,31 @@ Veröffentlichungsdatum: Februar 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> ID-Service-API-Eigenschaft, <span class="codeph">idSyncContainerID </span></p> </td> 
-   <td colname="col2"> <p>Durch diese Eigenschaft wird die Container-ID festgelegt, die von <span class="keyword">Audience Manager</span> für ID-Synchronisationen verwendet wird. Weitere Details unter <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external">idSyncContainerID</a>. </p> </td> 
+   <td colname="col1"> <p> ID-Dienst-API-Eigenschaft, <span class="codeph">idSyncContainerID</span></p> </td> 
+   <td colname="col2"> <p>Durch diese Eigenschaft wird die Container-ID festgelegt, die von <span class="keyword">Audience Manager</span> für ID-Synchronisationen verwendet wird. Weitere Details unter <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>ID-Service-API-Methode, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
-   <td colname="col2"> <p>Bei dieser öffentlichen Methode wird die Zusatzdaten-ID (<span class="wintitle">Supplemental Data ID</span>/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. See <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
+   <td colname="col1"> <p>ID-Dienst-API-Methode, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
+   <td colname="col2"> <p>Bei dieser öffentlichen Methode wird die Zusatzdaten-ID (<span class="wintitle">Supplemental Data ID</span>/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Siehe <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local">appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Fehlerbehebungen**
 
-Es wurde ein Fehler behoben, durch den der ID-Service redundante Serveraufrufe für eine ID durchführte, statt die im AMCV-Cookie gespeicherte ID zu verwenden. (MCID-296)
+Es wurde ein Fehler behoben, durch den der ID-Dienst redundante Serveraufrufe für eine ID durchführte, statt die im AMCV-Cookie gespeicherte ID zu verwenden. (MCID-296)
 
 **Neue Dokumentation**
 
 [Verwendung der DNS-Vorab-Abfrage mit unterschiedlichen Experience Cloud-Lösungen und -Services `Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
-## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
+## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
 Januar 2017
 
 >[!IMPORTANT]
 >
->Der ID-Dienst-Code v 2.0 synchronisiert IDs automatisch mit Adobe Media Optimizer. This means you&#39;ll see a call from the page to `cm.eversttech.net`, which is a legacy [!DNL Media Optimizer] domain controlled by [!DNL Adobe]. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+>Der ID-Dienst-Code v2.0 synchronisiert IDs standardmäßig automatisch mit Adobe Media Optimizer. Das bedeutet, dass die Seite `cm.eversttech.net`, eine ältere [!DNL Media Optimizer]-Domäne, die von [!DNL Adobe] verwaltet wird, aufruft. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Fehlerbehebungen und Verbesserungen**
 
