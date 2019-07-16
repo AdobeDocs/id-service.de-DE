@@ -2,20 +2,20 @@
 description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit deren Hilfe Browser steuern können, welche Art von Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs festgelegt haben, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen zulassen. Sie müssen die hier aufgeführten Adobe-Domänen Ihren CSP-Whitelists hinzufügen.
 keywords: ID-Dienst
 seo-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit deren Hilfe Browser steuern können, welche Art von Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs festgelegt haben, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen zulassen. Sie müssen die hier aufgeführten Adobe-Domänen Ihren CSP-Whitelists hinzufügen.
-seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst
-title: Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst
-uuid: 7399 eef 3-01 c 1-4730-834 e-e 2 dd 2 c 7791 FF
+seo-title: Content Security Policies und der Experience Platform Identity Service
+title: Content Security Policies und der Experience Platform Identity Service
+uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Inhaltssicherheitsrichtlinien und der Experience Cloud ID-Dienst {#content-security-policies-and-the-experience-cloud-id-service}
+# Content Security Policies and the Experience Platform Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
 
 Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit deren Hilfe Browser steuern können, welche Art von Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs festgelegt haben, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen zulassen. Sie müssen die hier aufgeführten Adobe-Domänen Ihren CSP-Whitelists hinzufügen.
 
-## CSP-Überblick {#section-5fde5c00a678455c914b8307a8caab82}
+## CSP-Übersicht {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSPs verwenden den HTTP-Header `Content-Security-Policy`, um die Art der Ressourcen zu steuern, die ein Browser zulässt oder die auf einer Seite geladen werden. Durch Anwenden einer CSP können Sie Folgendes vermeiden:
 
@@ -52,13 +52,13 @@ Fügen Sie diese Domänenamen oder URLs Ihrer CSP für alle aufgeführten Experi
    <td colname="col2"> <p>Nehmen Sie <span class="codeph">*.tt.omtrdc.net</span> in Ihre CSP auf. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Besucher-ID-Service</b> </p> </td> 
-   <td colname="col2"> <p>Nehmen Sie <span class="codeph">*.demdex.net</span> in Ihre CSP auf. </p> <p>Calls to the <span class="codeph"> demdex.net</span> domain are used to generate the <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud ID Service</a> and for ID syncs. Siehe auch <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
+   <td colname="col1"> <p> <b>Besucher-ID-Dienst</b> </p> </td> 
+   <td colname="col2"> <p>Nehmen Sie <span class="codeph">*.demdex.net</span> in Ihre CSP auf. </p> <p>Calls to the <span class="codeph"> demdex.net</span> domain are used to generate the <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Platform Identity Service</a> and for ID syncs. Siehe auch <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Content Security Policy Reference](https://content-security-policy.com/)
 >* [MDN: Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
