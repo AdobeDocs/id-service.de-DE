@@ -4,9 +4,9 @@ keywords: ID-Dienst
 seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für 2018.
 seo-title: Versionshinweise für 2018
 title: Versionshinweise für 2018
-uuid: 771 b 5 b 11-a 8 e 3-464 c-b 65 e-b 15135584 ace
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -44,7 +44,7 @@ Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Verbesserte Sicherheit für AMCV-Cookies </p> </td> 
-   <td colname="col2"> <p>Im Rahmen einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek in den für die Sitzungsverwaltung verwendeten Cookies nicht die richtigen Attribute angegeben werden. Das konnte dazu führen, dass Cookie-Informationen versehentlich freigegeben wurden. Um dieses Problem zu beheben, wurde eine Konfiguration hinzugefügt, mit der Kunden dem AMCV-Cookie das Attribut „Secure“ hinzufügen können. Siehe „secureCookie“. </p> </td> 
+   <td colname="col2"> <p>Im Rahmen einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek in den für die Sitzungsverwaltung verwendeten Cookies nicht die richtigen Attribute angegeben werden. Das konnte dazu führen, dass Cookie-Informationen versehentlich freigegeben wurden. Um dieses Problem zu beheben, wurde eine Konfiguration hinzugefügt, mit der Kunden dem AMCV-Cookie das Attribut „Secure“ hinzufügen können. Siehe secureCookie. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Integrationscode und ID müssen Zahlen oder nicht leere Zeichenfolgen sein. </p> </td> 
@@ -78,7 +78,7 @@ Funktionen, Aktualisierungen oder Änderungen am Experience Cloud ID-Dienst für
 
 >[!NOTE]
 >
->Es wird empfohlen, ein Upgrade von Version 3.1.0 auf die neueste Version zum frühesten Zeitpunkt durchzuführen. Siehe Beschreibung für Version 3.1.2. Das neueste Bundle ist über Adobe Launch, DTM und AppMeasurement verfügbar.
+>Es wird empfohlen, von Version 3.1.0 umgehend auf die neueste Version zu aktualisieren. Siehe Beschreibung für Version 3.1.2. Das aktuelle Bundle ist in Adobe Experience Platform Launch, DTM und appmeasurement verfügbar.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
