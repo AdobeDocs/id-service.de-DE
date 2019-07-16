@@ -1,24 +1,24 @@
 ---
-description: Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Cloud ID-Dienst arbeiten können.
+description: Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Platform Identity Service arbeiten können.
 keywords: ID-Dienst
-seo-description: Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Cloud ID-Dienst arbeiten können.
+seo-description: Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Platform Identity Service arbeiten können.
 seo-title: ID-Dienst-API
 title: ID-Dienst-API
-uuid: 9663 cf 9 d -64 be -4 b 68-a 0 e 1-c 1 a 1 eb 70 fbd 5
+uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # ID-Dienst-API{#id-service-api}
 
-Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Cloud ID-Dienst arbeiten können.
+Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Platform Identity Service arbeiten können.
 
-* [Konfigurationen - Übersicht](function-vars/function-vars.md)
+* [Konfigurationsübersicht](function-vars/function-vars.md)
 * [Übersicht über Methoden](get-set/get-set.md)
 
 >[!NOTE]
 >
->The *Experience Cloud ID Javascript Libraries* have moved recently. Die neueste Version der ECID-JS-Bibliotheken finden Sie unter [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Die *Javascript-Bibliotheken des Experience Cloud ID-Diensts* wurden vor Kurzem verschoben. Die neueste Version der ECID-JS-Bibliotheken finden Sie unter [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
