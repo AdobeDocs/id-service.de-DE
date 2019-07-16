@@ -4,9 +4,9 @@ keywords: ID-Dienst
 seo-description: Mit dieser Funktion können Sie die Experience Cloud ID domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst implementiert haben und Inhaber der Quell- und Zieldomäne sein. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 seo-title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
-uuid: 06 b 453 ee -73 c 5-4625-82 d 9-877 ad 2 b 4 f 702
+uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -25,14 +25,14 @@ Inhalt:
 
 ## Domänenübergreifendes Tracking von Benutzern, wenn Browser Drittanbieter-Cookies blockieren {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud ID Service](../../introduction/cookies.md) ). Der Erstanbieter-Cookie enthält die MID, eine eindeutige ID für diesen Besucher. Der Drittanbieter-Cookie enthält eine andere ID, die vom ID-Dienst verwendet wird, um die MID zu generieren. Wenn ein Browser diesen Drittanbieter-Cookie blockiert, kann der Dienst folgende Aktionen nicht durchführen:
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Platform Identity Service](../../introduction/cookies.md) ). Das Erstanbieter-Cookie enthält die MID, eine eindeutige ID für diesen Besucher. Das Drittanbieter-Cookie enthält eine andere ID, die vom ID-Dienst verwendet wird, um die MID zu generieren. Wenn ein Browser diesen Drittanbieter-Cookie blockiert, kann der Dienst folgende Aktionen nicht durchführen:
 
 * Neugenerieren einer eindeutigen ID für den Site-Besucher, wenn dieser zu einer anderen Domäne navigiert
 * Verfolgen von Besuchern über verschiedene Domänen hinweg, deren Inhaber Ihre Organisation ist
 
-To help solve this problem, implement ` Visitor.appendVisitorIDsTo( *`url`*)`. Mit dieser Eigenschaft kann der ID-Dienst Site-Besucher über mehrere Domänen hinweg nachverfolgen, selbst wenn die jeweiligen Browser Drittanbieter-Cookies blockieren. Funktionsweise:
+Um dieses Problem zu lösen, implementieren Sie ` Visitor.appendVisitorIDsTo( *`url`*)`. Mit dieser Eigenschaft kann der ID-Dienst Site-Besucher über mehrere Domänen hinweg nachverfolgen, selbst wenn die jeweiligen Browser Drittanbieter-Cookies blockieren. Funktionsweise:
 
-* As a visitor browses to your other domains, the ` Visitor.appendVisitorIDsTo( *`url`*)` appends the MID as a query parameter in the URL redirect from the original domain to the destination domain.
+* Wenn ein Besucher zu Ihren anderen Domänen navigiert, fügt ` Visitor.appendVisitorIDsTo( *`url`*)` die MID als Abfrageparameter in der URL-Umleitung von der ursprünglichen Domäne zur Zieldomäne hinzu.
 * Der ID-Dienstcode auf der Zieldomäne extrahiert die MID aus der URL, statt bei Adobe eine neue Besucher-ID anzufordern. Diese Anforderung schließt die Drittanbieter-Cookie-ID ein, die in diesem Fall nicht verfügbar ist.
 * Der ID-Dienstcode auf der Zielseite verwendet die übergebene MID zum Nachverfolgen des Besuchers.
 
@@ -40,7 +40,7 @@ Details erhalten Sie im Codebeispiel.
 
 ## Codebeispiel für das Anhängen von Besucher-IDs {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-The following example can help you get started with ` Visitor.appendVisitorIDsTo( *`url`*)`. Wenn dies richtig implementiert wird, sollte Ihr JavaScript-Code etwa wie im folgenden Beispiel aussehen.
+Das folgende Beispiel hilft Ihnen bei den ersten Schritten mit ` Visitor.appendVisitorIDsTo( *`url`*)`. Wenn dies richtig implementiert wird, sollte Ihr JavaScript-Code etwa wie im folgenden Beispiel aussehen.
 
 ```js
 //Code on Domain A 
@@ -66,7 +66,7 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Unterstützung für </th> 
-   <th colname="col2" class="entry"> Hier finden Sie  </th> 
+   <th colname="col2" class="entry"> Hier finden Sie </th> 
   </tr> 
  </thead>
  <tbody> 
