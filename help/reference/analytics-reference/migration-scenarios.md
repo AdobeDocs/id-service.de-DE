@@ -2,16 +2,16 @@
 description: Enthält Beispiel-Serverkonfigurationen und führt die erforderlichen Migrationsschritte auf.
 keywords: ID-Dienst
 seo-description: Enthält Beispiel-Serverkonfigurationen und führt die erforderlichen Migrationsschritte auf.
-seo-title: Migrationsszenarios für den Experience Cloud ID-Dienst
-title: Migrationsszenarios für den Experience Cloud ID-Dienst
-uuid: 9 e 229045-6508-48 c 4-ae 39-9537 b 4941853
+seo-title: Migrationsszenarien für die Experience Platform Identity Service
+title: Migrationsszenarien für die Experience Platform Identity Service
+uuid: 9e229045-6508-48c4-ae39-9537b4941853
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Migrationsszenarios für den Experience Cloud ID-Dienst {#experience-cloud-id-service-migration-scenarios}
+# Experience Platform Identity Service Migration Scenarios {#experience-cloud-id-service-migration-scenarios}
 
 Enthält Beispiel-Serverkonfigurationen und führt die erforderlichen Migrationsschritte auf.
 
@@ -23,7 +23,7 @@ Enthält Beispiel-Serverkonfigurationen und führt die erforderlichen Migrations
 * **Datenerfassungsserver**: metrics.beispiel.com, smetrics.beispiel.com
 * **Analytics-JavaScript-Datei**: nur eine Datei für alle Seiten der Site
 
-Zuerst muss der Kunde für die Experience Cloud freigeschaltet werden (siehe [Voraussetzungen](../../reference/requirements.md)). Außerdem ist der Kunde nicht auf eine Übergangsphase angewiesen, da er nur über eine einzige JavaScript-Datei verfügt. Der Kunde richtet außerdem die Besuchermigration ein und eliminiert dann den Datenerfassungs-CNAME, da er nicht mehr benötigt wird.
+Zuerst muss der Kunde für Experience Cloud freigeschaltet werden (siehe [Anforderungen](../../reference/requirements.md)). Außerdem ist der Kunde nicht auf eine Übergangsphase angewiesen, da er nur über eine einzige JavaScript-Datei verfügt. Der Kunde richtet außerdem die Besuchermigration ein und eliminiert dann den Datenerfassungs-CNAME, da er nicht mehr benötigt wird.
 
 ## Mehrere JavaScript-Dateien, hartcodierte Bild-Tags {#section-a665f6ee202940449198e4e7a5dcac54}
 
@@ -34,7 +34,7 @@ Zuerst muss der Kunde für die Experience Cloud freigeschaltet werden (siehe [Vo
 * **Analytics-JavaScript-Datei**: mehrere JavaScript-Dateien: eine Datei für die Hauptsite und eine weitere Datei für den Supportbereich, der über ein gesondertes CMS verwaltet wird
 * **Weitere Datenerfassungsmethoden**: hartcodierte Bild-Tags in einem Sitebereich
 
-Zuerst muss der Kunde seine Adobe Experience Cloud-Organisations-ID ermitteln (siehe [Voraussetzungen](../../reference/requirements.md)). Anschließend sollte der Kunde eine Migrationsübergangsphase festlegen, da mehrere JavaScript-Dateien eingesetzt werden. This customer will also set up visitor migration and then migrate from `*.2o7.net` to `*.sc.omtrdc.net`.
+Zuerst muss der Kunde seine Adobe Experience Cloud-Organisations-ID ermitteln (siehe [Anforderungen](../../reference/requirements.md)). Anschließend sollte der Kunde eine Migrationsübergangsphase festlegen, da mehrere JavaScript-Dateien eingesetzt werden. Der Kunde richtet außerdem die Besuchermigration ein und migriert dann von `*.2o7.net` auf `*.sc.omtrdc.net`.
 
 Wenn dieser Kunde bei der Vorbereitung der Einführung des [!DNL Experience Cloud] ID-Diensts auf den neuesten Analytics-JavaScript-Code aktualisiert, werden dabei auch alle hartcodierten Bild-Tags für die Verwendung von JavaScript aktualisiert.
 
@@ -47,6 +47,6 @@ Wenn dieser Kunde bei der Vorbereitung der Einführung des [!DNL Experience Clou
 * **Analytics-JavaScript-Datei**: mehrere JavaScript-Dateien: eine Datei für jede Webeigenschaft
 * **Weitere Datenerfassungsmethoden**: Flash-basierter Videoplayer
 
-Zuerst muss der Kunde seine Adobe Experience Cloud-Organisations-ID ermitteln (siehe [Voraussetzungen](../../reference/requirements.md)). Anschließend sollte der Kunde eine Migrationsübergangsphase festlegen, da mehrere JavaScript-Dateien eingesetzt werden. Der Kunde verfolgt Besucher domänenübergreifend über die primäre Domäne und die untergeordneten Domänen und wird daher zusammen mit dem Besucher-ID-Dienst auch weiterhin den Datenerfassungs-CNAME verwenden.
+Zuerst muss der Kunde seine Adobe Experience Cloud-Organisations-ID ermitteln (siehe [Anforderungen](../../reference/requirements.md)). Anschließend sollte der Kunde eine Migrationsübergangsphase festlegen, da mehrere JavaScript-Dateien eingesetzt werden. Der Kunde verfolgt Besucher domänenübergreifend über die primäre Domäne und die untergeordneten Domänen und wird daher zusammen mit dem Besucher-ID-Dienst auch weiterhin den Datenerfassungs-CNAME verwenden.
 
 Wenn dieser Kunde bei der Vorbereitung der Einführung des [!DNL Experience Cloud] ID-Diensts auf den neuesten Analytics-JavaScript-Code aktualisiert, wird dabei auch der Flash-basierte Videoplayer auf die neueste Version von AppMeasurement für Flash aktualisiert.
