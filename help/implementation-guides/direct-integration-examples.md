@@ -2,28 +2,28 @@
 description: Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer direkten Integration und der Experience Cloud ID (MID) ab. Die MID ist eine eindeutige, dauerhafte ID für Ihre Sitebesucher.
 keywords: ID-Dienst
 seo-description: Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer direkten Integration und der Experience Cloud ID (MID) ab. Die MID ist eine eindeutige, dauerhafte ID für Ihre Sitebesucher.
-seo-title: Anwendungsfälle direkt integrieren
-title: Anwendungsfälle direkt integrieren
-uuid: 6 de 1 eb 8 b -4783-4545-8 a 64-ab 6 b 9 ef 93432
+seo-title: Anwendungsfälle der direkten Integration
+title: Anwendungsfälle der direkten Integration
+uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Direct integration use cases {#direct-integration-use-cases}
+# Nutzungsszenarios im Zusammenhang mit einer direkten Integration {#direct-integration-use-cases}
 
 Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer direkten Integration und der Experience Cloud ID (MID) ab. Die MID ist eine eindeutige, dauerhafte ID für Ihre Sitebesucher.
 
 >[!TIP]
 >
->* Review and understand the [code syntax and variables](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) before diving into the use cases.
->* For more information about the MID, see [Cookies and the Experience Cloud ID Service](../introduction/cookies.md).
+>* Überprüfen und verstehen Sie [Codesyntax und Variablen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9), bevor Sie sich mit den Nutzungsszenarios befassen.
+>* For more information about the MID, see [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
 >
 
 
 
-## Use case 1: I have a MID but want to pass my Visitor IDs and set an authentication state {#section-a67d89a343754d1286d03cf08d34b806}
+## Nutzungsszenario 1: Ich habe eine MID, möchte jedoch meine eigenen Besucher-IDs übergeben und einen Authentifizierungsstatus festlegen {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -65,7 +65,7 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
  </tbody> 
 </table>
 
-## Use case 2: I do not have a MID and need to generate one {#section-8e81291f8b684de8b88fae4002ae0029}
+## Nutzungsszenario 2: Ich habe keine MID und muss eine generieren {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
