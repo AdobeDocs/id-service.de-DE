@@ -1,21 +1,21 @@
 ---
-description: Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Cloud ID-Dienst den iframe für die ID-Synchronisierung lädt.
+description: Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Platform Identity Service den iframe für die ID-Synchronisierung lädt.
 keywords: ID-Dienst
-seo-description: Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Cloud ID-Dienst den iframe für die ID-Synchronisierung lädt.
+seo-description: Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Platform Identity Service den iframe für die ID-Synchronisierung lädt.
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
-uuid: aa 2 c 2 fa 4-2 cab -4 e 08-8 d 35-729 a 6 c 3 e 459 a
+uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
-Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Cloud ID-Dienst den iframe für die ID-Synchronisierung lädt.
+Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Platform Identity Service den iframe für die ID-Synchronisierung lädt.
 
-**Syntax:**` `Idsyncattachiframeonwindowload = true | false «(Standard ist `false`.)
+**Syntax:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (Standard ist `false`.)
 
 Bei `idSyncAttachIframeOnWindowLoad: true` lädt der ID-Dienst den iFrame zur ID-Synchronisierung beim Laden des Fensters. Standardmäßig lädt der ID-Dienst den iFrame zur ID-Synchronisierung so schnell wie möglich anstelle des Ladens im Fenster.
 
