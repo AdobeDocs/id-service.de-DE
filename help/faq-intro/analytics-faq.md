@@ -1,12 +1,12 @@
 ---
-description: Häufig gestellte Fragen zu Funktionen, Funktionen und Problemen im Zusammenhang mit der Verwendung von Analytics mit dem Experience Platform-Identitätsdienst
-keywords: Experience Platform-Identitätsdienst
+description: Häufig gestellte Fragen zu Funktionen, Funktionen und Problemen im Zusammenhang mit der Verwendung von Analytics mit dem Experience Cloud-Identitätsdienst
+keywords: Experience Cloud-Identitätsdienst
 seo-description: Häufig gestellte Fragen zu Funktionen, Funktionen und Problemen im Zusammenhang mit der Verwendung von Analytics mit dem Identitätsdienst.
 seo-title: Häufig gestellte Fragen zu Analytics und Identitätsdienst
 title: Häufig gestellte Fragen zu Analytics und Identitätsdienst
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -41,7 +41,7 @@ Auch wenn ein CNAME konfiguriert ist, werden Besucher bei Browsern, die keine Dr
 
 **Warum ist der Experience Cloud ID-Parameter (MID) nicht in der Analytics-Anforderung enthalten?**
 
-If the Identity Service is returning information correctly but you do not see the `MID` parameter, make sure that you&#39;ve upgraded to a supported version of AppMeasurement.
+If the Identity Service is returning information correctly but you do not see the `MID` parameter, make sure that you've upgraded to a supported version of AppMeasurement.
 
 **Kann meine Site H-Code und appmeasurement für javascript mit dem Identitätsdienst verwenden?**
 
@@ -76,7 +76,7 @@ Es gibt drei mögliche Szenarios, in denen sich dies auf Analytics-Daten für ne
 
    Wenn ein Besucher eine Seite verlässt, bevor sie geladen wurde, wird der Analytics-Treffer nicht gesendet. In diesem Szenario erhält Analytics keine Daten, die als verloren betrachtet werden, da die Seite zu früh geschlossen wurde. Im Rahmen von Tests, in denen auch entlegene Regionen berücksichtigt wurden, wurde festgestellt, dass dieses Szenario im Durchschnitt auf weniger als 1 % des Datenverkehrs zutrifft. Beachten Sie, dass dieses Szenario manchmal auch ohne den Identitätsdienst auftritt. Es handelt sich um ein Artefakt der Einbeziehung des Analytics-Datenerfassungscodes am unteren Rand der Seite.
 
-1. Dem Endbenutzer wird aufgrund langsamer Verbindungen oder Browser &quot;roinning&quot; kein Identitätsdienst oder eine Analytics-ID innerhalb des 30-Sekunden-Zeitlimits zugewiesen.
+1. Dem Endbenutzer wird aufgrund langsamer Verbindungen oder Browser "roinning" kein Identitätsdienst oder eine Analytics-ID innerhalb des 30-Sekunden-Zeitlimits zugewiesen.
 
    Sowohl der Identitätsdienst als auch die Analytics-ID würden nicht festgelegt und dem Besucher würde eine clientseitige ID zugewiesen. Dadurch können zwar Analytics-Daten erfasst werden, das Besucherprofil wird jedoch unterbrochen, wenn auf einer nachfolgenden Seite eine Analytics-ID festgelegt wird. Die clientseitige ID entspricht auch keinem bestehenden Besucherprofil, das in Audience Manager oder Analytics gespeichert ist. Darüber hinaus führt diese clientseitige ID in Analytics zu zwei unterschiedlichen Besuchern, wenn zwei verschiedene Domänen an dieselbe Report Suite gesendet werden.
 
