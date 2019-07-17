@@ -1,19 +1,19 @@
 ---
-description: Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Platform Identity Service arbeiten können.
+description: Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Cloud-Identitätsdienst arbeiten können.
 keywords: ID-Dienst
-seo-description: Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Platform Identity Service arbeiten können.
+seo-description: Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Cloud-Identitätsdienst arbeiten können.
 seo-title: ID-Dienst-API
 title: ID-Dienst-API
 uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # ID-Dienst-API{#id-service-api}
 
-Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Platform Identity Service arbeiten können.
+Eigenschaften, Methoden und Konfigurationen, mit denen Sie programmatisch mit dem Experience Cloud-Identitätsdienst arbeiten können.
 
 * [Konfigurationsübersicht](function-vars/function-vars.md)
 * [Übersicht über Methoden](get-set/get-set.md)
