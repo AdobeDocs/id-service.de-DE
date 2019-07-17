@@ -1,19 +1,19 @@
 ---
-description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Platform-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
+description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Cloud-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
 keywords: ID-Dienst
-seo-description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Platform-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
+seo-description: Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Cloud-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
 seo-title: audienceManagerServer und audienceManagerServerSecure
 title: audienceManagerServer und audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # audienceManagerServer und audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Platform-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
+Ändern Sie den Standarddomänennamen, der von Aufrufen zum Experience Cloud-Identitätsdienst verwendet wird, in Ihren eigenen Namen für die Subdomäne mit diesen Konfigurationen.
 
 **Syntax:**
 
