@@ -1,19 +1,19 @@
 ---
-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2017.
+description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2017.
 keywords: ID-Dienst
-seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2017.
+seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2017.
 seo-title: Versionshinweise für 2017
 title: Versionshinweise für 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Versionshinweise für 2017 {#release-notes}
 
-Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2017.
+Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2017.
 
 Diese Änderungen sind auch in den [Experience Cloud-Versionshinweisen](https://marketing.adobe.com/resources/help/en_US/whatsnew/) enthalten. Ältere ID-Dienst-Versionshinweise finden Sie unter [frühere Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) oder über die Links am unteren Rand dieser Seite.
 
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Es wurde ein Problem mit Chrome behoben, bei dem der ID-Dienst beim Klick auf die Zurück-Schaltfläche im Browser einen Fehler ausgelöst hat.
 * Der ID-Dienst wiederholt die ID-Synchronisationen nun, wenn sich die Regions-ID in der Ereignisaufrufantwort ändert.
-* Es wurde neue Dokumentation hinzugefügt: [Content Security Policies und der Experience Platform Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), der erklärt, wie Whitelist-Aufrufe an die von dem ID-Dienst verwendeten Adobe-Domänen gesendet werden.
+* Es wurde neue Dokumentation hinzugefügt: [Content Security-Richtlinien und der Experience Cloud-Identitätsdienst](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), der erklärt, wie Whitelist-Aufrufe an die von dem ID-Dienst verwendeten Adobe-Domänen gesendet werden.
 
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
