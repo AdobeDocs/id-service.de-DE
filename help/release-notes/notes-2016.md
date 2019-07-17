@@ -1,19 +1,19 @@
 ---
-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2016.
+description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2016.
 keywords: ID-Dienst
-seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2016.
+seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2016.
 seo-title: Versionshinweise für 2016
 title: Versionshinweise für 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 2016 – Versionshinweise {#release-notes}
 
-Funktionen, Aktualisierungen oder Änderungen am Experience Platform Identity Service 2016.
+Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2016.
 
 Diese Änderungen sind auch in den [Experience Cloud-Versionshinweisen](https://marketing.adobe.com/resources/help/en_US/whatsnew/) enthalten. Ältere Ankündigungen finden Sie unter [Frühere Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html).[!DNL Experience Cloud]
 
@@ -24,7 +24,7 @@ November 2016
 >[!IMPORTANT]
 >
 >* Version 1.10 erfordert [!DNL AppMeasurement] 1.8.0.
->* Mit der Experience Platform Identity Service Library 2.0.0 + beginnt die ID-Synchronisierung standardmäßig für Adobe Media Optimizer. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](/help/introduction/match-rates.md).
+>* Mit der Experience Cloud Identity Service Library 2.0.0 + beginnt die ID-Synchronisierung standardmäßig für Adobe Media Optimizer. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](/help/introduction/match-rates.md).
 
 
 **Fehlerbehebungen und Verbesserungen**
@@ -77,7 +77,7 @@ August 2016
 
 **Neue und überarbeitete Dokumentation**
 
-Revised: [Requirements for the Experience Platform Identity Service](../reference/requirements.md)
+Revised: [Requirements for the Experience Cloud Identity Service](../reference/requirements.md)
 
 **Bekannte Probleme**
 
@@ -101,9 +101,9 @@ Juli 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Cross-Origin Resource Sharing (CORS) </p> </td> 
-   <td colname="col2"> <p>Mithilfe von CORS können Browser Ressourcen von einer anderen als der aktuellen Domäne anfordern. Der Experience Platform Identity Service unterstützt CORS-Standards, um clientseitige, ursprungsübergreifende Ressourcenanforderungen zu aktivieren. Bei Browsern, die keine Unterstützung für CORS bieten, greift der ID-Dienst auf JSONP-Anforderungen zurück. </p> <p>Siehe: </p> 
+   <td colname="col2"> <p>Mithilfe von CORS können Browser Ressourcen von einer anderen als der aktuellen Domäne anfordern. Der Experience Cloud-Identitätsdienst unterstützt CORS-Standards, um clientseitige, ursprungsübergreifende Ressourcenanforderungen zu aktivieren. Bei Browsern, die keine Unterstützung für CORS bieten, greift der ID-Dienst auf JSONP-Anforderungen zurück. </p> <p>Siehe: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> CORS-Unterstützung im Experience Platform-Identitätsdienst </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> CORS-Unterstützung im Experience Cloud-Identitätsdienst </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -123,13 +123,13 @@ Juli 2016
 
 **Neu**
 
-* [Implementieren des Experience Platform Identity Service für Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Implementieren des Experience Platform-Identitätsdiensts für Analytics, Audience Manager und Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Experience Cloud-Identitätsdienst für Analytics implementieren](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [Experience Cloud-Identitätsdienst für Analytics, Audience Manager und Target implementieren](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Überarbeitet**
 
-* [Anforderungen für den Experience Platform Identity Service](../reference/requirements.md)
-* [Testen und Überprüfen des Experience Platform Identity Service](../implementation-guides/test-verify.md)
+* [Anforderungen für den Experience Cloud-Identitätsdienst](../reference/requirements.md)
+* [Testen und Überprüfen des Experience Cloud-Identitätsdiensts](../implementation-guides/test-verify.md)
 
 ## Version 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -165,8 +165,8 @@ Mai 2016
 **Dokumentation – Aktualisierungen**
 
 * [SDK-Anforderungen für Android und iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench und der Experience Platform Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [Testen und Überprüfen des Experience Platform Identity Service](../implementation-guides/test-verify.md)
+* [Data Workbench und der Experience Cloud-Identitätsdienst](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Testen und Überprüfen des Experience Cloud-Identitätsdiensts](../implementation-guides/test-verify.md)
 
 ## Version 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -174,7 +174,7 @@ April 2016
 
 **Dokumentation – Aktualisierungen**
 
-[Implementieren des Experience Platform-Identitätsdiensts für Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Experience Cloud-Identitätsdienst für Target implementieren](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## Version 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -201,9 +201,9 @@ März 2016
 
 **Dokumentation – Aktualisierungen**
 
-* [Implementieren des Experience Platform Identity Service für Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) : Neues Verfahren, das beschreibt, wie der ID-Dienst eingerichtet [!DNL Analytics]wird.
+* [Experience Cloud-Identitätsdienst für Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) implementieren: Neues Verfahren, das beschreibt, wie der ID-Dienst eingerichtet [!DNL Analytics]wird.
 
-* [Entscheidungspunkte für die Migration von Experience Platform Identity Service](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) : Überarbeiteter Text zur Klarheit. Die Arbeit mit einer einzigen Domäne bedeutet, dass Sie von einem Datenerfassungs-CNAME weg migrieren können, wenn Sie diese Methode nicht länger einsetzen möchten. Eine Migration ist jedoch nicht erforderlich, wenn Ihr CNAME problemlos funktioniert.
+* [Entscheidungspunkte für die Migration von Experience Cloud Identity Service](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) : Überarbeiteter Text zur Klarheit. Die Arbeit mit einer einzigen Domäne bedeutet, dass Sie von einem Datenerfassungs-CNAME weg migrieren können, wenn Sie diese Methode nicht länger einsetzen möchten. Eine Migration ist jedoch nicht erforderlich, wenn Ihr CNAME problemlos funktioniert.
 
 ## Version 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
