@@ -1,19 +1,19 @@
 ---
-description: Gibt die Legacy-Analytics-ID (falls vorhanden) zurück, die im s_ vi-Cookie gespeichert war, bevor der Experience Platform Identity Service implementiert wurde. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
+description: Gibt die Legacy-Analytics-ID (falls vorhanden) zurück, die im s_ vi-Cookie gespeichert war, bevor der Experience Cloud-Identitätsdienst implementiert wurde. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
 keywords: ID-Dienst
-seo-description: Gibt die Legacy-Analytics-ID (falls vorhanden) zurück, die im s_ vi-Cookie gespeichert war, bevor der Experience Platform Identity Service implementiert wurde. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
+seo-description: Gibt die Legacy-Analytics-ID (falls vorhanden) zurück, die im s_ vi-Cookie gespeichert war, bevor der Experience Cloud-Identitätsdienst implementiert wurde. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Gibt die Legacy-Analytics-ID (falls vorhanden) zurück, die im s_ vi-Cookie gespeichert war, bevor der Experience Platform Identity Service implementiert wurde. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
+Gibt die Legacy-Analytics-ID (falls vorhanden) zurück, die im s_ vi-Cookie gespeichert war, bevor der Experience Cloud-Identitätsdienst implementiert wurde. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
 
 **Syntax** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
