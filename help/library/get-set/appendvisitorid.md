@@ -6,7 +6,7 @@ seo-title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -25,7 +25,7 @@ Inhalt:
 
 ## Domänenübergreifendes Tracking von Benutzern, wenn Browser Drittanbieter-Cookies blockieren {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Platform Identity Service](../../introduction/cookies.md) ). Das Erstanbieter-Cookie enthält die MID, eine eindeutige ID für diesen Besucher. Das Drittanbieter-Cookie enthält eine andere ID, die vom ID-Dienst verwendet wird, um die MID zu generieren. Wenn ein Browser diesen Drittanbieter-Cookie blockiert, kann der Dienst folgende Aktionen nicht durchführen:
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud Identity Service](../../introduction/cookies.md) ). Das Erstanbieter-Cookie enthält die MID, eine eindeutige ID für diesen Besucher. Das Drittanbieter-Cookie enthält eine andere ID, die vom ID-Dienst verwendet wird, um die MID zu generieren. Wenn ein Browser diesen Drittanbieter-Cookie blockiert, kann der Dienst folgende Aktionen nicht durchführen:
 
 * Neugenerieren einer eindeutigen ID für den Site-Besucher, wenn dieser zu einer anderen Domäne navigiert
 * Verfolgen von Besuchern über verschiedene Domänen hinweg, deren Inhaber Ihre Organisation ist
