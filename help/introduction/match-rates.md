@@ -1,19 +1,19 @@
 ---
-description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Platform-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
+description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
 keywords: ID-Dienst
-seo-description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Platform-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
+seo-description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
 seo-title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten{#understanding-id-synchronization-and-match-rates}
 
-Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Platform-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
+Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
 
 ## ID-Synchronisierung und Übereinstimmungsraten {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,7 +33,7 @@ Der ID-Dienst synchronisiert IDs in Echtzeit. Dieser Prozess arbeitet im Browser
 
 **Schritt 1: Seite laden**
 
-Wenn ein Besucher auf Ihre Site kommt und eine Seite lädt, führt die Funktion `Visitor.getInstance` einen [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)- oder JSON-P-Aufruf an den ID-Dienst durch. Der ID-Dienst antwortet mit einem Cookie, der die [!DNL Experience Cloud] ID (MID) des Besuchers enthält. Bei der MID handelt es sich um eine jedem Sitebesucher zugewiesene eindeutige ID. Siehe auch [Cookies und der Experience Platform Identity Service](../introduction/cookies.md).
+Wenn ein Besucher auf Ihre Site kommt und eine Seite lädt, führt die Funktion `Visitor.getInstance` einen [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)- oder JSON-P-Aufruf an den ID-Dienst durch. Der ID-Dienst antwortet mit einem Cookie, der die [!DNL Experience Cloud] ID (MID) des Besuchers enthält. Bei der MID handelt es sich um eine jedem Sitebesucher zugewiesene eindeutige ID. Siehe auch [Cookies und der Experience Cloud-Identitätsdienst](../introduction/cookies.md).
 
 **Schritt 2: iFrame laden**
 
@@ -43,7 +43,7 @@ Während der Seitentext geladen wird, lädt der ID-Dienst einen iFrame namens *`
 * Wird so schnell wie möglich geladen. Wenn dies zu schnell ist, können Sie den iFrame im Anschluss an das Fensterladeereignis laden (nicht empfohlen). Siehe [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) mit Einzelheiten.
 * Verhindert, dass Code im iFrame Zugriff auf die übergeordnete Seite erlangt oder sie beeinflusst.
 
-Siehe auch [Anforderungen des Experience Platform Identity Service Anforderungen und Sets IDs…](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+Siehe auch [Anfordern und Festlegen von IDs durch den Experience Cloud-Identitätsdienst…](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
 
 **Schritt 3: ID-Synchronisierungen auslösen**
 
