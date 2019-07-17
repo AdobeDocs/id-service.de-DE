@@ -6,7 +6,7 @@ seo-title: Serverseitige Implementierung zusammen mit JavaScript
 title: Serverseitige Implementierung zusammen mit JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -21,7 +21,7 @@ Stellen Sie sicher, dass sowohl die Experience Cloud-Besucher-ID als auch die An
 
 >[!IMPORTANT]
 >
->Appmeasurement for Java unterstützt derzeit nicht den Experience Platform Identity Service.
+>Appmeasurement for Java unterstützt den Experience Cloud-Identitätsdienst derzeit nicht.
 
 ## Dateneinfüge-API {#section-955ce7664a4646d38b3005cb2df40baf}
 
@@ -33,4 +33,4 @@ Siehe [Unterstützte XML-Tags](https://marketing.adobe.com/developer/en_US/docum
 
 ## AppMeasurement für Java {#section-d664b94934924d048300d9c2b6560085}
 
-Der Experience Platform Identity Service wird derzeit von appmeasurement for Java nicht unterstützt.
+Der Experience Cloud-Identitätsdienst wird derzeit von appmeasurement for Java nicht unterstützt.
