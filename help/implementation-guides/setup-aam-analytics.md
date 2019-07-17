@@ -1,19 +1,19 @@
 ---
-description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Platform Identity Service verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud-Identitätsdienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
 keywords: ID-Dienst
-seo-description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Platform Identity Service verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
-seo-title: Implementieren des Experience Platform Identity Service für Analytics und Audience Manager
-title: Implementieren des Experience Platform Identity Service für Analytics und Audience Manager
+seo-description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud-Identitätsdienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+seo-title: Experience Cloud-Identitätsdienst für Analytics und Audience Manager implementieren
+title: Experience Cloud-Identitätsdienst für Analytics und Audience Manager implementieren
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Implement the Experience Cloud Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Platform Identity Service verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud-Identitätsdienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
 
 >[!IMPORTANT]
 >
@@ -179,7 +179,7 @@ Sie müssen eine Übergangsphase einrichten, wenn für neue Besucher nach Migrat
 
 Sobald Ihre Implementierung statt Lesen des s_vi-Cookies die MID erhält, kann die Übergangsphase abgebrochen werden.
 
-See also, [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 
 **Clickstream-Datenintegration**
 
@@ -199,7 +199,7 @@ Prüfen Sie zum Testen Ihrer ID-Dienstimplementierung Folgendes:
 
 * [AMCV-Cookie](../introduction/cookies.md) in der Domäne, auf der Ihre Seiten gehostet werden.
 * MID-Wert in der Analytics-Bildanforderung mit dem [Adobe-Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
-* See also, [Test and Verify the Experience Platform Identity Service](../implementation-guides/test-verify.md).
+* See also, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 Lesen Sie [So überprüfen Sie Ihre Implementierung der serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html), um die serverseitige Weiterleitung zu überprüfen.
 
