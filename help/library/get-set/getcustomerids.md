@@ -1,19 +1,19 @@
 ---
-description: Getcustomerids gibt alle Kunden-IDs zurück, die vom Experience Platform Identity Service festgelegt wurden.
+description: Getcustomerids gibt alle Kunden-IDs zurück, die vom Experience Cloud-Identitätsdienst festgelegt wurden.
 keywords: ID-Dienst
-seo-description: Getcustomerids gibt alle Kunden-IDs zurück, die vom Experience Platform Identity Service festgelegt wurden.
+seo-description: Getcustomerids gibt alle Kunden-IDs zurück, die vom Experience Cloud-Identitätsdienst festgelegt wurden.
 seo-title: getCustomerIDs
 title: getCustomerIDs
 uuid: 4eb6ff00-2a92-46b6-b9a6-8e0c6e2e73d1
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # getCustomerIDs{#getcustomerids}
 
-Getcustomerids gibt alle Kunden-IDs zurück, die vom Experience Platform Identity Service festgelegt wurden.
+Getcustomerids gibt alle Kunden-IDs zurück, die vom Experience Cloud-Identitätsdienst festgelegt wurden.
 
 <!--
 Is there anything else we can say about this??
