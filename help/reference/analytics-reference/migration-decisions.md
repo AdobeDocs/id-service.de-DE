@@ -1,19 +1,19 @@
 ---
-description: Vor der Bereitstellung des Experience Platform Identity Service müssen Sie verstehen, wie dieser Dienst die Verfolgung der Besucher bei mehreren Domänen und potenzielle Probleme beeinflusst, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
+description: Vor der Bereitstellung des Experience Cloud-Identitätsdienstes sollten Sie verstehen, wie sich dieser Dienst auf die Besucherverfolgung bei mehreren Domänen auswirkt und welche Probleme auftreten, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
 keywords: ID-Dienst
-seo-description: Vor der Bereitstellung des Experience Platform Identity Service müssen Sie verstehen, wie dieser Dienst die Verfolgung der Besucher bei mehreren Domänen und potenzielle Probleme beeinflusst, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
-seo-title: Entscheidungspunkte für die Migration von Experience Platform Identity Service
-title: Entscheidungspunkte für die Migration von Experience Platform Identity Service
+seo-description: Vor der Bereitstellung des Experience Cloud-Identitätsdienstes sollten Sie verstehen, wie sich dieser Dienst auf die Besucherverfolgung bei mehreren Domänen auswirkt und welche Probleme auftreten, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
+seo-title: Entscheidungspunkte für die Migration von Experience Cloud Identity Service
+title: Entscheidungspunkte für die Migration von Experience Cloud Identity Service
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Entscheidungspunkte für die Migration von Experience Platform Identity Service
+# Entscheidungspunkte für die Migration von Experience Cloud Identity Service
 
-Vor der Bereitstellung des Experience Platform Identity Service müssen Sie verstehen, wie dieser Dienst die Verfolgung der Besucher bei mehreren Domänen und potenzielle Probleme beeinflusst, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
+Vor der Bereitstellung des Experience Cloud-Identitätsdienstes sollten Sie verstehen, wie sich dieser Dienst auf die Besucherverfolgung bei mehreren Domänen auswirkt und welche Probleme auftreten, wenn Sie Daten mit verschiedenen Methoden oder über javascript-Dateien erfassen.
 
 Ihre Antworten auf die Fragen in diesem Abschnitt helfen Ihnen dabei, weitere Migrationsschritte zu bestimmen.
 
