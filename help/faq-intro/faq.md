@@ -6,7 +6,7 @@ seo-title: ID-Dienst Häufig gestellte Fragen (FAQ)
 title: Häufig gestellte Fragen zum ID-Dienst
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -23,7 +23,7 @@ Siehe [Übersicht](../introduction/overview.md).
 
 **Warum führt der ID-Dienst keinen Aufruf durch, um die Experience Cloud ID abzurufen?**
 
-Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe [Content Security Policies und Experience Platform Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe [Content Security Policies und Experience Cloud-Identitätsdienst](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **VisitorAPI.js-Dateispeicherung**
 
@@ -67,13 +67,13 @@ Diese Änderung erhöht die Leistung bei Kunden, die Visitor 2.3.0 oder höher 
 
 Ressourcenanforderungen mit CORS sind JSONP in der Regel vorzuziehen. Bei JSONP weisen einige Browser Anforderungen eine geringere Priorität zu als anderen synchronen und asynchronen Abrufen, wenn sie diese in die Warteschlange stellen. Mit CORS können Sie sicherstellen, dass die Anforderungen eine höhere Priorität in der Aufrufliste des Browsers erhalten.
 
-Siehe [CORS-Unterstützung im Experience Platform-Identitätsdienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Siehe [CORS-Unterstützung im Experience Cloud-Identitätsdienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sicherheit {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Unterstützt der ID-Dienst CORS?**
 
-Ja. See [CORS Support in the Experience Platform Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Ja. See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Was ist CORS?**
 
