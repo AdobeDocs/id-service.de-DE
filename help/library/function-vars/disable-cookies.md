@@ -1,19 +1,19 @@
 ---
-description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Platform Identity Service das Drittanbieter-demdex. net-Cookie zurückgibt.
+description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud-Identitätsdienst das Drittanbieter-Cookie demdex. net zurückgibt.
 keywords: ID-Dienst
-seo-description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Platform Identity Service das Drittanbieter-demdex. net-Cookie zurückgibt.
+seo-description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud-Identitätsdienst das Drittanbieter-Cookie demdex. net zurückgibt.
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
 uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # disableThirdPartyCookies{#disablethirdpartycookies}
 
-Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Platform Identity Service das Drittanbieter-demdex. net-Cookie zurückgibt.
+Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud-Identitätsdienst das Drittanbieter-Cookie demdex. net zurückgibt.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Plat
 
 **Syntax:** `disableThirdPartyCookies: true|false` (Standard ist `false`.) Für `VisitorAPI.js` Version 1.5.3 oder höher.
 
-When `disableThirdPartyCookies: true`, the ID service does not return the third-party, demdex.net cookie (see [Cookies and the Experience Platform Identity Service](../../introduction/cookies.md) ). Sollte der Cookie bereits im Browser des Besuchers gespeichert sein, wird dieser vom ID-Dienst nicht zur Erstellung einer neuen Experience Cloud ID (MID) oder Ausgabe einer bestehenden ID eingesetzt. Stattdessen wird vom ID-Dienst eine neue, zufällige MID im Erstanbieter-Cookie erstellt. Nach der Aktivierung können Sie mit dem ID-Dienst Daten erfassen und sie über verschiedene Experience Cloud-Lösungen hinweg freigeben.
+When `disableThirdPartyCookies: true`, the ID service does not return the third-party, demdex.net cookie (see [Cookies and the Experience Cloud Identity Service](../../introduction/cookies.md) ). Sollte der Cookie bereits im Browser des Besuchers gespeichert sein, wird dieser vom ID-Dienst nicht zur Erstellung einer neuen Experience Cloud ID (MID) oder Ausgabe einer bestehenden ID eingesetzt. Stattdessen wird vom ID-Dienst eine neue, zufällige MID im Erstanbieter-Cookie erstellt. Nach der Aktivierung können Sie mit dem ID-Dienst Daten erfassen und sie über verschiedene Experience Cloud-Lösungen hinweg freigeben.
 
 **Codebeispiel**
 
