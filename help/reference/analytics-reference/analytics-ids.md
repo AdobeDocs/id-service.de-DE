@@ -1,19 +1,19 @@
 ---
-description: Der Experience Platform Identity Service ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
+description: Der Experience Cloud-Identitätsdienst ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
 keywords: ID-Dienst
-seo-description: Der Experience Platform Identity Service ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
+seo-description: Der Experience Cloud-Identitätsdienst ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
 seo-title: Einrichten von Analytics- und Experience Cloud IDs
 title: Einrichten von Analytics- und Experience Cloud IDs
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Einrichten von Analytics- und Experience Cloud IDs{#setting-analytics-and-experience-cloud-ids}
 
-Der Experience Platform Identity Service ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
+Der Experience Cloud-Identitätsdienst ersetzt die Legacy-Analytics-Besucher-ID-Methoden.
 
 Nach Implementierung des ID-Diensts wird dieser Code vor AppMeasurement ausgeführt. Mit dem ID-Dienst werden die IDs für Experience Cloud und Analytics abgerufen, damit diese Werte bereits vorliegen, wenn AppMeasurement geladen wird.
 
