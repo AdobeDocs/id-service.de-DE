@@ -2,22 +2,22 @@
 description: Eine Übersicht über den ID-Anforderungs- und -Ausgabeprozess. Diese Beispiele decken die ID-Zuweisung auf individuellen Sites, Site-übergreifend und für durch verschiedene Experience Cloud-Kunden verwaltete Sites mit eigenen Kunden-IDs ab.
 keywords: ID-Dienst
 seo-description: Eine Übersicht über den ID-Anforderungs- und -Ausgabeprozess. Diese Beispiele decken die ID-Zuweisung auf individuellen Sites, Site-übergreifend und für durch verschiedene Experience Cloud-Kunden verwaltete Sites mit eigenen Kunden-IDs ab.
-seo-title: Anfordern und Festlegen von IDs durch den Experience Platform Identity Service
-title: Anfordern und Festlegen von IDs durch den Experience Platform Identity Service
+seo-title: Anfordern und Festlegen von IDs durch den Experience Cloud-Identitätsdienst
+title: Anfordern und Festlegen von IDs durch den Experience Cloud-Identitätsdienst
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# How the Experience Platform Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# How the Experience Cloud Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 Eine Übersicht über den ID-Anforderungs- und -Ausgabeprozess. Diese Beispiele decken die ID-Zuweisung auf individuellen Sites, Site-übergreifend und für durch verschiedene Experience Cloud-Kunden verwaltete Sites mit eigenen Kunden-IDs ab.
 
 >[!NOTE]
 >
->If you&#39;re not familiar with how the Experience Platform Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
+>If you're not familiar with how the Experience Cloud Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
 
 **Tipp:** Sehen Sie sich auch das [Video zum domänenübergreifenden Tracking mit dem ID-Dienst](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html) an.
 
