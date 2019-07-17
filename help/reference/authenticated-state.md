@@ -6,7 +6,7 @@ seo-title: Kunden-IDs und Authentifizierungsstatus
 title: Kunden-IDs und Authentifizierungsstatus
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -23,7 +23,7 @@ Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besuc
 >
 >`setCustomerIDs` (Synchronisierung der Kunden-ID) ist für Kundenattribute und die Funktionalität der Kerndienste erforderlich. Die Synchronisierung der Kunden-IDs ist eine optionale Identifikationsmethode für [!DNL Analytics]. Für [!DNL Target] ist `Visitor.AuthState.AUTHENTICATED` erforderlich, damit die Kundenattribute funktionieren. Beispiele hierzu finden Sie unter [Kerndienste – Aktivierung Ihrer Lösungen](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services).
 
-Beginning with Experience Platform Identity Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` identifiziert Benutzer anhand ihres Authentifizierungsstatus (z. B. angemeldet, abgemeldet). Der Authentifizierungsstatus wird von Ihnen mittels eines in der Tabelle aufgeführten Statuswerts festgelegt. Ein Authentifizierungsstatus wird immer als Ganzzahl ausgegeben.
+Beginning with Experience Cloud Identity Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` identifiziert Benutzer anhand ihres Authentifizierungsstatus (z. B. angemeldet, abgemeldet). Der Authentifizierungsstatus wird von Ihnen mittels eines in der Tabelle aufgeführten Statuswerts festgelegt. Ein Authentifizierungsstatus wird immer als Ganzzahl ausgegeben.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
