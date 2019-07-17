@@ -2,16 +2,16 @@
 description: Diese Implementierung ermöglicht es Kunden, den ID-Dienst auf Geräten zu verwenden, die unseren JavaScript- oder SDK-Code nicht unterstützen. Dazu zählen Spielkonsolen, Smart-TVs und andere Internet-fähige Geräte. Die folgenden Abschnitte enthalten Syntax, Codebeispiele und Definitionen.
 keywords: ID-Dienst
 seo-description: Diese Implementierung ermöglicht es Kunden, den ID-Dienst auf Geräten zu verwenden, die unseren JavaScript- oder SDK-Code nicht unterstützen. Dazu zählen Spielkonsolen, Smart-TVs und andere Internet-fähige Geräte. Die folgenden Abschnitte enthalten Syntax, Codebeispiele und Definitionen.
-seo-title: Direkte Integration mit dem Experience Platform-Identitätsdienst
-title: Direkte Integration mit dem Experience Platform-Identitätsdienst
+seo-title: Direkte Integration mit dem Experience Cloud-Identitätsdienst
+title: Direkte Integration mit dem Experience Cloud-Identitätsdienst
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Direct integration with the Experience Platform Identity Service {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 Diese Implementierung ermöglicht es Kunden, den ID-Dienst auf Geräten zu verwenden, die unseren JavaScript- oder SDK-Code nicht unterstützen. Dazu zählen Spielkonsolen, Smart-TVs und andere Internet-fähige Geräte. Die folgenden Abschnitte enthalten Syntax, Codebeispiele und Definitionen.
 
@@ -62,11 +62,11 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten gezeigt. Ihre A
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Die Experience Cloud-Besucher-ID. Siehe <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und der Experience Platform Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>Die Experience Cloud-Besucher-ID. Siehe <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und der Experience Cloud-Identitätsdienst</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Informationen zum Auffinden dieser ID erhalten Sie unter <a href="../reference/requirements.md" format="dita" scope="local"> Anforderungen für den Experience Platform Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Informationen zum Auffinden dieser ID erhalten Sie unter <a href="../reference/requirements.md" format="dita" scope="local"> Anforderungen für den Experience Cloud-Identitätsdienst</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
