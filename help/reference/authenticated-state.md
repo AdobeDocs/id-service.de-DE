@@ -6,7 +6,7 @@ seo-title: Kunden-IDs und Authentifizierungsstatus
 title: Kunden-IDs und Authentifizierungsstatus
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
 
@@ -92,7 +92,7 @@ Kunden-IDs können, wie im Folgenden dargestellt, aus Kombinationen aus IDs und 
 >* Bei IDs wird die Groß-/Kleinschreibung beachtet.
 >* Für IDs sollten ausschließlich nicht codierte Werte verwendet werden.
 >* Kunden-IDs und Authentifizierungsstatus werden nicht im Besucher-ID-Cookie gespeichert. Sie müssen für jede Seite und jeden Anwendungskontext separat festgelegt werden.
->* In den Kunden-IDs dürfen keinerlei personenbezogene Informationen (PII) enthalten sein. Wenn Sie zur Besucheridentifizierung PII verwenden (z. B. eine E-Mail-Adresse), sollten Sie stattdessen eine Hash- oder verschlüsselte Version dieser Daten verwenden.
+>* In den Kunden-IDs dürfen keinerlei personenbezogene Informationen (PII) enthalten sein. Wenn Sie zur Besucheridentifizierung PII verwenden (z. B. eine E-Mail-Adresse), sollten Sie stattdessen eine Hash- oder verschlüsselte Version dieser Daten verwenden. Die ECID-Bibliothek unterstützt Hash-Benutzer-ids. See [SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md).
 >
 
 
@@ -116,7 +116,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":"550e8400-e29b-41d4-a716-446655440000" 
+    "dpuuid":"550e8400-e29b-41d4-a716-446655440000" 
 }); 
  
 // Multiple IDs with identical authentication states 
@@ -125,7 +125,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":{ 
+    "dpuuid":{ 
         "id":"550e8400-e29b-41d4-a716-446655440000", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     } 
@@ -137,7 +137,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":{ 
+    "dpuuid":{ 
         "id":"550e8400-e29b-41d4-a716-446655440000", 
         "authState":Visitor.AuthState.LOGGED_OUT 
     } 
@@ -199,12 +199,12 @@ Object customerIDs = visitor.getCustomerIDs();
     } 
 } 
   
-// setCustomerIDs call on this instance with {"userid":{"authState":Visitor.AuthState.LOGGED_OUT},"puuid":{"id":"550e8400-e29b-41d4-a716-446655440000"}} 
+// setCustomerIDs call on this instance with {"userid":{"authState":Visitor.AuthState.LOGGED_OUT},"dpuuid":{"id":"550e8400-e29b-41d4-a716-446655440000"}} 
 { 
     "userid":{ 
         "authState":2 
     }, 
-    "puuid":{ 
+    "dpuuid":{ 
         "id":"550e8400-e29b-41d4-a716-446655440000", 
         "authState":0 
     } 
