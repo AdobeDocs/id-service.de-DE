@@ -6,7 +6,7 @@ seo-title: Experience Cloud-Identitätsdienst
 title: Experience Cloud-Identitätsdienst
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
 
@@ -35,13 +35,7 @@ Der Adobe Experience Cloud Identity Service (ID-Dienst) stellt eine universelle,
      <p> <b>Mitteilungen:</b> </p> 
      <p> <p>Wichtig: Die Unterstützung des ID-Dienstes für Internet Explorer 6, 7 und 8 ist veraltet und wird in einer zukünftigen Version eingestellt. </p> </p> 
     </draft-comment> </td> 
-   <td colname="col2"> <p> <b>Versionshinweise</b> </p> <p><b>Version 4.0</b> 12. Februar 2019 enthält den <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> Opt-in-Dienst</a>, mit dem festgestellt werden kann, ob Sie beim Besuch Ihrer Site ein Cookie auf dem Gerät oder Browser eines Benutzers platzieren können. </p> <p>Die Version vom 18. Januar 2018 enthält die JavaScript-Aktualisierung auf Version 3.0.0 und aktualisierte API-Methoden. Siehe <a href="library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414" format="dita" scope="local"> disableIdSyncs</a> und <a href="library/function-vars/disable-cookies.md#reference-2dd2d60d12f34f0b98bbb5606b3734cc" format="dita" scope="local"> disableThirdPartyCookies</a>. </p> 
-    <draft-comment> 
-     <p>Die Version vom Oktober 2017 enthält keine Code-Änderungen oder Updates für den ID-Dienst. Der ID-Dienst-Code bleibt bei v2.5 unverändert. </p> 
-    </draft-comment> 
-    <draft-comment> 
-     <p> Mit der Version vom September 2017 wird der ID-Dienst-Code auf v2.5 erhöht. </p> 
-    </draft-comment> <p> 
+   <td colname="col2"> <p> <b>Versionshinweise</b> </p> <p><b>Version 4.4</b> vom 17. Juli 2019 beinhaltet Unterstützung des <a href="reference/hashing-support.md" format="dita" scope="local"> SHA -256-Hash-Algorithmus</a> , mit dem Sie Kunden-IDs oder E-Email-Adressen weiterleiten und Hash-IDs weitergeben können.</p><p><b>Version 4.0</b> 12. Februar 2019 enthält den <a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> Opt-in-Dienst</a>, mit dem festgestellt werden kann, ob Sie beim Besuch Ihrer Site ein Cookie auf dem Gerät oder Browser eines Benutzers platzieren können. </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> Neue Funktionen und Fehlerbehebungen finden Sie in den <a href="https://marketing.adobe.com/resources/help/en_US/whatsnew/" format="https" scope="external">Experience Cloud-Versionshinweisen</a>. </li> 
       <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">Versionshinweise zu älteren Versionen finden Sie unter <a href="https://marketing-stage.adobe.com/resources/help/en_US/whatsnew/c_legacy_releases.html" format="html" scope="external">Frühere Versionshinweise</a>. </li> 
