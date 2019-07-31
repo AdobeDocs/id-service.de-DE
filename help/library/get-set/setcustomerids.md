@@ -2,11 +2,11 @@
 description: setCustomerIDs legt einen oder mehr Schlüsselwertpaare fest, die Kunden-IDs und deren Authentifizierungsstatus identifizieren.
 keywords: ID-Dienst
 seo-description: setCustomerIDs legt einen oder mehr Schlüsselwertpaare fest, die Kunden-IDs und deren Authentifizierungsstatus identifizieren.
-seo-title: „setCustomerIDs“
-title: „setCustomerIDs“
-uuid: 4 f 960 f 98-cec 2-4 db 6-84 ea -0259 e 2128 ea 2
+seo-title: setCustomerIDs
+title: setCustomerIDs
+uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
 
@@ -17,7 +17,7 @@ setCustomerIDs legt einen oder mehr Schlüsselwertpaare fest, die Kunden-IDs und
 
 **Syntax:** `visitor.setCustomerIDs()`
 
-Sie können, wie im Code-Beispiel unten dargestellt, einzelne oder mehrere IDs festlegen. Siehe [Kunden-IDs und Authentifizierungsstatus](../../reference/authenticated-state.md) für weitere Informationen und Beispiele.
+Sie können, wie im Code-Beispiel unten dargestellt, einzelne oder mehrere IDs festlegen. See [Customer IDs and Authentication States](../../reference/authenticated-state.md) for more information and examples.
 
 ```js
 // Single ID with a single authentication state 
@@ -34,7 +34,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":"550e8400-e29b-41d4-a716-446655440000" 
+    "dpuuid":"550e8400-e29b-41d4-a716-446655440000" 
 });
 ```
 
