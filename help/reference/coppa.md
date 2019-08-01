@@ -6,7 +6,7 @@ seo-title: COPPA-Unterstützung im Experience Cloud-Identitätsdienst
 title: COPPA-Unterstützung im Experience Cloud-Identitätsdienst
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
 
@@ -17,7 +17,7 @@ Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Pri
 
 >[!NOTE]
 >
->Nur bei Version 1.5.3 oder neuer.
+>Nur bei Version 3.0.0 oder neuer.
 
 **Cookies und Tracking**
 
