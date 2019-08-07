@@ -6,7 +6,7 @@ seo-title: Versionshinweise für 2016
 title: Versionshinweise für 2016
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -23,7 +23,7 @@ November 2016
 
 >[!IMPORTANT]
 >
->* Version 1.10 erfordert [!DNL AppMeasurement] 1.8.0.
+>* Für Version 1.10 wird [!UICONTROL AppMeasurement] 1.8.0 benötigt.
 >* Mit der Experience Cloud Identity Service Library 2.0.0 + beginnt die ID-Synchronisierung standardmäßig für Adobe Media Optimizer. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](/help/introduction/match-rates.md).
 
 
