@@ -1,18 +1,18 @@
 ---
-description: Die Rolle des Experience Cloud-Identitätsdienstes in der Adobe Experience Cloud.
-seo-description: Der Experience Cloud-Identitätsdienst aktiviert das allgemeine Identifizierungsframework für die Experience Cloud Core Services, Lösungen und Kundenattribute und Zielgruppen im Core-Core-Service.
+description: Die Rolle des Experience Platform Identity Service in der Adobe Experience Cloud.
+seo-description: Der Experience Platform Identity Service aktiviert das allgemeine Identifizierungsframework für die Experience Cloud Core Services, Lösungen und Kundenattribute und -zielgruppen.
 seo-title: ID-Dienst – Übersicht
 title: Übersicht
 uuid: null
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
 # Übersicht
 
-Der Experience Cloud-Identitätsdienst aktiviert das allgemeine Identifizierungsframework für die Experience Cloud Core Services, Lösungen und Kundenattribute und Zielgruppen im Core-Core-Service. Es funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Sitebesucher. Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
+Der Experience Platform Identity Service aktiviert das allgemeine Identifizierungsframework für die Experience Cloud Core Services, Lösungen und Kundenattribute und Zielgruppen im Plattformidentitätsdienst. (Möglicherweise werden Verweise auf frühere Namen oder Akronymns wie Experience Cloud ID-Dienst, ECID, Marketing Cloud ID-Dienst, MID und Besucher-ID-Dienst angezeigt.) Der Identitätsdienst funktioniert durch Zuweisung einer eindeutigen, dauerhaften ID zu einem Site-Besucher. Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
 
 ![](assets/ecid.png)
 
