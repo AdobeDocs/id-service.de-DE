@@ -6,7 +6,7 @@ seo-title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -37,9 +37,9 @@ Wenn ein Besucher auf Ihre Site kommt und eine Seite lädt, führt die Funktion 
 
 **Schritt 2: iFrame laden**
 
-Während der Seitentext geladen wird, lädt der ID-Dienst einen iFrame namens *`Destination Publishing iFrame`*. Der [!DNL Destination Publishing iFrame] wird in einer Domäne geladen, die von der übergeordneten Seite getrennt ist. Dieses Design hilft beim Gewährleisten der Seitenleistung und verbessert die Sicherheit aufgrund des iFrames:
+Während der Seitentext geladen wird, lädt der ID-Dienst einen iFrame namens *`Destination Publishing iFrame`*. Der [!UICONTROL Destination Publishing iFrame] wird in einer Domäne geladen, die von der übergeordneten Seite getrennt ist. Dieses Design hilft beim Gewährleisten der Seitenleistung und verbessert die Sicherheit aufgrund des iFrames:
 
-* Wird im Verhältnis zur übergeordneten Seite asynchron geladen. Die übergeordnete Seite kann demnach unabhängig vom [!DNL Destination Publishing iFrame] geladen werden. Das Laden des iFrames und von ID-Synchronisierungspixeln in iFrame wirkt sich weder auf die übergeordnete Seite noch auf die Benutzeroberfläche aus.
+* Wird im Verhältnis zur übergeordneten Seite asynchron geladen. Die übergeordnete Seite kann demnach unabhängig vom [!UICONTROL Destination Publishing iFrame] geladen werden. Das Laden des iFrames und von ID-Synchronisierungspixeln in iFrame wirkt sich weder auf die übergeordnete Seite noch auf die Benutzeroberfläche aus.
 * Wird so schnell wie möglich geladen. Wenn dies zu schnell ist, können Sie den iFrame im Anschluss an das Fensterladeereignis laden (nicht empfohlen). Siehe [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) mit Einzelheiten.
 * Verhindert, dass Code im iFrame Zugriff auf die übergeordnete Seite erlangt oder sie beeinflusst.
 
@@ -49,15 +49,7 @@ Siehe auch [Anfordern und Festlegen von IDs durch den Experience Cloud-Identitä
 
 Die ID-Synchronisierung ist eine im Destination Publishing iFrame ausgelöste URL. Eine URL für die ID-Synchronisierung enthält, wie in diesem generischen Beispiel gezeigt, den ID-Synchronisierungsendpunkt eines Partners und eine Umleitungs-URL, die zu [!DNL Adobe] zurückleitet und die entsprechende ID enthält.
 
-```
-http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
-<varname>
-  ADOBE_PARTNER_ID
-</varname>>&dpuuid=<
-<varname>
-  PARTNER_UUID
-</varname>>
-```
+`http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
 Siehe auch [ID-Synchronisierung für eingehende Datenübertragungen](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html).
 
@@ -78,7 +70,7 @@ Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-T
 
 ## ID-Synchronisierung mit Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] bildet eine Ausnahme zum iFrame-basierten ID-Synchronisierungsprozess. Da es sich bei [!DNL Media Optimizer] um eine vertrauenswürdige Domäne handelt, erfolgt die ID-Synchronisierung von der übergeordneten Seite aus statt im [!DNL Destination Publishing iFrame]. Bei der Synchronisierung ruft der ID-Dienst [!DNL Media Optimizer] unter `cm.eversttech.net` dem älteren Domänennamen auf, der von [!DNL Media Optimizer] vor der Akquise durch Adobe verwendet wurde. Das Senden von Daten an [!DNL Media Optimizer] kann Übereinstimmungsraten verbessern und wird für Kunden mit Version 2.0 des ID-Diensts (oder höher) automatisch durchgeführt. Siehe auch [Cookies in Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
+[!DNL Adobe Media Optimizer] bildet eine Ausnahme zum iFrame-basierten ID-Synchronisierungsprozess. Da es sich bei [!DNL Media Optimizer] um eine vertrauenswürdige Domäne handelt, erfolgt die ID-Synchronisierung von der übergeordneten Seite aus statt im [!UICONTROL Destination Publishing iFrame]. Bei der Synchronisierung ruft der ID-Dienst [!DNL Media Optimizer] unter `cm.eversttech.net` dem älteren Domänennamen auf, der von [!DNL Media Optimizer] vor der Akquise durch Adobe verwendet wurde. Das Senden von Daten an [!DNL Media Optimizer] kann Übereinstimmungsraten verbessern und wird für Kunden mit Version 2.0 des ID-Diensts (oder höher) automatisch durchgeführt. Siehe auch [Cookies in Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
 
 >[!MORE_LIKE_THIS]
 >
