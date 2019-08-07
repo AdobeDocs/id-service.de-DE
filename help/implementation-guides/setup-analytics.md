@@ -6,7 +6,7 @@ seo-title: Experience Cloud-Identitätsdienst für Analytics implementieren
 title: Experience Cloud-Identitätsdienst für Analytics implementieren
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -36,10 +36,10 @@ Führen Sie die folgenden Schritte aus, um den ID-Dienst für Adobe Analytics zu
 
 ## Schritt 1: Herunterladen des ID-Dienst-Codes {#section-ead9403a6b7e45b887f9ac959ef89f7f}
 
-Für den [!DNL ID Service]ist die `VisitorAPI.js` Code-Bibliothek erforderlich. Zum Herunterladen dieser Code-Bibliothek tun Sie Folgendes:
+Für den [!UICONTROL ID-Dienst] ist die Code-Bibliothek `VisitorAPI.js` erforderlich. Zum Herunterladen dieser Code-Bibliothek tun Sie Folgendes:
 
 1. Rufen Sie **[!UICONTROL Admin]** &gt; **[!UICONTROL Code-Manager]** auf.
-1. Klicken Sie im [!DNL Code Manager] entweder auf **[!UICONTROL JavaScript (Neu)]** oder auf **[!UICONTROL JavaScript (Legacy)]**.
+1. Klicken Sie im [!UICONTROL Code-Manager] entweder auf **[!UICONTROL JavaScript (neu)]** oder auf **[!UICONTROL JavaScript (Legacy)]**.
 
    Dies leitet das Herunterladen der komprimierten Code-Bibliotheken ein.
 
