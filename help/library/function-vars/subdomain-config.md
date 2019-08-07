@@ -6,7 +6,7 @@ seo-title: audienceManagerServer und audienceManagerServerSecure
 title: audienceManagerServer und audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -29,7 +29,7 @@ Normalerweise führt der [!DNL Experience Cloud] ID-Dienst Aufrufe an [!DNL Adob
 Für diese Konfigurationen müssen Sie Folgendes verwenden:
 
 * Den Namen der untergeordneten [!DNL Audience Manager]-Domäne für den Datensatz Ihres Unternehmens. Überprüfen Sie den Namen oder fragen Sie Ihren Berater danach.
-* Den Namen der untergeordneten Domäne, der Ihrer [!DNL Organization ID] zugewiesen ist.
+* Den Namen der untergeordneten Domäne, der Ihrer [!UICONTROL Organisations-ID] zugewiesen ist.
 * *Beide* Konfigurationsparameter mit dem gleichen untergeordneten Domänennamen.
 
 **Codebeispiel**
