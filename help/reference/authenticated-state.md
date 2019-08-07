@@ -6,7 +6,7 @@ seo-title: Kunden-IDs und Authentifizierungsstatus
 title: Kunden-IDs und Authentifizierungsstatus
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
+source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 
 ---
 
@@ -92,7 +92,7 @@ Kunden-IDs können, wie im Folgenden dargestellt, aus Kombinationen aus IDs und 
 >* Bei IDs wird die Groß-/Kleinschreibung beachtet.
 >* Für IDs sollten ausschließlich nicht codierte Werte verwendet werden.
 >* Kunden-IDs und Authentifizierungsstatus werden nicht im Besucher-ID-Cookie gespeichert. Sie müssen für jede Seite und jeden Anwendungskontext separat festgelegt werden.
->* In den Kunden-IDs dürfen keinerlei personenbezogene Informationen (PII) enthalten sein. Wenn Sie zur Besucheridentifizierung PII verwenden (z. B. eine E-Mail-Adresse), sollten Sie stattdessen eine Hash- oder verschlüsselte Version dieser Daten verwenden. Die ECID-Bibliothek unterstützt Hash-Benutzer-ids. See [SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md).
+>* In den Kunden-IDs dürfen keinerlei personenbezogene Informationen (PII) enthalten sein. Wenn Sie zur Besucheridentifizierung PII verwenden (z. B. eine E-Mail-Adresse), sollten Sie stattdessen eine Hash- oder verschlüsselte Version dieser Daten verwenden. Die ECID-Bibliothek unterstützt Hash-Benutzer-ids. Siehe [SHA 256 Hashing-Unterstützung für setcustomerids](/help/reference/hashing-support.md).
 >
 
 
@@ -220,4 +220,4 @@ Der [!DNL Experience Cloud] ID-Dienst unterstützt Kunden-IDs und Authentifizier
 
 ## Hinweise für Kunden von Analytics und Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Sollten Sie deklarierte IDs an [!DNL Audience Manager] weiterleiten, muss das Objekt `userid` dem mit einer Datenquelle verknüpften Integrations-Code entsprechen. For more information, see the [!DNL Visitor ID Service] section in the [Configure Merge Rules Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) documentation.
+Sollten Sie deklarierte IDs an [!DNL Audience Manager] weiterleiten, muss das Objekt `userid` dem mit einer Datenquelle verknüpften Integrations-Code entsprechen. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Besucher-ID-Dienst] in der Dokumentation [Konfiguration von Regelverschmelzungs-Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html).
