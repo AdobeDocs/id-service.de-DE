@@ -4,9 +4,9 @@ keywords: ID-Dienst
 seo-description: Mit den ID-Dienstfunktionen „idSyncByURL“ und „idSyncByDataSource“ können Sie eine ID-Synchronisierung in Destination Publishing iFrame manuell implementieren. Sie stehen in VisitorAPI.js 1.10 oder höher zur Verfügung.
 seo-title: ID-Synchronisation nach URL oder Datenquelle
 title: ID-Synchronisation nach URL oder Datenquelle
-uuid: ff 83 d 910-8375-4295-9 f 2 a-e 14 c 15 eee 09 a
+uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -38,14 +38,14 @@ Inhalt:
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByURL(); </span> </p> </td> 
    <td colname="col2"> <p>Zwischen unterschiedlichen Datenpartnern und <span class="keyword">Audience Manager</span> mithilfe einer benutzerdefinierten URL für die ID-Synchronisierung. </p> <p> 
      <draft-comment>
-       Zwischen verschiedenen Datenpartnern und Audience Manager. Beispiel: Partner X verwendet dies zur Synchronisierung einer Benutzer-ID mit Partner Y und sendet diese dann an Audience Manager. 
+       Zwischen verschiedenen Datenpartnern und Audience Manager. Beispielsweise würde Partner x damit eine Benutzer-ID mit Partner y synchronisieren und diese dann an Audience Manager senden. 
      </draft-comment> </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
    <td colname="col2"> <p>Wenn Sie die DPID und DPUUID bereits kennen und sie im URL-Format für die ID-Standardsynchronisierung an <span class="keyword">Audience Manager</span> senden möchten. </p> <p> 
      <draft-comment>
-       Wenn Sie die Benutzer-ID bereits kennen und sie an Audience Manager senden möchten. 
+       Wenn Sie die Benutzer-ID bereits kennen und an Audience Manager senden möchten. 
      </draft-comment> </p> </td> 
   </tr> 
  </tbody> 
@@ -91,13 +91,13 @@ In der folgenden Tabelle sind die für beide Funktionen verfügbaren Eigenschaft
 
 Beide Funktionen akzeptieren die folgenden Makros:
 
-* ** `%TIMESTAMP%`: ** Generiert einen Zeitstempel (in Millisekunden). Wird für das Cache-Busting verwendet.
-* ** `%DID%`: **Fügt die Audience Manager-ID für den Benutzer ein.
-* ** `%HTTP_PROTO%`: ** Legt das Kommunikationsprotokoll ( `http` oder `https`) fest.
+* `%TIMESTAMP%`: Generiert einen Zeitstempel (in Millisekunden). Wird für das Cache-Busting verwendet.
+* `%DID%`: Fügt die Audience Manager-ID für den Benutzer ein.
+* `%HTTP_PROTO%`: Setzt das Kommunikationsprotokoll ( `http` oder `https`).
 
 ## Beispielcode und -ausgabe {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-Beide Funktionen kehren bei `Successfully queued` Erfolg zurück. Falls nicht, wird eine Fehlermeldungszeichenfolge zurückgegeben.
+Beide Funktionen melden `Successfully queued` bei Erfolg. Falls nicht, wird eine Fehlermeldungszeichenfolge zurückgegeben.
 
 **visitor.idSyncByURL**
 
@@ -110,15 +110,15 @@ Beide Funktionen kehren bei `Successfully queued` Erfolg zurück. Falls nicht, w
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instatiate Besucher 
- var visitor = Visitor. getinstance ("MARKETING-CLOUD-ORG-ID-HERE", {});
+   <td colname="col1"> <p> <code class="syntax javascript"> //Instatiate Visitor 
+      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    // &amp; amp; nbsp; Ausgelöst &amp; amp; nbsp; url &amp; amp; nbsp; with &amp; amp; nbsp; macros &amp; amp; nbsp; replacedvisitor
-    . idsyncbyurl ({
-    &amp; amp; nbsp; dpid: &amp; amp; nbsp; &#39; 24 &#39;, &amp; amp; nbsp; // &amp; amp; nbsp; must &amp; amp; nbsp; be &amp; amp; nbsp; a &amp; amp; nbsp; string
-    &amp; amp; nbsp; url: &amp; amp; nbsp; &#39;//su.addthis.com/red/usync?pid=16&amp;amp;puid=%DID%&amp;amp;url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D&#39;,&amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp
-    ;
-    }); &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
+    //&amp;nbsp;Fires&amp;nbsp;url&amp;nbsp;with&amp;nbsp;macros&amp;nbsp;replaced
+    visitor.idSyncByURL({
+    &amp;nbsp;dpid:&amp;nbsp;'24',&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;url:&amp;nbsp;'//su.addthis.com/red/usync?pid=16&amp;amp;puid=%DID%&amp;amp;url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D',
+    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
+    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
 <td colname="col2"> <p> <span class="codeph"> http://su.addthis.com/red/usync?pid=16&amp;puid=28777806459181003670799219185178493848&amp;url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D </span> </p> </td> 
   </tr> 
  </tbody> 
@@ -135,21 +135,21 @@ Beide Funktionen kehren bei `Successfully queued` Erfolg zurück. Falls nicht, w
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instantiate Besucher 
- var visitor = Visitor. getinstance ("MARKETING-CLOUD-ORG-ID-HERE", {});
+   <td colname="col1"> <p> <code class="syntax javascript"> //Instantiate Visitor 
+      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    // &amp; amp; nbsp; Ausgelöst &amp; amp; nbsp; &#39; http:/https:&#39;&amp;nbsp;+&amp;nbsp;&#39;//dpm.demdex.net/ibs:dpid=&amp;lt;dpid&amp;gt;&amp;amp;dpuuid=&amp;lt;dpuuid&amp;gt;&#39;visitor.idSyncByDataSource(
-    {
-    &amp; amp; nbsp; dpid: &amp; amp; nbsp; &#39; 24 &#39;, &amp; amp; nbsp; // &amp; amp; nbsp; must &amp; amp; nbsp; be &amp; amp; nbsp; a &amp; amp; nbsp; string
-    &amp; amp; nbsp; dpuuid: &amp; amp; nbsp; &#39; 98765 &#39;, &amp; amp; nbsp; // &amp; amp; nbsp; must &amp; amp; nbsp; be &amp; amp; nbsp; a &amp; amp; nbsp; string
-    &amp; amp; nbsp; Minutestolive: &amp; amp; nbsp; 20160 &amp; amp; nbsp; // &amp; amp; nbsp; optional, &amp; amp; nbsp; default &amp; amp; nbsp; to &amp; amp; nbsp; 20160 &amp; amp; nbsp; minutes &amp; amp; nbsp; (14 &amp; amp; nbsp; days) &amp; amp; nbsp;
-    }); &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
+    //&amp;nbsp;Fires&amp;nbsp;'http:/https:'&amp;nbsp;+&amp;nbsp;'//dpm.demdex.net/ibs:dpid=&amp;lt;dpid&amp;gt;&amp;amp;dpuuid=&amp;lt;dpuuid&amp;gt;'
+    visitor.idSyncByDataSource({
+    &amp;nbsp;dpid:&amp;nbsp;'24',&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;dpuuid:&amp;nbsp;'98765',&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
+    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
 <td colname="col2"> <p> <span class="codeph"> http://dpm.demdex.net/ibs:dpid=24&amp;dpuuid=98765 </span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [DIL idSync](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_idsync.html)
 
