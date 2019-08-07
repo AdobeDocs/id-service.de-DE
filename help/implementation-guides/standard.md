@@ -6,12 +6,12 @@ seo-title: Implementierung mit Dynamic Tag Management
 title: Implementierung mit Dynamic Tag Management
 uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Implementierung mit Dynamic Tag Management{#implementation-with-dynamic-tag-management}
+# Implementierung mit Dynamic Tag Management {#implementation-with-dynamic-tag-management}
 
 Ältere Implementierungen verwenden Dynamisches Tag-Management (DTM) zum Einrichten, Bereitstellen und Integrieren des Experience Cloud-Identitätsdiensts mit Ihren anderen Experience Cloud-Lösungen.
 
@@ -64,7 +64,7 @@ Solange Sie all Ihre [!DNL Adobe]-Lösungen und -Codebibliotheken in DTM aufbewa
 
 **Validieren der regionalen Datenerfassung**
 
-Customers must provide a CNAME or use [!DNL *.sc.omtrdc] for [regional data collection](https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/) (RDC). Erfragen Sie die jeweiligen RDC-Einstellungen bei Ihrem [!DNL Adobe]-Berater.
+Customers must provide a CNAME or use `*.sc.omtrdc` for [regional data collection](https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/) (RDC). Erfragen Sie die jeweiligen RDC-Einstellungen bei Ihrem [!DNL Adobe]-Berater.
 
 **Konfigurieren von Analytics Report Suites**
 
@@ -86,7 +86,7 @@ mcvid-dtm-implement.xml
 
 **Implementierungsschritte** So implementieren Sie den ID-Dienst in DTM:
 
-1. Klicken Sie im DTM-[!DNL Dashboard] auf die gewünschte Webeigenschaft.
+1. Klicken Sie im DTM-[!UICONTROL Dashboard] auf die gewünschte Webeigenschaft.
 1. Klicken Sie auf der Registerkarte **[!UICONTROL Überblick]** Ihrer ausgewählten Webeigenschaft auf **[!UICONTROL Tool hinzufügen]**.
 1. In the **[!UICONTROL Tool Type]** list, click **[!UICONTROL Experience Cloud Identity Service]**.
 
@@ -106,7 +106,7 @@ mcvid-dtm-implement.xml
 
 ## Experience Cloud Identity Service Settings for DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
-Beschreibt die Felder [!DNL Organization ID], [!DNL General] und [!DNL Customer Settings] und wie sie vom ID-Dienst [!DNL Experience Cloud] verwendet werden.
+Beschreibt die Felder [!UICONTROL Organisations-ID], [!UICONTROL Allgemein] und [!UICONTROL Kundeneinstellungen] und ihre Verwendung durch den [!DNL Experience Cloud] ID-Dienst.
 
 <!--
 mcvid-dtm-settings.xml
@@ -114,7 +114,7 @@ mcvid-dtm-settings.xml
 
 ## Wie finde ich diese Einstellungen? {#section-c5b2d1c928944ae2b8565c1b182fe575}
 
-Die Einstellungen stehen nach dem Hinzufügen und Speichern des ID-Dienstes als ein Tool im Dynamic Tag Management (DTM) zur Verfügung. Sie können auch auf diese Einstellungen zugreifen, indem Sie im Abschnitt [!DNL Installed Tools] Ihrer DTM-Webeigenschaft auf das Zahnradsymbol klicken.
+Die Einstellungen stehen nach dem Hinzufügen und Speichern des ID-Dienstes als ein Tool im Dynamic Tag Management (DTM) zur Verfügung. Sie können auch auf diese Einstellungen zugreifen, indem Sie im Abschnitt [!UICONTROL Installierte Tools] Ihrer DTM-Webeigenschaft auf das Zahnradsymbol klicken.
 
 ![](assets/installedTools.png)
 
@@ -132,17 +132,17 @@ Mit diesen Einstellungen können Sie Tracking-Server angeben, Versionen codieren
 
 ![](assets/generalSettings.png)
 
-In der folgenden Tabelle sind die [!DNL General]-Einstellungen aufgeführt und definiert.
+In der folgenden Tabelle sind die [!UICONTROL allgemeinen] Einstellungen aufgeführt und definiert.
 
 **Besucher-ID automatisch anfordern**
 
-When checked, dynamic tag management to automatically calls the `getMarketingCloudVisitorID()` method before loading any of the Adobe solutions that use the Experience Cloud Identity Service.
+When checked, Dynamic Tag Management automatically calls the `getMarketingCloudVisitorID()` method before loading any of the Adobe solutions that use the Experience Cloud Identity Service.
 
 Siehe [getMarketingCloudVisitorID](../library/get-set/getmcvid.md).
 
 **Analytics-Tracking-Server**
 
-Der Name des für die Analysedatenerfassung verwendeten Tracking-Servers. Dies ist die Domäne, auf der die Bildanforderung und das Cookie geschrieben werden (z. B. [!DNL http://site.omtrdc.net]).
+Der Name des für die Analysedatenerfassung verwendeten Tracking-Servers. Dies ist die Domäne, auf der die Bildanforderung und das Cookie geschrieben werden (z. B. `http://site.omtrdc.net`).
 
 Überprüfen Sie die Dateien `s_code.js` oder `AppMeasurement.js`, sofern Sie Ihre Tracking-Server-URLs nicht kennen. Sie möchten, dass die URL durch die `s.trackingServer` Variable festgelegt wird.
 
@@ -150,7 +150,7 @@ Siehe [trackingServer](https://marketing.adobe.com/resources/help/en_US/sc/imple
 
 **Sicherer Tracking-Server**
 
-Der Name des für die Analysedatenerfassung verwendeten sicheren Tracking-Servers. Dies ist die Domäne, auf der die Bildanforderung und das Cookie geschrieben werden (z. B. [!DNL https://site.omtrdc.net]).
+Der Name des für die Analysedatenerfassung verwendeten sicheren Tracking-Servers. Dies ist die Domäne, auf der die Bildanforderung und das Cookie geschrieben werden (z. B. `https://site.omtrdc.net`).
 
 Überprüfen Sie die Dateien `s_code.js` oder `AppMeasurement.js`, sofern Sie Ihre Tracking-Server-URLs nicht kennen. Sie möchten, dass die URL durch die `s.trackingServerSecure` Variable festgelegt wird.
 
@@ -158,11 +158,11 @@ Siehe [trackingServer](https://marketing.adobe.com/resources/help/en_US/sc/imple
 
 **Experience Cloud-Server**
 
-Wenn Ihr Unternehmen die Erstanbieter-Datenerfassung (CNAME) nutzt, um Erstanbieter-Cookies in einem Drittanbieter-Kontext zu verwenden, geben Sie hier den Tracking-Server ein (z. B. [!DNL http://metrics.company.com]).
+Wenn Ihr Unternehmen die Erstanbieter-Datenerfassung (CNAME) nutzt, um Erstanbieter-Cookies in einem Drittanbieter-Kontext zu verwenden, geben Sie hier den Tracking-Server ein (z. B. `http://metrics.company.com`).
 
 **Sicherer Experience Cloud-Server**
 
-Wenn Ihr Unternehmen die Erstanbieter-Datenerfassung (CNAME) nutzt, um Erstanbieter-Cookies in einem Drittanbieter-Kontext zu verwenden, geben Sie hier den Tracking-Server ein (z. B. [!DNL https://metrics.company.com]).
+Wenn Ihr Unternehmen die Erstanbieter-Datenerfassung (CNAME) nutzt, um Erstanbieter-Cookies in einem Drittanbieter-Kontext zu verwenden, geben Sie hier den Tracking-Server ein (z. B. `https://metrics.company.com`).
 
 **Bibliotheksversion**
 
@@ -266,21 +266,21 @@ So überprüfen Sie den Status des ID-Diensts mit Charles:
 
 Lesen Sie diesen Abschnitt, um Informationen dahingehend zu erhalten, wo und wonach Sie suchen müssen, wenn Sie Charles zum Überwachen von HTTP-Aufrufen verwenden.
 
-**Erfolgreiche ID-Dienstanforderungen in Charles**
+### Erfolgreiche ID-Dienstanforderungen in Charles
 
-Ihr ID-Dienst-Code funktioniert ordnungsgemäß, wenn die Funktion `Visitor.getInstance` einen JavaScript-Aufruf zu `dpm.demdex.net` startet. Eine erfolgreiche Anforderung enthält Ihre [Organisations-ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). Die Organisations-ID wird als Schlüssel-Wert-Paar weitergegeben, das folgende Syntax verwendet: `d_orgid= *`d_orgid`*`. Die `dpm.demdex.net`- und die JavaScript-Aufrufe finden Sie auf Registerkarte [!DNL Structure]. Ihre Organisations-ID finden Sie auf der Registerkarte [!DNL Request].
+Ihr ID-Dienst-Code funktioniert ordnungsgemäß, wenn die Funktion `Visitor.getInstance` einen JavaScript-Aufruf zu `dpm.demdex.net` startet. Eine erfolgreiche Anforderung enthält Ihre [Organisations-ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). Die Organisations-ID wird als Schlüssel-Wert-Paar weitergegeben, das folgende Syntax verwendet: `d_orgid= *`d_orgid`*`. Die `dpm.demdex.net`- und JavaScript-Aufrufe finden Sie auf der Registerkarte [!UICONTROL Struktur]. Die Organisations-ID finden Sie auf der Registerkarte [!UICONTROL „Anforderung“].
 
 ![](assets/charles_request.png)
 
-**Erfolgreiche ID-Dienstantworten in Charles**
+### Erfolgreiche ID-Dienstantworten in Charles
 
-Ihr Konto wurde ordnungsgemäß für den ID-Dienst bereitgestellt, wenn die Antwort von den [Datenerfassungsservern (Data Collection Servers, DCS)](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: *`visitor Experience Cloud ID`*`. Auf der Registerkarte [!DNL Response] finden Sie die MID wie nachstehend dargestellt.
+Ihr Konto wurde ordnungsgemäß für den ID-Dienst bereitgestellt, wenn die Antwort von den [Datenerfassungsservern (Data Collection Servers, DCS)](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: visitor Experience Cloud ID`. Auf der Registerkarte [!UICONTROL „Antwort“] findet sich die MID, wie im Folgenden gezeigt.
 
 ![](assets/charles_response_success.png)
 
-**Fehlerhafte ID-Dienstantworten in Charles**
+### Fehlerhafte ID-Dienstantworten in Charles
 
-Ihr Konto wurde nicht richtig bereitgestellt, wenn die MID in der DCS-Antwort fehlt. Bei einer fehlerhaften Antwort werden auf der Registerkarte [!DNL Response] ein Fehlercode und eine Fehlermeldung zurückgegeben wie nachstehend dargestellt. Wenden Sie sich an den Kundendienst, wenn diese Fehlermeldung in der DCS-Antwort angezeigt wird.
+Ihr Konto wurde nicht richtig bereitgestellt, wenn die MID in der DCS-Antwort fehlt. Bei einer fehlerhaften Antwort werden auf der Registerkarte [!UICONTROL „Antwort“] ein Fehlercode und eine Fehlermeldung zurückgegeben, wie im Folgenden gezeigt. Wenden Sie sich an den Kundendienst, wenn diese Fehlermeldung in der DCS-Antwort angezeigt wird.
 
 ![](assets/charles_response_unsuccessful.png)
 
