@@ -1,20 +1,20 @@
 ---
-description: Nachdem Sie die Teilnahme an der Website aktiviert haben, testen Sie mithilfe der Validierungsmethoden, ob der Dienst mit den Developer Tools in Ihrem Browser erwartungsgemäß funktioniert.
-seo-description: Nachdem Sie die Teilnahme an der Website aktiviert haben, testen Sie mithilfe der Validierungsmethoden, ob der Dienst mit den Developer Tools in Ihrem Browser erwartungsgemäß funktioniert.
-seo-title: Überprüfung der Anmeldung
-title: Überprüfung der Anmeldung
-uuid: 1743360 a-d 557-4 e 50-8697-0 fa 92 b 302 cbc
-translation-type: tm+mt
+description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Dienst wie erwartet funktioniert.
+seo-description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Dienst wie erwartet funktioniert.
+seo-title: Überprüfen des Opt-in-Dienstes
+title: Überprüfen des Opt-in-Dienstes
+uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
+translation-type: ht
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
 
 
-# Überprüfung der Anmeldung{#validating-opt-in-service}
+# Überprüfen des Opt-in-Dienstes{#validating-opt-in-service}
 
-Nachdem Sie die Teilnahme an der Website aktiviert haben, testen Sie mithilfe der Validierungsmethoden, ob der Dienst mit den Developer Tools in Ihrem Browser erwartungsgemäß funktioniert.
+Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Dienst wie erwartet funktioniert.
 
-## Anwendungsfall 1: Teilnahme aktivieren {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## Nutzungsszenario 1: Opt-in aktivieren {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -30,7 +30,7 @@ Klicken Sie mit der rechten Maustaste in Chrome auf die Webseite und wählen Sie
 
 Im Beispiel oben wurden die folgenden Adobe JS-Tags auf der Seite installiert: ECID, AAM, Analytics und Target.
 
-**So können Sie nachweisen, dass die Teilnahme wie erwartet funktioniert:**
+**Überprüfen der erwarteten Funktionsweise des Opt-in:**
 
 Sie sollten keine Anfragen an diese Adobe-Server sehen:
 
@@ -42,7 +42,7 @@ Sie sollten keine Anfragen an diese Adobe-Server sehen:
 
 >[!NOTE]
 >
->Möglicherweise wird ein Aufruf an `http://dpm.demdex.net/optOutStatus`einen Schreibgeschützten Endpunkt angezeigt, der zum Abrufen des Abmeldestatus des Besuchers verwendet wird. Dieser Endpunkt führt nicht dazu, dass Drittanbieter-Cookies erstellt werden. Es werden auch keine Informationen auf der Seite erfasst.
+>Möglicherweise wird ein Aufruf von `http://dpm.demdex.net/optOutStatus` angezeigt. Auf diesem SCHREIBGESCHÜTZTEN Endpunkt wird der Opt-out-Status des Benutzers abgerufen. Dieser Endpunkt führt nicht dazu, dass Drittanbieter-Cookies erstellt werden. Es werden auch keine Informationen auf der Seite erfasst.
 
 Sie sollten keine von folgenden Adobe-Tags erstellten Cookies sehen: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
