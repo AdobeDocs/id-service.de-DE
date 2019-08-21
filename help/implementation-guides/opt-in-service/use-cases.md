@@ -1,10 +1,10 @@
 ---
-description: Beispielverwendungsfälle und Lösungen zur Verwaltung des Opt-in-Diensts.
-seo-description: Beispielverwendungsfälle und Lösungen zur Verwaltung des Opt-in-Diensts.
+description: Beispiele für Nutzungsszenarios und Lösungen zur Verwaltung des Opt-in-Dienstes.
+seo-description: Beispiele für Nutzungsszenarios und Lösungen zur Verwaltung des Opt-in-Dienstes.
 seo-title: Opt-in-Nutzungsszenarios
 title: Opt-in-Nutzungsszenarios
-uuid: d 75 a 44 d 5-b 713-43 d 1-b 5 b 6-95 d 1 d 0 d 213 a 7
-translation-type: tm+mt
+uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
+translation-type: ht
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 # Opt-in-Nutzungsszenarios {#opt-in-use-cases}
 
-Beispielverwendungsfälle und Lösungen zur Verwaltung des Opt-in-Diensts.
+Beispiele für Nutzungsszenarios und Lösungen zur Verwaltung des Opt-in-Dienstes.
 
 ## Tipps und Fehlerbehebung {#section-5c566366410f4a8f89eca0d3f556d99f}
 
@@ -20,9 +20,9 @@ Beispielverwendungsfälle und Lösungen zur Verwaltung des Opt-in-Diensts.
 * Opt-in wird pro Domäne implementiert. Es kann nicht für domänenübergreifende Implementierungen verwendet werden.
 * Um Drittanbieter-Aufrufe für eine bestimmte Bibliothek zu deaktivieren, müssen Sie diese Voreinstellung in jeder Bibliothek separat konfigurieren.
 
-## Opt-in-Szenarios {#section-1178053c065c430bba26f82ef383a71c}
+## Opt-in-Szenarios  {#section-1178053c065c430bba26f82ef383a71c}
 
-Diese Anwendungsfälle sind Beispiele für die Verwendung von Opt-in-Diensten.
+Diese Nutzungsszenarios sind Beispiele für die Verwendung des Opt-in-Dienstes.
 
 <table id="table_83C85343611344D8A8315157C1B4240F"> 
  <thead> 
