@@ -4,8 +4,8 @@ keywords: ID-Dienst
 seo-description: Diese Konfiguration ermöglicht Ihnen, verwaiste oder veraltete Experience Cloud IDs (ECIDs) basierend auf der Version des ID-Diensts, die aktualisiert wird, zu löschen.
 seo-title: resetBeforeVersion
 title: resetBeforeVersion
-uuid: b 00 d 18 b 8-6720-42 f 9-9 c 83-bd 306184 cc 0 c
-translation-type: tm+mt
+uuid: b00d18b8-6720-42f9-9c83-bd306184cc0c
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
