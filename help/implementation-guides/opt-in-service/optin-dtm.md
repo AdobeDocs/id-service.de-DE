@@ -1,10 +1,10 @@
 ---
-description: Aktivieren Sie die Option für die Anmeldung mit dynamischem Tag-Management (DTM).
-seo-description: Aktivieren Sie die Option für die Anmeldung mit dynamischem Tag-Management (DTM).
+description: Aktivieren Sie Opt-in-Dienste mit Dynamic Tag Management (DTM).
+seo-description: Aktivieren Sie Opt-in-Dienste mit Dynamic Tag Management (DTM).
 seo-title: Konfigurieren von Opt-in mit DTM
 title: Konfigurieren von Opt-in mit DTM
-uuid: 7 a 886 bc 3-c 9 e 5-4 eac -85 e 8-828 a 83 c 847 c 5
-translation-type: tm+mt
+uuid: 7a886bc3-c9e5-4eac-85e8-828a83c847c5
+translation-type: ht
 source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
@@ -12,9 +12,9 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 # Konfigurieren von Opt-in mit DTM{#configuring-opt-in-with-dtm}
 
-Aktivieren Sie die Option für die Anmeldung mit dynamischem Tag-Management (DTM).
+Aktivieren Sie Opt-in-Dienste mit Dynamic Tag Management (DTM).
 
-Richten Sie die Anmeldungsdienste mit DTM ein.
+Richten Sie Opt-in mit DTM ein.
 
 Erforderlich:
 
