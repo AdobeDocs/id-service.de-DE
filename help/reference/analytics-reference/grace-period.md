@@ -4,14 +4,14 @@ keywords: ID-Dienst
 seo-description: Wir empfehlen, eine Übergangsphase zu konfigurieren, wenn mehrere JavaScript-Dateien vorhanden sind, die Daten an dieselbe Report Suite senden, oder wenn Sie für die Site weitere Technologien wie Flash-Videomessung verwenden.
 seo-title: Übergangsphase für den ID-Dienst
 title: Übergangsphase für den ID-Dienst
-uuid: 10 a 7 db 7 d-de 33-4379-914 f-edaf 929 efa 32
-translation-type: tm+mt
+uuid: 10a7db7d-de32-4379-914f-edaf929efa32
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
 
 
-# Übergangsphase für den ID-Dienst{#the-id-service-grace-period}  
+# Übergangsphase für den ID-Dienst{#the-id-service-grace-period}
 
 Wir empfehlen, eine Übergangsphase zu konfigurieren, wenn mehrere JavaScript-Dateien vorhanden sind, die Daten an dieselbe Report Suite senden, oder wenn Sie für die Site weitere Technologien wie Flash-Videomessung verwenden.
 
@@ -23,14 +23,14 @@ Wird der [!DNL Experience Cloud] ID-Dienst auf Sites bereitgestellt, die mehrere
 
 >[!NOTE]
 >
->Für die Übergangsphase wird der [!DNL Experience Cloud] ID-Dienst ab Version 1.3 benötigt.
+>Die Konfiguration einer Übergangsphase wird erst ab Version 1.3 des [!DNL Experience Cloud] ID-Diensts unterstützt.
 
 ## Wann sollte eine Übergangsphase konfiguriert werden? {#section-fd34c7ff697348a39f49258b7d39eb42}
 
-Wenn Sie nur eine Analytics-JavaScript-Datei verwenden und keine weiteren AppMeasurement-Bibliotheken, ist es nicht erforderlich, eine Übergangsphase zu konfigurieren. Sie können einfach die JavaScript-Datei aktualisieren. Neue Besucher werden dann bei ihrem Besuch mit der Marketing Cloud ID richtig identifiziert.
+Wenn Sie nur eine Analytics-JavaScript-Datei verwenden und keine weiteren AppMeasurement-Bibliotheken, ist es nicht erforderlich, eine Übergangsphase zu konfigurieren. Sie können einfach die JavaScript-Datei aktualisieren. Neue Besucher werden dann bei ihrem Besuch mit der Experience Cloud ID richtig identifiziert.
 
 Wir empfehlen, eine Übergangsphase zu konfigurieren, wenn mehrere JavaScript-Dateien vorhanden sind, die Daten an *dieselbe Report Suite* senden, oder wenn Sie auf der Site weitere Technologien wie Flash-Videomessung verwenden.
 
 ## Wie wird eine Übergangsphase konfiguriert? {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Wenden Sie sich an [den Kundendienst](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Wenden Sie sich an [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
