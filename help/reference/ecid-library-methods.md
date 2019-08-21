@@ -1,87 +1,87 @@
 ---
-title: ECID-Bibliotheksmethoden in einer Safari ITP-Welt
-seo-title: ECID-Bibliotheksmethoden in einer Safari ITP-Welt
+title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
+seo-title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 seo-description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
 
 
-# ECID-Bibliotheksmethoden in einer Safari ITP-Welt
+# Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 
-Da Safari die domänenübergreifende Verfolgung über ITP aufhebt, muss Adobe Best Practices für Bibliotheken aufrechterhalten, die Kunden unterstützen, sowie die Privatsphäre und Auswahl von Verbrauchern.
+Da Safari per ITP das domänenübergreifende Tracking einschränkt, setzt Adobe für Bibliotheken Best Practices ein, die einerseits Kunden unterstützen und andererseits auch den Datenschutz und die Wahlfreiheit der Konsumenten berücksichtigen.
 
-Am 21. Februar 2019 kündigte Apple das letzte Update an ITP an (intelligente Verfolgung der Verfolgung). Im Gegensatz zu früheren Versionen, die sich auf Drittanbieter-Cookies konzentrieren, werden in dieser Version neue Verfolgungsmaßnahmen für Erstanbieter-Cookies beschrieben. Alle beständigen Cookies von Erstanbietern, die über die document. cookie API, häufig als &quot;clientseitige Cookies&quot; bezeichnet, festgelegt werden, haben ihre Gültigkeit um 7 Tage begrenzt. Drittanbieter-Cookies werden wie in früheren Versionen von ITP beschrieben blockiert. Weitere Informationen zu ITP 2.1 und den Auswirkungen von Adobe-Lösungen finden Sie unter [Safari ITP 2.1 Auswirkungen auf Adobe Experience Cloud- und Experience Platform-Kunden](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+Am 21. Februar 2019 gab Apple das aktuelle Update von ITP (Intelligent Tracking Prevention) bekannt. Im Gegensatz zu früheren Versionen, die sich auf Drittanbieter-Cookies konzentrierten, stehen in dieser Version neue Trackingmaßnahmen für Erstanbieter-Cookies im Vordergrund. Die Gültigkeit aller persistenten Cookies von Erstanbietern, die über die document.cookie-API gesetzt werden (auch „clientseitige Cookies“ genannt), ist auf sieben Tage begrenzt. Drittanbieter-Cookies werden. wie in früheren Versionen von ITP beschrieben, blockiert. Weitere Informationen zu ITP 2.1 und die Auswirkungen auf Adobe-Lösungen finden Sie unter [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
-## Häufig gestellte Fragen zu Adobe ECID für Safari-ITP
+## Häufig gestellte Fragen zu Adobe ECID für Safari ITP
 
-**Warum hat das AMCV-Cookie, das von der Experience Cloud ID-Bibliothek (ECID) in der Domäne einer Kunden (ECID) gesetzt wird, von ITP 2.1 beeinflusst?**
+**Warum hat ITP 2.1 Einfluss auf das AMCV-Cookie, das von der Experience Cloud ID-Bibliothek (ECID) in der Erstanbieterdomäne eines Kunden gesetzt wird?**
 
-Der AMCV-Cookie beruht derzeit auf der document. cookie API und wird über &quot;clientseitig&quot; festgelegt. Safari bevorzugt Cookies, die vom Server eines Kunden gesetzt werden.
+Das AMCV-Cookie basiert derzeit auf der document.cookie-API und wird „clientseitig“ gesetzt. Safari bevorzugt Cookies, die vom Server eines Kunden gesetzt werden.
 
-**Warum wird ein Cookie, das über einen CNAME-Tracking-Server festgelegt wurde, eine bessere Option zur Verfolgung in Safari?**
+**Warum ist ein Cookie, das über einen CNAME-Trackingserver gesetzt wurde, zum Tracking in Safari besser?**
 
-Die Regeln des ITP konzentrieren sich auf die Kontrolle der Entwickler. Implementierungen über CNAME-Zertifikate können nicht allein über javascript ausgeführt werden. Das CNAME-Zertifizierungsprogramm von Adobe (serverseitige Verfolgung) ist mit ITP in Einklang und ist seit vielen Jahren Teil der Adobe-Strategie. Die ECID-Bibliothek gibt Methoden zum Verschieben der ECID-Bibliotheksfunktionalität in eine CNAME-Implementierung frei.
+Die ITP-Regeln haben zum Ziel, den Entwicklern wieder mehr Kontrolle zu geben. Implementierungen über CNAME-Zertifikate können nicht allein über JavaScript erfolgen. Das CNAME-Zertifizierungsprogramm von Adobe (serverseitiges Tracking) ist im Einklang mit ITP und seit vielen Jahren Teil der Adobe-Strategie. Die ECID-Bibliothek bietet Methoden zum Wechsel von der Nutzung der ECID-Bibliothek zur CNAME-Implementierung.
 
-**Warum konzentriert sich Adobe auf die ECID-Bibliothek, wenn andere Analytics-Besucherverfolgungsmethoden heute mit cnames verwendet werden?**
+**Warum konzentriert sich Adobe auf die ECID-Bibliothek, wenn heute mit CNAMEs andere Analytics-Methoden zum Besuchertracking verwendet werden?**
 
-Die ECID-Bibliothek, AMCV-Cookie und ECID (ebenfalls MID) wurden als Methode zur Integration aller Adobe-Lösungen in eine ID gestartet. Diese ID ist weiterhin die Cookie-Stufe-ID im Adobe-Produktplan und ist die Standard-Cookie-ID für die Adobe Experience Platform.
+Anfangs wurden die ECID-Bibliothek, AMCV-Cookies und ECID (d. h. MID) als Methoden zur Integration aller Adobe-Lösungen in einer ID verwendet. Diese ID wird weiterhin die vorrangige Cookie-ID im Adobe-Produktportfolio sein. Sie ist auch die Standard-Cookie-ID für die Adobe Experience Platform.
 
-**Hilft cnames Kunden bei der Aktivierung der domänenübergreifenden Verfolgung?**
+**Helfen CNAMEs Kunden beim domänenübergreifenden Tracking?**
 
-Die gleichen Regeln und Einschränkungen, die zuvor mit cnames vorhanden waren, sind weiterhin vorhanden. In einigen Fällen können cnames in einem Szenario mit mehreren Domänen hilfreich sein. Wenn Sie über eine Haupteinstiegssite verfügen, auf der Benutzer vor dem Besuch anderer Domänen identifiziert werden können, kann ein CNAME-Tracking in Browsern, die keine Drittanbieter-Cookies akzeptieren, aktiviert werden. Obwohl cnames in bestimmten Szenarien bei mehreren Domänen hilfreich sein können, liegt der Grund für die Umschalt der ECID in CNAME-Implementierungen bei der dauerhaften Besucheridentifizierung, nicht bei der Verfolgung mehrerer Domänen. For more on CNAME and multi-domain, see [Data Collection CNAMEs and Cross-Domain Tracking](/help/reference/analytics-reference/cname.md).
+Es gelten dieselben Regeln und Einschränkungen bei CNAMEs wie zuvor. In manchen Fällen können CNAMEs bei einem Szenario mit mehreren Domänen hilfreich sein. Wenn eine Haupteinstiegs-Website vorhanden ist, über die Benutzer vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das Tracking mehrerer Domänen für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren. Doch obwohl CNAMEs in bestimmten Fällen in Umgebungen mit mehreren Domänen hilfreich sein können, liegt der Grund für den Umstieg von ECID auf CNAME-Implementierungen in der dauerhaften Besucheridentifizierung, und nicht im domänenübergreifenden Tracking. Weitere Informationen zu CNAME und dem domänenübergreifenden Tracking finden Sie unter [Datenerfassungs-CNAMEs und domänenübergreifendes Tracking](/help/reference/analytics-reference/cname.md).
 
-Weitere faqs werden hier hinzugefügt, da zusätzliche ITP-Änderungen veröffentlicht werden. Weitere Fragen finden Sie in [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
+Diese FAQs werden erweitert, sobald zusätzliche Änderungen bei ITP veröffentlicht werden. Weitere Informationen finden Sie unter [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
 
-## ITP verwandte Änderungen, Methoden und Konfigurationen
+## Änderungen, Methoden und Konfigurationen in Verbindung mit ITP
 
-Wenn zusätzliche Methoden zur Verfolgung innerhalb von Safari erstellt werden, werden sie als Referenz auf diese Seite hinzugefügt.
+Wenn zusätzliche Methoden zum Tracking in Safari entwickelt werden, werden sie auf dieser Seite hinzugefügt.
 
->[!NOTE]*ECID* = *MID* = *MCID* in der gesamten Dokumentation unten.
+>Für die folgende Dokumentation gilt: [!NOTE] *ECID* = *MID* = *MCID*.
 
-Unter Verwendung der ITP- und ECID-Bibliotheksnutzung finden Sie weitere Informationen.
+Unten finden Sie weitere Informationen zu ITP und zur Nutzung der ECID-Bibliothek.
 
-## Verwenden Sie die ECID-Bibliothek und die CNAME-Verfolgung, um die Besucher-ID-Ablaufzeit zu erweitern.
+## Verwendung der ECID-Bibliothek und des CNAME-Trackings, um die Gültigkeit der Besucher-ID zu verlängern
 
-ITP 2.1 gibt Ihnen die Möglichkeit, clientseitige Cookies zu schreiben, was die Möglichkeit bietet, präzise Besucherverfolgungsinformationen an Kunden zu liefern. Daher wird eine Änderung in den CNAME-Tracking-Servern von Adobe eingeführt, um die Experience Cloud ID (ECID) des Besuchers in einem Erstanbieter-Cookie zu speichern.
+ITP 2.1 beeinträchtigt die Möglichkeit, clientseitige Cookies zu schreiben, wodurch Kunden keine präzisen Besucher-Trackinginformationen bereitgestellt werden können. Daher wurden die CNAME-Trackingserver von Adobe dahingehend angepasst, dass die Experience Cloud ID (ECID) eines Besuchers in einem Erstanbieter-Cookie gespeichert wird.
 
-Diese Änderung ist nur für ECID-Kunden hilfreich, die einen Analytics-CNAME im Erstanbieterkontext verwenden. Wenn Sie Analytics-Kunde sind, der derzeit keinen CNAME oder einen Nicht Analytics-Kunden verwendet, können Sie weiterhin einen CNAME-Datensatz eingeben. Wenden Sie sich an den Kundendienst oder Ihren Kundenbetreuer, um die Registrierung für einen [CNAME zu starten](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html).
+Diese Änderung ist nur für ECID-Kunden hilfreich, die einen Analytics-CNAME im Erstanbieterkontext verwenden. Wenn Sie Analytics-Kunde sind, der derzeit keinen CNAME verwendet, oder kein Analytics-Kunde sind, sind Sie dennoch zu einem CNAME-Datensatz berechtigt. Wenden Sie sich an die Kundenunterstützung oder Ihren Kundenbetreuer, um sich für einen [CNAME](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html) zu registrieren.
 
-Aktualisieren Sie auf die ECID-Bibliothek v. 4.3.0 +, um diese Änderung nutzen zu können.
+Führen Sie ein Upgrade auf eine Version ab ECID-Bibliothek v. 4.3.0 durch, um diese Änderung nutzen zu können.
 
 **Design**
 
-Sobald eine ID-Anforderung an demdex. net gesendet und eine ECID abgerufen wird, wird eine ID-Anforderung an die Domäne des Kunden gesendet, wenn ein Trackingserver in Ihrer ECID-Bibliothek festgelegt wird. Dieser Endpunkt liest den ecid-Parameter aus der Abfragezeichenfolge und legt ein neues [Cookie](/help/introduction/cookies.md) fest, das nur die ECID und ein Ablaufdatum zwei Jahre in der Zukunft umfasst. Jedes Mal, wenn dieser Endpunkt aufgerufen wird, wird das `s_ecid` Cookie mit einem Ablaufdatum von zwei Jahren nach dem Aufruf dieses Aufrufs umgeschrieben. Die ECID-Bibliothek muss auf Version 4.3.0 aktualisiert werden, damit der Wert dieses Cookies abgerufen werden kann.
+Sobald eine ID-Anforderung an demdex.net gesendet und eine ECID abgerufen wird, wird eine ID-Anforderung an die Domäne des Kunden gesendet, sofern ein Trackingserver in Ihrer ECID-Bibliothek eingerichtet ist. Dieser Endpunkt liest den ecid-Parameter aus der Abfragezeichenfolge und setzt ein neues [Cookie](/help/introduction/cookies.md), das nur die ECID und ein Ablaufdatum umfasst, das zwei Jahre in der Zukunft liegt. Jedes Mal, wenn dieser Endpunkt auf diese Weise aufgerufen wird, wird das `s_ecid`-Cookie mit einem Ablaufdatum von zwei Jahren ab dem Zeitpunkt dieses Aufrufs umgeschrieben. Die ECID-Bibliothek muss auf Version 4.3.0 aktualisiert werden, damit der Wert dieses Cookies abgerufen werden kann.
 
-Dieses neue `s_ecid` Cookie folgt demselben Ausschluss-Status wie das AMCV-Cookie. Wenn die ECID aus dem `s_ecid` Cookie gelesen wird, wird demdex immer aufgerufen, um den neuesten Abmeldestatus für diese ID abzurufen und im AMCV-Cookie zu speichern.
+Dieses neue `s_ecid`-Cookie hat denselben Opt-out-Status wie das AMCV-Cookie. Wenn die ECID im `s_ecid`-Cookie gelesen wird, wird demdex sofort aufgerufen, um den aktuellen Opt-out-Status für diese ID abzufragen, und im AMCV-Cookie gespeichert.
 
-Wenn Ihr Kunde die Analytics-Verfolgung über diese [Methode](https://marketing.adobe.com/resources/help/en_US/sc/implement/opt_out_link.html)abmeldet, wird dieses `s_ecid` Cookie gelöscht.
+Wenn sich Ihr Kunde per Opt-out vom Analytics-Tracking über diese [Methode ](https://marketing.adobe.com/resources/help/en_US/sc/implement/opt_out_link.html)abgemeldet hat, wird dieses `s_ecid`-Cookie gelöscht.
 
-Der Name des Tracking-Servers sollte der visitorjs-Bibliothek zur Verfügung gestellt werden, wenn die Bibliothek mit trackingserver oder trackingserversecure initialisiert wird. Dies sollte mit der trackingserver-Konfiguration in den Analytics-Konfigurationen übereinstimmen.
+Der Name des Trackingservers sollte der VisitorJS-Bibliothek bereitgestellt werden, wenn die Bibliothek per trackingServer oder trackingServerSecure initialisiert wird. Dies sollte mit der trackingServer-Konfiguration in den Analytics-Konfigurationen übereinstimmen.
 
-Wenn Sie sich gegen diese Methode entscheiden, fügen Sie Ihrer ECID-Bibliotheksimplementierung die folgende Konfiguration hinzu: Discardtrackingserverecid. Wenn diese Konfiguration auf &quot;true&quot; festgelegt ist, liest die Besucherbibliothek die vom Erstanbieter-Tracking-Server festgelegte MID nicht.
+Wenn Sie sich gegen diese Methode entscheiden, fügen Sie Ihrer ECID-Bibliotheksimplementierung die folgende Konfiguration hinzu: discardtrackingServerECID. Wenn diese Konfiguration auf „true“ gesetzt ist, liest die Besucherbibliothek die vom Erstanbieter-Trackingserver festgelegte MID nicht.
 
 ![](assets/itp-proposal-v1.png)
 
-## Verwenden Sie die Methode appendvisitoridsto für die domänenübergreifende Verfolgung (in den mehreren Domänen Ihres Unternehmens).
+## Verwendung der appendVisitorIDsTo-Methode für das domänenübergreifende Tracking (innerhalb der Domänen Ihres Unternehmens)
 
-Mit dieser Funktion können Sie die ECID eines Besuchers domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst implementiert haben und Inhaber der Quell- und Zieldomäne sein. Verfügbar in visitorapi. js Version 1.7.0 oder höher (jedoch nicht in Version 1.10.0).
+Mit dieser Funktion können Sie die ECID domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst implementiert haben und Inhaber der Quell- und Zieldomäne sein. Verfügbar in VisitorAPI.js-Version 1.7.0 oder höher (jedoch nicht in Version 1.10.0).
 
 **Design**
 
-* Wenn ein Besucher zu Ihren anderen Domänen navigiert, gibt Visitor. appendvisitoridsto (url) eine URL zurück, die als Abfrageparameter angehängt ist.
+* Wenn ein Besucher zu Ihren anderen Domänen navigiert, gibt Visitor.appendVisitorIDsTo(url) eine URL zurück, bei der ECID als Abfrageparameter angehängt ist.
 
-   Verwenden Sie diese URL, um von der ursprünglichen Domäne in die Zieldomäne umzuleiten.
+   Verwenden Sie diese URL zur Umleitung von der ursprünglichen Domäne zur Zieldomäne.
 
-* Der ID-Dienst-Code in der Zieldomäne extrahiert die ECID aus der URL, anstatt an Adobe eine Anforderung für die ID dieses Besuchers zu senden.
+* Der ID-Dienstcode auf der Zieldomäne extrahiert die ECID aus der URL, statt bei Adobe eine neue Besucher-ID anzufordern.
 
    Diese Anforderung schließt die Drittanbieter-Cookie-ID ein, die in diesem Fall nicht verfügbar ist.
 
-* Der ID-Dienst-Code auf der Zielseite verwendet die übergebene ECID zur Verfolgung des Besuchers.
+* Der ID-Dienstcode auf der Zielseite verwendet die übergebene ECID zum Tracken des Besuchers.
 
    >[!NOTE]
-   >Wenn die Zielseite bereits über eine ECID aus vorherigen Besuchen verfügt, wird die Entscheidung, das vorhandene Cookie zu überschreiben, von dieser Konfiguration überschrieben. Weitere Informationen zu dieser Konfiguration finden Sie unter [overwritecrossdomainmcidandaid](/help/library/function-vars/overwrite-visitor-id.md).
+   >Wenn die Zielseite bereits über eine ECID aus vorherigen Besuchen verfügt, wird die Entscheidung, das vorhandene Cookie zu überschreiben, von der Konfiguration overwriteCrossDomainMCIDAndAID gesteuert. Weitere Informationen zu dieser Konfiguration finden Sie unter [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md).
    >
-   >Weitere Informationen zu dieser Methode finden Sie auf der [Referenzseite appendvisitoridsto (Domänenübergreifende](/help/library/get-set/appendvisitorid.md) Verfolgung).
+   >Weitere Informationen zu dieser Methode finden Sie auf der Seite [appendVisitorIDsTo (Cross Domain Tracking)](/help/library/get-set/appendvisitorid.md).
