@@ -1,11 +1,11 @@
 ---
 description: Konfigurieren Sie den ID-Dienst, indem Sie diese Eigenschaften an die statische Methode Visitor.getInstance übergeben.
-keywords: Organisations-ID; ID-Dienst
+keywords: Organisations-ID, ID-Dienst
 seo-description: Konfigurieren Sie den ID-Dienst, indem Sie diese Eigenschaften an die statische Methode Visitor.getInstance übergeben.
 seo-title: Konfigurationen
 title: Konfigurationen
-uuid: 2 dfe 1 ed 6-f 3 a 6-4 f 5 c -976 b-eeb 33738 c 20 c
-translation-type: tm+mt
+uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,7 +17,7 @@ Konfigurieren Sie den ID-Dienst, indem Sie diese Eigenschaften an die statische 
 
 >[!NOTE]
 >
->Die *Javascript-Bibliotheken* der Experience Cloud ID wurden kürzlich verschoben. Die neueste Version der ECID-JS-Bibliotheken finden Sie unter [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Die *Javascript-Bibliotheken des Experience Cloud ID-Diensts* wurden vor Kurzem verschoben. Die neueste Version der ECID-JS-Bibliotheken finden Sie unter [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Verwandte Artikel:
 
