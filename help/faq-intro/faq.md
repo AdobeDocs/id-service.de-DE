@@ -2,10 +2,10 @@
 description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bezüglich des ID-Diensts.
 keywords: ID-Dienst
 seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bezüglich des ID-Diensts.
-seo-title: ID-Dienst Häufig gestellte Fragen (FAQ)
+seo-title: Häufig gestellte Fragen zum ID-Dienst
 title: Häufig gestellte Fragen zum ID-Dienst
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ Siehe [Übersicht](../introduction/overview.md).
 
 **Warum führt der ID-Dienst keinen Aufruf durch, um die Experience Cloud ID abzurufen?**
 
-Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe [Content Security Policies und Experience Cloud-Identitätsdienst](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **VisitorAPI.js-Dateispeicherung**
 
@@ -35,7 +35,7 @@ Möglicherweise treten Probleme auf, wenn Sie VisitorAPI.js als lokale Datei in 
 
 Platzieren Sie die Bibliothek VisitorAPI.js oben auf der Seite in den `<head>` Abschnitt Ihres Codes. Dadurch stellen Sie sicher, dass der Aufruf an eine ID gesendet wird, bevor der Seitentext geladen wird, und die Wahrscheinlichkeit, dass eine ID erfolgreich zurückgegeben wird, erhöht sich.
 
-Der Aufruf des ID-Diensts erfolgt asynchron. Es ist der einzige Aufruf an die [demdex.net-Domäne](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
+Der ID-Dienst-Aufruf ist asynchron und der einzige Aufruf zur [Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
 
 Für [!DNL Target]-Kunden kann die Platzierung von ID-Dienst-Code in `<body>` der Seite die Wahrscheinlichkeit erhöhen, dass ein [!DNL Target]-Aufruf blockiert wird. Wenn Sie ID-Dienst-Code im Haupttext Ihrer Seite platzieren müssen, dann sollten Sie ihn nach dem öffnenden `<body>`-Tag einfügen.
 
@@ -67,13 +67,13 @@ Diese Änderung erhöht die Leistung bei Kunden, die Visitor 2.3.0 oder höher 
 
 Ressourcenanforderungen mit CORS sind JSONP in der Regel vorzuziehen. Bei JSONP weisen einige Browser Anforderungen eine geringere Priorität zu als anderen synchronen und asynchronen Abrufen, wenn sie diese in die Warteschlange stellen. Mit CORS können Sie sicherstellen, dass die Anforderungen eine höhere Priorität in der Aufrufliste des Browsers erhalten.
 
-Siehe [CORS-Unterstützung im Experience Cloud-Identitätsdienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Siehe [CORS-Unterstützung im Experience Cloud Identity-Dienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sicherheit {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Unterstützt der ID-Dienst CORS?**
 
-Ja. See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Ja. Siehe [CORS-Unterstützung im Experience Cloud Identity-Dienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Was ist CORS?**
 
@@ -87,5 +87,5 @@ Siehe [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2
 
 >[!MORE_LIKE_THIS]
 >
->* [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
 
