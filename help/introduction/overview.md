@@ -1,10 +1,10 @@
 ---
-description: Die Rolle des Experience Platform Identity Service in der Adobe Experience Cloud.
-seo-description: Der Experience Platform Identity Service aktiviert das allgemeine Identifizierungsframework für die Experience Cloud Core Services, Lösungen und Kundenattribute und -zielgruppen.
+description: Die Rolle des Experience Platform Identity-Diensts in Adobe Experience Cloud.
+seo-description: Mit dem Experience Platform Identity-Dienst wird das allgemeine Identifizierungs-Framework für die Experience Cloud-Core Services, Lösungen sowie benutzerdefinierte Attribute und Zielgruppen ermöglicht.
 seo-title: ID-Dienst – Übersicht
 title: Übersicht
 uuid: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -12,13 +12,13 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # Übersicht
 
-Der Experience Platform Identity Service aktiviert das allgemeine Identifizierungsframework für die Experience Cloud Core Services, Lösungen und Kundenattribute und Zielgruppen im Plattformidentitätsdienst. (Möglicherweise werden Verweise auf frühere Namen oder Akronymns wie Experience Cloud ID-Dienst, ECID, Marketing Cloud ID-Dienst, MID und Besucher-ID-Dienst angezeigt.) Der Identitätsdienst funktioniert durch Zuweisung einer eindeutigen, dauerhaften ID zu einem Site-Besucher. Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
+Mit dem Experience Platform Identity-Dienst wird das allgemeine Identifizierungs-Framework für die Experience Cloud-Core Services, Lösungen sowie benutzerdefinierte Attribute und Zielgruppen im Platform Identity-Dienst ermöglicht. (Möglicherweise werden auch ältere Namen oder Abkürzungen wie Experience Cloud ID-Dienst, ECID, Marketing Cloud ID-Dienst, MID und Besucher-ID-Dienst verwendet.) Der Identity-Dienst funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Site-Besucher. Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
 
 ![](assets/ecid.png)
 
 Zudem kann der ID-Dienst die unterschiedlichen lösungsspezifischen IDs (z. B. Analytics AID) ersetzen. Mit der Funktionalität [Kunden-IDs und Authentifizierungsstatus](/help/reference/authenticated-state.md) ermöglicht es Ihnen der ID-Dienst, eigene Kunden-IDs an Experience Cloud zu übergeben. Beachten Sie jedoch, dass der ID-Dienst lediglich in den Lösungen verwendet werden kann, die Sie bereits abonniert haben. Er bietet keinen Zugriff auf weitere Produkte, wenn Sie diese noch nicht abonniert haben.
 
-Künftig ist der ID-Dienst eine integrale Komponente von vielen aktuellen und künftigen Experience Cloud-Features, -Erweiterungen und -Services. Der ID-Dienst unterstützt derzeit [Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html) und [Target](http://www.adobe.com/marketing-cloud/testing-targeting.html). Zudem ist er erforderlich, wenn Sie sich an der Adobe Experience Cloud-Gerätekooperation beteiligen möchten. Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. For more information about the importance and role of the ID service, see [Why the Experience Cloud Identity Service Should be on Your Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/).
+Künftig ist der ID-Dienst eine integrale Komponente von vielen aktuellen und künftigen Experience Cloud-Features, -Erweiterungen und -Services. Derzeit unterstützt der ID-Dienst [Analytics](http://www.adobe.com/de/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/de/marketing-cloud/data-management-platform.html) und [Target](http://www.adobe.com/de/marketing-cloud/testing-targeting.html). Zudem ist er erforderlich, wenn Sie sich an der Adobe Experience Cloud-Gerätekooperation beteiligen möchten. Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. Weitere Informationen über die Bedeutung und die Rolle des Identity-Dienstes finden Sie unter [Why the Experience Cloud ID Service Should be on Your Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/).
 
 ## Funktionszusammenfassung
 
@@ -35,6 +35,8 @@ Kurz gesagt, ermöglicht der ID-Dienst Folgendes:
 
 Ihre Lösung und andere Adobe-Codebibliotheken müssen diese [Anforderungen erfüllen](/help/reference/requirements.md), bevor Sie den ID-Dienst verwenden können.
 
-* [Cookies und der Experience Cloud-Identitätsdienst](cookies.md): Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud AMCV-Cookie und ein demdex-Cookie, um eindeutige, beständige ids für Ihre Site-Besucher zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
-* [Anfordern und Festlegen von IDs durch den Experience Cloud-Identitätsdienst](id-request.md): Eine Übersicht über den ID-Anforderungs- und Antwortprozess. Diese Beispiele decken die ID-Zuweisung auf individuellen Sites, Site-übergreifend und für durch verschiedene Experience Cloud-Kunden verwaltete Sites mit eigenen Kunden-IDs ab.
-* [ID-Synchronisierung und Übereinstimmungsraten](match-rates.md): Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
+* [Cookies und der Experience Cloud Identity-Dienst](cookies.md): Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und beständige IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
+
+
+* [Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst](id-request.md): Eine Übersicht über den ID-Anforderungs- und Antwortprozess. Diese Beispiele decken die ID-Zuweisung auf individuellen Sites, Site-übergreifend und für durch verschiedene Experience Cloud-Kunden verwaltete Sites mit eigenen Kunden-IDs ab.
+* [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](match-rates.md): Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity-Dienst, einschließlich Adobe Media Optimizer und ID-Dienst.
