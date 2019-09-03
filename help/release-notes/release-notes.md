@@ -1,11 +1,11 @@
 ---
-description: Funktionen, Aktualisierungen oder Änderungen an dem Experience Cloud-Identitätsdienst.
+description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
 keywords: ID-Dienst
-seo-description: Funktionen, Aktualisierungen oder Änderungen an dem Experience Cloud-Identitätsdienst.
+seo-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
 seo-title: Versionshinweise für 2019
 title: Versionshinweise für 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
 
 # Versionshinweise für 2019 {#release-notes}
 
-Funktionen, Aktualisierungen oder Änderungen an dem Experience Cloud-Identitätsdienst.
+Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
 
 ## Versionshinweise für 2019 {#topic-1b9a1c3ec5044e1c987785950f697e25}
 
@@ -23,30 +23,30 @@ Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des [!DNL Experi
 
 **Neue Funktion**
 
-[SHA 256 Hashing-Unterstützung für setcustomerids](/help/reference/hashing-support.md). Der Experience Cloud ID-Dienst (ECID) unterstützt den SHA -256-Hashing-Algorithmus, der es Ihnen ermöglicht, Kunden-IDs oder E-Email-Adressen zu übermitteln und Hash-IDs auszugeben.
+[SHA-256-Hash-Unterstützung für setCustomerIDs](/help/reference/hashing-support.md). Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen importieren und Hash-IDs exportieren können.
 
-**Korrekturen, Verbesserungen, Verbesserungen**
+**Korrekturen und Verbesserungen**
 
-* We made a configuration update to `cookieDomain`. The ECID library now filters out the empty string `cookieDomain` in `initConfig` and uses the top level cookie domain, which is returned by the getDomain method. (CORE-29223)
-* We fixed a bug related to `getVisitorValues` in `localVisitor`. (CORE-31287)
-* We fixed a bug where there was an inconsistency for the MCOPTOUT value in the Safari browser, returned by the `getVisitorValue` method. (CORE-29719)
-* We updated the Opt-in library by adding `optIn.off` to unsubscribe from events.
-* We fixed a bug related to the setTimeout function, where `setTimeout` violated the Content Security Policy (CSP) on some customer sites. (CORE-30623)
+* Die Konfiguration von `cookieDomain` wurde aktualisiert. Die ECID-Bibliothek filtert jetzt die leere Zeichenfolge `cookieDomain` in `initConfig` heraus und verwendet die Cookie-Domäne auf oberster Ebene, die durch die getDomain-Methode zurückgegeben wird. (CORE-29223)
+* Ein Fehler wurde in Zusammenhang mit `getVisitorValues` in `localVisitor` behoben. (CORE-31287)
+* Ein Fehler wurde behoben, durch den im Safari-Browser eine Abweichung beim MCOPTOUT-Wert aufgetreten ist, der von der `getVisitorValue`-Methode zurückgegeben wird. (CORE-29719)
+* Die Opt-in-Bibliothek wurde aktualisiert, indem `optIn.off` zur Abmeldung von Ereignissen hinzugefügt wurde.
+* Ein Fehler in Zusammenhang mit der setTimeout-Funktion wurde behoben, bei der `setTimeout` die Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) auf einigen Kunden-Sites verletzt hat. (CORE-30623)
 
 ## Version 4.3 {#version-4point3}
 
-**Unterstützung für ITP 2.1**. Wenn in einem Erstanbieter-CNAME ein Trackingserver festgelegt ist, wird ein neuer Cookie (s_ ecid) mit dem ECID-Wert platziert. Die ECID-Bibliothek verweist auf den Wert, um die ID über 7 Tage zu erhalten. See [ECID library methods in a Safari ITP world](/help/reference/ecid-library-methods.md).
+**Unterstützung für ITP 2.1**. Wenn ein Trackingserver mit einem Erstanbieter-CNAME eingerichtet ist, wird ein neues Cookie (s_ecid) zum ECID-Wert hinzugefügt. Die ECID-Bibliothek referenziert den Wert, damit die ID über 7 Tage hinaus erhalten bleibt. Siehe [ECID-Bibliotheksmethoden in einer Safari-ITP-Umgebung](/help/reference/ecid-library-methods.md).
 
-**Fehlerbehebung für securecookie config.**
+**Fehlerbehebung für secureCookie config.**
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Opt-in-Dienst**. Die Teilnahme an der Teilnahme ist eine Erweiterung der Experience Cloud ID (ECID), mit der Sie steuern können, ob (und dann) Experience Cloud-Bibliotheken Cookies auf Webseiten für Besucher erstellen können. Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
+**Opt-in-Dienst**. Opt-in ist eine Erweiterung der Experience Cloud-ID (ECID), mit der Sie steuern können, ob (und welche) Experience Cloud-Bibliotheken Cookies auf Webseiten für Besucher erstellen können. Mit [Experience Platform Launch](https://docs.adobelaunch.com/) können Sie die Zustimmung von Besuchern zu Experience Cloud-Lösungen einfacher einholen, indem Sie Analytics, Target, Audience Manager und anderen oder allen ausgewählten Experience Cloud-Lösungen die Nutzung Ihres Zustimmungsverwaltungssystems ermöglichen.
 
 ## Version 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
 | Element | Beschreibung |
 |---|---|
-| Die Kennzeichnung `disableIdSyncs` funktioniert nicht, nachdem eine Zeichenfolge übergeben wurde. | Behoben. Werte, die für den `disableidSyncs` Parameter in der `getInstance` Funktion festgelegt wurden, werden jetzt berücksichtigt. |
+| Die Kennzeichnung`disableIdSyncs` funktioniert nicht, nachdem eine Zeichenfolge übergeben wurde. | Behoben. Werte, die für den `disableidSyncs` Parameter in der `getInstance` Funktion festgelegt wurden, werden jetzt berücksichtigt. |
 | Drittanbieter-iFrames erhalten die ECID nicht. | ECIDs, die in der mobilen Version von Safari und in verschiedenen iFrames nicht funktionierten, wurden korrigiert. |
 
