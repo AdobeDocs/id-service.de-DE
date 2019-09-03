@@ -2,47 +2,47 @@
 cloud: platform-cloud
 product: ID-Dienst
 audience: Endanwender
-user-guide-title: Hilfe zum Experience Cloud-Identitätsdienst
-user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+user-guide-title: Hilfe zum Experience Cloud Identity-Dienst
+user-guide-url: /content/help/de-DE/id-service/using/home.html
+translation-type: ht
 source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
 
 ---
 
 
-# Experience Cloud Identity Service Help {#using}
+# Hilfe zum Experience Cloud Identity-Dienst {#using}
 
 + [ID-Dienst Hilfe](home.md)
 + Übersicht {#intro}
    + [Übersicht](introduction/overview.md)
-   + [Über den ID-Dienst ](introduction/about-id-service.md)
+   + [Über den ID-Dienst](introduction/about-id-service.md)
    + [Cookies und der ID-Dienst](introduction/cookies.md)
    + [Anfordern und Festlegen von IDs durch den ID-Dienst](introduction/id-request.md)
-   + [Synchronisierung und Übereinstimmungsraten](introduction/match-rates.md)
+   + [Grundlegendes zu Synchronisierung und Übereinstimmungsraten](introduction/match-rates.md)
 + Implementierungshandbücher {#implementation-guides}
-   + [Implementierungshandbücher ](implementation-guides/implementation-guides.md)
+   + [Implementierungshandbücher](implementation-guides/implementation-guides.md)
    + [Implementierungsmethoden](implementation-guides/implementation-methods.md)
-   + [Mit Experience Platform Launch implementieren](implementation-guides/ecid-implement-with-launch.md)
+   + [Implementieren mit Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
    + [Implementierung mit DTM](implementation-guides/standard.md)
-   + [Für Analytics implementieren](implementation-guides/setup-analytics.md)
-   + [Für Target implementieren](implementation-guides/setup-target.md)
-   + [Implementierung für Analytics und Audience Manager](implementation-guides/setup-aam-analytics.md)
-   + [Implementierung für Analytics, Audience Manager und Target](implementation-guides/setup-aam-analytics-target.md)
+   + [Implementieren für Analytics](implementation-guides/setup-analytics.md)
+   + [Implementieren für Target](implementation-guides/setup-target.md)
+   + [Implementieren für Analytics und Audience Manager](implementation-guides/setup-aam-analytics.md)
+   + [Implementieren für Analytics, Audience Manager und Target](implementation-guides/setup-aam-analytics-target.md)
    + [Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente](implementation-guides/ecid-a4t-target.md)
    + [Direkte Integration mit dem ID-Dienst](implementation-guides/direct-integration.md)
    + [Nutzungsszenarios im Zusammenhang mit einer direkten Integration](implementation-guides/direct-integration-examples.md)
-   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md)
+   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md).
    + Opt-in-Dokumentation {#opt-in-service}
       + [Opt-in-Dienst – Übersicht](implementation-guides/opt-in-service/optin-overview.md)
       + [Einrichtung des Opt-in-Dienstes](implementation-guides/opt-in-service/getting-started.md)
       + [Überprüfung des Opt-in-Dienstes](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Konfigurieren der Teilnahme mit dem Experience Platform Start](implementation-guides/opt-in-service/launch.md)
+      + [Konfigurieren von Opt-in mit Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Konfigurieren von Opt-in mit DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Opt-in-Nutzungsszenarios](implementation-guides/opt-in-service/use-cases.md)
       + [Opt-in-Referenz](implementation-guides/opt-in-service/api.md)
       + [(Beta) Opt-in Dienste mit IAB Framework nutzen](implementation-guides/opt-in-service/iab.md)
 + ID-Dienst-API {#id-service-api}
-   + [ID-Dienst-API-Übersicht](library/library.md)
+   + [ Übersicht ID-Dienst-API](library/library.md)
    + Konfiguration {#configurations}
       + [Konfigurationsübersicht](library/function-vars/function-vars.md)
       + [audienceManagerServer und audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -83,22 +83,22 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
       + [Analytics-Referenzübersicht](reference/analytics-reference/analytics-reference.md)
       + [Einrichten von Analytics- und Experience Cloud IDs](reference/analytics-reference/analytics-ids.md)
       + [Reihenfolge der Befehle für Analytics-IDs](reference/analytics-reference/analytics-order-of-operations.md)
-      + [Entscheidungspunkte für die ID-Dienst-Migration](reference/analytics-reference/migration-decisions.md)
-      + [Szenarien für die Migration von ID-Diensten](reference/analytics-reference/migration-scenarios.md)
-      + [Analytics- und Identitätsanforderungen](reference/analytics-reference/legacy-analytics.md)
+      + [Entscheidungspunkte bei der Migration zum ID-Dienst](reference/analytics-reference/migration-decisions.md)
+      + [Migrationsszenarios für den ID-Dienst](reference/analytics-reference/migration-scenarios.md)
+      + [Analytics- und Identitätsanfragen](reference/analytics-reference/legacy-analytics.md)
       + [Datenerfassungs-CNAMEs und domänenübergreifendes Tracking](reference/analytics-reference/cname.md)
       + [Serverseitige Implementierung zusammen mit JavaScript](reference/analytics-reference/server-side.md)
       + [Übergangsphase für den ID-Dienst](reference/analytics-reference/grace-period.md)
-   + [Content Security Policies und der ID-Dienst](reference/csp.md)
+   + [Inhaltssicherheitsrichtlinien und der ID-Dienst](reference/csp.md)
    + [COPPA-Unterstützung im ID-Dienst](reference/coppa.md)
    + [CORS-Unterstützung im ID-Dienst](reference/cors.md)
    + [Kunden-IDs und Authentifizierungsstatus](reference/authenticated-state.md)
-   + [ECID-Bibliotheksmethoden in einer Safari ITP-Welt](reference/ecid-library-methods.md)
+   + [ECID-Bibliotheksmethoden in einer Safari-ITP-Umgebung](reference/ecid-library-methods.md)
    + [Abrufen von Regions- und Benutzer-IDs vom AMCV-Cookie oder dem ID-Dienst](reference/regions.md)
-   + [Anforderungen für den ID-Dienst](reference/requirements.md)
+   + [Voraussetzungen für den ID-Dienst](reference/requirements.md)
    + [Video Heartbeat und der ID-Dienst](reference/heartbeat.md)
    + [Data Workbench und der ID-Dienst](reference/dwb.md)
-   + [SHA 256 Hashing-Unterstützung für setcustomerids](reference/hashing-support.md)
+   + [SHA-256-Hashing-Unterstützung für setCustomerIDs](reference/hashing-support.md)
 + Häufig gestellte Fragen (FAQ){#faqs}
    + [FAQ Übersicht](faq-intro/faq-intro.md)
    + [Häufig gestellte Fragen zum ID-Dienst](faq-intro/faq.md)
