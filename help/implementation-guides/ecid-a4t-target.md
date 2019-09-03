@@ -5,7 +5,7 @@ seo-description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten s
 seo-title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -47,7 +47,7 @@ Erstellen Sie als nächstes eine serverseitige *`payload request`* für den ID-D
 
 >[!NOTE]
 >
->Für diese Methode ist eine einzelne mbox aus [!DNL Target] erforderlich. Rufen Sie [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload) auf, sofern Sie mehrere mboxes in einem einzelnen Aufruf benötigen.
+>Für diese Methode ist eine einzelne mbox aus [!DNL Target] erforderlich. Wenn Sie mehrere mboxes in einem einzigen Aufruf anfordern müssen, siehe [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 Ihre Nutzlastanforderung sollte wie das folgende Codebeispiel aussehen. Die Funktion `visitor.setCustomerIDs` ist im Codebeispiel optional. Weitere Informationen finden Sie unter [Kunden-IDs und Authentifizierungszustände.](../reference/authenticated-state.md)
 
@@ -124,7 +124,7 @@ Nachdem Ihr Server Nutzlastdaten vom ID-Dienst erhalten hat, müssen Sie zusätz
 
 ## Schritt 4: Serverstatus für den ID-Dienst abrufen {#section-8ebfd177d42941c1893bfdde6e514280}
 
-Serverstatusdaten enthalten Informationen über die auf dem Server vorgenommene Arbeit. Diese Informationen sind für den clientseitigen ID-Dienstcode erforderlich. Kunden, die den ID-Dienst über [!DNL Dynamic Tag Manager]Dynamischen Tag-Manager (DTM) implementiert haben, können DTM so konfigurieren, dass Serverstatusdaten über dieses Tool weitergegeben werden. Wenn Sie den ID-Dienst über einen benutzerdefinierten Prozess eingerichtet haben, müssen Sie den Serverstatus mit Ihrem eigenen Code zurückgeben. Der clientseitige ID-Dienst und [!DNL Analytics]-Code geben die Daten an Adobe weiter, wenn die Seite geladen wird.
+Serverstatusdaten enthalten Informationen über die auf dem Server vorgenommene Arbeit. Diese Informationen sind für den clientseitigen ID-Dienstcode erforderlich. Kunden, die den ID-Dienst über [!DNL Dynamic Tag Manager] Dynamischen Tag-Manager (DTM) implementiert haben, können DTM so konfigurieren, dass Serverstatusdaten über dieses Tool weitergegeben werden. Wenn Sie den ID-Dienst über einen benutzerdefinierten Prozess eingerichtet haben, müssen Sie den Serverstatus mit Ihrem eigenen Code zurückgeben. Der clientseitige ID-Dienst und [!DNL Analytics]-Code geben die Daten an Adobe weiter, wenn die Seite geladen wird.
 
 **Abrufen des Serverstatus über DTM**
 
@@ -132,7 +132,7 @@ Wenn Sie den ID-Dienst mit DTM implementiert haben, müssen Sie Ihrer Seite Code
 
 **Seiten-Code**
 
-Fügen Sie dem `<head>`&lt;-&gt;-Tag Ihrer HTML-Seite diesen Code hinzu:
+Fügen Sie dem `<head>` Tag Ihrer HTML-Seite diesen Code hinzu:
 
 ```js
 //Get server state 
@@ -166,7 +166,7 @@ Ihre konfigurierten Einstellungen sollten wie folgt aussehen:
 
 ![](assets/server_side_dtm.png)
 
-Siehe auch [Einstellungen des Experience Cloud Identity Service for DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+Siehe auch [Experience Cloud Identity-Diensteinstellungen für DTM ](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)
 
 **Abrufen des Serverstatus ohne DTM**
 
@@ -199,5 +199,5 @@ Zu diesem Zeitpunkt sendet der Webserver Seiteninhalt an den Browser des Besuche
 
 >[!MORE_LIKE_THIS]
 >
->* [Serverseitiges ID-Dienstpaket von Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Serverseitiges ID-Dienstpaket vom Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
