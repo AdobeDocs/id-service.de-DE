@@ -1,11 +1,11 @@
 ---
-description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
+description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity-Dienst, einschließlich Adobe Media Optimizer und ID-Dienst.
 keywords: ID-Dienst
-seo-description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
+seo-description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity-Dienst, einschließlich Adobe Media Optimizer und ID-Dienst.
 seo-title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten{#understanding-id-synchronization-and-match-rates}
 
-Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud-Identitätsdienst, einschließlich Adobe Media Optimizer und des ID-Diensts.
+Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity-Dienst, einschließlich Adobe Media Optimizer und ID-Dienst.
 
 ## ID-Synchronisierung und Übereinstimmungsraten {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,7 +33,7 @@ Der ID-Dienst synchronisiert IDs in Echtzeit. Dieser Prozess arbeitet im Browser
 
 **Schritt 1: Seite laden**
 
-Wenn ein Besucher auf Ihre Site kommt und eine Seite lädt, führt die Funktion `Visitor.getInstance` einen [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)- oder JSON-P-Aufruf an den ID-Dienst durch. Der ID-Dienst antwortet mit einem Cookie, der die [!DNL Experience Cloud] ID (MID) des Besuchers enthält. Bei der MID handelt es sich um eine jedem Sitebesucher zugewiesene eindeutige ID. Siehe auch [Cookies und der Experience Cloud-Identitätsdienst](../introduction/cookies.md).
+Wenn ein Besucher auf Ihre Site kommt und eine Seite lädt, führt die Funktion `Visitor.getInstance` einen [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)- oder JSON-P-Aufruf an den ID-Dienst durch. Der ID-Dienst antwortet mit einem Cookie, der die [!DNL Experience Cloud] ID (MID) des Besuchers enthält. Bei der MID handelt es sich um eine jedem Sitebesucher zugewiesene eindeutige ID. Siehe auch [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
 
 **Schritt 2: iFrame laden**
 
@@ -43,7 +43,7 @@ Während der Seitentext geladen wird, lädt der ID-Dienst einen iFrame namens *`
 * Wird so schnell wie möglich geladen. Wenn dies zu schnell ist, können Sie den iFrame im Anschluss an das Fensterladeereignis laden (nicht empfohlen). Siehe [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) mit Einzelheiten.
 * Verhindert, dass Code im iFrame Zugriff auf die übergeordnete Seite erlangt oder sie beeinflusst.
 
-Siehe auch [Anfordern und Festlegen von IDs durch den Experience Cloud-Identitätsdienst…](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+Siehe auch [Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
 
 **Schritt 3: ID-Synchronisierungen auslösen**
 
@@ -55,7 +55,7 @@ Siehe auch [ID-Synchronisierung für eingehende Datenübertragungen](https://mar
 
 **Schritt 4: IDs speichern**
 
-Synchronisierte IDs werden auf den [Edge- und Kerndatenservern](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html) gespeichert.
+Synchronisierte IDs werden auf den [Edge- und Core-Datenservern gespeichert](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html).
 
 ## Synchronisierungsdienste verwalten die ID-Synchronisierung {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -70,9 +70,9 @@ Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-T
 
 ## ID-Synchronisierung mit Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] bildet eine Ausnahme zum iFrame-basierten ID-Synchronisierungsprozess. Da es sich bei [!DNL Media Optimizer] um eine vertrauenswürdige Domäne handelt, erfolgt die ID-Synchronisierung von der übergeordneten Seite aus statt im [!UICONTROL Destination Publishing iFrame]. Bei der Synchronisierung ruft der ID-Dienst [!DNL Media Optimizer] unter `cm.eversttech.net` dem älteren Domänennamen auf, der von [!DNL Media Optimizer] vor der Akquise durch Adobe verwendet wurde. Das Senden von Daten an [!DNL Media Optimizer] kann Übereinstimmungsraten verbessern und wird für Kunden mit Version 2.0 des ID-Diensts (oder höher) automatisch durchgeführt. Siehe auch [Cookies in Media Optimizer](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html).
+[!DNL Adobe Media Optimizer] bildet eine Ausnahme zum iFrame-basierten ID-Synchronisierungsprozess. Da es sich bei [!DNL Media Optimizer] um eine vertrauenswürdige Domäne handelt, erfolgt die ID-Synchronisierung von der übergeordneten Seite aus statt im [!UICONTROL Destination Publishing iFrame]. Bei der Synchronisierung ruft der ID-Dienst [!DNL Media Optimizer] unter `cm.eversttech.net` dem älteren Domänennamen auf, der von [!DNL Media Optimizer] vor der Akquise durch Adobe verwendet wurde. Das Senden von Daten an [!DNL Media Optimizer] kann Übereinstimmungsraten verbessern und wird für Kunden mit Version 2.0 des ID-Diensts (oder höher) automatisch durchgeführt. Siehe auch [Media Optimizer Cookies](https://marketing.adobe.com/resources/help/de_DE/whitepapers/cookies/cookies_media_optimizer.html)
 
 >[!MORE_LIKE_THIS]
 >
->* [Aufrufe an die Domäne „demdex.net“ ](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
+>* [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
