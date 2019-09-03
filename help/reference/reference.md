@@ -1,11 +1,11 @@
 ---
-description: Informationen zu anderen Funktionen und Funktionen des Experience Cloud-Identitätsdienstes.
+description: Informationen über andere Funktionen des Experience Cloud Identity-Diensts.
 keywords: ID-Dienst
-seo-description: Informationen zu anderen Funktionen und Funktionen des Experience Cloud-Identitätsdienstes.
+seo-description: Informationen über andere Funktionen des Experience Cloud Identity-Diensts.
 seo-title: Referenz
 title: Referenz
 uuid: 9e8f50db-1fdf-4fbc-89e5-4431bb6402d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,15 +13,15 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Referenz {#reference}
 
-Informationen zu anderen Funktionen und Funktionen des Experience Cloud-Identitätsdienstes.
+Informationen über andere Funktionen des Experience Cloud Identity-Diensts.
 
 * [Analytics-Referenzübersicht](analytics-reference/analytics-reference.md)
-* [Content Security Policies und Experience Cloud-Identitätsdienst](csp.md)
-* [COPPA-Unterstützung im Experience Cloud-Identitätsdienst](coppa.md)
-* [CORS-Unterstützung im Experience Cloud-Identitätsdienst](cors.md)
+* [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst](csp.md)
+* [COPPA-Unterstützung im Experience Cloud Identity-Dienst](coppa.md)
+* [CORS-Unterstützung im Experience Cloud Identity-Dienst](cors.md)
 * [Kunden-IDs und Authentifizierungsstatus](authenticated-state.md)
 * [Abrufen von Regions- und Benutzer-IDs vom AMCV-Cookie oder dem ID-Dienst](regions.md)
-* [Anforderungen für den Experience Cloud-Identitätsdienst](requirements.md)
-* [Video Heartbeat und Experience Cloud-Identitätsdienst](heartbeat.md)
-* [Data Workbench und der Experience Cloud-Identitätsdienst](dwb.md)
+* [Voraussetzungen für den Experience Cloud Identity-Dienst](requirements.md)
+* [Video Heartbeat und der Experience Cloud Identity-Dienst](heartbeat.md)
+* [Data Workbench und der Experience Cloud Identity-Dienst](dwb.md)
 
