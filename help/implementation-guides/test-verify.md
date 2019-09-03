@@ -2,16 +2,16 @@
 description: Diese Anweisungen, Tools und Verfahren unterstützen Sie bei der Ermittlung, ob der ID-Dienst ordnungsgemäß funktioniert. Diese Tests gelten für den ID-Dienst im Allgemeinen und für andere ID-Dienst- und Experience Cloud-Lösungskombinationen.
 keywords: ID-Dienst
 seo-description: Diese Anweisungen, Tools und Verfahren unterstützen Sie bei der Ermittlung, ob der ID-Dienst ordnungsgemäß funktioniert. Diese Tests gelten für den ID-Dienst im Allgemeinen und für andere ID-Dienst- und Experience Cloud-Lösungskombinationen.
-seo-title: Testen und Überprüfen des Experience Cloud-Identitätsdiensts
-title: Testen und Überprüfen des Experience Cloud-Identitätsdiensts
+seo-title: Testen und Überprüfen des Experience Cloud Identity-Diensts
+title: Testen und Überprüfen des Experience Cloud Identity-Diensts
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ef3169f8928f337d4f2d17922b44a7421d225e51
 
 ---
 
 
-# Test and verify the Experience Cloud Identity Service{#test-and-verify-the-experience-cloud-id-service}
+# Testen und Überprüfen des Experience Cloud Identity-Diensts{#test-and-verify-the-experience-cloud-id-service}
 
 Diese Anweisungen, Tools und Verfahren unterstützen Sie bei der Ermittlung, ob der ID-Dienst ordnungsgemäß funktioniert. Diese Tests gelten für den ID-Dienst im Allgemeinen und für andere ID-Dienst- und Experience Cloud-Lösungskombinationen.
 
@@ -27,13 +27,13 @@ Alternativ können Sie den ID-Dienst in einer anonymen oder Inkognito-Browsersit
 
 **Tools**
 
-Der [Adobe-Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) und der [Charles-HTTP-Proxy](https://www.charlesproxy.com/) können Ihnen dabei helfen, zu bestimmen, ob der ID-Dienst für die richtige Funktionsweise mit Analytics konfiguriert wurde. Die Informationen in diesem Abschnitt basieren auf den durch den Adobe-Debugger und Charles zurückgegebenen Ergebnissen. Sie können jedoch frei entscheiden, welches Tool oder welcher Debugger für Sie optimal ist.
+Mithilfe des [Adobe-Debugger](https://marketing.adobe.com/resources/help/de_DE/sc/implement/debugger.html) und des [Charles HTTP-Proxy](https://www.charlesproxy.com/) können Sie feststellen, ob der ID-Dienst so konfiguriert wurde, dass er mit Analytics ordnungsgemäß funktioniert. Die Informationen in diesem Abschnitt basieren auf den durch den Adobe-Debugger und Charles zurückgegebenen Ergebnissen. Sie können jedoch frei entscheiden, welches Tool oder welcher Debugger für Sie optimal ist.
 
 ## Testen mit dem Adobe-Debugger {#section-861365abc24b498e925b3837ea81d469}
 
-Ihre Dienstintegration ist richtig konfiguriert, wenn in der [!DNL Adobe]-Debugger-Antwort eine [!DNL Experience Cloud ID] (MID) angezeigt wird. See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for more information about the MID.
+Ihre Dienstintegration ist richtig konfiguriert, wenn in der [!DNL Adobe]-Debugger-Antwort eine [!DNL Experience Cloud ID] (MID) angezeigt wird. Siehe [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md) mit weiteren Informationen zur MID.
 
-So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe][-Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html):
+So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe] [Debugger](https://marketing.adobe.com/resources/help/de_DE/sc/implement/debugger.html):
 
 1. Löschen Sie Ihre Browsercookies oder öffnen Sie eine anonyme Browsersitzung.
 1. Laden Sie Ihre Testseite, die den ID-Dienstcode enthält.
@@ -59,7 +59,7 @@ Wenn Sie ein [!DNL Analytics]-Kunde sind, wird zusätzlich zur MID eine [!DNL An
 
 **Fehler**
 
-Wenden Sie sich an den [Kundendienst](https://helpx.adobe.com/marketing-cloud/contact-support.html), wenn der Debugger:
+Wenden Sie sich an den [Kundendienst](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), wenn der Debugger:
 
 * keine MID zurückgibt,
 * eine Fehlermeldung zurückgibt, die besagt, dass Ihre Partner-ID nicht bereitgestellt wurde.
@@ -85,7 +85,7 @@ Ihr ID-Dienst-Code funktioniert ordnungsgemäß, wenn die Funktion `Visitor.getI
 
 **Erfolgreiche ID-Dienstantworten in Charles**
 
-Ihr Konto wurde ordnungsgemäß für den ID-Dienst bereitgestellt, wenn die Antwort von den [Datenerfassungsservern (Data Collection Servers, DCS)](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: *`visitor Experience Cloud ID`*`. Auf der Registerkarte [!UICONTROL „Antwort“] findet sich die MID, wie im Folgenden gezeigt.
+Ihr Konto wurde für den ID-Dienst korrekt erstellt, wenn die Antwort der [Datensammelserver](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (Data Collection Server, DCS) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: *`visitor Experience Cloud ID`*`. Auf der Registerkarte [!UICONTROL „Antwort“] findet sich die MID, wie im Folgenden gezeigt.
 
 ![](assets/charles_response_success.png)
 
@@ -95,4 +95,4 @@ Ihr Konto wurde nicht richtig bereitgestellt, wenn die MID in der DCS-Antwort fe
 
 ![](assets/charles_response_unsuccessful.png)
 
-Weitere Informationen über Fehlercodes finden Sie im Thema über die [DCS-Fehlercodes, -Meldungen und -Beispiele](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html).
+Weitere Informationen zu Fehlercodes finden Sie unter [DCS-Fehlercodes, Meldungen und Beispiele](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html).
