@@ -5,7 +5,7 @@ seo-description: setCustomerIDs legt einen oder mehr Schlüsselwertpaare fest, d
 seo-title: setCustomerIDs
 title: setCustomerIDs
 uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
@@ -17,7 +17,7 @@ setCustomerIDs legt einen oder mehr Schlüsselwertpaare fest, die Kunden-IDs und
 
 **Syntax:** `visitor.setCustomerIDs()`
 
-Sie können, wie im Code-Beispiel unten dargestellt, einzelne oder mehrere IDs festlegen. See [Customer IDs and Authentication States](../../reference/authenticated-state.md) for more information and examples.
+Sie können, wie im Code-Beispiel unten dargestellt, einzelne oder mehrere IDs festlegen. Siehe [Kunden-IDs und Authentifizierungsstatus](../../reference/authenticated-state.md) mit weiteren Informationen und Beispielen.
 
 ```js
 // Single ID with a single authentication state 
