@@ -5,7 +5,7 @@ seo-description: Hierbei handelt es sich um eine asynchrone API, die standardmä
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -108,7 +108,7 @@ In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Di
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>Die Experience Cloud ID des Besuchers. </p> <p>See <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service </a>. </p> </td> 
+   <td colname="col2"> <p>Die Experience Cloud ID des Besuchers. </p> <p>Siehe <a href="../../introduction/cookies.md" format="dita" scope="local">Cookies und der Experience Cloud Identity-Dienst</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
