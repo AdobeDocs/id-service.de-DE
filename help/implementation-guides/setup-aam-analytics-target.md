@@ -1,19 +1,19 @@
 ---
-description: Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kunden, die den Experience Cloud-Identitätsdienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+description: Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
 keywords: ID-Dienst
-seo-description: Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kunden, die den Experience Cloud-Identitätsdienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
-seo-title: Experience Cloud-Identitätsdienst für Analytics, Audience Manager und Target implementieren
-title: Experience Cloud-Identitätsdienst für Analytics, Audience Manager und Target implementieren
+seo-description: Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+seo-title: Implementieren des Experience Cloud Identity-Diensts für Analytics, Audience Manager und Target
+title: Implementieren des Experience Cloud Identity-Diensts für Analytics, Audience Manager und Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Implement the Experience Cloud Identity Service for Analytics, Audience Manager, and Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# Implementieren des Experience Cloud Identity-Diensts für Analytics, Audience Manager und Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kunden, die den Experience Cloud-Identitätsdienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
 
 >[!IMPORTANT]
 >
@@ -26,13 +26,13 @@ Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kunde
 
 ## Schritt 1: Serverseitige Weiterleitung planen {#section-880797cc992d4755b29cada7b831f1fc}
 
-Zusätzlich zu den hier beschriebenen Schritten sollten Kunden, die [!DNL Analytics] und [!DNL Audience Manager] verwenden, zur serverseitigen Weiterleitung migrieren. Mithilfe der serverseitigen Weiterleitung können Sie DIL (den Datenerfassungscode von Audience Manager) entfernen und ihn durch das [Zielgruppen-Management-Modul](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html) ersetzen. Weitere Informationen finden Sie in der [Dokumentation zur serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
+Zusätzlich zu den hier beschriebenen Schritten sollten Kunden, die [!DNL Analytics] und [!DNL Audience Manager] verwenden, zur serverseitigen Weiterleitung migrieren. Mit der serverseitigen Weiterleitung können Sie DIL (Audience Manager Data Collection Code) entfernen und durch [Audience Management Module](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html) ersetzen. In der [Dokumentation zur serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/de_DE/reference/ssf.html) finden Sie weitere Informationen.
 
 Für die Migration zur serverseitigen Weiterleitung sind Planung und Koordinierung erforderlich. Dieser Prozess umfasst externe Änderungen an Ihrem Sitecode und interne Schritte, die Adobe zum Bereitstellen Ihres Kontos vornehmen muss. Viele dieser Migrationsverfahren müssen tatsächlich parallel erfolgen und werden zusammen freigegeben. Ihr Implementierungspfad sollte dieser Ereignisabfolge folgen:
 
 1. Arbeiten Sie zum Planen der Migration Ihres ID-Diensts und der serverseitigen Weiterleitung mit Ihrem Ansprechpartner für [!DNL Analytics] und [!DNL Audience Manager] zusammen. Dabei sollte der Auswahl eines Tracking-Servers in diesem Plan eine wichtige Rolle zukommen.
 
-1. Füllen Sie zunächst das Formular auf der [Integrations- und Bereitstellungssite](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) aus.
+1. Füllen Sie das Formular auf der [Integrations and Provisioning Site](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) aus, um zu beginnen.
 
 1. Implementieren Sie den ID-Dienst und das [!DNL Audience Management Module] gleichzeitig. Damit sie ordnungsgemäß funktionieren, müssen [!DNL Audience Management Module] (serverseitige Weiterleitung) und ID-Dienst für den gleichen Satz von Seiten und zur gleichen Zeit freigegeben werden.
 
@@ -132,7 +132,7 @@ Zur Festlegung, welche Tracking-Server-Variablen verwendet werden sollen:
 * Experience Cloud-Server-URL = Tracking-Server-URL
 * Sichere Experience Cloud-Server-URL = sichere Tracking-Server-URL
 
-Wenn Sie nicht genau wissen, wie Sie Ihren Tracking-Server finden, lesen Sie [Häufig gestellte Fragen](../faq-intro/faq.md) und [Korrektes Füllen der Variablen trackingServer und trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Wenn Sie nicht genau wissen, wie Sie Ihren Tracking-Server finden, lesen Sie [FAQ](../faq-intro/faq.md) und [Korrektes Ausfüllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#) an.
 
 ## Schritt 6: Aktualisieren der AppMeasurement.js-Datei {#section-5517e94a09bc44dfb492ebca14b43048}
 
@@ -144,7 +144,7 @@ Fügen Sie Ihrer `Visitor.getInstance`-Datei die im Folgenden gezeigte `AppMeasu
 
 >[!IMPORTANT]
 >
->An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Anweisungen finden Sie im Thema über das [Implementieren der serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
+>An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Siehe Anweisungen unter [Implementieren der serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/de_DE/reference/ssf.html).
 
 ***(Optional, jedoch empfohlen)*Erstellung einer benutzerspezifischen Eigenschaft****
 
@@ -164,7 +164,7 @@ Platzieren Sie die ` [!UICONTROL VisitorAPI.js]` Datei in den `<head>`-Tags auf 
 
 ## Schritt 8: (Optional) Konfigurieren einer Übergangsphase {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
+Wenn eines dieser Nutzungsszenarios auf Ihre Situation zutrifft, bitten Sie [Customer Care](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), eine temporäre [Übergangsphase](../reference/analytics-reference/grace-period.md) einzurichten. Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
 
 **Partielle Implementierung**
 
@@ -178,7 +178,7 @@ Sie müssen eine Übergangsphase einrichten, wenn für neue Besucher nach Migrat
 
 Sobald Ihre Implementierung statt Lesen des s_vi-Cookies die MID erhält, kann die Übergangsphase abgebrochen werden.
 
-See also, [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+Siehe auch [Cookies und der Experience Cloud ID-Dienst](../introduction/cookies.md).
 
 **Clickstream-Datenintegration**
 
@@ -186,7 +186,7 @@ Sie müssen eine Übergangsphase konfigurieren, wenn Sie Daten von einem Clickst
 
 Sobald Ihre Datenverarbeitungsprozesse die Spalten `post_visid_high` und `post_visid_low` einsetzen können, können Sie die Übergangsphase abbrechen.
 
-Siehe auch [Clickstream-Datenspaltenbezug](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
+Siehe auch [Clickstream Data Column Reference](https://marketing.adobe.com/resources/help/de_DE/sc/clickstream/datafeeds_reference.html).
 
 ## Schritt 9: Testen und Verifizieren {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -194,7 +194,7 @@ Die [!DNL Experience Cloud]-Lösungen in dieser Implementierung geben IDs in der
 
 >[!TIP]
 >
->You can use the [Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=debugger.html) or the [Charles HTTP proxy](https://www.charlesproxy.com/) to check for these solution-specific IDs. Sie können jedoch frei entscheiden, welches Tool oder welcher Debugger für Sie optimal ist.
+>Sie können den [Adobe Debugger](https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=debugger.html) oder den [Charles HTTP Proxy](https://www.charlesproxy.com/) verwenden, um nach diesen lösungsspezifischen IDs zu suchen. Sie können jedoch frei entscheiden, welches Tool oder welcher Debugger für Sie optimal ist.
 
 **Alle Lösungen**
 
@@ -203,7 +203,7 @@ Suchen Sie nach Folgendem:
 * [AMCV-Cookie](../introduction/cookies.md) in der Domäne, auf der Ihre Seite gehostet wird.
 * [!DNL Experience Cloud] ID (MID) mit dem [!DNL Adobe]-Debugger oder Ihrem bevorzugten Debuggingtool.
 
-For additional checks that help you determine if the ID service is working properly, see [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+Weitere Prüfungen, mit denen Sie feststellen können, ob der ID-Dienst ordnungsgemäß funktioniert, finden Sie unter [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md).
 
 **Analytics**
 
