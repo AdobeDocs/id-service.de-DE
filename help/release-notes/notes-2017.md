@@ -1,11 +1,11 @@
 ---
-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2017.
+description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2017.
 keywords: ID-Dienst
-seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2017.
+seo-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2017.
 seo-title: Versionshinweise für 2017
 title: Versionshinweise für 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Versionshinweise für 2017 {#release-notes}
 
-Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2017.
+Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2017.
 
-Diese Änderungen sind auch in den [Experience Cloud-Versionshinweisen](https://marketing.adobe.com/resources/help/en_US/whatsnew/) enthalten. Ältere ID-Dienst-Versionshinweise finden Sie unter [frühere Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) oder über die Links am unteren Rand dieser Seite.
+Diese Änderungen werden auch in den [Experience Cloud Release Notes](https://marketing.adobe.com/resources/help/de_DE/whatsnew/) erfasst. Ältere ID-Dienst-Versionshinweise finden Sie in den [vorhergehenden Versionshinweisen](https://marketing.adobe.com/resources/help/de_DE/whatsnew/?f=c_legacy_releases.html) oder unter den Links am Ende dieser Seite.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Es wurde ein Problem mit Chrome behoben, bei dem der ID-Dienst beim Klick auf die Zurück-Schaltfläche im Browser einen Fehler ausgelöst hat.
 * Der ID-Dienst wiederholt die ID-Synchronisationen nun, wenn sich die Regions-ID in der Ereignisaufrufantwort ändert.
-* Es wurde neue Dokumentation hinzugefügt: [Content Security-Richtlinien und der Experience Cloud-Identitätsdienst](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), der erklärt, wie Whitelist-Aufrufe an die von dem ID-Dienst verwendeten Adobe-Domänen gesendet werden.
+* Es wurde neue Dokumentation hinzugefügt: [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3). Darin wird erklärt, wie Sie Aufrufe an Adobe-Domänen, die vom ID-Dienst verwendet werden, auf die Whitelist setzen können.
 
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -192,7 +192,7 @@ Es wurde ein Fehler behoben, durch den der ID-Dienst redundante Serveraufrufe f�
 
 **Neue Dokumentation**
 
-[Verwendung der DNS-Vorab-Abfrage mit unterschiedlichen Experience Cloud-Lösungen und -Services `Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[Verwenden von DNS-Prefetch mit verschiedenen Experience Cloud-Lösungen und -Diensten `Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/de_DE/mcloud/dns-prefetch.html)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -200,7 +200,7 @@ Januar 2017
 
 >[!IMPORTANT]
 >
->Der ID-Dienst-Code v2.0 synchronisiert IDs standardmäßig automatisch mit Adobe Media Optimizer. Das bedeutet, dass die Seite `cm.eversttech.net`, eine ältere [!DNL Media Optimizer]-Domäne, die von [!DNL Adobe] verwaltet wird, aufruft. Weitere Informationen finden Sie unter [Informationen zu ID-Synchronisation und Trefferquote](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+>Der ID-Dienst-Code v2.0 synchronisiert IDs standardmäßig automatisch mit Adobe Media Optimizer. Das bedeutet, dass die Seite `cm.eversttech.net`, eine ältere [!DNL Media Optimizer]-Domäne, die von [!DNL Adobe] verwaltet wird, aufruft. Weitere Informationen finden Sie unter [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Fehlerbehebungen und Verbesserungen**
 
