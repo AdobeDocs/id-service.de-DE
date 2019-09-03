@@ -2,24 +2,24 @@
 description: Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
 keywords: ID-Dienst
 seo-description: Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
-seo-title: Data Workbench und der Experience Cloud-Identitätsdienst
-title: Data Workbench und der Experience Cloud-Identitätsdienst
+seo-title: Data Workbench und der Experience Cloud Identity-Dienst
+title: Data Workbench und der Experience Cloud Identity-Dienst
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Data Workbench and the Experience Cloud Identity Service {#data-workbench-and-the-experience-cloud-id-service}
+# Data Workbench und der Experience Cloud Identity-Dienst {#data-workbench-and-the-experience-cloud-id-service}
 
 Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
 
-Zur Aktualisierung von [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) für die Verwendung mit dem ID-Dienst:
+Um [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) zu aktualisieren, verwenden Sie den ID-Dienst:
 
-1. Suchen Sie nach der Konfigurationsdatei der aktuellen [Decoder-Gruppe.](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)
+1. Suchen Sie die aktuelle [Decoder-Gruppe](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)-Konfigurationsdatei.
 
-   Typically, the [!DNL Decoder Group] is located in a [!UICONTROL Profile Manager] on this path: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieren Sie das aktuelle Decoderformat aus der Konfigurationsdatei.
+   Normalerweise befindet sich die [!DNL Decoder Group] in einem [!UICONTROL Profil-Manager] auf diesem Pfad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieren Sie das aktuelle Decoderformat aus der Konfigurationsdatei.
 1. Fügen Sie das Decoder-Format unterhalb des Originals ein.
 1. Öffnen Sie das Decoder-Format und fügen Sie am Ende der Liste die folgenden bestehenden Positionen hinzu:
 
