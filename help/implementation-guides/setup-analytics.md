@@ -1,19 +1,19 @@
 ---
-description: Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud-Identitätsdienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+description: Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
 keywords: ID-Dienst
-seo-description: Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud-Identitätsdienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
-seo-title: Experience Cloud-Identitätsdienst für Analytics implementieren
-title: Experience Cloud-Identitätsdienst für Analytics implementieren
+seo-description: Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+seo-title: Implementieren des Experience Cloud Identity-Diensts für Analytics
+title: Implementieren des Experience Cloud Identity-Diensts für Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Implement the Experience Cloud Identity Service for Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# Implementieren des Experience Cloud Identity-Diensts für Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud-Identitätsdienst verwenden möchten, nicht aber Dynamisches Tag-Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
+Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird jedoch dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert die Implementierung des Workflows und gewährleistet automatisch die richtige Codeplatzierung und -abfolge.
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud-Ide
 Führen Sie die folgenden Schritte aus, um den ID-Dienst für Adobe Analytics zu implementieren:
 
 1. [Herunterladen des ID-Dienst-Codes](../implementation-guides/setup-analytics.md#section-ead9403a6b7e45b887f9ac959ef89f7f)
-1. [Hinzufügen der Funktion „Visitor.getInstance“ zum ID-Dienst-Code ](../implementation-guides/setup-analytics.md#section-6053a6b7c16c466a9f9fdbf9cb9db3df)
+1. [Hinzufügen der Funktion „Visitor.getInstance“ zum ID-Dienst-Code](../implementation-guides/setup-analytics.md#section-6053a6b7c16c466a9f9fdbf9cb9db3df)
 1. [Hinzufügen der Experience Cloud Organisations-ID zu Visitor.getInstance](../implementation-guides/setup-analytics.md#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e)
 1. [Hinzufügen Ihrer Tracking-Server zu Visitor.getInstance](../implementation-guides/setup-analytics.md#section-70ec9ebff47940d8ab520be5ec4728c5)
 1. [Aktualisieren der Datei AppMeasurement.js oder s_code.js](../implementation-guides/setup-analytics.md#section-b53113aea1bd4de896e0e4e9a7edee19).
@@ -96,7 +96,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Schritt 3: Hinzufügen der Experience Cloud-Organisations-ID zu Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Ersetzen Sie in der `Visitor.getInstance` Funktion den Ausdruck `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` durch Ihre [!DNL Experience Cloud]-Organisations-ID. Sollten Sie Ihre Organisations-ID nicht kennen, finden Sie diese auf der [!DNL Experience Cloud]Administrationsseite der. Siehe auch [Administration – Kerndienste.](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html) Die bearbeitete Funktion sollte dem unten stehenden Beispiel ähnlich sehen.
+Ersetzen Sie in der `Visitor.getInstance` Funktion den Ausdruck `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` durch Ihre [!DNL Experience Cloud]-Organisations-ID. Sollten Sie Ihre Organisations-ID nicht kennen, finden Sie diese auf der Administrationsseite der[!DNL Experience Cloud]. Siehe auch [Verwalten - Kerndienste](https://marketing.adobe.com/resources/help/de_DE/mcloud/admin_getting_started.html). Die bearbeitete Funktion sollte dem unten stehenden Beispiel ähnlich sehen.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -134,7 +134,7 @@ Zur Festlegung, welche Tracking-Server-Variablen verwendet werden sollen:
 
 
 
-If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Wenn Sie nicht genau wissen, wie Sie Ihren Tracking-Server finden, lesen Sie [FAQ](../faq-intro/faq.md) und [Korrektes Ausfüllen der Variablen trackingServer und trackingServerSecure](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
 
 ## Schritt 5: Aktualisieren Sie Ihre AppMeasurement.js oder s_code.js-Datei {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -164,7 +164,7 @@ Versetzen Sie diesen Code nach dem Testen und Überprüfen in die Produktionsumg
 
 ## Schritt 7: (Optional) Konfigurieren einer Übergangsphase {#section-7bbb2f72c26e4abeb8881e18366797a3}.
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
+Wenn eines dieser Nutzungsszenarios auf Ihre Situation zutrifft, bitten Sie [Customer Care](https://helpx.adobe.com/de/marketing-cloud/contact-support.html) um die Einrichtung einer temporären [Übergangsphase](../reference/analytics-reference/grace-period.md). Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
 
 **Partielle Implementierung**
 
@@ -178,13 +178,13 @@ Sie müssen eine Übergangsphase einrichten, wenn für neue Besucher nach Migrat
 
 Sobald Ihre Implementierung statt Lesen des s_vi-Cookies die MID erhält, kann die Übergangsphase abgebrochen werden.
 
-Detaillierte Informationen zur Erfassung von Lebenszyklusmetriken in Ihrer mobilen Anwendung finden Sie unter [Cookies und der Experience Cloud-Identitätsdienst](../introduction/cookies.md).
+Detaillierte Informationen zur Erfassung von Lebenszyklusmetriken in Ihrer mobilen Anwendung finden Sie unter  [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
 
 Sie müssen eine Übergangsphase konfigurieren, wenn Sie Daten von einem Clickstream-Datenfeed an ein internes System senden und bei der Verarbeitung die Spalten `visid_high` und `visid_low` verwendet werden.
 
 Sobald Ihre Datenverarbeitungsprozesse die Spalten `post_visid_high` und `post_visid_low` einsetzen können, können Sie die Übergangsphase abbrechen.
 
-Siehe [Clickstream-Datenspaltenbezug](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
+Siehe [Clickstream Data Column Reference](https://marketing.adobe.com/resources/help/de_DE/sc/clickstream/datafeeds_reference.html).
 
 **Clickstream-Datenverarbeitung**
 
@@ -197,9 +197,9 @@ Sie können dies wie folgt testen und bereitstellen.
 Prüfen Sie zum Testen Ihrer ID-Dienstimplementierung Folgendes:
 
 * [AMCV-Cookie](../introduction/cookies.md) in der Domäne, in der Ihre Seite gehostet wird.
-* MID-Wert in der [!DNL Analytics]-Bildanfrage mit dem [Adobe Debugger-Werkzeug](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
+* MID-Wert in der [!DNL Analytics]-Bildanforderung mit dem [Adobe Debugger-Tool](https://marketing.adobe.com/resources/help/de_DE/sc/implement/debugger.html).
 
-See, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+Siehe [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md).
 
 **Bereitstellungscode**
 
