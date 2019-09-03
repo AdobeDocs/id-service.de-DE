@@ -5,7 +5,7 @@ seo-description: Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusam
 seo-title: Anwendungsfälle der direkten Integration
 title: Anwendungsfälle der direkten Integration
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -18,12 +18,12 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
 >[!TIP]
 >
 >* Überprüfen und verstehen Sie [Codesyntax und Variablen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9), bevor Sie sich mit den Nutzungsszenarios befassen.
->* For more information about the MID, see [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
+>* Weitere Informationen über die MID finden Sie unter [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
 >
 
 
 
-## Use case 1: I have an Experience Cloud ID (MID) but want to pass my visitor IDs and set an authentication state {#section-a67d89a343754d1286d03cf08d34b806}
+## Nutzungsszenario 1: Ich habe eine Experience Cloud ID (MID), möchte jedoch meine eigenen Besucher-IDs verwenden und einen Authentifizierungsstatus festlegen {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -47,9 +47,9 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
    <td colname="col1"> <p> <b>Aktionen</b> </p> </td> 
    <td colname="col2"> <p>Unter diesen Bedingungen muss Ihr Aufruf an den ID-Dienst Folgendes enthalten: </p> 
     <ul id="ul_9ECB1A65266644E89E949C57D202D5A4"> 
-     <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">Die MID (1234) </li> 
+     <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">Die MID (1234). </li> 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">Ihre Datenanbieter-ID. Dies ist eine eindeutige ID, die Ihrem Unternehmen zugewiesen ist. Nennen wir diese ID 4444. </li> 
-     <li id="li_05C8ED47488C4E289D84093127EC7B19">Ihre ID für den Besucher (9876) </li> 
+     <li id="li_05C8ED47488C4E289D84093127EC7B19">Ihre ID für den Besucher (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Optional)</i> Eine Status-ID, um den Authentifizierungsstatus für diesen Besucher zu definieren. </li> 
     </ul> <p>Wenn Sie andere Parameter haben, die im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B.<span class="codeph"> d_blob</span> oder <span class="codeph">dcs_region</span> usw.), können Sie diese ebenfalls übergeben. </p> </td> 
   </tr> 
