@@ -1,11 +1,11 @@
 ---
-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2018.
+description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2018.
 keywords: ID-Dienst
-seo-description: Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2018.
+seo-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2018.
 seo-title: Versionshinweise für 2018
 title: Versionshinweise für 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Versionshinweise für 2018 {#release-notes}
 
-Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdienst für 2018.
+Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2018.
 
 ## Version 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -69,7 +69,7 @@ Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdie
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Unrealistischer Anstieg der Unique Visitor-Anzahl </p> </td> 
-   <td colname="col2"> <p>Mit der Veröffentlichung von Experience Cloud Identity Service 3.1.0 wurde ein Problem gefunden, das eine unrealistische Spitze in der Anzahl der Unique Visitors verursachte, wenn diese Version implementiert wurde. Dieses Verhalten tritt nur bei der letzten Version (3.1.0) des ECID auf und wenn Benutzer die Option „Nur von aktueller Website erlauben“ in den Datenschutzeinstellungen des Safari-Browsers ausgewählt haben. Dieses Problem wurde in Version 3.1.2 behoben. </p> </td> 
+   <td colname="col2"> <p>Bei Version 3.1.0 des Experience Cloud Identity-Diensts haben wir ein Problem erkannt, das bei Implementierung der Version zu einem unrealistischen Anstieg der Unique Visitor-Anzahl führte. Dieses Verhalten tritt nur bei der letzten Version (3.1.0) des ECID auf und wenn Benutzer die Option „Nur von aktueller Website erlauben“ in den Datenschutzeinstellungen des Safari-Browsers ausgewählt haben. Dieses Problem wurde in Version 3.1.2 behoben. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -78,7 +78,7 @@ Funktionen, Aktualisierungen oder Änderungen am Experience Cloud-Identitätsdie
 
 >[!NOTE]
 >
->Es wird empfohlen, von Version 3.1.0 umgehend auf die neueste Version zu aktualisieren. Siehe Beschreibung für Version 3.1.2. Das aktuelle Bundle ist in Adobe Experience Platform Launch, DTM und appmeasurement verfügbar.
+>Es wird empfohlen, von Version 3.1.0 umgehend auf die neueste Version zu aktualisieren. Siehe Beschreibung für Version 3.1.2. Das neueste Bundle ist über Adobe Experience Platform Launch, DTM und AppMeasurement verfügbar.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
