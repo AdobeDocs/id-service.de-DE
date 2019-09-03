@@ -2,16 +2,16 @@
 description: Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und beständige IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
 keywords: Playstation; ID-Dienst
 seo-description: Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und beständige IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
-seo-title: Cookies und der Experience Cloud-Identitätsdienst
-title: Cookies und der Experience Cloud-Identitätsdienst
+seo-title: Cookies und der Experience Cloud Identity-Dienst.
+title: Cookies und der Experience Cloud Identity-Dienst.
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Cookies and the Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookies und der Experience Cloud Identity-Dienst{#cookies-and-the-experience-cloud-id-service}
 
 Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und beständige IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
 
@@ -114,7 +114,7 @@ In der folgenden Tabelle finden Sie eine Auflistung und Definition einiger wicht
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+Weitere Informationen finden Sie unter [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Generieren der Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,4 +124,4 @@ Der ID-Dienst beginnt mit der Erstellung einer MID, während Ihre Seite geladen 
 
 ## Nächste Schritte {#section-8db1727a63bc4ff68b495f270315d453}
 
-See [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Siehe [Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
