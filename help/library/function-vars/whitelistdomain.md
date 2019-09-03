@@ -5,7 +5,7 @@ seo-description: Diese Konfigurationen ermöglichen die Kommunikation zwischen v
 seo-title: whitelistParentDomain und whitelistIframeDomains
 title: whitelistParentDomain und whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -73,7 +73,7 @@ Wenn Sie einen ID-Dienst-Cookie setzen und eine Besucher-ID zuweisen möchten, d
 
 >[!TIP]
 >
->You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). Zur ordnungsgemäßen Funktionsweise benötigt Video Heartbeat eine vom ID-Dienst bereitgestellte ID (die MID).
+>Sie können diese Konfigurationen auch implementieren, wenn Sie Videos in einem iFrame mit [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/) bereitstellen. Zur ordnungsgemäßen Funktionsweise benötigt Video Heartbeat eine vom ID-Dienst bereitgestellte ID (die MID).
 
 **Nutzungsszenario 1: Der Browser blockiert Drittanbieter-Cookies und der ID-Dienst ist auf dem iFrame und der übergeordneten Seite implementiert**
 
