@@ -1,30 +1,30 @@
 ---
-description: Der Experience Cloud ID-Dienst (ECID) unterstützt den SHA -256-Hashing-Algorithmus, der es Ihnen ermöglicht, Kunden-IDs oder E-Email-Adressen zu übermitteln und Hash-IDs auszugeben. Dies ist eine optionale Javascript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können Ihre eigenen Hashmethoden weiter verwenden, bevor Sie Kunden-IDs senden.
+description: Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen importieren und Hash-IDs exportieren können. Dies ist eine optionale JavaScript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können auch weiterhin Ihre eigenen Hash-Methoden beim Senden von Kunden-IDs verwenden.
 keywords: ID-Dienst
-seo-description: Der Experience Cloud ID-Dienst (ECID) unterstützt den SHA -256-Hashing-Algorithmus, der es Ihnen ermöglicht, Kunden-IDs oder E-Email-Adressen zu übermitteln und Hash-IDs auszugeben. Dies ist eine optionale Javascript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können Ihre eigenen Hashmethoden weiter verwenden, bevor Sie Kunden-IDs senden.
-seo-title: SHA 256 Hashing-Unterstützung für setcustomerids
-title: SHA 256 Hashing-Unterstützung für setcustomerids
-translation-type: tm+mt
+seo-description: Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen importieren und Hash-IDs exportieren können. Dies ist eine optionale JavaScript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können auch weiterhin Ihre eigenen Hash-Methoden beim Senden von Kunden-IDs verwenden.
+seo-title: SHA-256-Hash-Unterstützung für setCustomerIDs
+title: SHA-256-Hash-Unterstützung für setCustomerIDs
+translation-type: ht
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 
 ---
 
 
-# SHA256 Hashing Support for `setCustomerIDs` {#hashing-support}
+# SHA-256-Hash-Unterstützung für `setCustomerIDs` {#hashing-support}
 
-Der Experience Cloud ID-Dienst (ECID) unterstützt den SHA -256-Hashing-Algorithmus, der es Ihnen ermöglicht, Kunden-IDs oder E-Email-Adressen zu übermitteln und Hash-IDs auszugeben. Dies ist eine optionale Javascript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können Ihre eigenen Hashmethoden weiter verwenden, bevor Sie Kunden-IDs senden.
-Es gibt zwei Möglichkeiten, um Hashunterstützung mit setcustomerids zu implementieren, wie in den folgenden Abschnitten beschrieben:
+Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen importieren und Hash-IDs exportieren können. Dies ist eine optionale JavaScript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können auch weiterhin Ihre eigenen Hash-Methoden beim Senden von Kunden-IDs verwenden.
+Es gibt folgende zwei Möglichkeiten, um Hash-Unterstützung mit setCustomerIDs zu implementieren:
 
-* [Methode setcustomerids in ECID verwenden](/help/reference/hashing-support.md#use-setcustomerids-method)
-* [Eine Aktion in Adobe Experience Platform starten](/help/reference/hashing-support.md#add-action-launch)
+* [Verwenden der setCustomerIDs-Methode in ECID](/help/reference/hashing-support.md#use-setcustomerids-method)
+* [Hinzufügen einer Aktion in Adobe Experience Platform](/help/reference/hashing-support.md#add-action-launch)
 
-## Use the `setCustomerIDs` method in ECID {#use-setcustomerids-method}
+## Verwenden der `setCustomerIDs`-Methode in ECID {#use-setcustomerids-method}
 
-The first method leverages using the [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) method.
+In der ersten Variante wird die Methode [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) verwendet.
 
-Vor dem Hashing führt die ECID-Bibliothek die Datennormalisierung auf den customerids durch. Durch diesen Prozess werden die Leerräume der customerids auf beiden Enden zugeschnitten und alle Zeichen in Kleinbuchstaben umgewandelt. Beispiel: Bei E-Mail-Adressen: " ecid@adobe.com "wird" ecid@adobe.com "
+Vor dem Hashing führt die ECID-Bibliothek eine Datennormalisierung der customerIDs durch. Durch diesen Prozess werden die Leerzeichen zu beiden Enden der customerIDs entfernt und alle Zeichen in Kleinbuchstaben umgewandelt. Beispiel: Die E-Mail-Adresse “ ecid@adobe.com “ wird in “ecid@adobe.com“ umgewandelt.
 
-Unter einem Codebeispiel wird beschrieben, wie Sie eine einzelne Kunden-ID (die oben erwähnte E-Email-Adresse) mit SHA -256-Hashing festlegen.
+Unten finden Sie ein Code-Beispiel dafür, wie eine einzelne Kunden-ID (die oben genannte E-Mail-Adresse) mit SHA -256-Hashing eingerichtet werden kann.
 
 ```
 // Set single customerID with SHA-256 hashing
@@ -33,11 +33,11 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 <br> 
 
-Zusammen mit der Experience Cloud-Besucher-ID können Sie jedem Besucher weitere Kunden-IDs, Authentifizierungsstatus und Hash-Typen (SHA -256) zuweisen. Wenn Sie keinen Hash-Typ angeben, wird dies als kein Hashing betrachtet.
+Neben der Besucher-ID für Experience Cloud können Sie jedem Kunden eine weitere ID, einen Authentifizierungsstatus und einen Hash-Typ (SHA-256) zuweisen. Wenn Sie keinen Hash-Typ angeben, wird angenommen, dass kein Hashing stattfindet.
 
-Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Sie können diese IDs beispielsweise als [Kundenattribute](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) in Experience Cloud hochladen und aus verschiedenen Lösungen auf die Daten zugreifen.
+Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Beispielsweise können Sie diese IDs als [Kundenattribute](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) in Experience Cloud hochladen und lösungsübergreifend auf diese Daten zugreifen.
 
-Customer IDs, authenticated states and hash type *are not* stored in a cookie to be used later. Instead, Customer IDs, authenticated states and hash type should be stored in an instance variable, to be retrieved using [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), as shown below:
+Kunden-IDs, der Authentifizierungsstatus und der Hash-Typ *werden nicht* in einem Cookie für die spätere Verwendung gespeichert. Stattdessen sollten Kunden-IDs, Authentifizierungsstatus und Hash-Typ in einer Instanzvariablen gespeichert werden, die wie unten dargestellt mithilfe von [`getCustomerIDs`](/help/library/get-set/getcustomerids.md) abgerufen werden kann:
 
 ```
 > visitor.getCustomerIDs();
@@ -48,7 +48,7 @@ Customer IDs, authenticated states and hash type *are not* stored in a cookie to
 
 <br> 
 
-Using the `setCustomerIDs` method results in a call to the Experience Cloud ID Service, to `dpm.demdex.net`, with the addition of the `d_cid_ic` query parameter, which contains the hashed customer ID. Ein Beispielaufruf könnte wie folgt aussehen. Zeilenumbrüche wurden zur Klarheit hinzugefügt.
+Mit der Methode `setCustomerIDs` wird der Experience Cloud ID-Dienst, nämlich `dpm.demdex.net`, unter Zusatz des Abfrageparameters `d_cid_ic` aufgerufen, der die gehashte Kunden-ID enthält. Ein Beispiel für eine Anfrage finden Sie unten. Zum besseren Verständnis wurden Zeilenumbrüche hinzugefügt.
 
 ```
 http://dpm.demdex.net/id?d_visid_ver=4.4.0&d_fieldgroup=AAM&d_rtbd=json&d_ver=2&
@@ -58,25 +58,25 @@ d_cid_ic=email%a6ea4cde5da5ae7cc68baae894d1d6544fca26254433b0fff7c2cb4843b4a097%
 ts=1563299964843
 ```
 
-<br> 
+<br>
 
-See the table below for a description of the `d_cid_ic` parameter and authentication state.
+In der unten stehenden Tabelle finden Sie eine Beschreibung des `d_cid_ic`-Parameters und des Authentifizierungsstatus.
 
 | Parameter | Beschreibung |
 |------------|----------|
-| `d_cid_ic` | Übergibt den Integrationscode, die eindeutige Benutzer-ID (DPUUID) und eine authentifizierte Status-ID an den ID-Dienst. Separate the Integration Code and DPUUID with the non-printing control character, <code>%01</code>: <br> Example: <code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Authentifizierungsstatus</b> <br> Dies ist eine optionale ID im Parameter d_ cid_ ic. Sie wird als Ganzzahl ausgedrückt und gibt den Authentifizierungsstatus von Benutzern an, wie unten gezeigt: <br> <ul><li>0 (Unbekannt oder nie authentifiziert)</li><li>1 (Aktuell authentifiziert für diese Instanz/Seite/App-Kontext)</li><li>2 (Abgemeldet)</li></ul> <br> Beispiele: <br> <ul><li>Unbekannt: ...d_cid=123%01456%01<b>0</b></li><li>Authentifiziert: ...d_cid=123%01456%01<b>1</b></li><li>Abgemeldet: ...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | Übergibt den Integrationscode, die Unique User ID (DPUUID) und eine Authentifizierungsstatus-ID an den ID-Dienst. Trennen Sie den Integrationscode und die DPUUID mit dem nicht druckbaren Steuerzeichen <code>%01</code>: <br> Beispiel: <code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Authentifizierungsstatus</b> <br> Dies ist eine optionale ID im Parameter d_cid_ic. Sie wird als Ganzzahl ausgedrückt und gibt den Authentifizierungsstatus von Benutzern an, wie unten gezeigt: <br> <ul><li>0 (Unbekannt oder noch nie authentifiziert)</li><li>1 (Aktuell authentifiziert für diese Instanz/Seite/App-Kontext)</li><li>2 (Abgemeldet)</li></ul> <br> Beispiele: <br> <ul><li>Unbekannt: ...d_cid=123%01456%01<b>0</b></li><li>Authentifiziert: ...d_cid=123%01456%01<b>1</b></li><li>Abgemeldet: ...d_cid=123%01456%01<b>2</b></li></ul> |
 
-## Add an Action in Adobe Experience Platform Launch {#add-action-launch}
+## Hinzufügen einer Aktion in Adobe Experience Platform {#add-action-launch}
 
-Experience Platform Launch ist die nächste Generation von Tag-Management-Funktionen von Adobe. Read more about Launch in the [Launch product documentation](https://docs.adobe.com/content/help/en/launch/using/overview.html).
+Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Weitere Informationen über Launch finden Sie in der [Launch-Dokumentation](https://docs.adobe.com/content/help/en/launch/using/overview.html).
 
-To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
+Um eine Aktion in Launch hinzuzufügen, lesen Sie die [Dokumentation zu Regeln](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch und sehen Sie sich unten den Screenshot an:
 
 ![](/help/reference/assets/hashing-support.png)
 
-<br> 
+<br>
 
-Nachdem Sie Ihre Konfiguration bestätigt haben, werden die Daten wie unten dargestellt in ein Objekt aufgenommen:
+Nachdem Sie Ihre Konfiguration bestätigt haben, werden die Daten wie unten dargestellt von Launch in ein Objekt aufgenommen:
 
 ```
 {
@@ -88,7 +88,7 @@ Nachdem Sie Ihre Konfiguration bestätigt haben, werden die Daten wie unten darg
 }
 ```
 
-Hier ein Codebeispiel:
+Hier ein Code-Beispiel:
 
 ```
 // Set single customer ID with hash type
@@ -99,4 +99,4 @@ setCustomerIDs(Ingeration code: {
 });
 ```
 
-Similarly to the `setCustomerIDs` method described in the first section, this results in a call to the Experience Cloud ID Service, with the addition of the `d_cid_ic` query parameter.
+Ähnlich wie bei der im ersten Abschnitt beschriebenen `setCustomerIDs`-Methode führt dies zu einem Aufruf des Experience Cloud ID-Diensts, wobei der Abfrageparameter `d_cid_ic` hinzugefügt wird.
