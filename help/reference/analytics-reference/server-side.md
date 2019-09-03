@@ -5,7 +5,7 @@ seo-description: Bei manchen Implementierungen werden Besucher-IDs von JavaScrip
 seo-title: Serverseitige Implementierung zusammen mit JavaScript
 title: Serverseitige Implementierung zusammen mit JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ Stellen Sie sicher, dass sowohl die Experience Cloud-Besucher-ID als auch die An
 
 >[!IMPORTANT]
 >
->Appmeasurement for Java unterstützt den Experience Cloud-Identitätsdienst derzeit nicht.
+>AppMeasurement for Java unterstützt den Experience Cloud Identity-Dienst derzeit nicht.
 
 ## Dateneinfüge-API {#section-955ce7664a4646d38b3005cb2df40baf}
 
@@ -29,8 +29,8 @@ Schließen Sie die Analytics-Besucher-ID (sofern festgelegt) in das Element `<vi
 
 Schließen Sie die Experience Cloud-Besucher-ID in das Element `<marketingCloudVisitorID>` ein.
 
-Siehe [Unterstützte XML-Tags](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags).
+Siehe [Supported XML Tags](https://marketing.adobe.com/developer/de_DE/documentation/data-insertion/r-supported-tags).
 
 ## AppMeasurement für Java {#section-d664b94934924d048300d9c2b6560085}
 
-Der Experience Cloud-Identitätsdienst wird derzeit von appmeasurement for Java nicht unterstützt.
+Der Experience Cloud Identity-Dienst wird von AppMeasurement für Java derzeit nicht unterstützt.
