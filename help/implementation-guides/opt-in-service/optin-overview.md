@@ -4,7 +4,7 @@ seo-description: Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher 
 seo-title: Opt-in-Dienst
 title: Opt-in-Dienst
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
@@ -14,11 +14,11 @@ source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie ein Cookie auf dem Gerät oder Browser des Benutzers erstellen können, wenn dieser Ihre Site besucht.
 
-Der Anmeldedienst ist eine Erweiterung der Experience Cloud ID (ECID), mit der Sie steuern können, ob und welche Experience Cloud-Lösungen Cookies auf Webseiten vor der Zustimmung des Benutzers erstellen können. Mit dem Opt-in-Dienst können Sie auch Protokolle festlegen, die sich im Rahmen Ihres größeren Designs in Ihre Consent Management Platform (CMP) und bestehende Systeme integrieren lassen.
+Der Opt-in-Dienst ist eine Erweiterung des Dienstes Experience Cloud ID (ECID) und ermöglicht Ihnen zu steuern, ob und welche Experience Cloud-Lösungen Cookies auf Webseiten für Besucher erstellen können, bevor die Besucher zugestimmt haben. Mit dem Opt-in-Dienst können Sie auch Protokolle festlegen, die sich im Rahmen Ihres größeren Designs in Ihre Consent Management Platform (CMP) und bestehende Systeme integrieren lassen.
 
 Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen einzeln angezeigt werden, um die Zustimmung einzuholen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können Sie die CMP-Besuchergenehmigungen aus allen Adobe-Lösungen abrufen.
 
-The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Ebenfalls möglich ist eine Implementierung und Konfiguration mit [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+Der Opt-in-Dienst ist über [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) mit der [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md) einfach zu implementieren und zu konfigurieren. Ebenfalls möglich ist eine Implementierung und Konfiguration mit [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Siehe [Einrichtung des Opt-in-Dienstes](../../implementation-guides/opt-in-service/getting-started.md) zu den ersten Schritten.
 
