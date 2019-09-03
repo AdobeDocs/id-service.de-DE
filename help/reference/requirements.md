@@ -1,19 +1,19 @@
 ---
-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Cloud-Identitätsdienst erforderlich sind.
+description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity-Dienst erfordert.
 keywords: ID-Dienst
-seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Cloud-Identitätsdienst erforderlich sind.
-seo-title: Anforderungen für den Experience Cloud-Identitätsdienst
-title: Anforderungen für den Experience Cloud-Identitätsdienst
+seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity-Dienst erfordert.
+seo-title: Voraussetzungen für den Experience Cloud Identity-Dienst
+title: Voraussetzungen für den Experience Cloud Identity-Dienst
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Requirements for the Experience Cloud Identity Service {#requirements-for-the-experience-cloud-id-service}
+# Voraussetzungen für den Experience Cloud Identity-Dienst {#requirements-for-the-experience-cloud-id-service}
 
-Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die für den Experience Cloud-Identitätsdienst erforderlich sind.
+Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity-Dienst erfordert.
 
 ## Anforderungen für die Gewährleistung einer erfolgreichen und unterstützten Implementierung {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -38,7 +38,7 @@ Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderu
      <li id="li_1F16C6D412944197BEA56BC24730782C"> die DTM-Einbettungscodes an einer anderen Stelle in Ihrem Markup bzw. im Seiten-Code platzieren. </li> 
      <li id="li_05615C01F3A947BBBD41046E68377224"> den DTM-Code mit asynchronen Methoden, Aufrufen/Callback-Methoden oder Wrappern anhängen, hinzufügen oder laden. </li> 
      <li id="li_B2137DFF627B473FA876580449026D2B">mehrere Instanzen des Einbettungscodes auf derselben Seite einbeziehen. </li> 
-    </ul> <p>Siehe auch <a href="https://marketing.adobe.com/resources/help/en_US/dtm/?f=deployment.html" format="https" scope="external">Hosting – Registerkarte „Einbetten“</a>. </p> </td> 
+    </ul> <p>Siehe auch <a href="https://marketing.adobe.com/resources/help/de_DE/dtm/?f=deployment.html" format="https" scope="external">Hosting – Registerkarte „Einbetten“</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Benutzerdefinierte Implementierungen </a> </p> </td> 
@@ -65,22 +65,22 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Aktiviert</b> </p> </td> 
-   <td colname="col2"> <p>Wenn Ihr Unternehmen für <span class="keyword">Experience Cloud</span> freigeschaltet ist, Sie jedoch keine Organisations-ID besitzen, erhalten Sie weitere Informationen unter <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html" format="https" scope="external">Organisations-ID</a> (führen Sie einen Bildlauf zu <i>Organisations-ID ermitteln</i> aus). </p> </td> 
+   <td colname="col2"> <p>Wenn Ihr Unternehmen für <span class="keyword">Experience Cloud</span> freigeschaltet ist, Sie jedoch keine Organisations-ID besitzen, erhalten Sie weitere Informationen unter <a href="https://marketing.adobe.com/resources/help/de_DE/mcloud/organizations.html" format="https" scope="external">Organisations-ID</a> (führen Sie einen Bildlauf zu <i>Organisations-ID ermitteln</i> aus). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Nicht sicher</b> </p> </td> 
-   <td colname="col2"> <p> Sollten Sie sich nicht sicher sein, welchen <span class="keyword">Experience Cloud</span>-Status Ihr Unternehmen hat, fragen Sie die das Adobe-Konto verwaltende Person, ob das Unternehmen sich unter <a href="https://marketing.adobe.com" format="https" scope="external">marketing.adobe.com</a> mit einer Adobe ID anmelden kann. Funktioniert die Anmeldung, ist das Unternehmen freigeschaltet, und ein Administrator kann die Organisations-ID lesen. Die Organisations-ID finden Sie im Abschnitt „Administrationsseite“ in der <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started" format="https" scope="external">Experience Cloud-Verwaltung</a>. </p> </td> 
+   <td colname="col2"> <p> Sollten Sie sich nicht sicher sein, welchen <span class="keyword">Experience Cloud</span>-Status Ihr Unternehmen hat, fragen Sie die das Adobe-Konto verwaltende Person, ob das Unternehmen sich unter <a href="https://marketing.adobe.com" format="https" scope="external">marketing.adobe.com</a> mit einer Adobe ID anmelden kann. Funktioniert die Anmeldung, ist das Unternehmen freigeschaltet, und ein Administrator kann die Organisations-ID lesen. Die Organisations-ID finden Sie im Abschnitt „Administrationsseite“ in der <a href="https://marketing.adobe.com/resources/help/de_DE/mcloud/?f=admin_getting_started" format="https" scope="external">Experience Cloud-Verwaltung</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Nicht aktiviert</b> </p> </td> 
-   <td colname="col2"> <p> Sollte Ihr Unternehmen für die Experience Cloud nicht freigeschaltet sein, finden Sie weitere Informationen zum Einstieg unter <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services.html" format="https" scope="external">Core Services – So aktivieren Sie Ihre Lösungen</a>. </p> </td> 
+   <td colname="col2"> <p> Sollte Ihr Unternehmen für die Experience Cloud nicht freigeschaltet sein, finden Sie weitere Informationen zum Einstieg unter <a href="https://marketing.adobe.com/resources/help/de_DE/mcloud/?f=core_services.html" format="https" scope="external">Core Services – So aktivieren Sie Ihre Lösungen</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Mehr Infos](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
 ## Code-Bibliotheken und Versionsvoraussetzungen {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -108,7 +108,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
   </tr> 
   <tr> 
    <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analytics </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=appmeasure_mjs.html" format="https" scope="external">AppMeasurement für JavaScript</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=appmeasure_mjs.html" format="https" scope="external">AppMeasurement für JavaScript</a>. </p> </td> 
    <td colname="col4"> <p>1.6.4 oder höher </p> </td> 
   </tr> 
   <tr> 
@@ -129,11 +129,11 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/en_US/target/ov/?f=c_mbox_technical.html" format="https" scope="external">mbox-Code</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/de_DE/target/ov/?f=c_mbox_technical.html" format="https" scope="external">mbox-Code</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-implementation.html" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/de_DE/target/ov2/c_target-atjs-implementation.html" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -152,9 +152,9 @@ Für den ID-Dienst sind mindestens die im Folgenden aufgeführten SDK-Versionen 
 
 Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Aktivieren und laden Sie den neuesten SDK-Code für jede Anwendung über Ihr [Adobe Mobile Services](https://mobilemarketing.adobe.com/)-Konto herunter. Siehe auch:
 
-* [Optionen für SDK-Besucher-ID-Dienst konfigurieren](https://marketing.adobe.com/resources/help/en_US/mobile/t_config_visitor.html)
-* [Android SDK-Methoden](https://marketing.adobe.com/resources/help/en_US/mobile/android/c_marketing_cloud.html)
-* [iOS-SDK-Methoden](https://marketing.adobe.com/resources/help/en_US/mobile/ios/marketing_cloud.html)
+* [Configure SDK Visitor ID Service Options](https://marketing.adobe.com/resources/help/de_DE/mobile/t_config_visitor.html)
+* [Android SDK methods](https://marketing.adobe.com/resources/help/de_DE/mobile/android/c_marketing_cloud.html)
+* [iOS SKD methods](https://marketing.adobe.com/resources/help/de_DE/mobile/ios/marketing_cloud.html)
 
 >[!MORE_LIKE_THIS]
 >
