@@ -5,7 +5,7 @@ seo-description: Mit den ID-Dienstfunktionen „idSyncByURL“ und „idSyncByDa
 seo-title: ID-Synchronisation nach URL oder Datenquelle
 title: ID-Synchronisation nach URL oder Datenquelle
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -76,7 +76,7 @@ In der folgenden Tabelle sind die für beide Funktionen verfügbaren Eigenschaft
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
-   <td colname="col2"> Nummer </td> 
+   <td colname="col2"> Zahl </td> 
    <td colname="col3"> <p> <i>(Optional)</i> Legt die Cookie-Ablaufzeit fest. Hierbei muss es sich um eine Ganzzahl handeln. Der Standardwert lautet 20.160 Minuten (14 Tage). </p> </td> 
   </tr> 
   <tr valign="top"> 
