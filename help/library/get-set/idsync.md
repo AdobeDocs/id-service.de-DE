@@ -6,7 +6,7 @@ seo-title: ID-Synchronisation nach URL oder Datenquelle
 title: ID-Synchronisation nach URL oder Datenquelle
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: 5345d0d58367bcfa30a98d76cadc28ffb0caa225
+source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
 
 ---
 
@@ -14,13 +14,6 @@ source-git-commit: 5345d0d58367bcfa30a98d76cadc28ffb0caa225
 # ID-Synchronisation nach URL oder Datenquelle{#id-synchronization-by-url-or-data-source}
 
 Mit den ID-Dienstfunktionen „idSyncByURL“ und „idSyncByDataSource“ können Sie eine ID-Synchronisierung in Destination Publishing iFrame manuell implementieren. Sie stehen in VisitorAPI.js 1.10 oder höher zur Verfügung.
-
-Inhalt:
-
-<ul class="simplelist"> 
- <li> <a href="../../library/get-set/idsync.md#section-90ac61617482463aaf4c57009b830332" format="dita" scope="local"> Syntax, Eigenschaften und Makros </a> </li> 
- <li> <a href="../../library/get-set/idsync.md#section-0115615c37584a19a2ab11e917c4e7e9" format="dita" scope="local"> Beispielcode und -ausgabe </a> </li> 
-</ul>
 
 ## Syntax, Eigenschaften und Makros {#section-90ac61617482463aaf4c57009b830332}
 
@@ -99,60 +92,46 @@ Beide Funktionen akzeptieren die folgenden Makros:
 
 Beide Funktionen melden `Successfully queued` bei Erfolg. Falls nicht, wird eine Fehlermeldungszeichenfolge zurückgegeben.
 
-**visitor.idSyncByURL**
+### visitor.idSyncByURL
 
-<table id="table_56AD8291DF9445C69CC2BF50435E1626"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Beispielcode </th> 
-   <th colname="col2" class="entry"> Beispielausgabe </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instatiate Visitor 
-      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
+**Beispielcode**
 
-    // Fires url with macros replacedvisitor
-    . idsyncbyurl ({
-    dpid: ' 24 ', // muss eine Zeichenfolge
-    sein: '//su.addthis.com/red/usync?pid=16&amp;puid=%DID%&amp;url=%HTTP_PROTO%://dpm.demdex.net/ibs:dpid=420&amp;dpuuid= {{uid}}',
-    minutestolive: 20160 // optional, Standard auf 20160 Minuten (14 Tage)
-    });
-    
-    &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
-<td colname="col2"> <p> <span class="codeph"> http://su.addthis.com/red/usync?pid=16&amp;puid=28777806459181003670799219185178493848&amp;url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D </span> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+```javascript
+   //Instatiate Visitor
+    var visitor = Visitor.getInstance
+    ("MARKETING-CLOUD-ORG-ID-HERE",{}); 
+   // Fires url with macros replaced 
+    visitor.idSyncByURL({ 
+    dpid: '24', // must be a string 
+    url: '//su.addthis.com/red/usync?pid=16&puid=%DID%&url=%HTTP_PROTO%://
+    dpm.demdex.net/ibs:dpid=420&dpuuid={{uid}}', 
+    minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
+```
 
-**visitor.idSyncByDataSource**
+**Beispielausgabe**
 
-<table id="table_90D61A7E715D47238AAFF2808B33C2F0"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Beispielcode </th> 
-   <th colname="col2" class="entry"> Beispielausgabe </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instantiate Visitor 
-      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
+`http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D`
 
-    // Fires ' http:/https:' +'//dpm.demdex.net/ibs:dpid= &lt; dpid &gt; &amp; dpuuid = &lt; dpuuid &gt;'
-    visitor. idsyncbydatasource ({
-    dpid: ' 24 ', // muss eine Zeichenfolge
-    sein: ' 98765 ', // muss ein stringminutestolive
-    sein: 20160 // optional, Standard auf 20160 Minuten (14 Tage)
-    });
-    &lt;/code &gt; &lt;/p &gt; &lt;/td &gt;
-<td colname="col2"> <p> <span class="codeph"> http://dpm.demdex.net/ibs:dpid=24&amp;dpuuid=98765 </span> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+### visitor.idSyncByDataSource
+
+**Beispielcode**
+
+```javascript
+  //Instantiate Visitor
+   var visitor = Visitor.getInstance
+   ("MARKETING-CLOUD-ORG-ID-HERE",{}); 
+  // Fires 'http:/https:' + '//dpm.demdex.net/ibs:dpid=&dpuuid='
+   visitor.idSyncByDataSource({ 
+     dpid: '24', // must be a string
+     dpuuid: '98765', // must be a string 
+     minutesToLive: 20160 // optional, defaults to 20160 minutes (14 days) });
+```
+
+**Beispielausgabe**
+
+`http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765`
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_idsync.html)
+>* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
