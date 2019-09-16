@@ -6,7 +6,7 @@ seo-title: ID-Synchronisation nach URL oder Datenquelle
 title: ID-Synchronisation nach URL oder Datenquelle
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
+source-git-commit: e949edbd231b9c085d897153359b3cb442195888
 
 ---
 
@@ -29,10 +29,7 @@ Mit den ID-Dienstfunktionen „idSyncByURL“ und „idSyncByDataSource“ könn
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByURL(); </span> </p> </td> 
-   <td colname="col2"> <p>Zwischen unterschiedlichen Datenpartnern und <span class="keyword">Audience Manager</span> mithilfe einer benutzerdefinierten URL für die ID-Synchronisierung. </p> <p> 
-     <draft-comment>
-       Zwischen verschiedenen Datenpartnern und Audience Manager. Beispielsweise würde Partner x damit eine Benutzer-ID mit Partner y synchronisieren und diese dann an Audience Manager senden. 
-     </draft-comment> </p> </td> 
+   <td colname="col2"> <p>Zwischen unterschiedlichen Datenpartnern und <span class="keyword">Audience Manager</span> mithilfe einer benutzerdefinierten URL für die ID-Synchronisierung. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
