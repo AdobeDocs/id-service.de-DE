@@ -5,7 +5,7 @@ seo-description: Mit den ID-Dienstfunktionen „idSyncByURL“ und „idSyncByDa
 seo-title: ID-Synchronisation nach URL oder Datenquelle
 title: ID-Synchronisation nach URL oder Datenquelle
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
 
 ---
@@ -83,7 +83,7 @@ Beide Funktionen akzeptieren die folgenden Makros:
 
 * `%TIMESTAMP%`: Generiert einen Zeitstempel (in Millisekunden). Wird für das Cache-Busting verwendet.
 * `%DID%`: Fügt die Audience Manager-ID für den Benutzer ein.
-* `%HTTP_PROTO%`: Setzt das Kommunikationsprotokoll ( `http` oder `https`).
+* `%HTTP_PROTO%`: Legt das Kommunikationsprotokoll fest (`http` oder `https`).
 
 ## Beispielcode und -ausgabe {#section-0115615c37584a19a2ab11e917c4e7e9}
 
@@ -134,5 +134,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
+>* [DIL idSync](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
