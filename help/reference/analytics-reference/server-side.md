@@ -5,7 +5,7 @@ seo-description: Bei manchen Implementierungen werden Besucher-IDs von JavaScrip
 seo-title: Serverseitige Implementierung zusammen mit JavaScript
 title: Serverseitige Implementierung zusammen mit JavaScript
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -29,7 +29,7 @@ Schließen Sie die Analytics-Besucher-ID (sofern festgelegt) in das Element `<vi
 
 Schließen Sie die Experience Cloud-Besucher-ID in das Element `<marketingCloudVisitorID>` ein.
 
-Siehe [Supported XML Tags](https://marketing.adobe.com/developer/de_DE/documentation/data-insertion/r-supported-tags).
+Siehe [Unterstützte XML-Tags](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags).
 
 ## AppMeasurement für Java {#section-d664b94934924d048300d9c2b6560085}
 
