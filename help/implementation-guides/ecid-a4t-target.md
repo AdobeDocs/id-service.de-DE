@@ -5,7 +5,7 @@ seo-description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten s
 seo-title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -47,7 +47,7 @@ Erstellen Sie als nächstes eine serverseitige *`payload request`* für den ID-D
 
 >[!NOTE]
 >
->Für diese Methode ist eine einzelne mbox aus [!DNL Target] erforderlich. Wenn Sie mehrere mboxes in einem einzigen Aufruf anfordern müssen, siehe [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
+>Für diese Methode ist eine einzelne mbox aus [!DNL Target] erforderlich. Rufen Sie [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload) auf, sofern Sie mehrere mboxes in einem einzelnen Aufruf benötigen.
 
 Ihre Nutzlastanforderung sollte wie das folgende Codebeispiel aussehen. Die Funktion `visitor.setCustomerIDs` ist im Codebeispiel optional. Weitere Informationen finden Sie unter [Kunden-IDs und Authentifizierungszustände.](../reference/authenticated-state.md)
 
@@ -199,5 +199,5 @@ Zu diesem Zeitpunkt sendet der Webserver Seiteninhalt an den Browser des Besuche
 
 >[!MORE_LIKE_THIS]
 >
->* [Serverseitiges ID-Dienstpaket vom Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Serverseitiges ID-Dienstpaket von Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
