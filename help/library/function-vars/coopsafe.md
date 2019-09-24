@@ -5,7 +5,7 @@ seo-description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -30,7 +30,7 @@ Inhalt:
 Voraussetzungen zur Verwendung von `isCoopSafe`:
 
 * Verwendung von ID-Dienstcode der Version 2.4 oder höher
-* Nehmen Sie teil an [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/de_DE/mcdc/). Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
+* Teilnahme an der [Experience Cloud-Gerätekooperation](https://marketing.adobe.com/resources/help/en_US/mcdc/). Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
 
 * Wenden Sie sich an Ihren [!DNL Adobe]-Berater, wenn Sie eine Whitelist- oder Blacklist-Kennzeichnung für Ihr Gerätekooperationskonto erstellen möchten. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
