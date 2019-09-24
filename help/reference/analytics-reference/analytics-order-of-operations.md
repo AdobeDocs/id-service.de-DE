@@ -5,7 +5,7 @@ seo-description: Nach der Bereitstellung des Besucher-ID-Diensts gibt es fünf M
 seo-title: Reihenfolge der Befehle für Analytics-IDs
 title: Reihenfolge der Befehle für Analytics-IDs
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -28,12 +28,12 @@ In vielen Szenarios können für einen Aufruf zwei oder drei verschiedene IDs vo
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>1.<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>die <span class="codeph">s.visitorID</span> festgelegt wird. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>2.<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi-Cookie)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi-Cookie)</a> </p> </td> 
    <td colname="col3"> <p>der Besucher bereits über ein s_vi-Cookie verfügte, bevor Sie den <span class="keyword">Experience Cloud</span> ID-Dienst einsetzten, oder Sie haben eine <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">Übergangsphase</a> konfiguriert. </p> </td> 
   </tr> 
   <tr> 
@@ -43,12 +43,12 @@ In vielen Szenarios können für einen Aufruf zwei oder drei verschiedene IDs vo
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>4.<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (Ausweichcookie für H.25.3 oder AppMeasurement für JavaScript)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (Ausweichcookie für H.25.3 oder AppMeasurement für JavaScript)</a> </p> </td> 
    <td colname="col3"> <p>Ein Browser akzeptiert keine Drittanbietercookies, und der Analytics-Tracking-Server ist als ein Drittanbieter-Tracking-Server eingerichtet. </p> <p> <p>Hinweis: Das <span class="codeph">fid</span> ist eine Legacy-ID und wird nicht verwendet, wenn Sie den ID-Dienst auf Ihrer Website implementiert haben. In diesem Fall wird <span class="codeph">fid</span> nicht benötigt, da das Erstanbieter-<a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV-Cookie</a> es obsolet macht. Es wurde für die Unterstützung von altem Code und aus Verlaufsgründen beibehalten. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5.<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=visid_fallback" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
    <td colname="col3"> <p>der Browser des Besuchers keine Cookies akzeptiert. </p> </td> 
   </tr> 
  </tbody> 
