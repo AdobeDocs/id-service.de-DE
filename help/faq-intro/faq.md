@@ -5,7 +5,7 @@ seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität
 seo-title: Häufig gestellte Fragen zum ID-Dienst
 title: Häufig gestellte Fragen zum ID-Dienst
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -35,7 +35,7 @@ Möglicherweise treten Probleme auf, wenn Sie VisitorAPI.js als lokale Datei in 
 
 Platzieren Sie die Bibliothek VisitorAPI.js oben auf der Seite in den `<head>` Abschnitt Ihres Codes. Dadurch stellen Sie sicher, dass der Aufruf an eine ID gesendet wird, bevor der Seitentext geladen wird, und die Wahrscheinlichkeit, dass eine ID erfolgreich zurückgegeben wird, erhöht sich.
 
-Der ID-Dienst-Aufruf ist asynchron und der einzige Aufruf zur [Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
+Der Aufruf des ID-Diensts erfolgt asynchron. Es ist der einzige Aufruf an die [demdex.net-Domäne](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
 
 Für [!DNL Target]-Kunden kann die Platzierung von ID-Dienst-Code in `<body>` der Seite die Wahrscheinlichkeit erhöhen, dass ein [!DNL Target]-Aufruf blockiert wird. Wenn Sie ID-Dienst-Code im Haupttext Ihrer Seite platzieren müssen, dann sollten Sie ihn nach dem öffnenden `<body>`-Tag einfügen.
 
@@ -87,5 +87,5 @@ Siehe [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2
 
 >[!MORE_LIKE_THIS]
 >
->* [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
+>* [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
