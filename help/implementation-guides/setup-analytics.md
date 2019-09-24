@@ -5,7 +5,7 @@ seo-description: Diese Anweisungen richten sich an Analytics-Kunden, die den Exp
 seo-title: Implementieren des Experience Cloud Identity-Diensts für Analytics
 title: Implementieren des Experience Cloud Identity-Diensts für Analytics
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -96,7 +96,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## Schritt 3: Hinzufügen der Experience Cloud-Organisations-ID zu Visitor.getInstance {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-Ersetzen Sie in der `Visitor.getInstance` Funktion den Ausdruck `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` durch Ihre [!DNL Experience Cloud]-Organisations-ID. Sollten Sie Ihre Organisations-ID nicht kennen, finden Sie diese auf der Administrationsseite der[!DNL Experience Cloud]. Siehe auch [Verwalten - Kerndienste](https://marketing.adobe.com/resources/help/de_DE/mcloud/admin_getting_started.html). Die bearbeitete Funktion sollte dem unten stehenden Beispiel ähnlich sehen.
+Ersetzen Sie in der `Visitor.getInstance` Funktion den Ausdruck `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` durch Ihre [!DNL Experience Cloud]-Organisations-ID. Sollten Sie Ihre Organisations-ID nicht kennen, finden Sie diese auf der Administrationsseite der[!DNL Experience Cloud]. Siehe auch [Administration – Kerndienste.](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html) Die bearbeitete Funktion sollte dem unten stehenden Beispiel ähnlich sehen.
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -134,7 +134,7 @@ Zur Festlegung, welche Tracking-Server-Variablen verwendet werden sollen:
 
 
 
-Wenn Sie nicht genau wissen, wie Sie Ihren Tracking-Server finden, lesen Sie [FAQ](../faq-intro/faq.md) und [Korrektes Ausfüllen der Variablen trackingServer und trackingServerSecure](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
+If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 ## Schritt 5: Aktualisieren Sie Ihre AppMeasurement.js oder s_code.js-Datei {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -164,7 +164,7 @@ Versetzen Sie diesen Code nach dem Testen und Überprüfen in die Produktionsumg
 
 ## Schritt 7: (Optional) Konfigurieren einer Übergangsphase {#section-7bbb2f72c26e4abeb8881e18366797a3}.
 
-Wenn eines dieser Nutzungsszenarios auf Ihre Situation zutrifft, bitten Sie [Customer Care](https://helpx.adobe.com/de/marketing-cloud/contact-support.html) um die Einrichtung einer temporären [Übergangsphase](../reference/analytics-reference/grace-period.md). Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
 
 **Partielle Implementierung**
 
@@ -178,13 +178,13 @@ Sie müssen eine Übergangsphase einrichten, wenn für neue Besucher nach Migrat
 
 Sobald Ihre Implementierung statt Lesen des s_vi-Cookies die MID erhält, kann die Übergangsphase abgebrochen werden.
 
-Detaillierte Informationen zur Erfassung von Lebenszyklusmetriken in Ihrer mobilen Anwendung finden Sie unter  [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
+Detaillierte Informationen zur Erfassung von Lebenszyklusmetriken in Ihrer mobilen Anwendung finden Sie unter [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
 
 Sie müssen eine Übergangsphase konfigurieren, wenn Sie Daten von einem Clickstream-Datenfeed an ein internes System senden und bei der Verarbeitung die Spalten `visid_high` und `visid_low` verwendet werden.
 
 Sobald Ihre Datenverarbeitungsprozesse die Spalten `post_visid_high` und `post_visid_low` einsetzen können, können Sie die Übergangsphase abbrechen.
 
-Siehe [Clickstream Data Column Reference](https://marketing.adobe.com/resources/help/de_DE/sc/clickstream/datafeeds_reference.html).
+Siehe [Clickstream-Datenspaltenbezug](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
 
 **Clickstream-Datenverarbeitung**
 
@@ -197,7 +197,7 @@ Sie können dies wie folgt testen und bereitstellen.
 Prüfen Sie zum Testen Ihrer ID-Dienstimplementierung Folgendes:
 
 * [AMCV-Cookie](../introduction/cookies.md) in der Domäne, in der Ihre Seite gehostet wird.
-* MID-Wert in der [!DNL Analytics]-Bildanforderung mit dem [Adobe Debugger-Tool](https://marketing.adobe.com/resources/help/de_DE/sc/implement/debugger.html).
+* MID-Wert in der [!DNL Analytics]-Bildanfrage mit dem [Adobe Debugger-Werkzeug](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
 
 Siehe [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md).
 
