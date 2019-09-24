@@ -4,7 +4,7 @@ seo-description: Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspu
 seo-title: Einrichten des Opt-in-Dienstes
 title: Einrichten des Opt-in-Dienstes
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
@@ -22,7 +22,7 @@ Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösung
 
 1. ECID Version 4.0.
 
-   [Laden Sie](https://github.com/Adobe-Marketing-Cloud/id-service/releases) die neueste ECID-Version herunter.
+   Laden Sie die neueste ECID-Version [herunter](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 1. Unterstützende Bibliotheken:
 
@@ -42,7 +42,7 @@ Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösung
 
 1. Die Datenschutzanforderungen Ihres Unternehmens enthalten die Einzelheiten zur Einhaltung der DSGVO in Ihrem Unternehmen. Achten Sie darauf, welche Bibliotheken die Datenschutzteams in Ihrem Unternehmen zulassen, solange noch keine Zustimmung vorliegt.
 
-Wenn Sie [Adobe Launch](https://docs.adobelaunch.com/)verwenden, nutzen Sie die [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md), um den Opt-in-Dienst zu konfigurieren.
+Wenn Sie [Adobe Launch](https://docs.adobelaunch.com/) verwenden, nutzen Sie die [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## Opt-in-Kategorien {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
