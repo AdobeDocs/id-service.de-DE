@@ -5,7 +5,7 @@ seo-description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfo
 seo-title: CORS-Unterstützung im Experience Cloud Identity-Dienst.
 title: CORS-Unterstützung im Experience Cloud Identity-Dienst.
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -76,7 +76,7 @@ In der folgenden Tabelle werden einige der Vorteile beschrieben, die CORS Kunden
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Erhöhte Sicherheit</b> </p> </td> 
-   <td colname="col2"> <p>CORS verwendet <a href="https://developer.mozilla.org/de-DE/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> zum Anfordern und Übertragen von Daten. Diese Methode ist sicherer als eine JSONP-Anforderung. Sie gewährleistet, dass es keine Möglichkeit gibt, willkürliche JavaScript-Elemente auszuführen, die möglicherweise in der Antwort vom DCS enthalten sind. Die CORS-XMLHttpRequest-Antwortnutzlast wird durch das ID-Dienst-JavaScript-Element analysiert und nicht einfach in einer Callback-Funktion ausgeführt. </p> <p> <p>Hinweis: Zum Akzeptieren von Cookies muss die Eigenschaft <span class="codeph">withCredentials</span> des Objekts <span class="codeph">XMLHttpRequest</span> auf <span class="codeph">true</span> festgelegt sein. Diese Eigenschaft wird in Chrome, Firefox, Internet Explorer (v10+), Opera und Safari unterstützt. </p> </p> </td> 
+   <td colname="col2"> <p>CORS verwendet <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> zum Anfordern und Übertragen von Daten. Diese Methode ist sicherer als eine JSONP-Anforderung. Sie gewährleistet, dass es keine Möglichkeit gibt, willkürliche JavaScript-Elemente auszuführen, die möglicherweise in der Antwort vom DCS enthalten sind. Die CORS-XMLHttpRequest-Antwortnutzlast wird durch das ID-Dienst-JavaScript-Element analysiert und nicht einfach in einer Callback-Funktion ausgeführt. </p> <p> <p>Hinweis: Zum Akzeptieren von Cookies muss die Eigenschaft <span class="codeph">withCredentials</span> des Objekts <span class="codeph">XMLHttpRequest</span> auf <span class="codeph">true</span> festgelegt sein. Diese Eigenschaft wird in Chrome, Firefox, Internet Explorer (v10+), Opera und Safari unterstützt. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Leistungsverbesserungen</b> </p> </td> 
