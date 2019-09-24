@@ -5,7 +5,7 @@ seo-description: Anweisungen und Codebeispiele für standardmäßige und benutze
 seo-title: Implementierungshandbücher
 title: Implementierungshandbücher
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
