@@ -5,7 +5,7 @@ seo-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder 
 seo-title: Versionshinweise für 2017
 title: Versionshinweise für 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2017.
 
-Diese Änderungen werden auch in den [Experience Cloud Release Notes](https://marketing.adobe.com/resources/help/de_DE/whatsnew/) erfasst. Ältere ID-Dienst-Versionshinweise finden Sie in den [vorhergehenden Versionshinweisen](https://marketing.adobe.com/resources/help/de_DE/whatsnew/?f=c_legacy_releases.html) oder unter den Links am Ende dieser Seite.
+Diese Änderungen sind auch in den [Experience Cloud-Versionshinweisen](https://marketing.adobe.com/resources/help/en_US/whatsnew/) enthalten. Ältere ID-Dienst-Versionshinweise finden Sie unter [frühere Versionshinweise](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html) oder über die Links am unteren Rand dieser Seite.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Es wurde ein Fehler behoben, durch den der ID-Dienst redundante Serveraufrufe f�
 
 **Neue Dokumentation**
 
-[Verwenden von DNS-Prefetch mit verschiedenen Experience Cloud-Lösungen und -Diensten `Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/de_DE/mcloud/dns-prefetch.html)
+[Verwendung der DNS-Vorab-Abfrage mit unterschiedlichen Experience Cloud-Lösungen und -Services `Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
