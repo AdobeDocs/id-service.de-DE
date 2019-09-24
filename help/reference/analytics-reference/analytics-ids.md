@@ -5,7 +5,7 @@ seo-description: Der Experience Platform Identity-Dienst ersetzt die Legacy ID-
 seo-title: Einrichten von Analytics- und Experience Cloud IDs
 title: Einrichten von Analytics- und Experience Cloud IDs
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -31,7 +31,7 @@ Wenn eine Anforderung an den Adobe-Datenerfassungsserver gesendet wird, wird gep
 
 In einigen Browsern jedoch, wie beispielsweise Apple Safari, werden keine Cookies von Drittanbietern gespeichert. Dabei handelt es sich um im Browser gesetzte Cookies, die von anderen Domänen als der aktuell besuchten Website stammen. Zudem werden in Safari Cookies von Drittanbieterdomänen blockiert, wenn ein Besucher diese Domäne noch nie aufgerufen hat. Wenn Ihre Domäne z. B. `mysite.com` ist und sich Ihr Datenerfassungsserver unter der Domäne `mysite.omtrdc.net` befindet, wird der von `mysite.omtrdc.net` im HTTP-Header zurückgegebene Cookie möglicherweise vom Browser abgewiesen.
 
-Damit dies umgangen werden kann, haben viele Kunden CNAME-Einträge für ihre Datenerfassungsserver implementiert. Dies kann ein effektiver Bestandteil einer [Erstanbieter-Cookie-Implementierungsstrategie](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) sein. Wenn ein CNAME-Eintrag so konfiguriert wurde, dass ein Hostname unter der Domäne des Kunden einem Datenerfassungsserver zugeordnet wird (z. B. die Zuordnung von `metrics.mysite.com` zu `mysite.omtrdc.net`), wird das [!DNL Experience Cloud] ID-Cookie gespeichert, da die Datenerfassungsdomäne nun mit der Domäne der Website übereinstimmt. Somit erhöht sich die Wahrscheinlicheit, dass das Cookie des ID-Diensts gespeichert wird. Auf der anderen Seite verursacht diese Strategie Zusatzaufwand, da CNAME-Einträge erstellt und SSL-Zertifikate der Datenerfassungsserver gepflegt werden müssen.
+Damit dies umgangen werden kann, haben viele Kunden CNAME-Einträge für ihre Datenerfassungsserver implementiert. Dieser Vorgang kann effektiver Teil einer Strategie zur [Erstanbieter-Cookie-Implementierung](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) sein. Wenn ein CNAME-Eintrag so konfiguriert wurde, dass ein Hostname unter der Domäne des Kunden einem Datenerfassungsserver zugeordnet wird (z. B. die Zuordnung von `metrics.mysite.com` zu `mysite.omtrdc.net`), wird das [!DNL Experience Cloud] ID-Cookie gespeichert, da die Datenerfassungsdomäne nun mit der Domäne der Website übereinstimmt. Somit erhöht sich die Wahrscheinlicheit, dass das Cookie des ID-Diensts gespeichert wird. Auf der anderen Seite verursacht diese Strategie Zusatzaufwand, da CNAME-Einträge erstellt und SSL-Zertifikate der Datenerfassungsserver gepflegt werden müssen.
 
 **JavaScript**
 
@@ -60,12 +60,12 @@ Nach der Bereitstellung des Besucher-ID-Diensts können Besucher in Analytics au
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external"> vid (s.visitorID)</a> </p> </td> 
    <td colname="col3"> <p>s.visitorID festgelegt ist. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi-Cookie)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external"> aid (s_vi-Cookie)</a> </p> </td> 
    <td colname="col3"> <p>der Besucher bereits über ein s_vi-Cookie verfügte, bevor Sie den <span class="keyword">Experience Cloud</span> ID-Dienst einsetzten, oder Sie haben eine <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">Übergangsphase</a> konfiguriert. </p> </td> 
   </tr> 
   <tr> 
@@ -75,12 +75,12 @@ Nach der Bereitstellung des Besucher-ID-Diensts können Besucher in Analytics au
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (Ausweichcookie für H.25.3 oder AppMeasurement für JavaScript)</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> fid (Ausweichcookie für H.25.3 oder AppMeasurement für JavaScript)</a> </p> </td> 
    <td colname="col3"> <p>Ein Browser akzeptiert keine Drittanbietercookies, und der Analytics-Tracking-Server ist als ein Drittanbieter-Tracking-Server eingerichtet. </p> <p> <p>Hinweis: Das <span class="codeph">fid</span> ist eine Legacy-ID und wird nicht verwendet, wenn Sie den ID-Dienst auf Ihrer Website implementiert haben. In diesem Fall wird <span class="codeph">fid</span> nicht benötigt, da das Erstanbieter-<a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV-Cookie</a> es obsolet macht. Es wurde für die Unterstützung von altem Code und aus Verlaufsgründen beibehalten. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/?f=visid_fallback" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
    <td colname="col3"> <p>der Browser des Besuchers keine Cookies akzeptiert. </p> </td> 
   </tr> 
  </tbody> 
