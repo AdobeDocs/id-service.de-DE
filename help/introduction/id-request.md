@@ -5,7 +5,7 @@ seo-description: Eine Übersicht über den ID-Anforderungs- und -Ausgabeprozess.
 seo-title: Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst
 title: Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -19,7 +19,7 @@ Eine Übersicht über den ID-Anforderungs- und -Ausgabeprozess. Diese Beispiele 
 >
 >Wenn Sie nicht genau wissen, wie der Experience Cloud Identity-Dienst die Besucher-ID erstellt, lesen Sie in [Experience Cloud](../introduction/cookies.md) nach.
 
-**Tipp:** Siehe auch unser [ID-Dienst-Video zum domänenübergreifenden Tracking](https://helpx.adobe.com/de/marketing-cloud-core/kb/MCID/CrossDomain.html).
+**Tipp:** Sehen Sie sich auch das [Video zum domänenübergreifenden Tracking mit dem ID-Dienst](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html) an.
 
 ## Anfordern einer Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
@@ -32,7 +32,7 @@ In den folgenden Beispielen wird dargestellt, wie der ID-Dienst die Experience C
 In diesem Beispiel besucht ein Neukunde die Pizza-Site, die von der Food Company verwaltet wird. Die Food Company hat auf der Pizza-Site ID-Dienst-Code implementiert. Beim Laden der Site wird vom ID-Dienst-Code der AMCV-Cookie in der Pizzadomäne gesucht.
 
 * Ist der AMCV-Cookie gesetzt, verfügt der Site-Besucher über eine Experience Cloud ID. In diesem Fall verfolgt das Cookie den Besucher und teilt Daten mit anderen Experience Cloud-Lösungen.
-* Wenn das AMCV-Cookie nicht gesetzt ist, ruft der ID-Dienst-Code einen regionalen [Datenerfassungsserver](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DCS) auf unter `dpm.demdex.net/id` (siehe auch [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). Im Aufruf enthalten ist auch die Organisations-ID der Food Company. Die Organisations-ID wird in der Funktion `Visitor.getInstance` des ID-Dienst-Codes festgelegt.
+* Wenn der AMCV-Cookie nicht gesetzt ist, ruft der ID-Dienstcode einen regionalen [Datenerfassungsserver](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html) (DES) unter `dpm.demdex.net/id` auf (siehe auch [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)). Im Aufruf enthalten ist auch die Organisations-ID der Food Company. Die Organisations-ID wird in der Funktion `Visitor.getInstance` des ID-Dienst-Codes festgelegt.
 
 ![](assets/request1.png)
 
