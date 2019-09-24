@@ -5,7 +5,7 @@ seo-description: Diese Implementierung ermöglicht es Kunden, den ID-Dienst auf 
 seo-title: Direkte Integration mit dem Experience Cloud Identity-Dienst
 title: Direkte Integration mit dem Experience Cloud Identity-Dienst
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -21,7 +21,7 @@ Geräte, die weder die VisitorAPI.js- noch die SDK-Codebibliothek unterstützen,
 
 ![](assets/directSyntax.png)
 
-In diesem Syntaxbeispiel kennzeichnet das `d_` Präfix die Schlüssel-Wert-Paare im Aufruf als Variablen auf Systemebene. Sie können einige `d_`-Parameter an den ID-Dienst übergeben, konzentrieren Sie sich jedoch auf die Schlüssel-Wert-Paare, wie im Code oben gezeigt. Weitere Informationen zu anderen Variablen finden Sie unter [Unterstützte Attribute für DCS-API-Aufrufe](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+In diesem Syntaxbeispiel kennzeichnet das `d_` Präfix die Schlüssel-Wert-Paare im Aufruf als Variablen auf Systemebene. Sie können einige `d_`-Parameter an den ID-Dienst übergeben, konzentrieren Sie sich jedoch auf die Schlüssel-Wert-Paare, wie im Code oben gezeigt. Weitere Informationen über andere Variablen finden Sie unter [Unterstützte Attribute für DCS-API-Aufrufe](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
 
 Der ID-Dienst unterstützt HTTP- und HTTPS-Aufrufe. Verwenden Sie HTTPS, um Daten von einer vertrauenswürdigen Seite zu übergeben.
 
