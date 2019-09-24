@@ -5,7 +5,7 @@ seo-description: Gibt die Regions-ID des Experience Cloud Identity-Diensts zurü
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
