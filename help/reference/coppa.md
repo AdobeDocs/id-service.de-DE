@@ -5,7 +5,7 @@ seo-description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz z
 seo-title: COPPA-Unterstützung im Experience Cloud Identity-Dienst
 title: COPPA-Unterstützung im Experience Cloud Identity-Dienst
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
@@ -45,6 +45,6 @@ Ist die Variable auf `true` festgelegt, verhindert das `disableThirdPartyCookies
 
 >[!MORE_LIKE_THIS]
 >
->* [Adobe Privacy Center](http://www.adobe.com/de/privacy.html)
+>* [Adobe Datenschutzcenter](http://www.adobe.com/privacy.html)
 >* [Was ist COPPA?](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
