@@ -4,7 +4,7 @@ seo-description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden
 seo-title: Überprüfen des Opt-in-Dienstes
 title: Überprüfen des Opt-in-Dienstes
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
