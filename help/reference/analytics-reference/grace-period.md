@@ -5,7 +5,7 @@ seo-description: Wir empfehlen, eine Übergangsphase zu konfigurieren, wenn mehr
 seo-title: Übergangsphase für den ID-Dienst
 title: Übergangsphase für den ID-Dienst
 uuid: 10a7db7d-de32-4379-914f-edaf929efa32
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -33,4 +33,4 @@ Wir empfehlen, eine Übergangsphase zu konfigurieren, wenn mehrere JavaScript-Da
 
 ## Wie wird eine Übergangsphase konfiguriert? {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Wenden Sie sich an [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
+Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
