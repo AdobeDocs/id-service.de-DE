@@ -5,7 +5,7 @@ seo-description: Bei dieser Hilfsmethode wird die Zusatzdaten-ID (Supplemental D
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
 uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
