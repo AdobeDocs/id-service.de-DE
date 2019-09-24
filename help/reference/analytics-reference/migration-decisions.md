@@ -5,7 +5,7 @@ seo-description: Vor Verwendung des Experience Cloud Identity-Diensts sollten Si
 seo-title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity-Dienst
 title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity-Dienst
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -60,10 +60,10 @@ Sollten Sie über mehrere Domänen verfügen, die Daten an die *gleiche Report S
    <td colname="col1"> <p>einer einzelnen Domäne </p> </td> 
    <td colname="col2"> <p>Die Arbeit mit einer einzigen Domäne bedeutet, dass Sie von einem Datenerfassungs-CNAME weg migrieren können, wenn Sie diese Methode nicht länger einsetzen möchten. Eine Migration ist jedoch nicht erforderlich, wenn Ihr CNAME problemlos funktioniert. </p> <p>Bei der Entfernung des CNAME: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Sicherstellen, dass der neue Tracking-Server <a href="https://marketing.adobe.com/resources/help/de_DE/whitepapers/rdc/" format="https" scope="external">RDC-kompatibel</a> ist. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Sicherstellen, dass der neue Tracking-Server <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">RDC-kompatibel</a> ist. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Stellen Sie einige Monate vor Ihrer Migration zum <span class="keyword">Experience Cloud</span> ID-Dienst den CNAME auf einen RDC-Tracking-Server um. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Verwenden Sie keinesfalls</i> einen <span class="codeph">*.2o7.net</span>-Tracking-Server. </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Wenden Sie sich an die <a href="https://helpx.adobe.com/de/marketing-cloud/contact-support.html" format="https" scope="external">Kundenunterstützung</a>, wenn Sie Hilfe bei der Besuchermigration benötigen. Somit werden konsistente Besucherzahlen gewährleistet. </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Wenden Sie sich an die <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">Kundenunterstützung</a>, wenn Sie Hilfe bei der Besuchermigration benötigen. Somit werden konsistente Besucherzahlen gewährleistet. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
