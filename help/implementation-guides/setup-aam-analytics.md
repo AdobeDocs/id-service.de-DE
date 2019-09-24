@@ -5,7 +5,7 @@ seo-description: Diese Anweisungen richten sich an Analytics- und Audience Manag
 seo-title: Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager
 title: Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -26,13 +26,13 @@ Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die de
 
 ## Schritt 1: Serverseitige Weiterleitung planen {#section-880797cc992d4755b29cada7b831f1fc}
 
-Zusätzlich zu den hier beschriebenen Schritten sollten Kunden, die [!DNL Analytics] und [!DNL Audience Manager] verwenden, zur serverseitigen Weiterleitung migrieren. Mit der serverseitigen Weiterleitung können Sie DIL (Audience Manager's Data Collection Code) entfernen und durch [Audience Management Module](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html) ersetzen. Weitere Informationen finden Sie in der [Dokumentation zur serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/de_DE/analytics/audiences/ssf.html).
+Zusätzlich zu den hier beschriebenen Schritten sollten Kunden, die [!DNL Analytics] und [!DNL Audience Manager] verwenden, zur serverseitigen Weiterleitung migrieren. Mithilfe der serverseitigen Weiterleitung können Sie DIL (den Datenerfassungscode von Audience Manager) entfernen und ihn durch das [Zielgruppen-Management-Modul](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html) ersetzen. Weitere Informationen finden Sie in der [Dokumentation zur serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/ssf.html).
 
 Für die Migration zur serverseitigen Weiterleitung sind Planung und Koordinierung erforderlich. Dieser Prozess umfasst externe Änderungen an Ihrem Sitecode und interne Schritte, die Adobe zum Bereitstellen Ihres Kontos vornehmen muss. Viele dieser Migrationsverfahren müssen tatsächlich parallel erfolgen und werden zusammen freigegeben. Ihr Implementierungspfad sollte dieser Ereignisabfolge folgen:
 
 1. Arbeiten Sie zum Planen der Migration Ihres ID-Diensts und der serverseitigen Weiterleitung mit Ihrem Ansprechpartner für [!DNL Analytics] und [!DNL Audience Manager] zusammen. Dabei sollte der Auswahl eines Tracking-Servers in diesem Plan eine wichtige Rolle zukommen.
 
-1. Füllen Sie das Formular auf der [Integrations and Provisioning Site](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) aus, um zu beginnen.
+1. Füllen Sie zunächst das Formular auf der [Integrations- und Bereitstellungssite](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES) aus.
 
 1. Implementieren Sie den ID-Dienst und das [!DNL Audience Management Module] gleichzeitig. Damit sie ordnungsgemäß funktionieren, müssen [!DNL Audience Management Module] (serverseitige Weiterleitung) und ID-Dienst für den gleichen Satz von Seiten und zur gleichen Zeit freigegeben werden.
 
@@ -133,7 +133,7 @@ Zur Festlegung, welche Tracking-Server-Variablen verwendet werden sollen:
 * Experience Cloud-Server-URL = Tracking-Server-URL
 * Sichere Experience Cloud-Server-URL = sichere Tracking-Server-URL
 
-Wenn Sie nicht genau wissen, wie Sie Ihren Tracking-Server finden, lesen Sie [FAQ](../faq-intro/faq.md) und [Korrektes Ausfüllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#) an.
+Wenn Sie nicht genau wissen, wie Sie Ihren Tracking-Server finden, lesen Sie [Häufig gestellte Fragen](../faq-intro/faq.md) und [Korrektes Füllen der Variablen trackingServer und trackingServerSecure](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 ## Schritt 6: Aktualisieren der AppMeasurement.js-Datei {#section-5517e94a09bc44dfb492ebca14b43048}
 
@@ -145,7 +145,7 @@ Fügen Sie Ihrer `Visitor.getInstance`-Datei die im Folgenden gezeigte `AppMeasu
 
 >[!IMPORTANT]
 >
->An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Siehe Anweisungen unter [Implementieren der serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/de_DE/reference/ssf.html).
+>An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Anweisungen finden Sie im Thema über das [Implementieren der serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html).
 
 ***(Optional, jedoch empfohlen)*Erstellung einer benutzerspezifischen Eigenschaft****
 
@@ -165,7 +165,7 @@ Platzieren Sie die ` [!UICONTROL VisitorAPI.js]` Datei innerhalb der `<head>`-Ta
 
 ## Schritt 8: (Optional) Konfigurieren einer Übergangsphase {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Wenn eines dieser Nutzungsszenarios auf Ihre Situation zutrifft, bitten Sie [Customer Care](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), eine temporäre [Übergangsphase](../reference/analytics-reference/grace-period.md) einzurichten. Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
 
 **Partielle Implementierung**
 
@@ -187,7 +187,7 @@ Sie müssen eine Übergangsphase konfigurieren, wenn Sie Daten von einem Clickst
 
 Sobald Ihre Datenverarbeitungsprozesse die Spalten `post_visid_high` und `post_visid_low` einsetzen können, können Sie die Übergangsphase abbrechen.
 
-Siehe auch [Clickstream Data Column Reference](https://marketing.adobe.com/resources/help/de_DE/sc/clickstream/datafeeds_reference.html).
+Siehe auch [Clickstream-Datenspaltenbezug](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html).
 
 ## Schritt 9: Testen und Bereitstellen des ID-Dienst-Codes {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -198,10 +198,10 @@ Sie können dies wie folgt testen und bereitstellen.
 Prüfen Sie zum Testen Ihrer ID-Dienstimplementierung Folgendes:
 
 * [AMCV-Cookie](../introduction/cookies.md) in der Domäne, auf der Ihre Seiten gehostet werden.
-* MID-Wert in der Analytics-Bildanforderung mit dem [Adobe Debugger](https://marketing.adobe.com/resources/help/de_DE/sc/implement/debugger.html).
+* MID-Wert in der Analytics-Bildanforderung mit dem [Adobe-Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html).
 * Siehe auch [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md).
 
-Um die serverseitige Weiterleitung zu überprüfen, siehe [Überprüfen der serverseitigen Weiterleitungsimplementierung](https://marketing.adobe.com/resources/help/de_DE/reference/ssf-verify.html).
+Lesen Sie [So überprüfen Sie Ihre Implementierung der serverseitigen Weiterleitung](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html), um die serverseitige Weiterleitung zu überprüfen.
 
 **Bereitstellung**
 
