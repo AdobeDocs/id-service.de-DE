@@ -5,7 +5,7 @@ seo-description: Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusam
 seo-title: Anwendungsfälle der direkten Integration
 title: Anwendungsfälle der direkten Integration
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
