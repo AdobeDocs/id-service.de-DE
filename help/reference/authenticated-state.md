@@ -5,7 +5,7 @@ seo-description: Neben der Besucher-ID für Experience Cloud können Sie jedem K
 seo-title: Kunden-IDs und Authentifizierungsstatus
 title: Kunden-IDs und Authentifizierungsstatus
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ---
@@ -17,11 +17,11 @@ Neben der Besucher-ID für Experience Cloud können Sie jedem Kunden eine weiter
 
 ## Authentifizierungsstatus {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Sie können diese IDs beispielsweise als [Kundenattribute](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) in [!DNL Experience Cloud] hochladen und aus verschiedenen Lösungen auf die Daten zugreifen.
+Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Sie können diese IDs beispielsweise als [Kundenattribute](https://docs.adobe.com/content/help/de-DE/core-services/interface/customer-attributes/attributes.html) in [!DNL Experience Cloud] hochladen und aus verschiedenen Lösungen auf die Daten zugreifen.
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` (Synchronisierung der Kunden-ID) ist für Kundenattribute und die Funktionalität der Kerndienste erforderlich. Die Synchronisierung der Kunden-IDs ist eine optionale Identifikationsmethode für [!DNL Analytics]. Für [!DNL Target] ist `Visitor.AuthState.AUTHENTICATED` erforderlich, damit die Kundenattribute funktionieren. Beispiele hierzu finden Sie unter [Kerndienste – Aktivierung Ihrer Lösungen](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
+>`setCustomerIDs` (Synchronisierung der Kunden-ID) ist für Kundenattribute und die Funktionalität der Kerndienste erforderlich. Die Synchronisierung der Kunden-IDs ist eine optionale Identifikationsmethode für [!DNL Analytics]. Für [!DNL Target] ist `Visitor.AuthState.AUTHENTICATED` erforderlich, damit die Kundenattribute funktionieren. Beispiele hierzu finden Sie unter [Kerndienste – Aktivierung Ihrer Lösungen](https://docs.adobe.com/content/help/de-DE/core-services/interface/about-core-services/core-services.html).
 
 Ab der Experience Cloud Identity-Dienstversion 1.5 enthält `setCustomerIDs` das optionale Objekt `AuthState`. `AuthState` identifiziert Benutzer anhand ihres Authentifizierungsstatus (z. B. angemeldet, abgemeldet). Der Authentifizierungsstatus wird von Ihnen mittels eines in der Tabelle aufgeführten Statuswerts festgelegt. Ein Authentifizierungsstatus wird immer als Ganzzahl ausgegeben.
 
@@ -46,7 +46,7 @@ Ab der Experience Cloud Identity-Dienstversion 1.5 enthält `setCustomerIDs` das
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph">2</span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> 2 </span> </p> </td> 
    <td colname="col3"> <p>Abgemeldet. </p> </td> 
   </tr> 
  </tbody> 
@@ -90,7 +90,7 @@ Kunden-IDs können, wie im Folgenden dargestellt, aus Kombinationen aus IDs und 
 >[!IMPORTANT]
 >
 >* Bei IDs wird die Groß-/Kleinschreibung beachtet.
->* Verwenden Sie nur nicht kodierte Werte für Ihre IDs.
+>* Für IDs sollten ausschließlich nicht codierte Werte verwendet werden.
 >* Kunden-IDs und Authentifizierungsstatus werden nicht im Besucher-ID-Cookie gespeichert. Sie müssen für jede Seite und jeden Anwendungskontext separat festgelegt werden.
 >* In den Kunden-IDs dürfen keinerlei personenbezogene Informationen (PII) enthalten sein. Wenn Sie zur Besucheridentifizierung PII verwenden (z. B. eine E-Mail-Adresse), sollten Sie stattdessen eine Hash- oder verschlüsselte Version dieser Daten verwenden. Die ECID-Bibliothek unterstützt das Hashing von Benutzer-IDs. Siehe [SHA-256-Hashing-Unterstützung für setCustomerIDs](/help/reference/hashing-support.md).
 >
@@ -215,9 +215,9 @@ Object customerIDs = visitor.getCustomerIDs();
 
 Der [!DNL Experience Cloud] ID-Dienst unterstützt Kunden-IDs und Authentifizierungsstatus in unserem Android- und iOS-SDK-Code. Siehe die folgenden Codebibliotheken:
 
-* [Android SDK-Methoden](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-* [iOS SDK-Methoden](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
+* [Android SDK-Methoden](https://docs.adobe.com/content/help/de-DE/mobile-services/android/overview.html)
+* [iOS SDK-Methoden](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/overview.html)
 
 ## Hinweise für Kunden von Analytics und Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Sollten Sie deklarierte IDs an [!DNL Audience Manager] weiterleiten, muss das Objekt `userid` dem mit einer Datenquelle verknüpften Integrations-Code entsprechen. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Besucher-ID-Dienst] in der Dokumentation [Konfiguration von Regelverschmelzungs-Code](https://docs.adobe.com/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code).
+Sollten Sie deklarierte IDs an [!DNL Audience Manager] weiterleiten, muss das Objekt `userid` dem mit einer Datenquelle verknüpften Integrations-Code entsprechen. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Besucher-ID-Dienst] in der Dokumentation [Konfiguration von Regelverschmelzungs-Code](https://docs.adobe.com/help/de-DE/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code).
