@@ -6,7 +6,7 @@ seo-title: Cookies und der Experience Cloud Identity-Dienst.
 title: Cookies und der Experience Cloud Identity-Dienst.
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: 57161205bb48a82db223a733f384ea8338596b7e
+source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
 
@@ -122,9 +122,9 @@ Die Experience Cloud ID (MID) wird mathematisch aus Ihrer Organisations-ID und d
 
 Der ID-Dienst beginnt mit der Erstellung einer MID, während Ihre Seite geladen wird. Bei diesem Vorgang sendet der von der `visitorAPI.js` Code-Bibliothek bereitgestellte Code Ihre Organisations-ID in einem Ereignisaufruf an den ID-Dienst. Der ID-Dienst erstellt die MID und eine demdex-ID und gibt sie im AMCV- bzw. demdex-Cookie zurück.
 
-## Sicherheitskennzeichnungen für Cookies
+## Cookie-Flags
 
-In den folgenden Tabellen wird beschrieben, wie Experience Cloud-Cookies mit Sicherheitsflags funktionieren:
+In der folgenden Tabelle werden Flags für Experience Cloud-Cookies beschrieben:
 
 | Cookie (eingestellt von | httpOnly | Sicher | GleicheSite |
 |--- |--- |--- |--- |
