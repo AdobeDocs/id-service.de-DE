@@ -5,13 +5,13 @@ seo-description: Der ID-Dienst verwendet Ihre Organisations-ID, das Experience C
 seo-title: Cookies und der Experience Cloud Identity-Dienst.
 title: Cookies und der Experience Cloud Identity-Dienst.
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
 
 
-# Cookies und der Experience Cloud Identity-Dienst{#cookies-and-the-experience-cloud-id-service}
+# Cookies und der Experience Cloud Identity-Dienst {#cookies-and-the-experience-cloud-id-service}
 
 Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und beständige IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
 
@@ -114,7 +114,7 @@ In der folgenden Tabelle finden Sie eine Auflistung und Definition einiger wicht
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+Weitere Informationen finden Sie unter [Aufrufe an die Domäne „demdex.net“](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
 
 ## Generieren der Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -122,17 +122,17 @@ Die Experience Cloud ID (MID) wird mathematisch aus Ihrer Organisations-ID und d
 
 Der ID-Dienst beginnt mit der Erstellung einer MID, während Ihre Seite geladen wird. Bei diesem Vorgang sendet der von der `visitorAPI.js` Code-Bibliothek bereitgestellte Code Ihre Organisations-ID in einem Ereignisaufruf an den ID-Dienst. Der ID-Dienst erstellt die MID und eine demdex-ID und gibt sie im AMCV- bzw. demdex-Cookie zurück.
 
-## Cookie-Flags
+## Cookie-Kennzeichnungen
 
-In der folgenden Tabelle werden Flags für Experience Cloud-Cookies beschrieben:
+Die folgende Tabelle beschreibt Kennzeichnungen der in Experience Cloud vewendeten Cookies.
 
-| Cookie (eingestellt von | httpOnly | Sicher | GleicheSite |
+| Cookie (gesetzt von) | httpOnly | Secure | SameSite |
 |--- |--- |--- |--- |
-| demdex (http response) | Nein | Ja | "Keine" |
-| AMCV (Javascript) | Nein | Konfigurierbar | Nicht eingestellt (Standard: Lax) |
-| AMCVS (Javascript) | Nein | Konfigurierbar | Nicht eingestellt (Standard: Lax) |
+| Demdex (HTTP-Antwort) | Nein | Ja | "Keine" |
+| AMCV (JavaScript) | Nein | Konfigurierbar | Nicht eingestellt (Standard: Lax) |
+| AMCVS (JavaScript) | Nein | Konfigurierbar | Nicht eingestellt (Standard: Lax) |
 
-*Hinweis: Informationen zum Konfigurieren des AMCV- und AMCVS-Cookies mit sicheren Attributen finden Sie im Thema zu[secureCookie](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html).*
+*Hinweis: Informationen zum Konfigurieren des AMCV- und AMCVS-Cookies mit sicheren Attributen finden Sie im Artikel zu [secureCookie](https://docs.adobe.com/content/help/de-DE/id-service/using/id-service-api/configurations/securecookie.html).*
 
 ## Nächste Schritte {#section-8db1727a63bc4ff68b495f270315d453}
 
