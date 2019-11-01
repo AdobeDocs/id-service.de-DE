@@ -6,7 +6,7 @@ seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -50,7 +50,7 @@ Der Parameter `aid` taucht in einer Abfragezeichenfolge auf, wenn:
 
 Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen eine [Übergangsphase](../../reference/analytics-reference/grace-period.md) verwendet, bevor es den ID-Dienst vollständig implementiert. Hat der aktuelle Besucher Ihre Seite zuvor noch nie aufgerufen und sollten Sie keine Übergangsphase festgelegt haben, erhält der Besucher den Parameter `mid` ([!DNL Experience Cloud] ID).
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
->* [Analytics-Cookies](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Cookiesin Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
 
