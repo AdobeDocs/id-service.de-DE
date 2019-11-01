@@ -6,7 +6,7 @@ seo-title: Häufig gestellte Fragen zu Analytics und zum Identity-Dienst
 title: Häufig gestellte Fragen zu Analytics und zum Identity-Dienst
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -51,7 +51,7 @@ Auch wenn der H-Code im visitorAPI.js-Code Version 1.6 oder höher nicht unters
 
 **Was ist eine Übergangsphase und wie konfiguriere ich sie?**
 
-See [The Identity Service Grace Period](../reference/analytics-reference/grace-period.md) and contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Siehe [Übergangsphase](../reference/analytics-reference/grace-period.md) zum Identitätsdienst und wenden Sie sich an den [Kundendienst](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 **Warum muss ich zur Echtzeit-Datenerfassung (Real-time Data Collection, RDC) migrieren, um den Identity-Dienst zu verwenden?**
 
@@ -88,7 +88,7 @@ Es gibt drei mögliche Szenarios, in denen sich dies auf Analytics-Daten für ne
 >
 >Wenn Sie die neuesten Versionen von VisitorAPI.js und AppMeasurement.js mit den Standardeinstellungen verwenden, sollten Sie alle schwerwiegenden oder spürbaren Folgen der drei oben beschriebenen Szenarios vermeiden können.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
