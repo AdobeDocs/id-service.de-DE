@@ -6,7 +6,7 @@ seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Diens
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -58,7 +58,7 @@ Fügen Sie diese Domänenamen oder URLs Ihrer CSP für alle aufgeführten Experi
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Content Security Policy Reference](https://content-security-policy.com/)
 >* [MDN: Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
