@@ -6,7 +6,7 @@ seo-title: COPPA-Unterstützung im Experience Cloud Identity-Dienst
 title: COPPA-Unterstützung im Experience Cloud Identity-Dienst
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -43,7 +43,7 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 
 Ist die Variable auf `true` festgelegt, verhindert das `disableThirdPartyCookies` Objekt, dass der DES den Drittanbieter-Cookie demdex.net zurückgibt. Sollte der Cookie bereits im Browser des Besuchers gespeichert sein, wird dieser vom ID-Dienst nicht zur Erstellung einer neuen [!DNL Experience Cloud] ID oder Ausgabe einer bestehenden ID eingesetzt. Stattdessen wird vom [!DNL Experience Cloud] ID-Dienst eine neue, zufällige ID im Erstanbieter-Cookie erstellt. Nach der Aktivierung können mit dem ID-Dienst Daten gesammelt und über verschiedene [!DNL Experience Cloud]-Lösungen hinweg freigegeben werden, darunter auch andere, laut COPPA zulässige interne Operationen.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Adobe Datenschutzcenter](http://www.adobe.com/privacy.html)
 >* [Was ist COPPA?](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
