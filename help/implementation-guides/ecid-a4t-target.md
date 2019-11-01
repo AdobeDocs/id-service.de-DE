@@ -6,7 +6,7 @@ seo-title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementie
 title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -197,7 +197,7 @@ Zu diesem Zeitpunkt sendet der Webserver Seiteninhalt an den Browser des Besuche
 * AppMeasurement sendet Daten über die Seitenaufrufe an [!DNL Analytics], einschließlich der SDID.
 * [!DNL Analytics] und [!DNL Target] vergleichen SDIDs für diesen Besucher. Bei einer identischen SDID fügen [!DNL Target] und [!DNL Analytics] den serverseitigen Aufruf und den clientseitigen Aufruf zusammen. Zu diesem Zeitpunkt erkennen beide Lösungen diesen Besucher als dieselbe Person.
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Serverseitiges ID-Dienstpaket von Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
