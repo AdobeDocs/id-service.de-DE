@@ -6,7 +6,7 @@ seo-title: Implementierung mit Dynamic Tag Management
 title: Implementierung mit Dynamic Tag Management
 uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -98,11 +98,6 @@ mcvid-dtm-implement.xml
 1. Klicken Sie auf **[!UICONTROL Tool erstellen]** und auf **[!UICONTROL Änderungen speichern]**.
 
    Nach dem Speichern wird der ID-Dienst als ein Tool in DTM eingerichtet. Er kann jedoch noch nicht verwendet werden. Ihr DTM-Tool muss zunächst den DTM-Veröffentlichungs-/Genehmigungsprozess durchlaufen. Zudem können Sie zusätzliche Parameter konfigurieren. Informationen über den DTM-Genehmigungsprozess finden Sie im Video mit der [Starthilfe zu den Benutzergrundlagen](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html). Informationen zu den zusätzlichen Parametern, die Sie zum DTM hinzufügen können, finden Sie unter [Experience Cloud Identity-Diensteinstellungen für DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
-
->[!MORE_LIKE_THIS]
->
->* [Webeigenschaften](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
-
 
 ## Experience Cloud Identity-Diensteinstellungen für DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -285,3 +280,8 @@ Ihr Konto wurde nicht richtig bereitgestellt, wenn die MID in der DCS-Antwort fe
 ![](assets/charles_response_unsuccessful.png)
 
 Weitere Informationen über Fehlercodes finden Sie im Thema über die [DCS-Fehlercodes, -Meldungen und -Beispiele](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html).
+
+>[!MORELIKETHIS]
+>
+>* [Webeigenschaften](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
+
