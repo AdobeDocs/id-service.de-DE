@@ -5,7 +5,7 @@ seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die ri
 seo-title: Voraussetzungen für den Experience Cloud Identity-Dienst
 title: Voraussetzungen für den Experience Cloud Identity-Dienst
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -38,7 +38,7 @@ Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderu
      <li id="li_1F16C6D412944197BEA56BC24730782C"> die DTM-Einbettungscodes an einer anderen Stelle in Ihrem Markup bzw. im Seiten-Code platzieren. </li> 
      <li id="li_05615C01F3A947BBBD41046E68377224"> den DTM-Code mit asynchronen Methoden, Aufrufen/Callback-Methoden oder Wrappern anhängen, hinzufügen oder laden. </li> 
      <li id="li_B2137DFF627B473FA876580449026D2B">mehrere Instanzen des Einbettungscodes auf derselben Seite einbeziehen. </li> 
-    </ul> <p>Siehe auch <a href="https://marketing.adobe.com/resources/help/en_US/dtm/?f=deployment.html" format="https" scope="external">Hosting – Registerkarte „Einbetten“</a>. </p> </td> 
+    </ul> <p>Siehe auch <a href="https://marketing.adobe.com/resources/help/de_DE/dtm/deployment.html" format="https" scope="external">Hosting – Registerkarte „Einbetten“</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Benutzerdefinierte Implementierungen </a> </p> </td> 
@@ -47,7 +47,7 @@ Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderu
  </tbody> 
 </table>
 
-## Experience Cloud-Voraussetzungen: Organisations-ID {#section-a02f537129a64ffbb690d5738d360c26}
+## Experience Cloud-Voraussetzungen: Organisations-ID  {#section-a02f537129a64ffbb690d5738d360c26}
 
 Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Cloud] freigeschaltet sein und über eine Organisations-ID verfügen. Gehen Sie die folgende Liste durch, wenn Sie sich bezüglich des [!DNL Experience Cloud]-Status Ihrer Organisation nicht sicher sind und Ihre Organisations-ID herausfinden möchten.
 
@@ -65,22 +65,22 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Aktiviert</b> </p> </td> 
-   <td colname="col2"> <p>Wenn Ihr Unternehmen für <span class="keyword">Experience Cloud</span> freigeschaltet ist, Sie jedoch keine Organisations-ID besitzen, erhalten Sie weitere Informationen unter <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html" format="https" scope="external">Organisations-ID</a> (führen Sie einen Bildlauf zu <i>Organisations-ID ermitteln</i> aus). </p> </td> 
+   <td colname="col2"> <p>Wenn Ihr Unternehmen für <span class="keyword">Experience Cloud</span> freigeschaltet ist, Sie jedoch keine Organisations-ID besitzen, erhalten Sie weitere Informationen unter <a href="https://marketing.adobe.com/resources/help/de_DE/mcloud/organizations.html" format="https" scope="external">Organisations-ID</a> (führen Sie einen Bildlauf zu <i>Organisations-ID ermitteln</i> aus). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Nicht sicher</b> </p> </td> 
-   <td colname="col2"> <p> Sollten Sie sich nicht sicher sein, welchen <span class="keyword">Experience Cloud</span>-Status Ihr Unternehmen hat, fragen Sie die das Adobe-Konto verwaltende Person, ob das Unternehmen sich unter <a href="https://marketing.adobe.com" format="https" scope="external">marketing.adobe.com</a> mit einer Adobe ID anmelden kann. Funktioniert die Anmeldung, ist das Unternehmen freigeschaltet, und ein Administrator kann die Organisations-ID lesen. Die Organisations-ID finden Sie im Abschnitt „Administrationsseite“ in der <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=admin_getting_started" format="https" scope="external">Experience Cloud-Verwaltung</a>. </p> </td> 
+   <td colname="col2"> <p> Sollten Sie sich nicht sicher sein, welchen <span class="keyword">Experience Cloud</span>-Status Ihr Unternehmen hat, fragen Sie die das Adobe-Konto verwaltende Person, ob das Unternehmen sich unter <a href="https://marketing.adobe.com" format="https" scope="external">marketing.adobe.com</a> mit einer Adobe ID anmelden kann. Funktioniert die Anmeldung, ist das Unternehmen freigeschaltet, und ein Administrator kann die Organisations-ID lesen. Die Organisations-ID finden Sie im Abschnitt „Administrationsseite“ in der <a href="https://marketing.adobe.com/resources/help/de_DE/mcloud/?f=admin_getting_started" format="https" scope="external">Experience Cloud-Verwaltung</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Nicht aktiviert</b> </p> </td> 
-   <td colname="col2"> <p> Sollte Ihr Unternehmen für die Experience Cloud nicht freigeschaltet sein, finden Sie weitere Informationen zum Einstieg unter <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services.html" format="https" scope="external">Core Services – So aktivieren Sie Ihre Lösungen</a>. </p> </td> 
+   <td colname="col2"> <p> Sollte Ihr Unternehmen für die Experience Cloud nicht freigeschaltet sein, finden Sie weitere Informationen zum Einstieg unter <a href="https://marketing.adobe.com/resources/help/de_DE/mcloud/core_services.html" format="https" scope="external">Core Services – So aktivieren Sie Ihre Lösungen</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://docs.adobe.com/content/help/de-DE/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
 ## Code-Bibliotheken und Versionsvoraussetzungen {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -108,7 +108,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
   </tr> 
   <tr> 
    <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analytics </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=appmeasure_mjs.html" format="https" scope="external">AppMeasurement für JavaScript</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/de_DE/sc/implement/appmeasure_mjs.html" format="https" scope="external">AppMeasurement für JavaScript</a>. </p> </td> 
    <td colname="col4"> <p>1.6.4 oder höher </p> </td> 
   </tr> 
   <tr> 
@@ -116,12 +116,12 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
    <td colname="col4"> <p>H.27 </p> <p> <p>Hinweis:<span class="keyword"> Die s_code-Version H.27 von Analytics</span> wird im Zuge der Veröffentlichung des ID-Diensts Version 1.6.0 nicht mehr unterstützt. Nehmen Sie ein Upgrade Ihres Codes auf die neueste Version von AppMeasurement vor. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p>Video Heartbeat </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/index.html" format="https" scope="external">Video Heartbeat 2.x für JavaScript</a>. </p> </td> 
+   <td colname="col3"> <p>Video Heartbeat </p> <p>Siehe <a href="https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html" format="https" scope="external">Video Heartbeat 2.x für JavaScript</a>. </p> </td> 
    <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Siehe <a href="https://marketing.adobe.com/resources/help/en_US/aam/?f=c_dil.html" format="https" scope="external">Data Integration Library</a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Siehe <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/dil-api/dil-overview.translate.html" format="https" scope="external">Data Integration Library</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p> <p> 
      <draft-comment>
        aktualisiert von 4.9 
@@ -129,17 +129,17 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/en_US/target/ov/?f=c_mbox_technical.html" format="https" scope="external">mbox-Code</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/de_DE/target/ov/c_mbox_technical.html" format="https" scope="external">mbox-Code</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-implementation.html" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://marketing.adobe.com/resources/help/de_DE/target/ov2/c_target-atjs-implementation.html" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## SDK-Anforderungen für Android und iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
+## SDK-Anforderungen für Android und iOS  {#section-73b2446fba8e463888642c7d7dfd94f1}
 
 Für den ID-Dienst sind mindestens die im Folgenden aufgeführten SDK-Versionen erforderlich.
 
@@ -152,9 +152,9 @@ Für den ID-Dienst sind mindestens die im Folgenden aufgeführten SDK-Versionen 
 
 Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Aktivieren und laden Sie den neuesten SDK-Code für jede Anwendung über Ihr [Adobe Mobile Services](https://mobilemarketing.adobe.com/)-Konto herunter. Siehe auch:
 
-* [Optionen für SDK-Besucher-ID-Dienst konfigurieren](https://marketing.adobe.com/resources/help/en_US/mobile/t_config_visitor.html)
-* [Android SDK-Methoden](https://marketing.adobe.com/resources/help/en_US/mobile/android/c_marketing_cloud.html)
-* [iOS-SDK-Methoden](https://marketing.adobe.com/resources/help/en_US/mobile/ios/marketing_cloud.html)
+* [Optionen für SDK-Besucher-ID-Dienst konfigurieren](https://docs.adobe.com/content/help/de-DE/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.translate.html)
+* [Android SDK-Methoden](https://docs.adobe.com/content/help/de-DE/mobile-services/android/experience-cloud-android/c-marketing-cloud.translate.html)
+* [iOS-SDK-Methoden](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/exp-cloud-ios/marketing-cloud.translate.html)
 
 >[!MORELIKETHIS]
 >
