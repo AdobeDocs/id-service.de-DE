@@ -5,7 +5,7 @@ seo-description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -30,7 +30,7 @@ Inhalt:
 Voraussetzungen zur Verwendung von `isCoopSafe`:
 
 * Verwendung von ID-Dienstcode der Version 2.4 oder höher
-* Teilnahme an der [Experience Cloud-Gerätekooperation](https://marketing.adobe.com/resources/help/en_US/mcdc/). Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
+* Teilnahme an der [Experience Cloud-Gerätekooperation](https://marketing.adobe.com/resources/help/de_DE/mcdc/). Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
 
 * Wenden Sie sich an Ihren [!DNL Adobe]-Berater, wenn Sie eine Whitelist- oder Blacklist-Kennzeichnung für Ihr Gerätekooperationskonto erstellen möchten. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
@@ -82,7 +82,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## POST-Parameter für Ereignisaufrufe  {#section-fcd441933506493faefaa6b51f194a17}
+## POST-Parameter für Ereignisaufrufe   {#section-fcd441933506493faefaa6b51f194a17}
 
 Abhängig von der festgelegten Kennzeichnung (`true` oder `false`) überträgt der ID-Dienst `isCoopSafe` in diese POST-Parameter und sendet sie in einem Ereignisaufruf an [!DNL Adobe]:
 
@@ -110,7 +110,7 @@ Anhand der POST-Parameter stellt die [!DNL Experience Cloud]-Gerätekooperation 
  </tbody> 
 </table>
 
-## Post-Instanziierungs-APIs  {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## Post-Instanziierungs-APIs   {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 Mit diesen APIs können Sie den Status von `isCoopSafe` überschreiben. Sie ermöglichen es, den Status nach der Instanziierung bzw. Anmeldung eines Besuchers auf einer Site oder bei einer Single-Page-Anwendung zu ändern, wenn die Seite nicht aktualisiert wird. Beispielsweise müssen Sie diese APIs aufrufen, wenn sich ein Benutzer auf Ihrer Site oder bei Ihrer Anwendung authentifiziert und später eine Nutzungsrichtlinie akzeptiert, die der Gerätekooperation die Verwendung seiner Daten ermöglicht.
 
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.translate.html)
 
