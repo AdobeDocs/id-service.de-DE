@@ -5,7 +5,7 @@ seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität
 seo-title: Häufig gestellte Fragen zu Analytics und zum Identity-Dienst
 title: Häufig gestellte Fragen zu Analytics und zum Identity-Dienst
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -23,7 +23,7 @@ Jeder richtig konfigurierte AppMeasurement-Codeabschnitt enthält die Informatio
 
 In einigen Fällen teilen Kunden ihre Analytics AppMeasurement-Datei jedoch auf verschiedene Dateien auf. Beispielsweise verwenden einige Kunden eine Datei für Konfigurationsvariablen, eine zweite für Plug-ins und eine dritte für AppMeasurement-Code. Dies wird nicht empfohlen.
 
-Wenn Sie Ihre Tracking-Server-Informationen nicht finden können, ist Ihre Analytics-Instanz möglicherweise nicht richtig konfiguriert. Wenden Sie sich an den [Kundendienst](https://helpx.adobe.com/marketing-cloud/contact-support.html), wenn Sie die Informationen für Ihren Tracking-Server nicht finden.
+Wenn Sie Ihre Tracking-Server-Informationen nicht finden können, ist Ihre Analytics-Instanz möglicherweise nicht richtig konfiguriert. Wenden Sie sich an den [Kundendienst](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), wenn Sie die Informationen für Ihren Tracking-Server nicht finden.
 
 **Was geschieht, wenn ich den Identity-Dienst verwende und meinen Tracking-Server ändere?**
 
@@ -35,7 +35,7 @@ Es ändert sich nichts für Benutzer, die bereits durch den Identity-Dienst iden
 
 Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das domänenübergreifende Tracking für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren (z. B. Safari).
 
-In Browsern, die Drittanbieter-Cookies akzeptieren, wird bei der Anforderung ein Cookie in der [demdex.net-Domäne](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) gesetzt, um eine Besucher-ID abzurufen. Mit diesem Cookie kann der Identity-Dienst für alle Domänen, die mit derselben Organisations-ID konfiguriert sind, dieselbe Experience Cloud-Besucher-ID zurückgeben. Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domäne eine neue Experience Cloud-Besucher-ID zugewiesen.
+In Browsern, die Drittanbieter-Cookies akzeptieren, wird bei der Anforderung ein Cookie in der [demdex.net-Domäne](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.translate.html) gesetzt, um eine Besucher-ID abzurufen. Mit diesem Cookie kann der Identity-Dienst für alle Domänen, die mit derselben Organisations-ID konfiguriert sind, dieselbe Experience Cloud-Besucher-ID zurückgeben. Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domäne eine neue Experience Cloud-Besucher-ID zugewiesen.
 
 Auch wenn ein CNAME konfiguriert ist, werden Besucher bei Browsern, die keine Drittanbieter-Cookies akzeptieren, auf sekundärer Site und Hauptsite auf unterschiedliche Weise identifiziert, wenn nicht zuerst die Haupteinstiegssite besucht wird.
 
@@ -51,13 +51,13 @@ Auch wenn der H-Code im visitorAPI.js-Code Version 1.6 oder höher nicht unters
 
 **Was ist eine Übergangsphase und wie konfiguriere ich sie?**
 
-Siehe [Übergangsphase](../reference/analytics-reference/grace-period.md) zum Identitätsdienst und wenden Sie sich an den [Kundendienst](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Siehe [Übergangsphase beim Identity-Dienst](../reference/analytics-reference/grace-period.md) und wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 **Warum muss ich zur Echtzeit-Datenerfassung (Real-time Data Collection, RDC) migrieren, um den Identity-Dienst zu verwenden?**
 
 RDC bietet globale Leistungsverbesserungen und ist erforderlich, um sicherzustellen, dass Ihre Implementierung für künftige Funktionen bereit ist, die das globale Netzwerk der Edge-Hinweise von Adobe nutzen. Siehe [Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f)).
 
-## Berichterstellung {#section-123cd55a32e54a45a23beb140becfa8f}
+## Berichterstellung  {#section-123cd55a32e54a45a23beb140becfa8f}
 
 **Was sind mögliche Ursachen für Diskrepanzen bei der Verwendung von Analytics mit dem Identity-Dienst?**
 
@@ -66,7 +66,7 @@ Häufige Ursachen für Diskrepanzen bei der Verwendung des Identity-Diensts:
 * Älterer Cookie s_vi wird weiterverwendet. Dies führt zu Diskrepanzen bei der Datenerfassung.
 * Besucher, die von einer Umfrage zu einem Popup navigieren, werden doppelt gezählt.
 
-## Cookies {#section-b7d5384fbedd47b09e1030211c39a3d1}
+## Cookies  {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
 **Was geschieht in Analytics, wenn der Identity-Dienst keinen AMCV-Cookie setzen kann?**
 
@@ -90,5 +90,5 @@ Es gibt drei mögliche Szenarios, in denen sich dies auf Analytics-Daten für ne
 
 >[!MORELIKETHIS]
 >
->* [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
 
