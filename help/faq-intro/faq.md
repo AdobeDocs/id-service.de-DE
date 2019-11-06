@@ -5,7 +5,7 @@ seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität
 seo-title: Häufig gestellte Fragen zum ID-Dienst
 title: Häufig gestellte Fragen zum ID-Dienst
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -19,11 +19,11 @@ Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Probleme
 
 **Welche Art von Funktionalität oder Funktionen bietet der ID-Dienst?**
 
-Siehe [Übersicht](../introduction/overview.md).
+Siehe  [Übersicht](../introduction/overview.md).
 
 **Warum führt der ID-Dienst keinen Aufruf durch, um die Experience Cloud ID abzurufen?**
 
-Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Der Grund lässt sich schwer feststellen. Sie können aber beispielsweise die Header für die Inhaltssicherheitsrichtlinie auf Ihrer Site prüfen. Wenn Sie eine strenge Inhaltssicherheitsrichtlinie durchsetzen, können die vom ID-Dienst ausgeführten Drittanbieteraufrufe durch diese Einstellungen blockiert werden. Siehe  [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **VisitorAPI.js-Dateispeicherung**
 
@@ -35,7 +35,7 @@ Möglicherweise treten Probleme auf, wenn Sie VisitorAPI.js als lokale Datei in 
 
 Platzieren Sie die Bibliothek VisitorAPI.js oben auf der Seite in den `<head>` Abschnitt Ihres Codes. Dadurch stellen Sie sicher, dass der Aufruf an eine ID gesendet wird, bevor der Seitentext geladen wird, und die Wahrscheinlichkeit, dass eine ID erfolgreich zurückgegeben wird, erhöht sich.
 
-Der Aufruf des ID-Diensts erfolgt asynchron. Es ist der einzige Aufruf an die [demdex.net-Domäne](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
+Der Aufruf des ID-Diensts erfolgt asynchron. Es ist der einzige Aufruf an die [demdex.net-Domäne](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.translate.html). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
 
 Für [!DNL Target]-Kunden kann die Platzierung von ID-Dienst-Code in `<body>` der Seite die Wahrscheinlichkeit erhöhen, dass ein [!DNL Target]-Aufruf blockiert wird. Wenn Sie ID-Dienst-Code im Haupttext Ihrer Seite platzieren müssen, dann sollten Sie ihn nach dem öffnenden `<body>`-Tag einfügen.
 
@@ -83,9 +83,9 @@ Ja. Siehe [CORS-Unterstützung im Experience Cloud Identity-Dienst](../reference
 
 Wenn Sie strenge Sicherheitsanforderungen haben, legen Sie in der Konfiguration der ID-Dienst-API `useCORSOnly: true` fest. Sie sollten diesen Modus nur dann aktivieren, wenn Sie davon überzeugt sind, dass alle Site-Besucher Browser verwenden, die CORS unterstützen.
 
-Siehe [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) und [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
+Siehe  [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) und [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 >[!MORELIKETHIS]
 >
->* [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
 
