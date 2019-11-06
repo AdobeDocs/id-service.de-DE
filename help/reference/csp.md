@@ -5,7 +5,7 @@ seo-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP
 seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit deren Hilfe Browser steuern können, welche Art von Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs festgelegt haben, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen zulassen. Sie müssen die hier aufgeführten Adobe-Domänen Ihren CSP-Whitelists hinzufügen.
 
-## CSP-Übersicht {#section-5fde5c00a678455c914b8307a8caab82}
+## CSP-Übersicht  {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSPs verwenden den HTTP-Header `Content-Security-Policy`, um die Art der Ressourcen zu steuern, die ein Browser zulässt oder die auf einer Seite geladen werden. Durch Anwenden einer CSP können Sie Folgendes vermeiden:
 
@@ -53,7 +53,7 @@ Fügen Sie diese Domänenamen oder URLs Ihrer CSP für alle aufgeführten Experi
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Besucher-ID-Dienst</b> </p> </td> 
-   <td colname="col2"> <p>Nehmen Sie <span class="codeph">*.demdex.net</span> in Ihre CSP auf. </p> <p>Aufrufe der Domain <span class="codeph"> demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity-Diensts</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
+   <td colname="col2"> <p>Nehmen Sie <span class="codeph">*.demdex.net</span> in Ihre CSP auf. </p> <p>Aufrufe der Domain <span class="codeph"> demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity-Diensts</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.translate.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -61,6 +61,6 @@ Fügen Sie diese Domänenamen oder URLs Ihrer CSP für alle aufgeführten Experi
 >[!MORELIKETHIS]
 >
 >* [Content Security Policy Reference](https://content-security-policy.com/)
->* [MDN: Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
->* [Wikipedia: Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Policy)
+>* [MDN: Content Security Policy](https://developer.mozilla.org/de/docs/Web/HTTP/CSP)
+>* [Wikipedia: Content Security Policy](https://de.wikipedia.org/wiki/Content_Security_Policy)
 
