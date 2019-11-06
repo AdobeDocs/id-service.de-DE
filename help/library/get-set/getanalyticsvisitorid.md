@@ -5,7 +5,7 @@ seo-description: Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vo
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -44,7 +44,7 @@ Der `aid` Parameter taucht in einer Abfragezeichenfolge unter zweierlei verschie
 Der Parameter `aid` taucht in einer Abfragezeichenfolge auf, wenn:
 
 * der [!DNL Experience Cloud] ID-Dienst ordnungsgemäß bereitgestellt wurde.
-* im [!DNL Analytics]s_vi-Cookie[ des eine Site besuchenden Benutzers bereits eine ](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html)-ID gespeichert ist.
+* Im [s_vi-Cookie](https://marketing.adobe.com/resources/help/de_DE/whitepapers/cookies/cookies_analytics.html) des eine Site besuchenden Benutzers bereits eine [!DNL Analytics]-ID gespeichert ist.
 
 **2. Fall**
 
@@ -52,5 +52,5 @@ Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen
 
 >[!MORELIKETHIS]
 >
->* [Cookiesin Analytics](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Cookies in Analytics](https://marketing.adobe.com/resources/help/de_DE/whitepapers/cookies/cookies_analytics.html)
 
