@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: Implementierungshandbücher
 uuid: null
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
 
 ---
 
@@ -16,7 +16,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Implementierungen des Experience Cloud Identity-Diensts.
 
-Wichtig: Lesen und überschauen Sie die Anforderungen an den ID-Dienst, bevor Sie mit diesen Verfahren beginnen.
+>[!IMPORTANT]
+>
+>Lesen und überschauen Sie die [Anforderungen an den ID-Dienst](../reference/requirements.md), bevor Sie mit diesen Verfahren beginnen.
 
 ## Standardmäßige Implementierung
 
@@ -24,7 +26,6 @@ A standard implementation uses [Adobe Exprience Platform Launch](https://docs.ad
 
 ## Ressourcen für die Implementierung
 
-* [Implementierungshandbücher](implementation-guides.md)
 * [Implementierungsmethoden](implementation-methods.md)
 * [Implementieren mit Experience Platform Launch](ecid-implement-with-launch.md)
 * [Implementieren mit Dynamic Tag Management](standard.md)
