@@ -6,7 +6,7 @@ seo-title: Implementierungshandbücher für den ID-Dienst
 solution: Experience Cloud
 title: Implementierungshandbücher
 uuid: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
 
 ---
@@ -22,7 +22,7 @@ Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Imple
 
 ## Standardmäßige Implementierung
 
-A standard implementation uses [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) to help you get started with the ID service and integrate it with other Experience Cloud solutions. Es wird dringend empfohlen, Experience Platform Launch zum Implementieren des ID-Diensts zu verwenden.
+In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) verwendet, um Ihnen bei den ersten Schritten mit dem ID-Dienst und der Integration in andere Experience Cloud-Lösungen zu helfen. Es wird dringend empfohlen, Experience Platform Launch zum Implementieren des ID-Diensts zu verwenden.
 
 ## Ressourcen für die Implementierung
 
