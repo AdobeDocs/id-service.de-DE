@@ -4,7 +4,7 @@ product: ID-Dienst
 audience: Endanwender
 user-guide-title: Hilfe zum Experience Cloud Identity-Dienst
 user-guide-url: /content/help/de-DE/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
 
 ---
