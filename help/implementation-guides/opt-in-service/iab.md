@@ -1,20 +1,20 @@
 ---
-description: Verbinden Sie ihre Consent Management Platform (CMP) mit dem IAB-Plugin von Opt-in.
-seo-description: Verbinden Sie ihre Consent Management Platform (CMP) mit dem IAB-Plugin von Opt-in.
+description: Schließen Sie ihre Consent Management Platform (CMP) mit dem Audience Manager-Plugin von Opt-in für das IAB-Transparenz- und -Consent-Framework (TCF) an.
+seo-description: Schließen Sie ihre Consent Management Platform (CMP) mit Audience Manager-Plugin für IAB Transparency and Consent Framework (TCF) an.
 seo-title: (Beta) Nutzung von Opt-in-Diensten mit IAB Framework
 title: (Beta) Nutzung von Opt-in-Diensten mit IAB Framework
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
 
 
 # (Beta) Nutzung von Opt-in-Diensten mit IAB Framework{#beta-using-opt-in-services-with-iab-framework}
 
-Verbinden Sie ihre Consent Management Platform (CMP) mit dem IAB-Plugin von Opt-in.
+Schließen Sie ihre Consent Management Platform (CMP) mit dem IAB-Plugin von Opt-in für Audience Manager an.
 
-Audience Manager customers using [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) can connect their Consent Management Platform (CMP) with Opt-in’s IAB plugin. Opt-in ist eine Funktion, die in die JavaScript-Bibliothek von ECID eingebettet ist und abhängig von den in einer CMP festgelegten Besuchervoreinstellungen einzelne Adobe-Lösungsbibliotheken deaktivieren kann. Wenn das IAB-Plugin mit der ECID-Bibliothek implementiert wird, werden die Besucherpräferenzen aus Ihrer IAB-konformen CMP automatisch dem Opt-in zugeordnet. Diese Einstellungen ermöglichen es, Audience Manager-basierte Bibliotheken (DIL und ECID) und zugehörige Anrufe nach Erhalt der Zustimmung zu aktivieren.
+Audience Manager-Kunden, die [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) verwenden, können ihre Consent Management Platform (CMP) mit dem Audience Manager-Plugin von Opt-in für IAB TCF verbinden. Opt-in ist eine Funktion, die in die JavaScript-Bibliothek von ECID eingebettet ist und abhängig von den in einer CMP festgelegten Besuchervoreinstellungen einzelne Adobe-Lösungsbibliotheken deaktivieren kann. Wenn das IAB-Plugin mit der ECID-Bibliothek implementiert wird, werden die Besucherpräferenzen aus Ihrer IAB-konformen CMP automatisch dem Opt-in zugeordnet. Diese Einstellungen ermöglichen es, Audience Manager-basierte Bibliotheken (DIL und ECID) und zugehörige Anrufe nach Erhalt der Zustimmung zu aktivieren.
 
 ## Implementieren einer CMP mit IAB-Unterstützung {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
