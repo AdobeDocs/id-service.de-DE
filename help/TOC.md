@@ -4,7 +4,7 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
@@ -99,7 +99,7 @@ source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
    + [Video Heartbeat und der ID-Dienst](reference/heartbeat.md)
    + [Data Workbench und der ID-Dienst](reference/dwb.md)
    + [SHA-256-Hashing-Unterstützung für setCustomerIDs](reference/hashing-support.md)
-+ Häufig gestellte Fragen (FAQ){#faqs}
++ Häufig gestellte Fragen (FAQ) {#faqs}
    + [FAQ Übersicht](faq-intro/faq-intro.md)
    + [Häufig gestellte Fragen zum ID-Dienst](faq-intro/faq.md)
    + [Häufig gestellte Fragen zu Analytics und zum ID-Dienst](faq-intro/analytics-faq.md)
