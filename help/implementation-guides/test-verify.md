@@ -11,7 +11,7 @@ source-git-commit: ef3169f8928f337d4f2d17922b44a7421d225e51
 ---
 
 
-# Testen und Überprüfen des Experience Cloud Identity-Diensts{#test-and-verify-the-experience-cloud-id-service}
+# Testen und Überprüfen des Experience Cloud Identity-Diensts {#test-and-verify-the-experience-cloud-id-service}
 
 Diese Anweisungen, Tools und Verfahren unterstützen Sie bei der Ermittlung, ob der ID-Dienst ordnungsgemäß funktioniert. Diese Tests gelten für den ID-Dienst im Allgemeinen und für andere ID-Dienst- und Experience Cloud-Lösungskombinationen.
 
