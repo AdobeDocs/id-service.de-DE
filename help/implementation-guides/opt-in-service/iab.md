@@ -5,14 +5,14 @@ seo-title: (Beta) Nutzung von Opt-in-Diensten mit IAB Framework
 title: (Beta) Nutzung von Opt-in-Diensten mit IAB Framework
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: 27d3da940e4bba20a4eba86edfc44bf834173d6a
+source-git-commit: 65947bf4078222561060501178bf28b3c6cfed7c
 
 ---
 
 
 # (Beta) Nutzung von Opt-in-Diensten mit IAB Framework {#beta-using-opt-in-services-with-iab-framework}
 
-Schließen Sie ihre Consent Management Platform (CMP) mit dem Audience Manager IAB-Plugin für Audience Manager an.
+Schließen Sie die Consent Management Platform (CMP) mit dem Audience Manager-Plugin für IAB TCF von Opt-in an.
 
 Audience Manager-Kunden, die das [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) verwenden, können ihre Consent Management Platform (CMP) mit dem Opt-in-Audience Manager-Plugin für IAB TCF verbinden. Opt-in ist eine Funktion, die in die JavaScript-Bibliothek von ECID eingebettet ist und abhängig von den in einer CMP festgelegten Besuchervoreinstellungen einzelne Adobe-Lösungsbibliotheken deaktivieren kann. Wenn das Audience Manager-Plug-in für die IAB-TCF mit der ECID-Bibliothek implementiert ist, werden die Benutzervoreinstellungen aus Ihrem IAB-konformen CMP automatisch der Opt-in zugeordnet. Diese Einstellungen ermöglichen es, Audience Manager-basierte Bibliotheken (DIL und ECID) und zugehörige Anrufe nach Erhalt der Zustimmung zu aktivieren.
 
@@ -44,7 +44,7 @@ Sobald die Einstellungen ordnungsgemäß konfiguriert sind, werden die ECID- und
 
 >[!IMPORTANT]
 >
->Audience Manager benötigt eine Zustimmung für die *Zwecke 1, 2 und 5 und die Zustimmung des Anbieters*, um Cookies bereitzustellen und ID-Synchronisationen zu starten bzw. zu berücksichtigen. Weitere Informationen zum IAB-Plug-in finden Sie in der [Audience Manager-Dokumentation](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html).
+>Audience Manager benötigt eine Zustimmung für die *Zwecke 1, 2 und 5 und die Zustimmung des Anbieters*, um Cookies bereitzustellen und ID-Synchronisationen zu starten bzw. zu berücksichtigen. Weitere Informationen zum Audience Manager-Plugin für IAB TCF in der Audience Manager-Dokumentation [finden Sie](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html)hier.
 
 For more information on how to validate both Opt-in and the Audience Manager plug-in for IAB, check use case #4 in the validation guide [here](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
