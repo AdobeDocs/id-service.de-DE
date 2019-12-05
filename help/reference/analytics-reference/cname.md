@@ -5,13 +5,13 @@ seo-description: 'null'
 seo-title: Datenerfassungs-CNAMEs und domänenübergreifendes Tracking
 title: Datenerfassungs-CNAMEs und domänenübergreifendes Tracking
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
 
-# Datenerfassungs-CNAMEs und domänenübergreifendes Tracking{#data-collection-cnames-and-cross-domain-tracking}
+# Datenerfassungs-CNAMEs und domänenübergreifendes Tracking {#data-collection-cnames-and-cross-domain-tracking}
 
 Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das domänenübergreifende Tracking für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren (z. B. Safari).
 
@@ -23,7 +23,7 @@ Das demdex.net-Cookie aktiviert den Besucher-ID-Dienst, um domänenübergreifend
 
 ## Datenerfassungs-CNAMEs {#section-48fd186d376a48079769d12c4bd9f317}
 
-Wenn das Analytics-Cookie durch den Datenerfassungsserver gesetzt wurde, haben viele Kunden Datenerfassungsserver-CNAME-Einträge für die [Implementierung von Erstanbieter-Cookies](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/) konfiguriert, um Probleme mit Browsern zu verhindern, die Drittanbieter-Cookies zurückweisen. Mit diesem Verfahren wird die Domäne des Datenerfassungsservers so konfiguriert, dass sie mit der Websitedomäne übereinstimmt und das Besucher-ID-Cookie als Erstanbieter-Cookie gesetzt wird.
+Wenn das Analytics-Cookie durch den Datenerfassungsserver gesetzt wurde, haben viele Kunden Datenerfassungsserver-CNAME-Einträge für die [Implementierung von Erstanbieter-Cookies](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-first-party.translate.html) konfiguriert, um Probleme mit Browsern zu verhindern, die Drittanbieter-Cookies zurückweisen. Mit diesem Verfahren wird die Domäne des Datenerfassungsservers so konfiguriert, dass sie mit der Websitedomäne übereinstimmt und das Besucher-ID-Cookie als Erstanbieter-Cookie gesetzt wird.
 
 Da der Besucher-ID-Dienst das Besuchercookie mithilfe von JavaScript direkt in der Domäne der aktuellen Website setzt, ist diese Konfiguration zum Setzen von Erstanbieter-Cookies nicht mehr erforderlich.
 
