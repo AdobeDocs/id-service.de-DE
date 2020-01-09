@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
+translation-type: tm+mt
+source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
    + [Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente](implementation-guides/ecid-a4t-target.md)
    + [Direkte Integration mit dem ID-Dienst](implementation-guides/direct-integration.md)
    + [Nutzungsszenarios im Zusammenhang mit einer direkten Integration](implementation-guides/direct-integration-examples.md)
-   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md)
+   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md).
    + Opt-in-Dienst {#opt-in-service}
       + [Opt-in-Dienst – Übersicht](implementation-guides/opt-in-service/optin-overview.md)
       + [Einrichtung des Opt-in-Dienstes](implementation-guides/opt-in-service/getting-started.md)
@@ -94,6 +94,7 @@ source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
    + [CORS-Unterstützung im ID-Dienst](reference/cors.md)
    + [Kunden-IDs und Authentifizierungsstatus](reference/authenticated-state.md)
    + [ECID-Bibliotheksmethoden in einer Safari-ITP-Umgebung](reference/ecid-library-methods.md)
+   + [Identifizieren von Unique Visitors](reference/unique-vis-method.md)
    + [Abrufen von Regions- und Benutzer-IDs vom AMCV-Cookie oder dem ID-Dienst](reference/regions.md)
    + [Voraussetzungen für den ID-Dienst](reference/requirements.md)
    + [Video Heartbeat und der ID-Dienst](reference/heartbeat.md)
