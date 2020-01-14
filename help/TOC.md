@@ -31,7 +31,7 @@ source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
    + [Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente](implementation-guides/ecid-a4t-target.md)
    + [Direkte Integration mit dem ID-Dienst](implementation-guides/direct-integration.md)
    + [Nutzungsszenarios im Zusammenhang mit einer direkten Integration](implementation-guides/direct-integration-examples.md)
-   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md).
+   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md)
    + Opt-in-Dienst {#opt-in-service}
       + [Opt-in-Dienst – Übersicht](implementation-guides/opt-in-service/optin-overview.md)
       + [Einrichtung des Opt-in-Dienstes](implementation-guides/opt-in-service/getting-started.md)
