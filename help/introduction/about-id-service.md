@@ -1,12 +1,12 @@
 ---
-description: Die Rolle des Experience Platform Identity-Diensts in Adobe Experience Cloud.
-keywords: ID-Dienst
-seo-description: Die Rolle des Experience Platform Identity-Diensts in Adobe Experience Cloud.
+description: Die Rolle des Experience Cloud Identity-Diensts in Adobe Experience Cloud.
+keywords: ID Service
+seo-description: Die Rolle des Experience Cloud Identity-Diensts in Adobe Experience Cloud.
 seo-title: Über den ID-Dienst
 title: Übersicht
 uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
 
 ---
 
