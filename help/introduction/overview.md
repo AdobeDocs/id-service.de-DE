@@ -1,18 +1,18 @@
 ---
-description: Die Rolle des Experience Platform Identity-Diensts in Adobe Experience Cloud.
-seo-description: Mit dem Experience Platform Identity-Dienst wird das allgemeine Identifizierungs-Framework für die Experience Cloud-Core Services, Lösungen sowie benutzerdefinierte Attribute und Zielgruppen ermöglicht.
+description: Die Rolle des Experience Cloud Identity-Diensts in Adobe Experience Cloud.
+seo-description: Mit dem Experience Cloud Identity-Dienst wird das allgemeine Identifizierungs-Framework für die Experience Cloud-Core Services, Lösungen sowie benutzerdefinierte Attribute und Zielgruppen ermöglicht.
 seo-title: ID-Dienst – Übersicht
 title: Übersicht
 uuid: null
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
 
 ---
 
 
 # Übersicht
 
-Mit dem Experience Platform Identity-Dienst wird das allgemeine Identifizierungs-Framework für die Experience Cloud-Core Services, Lösungen sowie benutzerdefinierte Attribute und Zielgruppen im Platform Identity-Dienst ermöglicht. (Möglicherweise werden auch ältere Namen oder Abkürzungen wie Experience Cloud ID-Dienst, ECID, Marketing Cloud ID-Dienst, MID und Besucher-ID-Dienst verwendet.) Der Identity-Dienst funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Site-Besucher. Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
+Der Experience Cloud-Identitätsdienst ermöglicht das gemeinsame Identifizierungsframework für die Experience Cloud-Hauptdienste, Lösungen und Kundenattribute und -zielgruppen im Platform Identity Service. (Möglicherweise werden auch ältere Namen oder Abkürzungen wie Experience Cloud ID-Dienst, ECID, Marketing Cloud ID-Dienst, MID und Besucher-ID-Dienst verwendet.) Der Identity-Dienst funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Site-Besucher. Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
 
 ![](assets/ecid.png)
 
