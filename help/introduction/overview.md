@@ -1,18 +1,26 @@
 ---
-description: Die Rolle des Experience Cloud Identity-Diensts in Adobe Experience Cloud.
-seo-description: Mit dem Experience Cloud Identity-Dienst wird das allgemeine Identifizierungs-Framework für die Experience Cloud-Core Services, Lösungen sowie benutzerdefinierte Attribute und Zielgruppen ermöglicht.
-seo-title: ID-Dienst – Übersicht
-title: Übersicht
-uuid: null
+description: Die Rolle des Experience Cloud-Identitätsdienstes in der Adobe Experience Cloud.
+seo-description: Der Experience Cloud-Identitätsdienst (ehemals Besucher-ID-Dienst oder Marketing Cloud ID-Dienst) ermöglicht das allgemeine Identifizierungsframework für die Experience Cloud-Dienste wie Kundenattribute und Zielgruppen.
+seo-title: Übersicht über den Experience Cloud ID-Dienst
+title: Übersicht über den Experience Cloud ID-Dienst
 translation-type: tm+mt
-source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
+source-git-commit: 9e020c3292a7c9f14ec77615a54ec61a37762eec
 
 ---
 
 
-# Übersicht
+# Übersicht über den Experience Cloud ID-Dienst
 
-Der Experience Cloud-Identitätsdienst ermöglicht das gemeinsame Identifizierungsframework für die Experience Cloud-Hauptdienste, Lösungen und Kundenattribute und -zielgruppen im Platform Identity Service. (Möglicherweise werden auch ältere Namen oder Abkürzungen wie Experience Cloud ID-Dienst, ECID, Marketing Cloud ID-Dienst, MID und Besucher-ID-Dienst verwendet.) Der Identity-Dienst funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Site-Besucher. Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
+The [!UICONTROL Experience Cloud Identity Service] enables the common identification framework for Experience Cloud Core Services (such as customer attributes and audiences) solutions in the Experience Platform Identity Service.
+
+>[!NOTE]
+>
+> Möglicherweise werden Verweise auf frühere Namen oder Abkürzungen wie ECID, Marketing Cloud ID-Dienst (MID) und Besucher-ID-Dienst angezeigt. Diese beziehen sich auf den [!UICONTROL Experience Cloud-Identitätsdienst]. Möglicherweise sehen Sie auch den Identitätsdienst für [!UICONTROL Experience Platform]. Zur Klarstellung:
+
+* [!UICONTROL Experience Platform Identity Service]: Der Dienst, der Identitäten verknüpft. Es handelt sich dabei um den Dienst zum Verknüpfen von Geräten für das personalbasierte Experience Management.
+* [!UICONTROL Experience Cloud ID-Dienst] (ECID): Die eindeutige, beständige ID, die einem Site-Besucher zugewiesen ist. Es handelt sich um eine bestimmte Entität, die vom Platform Identity Service verwendet werden kann.
+
+Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
 
 ![](assets/ecid.png)
 
