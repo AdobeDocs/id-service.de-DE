@@ -4,7 +4,7 @@ seo-description: Der Experience Cloud-Identitätsdienst (ehemals Besucher-ID-Die
 seo-title: Übersicht über den Experience Cloud ID-Dienst
 title: Übersicht über den Experience Cloud ID-Dienst
 translation-type: tm+mt
-source-git-commit: 6342ea02c74e6d1c96f987c5f2620246602ce6c5
+source-git-commit: 98b72f87b188debd6a5f6b86822c3f714647de61
 
 ---
 
@@ -22,7 +22,7 @@ The [!UICONTROL Experience Cloud Identity Service] enables the common identifica
 
 Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
 
-![](assets/ecid.png)
+![](assets/ecid-new.png)
 
 Zudem kann der ID-Dienst die unterschiedlichen lösungsspezifischen IDs (z. B. Analytics AID) ersetzen. Mit der Funktionalität [Kunden-IDs und Authentifizierungsstatus](/help/reference/authenticated-state.md) ermöglicht es Ihnen der ID-Dienst, eigene Kunden-IDs an Experience Cloud zu übergeben. Beachten Sie jedoch, dass der ID-Dienst lediglich in den Lösungen verwendet werden kann, die Sie bereits abonniert haben. Er bietet keinen Zugriff auf weitere Produkte, wenn Sie diese noch nicht abonniert haben.
 
