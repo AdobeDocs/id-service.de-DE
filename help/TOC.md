@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
+translation-type: tm+mt
+source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
    + [Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente](implementation-guides/ecid-a4t-target.md)
    + [Direkte Integration mit dem ID-Dienst](implementation-guides/direct-integration.md)
    + [Nutzungsszenarios im Zusammenhang mit einer direkten Integration](implementation-guides/direct-integration-examples.md)
-   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md)
+   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md).
    + Opt-in-Dienst {#opt-in-service}
       + [Opt-in-Dienst – Übersicht](implementation-guides/opt-in-service/optin-overview.md)
       + [Einrichtung des Opt-in-Dienstes](implementation-guides/opt-in-service/getting-started.md)
@@ -106,7 +106,8 @@ source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
    + [Häufig gestellte Fragen zu Analytics und zum ID-Dienst](faq-intro/analytics-faq.md)
    + [Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen](faq-intro/other-faq.md)
 + Versionshinweise für ID-Dienst {#release-notes}
-   + [Versionshinweise für 2019](release-notes/release-notes.md)
+   + [Versionshinweise für 2020](release-notes/release-notes.md)
+   + [Versionshinweise für 2019](release-notes/notes-2019.md)
    + [Versionshinweise für 2018](release-notes/notes-2018.md)
    + [Versionshinweise für 2017](release-notes/notes-2017.md)
    + [Versionshinweise für 2016](release-notes/notes-2016.md)
