@@ -1,12 +1,12 @@
 ---
 description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
-keywords: ID-Dienst
+keywords: ID Service
 seo-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
 seo-title: Versionshinweise für 2019
 title: Versionshinweise für 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
+source-git-commit: ba84c4dac9023ab13f5176c5665adbbdaeb00d33
 
 ---
 
@@ -38,6 +38,20 @@ Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des [!DNL Experi
 **Unterstützung für ITP 2.1**. Wenn ein Trackingserver mit einem Erstanbieter-CNAME eingerichtet ist, wird ein neues Cookie (s_ecid) zum ECID-Wert hinzugefügt. Die ECID-Bibliothek referenziert den Wert, damit die ID über 7 Tage hinaus erhalten bleibt. Siehe [ECID-Bibliotheksmethoden in einer Safari-ITP-Umgebung](/help/reference/ecid-library-methods.md).
 
 **Fehlerbehebung für secureCookie config.**
+
+## Version 4.1
+
+Aktualisierung `publishDestinations` pro API-Änderung. Mit dieser Aktualisierung können die Referrer-Informationen der Seite während der ID-Synchronisierung offengelegt werden, wenn gewünscht. (CORE-23693)
+
+## Version 4.2
+
+Unterstützung für das Audience Manager-Plugin für IAB TCF, verfügbar über das ECID-Opt-in-Objekt.
+
+**Fehlerbehebungen**
+
+* IAB + OptIn kann keine MID für den erneuten Besuch von Kunden erhalten (CORE-26022)
+* Fehler bei der Konfiguration von opt-in doOptInApply in DTM (DTM-12958) behoben
+* ECID-Ausschluss deaktiviert ID-Syncs (CORE-23814)
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
