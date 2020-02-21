@@ -5,7 +5,7 @@ seo-description: Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusam
 seo-title: Anwendungsfälle der direkten Integration
 title: Anwendungsfälle der direkten Integration
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 ---
@@ -13,11 +13,11 @@ source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 # Nutzungsszenarios im Zusammenhang mit einer direkten Integration {#direct-integration-use-cases}
 
-Diese Beispiele behandeln zwei gängige Anwendungsfälle im Zusammenhang mit einer direkten Integration und der Experience Cloud ID (ECID oder MID). Diese ID ist eine eindeutige, beständige ID für Ihre Site-Besucher.
+Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer direkten Integration und der Experience Cloud ID (ECID oder MID) ab. Dies ist eine eindeutige, dauerhafte ID für Ihre Site-Besucher.
 
 >[!TIP]
 >
->* Überprüfen und verstehen Sie [Codesyntax und Variablen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9), bevor Sie sich mit den Nutzungsszenarios befassen.
+>* Bevor Sie sich mit den Nutzungsszenarios befassen, sollten Sie sichergehen, dass Sie [Codesyntax und Variablen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) verstehen.
 >* Weitere Informationen über die MID finden Sie unter [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
 >
 
@@ -51,7 +51,7 @@ Diese Beispiele behandeln zwei gängige Anwendungsfälle im Zusammenhang mit ein
      <li id="li_4869572B40E54C54B88A2474DAC475A8">Ihre Datenanbieter-ID. Dies ist eine eindeutige ID, die Ihrem Unternehmen zugewiesen ist. Nennen wir diese ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">Ihre ID für den Besucher (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Optional)</i> Eine Status-ID, um den Authentifizierungsstatus für diesen Besucher zu definieren. </li> 
-    </ul> <p>Wenn Sie andere Parameter haben, die im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B.<span class="codeph"> d_blob</span> oder <span class="codeph">dcs_region</span> usw.), können Sie diese ebenfalls übergeben. </p> </td> 
+    </ul> <p>Wenn Sie andere Parameter haben, die im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B. <span class="codeph">d_blob</span> oder <span class="codeph">dcs_region</span> usw.), können Sie diese ebenfalls übergeben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 
@@ -86,7 +86,7 @@ Diese Beispiele behandeln zwei gängige Anwendungsfälle im Zusammenhang mit ein
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Aktionen</b> </p> </td> 
-   <td colname="col2"> <p>Unter diesen Bedingungen muss Ihr Aufruf an den ID-Dienst Ihre Organisations-ID enthalten. </p> <p>Wenn Sie andere Parameter haben, die im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B.<span class="codeph"> d_blob</span> oder <span class="codeph">dcs_region</span> usw.), können Sie diese ebenfalls übergeben. </p> </td> 
+   <td colname="col2"> <p>Unter diesen Bedingungen muss Ihr Aufruf an den ID-Dienst Ihre Organisations-ID enthalten. </p> <p>Wenn Sie andere Parameter haben, die im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B. <span class="codeph">d_blob</span> oder <span class="codeph">dcs_region</span> usw.), können Sie diese ebenfalls übergeben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 
