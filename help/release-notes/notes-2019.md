@@ -5,24 +5,24 @@ seo-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen
 seo-title: Versionshinweise für 2019
 title: Versionshinweise für 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ---
 
 
-# Experience Cloud release notes - 2019 {#release-notes}
+# Experience Cloud – Versionshinweise 2019 {#release-notes}
 
 Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
 
 ## Version 4.4.1
 
-Kontrollkästchen für die Vorabgenehmigung für Medienanalyse in ECID Launch Extension (CORE-33185) hinzufügen
+Ein Kontrollkästchen für die Genehmigung vor dem Opt-in für Medienanalysen in ECID Launch-Erweiterung (CORE-33185) wurde hinzugefügt.
 
 **Fehlerbehebungen**
 
-* Problem mit der ECID-Starterweiterung preOptInApproval Eingabezeichenfolgenanalyse (CORE-34041)
-* Leistungseinbußen bei Verwendung von trackingServer (CORE-32387)
+* Problem mit dem Parsen der Eingabe-Zeichenfolge für die ECID Launch-Erweiterung preOptInApprovals (CORE-34041)
+* Leistungsabfall bei Verwendung von trackingServer (CORE-32387)
 
 ## Version 4.4 {#version-4point4}
 
@@ -46,25 +46,25 @@ Kontrollkästchen für die Vorabgenehmigung für Medienanalyse in ECID Launch Ex
 
 ## Version 4.1
 
-Aktualisierung `publishDestinations` pro API-Änderung. Mit dieser Aktualisierung können die Referrer-Informationen der Seite während der ID-Synchronisierung offengelegt werden, wenn gewünscht. (CORE-23693)
+Aktualisierung von `publishDestinations` durch die Änderung in der neuen API. Mit dieser Aktualisierung können die Referrer-Informationen der Seite während der ID-Synchronisierung bei Bedarf offengelegt werden. (CORE-23693)
 
 ## Version 4.2
 
-Unterstützung für das Audience Manager-Plugin für IAB TCF, verfügbar über das ECID-Opt-in-Objekt.
+Unterstützung für das Audience Manager-Plug-in für IAB TCF, das über das Objekt „ECID Opt-in“ verfügbar ist.
 
-**Fehlerbehebungen**
+**Fehlerkorrekturen**
 
-* IAB + OptIn kann keine MID für den erneuten Besuch von Kunden erhalten (CORE-26022)
-* Fehler bei der Konfiguration von opt-in doOptInApply in DTM (DTM-12958) behoben
-* ECID-Ausschluss deaktiviert ID-Syncs (CORE-23814)
+* IAB + Opt-in kann keine MID für den erneuten Besuch von Kunden abrufen. (CORE-26022)
+* Ein Fehler bei der Konfiguration des Opt-ins doesOptInApply in DTM wurde behoben. (DTM-12958)
+* ECID-Opt-out deaktiviert ID-Synchronisationen (CORE-23814)
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Opt-in-Dienst**. Opt-in ist eine Erweiterung der Experience Cloud-ID (ECID), mit der Sie steuern können, ob (und welche) Experience Cloud-Bibliotheken Cookies auf Webseiten für Besucher erstellen können. Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
+**Opt-in-Dienst**. Opt-in ist eine Erweiterung der Experience Cloud ID (ECID), mit der Sie steuern können, ob (und welche) Experience Cloud-Bibliotheken Cookies auf Webseiten für Besucher erstellen können. Mit [Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) können Sie die Zustimmung von Besuchern zu Experience Cloud-Lösungen einfacher einholen, indem Sie Analytics, Target, Audience Manager und anderen oder allen ausgewählten Experience Cloud-Lösungen die Nutzung Ihres Zustimmungsverwaltungssystems ermöglichen.
 
 ## Version 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
 | Element | Beschreibung |
 |---|---|
-| Die Kennzeichnung`disableIdSyncs` funktioniert nicht, nachdem eine Zeichenfolge übergeben wurde. | Behoben. Werte, die für den `disableidSyncs` Parameter in der `getInstance` Funktion festgelegt wurden, werden jetzt berücksichtigt. |
+| Die Kennzeichnung `disableIdSyncs` funktioniert nicht, nachdem eine Zeichenfolge übergeben wurde. | Behoben. Werte, die für den `disableidSyncs` Parameter in der `getInstance` Funktion festgelegt wurden, werden jetzt berücksichtigt. |
 | Drittanbieter-iFrames erhalten die ECID nicht. | ECIDs, die in der mobilen Version von Safari und in verschiedenen iFrames nicht funktionierten, wurden korrigiert. |
