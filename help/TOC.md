@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+translation-type: tm+mt
+source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
       + [Konfigurieren von Opt-in mit DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Opt-in-Nutzungsszenarios](implementation-guides/opt-in-service/use-cases.md)
       + [Opt-in-Referenz](implementation-guides/opt-in-service/api.md)
-      + [(Beta) Opt-in Dienste mit IAB Framework nutzen](implementation-guides/opt-in-service/iab.md)
+      + [Nutzung von Opt-in-Diensten mit IAB Framework](implementation-guides/opt-in-service/iab.md)
 + ID-Dienst-API {#id-service-api}
    + [ Übersicht ID-Dienst-API](library/library.md)
    + Konfiguration {#configurations}
