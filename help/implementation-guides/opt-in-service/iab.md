@@ -1,16 +1,16 @@
 ---
 description: Verbinden der Consent Management Platform (CMP) mit dem Audience Manager-Plugin der Opt-in-Funktion für das IAB Transparency and Consent Framework (TCF).
 seo-description: Verbinden der Consent Management Platform (CMP) mit dem Audience Manager-Plugin für IAB Transparency and Consent Framework (TCF).
-seo-title: (Beta) Nutzung von Opt-in-Diensten mit IAB Framework
-title: (Beta) Nutzung von Opt-in-Diensten mit IAB Framework
+seo-title: Nutzung von Opt-in-Diensten mit IAB Framework
+title: Nutzung von Opt-in-Diensten mit IAB Framework
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
-source-git-commit: ab85467ad0f9f661c472eb373809c699c4b9130f
+translation-type: tm+mt
+source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
 
 ---
 
 
-# (Beta) Nutzung von Opt-in-Diensten mit IAB Framework {#beta-using-opt-in-services-with-iab-framework}
+# Nutzung von Opt-in-Diensten mit IAB Framework{#using-opt-in-services-with-iab-framework}
 
 Verbinden der Consent Management Platform (CMP) mit dem Audience Manager-Plugin der Opt-in-Funktion für IAB TCF.
 
@@ -44,7 +44,7 @@ Sobald die Einstellungen ordnungsgemäß konfiguriert sind, werden die ECID- und
 
 >[!IMPORTANT]
 >
->Audience Manager benötigt eine Zustimmung für die *Zwecke 1, 2 und 5 und die Zustimmung des Anbieters*, um Cookies bereitzustellen und ID-Synchronisationen zu starten bzw. zu berücksichtigen. Weitere Informationen zum Audience Manager-Plugin für IAB TCF finden Sie in der Audience Manager-Dokumentation [hier](https://docs.adobe.com/help/de-DE/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html).
+>Audience Manager benötigt eine Zustimmung für die *Zwecke 1, 2 und 5 und die Zustimmung des Anbieters*, um Cookies bereitzustellen und ID-Synchronisationen zu starten bzw. zu berücksichtigen. Weitere Informationen zum Audience Manager-Plugin für IAB TCF finden Sie in der Audience Manager-Dokumentation [hier](https://docs.adobe.com/help/en/audience-manager/user-guide/overview/gdpr/aam-iab-plugin.html).
 
 Weitere Informationen zum Validieren des Opt-in-Objekts und des Audience Manager-Plugins für IAB TCF finden Sie in Nutzungsszenario 4 des Validierungsleitfadens [hier](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 
@@ -52,6 +52,6 @@ Weitere Informationen zum Validieren des Opt-in-Objekts und des Audience Manager
 
 * [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/): Hier finden Sie weitere Informationen zum IAB-Standard.
 * [Adobe Opt-in](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) – Hier finden Sie weitere Informationen zu Opt-in, einer erforderlichen Komponente für die Zustimmungsverwaltung in Platform-Lösungen
-* Unterstützung des IAB Transparency and Consent Framework (TCF) in [Audience Manager](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)
-* [Ihre Auswahlmöglichkeiten bezüglich Datenschutz](https://www.adobe.com/de/privacy/opt-out.html#customeruse) – Ihre Benutzer haben auch die Möglichkeit, die Datenerfassung mit anderen globalen Opt-out-Tools abzulehnen. Globales Opt-out hat Vorrang vor der Opt-in- und IAB-Überprüfung.
+* Unterstützung des IAB Transparency and Consent Framework (TCF) in [Audience Manager](https://docs.adobe.com/content/help/en/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
+* [Ihre Auswahlmöglichkeiten bezüglich Datenschutz](https://www.adobe.com/privacy/opt-out.html#customeruse) – Ihre Benutzer haben auch die Möglichkeit, die Datenerfassung mit anderen globalen Opt-out-Tools abzulehnen. Globales Opt-out hat Vorrang vor der Opt-in- und IAB-Überprüfung.
 
