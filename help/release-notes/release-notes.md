@@ -4,8 +4,8 @@ keywords: ID Service
 seo-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
 seo-title: Versionshinweise für 2020
 title: Versionshinweise für 2020
-translation-type: ht
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+translation-type: tm+mt
+source-git-commit: a958ea783bbe602f52635bbf2b315c85a8de57a7
 
 ---
 
@@ -17,4 +17,4 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
 ## Version 4.5
 
 * Ab Version 4.5 lehnt ECID alle leeren IDs ab, die an die `setCustomerIDs`-Methode gesendet werden. (CORE-38828)
-* Es wurde ein Problem behoben, bei dem der Opt-in fälschlicherweise als `doesOptInApply=false` und `isIabContext=true.` konfiguriert wurde. (CORE-38351)
+* Fixed an issue occurring when opt-in is configured as `doesOptInApply=false` and `isIabContext=true.` (CORE-38351)
