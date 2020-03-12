@@ -5,7 +5,7 @@ seo-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP
 seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7255228470a59a537251c3a3eec686f52a2b76ec
 
 ---
@@ -53,13 +53,13 @@ Fügen Sie diese Domänenamen oder URLs Ihrer CSP für alle aufgeführten Experi
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Experience Cloud ID-Dienst und Audience Manager</b> </p> </td> 
-   <td colname="col2"> <p>Ändern Sie Ihren CSP, um die unten stehenden Domänen einzuschließen.</p> 
+   <td colname="col2"> <p>Nehmen Sie die folgenden Domänen in Ihre CSP auf.</p> 
    <p><ul>
    <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie auch <code>https://assets.adobedtm.com</code> der Domänenliste hinzufügen.</li></ul></p> <p>Aufrufe der Domain <span class="codeph"> demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity-Diensts</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> </tr> 
+   <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li></ul></p> <p>Aufrufe der Domain <span class="codeph"> demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity-Diensts</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.translate.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map-Plugin</b> </p> </td> 
  <td colname="col2"> <p>Nehmen Sie *.adobe.com in Ihre CSP auf. **Hinweis**: Wenn Activity Map bereits vor Januar 2020 installiert wurde, wird im Browser weiterhin zuerst eine Anfrage an *.omniture.com angezeigt, die jedoch an *.adobe.com weitergeleitet wird. </p></td> 
@@ -69,6 +69,6 @@ Fügen Sie diese Domänenamen oder URLs Ihrer CSP für alle aufgeführten Experi
 
 >[!MORELIKETHIS]
 >* [Content Security Policy Reference](https://content-security-policy.com/)
->* [MDN: Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
->* [Wikipedia: Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Policy)
+>* [MDN: Content Security Policy](https://developer.mozilla.org/de/docs/Web/HTTP/CSP)
+>* [Wikipedia: Content Security Policy](https://de.wikipedia.org/wiki/Content_Security_Policy)
 
