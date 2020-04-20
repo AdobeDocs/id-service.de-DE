@@ -4,8 +4,8 @@ keywords: ID Service
 seo-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
 seo-title: Versionshinweise für 2020
 title: Versionshinweise für 2020
-translation-type: ht
-source-git-commit: a958ea783bbe602f52635bbf2b315c85a8de57a7
+translation-type: tm+mt
+source-git-commit: c4da0f3da99a96d2be7421f49e0e88286d0505e0
 
 ---
 
@@ -14,7 +14,13 @@ source-git-commit: a958ea783bbe602f52635bbf2b315c85a8de57a7
 
 Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts (ECID).
 
+## Version 4.6
+
+* Flag `loadSSL` standardmäßig aktiviert. Alle Aufrufe des Identitätsdienstes sind `https` standardmäßig aktiviert.  Kunden können den Wert auf &quot;false&quot;setzen, wenn sie Identity Services auf ihrer `non-ssl` Seite http aufrufen möchten.
+* Die Funktion zur Erkennung der `Internet-Explorer (IE)` Version wurde aktualisiert, um ein Problem zu beheben, das von `ESLint`Ihnen gemeldet wurde.
+Behebung eines Leistungsproblems, das auftrat, wenn die ECID für OptIn `Internet-Explorer (IE) 11` aktiviert `pre-approval` und später aktualisiert wurde.
+
 ## Version 4.5
 
-* Ab Version 4.5 lehnt ECID alle leeren IDs ab, die an die `setCustomerIDs`-Methode gesendet werden. (CORE-38828)
-* Es wurde ein Problem behoben, bei dem der Opt-in als `doesOptInApply=false` und `isIabContext=true.` konfiguriert wurde. (CORE-38351)
+* Ab Version 4.5 lehnt ECID alle leeren IDs ab, die an die `setCustomerIDs`-Methode gesendet werden.
+* Fixed an issue occurring when opt-in is configured as `doesOptInApply=false` and `isIabContext=true`.
