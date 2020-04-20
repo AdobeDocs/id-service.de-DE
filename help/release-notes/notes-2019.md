@@ -5,8 +5,8 @@ seo-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen
 seo-title: Versionshinweise für 2019
 title: Versionshinweise für 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: ht
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+translation-type: tm+mt
+source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
 
@@ -17,12 +17,12 @@ Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience C
 
 ## Version 4.4.1
 
-Ein Kontrollkästchen für die Genehmigung vor dem Opt-in für Medienanalysen in ECID Launch-Erweiterung (CORE-33185) wurde hinzugefügt.
+Hinzufügen Kontrollkästchen für die Vorabgenehmigung für Medienanalyse in der ECID Launch Extension.
 
 **Fehlerbehebungen**
 
-* Problem mit dem Parsen der Eingabe-Zeichenfolge für die ECID Launch-Erweiterung preOptInApprovals (CORE-34041)
-* Leistungsabfall bei Verwendung von trackingServer (CORE-32387)
+* Problem mit der ECID-Starterweiterung preOptInApproval Eingabezeichenfolgenanalyse.
+* Leistungseinbußen bei Verwendung von trackingServer.
 
 ## Version 4.4 {#version-4point4}
 
@@ -32,11 +32,11 @@ Ein Kontrollkästchen für die Genehmigung vor dem Opt-in für Medienanalysen in
 
 **Korrekturen und Verbesserungen**
 
-* Die Konfiguration von `cookieDomain` wurde aktualisiert. Die ECID-Bibliothek filtert jetzt die leere Zeichenfolge `cookieDomain` in `initConfig` heraus und verwendet die Cookie-Domäne auf oberster Ebene, die durch die getDomain-Methode zurückgegeben wird. (CORE-29223)
-* Ein Fehler wurde in Zusammenhang mit `getVisitorValues` in `localVisitor` behoben. (CORE-31287)
-* Ein Fehler wurde behoben, durch den im Safari-Browser eine Abweichung beim MCOPTOUT-Wert aufgetreten ist, der von der `getVisitorValue`-Methode zurückgegeben wird. (CORE-29719)
+* Die Konfiguration von `cookieDomain` wurde aktualisiert. Die ECID-Bibliothek filtert jetzt die leere Zeichenfolge `cookieDomain` in `initConfig` heraus und verwendet die Cookie-Domäne auf oberster Ebene, die durch die getDomain-Methode zurückgegeben wird.
+* Ein Fehler wurde in Zusammenhang mit `getVisitorValues` in `localVisitor` behoben. 
+* Ein Fehler wurde behoben, durch den im Safari-Browser eine Abweichung beim MCOPTOUT-Wert aufgetreten ist, der von der `getVisitorValue`-Methode zurückgegeben wird.
 * Die Opt-in-Bibliothek wurde aktualisiert, indem `optIn.off` zur Abmeldung von Ereignissen hinzugefügt wurde.
-* Ein Fehler in Zusammenhang mit der setTimeout-Funktion wurde behoben, bei der `setTimeout` die Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) auf einigen Kunden-Sites verletzt hat. (CORE-30623)
+* Ein Fehler in Zusammenhang mit der setTimeout-Funktion wurde behoben, bei der `setTimeout` die Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) auf einigen Kunden-Sites verletzt hat.
 
 ## Version 4.3 {#version-4point3}
 
@@ -46,7 +46,7 @@ Ein Kontrollkästchen für die Genehmigung vor dem Opt-in für Medienanalysen in
 
 ## Version 4.1
 
-Aktualisierung von `publishDestinations` durch die Änderung in der neuen API. Mit dieser Aktualisierung können die Referrer-Informationen der Seite während der ID-Synchronisierung bei Bedarf offengelegt werden. (CORE-23693)
+Aktualisierung von `publishDestinations` durch die Änderung in der neuen API. Mit dieser Aktualisierung können die Referrer-Informationen der Seite während der ID-Synchronisierung offengelegt werden, wenn gewünscht.
 
 ## Version 4.2
 
@@ -54,9 +54,9 @@ Unterstützung für das Audience Manager-Plug-in für IAB TCF, das über das Obj
 
 **Fehlerkorrekturen**
 
-* IAB + Opt-in kann keine MID für den erneuten Besuch von Kunden abrufen. (CORE-26022)
-* Ein Fehler bei der Konfiguration des Opt-ins doesOptInApply in DTM wurde behoben. (DTM-12958)
-* ECID-Opt-out deaktiviert ID-Synchronisationen (CORE-23814)
+* IAB + OptIn kann keine MID für den erneuten Besuch von Kunden erhalten.
+* Es wurde ein Fehler bei der Konfiguration von opt-in doOptInApply in DTM behoben.
+* ECID-Opt-out deaktiviert ID-Synchronisationen.
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
@@ -67,4 +67,4 @@ Unterstützung für das Audience Manager-Plug-in für IAB TCF, das über das Obj
 | Element | Beschreibung |
 |---|---|
 | Die Kennzeichnung `disableIdSyncs` funktioniert nicht, nachdem eine Zeichenfolge übergeben wurde. | Behoben. Werte, die für den `disableidSyncs` Parameter in der `getInstance` Funktion festgelegt wurden, werden jetzt berücksichtigt. |
-| Drittanbieter-iFrames erhalten die ECID nicht. | ECIDs, die in der mobilen Version von Safari und in verschiedenen iFrames nicht funktionierten, wurden korrigiert. |
+| Nicht ECID für iFrames von Drittanbietern | ECID auf Safari Mobile und ECIDs in verschiedenen nicht funktionierenden iFrames wurden behoben. |
