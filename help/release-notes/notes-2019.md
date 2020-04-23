@@ -5,7 +5,7 @@ seo-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen
 seo-title: Versionshinweise für 2019
 title: Versionshinweise für 2019
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
@@ -17,12 +17,12 @@ Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience C
 
 ## Version 4.4.1
 
-Hinzufügen Kontrollkästchen für die Vorabgenehmigung für Medienanalyse in der ECID Launch Extension.
+Ein Kontrollkästchen für die Genehmigung vor dem Opt-in für Medienanalysen in der ECID Launch-Erweiterung wurde hinzugefügt.
 
 **Fehlerbehebungen**
 
-* Problem mit der ECID-Starterweiterung preOptInApproval Eingabezeichenfolgenanalyse.
-* Leistungseinbußen bei Verwendung von trackingServer.
+* Problem mit dem Parsen der Eingabe-Zeichenfolge für die ECID Launch-Erweiterung preOptInApprovals.
+* Leistungsabfall bei Verwendung von trackingServer.
 
 ## Version 4.4 {#version-4point4}
 
@@ -52,10 +52,10 @@ Aktualisierung von `publishDestinations` durch die Änderung in der neuen API. M
 
 Unterstützung für das Audience Manager-Plug-in für IAB TCF, das über das Objekt „ECID Opt-in“ verfügbar ist.
 
-**Fehlerkorrekturen**
+**Fehlerbehebungen**
 
-* IAB + OptIn kann keine MID für den erneuten Besuch von Kunden erhalten.
-* Es wurde ein Fehler bei der Konfiguration von opt-in doOptInApply in DTM behoben.
+* IAB + Opt-in kann keine MID für den erneuten Besuch von Kunden abrufen.
+* Ein Fehler bei der Konfiguration des Opt-ins doesOptInApply in wurde in DTM behoben.
 * ECID-Opt-out deaktiviert ID-Synchronisationen.
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
@@ -67,4 +67,4 @@ Unterstützung für das Audience Manager-Plug-in für IAB TCF, das über das Obj
 | Element | Beschreibung |
 |---|---|
 | Die Kennzeichnung `disableIdSyncs` funktioniert nicht, nachdem eine Zeichenfolge übergeben wurde. | Behoben. Werte, die für den `disableidSyncs` Parameter in der `getInstance` Funktion festgelegt wurden, werden jetzt berücksichtigt. |
-| Nicht ECID für iFrames von Drittanbietern | ECID auf Safari Mobile und ECIDs in verschiedenen nicht funktionierenden iFrames wurden behoben. |
+| iFrames von Drittanbietern erhalten kein ECID | Nicht funktionierendes ECID auf Safari Mobile und nicht funktionierende ECIDs in verschiedenen iFrames wurden behoben. |
