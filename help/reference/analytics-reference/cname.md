@@ -5,8 +5,8 @@ seo-description: 'null'
 seo-title: Datenerfassungs-CNAMEs und domänenübergreifendes Tracking
 title: Datenerfassungs-CNAMEs und domänenübergreifendes Tracking
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das domänenübergreifende Tracking für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren (z. B. Safari).
 
-In Browsern, die Drittanbieter-Cookies akzeptieren, wird ein Cookie während der Anforderung einer Besucher-ID durch die Datenerfassungsserver gesetzt. Mit diesem Cookie kann der Besucher-ID-Dienst für alle Domänen, die mit derselben Experience Cloud-Organisations-ID konfiguriert sind, dieselbe Experience Cloud-Besucher-ID zurückgeben.
+In Browsern, die Drittanbieter-Cookies akzeptieren, wird ein Cookie von den Datenerfassungsservern während der Anforderung einer Besucher-ID gesetzt. Mit diesem Cookie kann der Besucher-ID-Dienst auf allen Domänen, die mit derselben Experience Cloud-Organisations-ID konfiguriert wurden, dieselbe Experience Cloud-Besucher-ID zurückgeben.
 
 Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domäne eine neue Experience Cloud-Besucher-ID zugewiesen.
 
@@ -23,13 +23,13 @@ Das demdex.net-Cookie aktiviert den Besucher-ID-Dienst, um domänenübergreifend
 
 ## Datenerfassungs-CNAMEs {#section-48fd186d376a48079769d12c4bd9f317}
 
-Wenn das Analytics-Cookie durch den Datenerfassungsserver gesetzt wurde, haben viele Kunden Datenerfassungsserver-CNAME-Einträge für die [Implementierung von Erstanbieter-Cookies](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-first-party.translate.html) konfiguriert, um Probleme mit Browsern zu verhindern, die Drittanbieter-Cookies zurückweisen. Mit diesem Verfahren wird die Domäne des Datenerfassungsservers so konfiguriert, dass sie mit der Websitedomäne übereinstimmt und das Besucher-ID-Cookie als Erstanbieter-Cookie gesetzt wird.
+When the Analytics cookie was set by the data collection server, many customers have configured data collection server CNAME records as part of a [first-party cookie implementation](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-first-party.html) to avoid issues with browsers that reject third-party cookies. Durch diesen Prozess wird die Domäne des Datenerfassungsservers so konfiguriert, dass sie mit Ihrer Website-Domäne übereinstimmt, sodass das Besucher-ID-Cookie als Erstanbieter-Cookie gesetzt wird.
 
-Da der Besucher-ID-Dienst das Besuchercookie mithilfe von JavaScript direkt in der Domäne der aktuellen Website setzt, ist diese Konfiguration zum Setzen von Erstanbieter-Cookies nicht mehr erforderlich.
+Da der Besucher-ID-Dienst das Besucher-Cookie mithilfe von JavaScript direkt in der Domäne der aktuellen Website setzt, ist diese Konfiguration nicht mehr erforderlich, um Erstanbieter-Cookies zu setzen.
 
 Kunden mit nur einer Webeigenschaft (nur einer Domäne) können den Datenerfassungs-CNAME eliminieren und stattdessen den Namen des Datenerfassungshosts verwenden (`omtrdc.net` oder `2o7.net`).
 
-Die Verwendung eines CNAME für die Datenerfassung bietet jedoch einen weiteren Vorteil: Sie können damit Besucher in Browsern, die keine Drittanbieter-Cookies akzeptieren, über eine Haupt-Landing-Domäne und weitere Domänen verfolgen. Für Kunden mit mehreren Webeigenschaften (mehreren Domänen) kann die Verwendung eines Datenerfassungs-CNAME von Vorteil sein. Im folgenden Abschnitt wird erklärt, wie domänenübergreifendes Besucher-Tracking funktioniert.
+Die Verwendung eines CNAME für die Datenerfassung bietet jedoch einen zusätzlichen Vorteil, da Sie Besucher zwischen einer Haupt-Landingdomäne und anderen Domänen in Browsern, die keine Drittanbieter-Cookies akzeptieren, verfolgen können. Kunden mit mehreren Webeigenschaften (mehreren Domänen) können von der Aufrechterhaltung eines Datenerfassungs-CNAME profitieren. Im folgenden Abschnitt wird erläutert, wie domänenübergreifendes Besucher-Tracking funktioniert.
 
 ## So wird mit CNAMEs das domänenübergreifende Tracking aktiviert {#section-78925af798e24917b9abed79de290ad9}
 
