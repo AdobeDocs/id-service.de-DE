@@ -1,23 +1,23 @@
 ---
-description: Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
-keywords: ID-Dienst
-seo-description: Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
+description: Befolgen Sie diese Anweisungen, um das Feld Experience Cloud ID in Data Workbench zu integrieren. Auf diese Weise können Sie die beständige Experience Cloud ID in Ihrem Datenfeed verwenden, was eine stärkere Integration mit anderen Produkten in der Adobe Experience Cloud und eine verbesserte Besucher-Verfolgung ermöglicht.
+keywords: ID Service
+seo-description: Befolgen Sie diese Anweisungen, um das Feld Experience Cloud ID in Data Workbench zu integrieren. Auf diese Weise können Sie die beständige Experience Cloud ID in Ihrem Datenfeed verwenden, was eine stärkere Integration mit anderen Produkten in der Adobe Experience Cloud und eine verbesserte Besucher-Verfolgung ermöglicht.
 seo-title: Data Workbench und der Experience Cloud Identity-Dienst
 title: Data Workbench und der Experience Cloud Identity-Dienst
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Data Workbench und der Experience Cloud Identity-Dienst {#data-workbench-and-the-experience-cloud-id-service}
 
-Folgen Sie diesen Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Anhand dieses Prozesses können Sie die beständige Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine engere Integration mit anderen Produkten von Adobe Experience Cloud sowie verbessertes Besucher-Tracking möglich sind.
+Befolgen Sie diese Anweisungen, um das Feld Experience Cloud ID in Data Workbench zu integrieren. Auf diese Weise können Sie die beständige Experience Cloud ID in Ihrem Datenfeed verwenden, was eine stärkere Integration mit anderen Produkten in der Adobe Experience Cloud und eine verbesserte Besucher-Verfolgung ermöglicht.
 
-Zur Aktualisierung von [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) für die Verwendung mit dem ID-Dienst:
+To update [Data Workbench](https://docs.adobe.com/content/help/de-DE/data-workbench/using/home.html) to use the ID service:
 
-1. Suchen Sie nach der Konfigurationsdatei der aktuellen [Decoder-Gruppe.](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)
+1. Suchen Sie die aktuelle Konfigurationsdatei der [Decoder-Gruppe](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) .
 
    Normalerweise befindet sich die [!DNL Decoder Group] in einem [!UICONTROL Profil-Manager] auf diesem Pfad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieren Sie das aktuelle Decoderformat aus der Konfigurationsdatei.
 1. Fügen Sie das Decoder-Format unterhalb des Originals ein.
@@ -25,9 +25,9 @@ Zur Aktualisierung von [Data Workbench](https://marketing.adobe.com/resources/he
 
    * `x-mcvisid`
    * `x-tnt-action`
-   Lassen Sie die Felder leer, wenn Sie sie noch nicht verwenden oder definieren können. **Decodierungsanweisungen**
+   Lassen Sie die Felder leer, wenn Sie sie noch nicht verwenden oder definieren können. **Dekodierungsanweisungen**
 
-Unten finden Sie die vollständigen Inhalte zur Decodierung, einschließlich der oben erwähnten Felder.
+Siehe den vollständigen Decoder-Inhalt unten, einschließlich der oben genannten neuen Felder.
 
 ```js
 Log Processing Include = LogProcessingInclude:   
