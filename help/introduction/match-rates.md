@@ -1,12 +1,12 @@
 ---
 description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity-Dienst, einschließlich Adobe Media Optimizer und ID-Dienst.
-keywords: ID-Dienst
+keywords: ID Service
 seo-description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity-Dienst, einschließlich Adobe Media Optimizer und ID-Dienst.
 seo-title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -17,19 +17,19 @@ Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsrate
 
 ## ID-Synchronisierung und Übereinstimmungsraten {#section-f652aae7234945e89d26dd833c5215fb}
 
-Bei der ID-Synchronisierung werden durch den ID-Dienst zugewiesene IDs mit von unseren Kunden zu Sitebesuchern zugewiesenen IDs abgeglichen. Angenommen, der ID-Dienst hat eine Besucher-ID 1234 zugewiesen. Eine andere Plattform kennt diesen Besucher anhand der ID 4321. Der ID-Dienst ordnet diese IDs während des Synchronisierungsprozesses einander zu. Die Ergebnisse führen zu neuen Datenpunkten hinsichtlich dessen, was unsere Kunden über ihre Sitebesucher wissen. Wenn der ID-Dienst für eine ID keine Übereinstimmung finden kann, erstellt er zudem eine neue und verwendet diese ID für die künftige Synchronisierung.
+Bei der ID-Synchronisierung werden durch den ID-Dienst zugewiesene IDs mit von unseren Kunden zu Sitebesuchern zugewiesenen IDs abgeglichen. Angenommen, der ID-Dienst hat eine Besucher-ID 1234 zugewiesen. Eine andere Plattform kennt diesen Besucher mit der ID 4321. Der ID-Dienst ordnet diese IDs während des Synchronisierungsprozesses zusammen. Die Ergebnisse fügen neue Datenpunkte hinzu, die unseren Kunden über ihre Site-Besucher bekannt sind. Wenn der ID-Dienst nicht mit einer ID übereinstimmen kann, wird eine neue ID erstellt und diese ID für die künftige Synchronisierung verwendet.
 
-Mithilfe von Übereinstimmungsraten wird die Effektivität des ID-Synchronisierungsprozesses gemessen und validiert. Hohe Übereinstimmungsraten deuten darauf hin, dass ein bestimmter Dienst effektiver ist und größere Onlinezielgruppen anspricht als ein Dienst mit niedrigen Übereinstimmungsraten. Das Vergleichen von Übereinstimmungsraten ist eine Möglichkeit, unterschiedliche integrierte Anzeigentechnologieplattformen quantifizierbar zu evaluieren.
+Übereinstimmungsraten messen und überprüfen die Effektivität des ID-Synchronisierungsprozesses. Hohe Übereinstimmungsraten deuten darauf hin, dass ein bestimmter Dienst effektiver ist und Zugang zu einer größeren Online-Audience bietet als ein Dienst mit niedrigen Übereinstimmungsraten. Der Vergleich von Übereinstimmungsraten ist eine quantifizierbare Methode zur Bewertung verschiedener integrierter Anzeigentechnologieplattformen.
 
 ![](assets/idsync2.png)
 
 **Gewährleisten hoher Übereinstimmungsraten**
 
-Zum Generieren hoher Übereinstimmungsraten ist es wichtig, den ID-Dienst ordnungsgemäß einzurichten (siehe [Standard-Implementierungshandbuch](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). Eine ordnungsgemäße Implementierung hilft, hohe Übereinstimmungsraten sicherzustellen, da dadurch der ID-Dienst die gewünschten Cookies festlegen kann, um zu funktionieren bzw. IDs mit fähigen Datenpartnern zu synchronisieren. Faktoren wie eine langsame Internetverbindung, die Datenerfassung über Mobilgeräte oder Funknetzwerke können sich jedoch darauf auswirken, wie gut der ID-Dienst IDs erfasst, synchronisiert und abgleicht. Diese clientseitigen Variablen werden weder durch den ID-Dienst noch von [!DNL Adobe] gesteuert.
+Zum Generieren hoher Übereinstimmungsraten ist es wichtig, den ID-Dienst ordnungsgemäß einzurichten (siehe [Standard-Implementierungshandbuch](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). Eine ordnungsgemäße Implementierung hilft, hohe Übereinstimmungsraten sicherzustellen, da der ID-Dienst die für die Funktion und Synchronisierung der IDs mit aktivierten Datenpartnern erforderlichen Cookies einstellen kann. Faktoren wie langsame Internetverbindungen, die Datenerfassung von Mobilgeräten oder drahtlosen Netzwerken können sich jedoch darauf auswirken, wie gut der ID-Dienst IDs erfasst, synchronisiert und abgleicht. Diese clientseitigen Variablen werden weder durch den ID-Dienst noch von [!DNL Adobe] gesteuert.
 
 ## Beschriebener ID-Synchronisierungsprozess {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
-Der ID-Dienst synchronisiert IDs in Echtzeit. Dieser Prozess arbeitet im Browser und nicht über eine Server-zu-Server-Datenübertragung. In der folgenden Tabelle werden die Schritte im ID-Synchronisierungsprozess beschrieben.
+Der ID-Dienst synchronisiert IDs in Echtzeit. Dieser Prozess funktioniert im Browser und nicht über eine Server-zu-Server-Datenübertragung. Die folgende Tabelle beschreibt die Schritte im ID-Synchronisierungsprozess.
 
 **Schritt 1: Seite laden**
 
@@ -37,25 +37,25 @@ Wenn ein Besucher auf Ihre Site kommt und eine Seite lädt, führt die Funktion 
 
 **Schritt 2: iFrame laden**
 
-Während der Seitentext geladen wird, lädt der ID-Dienst einen iFrame namens  *`Destination Publishing iFrame`*. Der [!UICONTROL Destination Publishing iFrame] wird in einer Domäne geladen, die von der übergeordneten Seite getrennt ist. Dieses Design hilft beim Gewährleisten der Seitenleistung und verbessert die Sicherheit aufgrund des iFrames:
+Während der Seitentext geladen wird, lädt der ID-Dienst einen iFrame namens  *`Destination Publishing iFrame`*. The [!UICONTROL Destination Publishing iFrame] loads in a domain separate from the parent page. Dieser Entwurf hilft, die Seitenleistung sicherzustellen und die Sicherheit zu verbessern, da iFrame:
 
-* Wird im Verhältnis zur übergeordneten Seite asynchron geladen. Die übergeordnete Seite kann demnach unabhängig vom [!UICONTROL Destination Publishing iFrame] geladen werden. Das Laden des iFrames und von ID-Synchronisierungspixeln in iFrame wirkt sich weder auf die übergeordnete Seite noch auf die Benutzeroberfläche aus.
-* Wird so schnell wie möglich geladen. Wenn dies zu schnell ist, können Sie den iFrame im Anschluss an das Fensterladeereignis laden (nicht empfohlen). Siehe  [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) mit Einzelheiten.
-* Verhindert, dass Code im iFrame Zugriff auf die übergeordnete Seite erlangt oder sie beeinflusst.
+* Lädt asynchron im Verhältnis zur übergeordneten Seite. This means the parent page can load independently from the [!UICONTROL Destination Publishing iFrame]. Das Laden des iFrames und der ID-Synchronisierungspixel aus dem iFrame wirkt sich nicht auf die übergeordnete Seite oder das Benutzererlebnis aus.
+* Lädt so schnell wie möglich. Wenn dies zu schnell ist, können Sie den iFrame nach dem Ereignis zum Laden des Fensters laden (nicht empfohlen). See [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) for details.
+* Verhindert, dass Code im iFrame Zugriff auf die übergeordnete Seite erhält oder diese beeinflusst.
 
-Siehe auch  [Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+See also, [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
 
-**Schritt 3: ID-Synchronisierungen auslösen**
+**Schritt 3: Feuer-ID-Synchronisierungen**
 
-Die ID-Synchronisierung ist eine im Destination Publishing iFrame ausgelöste URL. Eine URL für die ID-Synchronisierung enthält, wie in diesem generischen Beispiel gezeigt, den ID-Synchronisierungsendpunkt eines Partners und eine Umleitungs-URL, die zu [!DNL Adobe] zurückleitet und die entsprechende ID enthält.
+Die ID-Synchronisierung ist eine URL, die im Destination Publishing iFrame ausgelöst wird. Eine URL für die ID-Synchronisierung enthält, wie in diesem generischen Beispiel gezeigt, den ID-Synchronisierungsendpunkt eines Partners und eine Umleitungs-URL, die zu [!DNL Adobe] zurückleitet und die entsprechende ID enthält.
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-Siehe auch [ID-Synchronisierung für eingehende Datenübertragungen](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.translate.html).
+Siehe auch [ID-Synchronisierung für eingehende Datenübertragungen](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html).
 
 **Schritt 4: IDs speichern**
 
-Synchronisierte IDs werden auf den [Edge- und Kerndatenservern](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/system-components/components-edge.translate.html) gespeichert.
+Synchronized IDs are stored on the [edge and core data servers](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-edge.html).
 
 ## Synchronisierungsdienste verwalten die ID-Synchronisierung {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -68,11 +68,11 @@ Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-T
 * [!DNL Experience Cloud]-Cookie-IDs von Drittanbietern mit Drittdatenanbieter- und Targeting Platform-IDs. Dies umfasst Dienste und Plattformen wie Datenanbieter, bedarfsgesteuerte bzw. anbieterseitige Plattformen, Werbenetzwerke, Austausche usw.
 * [!DNL Experience Cloud]-Cookie-IDs von Erstanbietern mit geräteübergreifenden Partner-IDs.
 
-## ID-Synchronisierung mit Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
+## ID-Synchronisierung mit Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] bildet eine Ausnahme zum iFrame-basierten ID-Synchronisierungsprozess. Da es sich bei [!DNL Media Optimizer] um eine vertrauenswürdige Domäne handelt, erfolgt die ID-Synchronisierung von der übergeordneten Seite aus statt im [!UICONTROL Destination Publishing iFrame]. Bei der Synchronisierung ruft der ID-Dienst [!DNL Media Optimizer] unter `cm.eversttech.net` dem älteren Domänennamen auf, der von [!DNL Media Optimizer] vor der Akquise durch Adobe verwendet wurde. Das Senden von Daten an [!DNL Media Optimizer] kann Übereinstimmungsraten verbessern und wird für Kunden mit Version 2.0 des ID-Diensts (oder höher) automatisch durchgeführt. Siehe auch [Cookies in Media Optimizer](https://marketing.adobe.com/resources/help/de_DE/whitepapers/cookies/cookies_media_optimizer.html).
+[!DNL Adobe Advertising Cloud] (zuvor [!DNL Adobe Media Optimizer]genannt) ist eine Ausnahme zum iFrame-basierten ID-Synchronisierungsprozess. Da es sich bei [!DNL Advertising Cloud] um eine vertrauenswürdige Domäne handelt, erfolgt die ID-Synchronisierung von der übergeordneten Seite aus statt im [!UICONTROL Destination Publishing iFrame]. Bei der Synchronisierung ruft der ID-Dienst [!DNL Advertising Cloud] unter `cm.eversttech.net` dem älteren Domänennamen auf, der von [!DNL Advertising Cloud] vor der Akquise durch Adobe verwendet wurde. Das Senden von Daten an [!DNL Advertising Cloud] kann Übereinstimmungsraten verbessern und wird für Kunden mit Version 2.0 des ID-Diensts (oder höher) automatisch durchgeführt. Siehe auch [Advertising Cloud-Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-advertising-cloud.html).
 
 >[!MORELIKETHIS]
 >
->* [Aufrufe an die Domäne „demdex.net“ ](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.translate.html)
+>* [Aufrufe an die Domäne „demdex.net“ ](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.html)
 
