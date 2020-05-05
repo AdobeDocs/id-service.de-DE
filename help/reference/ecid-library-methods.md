@@ -3,8 +3,8 @@ title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 seo-title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 seo-description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
-translation-type: ht
-source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -39,7 +39,7 @@ Diese FAQs werden erweitert, sobald zusätzliche Änderungen bei ITP veröffentl
 
 Wenn zusätzliche Methoden zum Tracking in Safari entwickelt werden, werden sie auf dieser Seite hinzugefügt.
 
->Für die folgende Dokumentation gilt: [!NOTE] *ECID* = *MID* = *MCID*.
+>Für die folgende Dokumentation gilt: [!NOTE]*ECID* = *MID* = *MCID*.
 
 Unten finden Sie weitere Informationen zu ITP und zur Nutzung der ECID-Bibliothek.
 
@@ -47,7 +47,7 @@ Unten finden Sie weitere Informationen zu ITP und zur Nutzung der ECID-Bibliothe
 
 ITP 2.1 beeinträchtigt die Möglichkeit, clientseitige Cookies zu schreiben, wodurch Kunden keine präzisen Besucher-Trackinginformationen bereitgestellt werden können. Daher wurden die CNAME-Trackingserver von Adobe dahingehend angepasst, dass die Experience Cloud ID (ECID) eines Besuchers in einem Erstanbieter-Cookie gespeichert wird.
 
-Diese Änderung ist nur für ECID-Kunden hilfreich, die einen Analytics-CNAME im Erstanbieterkontext verwenden. Wenn Sie Analytics-Kunde sind, der derzeit keinen CNAME verwendet, oder kein Analytics-Kunde sind, sind Sie dennoch zu einem CNAME-Datensatz berechtigt. Wenden Sie sich an die Kundenunterstützung oder Ihren Kundenbetreuer, um sich für einen [CNAME](https://marketing.adobe.com/resources/help/de_DE/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html) zu registrieren.
+Diese Änderung ist nur für ECID-Kunden hilfreich, die einen Analytics-CNAME im Erstanbieterkontext verwenden. Wenn Sie Analytics-Kunde sind, der derzeit keinen CNAME verwendet, oder kein Analytics-Kunde sind, sind Sie dennoch zu einem CNAME-Datensatz berechtigt. Wenden Sie sich an die Kundenunterstützung oder Ihren Kundenbetreuer, um sich für einen [CNAME](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-first-party.html) zu registrieren.
 
 Führen Sie ein Upgrade auf eine Version ab ECID-Bibliothek v. 4.3.0 durch, um diese Änderung nutzen zu können.
 
@@ -57,7 +57,7 @@ Sobald eine ID-Anforderung an demdex.net gesendet und eine ECID abgerufen wird, 
 
 Dieses neue `s_ecid`-Cookie hat denselben Opt-out-Status wie das AMCV-Cookie. Wenn die ECID im `s_ecid`-Cookie gelesen wird, wird demdex sofort aufgerufen, um den aktuellen Opt-out-Status für diese ID abzufragen, und im AMCV-Cookie gespeichert.
 
-Wenn sich Ihr Kunde per Opt-out vom Analytics-Tracking anhand dieser [Methode](https://marketing.adobe.com/resources/help/de_DE/sc/implement/opt_out_link.html) abgemeldet hat, wird dieses `s_ecid`-Cookie gelöscht.
+Wenn sich Ihr Kunde per Opt-out vom Analytics-Tracking anhand dieser [Methode](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html) abgemeldet hat, wird dieses `s_ecid`-Cookie gelöscht.
 
 Der Name des Trackingservers sollte der VisitorJS-Bibliothek bereitgestellt werden, wenn die Bibliothek per trackingServer oder trackingServerSecure initialisiert wird. Dies sollte mit der trackingServer-Konfiguration in den Analytics-Konfigurationen übereinstimmen.
 
