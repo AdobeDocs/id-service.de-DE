@@ -1,19 +1,19 @@
 ---
-description: Diese Konfigurationen ermöglichen die Kommunikation zwischen verschiedenen Instanzen von ID-Dienstcode, die in einem iFrame implementiert sind, und solchen, die in die übergeordnete Seite implementiert sind. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in VisitorAPI.js ab Codeversion 2.2 verfügbar.
-keywords: ID-Dienst
-seo-description: Diese Konfigurationen ermöglichen die Kommunikation zwischen verschiedenen Instanzen von ID-Dienstcode, die in einem iFrame implementiert sind, und solchen, die in die übergeordnete Seite implementiert sind. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in VisitorAPI.js ab Codeversion 2.2 verfügbar.
+description: Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame implementiert sind, und auf der übergeordneten Seite miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in VisitorAPI.js Code Version 2.2 oder höher verfügbar.
+keywords: ID Service
+seo-description: Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame implementiert sind, und auf der übergeordneten Seite miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in VisitorAPI.js Code Version 2.2 oder höher verfügbar.
 seo-title: whitelistParentDomain und whitelistIframeDomains
 title: whitelistParentDomain und whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # whitelistParentDomain und whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
-Diese Konfigurationen ermöglichen die Kommunikation zwischen verschiedenen Instanzen von ID-Dienstcode, die in einem iFrame implementiert sind, und solchen, die in die übergeordnete Seite implementiert sind. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in VisitorAPI.js ab Codeversion 2.2 verfügbar.
+Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame implementiert sind, und auf der übergeordneten Seite miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in VisitorAPI.js Code Version 2.2 oder höher verfügbar.
 
 Inhalt:
 
@@ -66,95 +66,95 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 ## Nutzungsszenarios {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
-Wenn Sie einen ID-Dienst-Cookie setzen und eine Besucher-ID zuweisen möchten, der Browser jedoch Drittanbieter-Cookies blockiert, können Sie das Problem mit diesen Konfigurationen lösen. Allerdings muss dazu eine der beiden folgenden Bedingungen erfüllt sein:
+Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu setzen und eine Besucher-ID zuzuweisen, wenn Browser Drittanbieter-Cookies blockieren und eine der folgenden Bedingungen zutrifft:
 
-* Sie verwalten die übergeordnete Seite/Domäne oder auch nicht.
-* Der ID-Dienstcode ist auf der übergeordneten Seite nicht installiert, jedoch in einem iFrame implementiert.
+* Sie steuern die übergeordnete Seite/Domäne oder steuern sie nicht.
+* Der ID-Dienst-Code wird nicht auf der übergeordneten Seite installiert, sondern in einem iFrame implementiert.
 
 >[!TIP]
 >
->You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). Zur ordnungsgemäßen Funktionsweise benötigt Video Heartbeat eine vom ID-Dienst bereitgestellte ID (die MID).
+>You may also want to implement these configurations when you&#39;re serving video in an iFrame with [Video Heartbeat](https://docs.adobe.com/content/help/de-DE/media-analytics/using/media-overview.html). Zur ordnungsgemäßen Funktionsweise benötigt Video Heartbeat eine vom ID-Dienst bereitgestellte ID (die MID).
 
-**Nutzungsszenario 1: Der Browser blockiert Drittanbieter-Cookies und der ID-Dienst ist auf dem iFrame und der übergeordneten Seite implementiert**
+**Verwendungsfall 1: Der Browser blockiert Drittanbieter-Cookies und der ID-Dienst wird auf der iFrame- und der übergeordneten Seite implementiert**
 
 <table id="table_B479AA96DBE64685A253A6DF98D81B31"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Element des Nutzungsszenarios </th> 
+   <th colname="col1" class="entry"> Verwendungsfallelement </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Bedingungen</b> </p> </td> 
-   <td colname="col2"> <p>Dieses Nutzungsszenario beinhaltet die folgenden Bedingungen: </p> <p> 
+   <td colname="col2"> <p>Dieser Verwendungsfall umfasst die folgenden Bedingungen: </p> <p> 
      <ul id="ul_DC748846585745B0AB74398D82BDA53A"> 
-      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">Unternehmen A implementiert den ID-Dienst auf seiner Homepage. </li> 
-      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">Unternehmen A implementiert den ID-Dienst in iFrame auf seiner Homepage. </li> 
-      <li id="li_07E0A6D7BEB140E4B9FB6C7B9629B860">Unternehmen A gehören die übergeordnete Seite und der iFrame. Das Unternehmen hat den ID-Dienst an beiden Stellen implementiert. </li> 
+      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">Firma A implementiert den ID-Dienst auf ihrer Startseite. </li> 
+      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">Firma A implementiert den ID-Dienst in iFrame auf ihrer Startseite. </li> 
+      <li id="li_07E0A6D7BEB140E4B9FB6C7B9629B860">Firma A besitzt die übergeordnete Seite und den iFrame und hat den ID-Dienst an beiden Stellen implementiert. </li> 
       <li id="li_76967BD69DDB40A8A9C915DADC58AC62">Ein Kunde lädt die übergeordnete Seite in einen Browser, der Drittanbieter-Cookies blockiert. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Ergebnisse</b> </p> </td> 
-   <td colname="col2"> <p>Unter diesen Bedingungen verhält sich der ID-Dienst wie folgt: </p> <p> 
+   <td colname="col2"> <p>Unter diesen Bedingungen gilt der ID-Dienst: </p> <p> 
      <ul id="ul_12356701501E40DFA57903494FFE58F7"> 
-      <li id="li_B57EDF1B0762486F95FA6526C047390C">Er funktioniert ordnungsgemäß auf der übergeordneten Seite. Er fordert AMCV-Cookies an und weist dem Site-Besucher eine eindeutige ID zu. </li> 
-      <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">Er funktioniert nicht im iFrame. Der Grund ist, dass der Browser den iFrame als Drittanbieterdomäne betrachtet und den ID-Dienst daran hindert, den AMCV-Cookie zu setzen. </li> 
+      <li id="li_B57EDF1B0762486F95FA6526C047390C">Funktioniert ordnungsgemäß auf der übergeordneten Seite. Er fordert das AMCV-Cookie an und legt es fest und weist dem Site-Besucher eine eindeutige ID zu. </li> 
+      <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">Funktioniert nicht im iFrame. Dies liegt daran, dass der Browser den iFrame als Drittanbieterdomäne ansieht und verhindert, dass der ID-Dienst das AMCV-Cookie setzt. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung</b> </p> </td> 
-   <td colname="col2"> <p>Ändern Sie die Funktion <span class="codeph">Visitor.getInstance</span> des ID-Diensts im iFrame mit diesen Whitelist-Konfigurationen. Geben Sie die übergeordneten und untergeordneten Domänen im Code an. Mit diesen Konfigurationen kann der ID-Dienstcode im iFrame eine Besucher-ID im ID-Dienstcode der übergeordneten Seite suchen. </p> <p>Wenn der ID-Dienstcode im iFrame keine Antwort von der übergeordneten Seite erhält, wird mit diesen Konfigurationen eine lokale Besucher-ID generiert. </p> </td> 
+   <td colname="col2"> <p>Ändern Sie die Funktion <span class="codeph">Visitor.getInstance</span> des ID-Diensts im iFrame mit diesen Whitelist-Konfigurationen. Geben Sie die übergeordneten und untergeordneten Domänen im Code an. Mit diesen Konfigurationen kann der ID-Dienst-Code im iFrame den ID-Dienst-Code auf der übergeordneten Seite auf eine Besucher-ID überprüfen. </p> <p>Wenn der ID-Dienstcode im iFrame keine Antwort-übergeordnete Seite erhält, generieren diese Konfigurationen eine lokale Besucher-ID. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Nutzungsszenario 2: Eine ID wird von einem iFrame angefordert, der in eine übergeordnete Seite eingebettet ist, über die Sie keine Kontrolle haben oder die den ID-Dienst nicht verwendet**
+**Anwendungsfall 2: Anfordern einer ID aus einem iFrame, der in eine übergeordnete Seite eingebettet ist, die Sie nicht steuern oder die den ID-Dienst nicht verwendet**
 
 <table id="table_1F21710F9D5F493BA6BA5974F2966DF4"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Element des Nutzungsszenarios </th> 
+   <th colname="col1" class="entry"> Verwendungsfallelement </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Bedingungen</b> </p> </td> 
-   <td colname="col2"> <p>Dieses Nutzungsszenario beinhaltet die folgenden Bedingungen: </p> <p> 
+   <td colname="col2"> <p>Dieser Verwendungsfall umfasst die folgenden Bedingungen: </p> <p> 
      <ul id="ul_356E8FB0B1D14F46A844FE5281967E28"> 
-      <li id="li_1285D945361842268B46FB492A3B5AA5">Unternehmen A verwendet den ID-Dienst nicht. </li> 
-      <li id="li_880D6D473F8342FF9BB49FCE111FD61A">Unternehmen A lädt einen iFrame auf der Seite. Dieser iFrame gehört Unternehmen B und wird in einer anderen Domäne als derjenigen von Unternehmen A geladen. </li> 
+      <li id="li_1285D945361842268B46FB492A3B5AA5">Firma A verwendet den ID-Dienst nicht. </li> 
+      <li id="li_880D6D473F8342FF9BB49FCE111FD61A">Firma A lädt einen iFrame auf die Seite. Dieser iFrame gehört Firma B und wird in einer separaten Domäne als Firma A geladen. </li> 
       <li id="li_7988F0272B094FE0B398006AD4E6F81B">Der Browser blockiert Drittanbieter-Cookies. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Ergebnisse</b> </p> </td> 
-   <td colname="col2"> <p>Unter diesen Bedingungen verhält sich der ID-Dienst wie folgt: </p> <p> 
+   <td colname="col2"> <p>Unter diesen Bedingungen gilt der ID-Dienst: </p> <p> 
      <ul id="ul_A92D90896E5A42C5804AC5CE83E8EB25"> 
-      <li id="li_9734EA9C5D9D4F908DE783188C9E5530">Er funktioniert nicht im iFrame. Der Grund ist, dass der Browser den iFrame als Drittanbieterdomäne betrachtet und den ID-Dienst daran hindert, den AMCV-Cookie zu setzen. </li> 
-      <li id="li_3F4BE9048E774902A867D67E5A80674D">Es kann keine Besucher-ID von der übergeordneten Seite abgerufen werden, da Unternehmen A diesen Dienst nicht verwendet. </li> 
+      <li id="li_9734EA9C5D9D4F908DE783188C9E5530">Funktioniert nicht im iFrame. Dies liegt daran, dass der Browser den iFrame als Drittanbieterdomäne ansieht und verhindert, dass der ID-Dienst das AMCV-Cookie setzt. </li> 
+      <li id="li_3F4BE9048E774902A867D67E5A80674D">Es kann keine Besucher-ID von der übergeordneten Seite abgerufen werden, da Firma A diesen Dienst nicht verwendet. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung</b> </p> </td> 
-   <td colname="col2"> <p>Ändern Sie die Funktion <span class="codeph">Visitor.getInstance</span> des ID-Diensts im iFrame mit diesen Whitelist-Konfigurationen. Geben Sie die übergeordneten und untergeordneten Domänen im Code an. Mit diesen Konfigurationen kann der ID-Dienstcode im iFrame eine Besucher-ID im ID-Dienstcode der übergeordneten Seite suchen. </p> <p>Wenn der ID-Dienstcode im iFrame keine Antwort von der übergeordneten Seite erhält, wird mit diesen Konfigurationen eine lokale Besucher-ID generiert. </p> </td> 
+   <td colname="col2"> <p>Ändern Sie die Funktion <span class="codeph">Visitor.getInstance</span> des ID-Diensts im iFrame mit diesen Whitelist-Konfigurationen. Geben Sie die übergeordneten und untergeordneten Domänen im Code an. Mit diesen Konfigurationen kann der ID-Dienst-Code im iFrame den ID-Dienst-Code auf der übergeordneten Seite auf eine Besucher-ID überprüfen. </p> <p>Wenn der ID-Dienstcode im iFrame keine Antwort-übergeordnete Seite erhält, generieren diese Konfigurationen eine lokale Besucher-ID. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Sicherheit der Konfiguration {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
-Aus folgenden Gründen können Sie diese Konfigurationen sicher implementieren:
+Sie können diese Konfigurationen aus folgenden Gründen sicher implementieren:
 
-* Der in der übergeordneten Domäne implementierte ID-Dienst und die iFrame-Domäne müssen die gleiche Organisations-ID verwenden. Diese Whitelist-Konfigurationen funktionieren nicht, wenn sich die Organisations-IDs in der übergeordneten Domäne oder im iFrame unterscheiden.
-* Diese Konfigurationen können nur mit der Domäne und den iFrames kommunizieren, die im Code angegeben sind.
-* Die Kommunikation zwischen iFrame und übergeordneter Seite erfolgt in einem spezifischen Format. Wenn der ID-Dienst auf der übergeordneten Seite keine Anforderung im erwarteten Format erhält, schlägt dieser Kommunikationsvorgang fehl.
+* Der in der übergeordneten Domäne implementierte ID-Dienst und die iFrame-Domäne müssen dieselbe Organisations-ID verwenden. Diese Konfigurationen mit weißer Liste funktionieren nicht, wenn sich die Organisations-IDs im übergeordneten Element oder im iFrame unterscheiden.
+* Diese Konfigurationen kommunizieren nur mit der Domäne und den im Code angegebenen iFrames.
+* Die Kommunikation zwischen dem iFrame und der übergeordneten Seite erfolgt in einem bestimmten Format. Wenn der ID-Dienst auf der übergeordneten Seite keine Anforderung im erwarteten Format erhält, schlägt dieser Freigabeprozess fehl.
 
 ## Unterstützte Besucher-API-Methoden {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
-Der ID-Dienst unterstützt eine beschränkte Anzahl öffentlicher API-Methoden, wenn diese Whitelist-Konfigurationen implementiert werden. Die unterstützten Methoden sind je nach Nutzungsszenario (siehe Beschreibung oben) unterschiedlich.
+Der ID-Dienst unterstützt eine begrenzte Anzahl öffentlicher API-Methoden, wenn Sie diese Konfigurationen mit weißer Liste implementieren. Die unterstützten Methoden variieren je nach den oben beschriebenen Anwendungsfallszenarien.
 
 <table id="table_0FF9E529FD1C43A8A3B2B0D789C8E83C"> 
  <thead> 
