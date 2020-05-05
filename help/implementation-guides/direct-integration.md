@@ -1,19 +1,19 @@
 ---
-description: Diese Implementierung ermöglicht es Kunden, den ID-Dienst auf Geräten zu verwenden, die unseren JavaScript- oder SDK-Code nicht unterstützen. Dazu zählen Spielkonsolen, Smart-TVs und andere Internet-fähige Geräte. Die folgenden Abschnitte enthalten Syntax, Codebeispiele und Definitionen.
-keywords: ID-Dienst
-seo-description: Diese Implementierung ermöglicht es Kunden, den ID-Dienst auf Geräten zu verwenden, die unseren JavaScript- oder SDK-Code nicht unterstützen. Dazu zählen Spielkonsolen, Smart-TVs und andere Internet-fähige Geräte. Die folgenden Abschnitte enthalten Syntax, Codebeispiele und Definitionen.
+description: Mit dieser Implementierung können Kunden den ID-Dienst auf Geräten verwenden, die unseren JavaScript- oder SDK-Code nicht akzeptieren oder verwenden können. Dazu gehören Geräte wie Spielekonsolen, Smart-TVs oder andere internetfähige Geräte. Informationen zu Syntax, Codebeispielen und Definitionen finden Sie in diesem Abschnitt.
+keywords: ID Service
+seo-description: Mit dieser Implementierung können Kunden den ID-Dienst auf Geräten verwenden, die unseren JavaScript- oder SDK-Code nicht akzeptieren oder verwenden können. Dazu gehören Geräte wie Spielekonsolen, Smart-TVs oder andere internetfähige Geräte. Informationen zu Syntax, Codebeispielen und Definitionen finden Sie in diesem Abschnitt.
 seo-title: Direkte Integration mit dem Experience Cloud Identity-Dienst
 title: Direkte Integration mit dem Experience Cloud Identity-Dienst
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Direkte Integration mit dem Experience Cloud Identity-Dienst {#direct-integration-with-the-experience-cloud-id-service}
 
-Diese Implementierung ermöglicht es Kunden, den ID-Dienst auf Geräten zu verwenden, die unseren JavaScript- oder SDK-Code nicht unterstützen. Dazu zählen Spielkonsolen, Smart-TVs und andere Internet-fähige Geräte. Die folgenden Abschnitte enthalten Syntax, Codebeispiele und Definitionen.
+Mit dieser Implementierung können Kunden den ID-Dienst auf Geräten verwenden, die unseren JavaScript- oder SDK-Code nicht akzeptieren oder verwenden können. Dazu gehören Geräte wie Spielekonsolen, Smart-TVs oder andere internetfähige Geräte. Informationen zu Syntax, Codebeispielen und Definitionen finden Sie in diesem Abschnitt.
 
 ## Syntax {#section-a4754afec5ad40b6be00d6f1011d68bb}
 
@@ -21,19 +21,19 @@ Geräte, die weder die VisitorAPI.js- noch die SDK-Codebibliothek unterstützen,
 
 ![](assets/directSyntax.png)
 
-In diesem Syntaxbeispiel kennzeichnet das `d_` Präfix die Schlüssel-Wert-Paare im Aufruf als Variablen auf Systemebene. Sie können einige `d_`-Parameter an den ID-Dienst übergeben, konzentrieren Sie sich jedoch auf die Schlüssel-Wert-Paare, wie im Code oben gezeigt. Weitere Informationen über andere Variablen finden Sie unter [Unterstützte Attribute für DCS-API-Aufrufe](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+In diesem Syntaxbeispiel kennzeichnet das `d_` Präfix die Schlüssel-Wert-Paare im Aufruf als Variablen auf Systemebene. Sie können einige `d_`-Parameter an den ID-Dienst übergeben, konzentrieren Sie sich jedoch auf die Schlüssel-Wert-Paare, wie im Code oben gezeigt. For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
-Der ID-Dienst unterstützt HTTP- und HTTPS-Aufrufe. Verwenden Sie HTTPS, um Daten von einer vertrauenswürdigen Seite zu übergeben.
+Der ID-Dienst unterstützt HTTP- und HTTPS-Aufrufe. Verwenden Sie HTTPS, um Daten von einer sicheren Seite weiterzugeben.
 
 ## Beispielanforderung {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-Ihre Anforderung kann etwa aussehen wie im unten gezeigten Beispiel. Lange Variablen wurden gekürzt.
+Ihre Anforderung könnte dem unten gezeigten Beispiel ähnlich aussehen. Lange Variablen wurden gekürzt.
 
 ![](assets/directExample.png)
 
 ## Beispielantwort {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
-Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten gezeigt. Ihre Antwort kann anders aussehen.
+Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ihre Antwort könnte anders sein.
 
 ```js
 {
@@ -46,7 +46,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten gezeigt. Ihre A
 
 ## Definierte Anforderungs- und Antwortparameter {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
-**Anforderungsparameter**
+**Anfrageparameter**
 
 <table id="table_C8FFA89AB74E4E31A6926CDE5CD54217"> 
  <thead> 
@@ -58,7 +58,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten gezeigt. Ihre A
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Eine ältere von <span class="keyword">Adobe</span> verwaltete Domäne. Siehe <a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
+   <td colname="col2"> <p>Eine ältere von <span class="keyword">Adobe</span> verwaltete Domäne. Siehe <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -88,7 +88,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten gezeigt. Ihre A
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>Der ID-Dienst ist ein geografisch verteiltes System mit Lastenausgleich. Die ID gibt die Region des Rechenzentrums an, das den Aufruf verarbeitet. Siehe <a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS Region IDs, Locations, and Host Names</a>. </p> </td> 
+   <td colname="col2"> <p>Der ID-Dienst ist ein geografisch verteiltes und lastausgeglichenes System. Die ID identifiziert den Bereich des Rechenzentrums, der den Aufruf verarbeitet. Siehe <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS Region IDs, Locations, and Host Names</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,18 +96,18 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten gezeigt. Ihre A
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>Ein verschlüsselter JavaScript-Metadatenblock. Für den Blob gilt eine Größenbeschränkung von maximal 512 Byte. </p> </td> 
+   <td colname="col2"> <p>Ein verschlüsselter Abschnitt mit JavaScript-Metadaten. Durch Größenbeschränkungen wird der Blob auf höchstens 512 Byte begrenzt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
-   <td colname="col2"> <p>Erforderlich. Legt die API-Versionsnummer fest. Behalten Sie <span class="codeph">d_ver=2</span> bei. </p> </td> 
+   <td colname="col2"> <p>Erforderlich. Hiermit wird die API-Versionsnummer festgelegt. Behalten Sie <span class="codeph">d_ver=2</span> bei. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Antwortparameter**
 
-Einige Antwortparameter sind Teil der Anforderung und wurden im oben stehenden Abschnitt definiert.
+Einige Antwortparameter sind Teil der Anforderung und wurden im obigen Abschnitt definiert.
 
 <table id="table_58D0E8876DDC4A81B1F24F845E87EC18"> 
  <thead> 
@@ -119,7 +119,7 @@ Einige Antwortparameter sind Teil der Anforderung und wurden im oben stehenden A
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> id_sync_ttl</span> </p> </td> 
-   <td colname="col2"> <p>Das Intervall für die erneute Synchronisierung in Sekunden. Das Standardintervall beträgt 604.800 Sekunden (7 Tage). </p> </td> 
+   <td colname="col2"> <p>Das in Sekunden angegebene Wiederholungsintervall. Der Standardwert ist 604.800 Sekunden (7 Tage). </p> </td> 
   </tr> 
  </tbody> 
 </table>
