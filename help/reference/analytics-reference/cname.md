@@ -6,7 +6,7 @@ seo-title: Datenerfassungs-CNAMEs und domänenübergreifendes Tracking
 title: Datenerfassungs-CNAMEs und domänenübergreifendes Tracking
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
 
 ---
 
@@ -31,19 +31,17 @@ Kunden mit nur einer Webeigenschaft (nur einer Domäne) können den Datenerfassu
 
 Die Verwendung eines CNAME für die Datenerfassung bietet jedoch einen zusätzlichen Vorteil, da Sie Besucher zwischen einer Haupt-Landingdomäne und anderen Domänen in Browsern, die keine Drittanbieter-Cookies akzeptieren, verfolgen können. Kunden mit mehreren Webeigenschaften (mehreren Domänen) können von der Aufrechterhaltung eines Datenerfassungs-CNAME profitieren. Im folgenden Abschnitt wird erläutert, wie domänenübergreifendes Besucher-Tracking funktioniert.
 
-## So wird mit CNAMEs das domänenübergreifende Tracking aktiviert {#section-78925af798e24917b9abed79de290ad9}
+## Domänenübergreifende Verfolgung {#section-78925af798e24917b9abed79de290ad9}
 
-Angesichts der Möglichkeiten zur Verwendung von Erstanbieter-Cookies in Drittanbieterkontexten in Apple Safari und einigen weiteren Browsern können Sie per CNAME Kunden über eine primäre Domäne und weitere Domänen, die denselben Trackingserver nutzen, verfolgen.
+Der Besucher-ID-Dienst verwendet demdex.net als Domäne zur domänenübergreifenden Verfolgung von Besuchern (jedoch innerhalb derselben eigenen Firma), wenn die Datenschutzeinstellungen und Browsereinstellungen des Benutzers dies zulassen.
 
-Sie haben z. B. eine primäre Website unter `mymainsite.com`. Sie haben den CNAME-Eintrag so konfiguriert, dass er auf Ihren sicheren Datenerfassungsserver zeigt: `smetrics.mymainsite.com`.
+Ein CNAME bietet keine zusätzlichen domänenübergreifenden Vorteile. Sie haben z. B. eine primäre Website unter `mymainsite.com`. Sie haben den CNAME-Eintrag so konfiguriert, dass er auf Ihren sicheren Datenerfassungsserver zeigt: `smetrics.mymainsite.com`.
 
 Wenn ein Besucher die Domäne `mymainsite.com` besucht, wird der ID-Dienst-Cookie vom Datenerfassungsserver gesetzt. Dies ist zulässig, da die Domäne des Datenerfassungsservers mit der Domäne der Website übereinstimmt. Dabei spricht man von der Verwendung eines Cookies in einem *Erstanbieterkontext* oder einfach von einem *Erstanbieter-Cookie*.
 
-Wenn Sie dieselben Datenerfassungsserver auch für andere Websites verwenden (z. B. `myothersiteA.com` und `myothersiteB.com`), verhält es sich so, dass, wenn ein Besucher diese Websites später besucht, das beim Besuch auf `mymainsite.com` gesetzte Cookie in der HTTP-Anforderung an den Datenerfassungsserver gesendet wird (wie oben beschrieben senden Browser alle Cookies für eine Domäne in allen HTTP-Anforderungen an diese Domäne, selbst wenn die Domäne nicht mit der Domäne der aktuellen Website übereinstimmt). Dabei spricht man von der Verwendung eines Cookies in einem *Drittanbieterkontext* oder einfach von einem *Drittanbieter-Cookie*. Mit dieser Art der Verwendung kann dieselbe Besucher-ID auch auf den anderen Domänen verwendet werden. Beachten Sie, dass Browser Cookies in Kontexten von Drittanbietern anders behandeln als Erstanbieter-Cookies.
+Wenn Sie dieselben Datenerfassungsserver auch für andere Websites verwenden (z. B. `myothersiteA.com` und `myothersiteB.com`), verhält es sich so, dass, wenn ein Besucher diese Websites später besucht, das beim Besuch auf `mymainsite.com` gesetzte Cookie in der HTTP-Anforderung an den Datenerfassungsserver gesendet wird (wie oben beschrieben senden Browser alle Cookies für eine Domäne in allen HTTP-Anforderungen an diese Domäne, selbst wenn die Domäne nicht mit der Domäne der aktuellen Website übereinstimmt). Dies wird als Verwendung eines Cookies in einem *Drittanbieterkontext* oder nur eines *Drittanbieter-Cookies* bezeichnet, auch wenn Sie einen CNAME verwenden. Adobe empfiehlt für jede eindeutige Domäne einen CNAME.
 
 *Hinweis: Safari blockiert alle Cookies im Kontext von Drittanbietern, unabhängig davon, wie sie gesetzt sind.*
-
-Daher sollte es sich bei Ihrer Erfassungsdomäne um eine Domäne handeln, die häufig besucht wird, damit Besucher über mehrere Domänen hinweg identifiziert werden können. Wenn es keine *häufig besuchte* Domäne gibt, die als Datenerfassungsdomäne verwendet werden kann, bringt das Verwalten eines CNAME-Eintrags für die Datenerfassungsdomäne keine domänenübergreifenden Vorteile mit sich. Besucher werden auf sekundärer Site und Hauptsite auf unterschiedliche Weise identifiziert, wenn nicht zuerst die Haupteinstiegssite besucht wird.
 
 ## Aktivierung der CNAME-Unterstützung mit dem Experience Cloud Identity-Dienst {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
