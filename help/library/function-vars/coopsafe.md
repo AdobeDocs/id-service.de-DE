@@ -1,12 +1,12 @@
 ---
 description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
-keywords: ID-Dienst
+keywords: ID Service
 seo-description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -30,7 +30,7 @@ Inhalt:
 Voraussetzungen zur Verwendung von `isCoopSafe`:
 
 * Verwendung von ID-Dienstcode der Version 2.4 oder höher
-* Teilnahme an der [Experience Cloud-Gerätekooperation](https://marketing.adobe.com/resources/help/de_DE/mcdc/). Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
+* Nehmen Sie an der [Experience Cloud-Gerätekooperation](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html)teil. Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
 
 * Wenden Sie sich an Ihren [!DNL Adobe]-Berater, wenn Sie eine Whitelist- oder Blacklist-Kennzeichnung für Ihr Gerätekooperationskonto erstellen möchten. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
@@ -54,8 +54,8 @@ Voraussetzungen zur Verwendung von `isCoopSafe`:
    <td colname="col1"> <p> <b>DIL auf Drittanbieter-Sites</b> </p> </td> 
    <td colname="col2"> <p>Fügen Sie <span class="codeph">isCoopSafe</span> Ihrem ID-Dienstcode auf Drittanbieter-Sites hinzu, wenn Folgendes zutrifft: </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
-      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">Sie können nicht sicherstellen, dass authentifizierte Besucher die Nutzungsvereinbarungen akzeptiert haben. </li> 
-      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">Sie müssen steuern, wie die Daten durch die Gerätekooperation verwendet werden, um das Gerätediagramm zu erstellen. </li> 
+      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">Es kann nicht sichergestellt werden, dass authentifizierte Besucher Vereinbarungen zur Nutzungsdauer haben oder nicht akzeptiert haben. </li> 
+      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">Muss steuern, wie diese Daten vom Device Co-op zum Erstellen des Gerätediagramms verwendet werden. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -73,7 +73,7 @@ Die booleschen Optionen bestimmen, ob Kundendaten von der Gerätekooperation ver
 
 **Codebeispiel**
 
-Legen Sie dies fest, wenn Ihr ID-Dienstcode Folgendes instanziiert:
+Legen Sie dies fest, wenn Ihr ID-Dienst-Code instanziiert:
 
 ```js
 var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
@@ -112,12 +112,12 @@ Anhand der POST-Parameter stellt die [!DNL Experience Cloud]-Gerätekooperation 
 
 ## Post-Instanziierungs-APIs   {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-Mit diesen APIs können Sie den Status von `isCoopSafe` überschreiben. Sie ermöglichen es, den Status nach der Instanziierung bzw. Anmeldung eines Besuchers auf einer Site oder bei einer Single-Page-Anwendung zu ändern, wenn die Seite nicht aktualisiert wird. Beispielsweise müssen Sie diese APIs aufrufen, wenn sich ein Benutzer auf Ihrer Site oder bei Ihrer Anwendung authentifiziert und später eine Nutzungsrichtlinie akzeptiert, die der Gerätekooperation die Verwendung seiner Daten ermöglicht.
+Mit diesen APIs können Sie den Status von `isCoopSafe` überschreiben. Dies ist erforderlich, da Sie damit den Status eines Besuchers nach der Instanziierung/nach der Anmeldung auf einer Site oder in einer Einzelseitenanwendung ändern können, wenn die Seite nicht aktualisiert wird. Beispielsweise müssen Sie diese APIs aufrufen, wenn sich ein Benutzer bei Ihrer Site oder App authentifiziert und später eine Nutzungsbedingungen-Richtlinie akzeptiert, die es der Gerätekooperation ermöglicht, ihre Daten zu verwenden.
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> API </th> 
+   <th colname="col1" class="entry"> API  </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
   </tr> 
  </thead>
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.translate.html)
+>* [DIL isCoopSafe](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
