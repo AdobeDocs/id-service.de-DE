@@ -1,35 +1,38 @@
 ---
-description: Eine Content Security Policy (CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs verwenden, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen akzeptieren. Sie müssen die hier aufgelisteten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
+description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und über strenge CSPs verfügen, die Whitelists verwenden, um Ressourcen aus vertrauenswürdigen Domänen zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
 keywords: ID Service
-seo-description: Eine Content Security Policy (CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs verwenden, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen akzeptieren. Sie müssen die hier aufgelisteten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
+seo-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und über strenge CSPs verfügen, die Whitelists verwenden, um Ressourcen aus vertrauenswürdigen Domänen zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
 seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '539'
+ht-degree: 100%
 
 ---
 
 
 # Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst {#content-security-policies-and-the-experience-cloud-id-service}
 
-Eine Content Security Policy (CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und strenge CSPs verwenden, die mithilfe von Whitelists Ressourcen von vertrauenswürdigen Domänen akzeptieren. Sie müssen die hier aufgelisteten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
+Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und über strenge CSPs verfügen, die Whitelists verwenden, um Ressourcen aus vertrauenswürdigen Domänen zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
 
 ## CSP-Übersicht {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSPs verwenden den HTTP-Header `Content-Security-Policy`, um die Art der Ressourcen zu steuern, die ein Browser zulässt oder die auf einer Seite geladen werden. Durch die Anwendung eines CSP können Sie Folgendes verhindern:
 
-* JavaScript-Dateien können nicht geladen werden, wenn die Quelle unbekannt ist oder nicht in einer Whitelist enthalten ist.
+* Das Laden von JavaScript-Dateien, wenn die Quelle unbekannt oder nicht in einer Whitelist enthalten ist.
 * Cross-Site-Scripting-(XXS-) Angriffe
-* Angriffe auf die Dateninjizierung.
-* Angriffe auf die Site-Verwerfung.
-* Malware-Distribution.
+* Angriffe durch Dateninjektion.
+* Angriffe durch Site-Verunstaltung.
+* Malware-Verteilung.
 
-Die Verwendung von CSPs ist häufig und gut verstanden. Diese Dokumentation dient nicht dazu, CSPs detailliert zu erklären (weitere Informationen finden Sie in den entsprechenden Informationslinks unten). Wichtig ist, dass Sie wissen, welche Adobe-Domänennamen Sie zu einem CSP hinzufügen sollten, wenn Sie diese verwenden und strenge Sicherheitsrichtlinien haben. Durch Hinzufügen dieser Domänen können Besucher, die auf Ihre Site zugreifen, diese wichtigen Aufrufe an Experience Cloud-Ressourcen tätigen, die Sie verwenden.
+Die Verwendung von CSPs ist üblich und gut verstanden. Es ist nicht der Zweck dieser Dokumentation, CSPs im Detail zu erläutern (weitere Informationen finden Sie unter den entsprechenden Links weiter unten). Wichtig ist, dass Sie wissen, welche Adobe-Domänennamen Sie zu einem CSP hinzufügen sollten, wenn Sie diese verwenden und strenge Sicherheitsrichtlinien haben. Durch das Hinzufügen dieser Domänen können Besucher-Browser, die auf Ihre Website zugreifen, die von Ihnen verwendeten Experience Cloud-Ressourcen aufrufen.
 
 ## Experience Cloud-Domänen für Whitelists {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-Hinzufügen Sie diese Domänennamen oder URLs für jede von Ihnen verwendete Liste Experience Cloud-Lösung oder jeden von Ihnen verwendeten Dienst in Ihr CSP ein.
+Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgelisteten Experience Cloud-Lösungen und -Dienste zu Ihrem CSP hinzu.
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
  <thead> 
@@ -41,7 +44,7 @@ Hinzufügen Sie diese Domänennamen oder URLs für jede von Ihnen verwendete Lis
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>AppMeasurement</b> </p> </td> 
-   <td colname="col2"> <p>Ändern Sie Ihren CSP so, dass Folgendes enthalten ist: </p> <p> 
+   <td colname="col2"> <p>Nehmen Sie Folgendes in Ihre CSP auf: </p> <p> 
      <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B"> 
       <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"> <span class="codeph"> *.2o7.net</span> </li> 
       <li id="li_4B12A283716746949201528CD6AF529E"> <span class="codeph"> *.omtrdc.net</span> </li> 
