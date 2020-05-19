@@ -5,8 +5,11 @@ seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die ri
 seo-title: Voraussetzungen für den Experience Cloud Identity-Dienst
 title: Voraussetzungen für den Experience Cloud Identity-Dienst
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '783'
+ht-degree: 100%
 
 ---
 
@@ -17,12 +20,12 @@ Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen
 
 ## Anforderungen für die Gewährleistung einer erfolgreichen und unterstützten Implementierung {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderungen erfüllt (oder übertroffen) und die in der [!DNL Adobe]-Hilfe aufgeführten Anweisungen befolgt. Eine nicht unterstützte Implementierung führt zu unerwarteten Ergebnissen und verhindert, dass der Kundendienst und unsere Techniker bei der Fehlerbehebung oder Behebung Ihrer Probleme mit dem ID-Dienst behilflich sind.
+Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderungen erfüllt (oder übertroffen) und die in der [!DNL Adobe]-Hilfe aufgeführten Anweisungen befolgt. Eine nicht unterstützte Implementierung führt zu unerwarteten Ergebnissen und hindert die Kundenunterstützung und unsere Technikerteams daran, Sie bei der Fehlersuche und Lösung Ihrer Probleme mit dem ID-Dienst zu unterstützen.
 
 <table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Implementierungstyp </th> 
+   <th colname="col1" class="entry"> Art der Implementierung </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
   </tr> 
  </thead>
@@ -35,19 +38,19 @@ Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderu
      <li id="li_13962F2CB1764091A84863BE499675A2">den Einbettungsfußzeilencode vor dem schließenden <span class="codeph">&lt;/body&gt;</span>-Tag platzieren. </li> 
     </ul> <p>Eine Standardimplementierung wird nicht unterstützt, wenn Sie: </p> 
     <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> Platzieren Sie einen dieser DTM-Einbettungscodes an einer anderen Stelle im Markup- und/oder Seitencode. </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> Fügen Sie DTM-Code mit asynchronen Methoden, Aufrufen/Callback-Methoden oder Wrapper hinzu, fügen Sie ihn hinzu oder laden Sie ihn. </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">Fügen Sie mehrere Instanzen von Einbettungscode auf derselben Seite ein. </li> 
+     <li id="li_1F16C6D412944197BEA56BC24730782C"> einen dieser DTM-Einbettungscodes an einer anderen Stelle im Markup- und/oder Seitencode platzieren. </li> 
+     <li id="li_05615C01F3A947BBBD41046E68377224"> DTM-Code mit asynchronen Methoden, Aufrufen/Callback-Methoden oder Wrappern anhängen, hinzufügen oder laden. </li> 
+     <li id="li_B2137DFF627B473FA876580449026D2B">mehrere Instanzen von Einbettungscode auf derselben Seite einfügen. </li> 
     </ul> <p>Siehe auch <a href="https://docs.adobe.com/content/help/de-DE/dtm/using/client-side/deployment.html" format="https" scope="external">Hosting – Registerkarte „Einbetten“</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Benutzerdefinierte Implementierungen </a> </p> </td> 
-   <td colname="col2"> <p>Bei nicht standardmäßigen oder manuellen Implementierungen müssen Sie den ID-Dienst gemäß den in diesem Handbuch beschriebenen Verfahren einrichten. Wie bei den oben stehenden DTM-Richtlinien führt eine fehlerhafte Codeplatzierung und das Laden zu einer nicht unterstützten Implementierung. </p> </td> 
+   <td colname="col2"> <p>Bei nicht standardmäßigen oder manuellen Implementierungen müssen Sie den ID-Dienst gemäß den in diesem Handbuch beschriebenen Verfahren einrichten. Wie bei den oben genannten DTM-Richtlinien führt unsachgemäßes Platzieren und Laden von Code zu einer nicht unterstützten Implementierung. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Experience Cloud-Voraussetzungen: Organisations-ID  {#section-a02f537129a64ffbb690d5738d360c26}
+## Experience Cloud-Voraussetzungen: Organisations-ID {#section-a02f537129a64ffbb690d5738d360c26}
 
 Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Cloud] freigeschaltet sein und über eine Organisations-ID verfügen. Gehen Sie die folgende Liste durch, wenn Sie sich bezüglich des [!DNL Experience Cloud]-Status Ihrer Organisation nicht sicher sind und Ihre Organisations-ID herausfinden möchten.
 
@@ -80,7 +83,7 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
 
 ## Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://docs.adobe.com/content/help/de-DE/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://docs.adobe.com/content/help/de-DE/analytics/technotes/rdc/regional-data-collection.translate.html)
 
 ## Code-Bibliotheken und Versionsvoraussetzungen {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -121,7 +124,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Siehe <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Data Integration Library</a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Siehe <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Data Integration Library</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p> <p> 
      <draft-comment>
        aktualisiert von 4.9 
@@ -129,32 +132,32 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">mbox-Code</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://docs.adobe.com/content/help/de-DE/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">mbox-Code</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://docs.adobe.com/content/help/de-DE/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## SDK-Anforderungen für Android und iOS  {#section-73b2446fba8e463888642c7d7dfd94f1}
+## SDK-Anforderungen für Android und iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
 
 Für den ID-Dienst sind mindestens die unten aufgeführten SDK-Versionen erforderlich.
 
-* Android: 4,11,0
-* iOS: 4,11,0
+* Android: 4.11.0
+* iOS: 4.11.0
 
 >[!TIP]
 >
 >Tipp: Sie sollten anstelle der erforderlichen minimalen die neuesten Codeversionen verwenden.
 
-Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Enable and download the latest SDK code for each app from your [Adobe Mobile Services](https://mobilemarketing.adobe.com/) account. Siehe auch:
+Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Aktivieren und laden Sie den neuesten SDK-Code für jede Anwendung über Ihr [Adobe Mobile Services](https://mobilemarketing.adobe.com/)-Konto herunter. Siehe auch:
 
-* [Optionen für SDK-Besucher-ID-Dienst konfigurieren](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [Android SDK-Methoden](https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [iOS-SKD-Methoden](https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [Optionen für SDK-Besucher-ID-Dienst konfigurieren](https://docs.adobe.com/content/help/de-DE/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [ SDK-Methoden für Android ](https://docs.adobe.com/content/help/de-DE/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [SDK-Methoden für iOS](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
