@@ -5,19 +5,22 @@ seo-description: Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vo
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '338'
+ht-degree: 100%
 
 ---
 
 
-# getAnalyticsVisitorID{#getanalyticsvisitorid}
+# getAnalyticsVisitorID {#getanalyticsvisitorid}
 
 Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vor der Implementierung des Experience Cloud Identity-Diensts im s_vi-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
 
 **Syntax** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-Diese Funktion wird in der Regel bei benutzerdefinierten Lösungen verwendet, bei denen die Besucher-ID gelesen werden muss. Es wird nicht von einer Standardimplementierung verwendet. `getAnalyticsVisitorID` kann auch bei Callback-Funktionen zum Lesen von [!DNL Analytics]-IDs und deren Übernahme in Ihr System oder Ihre Anwendung eingesetzt werden.
+Diese Funktion wird in der Regel bei benutzerdefinierten Lösungen verwendet, bei denen die Besucher-ID gelesen werden muss. Sie wird nicht von einer Standardimplementierung verwendet. `getAnalyticsVisitorID` kann auch bei Callback-Funktionen zum Lesen von [!DNL Analytics]-IDs und deren Übernahme in Ihr System oder Ihre Anwendung eingesetzt werden.
 
 **Beispielcode**
 
@@ -44,7 +47,7 @@ Der `aid` Parameter taucht in einer Abfragezeichenfolge unter zweierlei verschie
 Der Parameter `aid` taucht in einer Abfragezeichenfolge auf, wenn:
 
 * der [!DNL Experience Cloud] ID-Dienst ordnungsgemäß bereitgestellt wurde.
-* Im [s_vi-Cookie](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) des eine Site besuchenden Benutzers bereits eine [!DNL Analytics]-ID gespeichert ist.
+* Im [s_vi-Cookie](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) des eine Site besuchenden Benutzers bereits eine [!DNL Analytics]-ID gespeichert ist.
 
 **2. Fall**
 
@@ -52,5 +55,5 @@ Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen
 
 >[!MORELIKETHIS]
 >
->* [Cookies in Analytics](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Cookies in Analytics](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-privacy.html)
 
