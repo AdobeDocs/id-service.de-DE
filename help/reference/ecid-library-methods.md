@@ -3,8 +3,11 @@ title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 seo-title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 seo-description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1090'
+ht-degree: 100%
 
 ---
 
@@ -39,7 +42,7 @@ Diese FAQs werden erweitert, sobald zusätzliche Änderungen bei ITP veröffentl
 
 Wenn zusätzliche Methoden zum Tracking in Safari entwickelt werden, werden sie auf dieser Seite hinzugefügt.
 
->Für die folgende Dokumentation gilt: [!NOTE]*ECID* = *MID* = *MCID*.
+>[!NOTE] Für die folgende Dokumentation gilt: *ECID* = *MID* = *MCID*.
 
 Unten finden Sie weitere Informationen zu ITP und zur Nutzung der ECID-Bibliothek.
 
@@ -57,7 +60,7 @@ Sobald eine ID-Anforderung an demdex.net gesendet und eine ECID abgerufen wird, 
 
 Dieses neue `s_ecid`-Cookie hat denselben Opt-out-Status wie das AMCV-Cookie. Wenn die ECID im `s_ecid`-Cookie gelesen wird, wird demdex sofort aufgerufen, um den aktuellen Opt-out-Status für diese ID abzufragen, und im AMCV-Cookie gespeichert.
 
-Wenn sich Ihr Kunde per Opt-out vom Analytics-Tracking anhand dieser [Methode](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html) abgemeldet hat, wird dieses `s_ecid`-Cookie gelöscht.
+Wenn sich Ihr Kunde per Opt-out vom Analytics-Tracking anhand dieser [Methode](https://docs.adobe.com/content/help/de-DE/analytics/implementation/js/opt-out.html) abgemeldet hat, wird dieses `s_ecid`-Cookie gelöscht.
 
 Der Name des Trackingservers sollte der VisitorJS-Bibliothek bereitgestellt werden, wenn die Bibliothek per trackingServer oder trackingServerSecure initialisiert wird. Dies sollte mit der trackingServer-Konfiguration in den Analytics-Konfigurationen übereinstimmen.
 
