@@ -5,8 +5,11 @@ seo-description: Mit dieser Implementierung können Kunden den ID-Dienst auf Ger
 seo-title: Direkte Integration mit dem Experience Cloud Identity-Dienst
 title: Direkte Integration mit dem Experience Cloud Identity-Dienst
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '712'
+ht-degree: 100%
 
 ---
 
@@ -21,19 +24,19 @@ Geräte, die weder die VisitorAPI.js- noch die SDK-Codebibliothek unterstützen,
 
 ![](assets/directSyntax.png)
 
-In diesem Syntaxbeispiel kennzeichnet das `d_` Präfix die Schlüssel-Wert-Paare im Aufruf als Variablen auf Systemebene. Sie können einige `d_`-Parameter an den ID-Dienst übergeben, konzentrieren Sie sich jedoch auf die Schlüssel-Wert-Paare, wie im Code oben gezeigt. For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+In diesem Syntaxbeispiel kennzeichnet das `d_` Präfix die Schlüssel-Wert-Paare im Aufruf als Variablen auf Systemebene. Sie können einige `d_`-Parameter an den ID-Dienst übergeben, konzentrieren Sie sich jedoch auf die Schlüssel-Wert-Paare, wie im Code oben gezeigt. Weitere Informationen zu anderen Variablen finden Sie unter [Unterstützte Attribute für DCS-API-Aufrufe](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
 Der ID-Dienst unterstützt HTTP- und HTTPS-Aufrufe. Verwenden Sie HTTPS, um Daten von einer sicheren Seite weiterzugeben.
 
 ## Beispielanforderung {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-Ihre Anforderung könnte dem unten gezeigten Beispiel ähnlich aussehen. Lange Variablen wurden gekürzt.
+Ihre Anforderung könnte dem unten gezeigten Beispiel ähneln. Lange Variablen wurden gekürzt.
 
 ![](assets/directExample.png)
 
 ## Beispielantwort {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
-Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ihre Antwort könnte anders sein.
+Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ihre Antwort könnte anders aufgebaut sein.
 
 ```js
 {
@@ -88,7 +91,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ih
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>Der ID-Dienst ist ein geografisch verteiltes und lastausgeglichenes System. Die ID identifiziert den Bereich des Rechenzentrums, der den Aufruf verarbeitet. Siehe <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS Region IDs, Locations, and Host Names</a>. </p> </td> 
+   <td colname="col2"> <p>Der ID-Dienst ist ein geografisch verteiltes und lastausgeglichenes System. Die ID identifiziert die Region des Rechenzentrums, in dem der Aufruf verarbeitet wird. Siehe <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS Region IDs, Locations, and Host Names</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,7 +99,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ih
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>Ein verschlüsselter Abschnitt mit JavaScript-Metadaten. Durch Größenbeschränkungen wird der Blob auf höchstens 512 Byte begrenzt. </p> </td> 
+   <td colname="col2"> <p>Ein verschlüsselter Abschnitt der JavaScript-Metadaten. Durch Größenbeschränkungen wird der Blob auf höchstens 512 Byte begrenzt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
@@ -119,7 +122,7 @@ Einige Antwortparameter sind Teil der Anforderung und wurden im obigen Abschnitt
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> id_sync_ttl</span> </p> </td> 
-   <td colname="col2"> <p>Das in Sekunden angegebene Wiederholungsintervall. Der Standardwert ist 604.800 Sekunden (7 Tage). </p> </td> 
+   <td colname="col2"> <p>Das in Sekunden angegebene Neusynchronisierungsintervall. Der Standardwert beträgt 604.800 Sekunden (7 Tage). </p> </td> 
   </tr> 
  </tbody> 
 </table>
