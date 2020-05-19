@@ -1,8 +1,11 @@
 ---
 title: Identifizieren von Unique Visitors
 description: Dokumentation für Adobe ECID (ID-Dienst).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '223'
+ht-degree: 100%
 
 ---
 
