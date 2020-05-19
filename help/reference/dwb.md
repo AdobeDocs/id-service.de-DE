@@ -1,23 +1,26 @@
 ---
-description: Befolgen Sie diese Anweisungen, um das Feld Experience Cloud ID in Data Workbench zu integrieren. Auf diese Weise können Sie die beständige Experience Cloud ID in Ihrem Datenfeed verwenden, was eine stärkere Integration mit anderen Produkten in der Adobe Experience Cloud und eine verbesserte Besucher-Verfolgung ermöglicht.
+description: Befolgen Sie diese Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Auf diese Weise können Sie die persistente Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine bessere Integration mit anderen Produkten in Adobe Experience Cloud und ein verbessertes Besucher-Tracking ermöglicht wird.
 keywords: ID Service
-seo-description: Befolgen Sie diese Anweisungen, um das Feld Experience Cloud ID in Data Workbench zu integrieren. Auf diese Weise können Sie die beständige Experience Cloud ID in Ihrem Datenfeed verwenden, was eine stärkere Integration mit anderen Produkten in der Adobe Experience Cloud und eine verbesserte Besucher-Verfolgung ermöglicht.
+seo-description: Befolgen Sie diese Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Auf diese Weise können Sie die persistente Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine bessere Integration mit anderen Produkten in Adobe Experience Cloud und ein verbessertes Besucher-Tracking ermöglicht wird.
 seo-title: Data Workbench und der Experience Cloud Identity-Dienst
 title: Data Workbench und der Experience Cloud Identity-Dienst
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '260'
+ht-degree: 100%
 
 ---
 
 
 # Data Workbench und der Experience Cloud Identity-Dienst {#data-workbench-and-the-experience-cloud-id-service}
 
-Befolgen Sie diese Anweisungen, um das Feld Experience Cloud ID in Data Workbench zu integrieren. Auf diese Weise können Sie die beständige Experience Cloud ID in Ihrem Datenfeed verwenden, was eine stärkere Integration mit anderen Produkten in der Adobe Experience Cloud und eine verbesserte Besucher-Verfolgung ermöglicht.
+Befolgen Sie diese Anweisungen, um das Experience Cloud ID-Feld in Data Workbench zu integrieren. Auf diese Weise können Sie die persistente Experience Cloud ID in Ihrem Daten-Feed verwenden, wodurch eine bessere Integration mit anderen Produkten in Adobe Experience Cloud und ein verbessertes Besucher-Tracking ermöglicht wird.
 
-To update [Data Workbench](https://docs.adobe.com/content/help/de-DE/data-workbench/using/home.html) to use the ID service:
+Aktualisieren Sie [Data Workbench](https://docs.adobe.com/content/help/de-DE/data-workbench/using/home.html), um den ID-Dienst zu verwenden:
 
-1. Suchen Sie die aktuelle Konfigurationsdatei der [Decoder-Gruppe](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) .
+1. Suchen Sie nach der aktuellen Konfigurationsdatei der [Decoder-Gruppe](https://docs.adobe.com/content/help/de-DE/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html).
 
    Normalerweise befindet sich die [!DNL Decoder Group] in einem [!UICONTROL Profil-Manager] auf diesem Pfad: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. Kopieren Sie das aktuelle Decoderformat aus der Konfigurationsdatei.
 1. Fügen Sie das Decoder-Format unterhalb des Originals ein.
@@ -25,7 +28,7 @@ To update [Data Workbench](https://docs.adobe.com/content/help/de-DE/data-workbe
 
    * `x-mcvisid`
    * `x-tnt-action`
-   Lassen Sie die Felder leer, wenn Sie sie noch nicht verwenden oder definieren können. **Dekodierungsanweisungen**
+   Lassen Sie die Felder leer, wenn Sie sie noch nicht verwenden oder definieren können.  **Dekodierungsanweisungen**
 
 Siehe den vollständigen Decoder-Inhalt unten, einschließlich der oben genannten neuen Felder.
 
