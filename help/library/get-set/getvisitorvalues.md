@@ -5,13 +5,16 @@ seo-description: Hierbei handelt es sich um eine asynchrone API, die standardmä
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '447'
+ht-degree: 100%
 
 ---
 
 
-# getVisitorValues{#getvisitorvalues}
+# getVisitorValues {#getvisitorvalues}
 
 Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
 
@@ -37,7 +40,7 @@ Weitere Informationen finden Sie in den folgenden Nutzungsszenarios und Definiti
 
 ## Nutzungsszenario 1: Standarddatensatz anfordern {#section-36a31683558742a5915db3a391e09f7b}
 
-Dieser Code gibt den Standarddatensatz zurück. Ihre Anforderung und Ihre Antwort könnten in etwa wie in den folgenden Beispielen aussehen.
+Dieser Code gibt den Standarddatensatz zurück. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
 
 ```js
 //Call the ID service 
@@ -47,7 +50,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 visitor.getVisitorValues(visitorIdsCallback);
 ```
 
-In der standardmäßigen Beispielantwort wurden einige Werte zu Demonstrationszwecken gekürzt.
+Im Beispiel für die standardmäßige Antwort wurden einige Werte zu Demonstrationszwecken gekürzt.
 
 ```js
 //Formatted IDs in JSON response 
@@ -62,7 +65,7 @@ In der standardmäßigen Beispielantwort wurden einige Werte zu Demonstrationszw
 
 ## Nutzungsszenario 2: Benutzerdefinierten Datensatz anfordern {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-In diesem Code wird ein optionales Array verwendet, um einen spezifischen Satz von IDs mit der `visitor.FIELDS`-Enumeration zurückzugeben. In diesem Fall sollten nur die Experience Cloud ID (MCID) und die Analytics-ID (MCAID) des Besuchers verwendet werden. Ihre Anforderung und Ihre Antwort könnten in etwa wie in den folgenden Beispielen aussehen.
+In diesem Code wird ein optionales Array verwendet, um einen spezifischen Satz von IDs mit der `visitor.FIELDS`-Enumeration zurückzugeben. In diesem Fall möchten wir nur die Experience Cloud ID (MCID) und die Analytics-ID (MCAID) des Besuchers abrufen. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
 
 ```js
 //Call the ID service 
@@ -72,7 +75,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
 ```
 
-Die benutzerdefinierte Beispielantwort gibt nur die in der Anforderung angegebenen IDs zurück.
+Die benutzerdefinierte Antwort im Beispiel gibt nur die in der Anforderung angegebenen IDs zurück.
 
 ```js
 //Formatted IDs in JSON response 
@@ -84,7 +87,7 @@ Die benutzerdefinierte Beispielantwort gibt nur die in der Anforderung angegeben
 
 ## Definierte Antwortparameter {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Dies sind auch alle Werte in der `visitor.FIELDS`-Enumeration. Beachten Sie, dass diese Methode eine leere Zeichenfolge zurückgibt, wenn keine Werte für eine bestimmte Variable vorhanden sind.
+In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Dies sind auch alle Werte in der `visitor.FIELDS`-Enumeration. Beachten Sie, dass diese Methode eine leere Zeichenfolge zurückgibt, wenn es für eine bestimmte Variable keine Werte gibt.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -100,7 +103,7 @@ In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Di
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>Die Datenerfassungsregion-ID. Dies ist ein numerischer Bezeichner für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. </p> <p>Siehe <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS-Regions-IDs, Standorte und Hostnamen </a> und <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
+   <td colname="col2"> <p>Die Regions-ID für die Datenerfassung. Dies ist eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. </p> <p>Siehe <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS-Regions-IDs, Standorte und Hostnamen </a> und <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -112,7 +115,7 @@ In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Di
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
-   <td colname="col2"> <p>Eine Flag, die angibt, ob ein Besucher die Datenerfassung ablehnt. </p> <p>Die Werte umfassen: </p> <p> 
+   <td colname="col2"> <p>Eine Markierung, die angibt, ob ein Besucher die Datenerfassung ablehnt. </p> <p>Die Werte umfassen: </p> <p> 
      <ul id="ul_E82431DE12B449F8822499364B363798"> 
       <li id="li_2BAB7C15A38A408E8FC4B85E70B66E46"> <span class="codeph"> 'isoptedout-true'</span>: Ein Besucher möchte von der Datenerfassung ausgeschlossen werden. </li> 
       <li id="li_BB80AE4CEBC44166BC04428B212FEF51"> <span class="codeph"> 'isoptedout-false'</span>: Ein Besucher möchte nicht von der Datenerfassung ausgeschlossen werden. </li> 
