@@ -2,10 +2,14 @@
 cloud: platform-cloud
 product: ID Service
 audience: end-user
-user-guide-title: Experience Cloud Identity Service Help
+user-guide-title: Hilfe zum Experience Cloud Identity-Dienst
+user-guide-description: The ID service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for services such as Analytics, Audience Manager, Target, and other Experience Cloud solutions or features.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
+translation-type: tm+mt
+source-git-commit: 238135b08f66a3a10d6439bba558819e4aa5a7e5
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 100%
 
 ---
 
@@ -31,7 +35,7 @@ source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
    + [Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente](implementation-guides/ecid-a4t-target.md)
    + [Direkte Integration mit dem ID-Dienst](implementation-guides/direct-integration.md)
    + [Nutzungsszenarios im Zusammenhang mit einer direkten Integration](implementation-guides/direct-integration-examples.md)
-   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md)
+   + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md).
    + Opt-in-Dienst {#opt-in-service}
       + [Opt-in-Dienst – Übersicht](implementation-guides/opt-in-service/optin-overview.md)
       + [Einrichtung des Opt-in-Dienstes](implementation-guides/opt-in-service/getting-started.md)
