@@ -5,11 +5,11 @@ seo-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP
 seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
-source-wordcount: '539'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 87%
 
 ---
 
@@ -66,6 +66,10 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
  <tr>
  <td colname="col1"> <p> <b>Activity Map-Plugin</b> </p> </td> 
  <td colname="col2"> <p>Nehmen Sie *.adobe.com in Ihre CSP auf. **Hinweis**: Wenn Activity Map bereits vor Januar 2020 installiert wurde, wird im Browser weiterhin zuerst eine Anfrage an *.omniture.com angezeigt, die jedoch an *.adobe.com weitergeleitet wird. </p></td> 
+ </tr>
+ <tr>
+ <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
+ <td colname="col2"> <p>Wenn Sie über Steuerelemente für Zeichenfolgenparameter der Abfrage verfügen, stellen Sie sicher, dass Sie die Parameter "s_kwcid"und "ef_id"in die Positivliste aufnehmen. Technisch gesehen verwendet Advertising Analytics nur "s_kwcid", aber wenn Sie Ad Cloud Search oder DSP abrufen, wird auch "ef_id"verwendet. Diese Abfragen-Zeichenfolgenparameter sind alphanumerisch. Der Parameter "s_kwcid"verwendet das Zeichen "!" -Zeichen und der Parameter "ef_id"verwenden das Zeichen ":". Wenn Sie die "!" in der URL enthalten ist, müssen Sie auch die Whitelist erstellen.</p></td> 
  </tr>
  </tbody> 
 </table>
