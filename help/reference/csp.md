@@ -5,11 +5,11 @@ seo-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP
 seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-H
 CSPs verwenden den HTTP-Header `Content-Security-Policy`, um die Art der Ressourcen zu steuern, die ein Browser zulässt oder die auf einer Seite geladen werden. Durch die Anwendung eines CSP können Sie Folgendes verhindern:
 
 * Das Laden von JavaScript-Dateien, wenn die Quelle unbekannt oder nicht in einer Whitelist enthalten ist.
-* Cross-Site-Scripting-(XXS-) Angriffe
+* Cross-Site-Scripting-(XXS-) Angriffe.
 * Angriffe durch Dateninjektion.
 * Angriffe durch Site-Verunstaltung.
 * Malware-Verteilung.
@@ -62,14 +62,14 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li></ul></p> <p>Aufrufe der Domain <span class="codeph"> demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity-Diensts</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> </tr> 
+   <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li></ul></p> <p>Aufrufe der Domain <span class="codeph">demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity-Diensts</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map-Plugin</b> </p> </td> 
  <td colname="col2"> <p>Nehmen Sie *.adobe.com in Ihre CSP auf. **Hinweis**: Wenn Activity Map bereits vor Januar 2020 installiert wurde, wird im Browser weiterhin zuerst eine Anfrage an *.omniture.com angezeigt, die jedoch an *.adobe.com weitergeleitet wird. </p></td> 
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Wenn Sie über Steuerelemente für Zeichenfolgenparameter der Abfrage verfügen, stellen Sie sicher, dass Sie die Parameter "s_kwcid"und "ef_id"in die Positivliste aufnehmen. Technisch gesehen verwendet Advertising Analytics nur "s_kwcid", aber wenn Sie Ad Cloud Search oder DSP abrufen, wird auch "ef_id"verwendet. Diese Abfragen-Zeichenfolgenparameter sind alphanumerisch. Der Parameter "s_kwcid"verwendet das Zeichen "!" -Zeichen und der Parameter "ef_id"verwenden das Zeichen ":". Wenn Sie die "!" in der URL enthalten ist, müssen Sie auch die Whitelist erstellen.</p></td> 
+ <td colname="col2"> <p>Wenn Sie über Steuerelemente für Abfragezeichenfolge-Parameter verfügen, nehmen Sie die Parameter „s_kwcid“ und „ef_id“ in die Whilist auf. Technisch gesehen verwendet Advertising Analytics nur „s_kwcid“, wenn Sie aber Ad Cloud Search oder DSP abrufen, wird auch „ef_id“ verwendet. Diese Abfragezeichenfolge-Parameter sind alphanumerisch. Der Parameter „s_kwcid“ verwendet das Zeichen „!“ und der Parameter „ef_id“ verwendet das Zeichen „:“. Wenn das Zeichen „!“ in der URL gesperrt ist, müssen Sie auch dieses in die Whitelist aufnehmen.</p></td> 
  </tr>
  </tbody> 
 </table>
