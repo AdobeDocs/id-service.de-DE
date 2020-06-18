@@ -5,9 +5,9 @@ seo-description: Befolgen Sie diese Anweisungen, um das Experience Cloud ID-Feld
 seo-title: Data Workbench und der Experience Cloud Identity-Dienst
 title: Data Workbench und der Experience Cloud Identity-Dienst
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 
@@ -28,6 +28,7 @@ Aktualisieren Sie [Data Workbench](https://docs.adobe.com/content/help/de-DE/dat
 
    * `x-mcvisid`
    * `x-tnt-action`
+
    Lassen Sie die Felder leer, wenn Sie sie noch nicht verwenden oder definieren können.  **Dekodierungsanweisungen**
 
 Siehe den vollständigen Decoder-Inhalt unten, einschließlich der oben genannten neuen Felder.
