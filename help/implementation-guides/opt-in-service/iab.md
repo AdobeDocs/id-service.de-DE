@@ -4,9 +4,9 @@ seo-description: Verbinden der Consent Management Platform (CMP) mit dem Audienc
 seo-title: Nutzung von Opt-in-Diensten mit IAB Framework
 title: Nutzung von Opt-in-Diensten mit IAB Framework
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
-source-git-commit: 4c37c8dd3b76dbf17b955864f0562363350eaecd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
 
@@ -15,7 +15,9 @@ ht-degree: 100%
 
 # Nutzung von Opt-in-Diensten mit IAB Framework {#using-opt-in-services-with-iab-framework}
 
->[!IMPORTANT] Das folgende Dokument gilt nur für IAB 2.0, für dessen Verwendung Visitor.js-Version 5.0 erforderlich ist.
+>[!IMPORTANT]
+>
+>Das folgende Dokument gilt nur für IAB 2.0, für dessen Verwendung Visitor.js-Version 5.0 erforderlich ist.
 
 Verbinden Sie die Einverständnisverwaltungs-Plattform (CMP) mit dem Opt-in-IAB Transparency and Consent Framework (TCF)-Plug-in.
 
