@@ -5,11 +5,11 @@ seo-description: Neben der Besucher-ID für Experience Cloud können Sie jedem K
 seo-title: Kunden-IDs und Authentifizierungsstatus
 title: Kunden-IDs und Authentifizierungsstatus
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Ab der Experience Cloud Identity-Dienstversion 1.5 enthält `setCustomerIDs` das
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Authentifizierungsstatus </th> 
-   <th colname="col2" class="entry"> Statusganzzahl </th> 
+   <th colname="col2" class="entry"> Ganzzahl des Status </th> 
    <th colname="col3" class="entry"> Benutzerstatus </th> 
   </tr> 
  </thead>
@@ -57,7 +57,7 @@ Ab der Experience Cloud Identity-Dienstversion 1.5 enthält `setCustomerIDs` das
 
 ## Nutzungsszenarios für Authentifizierungsstatus {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-Sie können Ihren Benutzern Authentifizierungsstatus zuweisen, je nachdem, welche Aktionen sie für Ihre Webeigenschaften durchführen und ob sie authentifiziert sind. Siehe einige Beispiele in der unten stehenden Tabelle:
+Sie können Ihren Benutzern Authentifizierungsstatus zuweisen, je nachdem, welche Aktionen sie für Ihre Web-Eigenschaften durchführen und ob sie authentifiziert sind. In der unten stehenden Tabelle finden Sie einige Beispiele:
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -69,10 +69,10 @@ Sie können Ihren Benutzern Authentifizierungsstatus zuweisen, je nachdem, welch
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
-   <td colname="col2"> <p>Dieser Status kann für Szenarien wie die folgenden verwendet werden: </p> <p> 
+   <td colname="col2"> <p>Dieser Status kann beispielsweise für folgende Szenarien verwendet werden: </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Lesen einer E-Mail (bei diesem Vorgang ist der Leser der vorgesehene Empfänger, die E-Mail hätte aber auch weitergeleitet werden können). </li> 
-      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Durch Klicken von einer E-Mail zu einer Landingpage. </li> 
+      <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">Öffnen einer Landingpage durch Klicken auf eine E-Mail. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -81,7 +81,7 @@ Sie können Ihren Benutzern Authentifizierungsstatus zuweisen, je nachdem, welch
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p>Der Benutzer war authentifiziert, hat sich dann aber aktiv abgemeldet. Der Benutzer beabsichtigt und beabsichtigt, die Verbindung zum authentifizierten Status zu trennen. Der Benutzer möchte nicht mehr als authentifiziert behandelt werden. </p> </td> 
+   <td colname="col2"> <p>Der Benutzer war authentifiziert, hat sich dann aber aktiv abgemeldet. Der Benutzer beabsichtigte, die Verbindung zum authentifizierten Status zu trennen. Der Benutzer möchte nicht mehr als authentifiziert gehandhabt werden. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -95,7 +95,7 @@ Kunden-IDs können, wie im Folgenden dargestellt, aus Kombinationen aus IDs und 
 >* Bei IDs wird die Groß-/Kleinschreibung beachtet.
 >* Für IDs sollten ausschließlich nicht codierte Werte verwendet werden.
 >* Kunden-IDs und Authentifizierungsstatus werden nicht im Besucher-ID-Cookie gespeichert. Sie müssen für jede Seite oder jeden Anwendungskontext festgelegt werden.
->* Sie sollten keine persönlichen identifizierbaren Informationen (PII) in die Kunden-IDs aufnehmen. Wenn Sie zur Besucheridentifizierung PII verwenden (z. B. eine E-Mail-Adresse), sollten Sie stattdessen eine Hash- oder verschlüsselte Version dieser Daten verwenden. Die ECID-Bibliothek unterstützt das Hashing von Benutzer-IDs. Siehe [SHA-256-Hashing-Unterstützung für setCustomerIDs](/help/reference/hashing-support.md).
+>* Sie sollten keine persönlich identifizierbaren Informationen (PII) in die Kunden-IDs aufnehmen. Wenn Sie zur Besucheridentifizierung PII verwenden (z. B. eine E-Mail-Adresse), sollten Sie stattdessen eine Hash- oder verschlüsselte Version dieser Daten verwenden. Die ECID-Bibliothek unterstützt das Hashing von Benutzer-IDs. Siehe [SHA-256-Hashing-Unterstützung für setCustomerIDs](/help/reference/hashing-support.md).
 
 
 ```js
@@ -169,7 +169,7 @@ Mit `getCustomerIDs` können Sie Kunden-IDs und zugehörige Authentifizierungsst
 
 **Beispiele**
 
-Rückgegebene Kunden-IDs und Authentifizierungsstatusdaten sollten in etwa wie folgt aussehen:
+Die zurückgegebenen Kunden-IDs und Authentifizierungsstatusdaten sollten in etwa wie folgt aussehen:
 
 ```js
 Object customerIDs = visitor.getCustomerIDs(); 
@@ -214,10 +214,10 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## SDK-Unterstützung {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-Der [!DNL Experience Cloud] ID-Dienst unterstützt Kunden-IDs und Authentifizierungsstatus in unserem Android- und iOS-SDK-Code. Siehe die folgenden Codebibliotheken:
+Der [!DNL Experience Cloud] ID-Dienst unterstützt Kunden-IDs und Authentifizierungsstatus in unserem Android- und iOS-SDK-Code. Siehe die folgenden Code-Bibliotheken:
 
 * [ SDK-Methoden für Android ](https://docs.adobe.com/content/help/de-DE/mobile-services/android/overview.html)
-* [iOS SDK-Methoden](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/overview.html)
+* [iOS-SDK-Methoden](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/overview.html)
 
 ## Hinweise für Kunden von Analytics und Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
