@@ -1,19 +1,22 @@
 ---
-description: Mit den ID-Dienstfunktionen „idSyncByURL“ und „idSyncByDataSource“ können Sie eine ID-Synchronisierung in Destination Publishing iFrame manuell implementieren. Sie stehen in VisitorAPI.js 1.10 oder höher zur Verfügung.
-keywords: ID-Dienst
-seo-description: Mit den ID-Dienstfunktionen „idSyncByURL“ und „idSyncByDataSource“ können Sie eine ID-Synchronisierung in Destination Publishing iFrame manuell implementieren. Sie stehen in VisitorAPI.js 1.10 oder höher zur Verfügung.
+description: Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisierung manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
+keywords: ID Service
+seo-description: Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisierung manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
 seo-title: ID-Synchronisation nach URL oder Datenquelle
 title: ID-Synchronisation nach URL oder Datenquelle
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 52%
 
 ---
 
 
 # ID-Synchronisation nach URL oder Datenquelle{#id-synchronization-by-url-or-data-source}
 
-Mit den ID-Dienstfunktionen „idSyncByURL“ und „idSyncByDataSource“ können Sie eine ID-Synchronisierung in Destination Publishing iFrame manuell implementieren. Sie stehen in VisitorAPI.js 1.10 oder höher zur Verfügung.
+Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisierung manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
 
 ## Syntax, Eigenschaften und Makros {#section-90ac61617482463aaf4c57009b830332}
 
@@ -33,17 +36,14 @@ Mit den ID-Dienstfunktionen „idSyncByURL“ und „idSyncByDataSource“ könn
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
-   <td colname="col2"> <p>Wenn Sie die DPID und DPUUID bereits kennen und sie im URL-Format für die ID-Standardsynchronisierung an <span class="keyword">Audience Manager</span> senden möchten. </p> <p> 
-     <draft-comment>
-       Wenn Sie die Benutzer-ID bereits kennen und an Audience Manager senden möchten. 
-     </draft-comment> </p> </td> 
+   <td colname="col2"> <p>Wenn Sie die DPID und DPUUID bereits kennen und sie im URL-Format für die ID-Standardsynchronisierung an <span class="keyword">Audience Manager</span> senden möchten. </p> <p></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Eigenschaften**
 
-In der folgenden Tabelle sind die für beide Funktionen verfügbaren Eigenschaften aufgeführt und definiert.
+In der folgenden Tabelle werden die für beide Funktionen verfügbaren Eigenschaften Liste und definiert.
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -57,17 +57,17 @@ In der folgenden Tabelle sind die für beide Funktionen verfügbaren Eigenschaft
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
    <td colname="col2"> Zeichenfolge </td> 
-   <td colname="col3"> <p>Durch Audience Manager zugewiesene Datenanbieter-ID. </p> </td> 
+   <td colname="col3"> <p>Vom Audience Manager zugewiesene Datenanbieter-ID. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
    <td colname="col2"> Zeichenfolge </td> 
-   <td colname="col3"> <p>Die eindeutige Datenanbieter-ID für den Benutzer. </p> </td> 
+   <td colname="col3"> <p>Die eindeutige ID des Datenanbieters für den Benutzer. </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> Zahl </td> 
-   <td colname="col3"> <p> <i>(Optional)</i> Legt die Cookie-Ablaufzeit fest. Hierbei muss es sich um eine Ganzzahl handeln. Der Standardwert lautet 20.160 Minuten (14 Tage). </p> </td> 
+   <td colname="col3"> <p> <i>(Optional)</i> Legt die Ablaufzeit des Cookies fest. Muss eine Ganzzahl sein. Der Standardwert ist 20160 Minuten (14 Tage). </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
