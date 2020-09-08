@@ -5,9 +5,9 @@ seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die ri
 seo-title: Voraussetzungen für den Experience Cloud Identity-Dienst
 title: Voraussetzungen für den Experience Cloud Identity-Dienst
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
 ht-degree: 100%
 
@@ -91,7 +91,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
 
 >[!TIP]
 >
->Tipp: Sie sollten anstelle der erforderlichen minimalen die neuesten Codeversionen verwenden.
+>Sie sollten anstelle der erforderlichen minimalen die neuesten Codeversionen verwenden.
 
 **JavaScript**
 
@@ -115,7 +115,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
    <td colname="col4"> <p>1.6.4 oder höher </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph">„s_code.js“</span> </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> „s_code.js“</span> </p> </td> 
    <td colname="col4"> <p>H.27 </p> <p> <p>Hinweis:<span class="keyword"> Die s_code-Version H.27 von Analytics</span> wird im Zuge der Veröffentlichung des ID-Diensts Version 1.6.0 nicht mehr unterstützt. Nehmen Sie ein Upgrade Ihres Codes auf die neueste Version von AppMeasurement vor. </p> </p> </td> 
   </tr> 
   <tr> 
@@ -148,12 +148,12 @@ Für den ID-Dienst sind mindestens die unten aufgeführten SDK-Versionen erforde
 
 >[!TIP]
 >
->Tipp: Sie sollten anstelle der erforderlichen minimalen die neuesten Codeversionen verwenden.
+>Sie sollten anstelle der erforderlichen minimalen die neuesten Codeversionen verwenden.
 
 Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Aktivieren und laden Sie den neuesten SDK-Code für jede Anwendung über Ihr [Adobe Mobile Services](https://mobilemarketing.adobe.com/)-Konto herunter. Siehe auch:
 
 * [Optionen für SDK-Besucher-ID-Dienst konfigurieren](https://docs.adobe.com/content/help/de-DE/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [ SDK-Methoden für Android ](https://docs.adobe.com/content/help/de-DE/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [SDK-Methoden für Android](https://docs.adobe.com/content/help/de-DE/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
 * [SDK-Methoden für iOS](https://docs.adobe.com/content/help/de-DE/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
