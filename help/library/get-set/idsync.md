@@ -1,22 +1,22 @@
 ---
-description: Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisierung manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
+description: Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisation manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
 keywords: ID Service
-seo-description: Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisierung manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
+seo-description: Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisation manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
 seo-title: ID-Synchronisation nach URL oder Datenquelle
 title: ID-Synchronisation nach URL oder Datenquelle
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
-# ID-Synchronisation nach URL oder Datenquelle{#id-synchronization-by-url-or-data-source}
+# ID-Synchronisation nach URL oder Datenquelle {#id-synchronization-by-url-or-data-source}
 
-Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisierung manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
+Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisation manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
 
 ## Syntax, Eigenschaften und Makros {#section-90ac61617482463aaf4c57009b830332}
 
@@ -43,7 +43,7 @@ Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine 
 
 **Eigenschaften**
 
-In der folgenden Tabelle werden die für beide Funktionen verfügbaren Eigenschaften Liste und definiert.
+In der folgenden Tabelle werden die für beide Funktionen verfügbaren Eigenschaften aufgelistet und definiert.
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -67,7 +67,7 @@ In der folgenden Tabelle werden die für beide Funktionen verfügbaren Eigenscha
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> Zahl </td> 
-   <td colname="col3"> <p> <i>(Optional)</i> Legt die Ablaufzeit des Cookies fest. Muss eine Ganzzahl sein. Der Standardwert ist 20160 Minuten (14 Tage). </p> </td> 
+   <td colname="col3"> <p> <i>(Optional)</i> Legt die Ablaufzeit des Cookies fest. Muss eine Ganzzahl sein. Der Standardwert ist 20.160 Minuten (14 Tage). </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
