@@ -6,11 +6,11 @@ user-guide-title: Hilfe zum Experience Cloud Identity-Dienst
 breadcrumb-title: Identity Service Guide
 user-guide-description: The ID service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud. It can replace ID generation code for services such as Analytics, Audience Manager, Target, and other Experience Cloud solutions or features.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 47a32f41de23391cf24529c32a5d1098aa010c07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 98%
       + [Opt-in-Referenz](implementation-guides/opt-in-service/api.md)
       + [Nutzung von Opt-in-Diensten mit IAB Framework](implementation-guides/opt-in-service/iab.md)
 + ID-Dienst-API {#id-service-api}
-   + [ Übersicht ID-Dienst-API](library/library.md)
+   + [Übersicht ID-Dienst-API](library/library.md)
    + Konfiguration {#configurations}
       + [Konfigurationsübersicht](library/function-vars/function-vars.md)
       + [audienceManagerServer und audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -94,7 +94,7 @@ ht-degree: 98%
       + [Datenerfassungs-CNAMEs und domänenübergreifendes Tracking](reference/analytics-reference/cname.md)
       + [Serverseitige Implementierung zusammen mit JavaScript](reference/analytics-reference/server-side.md)
       + [Übergangsphase für den ID-Dienst](reference/analytics-reference/grace-period.md)
-   + [Änderungen an der Google Chrome-Kennzeichnung auf derselben Site](reference/chrome-samesite-labelling.md)
+   + [Kennzeichnungs-Änderungen für Google Chrome SameSite](reference/chrome-samesite-labelling.md)
    + [Inhaltssicherheitsrichtlinien und der ID-Dienst](reference/csp.md)
    + [COPPA-Unterstützung im ID-Dienst](reference/coppa.md)
    + [CORS-Unterstützung im ID-Dienst](reference/cors.md)
