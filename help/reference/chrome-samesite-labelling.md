@@ -3,9 +3,9 @@ title: Kennzeichnungs-Änderungen für Google Chrome SameSite
 seo-title: Kennzeichnungs-Änderungen für Google Chrome SameSite
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 seo-description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1079'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Damit die Änderung berücksichtigt werden kann, legt Analytics für den SameSit
 
 >[!IMPORTANT]
 >
->Es gibt bestimmte Kundengruppen, für die diese Aktion nicht erforderlich ist. Dazu zählen Analytics-Kunden, die ECID verwenden, Kunden, die für jede ihrer Domänen einen separaten CNAME verwenden, sowie Kunden, die nur die Analytics-Datenerfassung von Drittanbietern verwenden.
+>Es gibt bestimmte Kundengruppen, für die diese Aktion nicht erforderlich ist. Dazu zählen Analytics-Kunden, die ECID verwenden, Kunden, die für jede ihrer Domains einen separaten CNAME verwenden, sowie Kunden, die nur die Analytics-Datenerfassung von Drittanbietern verwenden.
 
 ## Standardmäßige Besucher-Cookies von Adobe
 
