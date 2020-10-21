@@ -1,9 +1,16 @@
 ---
-source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: ht
+source-git-commit: a49f9c8487e32ba23f0ec3c6c0ea39f8638695f3
+workflow-type: tm+mt
+translation-type: tm+mt
+source-wordcount: '520'
+ht-degree: 85%
 
 ---
 # Artikel beitragen
+
+| EXL-PR | EXL | Vorschau | Aktivieren | Veröffentlicht | Hilfe |
+|--- |--- |--- |--- |--- |--- |
+| [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [Vorschauen-URL](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en) | [Autorenanleitung](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Wir freuen uns über Inhaltsbeiträge unserer Community und von Adobe-Mitarbeitern außerhalb der Dokumentationsteams.
 
@@ -13,7 +20,7 @@ Für dieses Projekt gilt der [Adobe Open Source-Verhaltenskodex](code-of-conduct
 
 ## Informationen zu Ihren Beiträgen zu den Adobe-Inhalten
 
-Weitere Informationen finden Sie unter [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Lesen Sie das [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
@@ -21,7 +28,7 @@ Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von �
 
 Um eine Anfrage einzureichen, klicken Sie in einem Artikel auf den Link **Problem protokollieren**, wodurch ein Problem in GitHub geöffnet wird. Geben Sie einen Titel und eine Beschreibung an und klicken Sie dann auf **Neues Problem vorlegen**.
 
-Um kleinere Aktualisierungen anzufordern, klicken Sie in einem Artikel auf **Diese Seite bearbeiten**, um den Quellartikel in GitHub zu öffnen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs Mitarbeiter-Handbuch](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Um kleinere Aktualisierungen anzufordern, klicken Sie in einem Artikel auf **Diese Seite bearbeiten**, um den Quellartikel in GitHub zu öffnen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
 
 Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentation und Codebeispiele in diesem Repository senden, sind durch die Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -35,7 +42,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Umfangreiche Änderungen von Adobe-Mitarbeitern
 
-Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams für eine [!UICONTROL Adobe Experience Cloud]-Lösung sind und es Ihr Auftrag ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden. Siehe [Anweisungen für interne Zusammenarbeit](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
+Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams für eine [!UICONTROL Adobe Experience Cloud]-Lösung sind und es Ihr Auftrag ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden. Siehe [Handbuch zur internen Zusammenarbeit](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,7 +50,7 @@ Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams
 
 Community-Mitarbeiter können die GitHub-Benutzeroberfläche zur einfachen Bearbeitung oder zur Abspaltung des Repositorys verwenden, um umfangreiche Beiträge vorzunehmen.
 
-Siehe [Adobe Docs Mitarbeiter-Handbuch](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
+Weitere Informationen finden Sie im [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
 
 ## Markdown zum Formatieren Ihres Themas verwenden
 
@@ -54,7 +61,7 @@ Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie m
 
 ## Bezeichnungen
 
-Im öffentlichen Repository werden automatisierte Bezeichnungen Pull-Anfragen zugewiesen, damit wir den Arbeitsablauf für Pull-Anfragen verwalten und Ihnen mitteilen können, was mit Ihrer Pull-Anfrage passiert:
+Im öffentlichen Repository werden automatisierte Bezeichnungen Pull-Anforderungen zugewiesen, damit wir den Arbeitsablauf für Pull-Anforderungen verwalten und Ihnen mitteilen können, was mit Ihrer Pull-Anforderung passiert:
 
-* **Änderung an Autor gesendet**: Der Autor wurde über die ausstehende Pull-Anfrage informiert.
-* **Bereit zum Zusammenführen**: Bereit zur Überprüfung durch unser Pull-Anfrage-Überprüfungsteam.
+* **Änderung an Autor gesendet**: Der Autor wurde über die ausstehende Pull-Anforderung informiert.
+* **Bereit zum Zusammenführen**: Bereit zur Überprüfung durch unser Pull-Anforderung-Überprüfungsteam.
