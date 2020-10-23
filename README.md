@@ -1,16 +1,16 @@
 ---
 source-git-commit: a49f9c8487e32ba23f0ec3c6c0ea39f8638695f3
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
+translation-type: ht
 source-wordcount: '520'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 # Artikel beitragen
 
 | EXL-PR | EXL | Vorschau | Aktivieren | Veröffentlicht | Hilfe |
 |--- |--- |--- |--- |--- |--- |
-| [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [Vorschauen-URL](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en) | [Autorenanleitung](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
+| [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_pr-exl/lastBuild/) | [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/id-service.en_exl/lastBuild/lastBuild) | [Vorschau-URL](https://experienceleague.corp.adobe.com/docs/id-service/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en) | [Autorenanleitung](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Wir freuen uns über Inhaltsbeiträge unserer Community und von Adobe-Mitarbeitern außerhalb der Dokumentationsteams.
 
@@ -24,7 +24,7 @@ Lesen Sie das [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/help/en/c
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
-### Geringfügige Änderungen oder Anfragen
+### Geringfügige Änderungen  oder Anfragen
 
 Um eine Anfrage einzureichen, klicken Sie in einem Artikel auf den Link **Problem protokollieren**, wodurch ein Problem in GitHub geöffnet wird. Geben Sie einen Titel und eine Beschreibung an und klicken Sie dann auf **Neues Problem vorlegen**.
 
