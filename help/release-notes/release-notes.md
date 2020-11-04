@@ -4,11 +4,11 @@ keywords: ID Service
 seo-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
 seo-title: Versionshinweise für 2020
 title: Versionshinweise für 2020
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,4 +28,4 @@ Fehlerbehebung für ein Leistungsproblem in `Internet-Explorer (IE) 11`, wenn EC
 * Ab Version 4.5 lehnt ECID alle leeren IDs ab, die an die `setCustomerIDs`-Methode gesendet werden.
 * Es wurde ein Problem behoben, bei dem der Opt-in als `doesOptInApply=false` und `isIabContext=true` konfiguriert wurde.
 
-Die monatlichen Versionshinweise zu allen Produkten finden Sie unter Versionshinweise [zum](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html) Experience Cloud.
+Die monatlichen Versionshinweise zu allen Produkten finden Sie unter [Versionshinweise für Experience Cloud](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
