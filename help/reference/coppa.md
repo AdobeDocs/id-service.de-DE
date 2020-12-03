@@ -1,12 +1,15 @@
 ---
 description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 Jahren ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem Experience Cloud Identity-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
-keywords: ID-Dienst
+keywords: ID Service
 seo-description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Privatsphäre von Kindern im Internet) verbietet die Onlineerfassung von persönlichen Daten von Kindern unter 13 Jahren ohne nachweisliche Genehmigung der Eltern. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem Experience Cloud Identity-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden.
 seo-title: COPPA-Unterstützung im Experience Cloud Identity-Dienst
 title: COPPA-Unterstützung im Experience Cloud Identity-Dienst
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 77%
 
 ---
 
@@ -21,14 +24,14 @@ Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Pri
 
 **Cookies und Tracking**
 
-Beim Laden einer Webseite wird vom [!DNL Experience Cloud] ID-Dienst ein [!DNL Adobe]-Datenerfassungsserver (DES) aufgerufen. Die DES-Antwort umfasst einen Experience Cloud-Cookie sowie einen demdex.net-Cookie.
+Beim Laden einer Webseite wird vom [!DNL Experience Cloud] ID-Dienst ein [!DNL Adobe]-Datenerfassungsserver (DES) aufgerufen. Die DCS-Antwort beinhaltet ein Experience Cloud-Cookie und ein demdex.net-Cookie.
 
-* Der Experience Cloud-Cookie wird in der Erstanbieterdomäne gesetzt. Er kann nicht dazu verwendet werden, Besucher domänenübergreifend zu verfolgen, außer die Domänen sind so miteinander verknüpft, dass ein Zugriff möglich ist.
-* Der demdex.net-Cookie wird in der Drittanbieterdomäne gesetzt. Er enthält einen eindeutigen Identifikator, der zur domänenübergreifenden Verfolgung von Benutzern verwendet werden kann.
+* Das Experience Cloud-Cookie wird in der Erstanbieterdomäne gesetzt. Sie kann nicht zur domänenübergreifenden Verfolgung von Besuchern verwendet werden, es sei denn, diese Domänen arbeiten zusammen, um Zugriff zu gewähren.
+* Das demdex.net-Cookie wird in der Drittanbieterdomäne gesetzt. Er enthält eine eindeutige ID, mit der Besucher domänenübergreifend verfolgt werden können.
 
-**Cookies und Einhaltung von COPPA**
+**Cookies und COPPA-Compliance**
 
-Drittanbieter-Cookies, die Besucher domänenübergreifend auf Websites verfolgen, die für Kinder (oder primär für Kinder) vorgesehen sind, lösen in Einklang mit COPPA eine Anforderung der elterlichen Zustimmung aus. Damit die Forderungen von COPPA für interne Website-Analysen problemlos eingehalten werden können, kann – wie unten gezeigt – die Variable `disableThirdPartyCookies:true` der `Visitor.getInstance` Funktion hinzugefügt werden.
+Drittanbieter-Cookies, die domänenübergreifend Besucher auf Websites verfolgen, die an Kinder gerichtet sind (oder primär für Kinder bestimmt sind), lösen Anforderungen an die elterliche Zustimmung von COPPA aus. Damit die Forderungen von COPPA für interne Website-Analysen problemlos eingehalten werden können, kann – wie unten gezeigt – die Variable `disableThirdPartyCookies:true` der `Visitor.getInstance` Funktion hinzugefügt werden.
 
 ```js
 //Call the ID service 
