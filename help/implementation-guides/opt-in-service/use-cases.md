@@ -6,6 +6,9 @@ title: Opt-in-Nutzungsszenarios
 uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
 translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 23%
 
 ---
 
@@ -16,9 +19,9 @@ Beispiele für Nutzungsszenarios und Lösungen zur Verwaltung des Opt-in-Dienste
 
 ## Tipps und Fehlerbehebung {#section-5c566366410f4a8f89eca0d3f556d99f}
 
-* Die Visitor JS-Initialisierung wird synchron ausgeführt, während die Seite geladen wird. Wenn Sie eine CMP oder Lösung zum Speichern von Berechtigungen mit hoher Latenzzeit verwenden, ist es möglicherweise sinnvoller, die unter [Einrichten des Opt-in-Objekts](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047) beschriebenen asynchronen Funktionen zu verwenden.
-* Opt-in wird pro Domäne implementiert. Es kann nicht für domänenübergreifende Implementierungen verwendet werden.
-* Um Drittanbieter-Aufrufe für eine bestimmte Bibliothek zu deaktivieren, müssen Sie diese Voreinstellung in jeder Bibliothek separat konfigurieren.
+* Besucher JS initialize ist synchron und wird während des Seitenladevorgangs ausgeführt. Wenn Sie mit einer CMP- oder Berechtigungsbeständigkeit mit hoher Latenz interagieren, sollten Sie die asynchronen Funktionen verwenden, die unter [Opt-in-Einrichtung](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047)beschrieben werden.
+* Bei der Teilnahme handelt es sich um eine Implementierung pro Domäne. Domänenübergreifende Implementierungen werden nicht behandelt.
+* Um Aufrufe von Drittanbietern für eine bestimmte Bibliothek zu deaktivieren, müssen Sie diese Voreinstellung in jeder Bibliothek separat konfigurieren.
 
 ## Opt-in-Szenarios  {#section-1178053c065c430bba26f82ef383a71c}
 
@@ -28,30 +31,30 @@ Diese Nutzungsszenarios sind Beispiele für die Verwendung des Opt-in-Dienstes.
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Anforderung </th> 
-   <th colname="col2" class="entry"> „Lösungen“ </th> 
+   <th colname="col2" class="entry"> Lösungen </th> 
    <th colname="col3" class="entry"> Wirkung </th> 
   </tr>
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Analytics kann im Status vor der Zustimmung geladen werden, alle anderen Bibliotheken können jedoch erst geladen werden, nachdem die Zustimmung erteilt wurde. </p> </td> 
-   <td colname="col2"> <p>Verwenden Sie Opt-in, um die Kategorie „Analytics“ im Status vor der Zustimmung zu aktivieren. </p> </td> 
-   <td colname="col3"> <p>Im Status vor der Zustimmung verwendet Analytics zur Erfassung die Analytics-Kennung statt ECID. Sobald ECID genehmigt wurde, wird eine neue Kennung verwendet und der Besucher erhält eine ECID, die zur Aktivierung und Integration genutzt werden kann. </p> <p>Die Besucherfragmentierung im Status vor und nach der Zustimmung wird erwartet. </p> </td> 
+   <td colname="col1"> <p>Analytics ist in der Lage, vor der Zustimmung zu sammeln, aber alle anderen Bibliotheken können erst geladen werden, wenn die Zustimmung eingegangen ist </p> </td> 
+   <td colname="col2"> <p>Verwenden Sie die Option zur Aktivierung der Analytics-Kategorie im Status vor der Zustimmung </p> </td> 
+   <td colname="col3"> <p>Analytics verwendet die Analytics-ID anstelle der ECID bei der Erfassung vor der Zustimmung. Nach der Genehmigung der ECID wird eine neue ID verwendet, und der Besucher erhält eine ECID, die für Aktivierungen und Integrationen verwendet werden kann. </p> <p>Eine Fragmentierung des Besuchers im Status vor/nach der Zustimmung ist zu erwarten. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Erstanbieter-Messwerte können im Status vor der Zustimmung erfasst werden. Alle anderen Arten der Datenverwendung werden verhindert, bis die Zustimmung erteilt wird. </p> </td> 
-   <td colname="col2"> <p>Verwenden Sie Opt-in, um Analytics- und ECID-Bibliotheken im Status vor der Zustimmung zu aktivieren. </p> <p>Fügen Sie die Konfiguration „disablethirdpartycookies“ der ECID-Bibliothek hinzu, um Drittanbieter-Cookies und ID-Synchronisationen im Status vor der Zustimmung zu blockieren. </p> </td> 
-   <td colname="col3"> <p>Ein Adobe Demdex-Aufruf wird zum Abrufen der ECID ausgelöst, es sind jedoch keine Demdex-Cookies, andere Drittanbieter-Cookies oder ID-Synchronisationen vorhanden. </p> <p>Der Besucher bleibt im Status vor/nach der Zustimmung für Analytics konsistent. Die Erfassung im Status vor der Zustimmung ist an die Datenerfassung nach der Zustimmung gebunden. </p> </td> 
+   <td colname="col1"> <p>Die Erstanbieter-Messung ist in der Lage, die Daten vor der Zustimmung zu sammeln. Alle anderen Arten der Datennutzung verhindert, bis die Zustimmung eingeht. </p> </td> 
+   <td colname="col2"> <p>Verwenden Sie die Option zur Aktivierung von Analytics- und ECID-Bibliotheken im Status vor der Genehmigung. </p> <p>hinzufügen der Konfiguration "Deaktivieren von Drittanbieter-Cookies"in der ECID-Bibliothek, um Drittanbieter-Cookie- und ID-Syncs im Status vor der Zustimmung zu blockieren </p> </td> 
+   <td colname="col3"> <p>Adobe Demdex-Aufruf löst den ECID-Abruf aus, aber kein Demdex-Cookie, kein Drittanbieter-Cookie oder keine ID-Syncs sind vorhanden. </p> <p>Der Besucher bleibt im Status vor/nach der Zustimmung für Analytics konsistent. Die Erfassung im Vorhinein wird an die Datenerfassung nach der Zustimmung gebunden. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Erstanbieter-Messwerte und Targeting können im Status vor der Zustimmung erfasst werden. Alle anderen Arten der Datenverwendung werden verhindert, bis die Zustimmung erteilt wird. </p> </td> 
-   <td colname="col2"> <p>Verwenden Sie Opt-in, um Analytics-, ECID- und Target-Bibliotheken im Status vor der Zustimmung zu aktivieren. </p> <p>Fügen Sie die Konfiguration <span class="codeph">isablethirdpartycookies</span> der ECID-Bibliothek hinzu, um Drittanbieter-Cookies und ID-Synchronisationen im Status vor der Zustimmung zu blockieren. Entfernen Sie die Kennzeichnung im Status nach der Zustimmung. </p> </td> 
-   <td colname="col3"> <p>Ein Adobe Demdex-Aufruf wird zum Abrufen der ECID ausgelöst, es sind jedoch keine Demdex-Cookies, andere Drittanbieter-Cookies oder ID-Synchronisationen vorhanden. </p> <p>Der Besucher bleibt im Status vor/nach der Zustimmung für Erstanbieter-Lösungen konsistent. Die Erfassung im Status vor der Zustimmung ist an die Datenerfassung nach der Zustimmung gebunden. </p> </td> 
+   <td colname="col1"> <p>Erstanbieter-Messwerte und Targeting können im Status vor der Zustimmung erfasst werden. Alle anderen Arten der Datennutzung verhindert, bis die Zustimmung eingeht. </p> </td> 
+   <td colname="col2"> <p>Verwenden Sie die Option zur Aktivierung von Analytics- + ECID- + Zielgruppe-Bibliotheken im Vorab-Status. </p> <p>Fügen Sie die Konfiguration <span class="codeph">isablethirdpartycookies</span> der ECID-Bibliothek hinzu, um Drittanbieter-Cookies und ID-Synchronisationen im Status vor der Zustimmung zu blockieren. Entfernen Sie die Flagge im Status nach der Zustimmung. </p> </td> 
+   <td colname="col3"> <p>Adobe Demdex-Aufruf löst den ECID-Abruf aus, aber kein Demdex-Cookie, kein Drittanbieter-Cookie oder keine ID-Syncs sind vorhanden. </p> <p>Der Besucher bleibt im Status vor/nach der Zustimmung für Erstanbieter-Lösungen konsistent. Die Erfassung im Vorhinein wird an die Datenerfassung nach der Zustimmung gebunden. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Im Status vor der Zustimmung dürfen keine Cookies erstellt werden. </p> </td> 
-   <td colname="col2"> <p>Verwenden Sie Opt-in, um das Laden aller Bibliotheken zu verhindern, bis eine Zustimmung erteilt wird. </p> </td> 
-   <td colname="col3"> <p>Die Implementierung funktioniert wie erwartet und alle Bibliotheken, einschließlich der ECID, werden im Status nach der Zustimmung in der richtigen Reihenfolge geladen. </p> <p>Datenverlust für Kunden, die dem Tracking niemals zustimmen. </p> </td> 
+   <td colname="col1"> <p>Es sind keine Cookies zulässig, die vor der Genehmigung eingestellt werden </p> </td> 
+   <td colname="col2"> <p>Verwenden Sie die Option zum Blockieren des Ladens aller Bibliotheken bis zum Erhalt der Zustimmung </p> </td> 
+   <td colname="col3"> <p>Die Implementierung ist erwartungsgemäß und alle Bibliotheken, einschließlich ECID, werden nach der Genehmigung in der richtigen Reihenfolge geladen. </p> <p>Datenverlust für Kunden, die nie zustimmen, verfolgt zu werden. </p> </td> 
   </tr> 
  </tbody> 
 </table>
