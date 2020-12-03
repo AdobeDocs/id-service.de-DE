@@ -6,6 +6,9 @@ title: Opt-in-Dienst
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
 translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +21,7 @@ Der Opt-in-Dienst ist eine Erweiterung des Dienstes Experience Cloud ID (ECID) u
 
 Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen einzeln angezeigt werden, um die Zustimmung einzuholen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können Sie die CMP-Besuchergenehmigungen aus allen Adobe-Lösungen abrufen.
 
-The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Ebenfalls möglich ist eine Implementierung und Konfiguration mit [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). Ebenfalls möglich ist eine Implementierung und Konfiguration mit [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Siehe [Einrichtung des Opt-in-Dienstes](../../implementation-guides/opt-in-service/getting-started.md) zu den ersten Schritten.
 
@@ -36,13 +39,13 @@ Der Opt-in-Dienst ist ein Tool zum Einrichten eines Opt-in-Workflows, der Ihren 
 
 Mit dem Opt-in-Dienst können Sie Folgendes für die Zustimmungsverwaltung von Adobe-Lösungen einstellen:
 
-* Sie können angeben, ob die Anforderungen für die Zustimmungserfassung im Allgemeinen auf einen Benutzer zutreffen.
-* Sie können festlegen, welche Lösungen Cookies generieren dürfen.
-* Sie können Standardeinstellungen für alle Lösungen anwenden, deren Kategorien nicht ausdrücklich vom Benutzer genehmigt oder abgelehnt werden.
-* Sie können eine benutzerdefinierte Reaktion auf Änderungen an den Zustimmungseinstellungen eines Benutzers auslösen, um die Einstellungen des Benutzers beizubehalten oder zu aktualisieren.
+* Geben Sie bitte an, ob die Anforderungen für das Sammeln der Zustimmung im Allgemeinen für einen Benutzer gelten.
+* Geben Sie an, welche Lösungen Cookies generieren dürfen.
+* Wenden Sie Standardvoreinstellungen für alle Lösungen an, deren Kategorie vom Benutzer nicht ausdrücklich genehmigt oder abgelehnt wird.
+* Auslösen benutzerspezifischer Antworten auf der Grundlage von Änderungen an den Einstellungen für die Einwilligung eines Benutzers, sodass Sie die Einstellungen des Benutzers beibehalten oder aktualisieren können.
 
-Mit dem Opt-in-Dienst können Sie Ihre Site so konfigurieren, dass einige Cookies mit einer Vorabzustimmung geladen werden, bevor der Benutzer eine Auswahl vornimmt. Sie können Opt-in-Dienste für Neukunden so einstellen, dass Cookies nach Zustimmung des Benutzers oder nach Bereitstellung einer Auswahl geladen werden können. Außerdem können Sie die Zustimmung in Ihrer bestehenden Consent Management-Plattform speichern und abrufen oder Opt-in-Berechtigungen einfach in einem Cookie speichern.
+Mit dem Opt-in-Dienst können Sie Ihre Site so konfigurieren, dass einige Cookies mit einer Vorabzustimmung geladen werden, bevor der Benutzer eine Auswahl vornimmt. Sie können Opt-in-Dienste für Neukunden so einstellen, dass Cookies nach Zustimmung des Benutzers oder nach Bereitstellung einer Auswahl geladen werden können. Sie können auch Opt-in Zustimmung von Ihrer bestehenden Consent Management-Plattform speichern und abrufen oder einfach Opt-in Berechtigungen in einem Cookie speichern.
 
 ![](assets/Opt-in-approval.png)
 
-Adobe-Lösungen können dann überprüfen, ob das Tag genehmigt wurde, Änderungen abonnieren und alle Opt-in-Kunden abrufen. Der Opt-in-Dienst ermöglicht Ihnen, Berechtigungen direkt über die JavaScript-Bibliotheken der Lösung oder über ECID (falls implementiert) abzurufen.
+Adoben-Lösungen können dann prüfen, ob das Tag genehmigt ist, Änderungen abonnieren und dann alle Opt-in-Kunden abrufen. Der Opt-in-Dienst ermöglicht Ihnen, Berechtigungen direkt über die JavaScript-Bibliotheken der Lösung oder über ECID (falls implementiert) abzurufen.
