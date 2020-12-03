@@ -6,6 +6,9 @@ title: Überprüfen des Opt-in-Dienstes
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 36%
 
 ---
 
@@ -24,15 +27,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_1_1.png)
 
-Löschen Sie vor dem Laden der Seite Ihren Cache und die Cookies.
+Löschen Sie vor dem Laden der Seite den Cache und die Cookies.
 
-Klicken Sie mit der rechten Maustaste in Chrome auf die Webseite und wählen Sie „Untersuchen“. Wie im Screenshot oben gezeigt, wählen Sie die Registerkarte *Network*, um die vom Browser gestellten Anfragen zu sehen.
+Klicken Sie in Chrome mit der rechten Maustaste auf die Webseite und wählen Sie Inspect. Wie im Screenshot oben beschrieben, wählen Sie die Registerkarte &quot; *Netzwerk* &quot;, um die vom Browser ausgeführten Anforderungen Ansicht.
 
-Im Beispiel oben wurden die folgenden Adobe JS-Tags auf der Seite installiert: ECID, AAM, Analytics und Target.
+Im obigen Beispiel haben wir die folgenden Adobe-JS-Tags auf der Seite installiert: ECID, AAM, Analytics und Zielgruppe.
 
 **Überprüfen der erwarteten Funktionsweise des Opt-in:**
 
-Sie sollten keine Anfragen an diese Adobe-Server sehen:
+Sie sollten keine Anforderungen an Adoben-Server sehen:
 
 * demdex.net/id
 * demdex.net/event
@@ -42,11 +45,11 @@ Sie sollten keine Anfragen an diese Adobe-Server sehen:
 
 >[!NOTE]
 >
->Möglicherweise wird ein Aufruf von `http://dpm.demdex.net/optOutStatus` angezeigt. Auf diesem SCHREIBGESCHÜTZTEN Endpunkt wird der Opt-out-Status des Benutzers abgerufen. Dieser Endpunkt führt nicht dazu, dass Drittanbieter-Cookies erstellt werden. Es werden auch keine Informationen auf der Seite erfasst.
+>Möglicherweise wird ein Aufruf von `http://dpm.demdex.net/optOutStatus` angezeigt. Auf diesem SCHREIBGESCHÜTZTEN Endpunkt wird der Opt-out-Status des Benutzers abgerufen. Dieser Endpunkt führt nicht zur Erstellung von Drittanbieter-Cookies und erfasst keine Informationen von der Seite.
 
-Sie sollten keine von folgenden Adobe-Tags erstellten Cookies sehen: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
+Sie sollten keine Cookies sehen, die von den Adoben-Tags erstellt wurden: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
-Wechseln Sie in Chrome zur Registerkarte *Application*, erweitern Sie unter *Storage* den Abschnitt *Cookies* und wählen Sie den Domänennamen Ihrer Website aus:
+Gehen Sie in Chrome zur Registerkarte *Anwendung* , erweitern Sie den Abschnitt *Cookies* unter *Datenspeicherung* und wählen Sie den Domänennamen Ihrer Website aus:
 
 ![](assets/use_case_1_2.png)
 
@@ -73,11 +76,11 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-Da Adobe Analytics über eine Vorabgenehmigung vor dem Opt-in verfügt, sehen Sie die Anfragen an Ihren Tracking-Server auf der Registerkarte „Network“:
+Da Adobe Analytics bereits vor der Teilnahme genehmigt wurde, werden auf der Registerkarte &quot;Netzwerk&quot;Anforderungen an Ihren Tracking-Server angezeigt:
 
 ![](assets/use_case_3_1.png)
 
-Außerdem sehen Sie Analytics-Cookies auf der Registerkarte „Application“:
+und Sie sehen Analytics-Cookies auf der Registerkarte &quot;Anwendung&quot;:
 
 ![](assets/use_case_3_2.png)
 
@@ -90,9 +93,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-**Anzeigen Ihrer aktuellen IAB-Zustimmung auf der Seite:**
+**Ansicht Ihrer aktuellen IAB-Zustimmung auf der Seite:**
 
-Öffnen Sie die Entwicklertools und wählen Sie die Registerkarte *Console*. Fügen Sie das folgende Code-Snippet ein und drücken Sie die Eingabetaste:
+Öffnen Sie die Entwicklerwerkzeuge und wählen Sie die Registerkarte *Konsole* . Fügen Sie das folgende Codefragment ein und drücken Sie die Eingabetaste:
 
 ```
 <codeblock>
@@ -102,15 +105,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
   
 ```
 
-Hier sehen Sie eine Beispielausgabe, wenn eine Genehmigung für die Zwecke 1, 2 und 5 und die Audience Manager-Anbieter-ID erteilt wurde:
+Im Folgenden finden Sie eine Beispielausgabe, wenn die Ziele 1, 2 und 5 genehmigt und die Audience Manager-Anbieter-ID genehmigt wird:
 
-* demdex.net/id: Das Vorhandensein dieses Aufrufs zeigt, dass ECID eine ID von demdex.net angefordert hat.
-* demdex.net/event: Das Vorhandensein dieses Aufrufs zeigt, dass der DIL-Datenerfassungsaufruf wie erwartet funktioniert.
-* demdex.net/dest5.html: Das Vorhandensein dieses Aufrufs zeigt, dass ID-Synchronisationen ausgelöst werden.
+* demdex.net/id: Das Vorhandensein dieses Aufrufs zeigt, dass ECID eine ID von demdex.net angefordert hat
+* demdex.net/event: Das Vorhandensein dieses Aufrufs zeigt, dass der DIL-Datenerfassungsaufruf erwartungsgemäß funktioniert.
+* demdex.net/dest5.html: Das Vorhandensein dieses Aufrufs beweist, dass ID-Syncs ausgelöst werden.
 
 ![](assets/use_case_4_1.png)
 
-Wenn einer der folgenden Punkte nicht zutrifft, sehen Sie keine Anfragen an Adobe-Server und keine Adobe-Cookies:
+Wenn einer der folgenden Werte ungültig ist, werden keine Anforderungen an Adobe-Server und keine Adobe-Cookies angezeigt:
 
-* Zweck 1, 2 ODER 5 wurde nicht genehmigt.
+* Die Zwecke 1, 2 ODER 5 werden nicht genehmigt.
 * Die Audience Manager-Anbieter-ID wurde nicht genehmigt.
