@@ -6,6 +6,9 @@ title: Implementieren mit Launch
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 52%
 
 ---
 
@@ -16,9 +19,9 @@ Adobe Experience Platform Launch ist das vorrangige Tool zur Einrichtung, Bereit
 
 ## Allgemeines zu Launch {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) is the next-generation of the Adobe tag-management capability that is built into the Adobe Experience Cloud. Mit Launch können Benutzer:
+[Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) ist die nächste Generation der Adobe-Tag-Management-Funktion, die in der Adobe Experience Cloud integriert ist. Mit Start können Kunden:
 
-* clientseitige Webprodukte unter Verwendung von Integrationen bereitstellen, die als Erweiterungen bezeichnet werden
-* Daten konsistent erfassen, definieren, verwalten und für Marketing- und Werbeprodukte von Adobe und anderen Anbietern freigeben
-* Launch ist ein erweitertes JavaScript-Bereitstellungssystem, das Bedingungen und ausgeführte Aktionen auswertet, damit clientseitige Bibliotheken und Produkte effizient und wirkungsvoll bereitgestellt werden können. Launch bietet einen hochgradig skalierbaren Ansatz für die Verwaltung und Erstellung von Erweiterungen, zusammen mit einem Satz robuster APIs für die programmatische Interaktion mit Adobe Experience Cloud.
+* Client-seitige Web-Produkte unter Verwendung von Integrationen, die als Erweiterungen bezeichnet werden, bereitstellen
+* Daten konsistent erfassen, definieren, verwalten und austauschen zwischen Marketing- und Werbeprodukten anderer Anbieter und aus der Adobe
+* Launch ist ein erweitertes JavaScript-Versand-System, das Bedingungen auswertet und Aktionen zur effizienten und effektiven Bereitstellung clientseitiger Bibliotheken und Produkte ausführt. Es bietet einen hochgradig skalierbaren Ansatz zum Verwalten und Erstellen von Erweiterungen sowie eine robuste Reihe von APIs zur programmatischen Interaktion mit dem Adobe Experience Cloud.
 
