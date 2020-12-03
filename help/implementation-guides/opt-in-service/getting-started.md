@@ -6,6 +6,9 @@ title: Einrichten des Opt-in-Dienstes
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
 translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 78%
 
 ---
 
@@ -22,27 +25,27 @@ Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösung
 
 1. ECID Version 4.0.
 
-   Laden Sie die neueste ECID-Version [herunter](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+   [Laden Sie](https://github.com/Adobe-Marketing-Cloud/id-service/releases) die neueste ECID-Version herunter.
 
 1. Unterstützende Bibliotheken:
 
-   * ECID 4.0 oder höher
-   * AppMeasurement 2.11 oder höher
+   * ECID 4.0 oder höher
+   * AppMeasurement 2.11 oder höher
    * DIL 9.0
-   * AT.js Version 1.7.0
-   * AT.js-Launch-Erweiterung Version 9.0
-   * AppMeasurement 2.11 mit Erweiterung 1.6 für Analytics
-   * Erweiterung 0.9.1 für Target
+   * AT.js Version 1.7.0
+   * AT.js Start extension version 9.0
+   * Für Analytics: App Measurement 2.11 mit Erweiterung 1.6
+   * Zielgruppe, Erweiterung 0.9.1
 
-1. Machen Sie sich mit dem Zustimmungsverwaltungs-Framework, das Sie mit Opt-in verwenden, und allen weiteren Voraussetzungen vertraut.
+1. Machen Sie sich mit dem Framework für die Verwaltung von Genehmigungen vertraut, das Sie mit Opt-in verwenden werden, und verstehen Sie alle zusätzlichen Voraussetzungen.
 
    <!--
    For IAB, see here for additional pre-reqs.
    -->
 
-1. Die Datenschutzanforderungen Ihres Unternehmens enthalten die Einzelheiten zur Einhaltung der DSGVO in Ihrem Unternehmen. Achten Sie darauf, welche Bibliotheken die Datenschutzteams in Ihrem Unternehmen zulassen, solange noch keine Zustimmung vorliegt.
+1. Die Datenschutzanforderungen Ihrer Firma werden spezifisch sein, wie Sie sich dafür entscheiden, GDPR-konform zu bleiben. Achten Sie darauf, welche Bibliotheken Ihre Firma-Datenschutzteams im Vorhinein verwenden dürfen.
 
-Wenn Sie [Adobe Launch](https://docs.adobelaunch.com/) verwenden, nutzen Sie die [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
+If using [Adobe Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html), take advantage of the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## Opt-in-Kategorien {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -65,7 +68,7 @@ Die clientseitigen Bibliotheken aller Adobe-Lösungen sind vom Opt-in-Dienst abh
 
 Opt-in-Dienstkonfigurationen werden in der Visitor `getInstance()` JS-Funktion bereitgestellt, die das globale `adobe`-Objekt instanziiert. Im Folgenden werden die Visitor JS-[Konfigurationseinstellungen](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) für den Opt-in-Dienst aufgeführt.
 
-**Beispiel für eine Opt-in-Konfiguration bei der Initialisierung des globalen`Visitor`-Objekts**
+**Beispiel für eine Opt-in-Konfiguration bei der Initialisierung des globalen `Visitor`-Objekts**
 
 ```
 // FORMAT: Object<adobe.OptInCategories enum: boolean> 
@@ -88,9 +91,9 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-**Zustimmungsänderungen verarbeiten**
+**Änderungen der Zustimmung behandeln**
 
-Besucher können jederzeit während des Besuchs Ihrer Site erstmals Voreinstellungen festlegen oder ihre Voreinstellungen mithilfe Ihrer CMP ändern. Nachdem Visitor JS mit den Anfangseinstellungen initialisiert wurde, können die Berechtigungen des Besuchers geändert werden. Eine Liste der Funktionen zur Zustimmungsverwaltung finden Sie unter [Änderungen an den Zustimmungsparametern](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc).
+Während der Erlebnisse eines Besuchers auf Ihrer Site können sie jederzeit Voreinstellungen zum ersten Mal festlegen oder ihre Voreinstellungen mithilfe Ihres CMP ändern. Nachdem Besucher JS mit den ursprünglichen Einstellungen initialisiert wurde, können die Berechtigungen des Besuchers geändert werden. Eine Liste der Funktionen zur Zustimmungsverwaltung finden Sie unter [Änderungen an den Zustimmungsparametern](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc).
 
 <!--
 <p> *** <b>sample code block </b>*** </p>
@@ -110,9 +113,9 @@ Siehe [Workflow-Konfigurationseinstellungen](../../implementation-guides/opt-in-
 
 ## Opt-in-Berechtigungen des Benutzers prüfen {#section-f136a9024e054d84881e6667fb7c94eb}
 
-Wenn Besucher ihre Berechtigungen ändern, müssen Sie das Ergebnis dieser Änderungen in Erfahrung bringen, um Ihre gespeicherten Zustimmungen mit den Änderungen am Opt-in-Dienst zu synchronisieren. Prüfen Sie die Voreinstellungen Ihrer Besucher mit [Berechtigungsfunktionen](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155). Beispiel:
+Wenn Besucher ihre Berechtigungen ändern, müssen Sie das Ergebnis dieser Änderungen in Erfahrung bringen, um Ihre gespeicherten Zustimmungen mit den Änderungen am Opt-in-Dienst zu synchronisieren. Inspect Sie die Voreinstellungen Ihres Besuchers mithilfe der [Berechtigungsfunktionen](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), z. B.:
 
-**Beispiel für „fetchPermissions“**
+**fetchPermissions-Beispiel**
 
 ```
 optIn.fetchPermissions(function (permissions) { 
@@ -134,13 +137,13 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-In der [API-Dokumentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) erhalten Sie weitere Details zu diesen und anderen in diesem Dokument erwähnten Funktionen, Eigenschaften oder Konfigurationen.
+See [API documentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) for more details on these and any functions, properties, or configurations mentioned in this document.
 
 ## Speichern von Besuchervoreinstellungen {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
 Der Opt-in-Dienst ist eine Möglichkeit zum Speichern von Zustimmungsvoreinstellungen, die für eine Entwicklungs- oder andere Umgebung geeignet ist, in der kein CRM verwendet werden kann. Wenn die Konfigurationseigenschaft `isOptInStorageEnabled` den Wert *true* hat, erstellt der Opt-in-Dienst ein Cookie im System des Besuchers innerhalb Ihrer Domäne.
 
-Das `adobe.optIn`-Objekt ist zustandslos und bietet keinen Speichermechanismus. Stattdessen müssen Sie die Adobe-Zustimmungseinstellungen in Ihrer bestehenden Consent Management Platform (CMP) verwalten, wenn diese die Speicherung benutzerdefinierter Daten ermöglicht. Sie können die Besuchervoreinstellungen auch in einem Cookie im Browser des Besuchers speichern. Sie haben zwei Möglichkeiten, die Voreinstellungen des Benutzers an den Opt-in-Dienst zu übergeben:
+Das `adobe.optIn`-Objekt ist zustandslos und bietet keinen Speichermechanismus. Stattdessen sollten Sie die Einstellungen für die Adobe-Einwilligung in Ihrer bestehenden CMP (Consent Management Platform) verwalten, wenn dies die Speicherung benutzerdefinierter Daten ermöglicht. Oder Sie können die Voreinstellungen für Besucher in einem Cookie im Browser des Besuchers speichern. Sie haben zwei Möglichkeiten, die Voreinstellungen des Benutzers an den Opt-in-Dienst zu übergeben:
 
 * Wenn die Voreinstellungen von Besuchern mit Ihrer Lösung zum Speichern der Zustimmung, also einer CMP oder einem Cookie im Browser des Besuchers, zeitnah abgerufen werden können, dann können Sie diese während der Visitor-Initialisierung an den Opt-in-Dienst übergeben.
 * Wenn das Abrufen der Voreinstellungen jedoch länger dauert oder aus anderen Gründen als asynchroner Prozess durchgeführt werden sollte, können Sie die `approve()` Funktion des Dienstes verwenden, um diese Einstellungen bereitzustellen, nachdem sie erfolgreich geladen wurden.
