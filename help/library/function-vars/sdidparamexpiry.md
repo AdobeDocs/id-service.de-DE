@@ -1,21 +1,24 @@
 ---
-description: Mit dieser Konfiguration können Sie das standardmäßige Ablaufintervall der Zusatzdaten-ID (Supplemental Data ID, SDID) überschreiben, wenn Sie die ID mit der Hilfsfunktion appendSupplementalDataIDTo an eine andere Seite übergeben. Standardmäßig muss der ID-Dienstcode auf der empfangenden Seite die SDID innerhalb von 30 Sekunden aus der URL abrufen, die von der verweisenden Seite gesendet wird. Wenn der ID-Dienstcode auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, fordert er eine neue SDID an. Diese Funktion ist hauptsächlich für A4T-Kunden vorgesehen, die die SDID seitenübergreifend übergeben müssen und dieses Zeitüberschreitungsintervall steuern möchten.
-keywords: ID-Dienst
-seo-description: Mit dieser Konfiguration können Sie das standardmäßige Ablaufintervall der Zusatzdaten-ID (Supplemental Data ID, SDID) überschreiben, wenn Sie die ID mit der Hilfsfunktion appendSupplementalDataIDTo an eine andere Seite übergeben. Standardmäßig muss der ID-Dienstcode auf der empfangenden Seite die SDID innerhalb von 30 Sekunden aus der URL abrufen, die von der verweisenden Seite gesendet wird. Wenn der ID-Dienstcode auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, fordert er eine neue SDID an. Diese Funktion ist hauptsächlich für A4T-Kunden vorgesehen, die die SDID seitenübergreifend übergeben müssen und dieses Zeitüberschreitungsintervall steuern möchten.
+description: Mit dieser Konfiguration können Sie das standardmäßige SDID-Ablaufintervall überschreiben, wenn Sie diese ID mithilfe der Funktion appendSupplementalDataIDTo von einer Seite an eine andere weiterleiten. Standardmäßig hat der ID-Dienst-Code auf der empfangenden Seite 30 Sekunden, um die SDID von der URL abzurufen, die von der verweisenden Seite gesendet wird. Wenn der ID-Dienst-Code auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, wird eine neue SDID angefordert. Diese Funktion ist vor allem für A4T-Kunden gedacht, die die SDID von einer Seite zur nächsten weiterleiten müssen und die Kontrolle über dieses Zeitüberschreitungsintervall benötigen.
+keywords: ID Service
+seo-description: Mit dieser Konfiguration können Sie das standardmäßige SDID-Ablaufintervall überschreiben, wenn Sie diese ID mithilfe der Funktion appendSupplementalDataIDTo von einer Seite an eine andere weiterleiten. Standardmäßig hat der ID-Dienst-Code auf der empfangenden Seite 30 Sekunden, um die SDID von der URL abzurufen, die von der verweisenden Seite gesendet wird. Wenn der ID-Dienst-Code auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, wird eine neue SDID angefordert. Diese Funktion ist vor allem für A4T-Kunden gedacht, die die SDID von einer Seite zur nächsten weiterleiten müssen und die Kontrolle über dieses Zeitüberschreitungsintervall benötigen.
 seo-title: sdidParamExpiry
 title: sdidParamExpiry
 uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 11%
 
 ---
 
 
 # sdidParamExpiry{#sdidparamexpiry}
 
-Mit dieser Konfiguration können Sie das standardmäßige Ablaufintervall der Zusatzdaten-ID (Supplemental Data ID, SDID) überschreiben, wenn Sie die ID mit der Hilfsfunktion appendSupplementalDataIDTo an eine andere Seite übergeben. Standardmäßig muss der ID-Dienstcode auf der empfangenden Seite die SDID innerhalb von 30 Sekunden aus der URL abrufen, die von der verweisenden Seite gesendet wird. Wenn der ID-Dienstcode auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, fordert er eine neue SDID an. Diese Funktion ist hauptsächlich für A4T-Kunden vorgesehen, die die SDID seitenübergreifend übergeben müssen und dieses Zeitüberschreitungsintervall steuern möchten.
+Mit dieser Konfiguration können Sie das standardmäßige SDID-Ablaufintervall überschreiben, wenn Sie diese ID mithilfe der Funktion appendSupplementalDataIDTo von einer Seite an eine andere weiterleiten. Standardmäßig hat der ID-Dienst-Code auf der empfangenden Seite 30 Sekunden, um die SDID von der URL abzurufen, die von der verweisenden Seite gesendet wird. Wenn der ID-Dienst-Code auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, wird eine neue SDID angefordert. Diese Funktion ist vor allem für A4T-Kunden gedacht, die die SDID von einer Seite zur nächsten weiterleiten müssen und die Kontrolle über dieses Zeitüberschreitungsintervall benötigen.
 
-**Überschreiben der SDID-Zeitüberschreitung**
+**SDID-Timeout überschreiben**
 
 Wenn Sie die SDID-Standardzeitüberschreitung ändern müssen, fügen Sie `sdidParamExpiry` der `Visitor.getInstance` Funktion mit der folgenden Syntax hinzu:
 
@@ -23,7 +26,7 @@ Wenn Sie die SDID-Standardzeitüberschreitung ändern müssen, fügen Sie `sdidP
 
 **Codebeispiel**
 
-Der konfigurierte ID-Dienstcode sollte in etwa wie in diesem Beispiel aussehen. In diesem Beispiel wird die SDID-Zeitüberschreitung auf 15 Sekunden eingestellt. Diese Konfiguration funktioniert mit der Hilfsmethode [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d).
+Bei der Konfiguration könnte Ihr ID-Dienst-Code diesem Beispiel ähnlich aussehen. In diesem Beispiel wird die SDID-Zeitüberschreitung auf 15 Sekunden eingestellt. Diese Konfiguration funktioniert mit der Hilfsmethode [appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d).
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
