@@ -3,8 +3,11 @@ description: Die Rolle des Experience Cloud Identity-Diensts in Adobe Experience
 seo-description: Mit dem Experience Cloud-Identity-Dienst (ehemals Besucher-ID-Dienst oder Marketing Cloud ID-Dienst) wird die Nutzung des allgemeinen Identifizierungs-Frameworks für die Experience Cloud-Dienste ermöglicht, wie z. B. Kundenattribute und Zielgruppen.
 seo-title: Experience Cloud ID-Dienst – Übersicht
 title: Experience Cloud ID-Dienst – Übersicht
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 98b72f87b188debd6a5f6b86822c3f714647de61
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 80%
 
 ---
 
@@ -20,21 +23,21 @@ Mit dem [!UICONTROL Experience Cloud Identity-Dienst] wird die Nutzung des allge
 * [!UICONTROL Experience Platform Identity-Dienst]: Der Dienst, der Identitäten verknüpft. Es handelt sich dabei um den Dienst zum Verknüpfen von Geräten für das personenbasierte Erlebnis-Management.
 * [!UICONTROL Experience Cloud ID-Dienst] (ECID): Die eindeutige, persistente ID, die einem Site-Besucher zugewiesen wird. Dies ist eine bestimmte Entität, die vom Platform Identity-Dienst verwendet werden kann.
 
-Wenn Ihre Organisation den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und seine Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
+Wenn Ihr Unternehmen den ID-Dienst implementiert, können Sie mit dieser ID denselben Site-Besucher und dessen Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
 
 ![](assets/ecid-new.png)
 
-Zudem kann der ID-Dienst die unterschiedlichen lösungsspezifischen IDs (z. B. Analytics AID) ersetzen. Mit der Funktionalität [Kunden-IDs und Authentifizierungsstatus](/help/reference/authenticated-state.md) ermöglicht es Ihnen der ID-Dienst, eigene Kunden-IDs an Experience Cloud zu übergeben. Beachten Sie jedoch, dass der ID-Dienst lediglich in den Lösungen verwendet werden kann, die Sie bereits abonniert haben. Er bietet keinen Zugriff auf weitere Produkte, wenn Sie diese noch nicht abonniert haben.
+Darüber hinaus kann der ID-Dienst die verschiedenen lösungsspezifischen IDs (z. B. Analytics-AID) ersetzen. And, through the [Customer IDs and Authentication States](/help/reference/authenticated-state.md) functionality, the ID service lets you pass in your own customer IDs to the Experience Cloud. Beachten Sie jedoch, dass der ID-Dienst nur mit den Lösungen funktioniert, die Sie bereits abonniert haben. Es bietet keinen Zugriff auf andere Produkte, wenn Sie nicht für sie angemeldet sind.
 
 Künftig ist der ID-Dienst eine integrale Komponente von vielen aktuellen und künftigen Experience Cloud-Features, -Erweiterungen und -Services. Der ID-Dienst unterstützt derzeit [Analytics](http://www.adobe.com/de/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/de/marketing-cloud/data-management-platform.html) und [Target](http://www.adobe.com/de/marketing-cloud/testing-targeting.html). Zudem ist er erforderlich, wenn Sie sich an der Adobe Experience Cloud-Gerätekooperation beteiligen möchten. Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. Weitere Informationen über die Bedeutung und die Rolle des Identity-Dienstes finden Sie unter [Why the Experience Cloud ID Service Should be on Your Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/) (Warum Sie den ID-Dienst im Auge behalten sollten).
 
 ## Funktionszusammenfassung
 
-Kurz gesagt, ermöglicht der ID-Dienst Folgendes:
+Zusammenfassend ist der ID-Dienst:
 
-* Erstellen eines gemeinsamen Schlüssels oder einer ID, um Profile und Identitäten zu verknüpfen.
-* Eindeutige Identifikation eines Geräts über mehrere Lösungen hinweg.
-* Setzen eines Erstanbieter-Cookies in der Domäne eines Kunden zum Tracking in dieser Domäne. Siehe das Dokument zu [Cookies und zum Experience Cloud Identity-Dienst](https://docs.adobe.com/content/help/de-DE/id-service/using/intro/cookies.html).
+* Erstellt einen gemeinsamen Schlüssel oder eine gemeinsame ID, die zum Verknüpfen von Profilen und Identitäten verwendet werden kann.
+* Identifiziert ein Gerät eindeutig in mehreren Lösungen.
+* Legt ein Erstanbieter-Cookie in der Domäne des Kunden fest, um sicherzustellen, dass die Verfolgung in derselben Domäne erfolgt. See the document on [cookies and Experience Cloud Identity Service](https://docs.adobe.com/content/help/de-DE/id-service/using/intro/cookies.html) for more information.
 * Erhalten von Aliasen und ID-Zuordnungen von Experience Cloud-Kunden und -Partnern.
 * Verwalten der ID-Synchronisierung innerhalb der Experience Cloud.
 * Unterstützen der ID-Synchronisierung mit unterschiedlichen Drittanbietern im Anzeigentechnologiesystem.
