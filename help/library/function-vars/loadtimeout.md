@@ -1,27 +1,30 @@
 ---
-description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Wird verwendet, um anderen Lösungen (z. B. Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange sie auf eine Antwort des ID-Diensts warten müssen.
-keywords: ID-Dienst
-seo-description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Wird verwendet, um anderen Lösungen (z. B. Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange sie auf eine Antwort des ID-Diensts warten müssen.
+description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient zum Ermitteln anderer Lösungen (z. B. Analytics, Audience Manager, Zielgruppe usw.) wie lange auf eine Antwort des ID-Diensts gewartet wird.
+keywords: ID Service
+seo-description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient zum Ermitteln anderer Lösungen (z. B. Analytics, Audience Manager, Zielgruppe usw.) wie lange auf eine Antwort des ID-Diensts gewartet wird.
 seo-title: loadTimeout
 title: loadTimeout
 uuid: f627e044-bd73-49a4-8a90-6d19aa566751
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 14%
 
 ---
 
 
 # loadTimeout{#loadtimeout}
 
-Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Wird verwendet, um anderen Lösungen (z. B. Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange sie auf eine Antwort des ID-Diensts warten müssen.
+Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient zum Ermitteln anderer Lösungen (z. B. Analytics, Audience Manager, Zielgruppe usw.) wie lange auf eine Antwort des ID-Diensts gewartet wird.
 
 **Syntax:** ` loadTimeout: *`Intervall in Millisekunden`*`
 
-Der Standardwert beträgt 30.000 Millisekunden (30 Sekunden). Es wird dringend empfohlen, dass Sie den Standardwert *nicht* ändern.
+Der Standardwert ist 30.000 Millisekunden (30 Sekunden). Es wird dringend empfohlen, den Standardwert *nicht* zu ändern.
 
 >[!NOTE]
 >
->Aufrufe des ID-Dienstes erfolgen asynchron im Verhältnis zu anderem, nicht von Adobe stammendem Code auf der Seite. Somit wirkt sich die Erhöhung oder Herabsetzung des Ablaufzeitraums nicht darauf aus, mit welcher Geschwindigkeit Ihre Seite Inhalte bereitstellt. Lange Ablaufzeiträume können sich auf die Ladezeit der Seite auswirken, die von geläufigen Netzwerküberwachungswerkzeugen gemessen wird, jedoch nicht auf die Bereitstellungszeit.
+>Aufrufe des ID-Dienstes erfolgen asynchron im Verhältnis zu anderem, nicht von Adobe stammendem Code auf der Seite. Infolgedessen ändert die Erhöhung oder Verringerung des Zeitüberschreitungsintervalls nicht die Rate, mit der Ihre Seite Inhalte wiedergibt. Lange Timeout-Intervalle können sich jedoch auf die Seitenladezeit auswirken, die von den üblichen Netzwerküberwachungstools gemessen wird, aber die Wiedergabedauer bleibt hiervon unberührt.
 
 **Codebeispiel**
 
