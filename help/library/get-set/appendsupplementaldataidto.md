@@ -1,19 +1,22 @@
 ---
-description: Bei dieser Hilfsmethode wird die Zusatzdaten-ID (Supplemental Data ID, SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Dies ist nützlich, wenn Sie A4T verwenden, die SDID beim Wechsel auf eine andere Seite beibehalten werden soll und die einzelnen Besuche zusammengefasst werden sollen. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst mit derselben Organisations-ID in der Quell- und Zieldomäne implementiert haben.
-keywords: ID-Dienst
-seo-description: Bei dieser Hilfsmethode wird die Zusatzdaten-ID (Supplemental Data ID, SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Dies ist nützlich, wenn Sie A4T verwenden, die SDID beim Wechsel auf eine andere Seite beibehalten werden soll und die einzelnen Besuche zusammengefasst werden sollen. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst mit derselben Organisations-ID in der Quell- und Zieldomäne implementiert haben.
+description: Mit dieser Hilfsmethode können Sie die Supplemental Data ID (SDID) als Abfrage-String-Parameter an eine Umleitungs-URL anhängen. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den ID-Dienst mit derselben Organisations-ID für die Quell- und Zieldomänen implementiert haben.
+keywords: ID Service
+seo-description: Mit dieser Hilfsmethode können Sie die Supplemental Data ID (SDID) als Abfrage-String-Parameter an eine Umleitungs-URL anhängen. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den ID-Dienst mit derselben Organisations-ID für die Quell- und Zieldomänen implementiert haben.
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
 uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 30%
 
 ---
 
 
 # appendSupplementalDataIDTo{#appendsupplementaldataidto}
 
-Bei dieser Hilfsmethode wird die Zusatzdaten-ID (Supplemental Data ID, SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Dies ist nützlich, wenn Sie A4T verwenden, die SDID beim Wechsel auf eine andere Seite beibehalten werden soll und die einzelnen Besuche zusammengefasst werden sollen. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst mit derselben Organisations-ID in der Quell- und Zieldomäne implementiert haben.
+Mit dieser Hilfsmethode können Sie die Supplemental Data ID (SDID) als Abfrage-String-Parameter an eine Umleitungs-URL anhängen. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den ID-Dienst mit derselben Organisations-ID für die Quell- und Zieldomänen implementiert haben.
 
 Inhalt:
 
@@ -50,7 +53,7 @@ Wie im Folgenden gezeigt, enthält die URL-Umleitung die SDID des Besuchers, Ihr
 
 ## Ändern der SDID-Zeitüberschreitung mit sdidParamExpiry {#section-99946715cefa4acc95200b093db5297e}
 
-Die [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458)-Konfiguration ermöglicht es Ihnen, das standardmäßige SDID-Ablaufintervall zu ändern, wenn Sie die ID mit der Hilfsfunktion `appendSupplementalDataIDTo` an eine andere Seite übergeben. Standardmäßig muss der ID-Dienstcode auf der empfangenden Seite die SDID innerhalb von 30 Sekunden aus der URL abrufen, die von der verweisenden Seite gesendet wird. Wenn der ID-Dienstcode auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, fordert er eine neue SDID an. Diese Funktion ist hauptsächlich für A4T-Kunden vorgesehen, die die SDID seitenübergreifend übergeben müssen und dieses Zeitüberschreitungsintervall steuern möchten.
+Die [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458)-Konfiguration ermöglicht es Ihnen, das standardmäßige SDID-Ablaufintervall zu ändern, wenn Sie die ID mit der Hilfsfunktion `appendSupplementalDataIDTo` an eine andere Seite übergeben. Standardmäßig hat der ID-Dienst-Code auf der empfangenden Seite 30 Sekunden, um die SDID von der URL abzurufen, die von der verweisenden Seite gesendet wird. Wenn der ID-Dienst-Code auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, wird eine neue SDID angefordert. Diese Funktion ist vor allem für A4T-Kunden gedacht, die die SDID von einer Seite zur nächsten weiterleiten müssen und die Kontrolle über dieses Zeitüberschreitungsintervall benötigen.
 
 Wenn Sie die SDID-Standardzeitüberschreitung ändern müssen, fügen Sie `sdidParamExpiry` der `Visitor.getInstance` Funktion mit der folgenden Syntax hinzu:
 
@@ -58,7 +61,7 @@ Wenn Sie die SDID-Standardzeitüberschreitung ändern müssen, fügen Sie `sdidP
 
 **Codebeispiel**
 
-Der konfigurierte ID-Dienstcode sollte in etwa wie im folgenden Beispiel aussehen. In diesem Beispiel wird die SDID-Zeitüberschreitung auf 15 Sekunden eingestellt.
+Nach der Konfiguration könnte der ID-Dienst-Code diesem Beispiel ähnlich aussehen. In diesem Beispiel wird die SDID-Zeitüberschreitung auf 15 Sekunden eingestellt.
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
