@@ -1,25 +1,28 @@
 ---
-description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten server- und clientseitigen Implementierungen von Target, Analytics und dem ID-Dienst. Kunden, die den ID-Dienst in einer NodeJS- oder Rhino-Umgebung ausführen müssen, sollten diese Informationen ebenfalls lesen. Diese ID-Dienstinstanz verwendet eine gekürzte Version der VisitorAPI.js-Codebibliothek, die Sie über den Node Package Manager (NPM) herunterladen und installieren können. Lesen Sie diesen Abschnitt zu den Installationsanweisungen und anderen Konfigurationsanforderungen.
-keywords: ID-Dienst
-seo-description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten server- und clientseitigen Implementierungen von Target, Analytics und dem ID-Dienst. Kunden, die den ID-Dienst in einer NodeJS- oder Rhino-Umgebung ausführen müssen, sollten diese Informationen ebenfalls lesen. Diese ID-Dienstinstanz verwendet eine gekürzte Version der VisitorAPI.js-Codebibliothek, die Sie über den Node Package Manager (NPM) herunterladen und installieren können. Lesen Sie diesen Abschnitt zu den Installationsanweisungen und anderen Konfigurationsanforderungen.
+description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten serverseitigen und clientseitigen Implementierungen von Zielgruppe, Analytics und dem ID-Dienst. Kunden, die den ID-Dienst in einer NodeJS- oder Rhino-Umgebung ausführen müssen, sollten diese Informationen ebenfalls überprüfen. Diese ID-Dienstinstanz verwendet eine gekürzte Version der VisitorAPI.js-Codebibliothek, die Sie über den Node Package Manager (NPM) herunterladen und installieren können. Lesen Sie diesen Abschnitt zu den Installationsanweisungen und anderen Konfigurationsanforderungen.
+keywords: ID Service
+seo-description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten serverseitigen und clientseitigen Implementierungen von Zielgruppe, Analytics und dem ID-Dienst. Kunden, die den ID-Dienst in einer NodeJS- oder Rhino-Umgebung ausführen müssen, sollten diese Informationen ebenfalls überprüfen. Diese ID-Dienstinstanz verwendet eine gekürzte Version der VisitorAPI.js-Codebibliothek, die Sie über den Node Package Manager (NPM) herunterladen und installieren können. Lesen Sie diesen Abschnitt zu den Installationsanweisungen und anderen Konfigurationsanforderungen.
 seo-title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 73%
 
 ---
 
 
 # Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
-Diese Anweisungen richten sich an A4T-Kunden mit kombinierten server- und clientseitigen Implementierungen von Target, Analytics und dem ID-Dienst. Kunden, die den ID-Dienst in einer NodeJS- oder Rhino-Umgebung ausführen müssen, sollten diese Informationen ebenfalls lesen. Diese ID-Dienstinstanz verwendet eine gekürzte Version der VisitorAPI.js-Codebibliothek, die Sie über den Node Package Manager (NPM) herunterladen und installieren können. Lesen Sie diesen Abschnitt zu den Installationsanweisungen und anderen Konfigurationsanforderungen.
+Diese Anweisungen richten sich an A4T-Kunden mit kombinierten serverseitigen und clientseitigen Implementierungen von Zielgruppe, Analytics und dem ID-Dienst. Kunden, die den ID-Dienst in einer NodeJS- oder Rhino-Umgebung ausführen müssen, sollten diese Informationen ebenfalls überprüfen. Diese ID-Dienstinstanz verwendet eine gekürzte Version der VisitorAPI.js-Codebibliothek, die Sie über den Node Package Manager (NPM) herunterladen und installieren können. Lesen Sie diesen Abschnitt zu den Installationsanweisungen und anderen Konfigurationsanforderungen.
 
 ## Einführung {#section-ab0521ff5bbd44c592c3eaab31c1de8b}
 
-A4T-Kunden (und andere Kunden) können diese Version des ID-Diensts verwenden, wenn sie:
+A4T (und andere Kunden) können diese Version des ID-Diensts verwenden, wenn sie:
 
-* Webseiteninhalt auf ihren Servern rendern müssen und ihn für die endgültige Anzeige an einen Browser weiterleiten müssen.
+* Wiedergeben von Webseiteninhalten auf ihren Servern und Übermitteln an einen Browser zur endgültigen Anzeige.
 * Serverseitige [!DNL Target]-Aufrufe starten.
 * Clientseitige (im Browser) Aufrufe zu [!DNL Analytics] starten müssen.
 * Separate [!DNL Target]- und [!DNL Analytics]-IDs synchronisieren müssen, um zu bestimmen, ob ein von einer Lösung erkannter Besucher dieselbe Person ist, die von einer anderen Lösung erkannt wurde.
@@ -42,12 +45,12 @@ Die serverseitige Aktivität beginnt, wenn ein Besucher eine HTTP-Anforderung zu
 
 Erstellen Sie als nächstes eine serverseitige *`payload request`* für den ID-Dienst erstellen. Eine Nutzlastanforderung:
 
-* gibt das AMCV-Cookie an den ID-Dienst weiter.
-* Fordert für Target und Analytics in den nachfolgenden Schritten erforderliche Daten an, die im Folgenden beschrieben werden.
+* Sendet das AMCV-Cookie an den ID-Dienst.
+* Fordert Daten an, die für Zielgruppe und Analytics in den folgenden Schritten erforderlich sind, die nachfolgend beschrieben werden.
 
 >[!NOTE]
 >
->Für diese Methode ist eine einzelne mbox aus [!DNL Target] erforderlich. Rufen Sie [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload) auf, sofern Sie mehrere mboxes in einem einzelnen Aufruf benötigen.
+>Für diese Methode ist eine einzelne mbox aus [!DNL Target] erforderlich. If you need to request multiple mboxes in a single call, see [generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload).
 
 Ihre Nutzlastanforderung sollte wie das folgende Codebeispiel aussehen. Die Funktion `visitor.setCustomerIDs` ist im Codebeispiel optional. Weitere Informationen finden Sie unter [Kunden-IDs und Authentifizierungszustände.](../reference/authenticated-state.md)
 
@@ -124,7 +127,7 @@ Nachdem Ihr Server Nutzlastdaten vom ID-Dienst erhalten hat, müssen Sie zusätz
 
 ## Schritt 4: Serverstatus für den ID-Dienst abrufen {#section-8ebfd177d42941c1893bfdde6e514280}
 
-Serverstatusdaten enthalten Informationen über die auf dem Server vorgenommene Arbeit. Diese Informationen sind für den clientseitigen ID-Dienstcode erforderlich. Kunden, die den ID-Dienst über [!DNL Dynamic Tag Manager] Dynamischen Tag-Manager (DTM) implementiert haben, können DTM so konfigurieren, dass Serverstatusdaten über dieses Tool weitergegeben werden. Wenn Sie den ID-Dienst über einen benutzerdefinierten Prozess eingerichtet haben, müssen Sie den Serverstatus mit Ihrem eigenen Code zurückgeben. Der clientseitige ID-Dienst und [!DNL Analytics]-Code geben die Daten an Adobe weiter, wenn die Seite geladen wird.
+Serverstatusdaten enthalten Informationen über die auf dem Server geleistete Arbeit. Diese Informationen sind für den clientseitigen ID-Dienst-Code erforderlich. Kunden, die den ID-Dienst über [!DNL Dynamic Tag Manager] Dynamischen Tag-Manager (DTM) implementiert haben, können DTM so konfigurieren, dass Serverstatusdaten über dieses Tool weitergegeben werden. Wenn Sie den ID-Dienst über einen benutzerdefinierten Prozess eingerichtet haben, müssen Sie den Serverstatus mit Ihrem eigenen Code zurückgeben. Der clientseitige ID-Dienst und [!DNL Analytics]-Code geben die Daten an Adobe weiter, wenn die Seite geladen wird.
 
 **Abrufen des Serverstatus über DTM**
 
@@ -153,7 +156,7 @@ Response.send("
 
 **DTM-Einstellungen**
 
-Fügen Sie dem Abschnitt **[!UICONTROL Allgemein &gt; Einstellungen]** Ihrer ID-Dienstinstanz diese als Namens-Wert-Paare hinzu:
+Fügen Sie dem Abschnitt **[!UICONTROL Allgemein > Einstellungen]** Ihrer ID-Dienstinstanz diese als Namens-Wert-Paare hinzu:
 
 * **[!UICONTROL Name:]** serverState
 * **[!UICONTROL Wert:]** %serverState%
@@ -162,11 +165,11 @@ Fügen Sie dem Abschnitt **[!UICONTROL Allgemein &gt; Einstellungen]** Ihrer ID
    >
    >Der Wertname muss mit dem Variablennamen übereinstimmen, den Sie für `serverState` in Ihrem Seitencode festgelegt haben.
 
-Ihre konfigurierten Einstellungen sollten wie folgt aussehen:
+Die konfigurierten Einstellungen sollten wie folgt aussehen:
 
 ![](assets/server_side_dtm.png)
 
-Siehe auch  [Experience Cloud Identity-Diensteinstellungen für DTM ](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+See also, [Experience Cloud Identity Service Settings for DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **Abrufen des Serverstatus ohne DTM**
 
@@ -191,9 +194,9 @@ Response.send("
 
 ## Schritt 5: Eine Seite verarbeiten und Experience Cloud-Daten zurückgeben {#section-4b5631a0d75a41febd6f43f8c214c263}
 
-Zu diesem Zeitpunkt sendet der Webserver Seiteninhalt an den Browser des Besuchers. Ab diesem Zeitpunkt nimmt der Browser (nicht der Server) alle verbleibenden ID-Dienst- und [!DNL Analytics]-Aufrufe vor. Zum Beispiel im Browser:
+Zu diesem Zeitpunkt sendet der Webserver Seiteninhalt an den Browser des Besuchers. Ab diesem Zeitpunkt nimmt der Browser (nicht der Server) alle verbleibenden ID-Dienst- und [!DNL Analytics]-Aufrufe vor. Beispiel im Browser:
 
-* Der ID-Dienst empfängt Statusdaten vom Server und gibt die SDID an AppMeasurement weiter.
+* Der ID-Dienst empfängt Statusdaten vom Server und übergibt die SDID an AppMeasurement.
 * AppMeasurement sendet Daten über die Seitenaufrufe an [!DNL Analytics], einschließlich der SDID.
 * [!DNL Analytics] und [!DNL Target] vergleichen SDIDs für diesen Besucher. Bei einer identischen SDID fügen [!DNL Target] und [!DNL Analytics] den serverseitigen Aufruf und den clientseitigen Aufruf zusammen. Zu diesem Zeitpunkt erkennen beide Lösungen diesen Besucher als dieselbe Person.
 
