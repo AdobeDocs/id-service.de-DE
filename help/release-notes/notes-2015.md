@@ -1,12 +1,15 @@
 ---
 description: Versionshinweise und Aktualisierungen für das Jahr 2015
-keywords: ID-Dienst
+keywords: ID Service
 seo-description: Versionshinweise und Aktualisierungen für das Jahr 2015
 seo-title: Versionshinweise für 2015
 title: Versionshinweise für 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 65%
 
 ---
 
@@ -19,30 +22,30 @@ Versionshinweise und Aktualisierungen für das Jahr 2015
 
 November 2015
 
-Der Children's Online Privacy Protection Act (COPPA) verbietet die Online-Erfassung personenbezogener Daten von Kindern unter 13 Jahren ohne nachprüfbare elterliche Zustimmung. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. Siehe [COPPA-Unterstützung im Experience Cloud Identity-Dienst](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
+Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Online-Erfassung personenbezogener Daten von Kindern unter 13 Jahren ohne nachprüfbare elterliche Zustimmung. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. Siehe [COPPA-Unterstützung im Experience Cloud Identity-Dienst](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
-September 2015
+September 2015
 
-* Fehler im Safari-Browser behoben, der die Funktion der Synchronisierungsdienste verhinderte, wenn Benutzer Drittanbietercookies blockiert hatten. (AAM-20764)
+* Es wurde ein Fehler im Safari-Browser behoben, durch den Synchronisierungsdienste nicht funktionierten, wenn Benutzer Drittanbieter-Cookies blockierten. (AAM-20764)
 * Aufrufe des ID-Dienstes enthalten nun die Versions-ID im Parameter `d_visid_ver=`. Die zurückgegebene ID hilft internen Teams bei der Fehlerbehebung und Supportproblemen. (AAM-20824)
 
 ## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
-August 2015
+August 2015
 
-* Ein Fehler wurde behoben, um zu verhindern, dass der ID-Dienst einen iframe anfordert, wenn keine zu synchronisierenden oder auszulösenden Daten vorhanden sind. (AAM-20164)
-* Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domänen-Cookies nicht ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domäne wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
+* Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst einen iframe anfordert, wenn keine Daten synchronisiert oder ausgelöst werden müssen. (AAM-20164)
+* Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst ein mehrteiliges Top-Level-Domänen-Cookie ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domäne wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
 
-   Davon waren nur einige Kunden betroffen, die *alle* folgenden Kriterien erfüllten:
+   Dies betraf nur einige wenige Kunden, die *alle* folgenden Kriterien erfüllten:
 
-   * Verwendung des ID-Diensts.
-   * Aktivierung einer [Schonfrist](../reference/analytics-reference/grace-period.md) *oder* Verwendung von Cookies von Erstanbietern und Benutzer blockieren Cookies von Drittanbietern.
+   * Verwenden des ID-Diensts.
+   * Aktivierung einer [Schonfrist ](../reference/analytics-reference/grace-period.md)*oder* Verwendung von Cookies von Erstanbietern und Benutzer blockieren Cookies von Drittanbietern.
 
    * Besitz von Seiten mit mehrteiligen Top-Level-Domains.
 
-Dokumentationsüberarbeitungen in dieser Veröffentlichung umfassen:
+Dokumentationsüberarbeitungen in dieser Version umfassen:
 
 * [API-Methoden und Codebibliothek](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Reorganisierter Inhalt und Text. In den meisten Fällen erhält jede Methode eine eigene Seite.
 * [Anforderungen für den Experience Cloud Identity-Dienst](../reference/requirements.md): Überarbeiteter Inhalt und neu organisierter Text.
@@ -71,9 +74,9 @@ Weitere Informationen finden Sie unter [Experience Cloud](../implementation-guid
 
 ## Version 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
 
-Februar 2015
+Februar 2015
 
-Fehlerbehebung der Zeitüberschreitung bei Anforderungen für AAM Blob und Location Hint. Bei einer Zeitüberschreitung bleiben diese Felder nun auf der aktuellen Seite im System leer und es werden alle Callbacks aufgerufen. Die Zeitüberschreitung wird als Fehler behandelt, sodass der Vorgang auf der nächsten Seite erneut versucht wird. (AN-94473, AN-94474)
+Die Verarbeitung des Timeouts bei Anforderungen für AAM Blob und Location Hint wurde korrigiert. Bei einem Timeout bleiben diese Felder nun für die aktuelle Seite korrekt leer und es werden alle Callbacks ausgeführt. Die Zeitüberschreitung wird als Fehlerbedingung behandelt, daher wird es auf der nächsten Seite erneut versucht. (AN-94473, AN-94474)
 
 ## Version 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
