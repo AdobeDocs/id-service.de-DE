@@ -1,11 +1,14 @@
 ---
 description: Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen importieren und Hash-IDs exportieren können. Dies ist eine optionale JavaScript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können auch weiterhin Ihre eigenen Hash-Methoden beim Senden von Kunden-IDs verwenden.
-keywords: ID-Dienst
+keywords: ID Service
 seo-description: Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen importieren und Hash-IDs exportieren können. Dies ist eine optionale JavaScript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können auch weiterhin Ihre eigenen Hash-Methoden beim Senden von Kunden-IDs verwenden.
 seo-title: SHA-256-Hash-Unterstützung für setCustomerIDs
 title: SHA-256-Hash-Unterstützung für setCustomerIDs
 translation-type: tm+mt
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +23,7 @@ Es gibt folgende zwei Möglichkeiten, um Hash-Unterstützung mit setCustomerIDs 
 
 ## Verwenden der `setCustomerIDs`-Methode in ECID {#use-setcustomerids-method}
 
-In der ersten Variante wird die Methode [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) verwendet.
+The first method leverages using the [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) method.
 
 Vor dem Hashing führt die ECID-Bibliothek eine Datennormalisierung der customerIDs durch. Durch diesen Prozess werden die Leerzeichen zu beiden Enden der customerIDs entfernt und alle Zeichen in Kleinbuchstaben umgewandelt. Beispiel: Die E-Mail-Adresse “ ecid@adobe.com “ wird in “ecid@adobe.com“ umgewandelt.
 
@@ -35,7 +38,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Neben der Besucher-ID für Experience Cloud können Sie jedem Kunden eine weitere ID, einen Authentifizierungsstatus und einen Hash-Typ (SHA-256) zuweisen. Wenn Sie keinen Hash-Typ angeben, wird angenommen, dass kein Hashing stattfindet.
 
-Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Sie können diese IDs beispielsweise als [Kundenattribute](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) in Experience Cloud hochladen und aus verschiedenen Lösungen auf die Daten zugreifen.
+Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. For example, you can upload these IDs as [customer attributes](https://docs.adobe.com/content/help/de-DE/core-services/interface/customer-attributes/attributes.html) to the Experience Cloud and access this data across the different solutions.
 
 Kunden-IDs, der Authentifizierungsstatus und der Hash-Typ *werden nicht* in einem Cookie für die spätere Verwendung gespeichert. Stattdessen sollten Kunden-IDs, Authentifizierungsstatus und Hash-Typ in einer Instanzvariablen gespeichert werden, die wie unten dargestellt mithilfe von [`getCustomerIDs`](/help/library/get-set/getcustomerids.md) abgerufen werden kann:
 
@@ -64,13 +67,13 @@ In der unten stehenden Tabelle finden Sie eine Beschreibung des `d_cid_ic`-Param
 
 | Parameter | Beschreibung |
 |------------|----------|
-| `d_cid_ic` | Übergibt den Integrationscode, die Unique User ID (DPUUID) und eine Authentifizierungsstatus-ID an den ID-Dienst. Trennen Sie den Integrationscode und die DPUUID mit dem nicht druckbaren Steuerzeichen <code>%01</code>: <br> Beispiel: <code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Authentifizierungsstatus</b> <br> Dies ist eine optionale ID im Parameter d_cid_ic. Sie wird als Ganzzahl ausgedrückt und gibt den Authentifizierungsstatus von Benutzern an, wie unten gezeigt: <br> <ul><li>0 (Unbekannt oder noch nie authentifiziert)</li><li>1 (Aktuell authentifiziert für diese Instanz/Seite/App-Kontext)</li><li>2 (Abgemeldet)</li></ul> <br> Beispiele: <br> <ul><li>Unbekannt: ...d_cid=123%01456%01<b>0</b></li><li>Authentifiziert: ...d_cid=123%01456%01<b>1</b></li><li>Abgemeldet: ...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | Übergibt den Integrationscode, die Unique User ID (DPUUID) und eine Authentifizierungsstatus-ID an den ID-Dienst. Trennen Sie den Integrationscode und die DPUUID mit dem nicht druckbaren Steuerzeichen %01</code>: <br> Beispiel: d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Authentifizierungsstatus</b> <br> Dies ist eine optionale ID im Parameter d_cid_ic. Sie wird als Ganzzahl ausgedrückt und gibt den Authentifizierungsstatus von Benutzern an, wie unten gezeigt: <br> <ul><li>0 (Unbekannt oder noch nie authentifiziert)</li><li>1 (Aktuell authentifiziert für diese Instanz/Seite/App-Kontext)</li><li>2 (Abgemeldet)</li></ul> <br> Beispiele: <br> <ul><li>Unbekannt: ...d_cid=123%01456%01<b>0</b></li><li>Authentifiziert: ...d_cid=123%01456%01<b>1</b></li><li>Abgemeldet: ...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## Hinzufügen einer Aktion in Adobe Experience Platform {#add-action-launch}
 
-Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Read more about Launch in the [Launch product documentation](https://docs.adobe.com/content/help/en/launch/using/overview.html).
+Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Read more about Launch in the [Launch product documentation](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html).
 
-To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
+To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/de-DE/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
 
 ![](/help/reference/assets/hashing-support.png)
 
