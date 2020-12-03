@@ -1,9 +1,9 @@
 ---
 title: Opt-in zur Steuerung von Experience Cloud-Aktivitäten auf Basis des Benutzereinverständnisses
 description: Das Opt-in-Objekt von Adobe ist eine Erweiterung des Adobe Experience Platform Identity Service, mit dem Sie steuern können, ob und welche Experience Cloud-Lösungen basierend auf der Zustimmung des Endbenutzers auf Web-Seiten Cookies erstellen oder Beacons auslösen können.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Daraus ergibt sich Folgendes:
 
 [!UICONTROL Opt-in] lässt sich am einfachsten mit Adobe Experience Platform Launch konfigurieren. Im folgenden kurzen Videos finden Sie eine Anleitung.
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
 Wenn Sie nicht Experience Platform Launch verwenden, können Sie die Konfiguration des [!UICONTROL Opt-in] bei der Initialisierung des globalen Besucher-Objekts festlegen, wie in der [Dokumentation](https://marketing.adobe.com/resources/help/de_DE/mcvid/getting-started.html)dargestellt.
 
@@ -46,7 +46,7 @@ Beim Einrichten einer Benutzeroberfläche für die Verwendung von [!UICONTROL Op
 
 Im folgenden Video sehen Sie eine kurze Demo dazu, wie das [!UICONTROL Opt-in] auf einer Seite funktioniert und wie es beeinflusst, ob die Experience Cloud-Lösungen Cookies setzen, Beacons starten usw.
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
 
 **HINWEIS:** Es ist wichtig zu beachten, dass zum Zeitpunkt der Erstellung dieses Artikels [!UICONTROL Opt-in] nicht in den Bibliotheken aller Experience Cloud-Lösungen integriert war. Folgende Bibliotheken werden derzeit für [!UICONTROL Opt-in] unterstützt:
 
