@@ -1,12 +1,15 @@
 ---
 description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2018.
-keywords: ID-Dienst
+keywords: ID Service
 seo-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2018.
 seo-title: Versionshinweise für 2018
 title: Versionshinweise für 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '489'
+ht-degree: 36%
 
 ---
 
@@ -26,8 +29,8 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Verbesserte Sicherheit für AMCV-Cookies </p> </td> 
-   <td colname="col2"> <p>Im Rahmen einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek in den für die Sitzungsverwaltung verwendeten Cookies nicht die richtigen Attribute angegeben werden. Das konnte dazu führen, dass Cookie-Informationen versehentlich freigegeben wurden. Um dieses Problem zu beheben, wurde eine Konfiguration hinzugefügt, mit der Kunden dem AMCV-Cookie das Attribut „Secure“ hinzufügen können. Siehe <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
+   <td colname="col1"> <p>Erhöhte Sicherheit für AMCV-Cookies </p> </td> 
+   <td colname="col2"> <p>Bei einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek die für die Sitzungsverwaltung verwendeten Cookies keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Um dies zu lösen, haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, den AMCV-Cookie als sicher festzulegen. Siehe <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -43,16 +46,16 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Verbesserte Sicherheit für AMCV-Cookies </p> </td> 
-   <td colname="col2"> <p>Im Rahmen einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek in den für die Sitzungsverwaltung verwendeten Cookies nicht die richtigen Attribute angegeben werden. Das konnte dazu führen, dass Cookie-Informationen versehentlich freigegeben wurden. Um dieses Problem zu beheben, wurde eine Konfiguration hinzugefügt, mit der Kunden dem AMCV-Cookie das Attribut „Secure“ hinzufügen können. Siehe secureCookie. </p> </td> 
+   <td colname="col1"> <p>Erhöhte Sicherheit für AMCV-Cookies </p> </td> 
+   <td colname="col2"> <p>Bei einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek die für die Sitzungsverwaltung verwendeten Cookies keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Um dies zu lösen, haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, den AMCV-Cookie als sicher festzulegen. Siehe secureCookie. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Integrationscode und ID müssen Zahlen oder nicht leere Zeichenfolgen sein. </p> </td> 
-   <td colname="col2"> <p>Fehlerkorrektur – Jetzt tritt kein Fehler mehr bei der Validierung von „setCustomerIDs“ auf, wenn die Daten einen Integrationscode oder eine Integrations-ID enthalten, bei denen es sich weder um eine Zahl noch um eine nicht leere Zeichenfolge handelt. </p> </td> 
+   <td colname="col1"> <p>Integrationscode und ID müssen Zahlen oder nicht leere Zeichenfolgen sein </p> </td> 
+   <td colname="col2"> <p>Es wurde ein Problem bei der Validierung von "setCustomerIDs"behoben, das auftrat, wenn Daten einen Integrationscode oder eine Integrations-ID enthielten, der weder eine Zahl noch eine nicht leere Zeichenfolge war. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> ECID JS ist im öffentlichen Git-Repository verfügbar </td> 
-   <td colname="col2"> ECID JS ist jetzt für alle Experience Cloud-Kunden im öffentlichen Git-Repository unter https://github.com/Adobe-Marketing-Cloud/id-service/releases verfügbar. </td> 
+   <td colname="col1"> ECID JS ist im Public Git Repo verfügbar </td> 
+   <td colname="col2"> ECID JS ist jetzt im Public Git Repo für alle Experience Cloud-Kunden unter https://github.com/Adobe-Marketing-Cloud/id-service/releases verfügbar. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -69,7 +72,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Unrealistischer Anstieg der Unique Visitor-Anzahl </p> </td> 
-   <td colname="col2"> <p>Bei Version 3.1.0 des Experience Cloud Identity-Diensts haben wir ein Problem erkannt, das bei Implementierung der Version zu einem unrealistischen Anstieg der Unique Visitor-Anzahl führte. Dieses Verhalten tritt nur bei der letzten Version (3.1.0) des ECID auf und wenn Benutzer die Option „Nur von aktueller Website erlauben“ in den Datenschutzeinstellungen des Safari-Browsers ausgewählt haben. Dieses Problem wurde in Version 3.1.2 behoben. </p> </td> 
+   <td colname="col2"> <p>Bei Version 3.1.0 des Experience Cloud Identity-Diensts haben wir ein Problem erkannt, das bei Implementierung der Version zu einem unrealistischen Anstieg der Unique Visitor-Anzahl führte. Dieses Verhalten wird nur mit der neuesten Version von ECID, Version 3.1.0, gezeigt und wenn ein Benutzer in den Datenschutzeinstellungen eines Safari-Browsers die Option "Nur von der aktuellen Website zulassen"ausgewählt hat. Version 3.1.2 behebt dieses Problem. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,8 +92,8 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Cookie in falscher Domäne erstellt </p> </td> 
-   <td colname="col2"> <p>Es wurde ein Fehler behoben, durch den ein temporäres Visitor-Cookie in der Cookie-Domäne „default“ gesetzt wurde, statt in der durch die Konfiguration festgelegten Domäne (initConfig). </p> </td> 
+   <td colname="col1"> <p>Cookie auf inkorrekter Domäne eingestellt </p> </td> 
+   <td colname="col2"> <p>Es wurde ein Fehler behoben, durch den das temporäre Besucher-Cookie ein Cookie in der "Standard"-Cookie-Domäne setzte, anstatt es in der in der Konfiguration angegebenen Domäne (initConfig) einzustellen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -107,7 +110,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Thread-Yielding für mehrere ID-Synchronisierungsanfragen </p> </td> 
-   <td colname="col2"> <p><b>Iframe</b> </p> <p>Bei Kunden, die mehrere ID-Synchronisierungen durchführen, wird die Benutzeroberfläche aufgrund der fortlaufend durchgeführten CPU-Berechnungen in manchen Fällen blockiert. Wir führen jetzt das Thread-Yielding ein, um die ID-Synchronisierungsanfragen um je 100 Millisekunden zu trennen. </p> <p>Diese Änderung verbessert die Leistung bei Kunden, die Visitor 2.3.0 oder höher und DIL 6.10 oder höher verwenden. </p> </td> 
+   <td colname="col2"> <p><b>Iframe</b> </p> <p>Bei Kunden, die mehrere ID-Synchronisierungen durchführen, wird die Benutzeroberfläche in einigen Fällen blockiert, da kontinuierliche CPU-Berechnungen stattfinden. Wir führen Thread-Ergebnisse ein, um die ID-Synchronisierungsanforderungen jeweils um 100 msec zu trennen. </p> <p>Diese Änderung verbessert die Leistung von Kunden, die Besucher 2.3.0+ und DIL 6.10+ verwenden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Neue Möglichkeit zur Aktivierung von Drittanbieteraufrufen </td> 
@@ -115,7 +118,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
   </tr> 
   <tr> 
    <td colname="col1"> <p>Unterstützung für Internet Explorer </p> </td> 
-   <td colname="col2"> <p>Internet Explorer 6, 7, 8 und 9 werden vom ID-Dienst nicht mehr unterstützt. </p> </td> 
+   <td colname="col2"> <p>Der ID-Dienst unterstützt Internet Explorer 6, 7, 8 und 9 nicht mehr. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Aktualisierung der getInstance-Dokumentation </p> </td> 
