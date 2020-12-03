@@ -5,9 +5,9 @@ seo-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP
 seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 100%
 
