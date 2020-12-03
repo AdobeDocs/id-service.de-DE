@@ -1,12 +1,15 @@
 ---
 description: Öffentliche Methoden zur Interaktion mit dem ID-Dienst.
-keywords: ID-Dienst
+keywords: ID Service
 seo-description: Öffentliche Methoden zur Interaktion mit dem ID-Dienst.
 seo-title: Methoden
 title: Methoden
 uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 >[!NOTE]
 >
->Die *Javascript-Bibliotheken des Experience Cloud ID-Diensts* wurden vor Kurzem verschoben. Die neueste Version der ECID-JS-Bibliotheken finden Sie unter [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Die *Javascript-Bibliotheken des Experience Cloud ID-Diensts* wurden vor Kurzem verschoben. The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Verwandte Artikel:
 
