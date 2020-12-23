@@ -3,11 +3,11 @@ title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 seo-title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 seo-description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 012bf5db473b37b17e7af957c08da71b253c718f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->Es wurden Aktualisierungen vorgenommen, die die neuesten Änderungen an ITP widerspiegeln, die am 12. November 2020 als Teil der Big Sur OS-Version veröffentlicht wurden.
+>Es wurden Aktualisierungen vorgenommen, um die neuesten Änderungen an ITP widerzuspiegeln, die am 12. November 2020 als Teil der Big Sur OS-Version veröffentlicht wurden.
 
 Da Safari per ITP das domänenübergreifende Tracking einschränkt, setzt Adobe für Bibliotheken Best Practices ein, die einerseits Kunden unterstützen und andererseits auch den Datenschutz und die Wahlfreiheit der Konsumenten berücksichtigen.
 
-Ab dem 10. November 2020 gilt für alle durch die Dokument.cookie-API festgelegten persistenten Cookies von Erstanbietern, die häufig als &quot;clientseitige&quot;Cookies bezeichnet werden, sowie für Cookies, die durch CNAME-Implementierungen von Erstanbietern in Safari und mobilen iOS-Browsern gesetzt werden, eine Ablaufzeit von sieben Tagen. Drittanbieter-Cookies werden weiterhin blockiert, wie in früheren Versionen von ITP angegeben. Weitere Informationen zu ITP 2.1 seinen Auswirkungen auf Adobe-Lösungen finden Sie im Artikel [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+Seit dem 10. November 2020 gilt für alle durch die API „document.cookie“ festgelegten persistenten Cookies von Erstanbietern, die häufig als „Client-seitige“ Cookies bezeichnet werden, sowie für Cookies, die durch CNAME-Implementierungen von Erstanbietern in Safari und mobilen iOS-Browsern gesetzt werden, eine Gültigkeit von sieben Tagen. Drittanbieter-Cookies werden, wie in früheren Versionen von ITP beschrieben, weiterhin blockiert. Weitere Informationen zu ITP 2.1 seinen Auswirkungen auf Adobe-Lösungen finden Sie im Artikel [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
-## Änderungen, Methoden und Konfigurationen im ITP
+## Änderungen, Methoden und Konfigurationen in Verbindung mit ITP
 
 Wenn zusätzliche Methoden zum Tracking in Safari entwickelt werden, werden sie auf dieser Seite hinzugefügt.
 
@@ -32,15 +32,15 @@ Wenn zusätzliche Methoden zum Tracking in Safari entwickelt werden, werden sie 
 
 Unten finden Sie weitere Informationen zu ITP und zur Nutzung der ECID-Bibliothek.
 
-## Aktuelles Verhalten der ECID-Bibliothek mit ITP und Apple WebKit
+## Aktuelles Verhalten der ECID-Bibliothek mit ITP und dem WebKit von Apple
 
-ITP 2.1 beeinträchtigt die Möglichkeit, clientseitige Cookies zu schreiben, wodurch Kunden keine präzisen Besucher-Trackinginformationen bereitgestellt werden können. Daher wird in den CNAME-Tracking-Servern der Adobe eine Änderung eingeführt, um die Experience Cloud-ID (ECID) des Besuchers in einem Erstanbieter-Cookie zu speichern.
+ITP 2.1 beeinträchtigt die Möglichkeit, clientseitige Cookies zu schreiben, wodurch Kunden keine präzisen Besucher-Trackinginformationen bereitgestellt werden können. Daher wurden die CNAME-Trackingserver von Adobe dahingehend angepasst, dass die Experience Cloud ID (ECID) eines Besuchers jetzt in einem Erstanbieter-Cookie gespeichert wird.
 
 Diese Änderung ist nur für ECID-Kunden hilfreich, die einen Analytics-CNAME im Erstanbieterkontext verwenden. Wenn Sie Analytics-Kunde sind, der derzeit keinen CNAME verwendet, oder kein Analytics-Kunde sind, sind Sie dennoch zu einem CNAME-Datensatz berechtigt. Wenden Sie sich an die Kundenunterstützung oder Ihren Kundenbetreuer, um sich für einen [CNAME](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-first-party.html) zu registrieren.
 
 Führen Sie ein Upgrade auf eine Version ab ECID-Bibliothek v. 4.3.0 durch, um diese Änderung nutzen zu können.
 
-Im Folgenden wird das Verhalten der ECID-Bibliothek mit ITP 2.1 und die neuesten Änderungen erläutert, die Apple im Rahmen der Big Sur-Version vorgenommen hat
+Im Folgenden werden das Verhalten der ECID-Bibliothek mit ITP 2.1 und die neuesten Änderungen erläutert, die Apple im Rahmen der Big Sur-Version vorgenommen hat.
 
 **Design**
 
@@ -48,15 +48,15 @@ Sobald eine ID-Anforderung an demdex.net gesendet und eine ECID abgerufen wird, 
 
 >[!IMPORTANT]
 >
->Im Rahmen der Big Sur-Aktualisierungen wird ein über CNAME eingestelltes `s_ecid` Cookie auch bis zu einem Ablauf von sieben Tagen gespeichert.
+>Im Rahmen der Big Sur-Aktualisierungen wird ein über CNAME festgelegtes `s_ecid` Cookie auch sieben Tage bis zu seinem Ablauf gespeichert.
 
 Dieses neue `s_ecid`-Cookie hat denselben Opt-out-Status wie das AMCV-Cookie. Wenn die ECID im `s_ecid`-Cookie gelesen wird, wird demdex sofort aufgerufen, um den aktuellen Opt-out-Status für diese ID abzufragen, und im AMCV-Cookie gespeichert.
 
 Wenn sich Ihr Kunde per Opt-out vom Analytics-Tracking anhand dieser [Methode](https://docs.adobe.com/content/help/de-DE/analytics/implementation/js/opt-out.html) abgemeldet hat, wird dieses `s_ecid`-Cookie gelöscht.
 
-The tracking server name should be supplied to the VisitorJS library when initializing the library using `trackingServer` or `trackingServerSecure`. This should match the `trackingServer` config in the Analytics configs.
+Der Name des Trackingservers sollte der VisitorJS-Bibliothek unter Verwendung von `trackingServer` oder `trackingServerSecure` bereitgestellt werden, wenn die Bibliothek initialisiert wird. Dies sollte mit der `trackingServer`-Konfiguration in den Analytics-Konfigurationen übereinstimmen.
 
-Wenn Sie sich gegen diese Methode entscheiden, fügen Sie Ihrer ECID-Bibliotheksimplementierung die folgende Konfiguration hinzu: `discardtrackingServerECID`. Wenn diese Konfiguration auf &quot;true&quot;gesetzt ist, liest die Besucher-Bibliothek die vom Erstanbieter-Tracking-Server festgelegte MID nicht.
+Wenn Sie sich gegen diese Methode entscheiden, fügen Sie Ihrer ECID-Bibliotheksimplementierung die folgende Konfiguration hinzu: `discardtrackingServerECID`. Wenn diese Konfiguration auf „true“ gesetzt ist, liest die Visitor-Bibliothek die vom Erstanbieter-Trackingserver festgelegte MID nicht.
 
 ![](assets/itp-proposal-v1.png)
 
