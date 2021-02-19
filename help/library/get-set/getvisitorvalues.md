@@ -1,6 +1,6 @@
 ---
 description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
 seo-title: getVisitorValues
 title: getVisitorValues
@@ -8,7 +8,7 @@ uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 100%
 
 ---
@@ -63,7 +63,7 @@ Im Beispiel für die standardmäßige Antwort wurden einige Werte zu Demonstrati
 }
 ```
 
-## Nutzungsszenario 2: Benutzerdefinierten Datensatz anfordern {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Nutzungsszenario 2: Benutzerdefinierten Datensatz anfordern  {#section-467b2f4e513344c89b7332b05f6f59f3}
 
 In diesem Code wird ein optionales Array verwendet, um einen spezifischen Satz von IDs mit der `visitor.FIELDS`-Enumeration zurückzugeben. In diesem Fall möchten wir nur die Experience Cloud ID (MCID) und die Analytics-ID (MCAID) des Besuchers abrufen. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
 
@@ -85,7 +85,7 @@ Die benutzerdefinierte Antwort im Beispiel gibt nur die in der Anforderung angeg
 }
 ```
 
-## Definierte Antwortparameter {#section-4c4c300167694c6fbff1d6c612f372b5}
+## Definierte Antwortparameter  {#section-4c4c300167694c6fbff1d6c612f372b5}
 
 In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Dies sind auch alle Werte in der `visitor.FIELDS`-Enumeration. Beachten Sie, dass diese Methode eine leere Zeichenfolge zurückgibt, wenn es für eine bestimmte Variable keine Werte gibt.
 
