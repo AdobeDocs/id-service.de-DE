@@ -25,7 +25,7 @@ Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösung
 
 1. ECID Version 4.0.
 
-   [Laden Sie](https://github.com/Adobe-Marketing-Cloud/id-service/releases) die neueste ECID-Version herunter.
+   [Die neueste ECID-Version ](https://github.com/Adobe-Marketing-Cloud/id-service/releases) herunterladen.
 
 1. Unterstützende Bibliotheken:
 
@@ -45,7 +45,7 @@ Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösung
 
 1. Die Datenschutzanforderungen Ihrer Firma werden spezifisch sein, wie Sie sich dafür entscheiden, GDPR-konform zu bleiben. Achten Sie darauf, welche Bibliotheken Ihre Firma-Datenschutzteams im Vorhinein verwenden dürfen.
 
-If using [Adobe Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html), take advantage of the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
+Wenn Sie [Adobe Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) verwenden, nutzen Sie die [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md), um den Dienst für die Teilnahme zu konfigurieren.
 
 ## Opt-in-Kategorien {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -113,7 +113,7 @@ Siehe [Workflow-Konfigurationseinstellungen](../../implementation-guides/opt-in-
 
 ## Opt-in-Berechtigungen des Benutzers prüfen {#section-f136a9024e054d84881e6667fb7c94eb}
 
-Wenn Besucher ihre Berechtigungen ändern, müssen Sie das Ergebnis dieser Änderungen in Erfahrung bringen, um Ihre gespeicherten Zustimmungen mit den Änderungen am Opt-in-Dienst zu synchronisieren. Inspect Sie die Voreinstellungen Ihres Besuchers mithilfe der [Berechtigungsfunktionen](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155), z. B.:
+Wenn Besucher ihre Berechtigungen ändern, müssen Sie das Ergebnis dieser Änderungen in Erfahrung bringen, um Ihre gespeicherten Zustimmungen mit den Änderungen am Opt-in-Dienst zu synchronisieren. Inspect Sie die Voreinstellungen Ihres Besuchers mit den Zugriffsfunktionen[a1/>, z. B.:](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)
 
 **fetchPermissions-Beispiel**
 
@@ -137,7 +137,7 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-See [API documentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) for more details on these and any functions, properties, or configurations mentioned in this document.
+Weitere Informationen zu diesen und allen in diesem Dokument erwähnten Funktionen, Eigenschaften und Konfigurationen finden Sie in der [API-Dokumentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867).
 
 ## Speichern von Besuchervoreinstellungen {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
