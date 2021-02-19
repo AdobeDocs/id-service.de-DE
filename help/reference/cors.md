@@ -1,6 +1,6 @@
 ---
 description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domäne, die nicht der aktuellen Domäne entspricht. Der Experience Cloud Identity-Dienst unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domäne, die nicht der aktuellen Domäne entspricht. Der Experience Cloud Identity-Dienst unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
 seo-title: CORS-Unterstützung im Experience Cloud Identity-Dienst.
 title: CORS-Unterstützung im Experience Cloud Identity-Dienst.
@@ -8,7 +8,7 @@ uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '674'
 ht-degree: 48%
 
 ---
@@ -79,7 +79,7 @@ In der folgenden Tabelle werden einige der Vorteile beschrieben, die CORS Kunden
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Erhöhte Sicherheit</b> </p> </td> 
-   <td colname="col2"> <p>CORS verwendet <a href="https://developer.mozilla.org/de-DE/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a> , um Daten anzufordern und zu übertragen. Diese Methode ist sicherer als eine JSONP-Anforderung. Es stellt sicher, dass es keine Möglichkeit gibt, beliebigen JavaScript-Code auszuführen, der in der Antwort des DCS enthalten sein könnte. Die CORS XMLHttpRequest-Antwortnutzlast wird vom ID-Dienst-JavaScript analysiert und nicht einfach in einer Rückruffunktion ausgeführt. </p> <p> <p>Hinweis: Zum Akzeptieren von Cookies muss die Eigenschaft <span class="codeph">withCredentials</span> des Objekts <span class="codeph">XMLHttpRequest</span> auf <span class="codeph">true</span> festgelegt sein. Diese Eigenschaft wird in Chrome, Firefox, Internet Explorer (v10+), Opera und Safari unterstützt. </p> </p> </td> 
+   <td colname="col2"> <p>CORS verwendet <a href="https://developer.mozilla.org/de-DE/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a>, um Daten anzufordern und zu übertragen. Diese Methode ist sicherer als eine JSONP-Anforderung. Es stellt sicher, dass es keine Möglichkeit gibt, beliebigen JavaScript-Code auszuführen, der in der Antwort des DCS enthalten sein könnte. Die CORS XMLHttpRequest-Antwortnutzlast wird vom ID-Dienst-JavaScript analysiert und nicht einfach in einer Rückruffunktion ausgeführt. </p> <p> <p>Hinweis: Zum Akzeptieren von Cookies muss die Eigenschaft <span class="codeph">withCredentials</span> des Objekts <span class="codeph">XMLHttpRequest</span> auf <span class="codeph">true</span> festgelegt sein. Diese Eigenschaft wird in Chrome, Firefox, Internet Explorer (v10+), Opera und Safari unterstützt. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Leistungsverbesserungen</b> </p> </td> 
