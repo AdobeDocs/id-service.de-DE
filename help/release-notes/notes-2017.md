@@ -1,6 +1,6 @@
 ---
 description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2017.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2017.
 seo-title: Versionshinweise für 2017
 title: Versionshinweise für 2017
@@ -8,7 +8,7 @@ uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '762'
 ht-degree: 100%
 
 ---
@@ -211,6 +211,6 @@ Januar 2017
 * Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst sofort fehlschlug, wenn ein Besucher einen Werbeblocker aktiviert hatte und dieser Blocker so konfiguriert war, die Domäne demdex.net auszuschließen. Dieser Fehler ist selten und ungewöhnlich, da die meisten Werbeblocker die Domäne „demdex.net“ nicht blockieren. (MCID-233)
 * Es wurde ein Fehler behoben, der durch Interaktionen zwischen dem ID-Dienst-Code und einem benutzerdefinierten Skript auf der Website eines Kunden verursacht wurde. Dieses Problem verhinderte das Laden von Webseiten in Internet Explorer 9. (MCID-206)
 
-## Frühere Jahre {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## Frühere Jahre  {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 Ältere ID-Dienst-Versionshinweise.
