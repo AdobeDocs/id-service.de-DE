@@ -1,6 +1,6 @@
 ---
 description: Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame und auf der übergeordneten Seite implementiert sind, miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in Version 2.2 (oder höher) des VisitorAPI.js-Codes verfügbar.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame und auf der übergeordneten Seite implementiert sind, miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in Version 2.2 (oder höher) des VisitorAPI.js-Codes verfügbar.
 seo-title: whitelistParentDomain und whitelistIframeDomains
 title: whitelistParentDomain und whitelistIframeDomains
@@ -8,7 +8,7 @@ uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '934'
 ht-degree: 100%
 
 ---
@@ -102,7 +102,7 @@ Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu set
    <td colname="col1"> <p> <b>Ergebnisse</b> </p> </td> 
    <td colname="col2"> <p>Unter diesen Bedingungen gilt für den ID-Dienst: </p> <p> 
      <ul id="ul_12356701501E40DFA57903494FFE58F7"> 
-      <li id="li_B57EDF1B0762486F95FA6526C047390C">Er funktioniert ordnungsgemäß auf der übergeordneten Seite. Er fordert das AMCV-Cookie an, setzt es uns weist dem Site-Besucher eine eindeutige ID zu. </li> 
+      <li id="li_B57EDF1B0762486F95FA6526C047390C">Er funktioniert ordnungsgemäß auf der übergeordneten Seite. Er fordert das AMCV-Cookie an, setzt es und weist dem Site-Besucher eine eindeutige ID zu. </li> 
       <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">Funktioniert nicht im iFrame. Dies liegt daran, dass der Browser den iFrame als Drittanbieterdomäne ansieht und den ID-Dienst daran hindert, das AMCV-Cookie zu setzen. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -147,7 +147,7 @@ Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu set
  </tbody> 
 </table>
 
-## Sicherheit der Konfiguration {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
+## Sicherheit der Konfiguration  {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
 Sie können diese Konfigurationen aus folgenden Gründen sicher implementieren:
 
@@ -155,7 +155,7 @@ Sie können diese Konfigurationen aus folgenden Gründen sicher implementieren:
 * Diese Konfigurationen kommunizieren nur mit der Domäne und den iFrames, die im Code angegeben sind.
 * Die Kommunikation zwischen dem iFrame und der übergeordneten Seite folgt einem bestimmten Format. Wenn der ID-Dienst auf der übergeordneten Seite keine Anforderung im erwarteten Format erhält, schlägt dieser Freigabeprozess fehl.
 
-## Unterstützte Besucher-API-Methoden {#section-30c6a9f4dcdc4265a1149260b97cc057}
+## Unterstützte Besucher-API-Methoden  {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
 Der ID-Dienst unterstützt einen begrenzte Anzahl an öffentlichen API-Methoden, wenn Sie diese Whitelist-Konfigurationen implementieren. Die unterstützten Methoden variieren je nach den oben beschriebenen Nutzungsszenarios.
 
@@ -182,7 +182,7 @@ Der ID-Dienst unterstützt einen begrenzte Anzahl an öffentlichen API-Methoden,
    <td colname="col1"> <p> <b>2. Fall</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
       <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
      </ul> </p> </td> 
   </tr> 
