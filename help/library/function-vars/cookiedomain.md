@@ -1,6 +1,6 @@
 ---
 description: Erforderlich für mehrteilige Top-Level-Domänen, bei denen einer der letzten zwei Teile der URL mehr als 2 Zeichen umfasst.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Erforderlich für mehrteilige Top-Level-Domänen, bei denen einer der letzten zwei Teile der URL mehr als 2 Zeichen umfasst.
 seo-title: cookieDomain
 title: cookieDomain
@@ -8,7 +8,7 @@ uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '76'
 ht-degree: 100%
 
 ---
