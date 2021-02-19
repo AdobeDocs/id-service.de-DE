@@ -1,6 +1,6 @@
 ---
 description: Diese Eigenschaft legt die Container-ID der Datenquelle fest, die Sie für ID-Synchronisierungen verwenden möchten.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Diese Eigenschaft legt die Container-ID der Datenquelle fest, die Sie für ID-Synchronisierungen verwenden möchten.
 seo-title: idSyncContainerID
 title: idSyncContainerID
@@ -8,7 +8,7 @@ uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
 translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '336'
 ht-degree: 58%
 
 ---
@@ -83,9 +83,9 @@ Abhängig von Ihrer Situation müssen Sie diese Konfiguration möglicherweise Ih
  </tbody> 
 </table>
 
-## Einrichten von Container-IDs bei Verwendung von DIL und VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Einrichten von Container-IDs bei Verwendung von DIL und VisitorAPI.js  {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-If you have deployed [!UICONTROL DIL ]*and* VisitorAPI.js on the same page:
+Wenn Sie [!UICONTROL DIL ]*und* VisitorAPI.js auf derselben Seite bereitgestellt haben:
 
 * Der Dienstcode für die Besucher-ID hat bei ID-Synchronisierungen Vorrang vor DIL.
 * Legen Sie die `idSyncContainerID`-Konfiguration nur im Code des ID-Diensts fest.
