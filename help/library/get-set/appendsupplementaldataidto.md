@@ -1,6 +1,6 @@
 ---
 description: Mit dieser Hilfsmethode können Sie die Supplemental Data ID (SDID) als Abfrage-String-Parameter an eine Umleitungs-URL anhängen. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den ID-Dienst mit derselben Organisations-ID für die Quell- und Zieldomänen implementiert haben.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Mit dieser Hilfsmethode können Sie die Supplemental Data ID (SDID) als Abfrage-String-Parameter an eine Umleitungs-URL anhängen. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den ID-Dienst mit derselben Organisations-ID für die Quell- und Zieldomänen implementiert haben.
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
@@ -8,7 +8,7 @@ uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '412'
 ht-degree: 30%
 
 ---
