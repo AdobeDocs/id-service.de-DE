@@ -1,6 +1,6 @@
 ---
 description: Mit dieser Implementierung können Kunden den ID-Dienst auf Geräten verwenden, die unseren JavaScript- oder SDK-Code nicht akzeptieren oder verwenden können. Dazu gehören Geräte wie Spielekonsolen, Smart-TVs oder andere internetfähige Geräte. Informationen zu Syntax, Codebeispielen und Definitionen finden Sie in diesem Abschnitt.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Mit dieser Implementierung können Kunden den ID-Dienst auf Geräten verwenden, die unseren JavaScript- oder SDK-Code nicht akzeptieren oder verwenden können. Dazu gehören Geräte wie Spielekonsolen, Smart-TVs oder andere internetfähige Geräte. Informationen zu Syntax, Codebeispielen und Definitionen finden Sie in diesem Abschnitt.
 seo-title: Direkte Integration mit dem Experience Cloud Identity-Dienst
 title: Direkte Integration mit dem Experience Cloud Identity-Dienst
@@ -8,7 +8,7 @@ uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '714'
 ht-degree: 100%
 
 ---
@@ -73,7 +73,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ih
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>Ein optionaler Parameter, der die Data Provider ID (DPID), die Unique User ID (DPUUID) und eine <a href="../reference/authenticated-state.md" format="dita" scope="local"> authentifizierte Zustands-ID</a> an den ID-Dienst übergibt. Trennen Sie DPID und DPUUID durch das nicht druckbare Steuerzeichen <span class="codeph">%01</span>, wie im Codebeispiel gezeigt. </p> <p> <b>DPID und DPUUID</b> </p> <p>Weisen Sie im Parameter <span class="codeph">d_cid</span> alle zusammengehörigen Kombinationen aus DPID und DPUUID demselben <span class="codeph">d_cid</span>-Parameter zu. Dadurch können Sie mehrere IDs in einer einzigen Anforderung übergeben. Trennen Sie außerdem DPID, DPUUID und die optionale Authentifizierungskennzeichnung durch das nicht druckbare Steuerzeichen <span class="codeph">%01</span>. In den Beispielen weiter unten werden die Anbieter- und Benutzer-IDs durch <b>Fettdruck</b> hervorgehoben. </p> 
+   <td colname="col2"> <p>Ein optionaler Parameter, der die Data Provider ID (DPID), die eindeutige Benutzer-ID (DPUUID) und eine <a href="../reference/authenticated-state.md" format="dita" scope="local"> authentifizierte Zustands-ID</a> an den ID-Dienst übergibt. Trennen Sie DPID und DPUUID durch das nicht druckbare Steuerzeichen <span class="codeph">%01</span>, wie im Codebeispiel gezeigt. </p> <p> <b>DPID und DPUUID</b> </p> <p>Weisen Sie im Parameter <span class="codeph">d_cid</span> alle zusammengehörigen Kombinationen aus DPID und DPUUID demselben <span class="codeph">d_cid</span>-Parameter zu. Dadurch können Sie mehrere IDs in einer einzigen Anforderung übergeben. Trennen Sie außerdem DPID, DPUUID und die optionale Authentifizierungskennzeichnung durch das nicht druckbare Steuerzeichen <span class="codeph">%01</span>. In den Beispielen weiter unten werden die Anbieter- und Benutzer-IDs durch <b>Fettdruck</b> hervorgehoben. </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">Syntax: <span class="codeph">...d_cid=DPID%01DPUUID%01authentication state...</span> </li> 
      <li id="li_B07833EF51D54F088574B7B7F9FB841A">Beispiel: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
