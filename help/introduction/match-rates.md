@@ -1,6 +1,6 @@
 ---
 description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity-Dienst, einschließlich Adobe Media Optimizer und ID-Dienst.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity-Dienst, einschließlich Adobe Media Optimizer und ID-Dienst.
 seo-title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
@@ -8,8 +8,8 @@ uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
