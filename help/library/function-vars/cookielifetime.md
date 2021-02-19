@@ -1,6 +1,6 @@
 ---
 description: Mit dieser Variablen können Sie das standardmäßige Lebensdauerintervall für das AMCV-Cookie überschreiben.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Mit dieser Variablen können Sie das standardmäßige Lebensdauerintervall für das AMCV-Cookie überschreiben.
 seo-title: cookieLifetime
 title: cookieLifetime
@@ -8,8 +8,8 @@ uuid: cd945db3-429a-4625-ac3f-69ac259377a3
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
