@@ -34,7 +34,7 @@ In diesem Abschnitt wird die Opt-in-Konfiguration mithilfe der API beschrieben. 
 
 Opt-in-Konfigurationen werden in der Visitor JavaScript-Funktion `getInstance()` bereitgestellt, die das globale `adobe`-Objekt instanziiert. Im Folgenden werden die Konfigurationen von Visitor JS im Zusammenhang mit dem Opt-in-Dienst aufgelistet.
 
-**`doesOptInApply (boolean or function that evaluates to a boolean)`**:
+**`doesOptInApply (boolean or function that evaluates to a boolean)`**
 
 Wenn &quot;false&quot;, bedeutet dies, dass Besucher nicht Opt-in müssen. Dies führt dazu, dass Experience Cloud Cookies erstellt, unabhängig von den Kategorien, denen zugestimmt oder die abgelehnt wurden. Diese Konfiguration aktiviert bzw. deaktiviert die Teilnahme.
 
@@ -58,13 +58,13 @@ Erstanbieterdomäne oder untergeordnete Domäne, die für den Opt-in-Cookie verw
 
 Anzahl der Sekunden, um die Standardablaufzeit von 13 Monaten zu überschreiben.
 
-## Änderungen an den Zustimmungsparametern {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## Änderungen an den Zustimmungsparametern  {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
 Ein Besucher kann seine Voreinstellungen jederzeit während der Erlebnisse auf Ihrer Site zum ersten Mal festlegen oder seine Voreinstellungen mithilfe Ihres CMP ändern. Nachdem Besucher JS mit den ursprünglichen Einstellungen initialisiert wurde, können die Berechtigungen des Besuchers mit den folgenden Funktionen geändert werden:
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-Funktion, die alle Kategorien in einer Liste für einen Besucher genehmigt oder zulässt. Weitere Informationen zum Parameter shouldWaitForComplete finden Sie unter [Einstiegsarbeitsablauf](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
+Funktion, die alle Kategorien in einer Liste für einen Besucher genehmigt oder zulässt. Weitere Informationen zum Parameter &quot;shouldWaitForComplete&quot;finden Sie unter [Opt-in-Workflow](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
@@ -132,7 +132,7 @@ True oder false, je nach Statuswert. Anmeldeberichte für diese Eigenschaft gelt
 
 True oder false, je nach Statuswert. Bei einer Teilnahme wird für diese Eigenschaft möglicherweise &quot;false&quot;angezeigt, wenn eine Workflow-artige Zustimmung gestartet, aber nicht abgeschlossen wurde.
 
-## Methoden des Opt-in-Objekts {#section-e0417801a82548d199d833010033e433}
+## Methoden des Opt-in-Objekts  {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
@@ -162,7 +162,7 @@ Prüft, ob eine oder mehrere Kategorien vom Kunden vorab genehmigt wurden (d. h
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-Async-API zum Abrufen der Liste von Berechtigungen. Der Rückruf wird mit Liste von Berechtigungen aufgerufen, sobald der Prozess zum Gewähren/Ablehnen von Berechtigungen abgeschlossen ist. **`shouldAutoSubscribe`:** Hilfsdienstprogramm, mit dem dieser Callback automatisch alle zukünftigen Ereignisse abonniert. Das bedeutet, dass der Rückruf jedes Mal aufgerufen wird, wenn ein Genehmigungs- oder Ablehnungsauslöser in Opt-in aufgerufen wird. So werden Sie immer aktualisiert, ohne die Ereignis selbst abonnieren zu müssen.
+Async-API zum Abrufen der Liste von Berechtigungen. Der Rückruf wird mit Liste von Berechtigungen aufgerufen, sobald der Prozess zum Gewähren/Ablehnen von Berechtigungen abgeschlossen ist. **`shouldAutoSubscribe`:** Hilfsdienstprogramm, mit dem dieser Callback automatisch alle zukünftigen Ereignisse abonniert. Das bedeutet, dass der Rückruf jedes Mal aufgerufen wird, wenn eine Genehmigung oder Verweigerung Trigger in Opt-in. So werden Sie immer aktualisiert, ohne die Ereignis selbst abonnieren zu müssen.
 
 **Beispiel**
 
@@ -205,7 +205,7 @@ Genehmigt alle vorhandenen Kategorien.
 
 Lehnt alle vorhandenen Kategorien ab.
 
-## Ereignisse des Opt-in-Objekts {#section-06f25b33cab54bafb053183e937fb710}
+## Ereignisse des Opt-in-Objekts  {#section-06f25b33cab54bafb053183e937fb710}
 
 **`complete`:**
 
