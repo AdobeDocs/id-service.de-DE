@@ -3,9 +3,9 @@ title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 seo-title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 seo-description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 012bf5db473b37b17e7af957c08da71b253c718f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 100%
 
