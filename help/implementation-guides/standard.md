@@ -1,6 +1,6 @@
 ---
 description: In älteren Implementierungen wird das Dynamic Tag Management (DTM) zur Einrichtung, Bereitstellung und Integration des Experience Cloud Identity-Diensts in Ihre anderen Experience Cloud-Lösungen verwendet.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: In älteren Implementierungen wird das Dynamic Tag Management (DTM) zur Einrichtung, Bereitstellung und Integration des Experience Cloud Identity-Diensts in Ihre anderen Experience Cloud-Lösungen verwendet.
 seo-title: Implementierung mit Dynamic Tag Management
 title: Implementierung mit Dynamic Tag Management
@@ -8,7 +8,7 @@ uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '2056'
+source-wordcount: '2058'
 ht-degree: 100%
 
 ---
@@ -78,7 +78,7 @@ Führen Sie die folgenden Schritte aus, um den ID-Dienst mit dem Dynamic Tag Man
 
 **Voraussetzungen**
 
-* Aktivieren Sie Ihre Lösungen für die [!DNL Experience Cloud] und stellen Sie sicher, dass Sie über Administratorberechtigungen verfügen. Siehe [Lösungen für Hauptdienste aktivieren](https://docs.adobe.com/content/help/de-DE/core-services/interface/about-core-services/core-services.html).
+* Aktivieren Sie Ihre Lösungen für die [!DNL Experience Cloud] und stellen Sie sicher, dass Sie über Administratorberechtigungen verfügen. Siehe [Lösungen für Hauptdienste aktivieren](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html).
 
 * Erstellen Sie eine Webeigenschaft in DTM. Weitere Informationen finden Sie in der DTM-Dokumentation zum [Erstellen von Webeigenschaften](https://docs.adobe.com/content/help/de-DE/dtm/using/admin/web-property.html).
 
@@ -143,7 +143,7 @@ Der Name des für die Analytics-Datenerfassung verwendeten Trackingservers. Dies
 
 Überprüfen Sie die Dateien `s_code.js` oder `AppMeasurement.js`, sofern Sie Ihre Tracking-Server-URLs nicht kennen. Sie möchten, dass die URL durch die `s.trackingServer` Variable festgelegt wird.
 
-Siehe [trackingServer](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/page-vars/page-variables.html) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
+Siehe [trackingServer](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/page-vars/page-variables.html) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 **Sicherer Trackingserver**
 
@@ -151,7 +151,7 @@ Der Name des sicheren Trackingservers, der für die Analytics-Datenerfassung ver
 
 Überprüfen Sie die Dateien `s_code.js` oder `AppMeasurement.js`, sofern Sie Ihre Tracking-Server-URLs nicht kennen. Sie möchten, dass die URL durch die `s.trackingServerSecure` Variable festgelegt wird.
 
-Siehe [trackingServer](https://docs.adobe.com/content/help/de-DE/analytics/implementation/vars/page-vars/page-variables.html) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
+Siehe [trackingServer](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 **Experience Cloud-Server**
 
@@ -219,7 +219,7 @@ Der [Adobe-Debugger](https://docs.adobe.com/content/help/de-DE/analytics/impleme
 
 Ihre Dienstintegration ist richtig konfiguriert, wenn in der [!DNL Adobe]-Debugger-Antwort eine [!DNL Experience Cloud ID] (MID) angezeigt wird. Siehe [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md) mit weiteren Informationen zur MID.
 
-So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe][-Debugger](https://docs.adobe.com/content/help/de-DE/analytics/implementation/validate/debugger.html):
+So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe][-Debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html):
 
 1. Löschen Sie Ihre Browser-Cookies oder öffnen Sie eine anonyme Browser-Sitzung.
 1. Laden Sie Ihre Testseite, die den ID-Dienst-Code enthält.
@@ -285,5 +285,5 @@ Weitere Informationen zu Fehler-Codes finden Sie unter [DCS-Fehler-Codes, Meldun
 
 >[!MORELIKETHIS]
 >
->* [Webeigenschaften](https://docs.adobe.com/content/help/de-DE/dtm/using/admin/web-property.html)
+>* [Webeigenschaften](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html)
 
