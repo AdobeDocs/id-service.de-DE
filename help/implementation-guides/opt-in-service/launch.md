@@ -19,15 +19,15 @@ Adobe Experience Platform Launch ermöglicht die einfache Einrichtung einer Opt-
 
 ## Konfigurieren eines Opt-in-Szenarios mit Experience Platform Launch {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
-[Mit Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) ist es ganz einfach, ein Opt-in mit Adobe-Lösungen zu konfigurieren und einzurichten. Sie können die Erfassung von Besucher-Anmeldezustimmungen für Experience Cloud-Lösungen vereinfachen, indem Sie Analytics, Zielgruppe, Audience Manager und andere oder alle ausgewählten Experience Cloud-Lösungen aktivieren, um sie in Ihr Zustimmungsmanagementsystem Opt-in.
+[Mit Adobe Experience Platform ](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) Launchers können Sie ganz einfach ein Opt-in mit Adobe-Lösungen konfigurieren und einrichten. Sie können die Erfassung von Besucher-Anmeldezustimmungen für Experience Cloud-Lösungen vereinfachen, indem Sie Analytics, Zielgruppe, Audience Manager und andere oder alle ausgewählten Experience Cloud-Lösungen aktivieren, um sie in Ihr Zustimmungsmanagementsystem Opt-in.
 
 **Experience Cloud ID-Erweiterung konfigurieren**
 
 Wenn die Experience Cloud ID-Erweiterung noch nicht installiert ist, öffnen Sie die Eigenschaften, klicken* Sie auf Erweiterungen > Katalog*, bewegen Sie den Mauszeiger über die Experience Cloud ID-Erweiterung und klicken Sie auf *Installieren*.
 
-Um die Erweiterung zu konfigurieren, öffnen Sie die Registerkarte &quot; *Erweiterungen* &quot;und halten Sie den Mauszeiger über die Erweiterung. Klicken Sie dann auf *Konfigurieren*.
+Um die Erweiterung zu konfigurieren, öffnen Sie die Registerkarte *Erweiterungen* und halten Sie den Mauszeiger über die Erweiterung. Klicken Sie dann auf *Konfigurieren*.
 
-For additional reference information, see [Opt-in Extension for Launch](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html).
+Weitere Referenzinformationen finden Sie unter [Opt-in-Erweiterung für Launch](https://docs.adobe.com/content/help/de-DE/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html).
 
 ![](assets/optin-launch.jpg)
 
