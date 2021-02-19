@@ -1,6 +1,6 @@
 ---
 description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2016.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2016.
 seo-title: Versionshinweise für 2016
 title: Versionshinweise für 2016
@@ -8,7 +8,7 @@ uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1164'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Oktober 2016
 
 **Fehlerbehebungen und Verbesserungen**
 
-* Es wurde ein Fehler behoben, der Audience Manager Unique User-IDs (AAMUUIDs) als Experience Cloud IDs an den ID-Dienst weitergeleitet hatte.
+* Es wurde ein Fehler behoben, der eindeutige Benutzer-IDs von Audience Manager (AAMUUIDs) als Experience Cloud IDs an den ID-Dienst weitergeleitet hatte.
 * Wenn die Time-To-Live (TTL) für ein AMCV-Cookie abgelaufen ist, gibt der ID-Service die Information trotzdem an den Server weiter, sofern das Cookie eine Experience Cloud ID hat. Nach diesem Aufruf startet der ID-Dienst einen asynchronen Aufruf, um das Cookie zu aktualisieren. Damit wird die Leistung verbessert, da der ID-Dienst nicht mehr auf eine Antwort des Servers warten muss. So kann ein bestehender AMCV-Cookiewert verwendet und eine Aktualisierung angefordert werden.
 * Der ID-Dienst synchronisiert Experience Cloud IDs (MIDs) automatisch mit Adobe Media Optimizer und anderen internen Adobe-Domänen direkt auf der Seite. Die automatische Synchronisierung ist für alle vorhandenen und neuen Konten aktiviert. Dies trägt zur Verbesserung der Übereinstimmungsraten für Media Optimizer bei. Für VisitorAPI.js Version 1.8 oder höher. Weitere Informationen finden Sie unter [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
