@@ -1,6 +1,6 @@
 ---
 description: Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisation manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisation manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
 seo-title: ID-Synchronisation nach URL oder Datenquelle
 title: ID-Synchronisation nach URL oder Datenquelle
@@ -8,7 +8,7 @@ uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '275'
 ht-degree: 100%
 
 ---
