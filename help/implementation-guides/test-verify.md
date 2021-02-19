@@ -1,6 +1,6 @@
 ---
 description: Diese Anweisungen, Tools und Verfahren unterstützen Sie bei der Ermittlung, ob der ID-Dienst ordnungsgemäß funktioniert. Diese Tests gelten für den ID-Dienst im Allgemeinen sowie für andere ID-Dienst- und Experience Cloud-Lösungskombinationen.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Diese Anweisungen, Tools und Verfahren unterstützen Sie bei der Ermittlung, ob der ID-Dienst ordnungsgemäß funktioniert. Diese Tests gelten für den ID-Dienst im Allgemeinen sowie für andere ID-Dienst- und Experience Cloud-Lösungskombinationen.
 seo-title: Testen und Überprüfen des Experience Cloud Identity-Diensts
 title: Testen und Überprüfen des Experience Cloud Identity-Diensts
@@ -8,7 +8,7 @@ uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '723'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Der [Adobe-Debugger](https://docs.adobe.com/content/help/de-DE/analytics/impleme
 
 Ihre Dienstintegration ist richtig konfiguriert, wenn in der [!DNL Adobe]-Debugger-Antwort eine [!DNL Experience Cloud ID] (MID) angezeigt wird. Siehe [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md) mit weiteren Informationen zur MID.
 
-So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe][-Debugger](https://docs.adobe.com/content/help/de-DE/analytics/implementation/validate/debugger.html):
+So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe][-Debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html):
 
 1. Löschen Sie Ihre Browser-Cookies oder öffnen Sie eine anonyme Browser-Sitzung.
 1. Laden Sie Ihre Testseite, die den ID-Dienst-Code enthält.
