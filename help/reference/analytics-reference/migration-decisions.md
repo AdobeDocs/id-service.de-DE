@@ -1,6 +1,6 @@
 ---
 description: Vor Verwendung des Experience Cloud Identity-Diensts sollten Sie wissen, wie dieser Dienst das Besucher-Tracking auf mehreren Domänen beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Vor Verwendung des Experience Cloud Identity-Diensts sollten Sie wissen, wie dieser Dienst das Besucher-Tracking auf mehreren Domänen beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
 seo-title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity-Dienst
 title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity-Dienst
@@ -8,7 +8,7 @@ uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 100%
 
 ---
