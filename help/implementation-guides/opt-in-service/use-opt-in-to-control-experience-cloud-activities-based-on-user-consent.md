@@ -4,8 +4,8 @@ description: Das Opt-in-Objekt von Adobe ist eine Erweiterung des Adobe Experien
 translation-type: tm+mt
 source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
