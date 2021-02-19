@@ -1,6 +1,6 @@
 ---
 description: Mit dieser Funktion können Sie die Experience Cloud ID eines Besuchers domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst implementiert haben und Inhaber der Quell- und Zieldomäne sein. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Mit dieser Funktion können Sie die Experience Cloud ID eines Besuchers domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst implementiert haben und Inhaber der Quell- und Zieldomäne sein. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 seo-title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
@@ -8,7 +8,7 @@ uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
@@ -59,7 +59,7 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
 //Redirect to the destination
 ```
 
-## Dynamic Tag Management (DTM) und SDK-Unterstützung {#section-168e313df6054af0a7e27b9fa0d69640}
+## Dynamic Tag Management (DTM) und SDK-Unterstützung  {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
