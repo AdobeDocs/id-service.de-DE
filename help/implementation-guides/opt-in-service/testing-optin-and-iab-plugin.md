@@ -29,7 +29,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 Löschen Sie vor dem Laden der Seite den Cache und die Cookies.
 
-Klicken Sie in Chrome mit der rechten Maustaste auf die Webseite und wählen Sie Inspect. Wie im Screenshot oben beschrieben, wählen Sie die Registerkarte &quot; *Netzwerk* &quot;, um die vom Browser ausgeführten Anforderungen Ansicht.
+Klicken Sie in Chrome mit der rechten Maustaste auf die Webseite und wählen Sie Inspect. Wie im Screenshot oben beschrieben, wählen Sie die Registerkarte *Netzwerk*, um die vom Browser angeforderten Ansichten auszuführen.
 
 Im obigen Beispiel haben wir die folgenden Adobe-JS-Tags auf der Seite installiert: ECID, AAM, Analytics und Zielgruppe.
 
@@ -49,7 +49,7 @@ Sie sollten keine Anforderungen an Adoben-Server sehen:
 
 Sie sollten keine Cookies sehen, die von den Adoben-Tags erstellt wurden: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
-Gehen Sie in Chrome zur Registerkarte *Anwendung* , erweitern Sie den Abschnitt *Cookies* unter *Datenspeicherung* und wählen Sie den Domänennamen Ihrer Website aus:
+Wechseln Sie in Chrome zur Registerkarte *Anwendung*, erweitern Sie den Abschnitt *Cookies* unter *Datenspeicherung* und wählen Sie den Domänennamen Ihrer Website aus:
 
 ![](assets/use_case_1_2.png)
 
@@ -64,7 +64,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 Der einzige Unterschied bei Nutzungsszenario 2 besteht darin, dass Sie *ein neues Cookie* sehen, das die Opt-in-Berechtigungen enthält, die von Ihrem Benutzer erteilt wurden: **adobeujs-optin**
 
-## Nutzungsszenario 3: Opt-in aktivieren und Vorabgenehmigung für Adobe Analytics erteilen {#section-257fe582b425496cbf986d0ec12d3692}
+## Nutzungsszenario 3: Opt-in aktivieren und Vorabgenehmigung für Adobe Analytics erteilen  {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -84,7 +84,7 @@ und Sie sehen Analytics-Cookies auf der Registerkarte &quot;Anwendung&quot;:
 
 ![](assets/use_case_3_2.png)
 
-## Nutzungsszenario 4: Opt-in und IAB aktivieren {#section-64331998954d4892960dcecd744a6d88}
+## Nutzungsszenario 4: Opt-in und IAB aktivieren  {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -95,7 +95,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 **Ansicht Ihrer aktuellen IAB-Zustimmung auf der Seite:**
 
-Öffnen Sie die Entwicklerwerkzeuge und wählen Sie die Registerkarte *Konsole* . Fügen Sie das folgende Codefragment ein und drücken Sie die Eingabetaste:
+Öffnen Sie die Entwicklerwerkzeuge und wählen Sie die Registerkarte *Konsole*. Fügen Sie das folgende Codefragment ein und drücken Sie die Eingabetaste:
 
 ```
 <codeblock>
