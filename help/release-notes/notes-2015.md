@@ -1,6 +1,6 @@
 ---
 description: Versionshinweise und Aktualisierungen für das Jahr 2015
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Versionshinweise und Aktualisierungen für das Jahr 2015
 seo-title: Versionshinweise für 2015
 title: Versionshinweise für 2015
@@ -8,8 +8,8 @@ uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 65%
+source-wordcount: '415'
+ht-degree: 66%
 
 ---
 
@@ -38,7 +38,7 @@ August 2015
 * Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst einen iframe anfordert, wenn keine Daten synchronisiert oder ausgelöst werden müssen. (AAM-20164)
 * Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst ein mehrteiliges Top-Level-Domänen-Cookie ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domäne wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
 
-   Dies betraf nur einige wenige Kunden, die *alle* folgenden Kriterien erfüllten:
+   Dies betraf nur einige Clients, die *alle* der folgenden Kriterien erfüllten:
 
    * Verwenden des ID-Diensts.
    * Aktivierung einer [Schonfrist ](../reference/analytics-reference/grace-period.md)*oder* Verwendung von Cookies von Erstanbietern und Benutzer blockieren Cookies von Drittanbietern.
