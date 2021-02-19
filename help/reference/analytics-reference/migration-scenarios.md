@@ -1,6 +1,6 @@
 ---
 description: Enthält Beispiel-Serverkonfigurationen und führt die erforderlichen Migrationsschritte auf.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Enthält Beispiel-Serverkonfigurationen und führt die erforderlichen Migrationsschritte auf.
 seo-title: Migrationsszenarios für den Experience Cloud Identity-Dienst
 title: Migrationsszenarios für den Experience Cloud Identity-Dienst
@@ -8,7 +8,7 @@ uuid: 9e229045-6508-48c4-ae39-9537b4941853
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 57%
 
 ---
