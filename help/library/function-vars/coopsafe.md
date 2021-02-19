@@ -1,6 +1,6 @@
 ---
 description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
 seo-title: isCoopSafe
 title: isCoopSafe
@@ -8,8 +8,8 @@ uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -113,7 +113,7 @@ Anhand der POST-Parameter stellt die [!DNL Experience Cloud]-Gerätekooperation 
  </tbody> 
 </table>
 
-## Post-Instanziierungs-APIs {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## Post-Instanziierungs-APIs  {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 Mit diesen APIs können Sie den Status von `isCoopSafe` überschreiben. Diese sind erforderlich, damit Sie den Status eines Besuchers nach der Instanziierung/nach der Anmeldung auf einer Website oder in einer Einzelseitenanwendung ändern können, wenn die Seite nicht aktualisiert wird. Beispielsweise müssen Sie diese APIs aufrufen, wenn sich ein Benutzer bei Ihrer Site oder App authentifiziert und später eine Nutzungsrichtlinie akzeptiert, die es der Gerätekooperation ermöglicht, ihre Daten zu verwenden.
 
