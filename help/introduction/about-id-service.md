@@ -1,6 +1,6 @@
 ---
 description: Die Rolle des Experience Cloud Identity-Diensts in Adobe Experience Cloud.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Die Rolle des Experience Cloud Identity-Diensts in Adobe Experience Cloud.
 seo-title: Über den ID-Dienst
 title: Übersicht
@@ -8,7 +8,7 @@ uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 translation-type: tm+mt
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '356'
 ht-degree: 69%
 
 ---
@@ -28,7 +28,7 @@ Mit dem Experience Cloud Identity-Dienst wird das allgemeine Identifizierungs-Fr
 
 ![](assets/ecid-new.png)
 
-Darüber hinaus kann der ID-Dienst die verschiedenen lösungsspezifischen IDs (z. B. Analytics-AID) ersetzen. And, through the [Customer IDs and Authentication States](../reference/authenticated-state.md) functionality, the ID service lets you pass in your own customer IDs to the [!DNL Experience Cloud]. Beachten Sie jedoch, dass der ID-Dienst nur mit den Lösungen funktioniert, die Sie bereits abonniert haben. Es bietet keinen Zugriff auf andere Produkte, wenn Sie nicht für sie angemeldet sind.
+Darüber hinaus kann der ID-Dienst die verschiedenen lösungsspezifischen IDs (z. B. Analytics-AID) ersetzen. Und mit der Funktion [Kunden-IDs und Authentifizierungsstatus](../reference/authenticated-state.md) können Sie mit dem ID-Dienst Ihre eigenen Kunden-IDs an das [!DNL Experience Cloud] weitergeben. Beachten Sie jedoch, dass der ID-Dienst nur mit den Lösungen funktioniert, die Sie bereits abonniert haben. Es bietet keinen Zugriff auf andere Produkte, wenn Sie nicht für sie angemeldet sind.
 
 Künftig ist der ID-Dienst eine integrale Komponente von vielen aktuellen und künftigen [!DNL Experience Cloud]-Features, -Erweiterungen und -Services. Der ID-Dienst unterstützt derzeit [Analytics](http://www.adobe.com/de/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/de/marketing-cloud/data-management-platform.html) und [Target](http://www.adobe.com/de/marketing-cloud/testing-targeting.html). Zudem ist er erforderlich, wenn Sie sich an der [!DNL Adobe Experience Cloud]-Gerätekooperation beteiligen möchten. Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. Weitere Informationen über die Bedeutung und die Rolle des Identity-Dienstes finden Sie unter [Why the Experience Cloud ID Service Should be on Your Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/) (Warum Sie den ID-Dienst im Auge behalten sollten).
 
