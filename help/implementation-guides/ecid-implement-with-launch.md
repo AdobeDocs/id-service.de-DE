@@ -19,7 +19,7 @@ Adobe Experience Platform Launch ist das vorrangige Tool zur Einrichtung, Bereit
 
 ## Allgemeines zu Launch {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) ist die nächste Generation der Adobe-Tag-Management-Funktion, die in der Adobe Experience Cloud integriert ist. Mit Start können Kunden:
+[Adobe Experience Platform ](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) Launchis ist die nächste Generation der Adobe Tag-Management-Funktion, die in der Adobe Experience Cloud integriert ist. Mit Start können Kunden:
 
 * Client-seitige Web-Produkte unter Verwendung von Integrationen, die als Erweiterungen bezeichnet werden, bereitstellen
 * Daten konsistent erfassen, definieren, verwalten und austauschen zwischen Marketing- und Werbeprodukten anderer Anbieter und aus der Adobe
