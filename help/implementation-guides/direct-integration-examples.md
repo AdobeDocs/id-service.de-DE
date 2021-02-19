@@ -1,6 +1,6 @@
 ---
 description: Diese Beispiele behandeln zwei gängige Anwendungsfälle im Zusammenhang mit einer direkten Integration und der Experience Cloud-ID (MID). Die MID ist eine eindeutige, beständige ID für Ihre Site-Besucher.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Diese Beispiele behandeln zwei gängige Anwendungsfälle im Zusammenhang mit einer direkten Integration und der Experience Cloud-ID (MID). Die MID ist eine eindeutige, beständige ID für Ihre Site-Besucher.
 seo-title: Anwendungsfälle der direkten Integration
 title: Anwendungsfälle der direkten Integration
@@ -8,8 +8,8 @@ uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 51%
+source-wordcount: '475'
+ht-degree: 52%
 
 ---
 
