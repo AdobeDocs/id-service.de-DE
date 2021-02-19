@@ -1,13 +1,13 @@
 ---
 description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
 seo-title: Versionshinweise für 2020
 title: Versionshinweise für 2020
 translation-type: tm+mt
 source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '147'
 ht-degree: 100%
 
 ---
