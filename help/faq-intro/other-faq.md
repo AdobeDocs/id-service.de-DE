@@ -1,6 +1,6 @@
 ---
 description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bei der Verwendung von anderen Experience Cloud-Lösungen mit dem ID-Dienst.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bei der Verwendung von anderen Experience Cloud-Lösungen mit dem ID-Dienst.
 seo-title: Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen
 title: Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen
@@ -8,7 +8,7 @@ uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '211'
 ht-degree: 63%
 
 ---
@@ -24,7 +24,7 @@ Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Probleme
 
 Ja, dies ist die bevorzugte und empfohlene Bereitstellungsoption.
 
-See [Standard Implementation with DTM](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445).
+Siehe [Standardimplementierung mit DTM](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445).
 
 ## Analytics und Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
