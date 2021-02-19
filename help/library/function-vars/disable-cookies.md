@@ -1,6 +1,6 @@
 ---
 description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud Identity-Dienst das Drittanbieter-Cookie demdex.net zurückgibt.
-keywords: ID Service
+keywords: ID-Dienst
 seo-description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud Identity-Dienst das Drittanbieter-Cookie demdex.net zurückgibt.
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
@@ -8,8 +8,8 @@ uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
 translation-type: tm+mt
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
