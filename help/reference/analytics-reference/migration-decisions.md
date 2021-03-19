@@ -6,9 +6,9 @@ seo-title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity-D
 title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity-Dienst
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Wenn Sie über mehrere Domänen verfügen, die Daten an *dieselbe Report Suite* 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Mehrere Domänen </p> </td> 
-   <td colname="col2"> <p>Wenn Sie Besucher domänenübergreifend verfolgen und außerdem über eine Haupteinstiegs-Site verfügen, auf der Kunden identifiziert werden können, bevor sie andere Domänen besuchen, sollten Sie Ihren Datenerfassungs-CNAME weiterhin verwenden. Eine genaue Erläuterung finden Sie im Abschnitt <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local">Datenerfassungs-CNAMEs und domänenübergreifendes Tracking</a>. </p> <p>Beachten Sie, dass Sie zwei zusätzliche Tracking-Server-Parameter (<span class="codeph">visitor.marketingCloudServer</span> und <span class="codeph">visitor.marketingCloudServerSecure</span>) angeben müssen, um einen CNAME mit dem ID-Dienst zu konfigurieren. </p> </td> 
+   <td colname="col2"> <p>Wenn Sie Besucher domänenübergreifend verfolgen und außerdem über eine Haupteinstiegs-Site verfügen, auf der Kunden identifiziert werden können, bevor sie andere Domänen besuchen, sollten Sie Ihren Datenerfassungs-CNAME weiterhin verwenden. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Beachten Sie, dass Sie zwei zusätzliche Tracking-Server-Parameter (<span class="codeph">visitor.marketingCloudServer</span> und <span class="codeph">visitor.marketingCloudServerSecure</span>) angeben müssen, um einen CNAME mit dem ID-Dienst zu konfigurieren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Eine Domäne </p> </td> 
