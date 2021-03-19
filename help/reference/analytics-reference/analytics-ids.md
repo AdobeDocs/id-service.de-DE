@@ -6,9 +6,9 @@ seo-title: Einrichten von Analytics- und Experience Cloud IDs
 title: Einrichten von Analytics- und Experience Cloud IDs
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '945'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Damit dies umgangen werden kann, haben viele Kunden CNAME-Einträge für ihre Da
 
 JavaScript kann in der Erstanbieterdomäne (der Domäne der aktuellen Website) gesetzte Cookies lesen und schreiben. Der [!DNL Experience Cloud] ID-Dienst verwendet diese Methode, um den Cookie `AMCV_###@AdobeOrg` zu setzen, der sämtliche Besucher-IDs enthält. Die Domäne des Tracking-Servers muss dabei nicht mehr mit der Domäne der Website übereinstimmen, damit der Besucher-ID-Cookie gespeichert wird. In den meisten Fällen ist dies die bevorzugte Methode zum Setzen des ID-Dienst-Cookies, da dadurch der Mehraufwand für CNAME-Einträge und SSL-Zertifikate entfällt.
 
-Es gibt jedoch einige Situationen, in denen das Setzen des Cookies im HTTP-Header für das domänenübergreifende Tracking Vorteil ist. Dies wird unter [Datenerfassungs-CNAMEs und domänenübergreifendes Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d) beschrieben.
+<!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
 ## Benutzerdefinierte ID für Analytics  {#section-b6a7bd19e9ff432390010062450808f6}
 
