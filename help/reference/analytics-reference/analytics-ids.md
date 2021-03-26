@@ -5,9 +5,9 @@ seo-description: Der Experience Cloud Identity-Dienst ersetzt die Legacy ID-Met
 seo-title: Einrichten von Analytics- und Experience Cloud IDs
 title: Einrichten von Analytics- und Experience Cloud IDs
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '945'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ JavaScript kann in der Erstanbieterdomäne (der Domäne der aktuellen Website) g
 
 <!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
-## Benutzerdefinierte ID für Analytics  {#section-b6a7bd19e9ff432390010062450808f6}
+## Benutzerdefinierte ID für Analytics {#section-b6a7bd19e9ff432390010062450808f6}
 
 In Analytics können Besucher identifiziert werden, indem eine Kunden-ID mit `s.visitorID` festgelegt wird. Integrationen jedoch, bei denen Daten mithilfe des ID-Dienstes aus Analytics exportiert oder in die Anwendung importiert werden, funktionieren nicht, wenn ein Besucher mithilfe von `s.visitorID`.
 
