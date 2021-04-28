@@ -3,14 +3,14 @@ title: Kennzeichnungs-Änderungen für Google Chrome SameSite
 seo-title: Kennzeichnungs-Änderungen für Google Chrome SameSite
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 seo-description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
-translation-type: tm+mt
-source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '1079'
+ht-degree: 100%
 
 ---
-
 
 # Kennzeichnungs-Änderungen für Google Chrome SameSite {#google-chrome-samesite-labelling-changes}
 
@@ -122,4 +122,4 @@ In der folgenden Tabelle sind nur die gebräuchlichen standardmäßigen Besucher
 
 > !![IMPORTANT] Drittanbieter-Cookies von Adobe werden serverseitig eingestellt
 
-Weitere Informationen finden Sie im Dokument zu den [Target-Google Chrome SameSite-Richtlinien](https://docs.adobe.com/content/help/de-DE/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.translate.html).
+Weitere Informationen finden Sie im Dokument zu den [Target-Google Chrome SameSite-Richtlinien](https://docs.adobe.com/content/help/de-DE/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html).
