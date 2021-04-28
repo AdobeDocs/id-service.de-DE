@@ -5,14 +5,14 @@ seo-description: Mit dieser Funktion können Sie die Experience Cloud ID eines B
 seo-title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '448'
 ht-degree: 100%
 
 ---
-
 
 # appendVisitorIDsTo (domänenübergreifendes Tracking) {#appendvisitoridsto-cross-domain-tracking}
 
@@ -41,7 +41,7 @@ Um dieses Problem zu lösen, implementieren Sie ` Visitor.appendVisitorIDsTo( *`
 
 Weitere Informationen finden Sie im Codebeispiel.
 
-## Codebeispiel für das Anhängen von Besucher-IDs {#section-62d55f7f986542b0b9238e483d50d7b0}
+## Codebeispiel für das Anhängen von Besucher-IDs  {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 Das folgende Beispiel hilft Ihnen bei den ersten Schritten mit ` Visitor.appendVisitorIDsTo( *`url`*)`. Wenn dies richtig implementiert wird, sollte Ihr JavaScript-Code etwa wie im folgenden Beispiel aussehen.
 
@@ -83,4 +83,3 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
   </tr> 
  </tbody> 
 </table>
-
