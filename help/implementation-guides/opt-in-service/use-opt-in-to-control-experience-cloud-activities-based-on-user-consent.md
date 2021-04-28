@@ -1,14 +1,14 @@
 ---
 title: Opt-in zur Steuerung von Experience Cloud-Aktivitäten auf Basis des Benutzereinverständnisses
 description: Das Opt-in-Objekt von Adobe ist eine Erweiterung des Adobe Experience Platform Identity Service, mit dem Sie steuern können, ob und welche Experience Cloud-Lösungen basierend auf der Zustimmung des Endbenutzers auf Web-Seiten Cookies erstellen oder Beacons auslösen können.
-translation-type: tm+mt
-source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '554'
+ht-degree: 100%
 
 ---
-
 
 # Experience Cloud-Aktivitäten auf Basis des Benutzereinverständnisses steuern
 
@@ -18,7 +18,7 @@ Das [!UICONTROL Opt-in]-Objekt von Adobe ist eine Erweiterung des [!UICONTROL Ex
 
 Ein wichtiger Aspekt der Datenschutzbestimmungen ist der Erwerb und die Übermittlung des Einverständnisses der Benutzer darüber, wie und von wem ihre personenbezogenen Daten verwendet werden dürfen. Die neueste Version des [!UICONTROL Identity Service] umfasst Funktionen, die zwischen dem Benutzer (UI) und den Lösungen von Adobe angesiedelt sind. Dabei werden Adobe Experience Cloud-Lösungs-Tags abhängig davon ausgelöst, ob der Endbenutzer sein Einverständnis gegeben hat (z. B. vor und nach der Einverständniserteilung). Dies wird in der folgenden Abbildung verdeutlicht:
 
-![Abbildung der Funktionsweise von [!UICONTROL Opt-in]](assets/opt-in.png)
+![ Abbildung der Funktionsweise von [!UICONTROL  Opt-in] ](assets/opt-in.png)
 
 [!UICONTROL Opt-in] ist im Grunde der Pförtner... oder der Schlüsselmeister Sie entscheiden.
 
@@ -34,7 +34,7 @@ Daraus ergibt sich Folgendes:
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-Wenn Sie nicht Experience Platform Launch verwenden, können Sie die Konfiguration des [!UICONTROL Opt-in] bei der Initialisierung des globalen Besucher-Objekts festlegen, wie in der [Dokumentation](https://marketing.adobe.com/resources/help/de_DE/mcvid/getting-started.html)dargestellt.
+Wenn Sie nicht Experience Platform Launch verwenden, können Sie die Konfiguration des [!UICONTROL Opt-in] bei der Initialisierung des globalen Besucher-Objekts festlegen, wie in der [Dokumentation](https://marketing.adobe.com/resources/help/de_DE/mcvid/getting-started.html) dargestellt.
 
 ## Implementierung des [!UICONTROL Opt-in] auf der Seite
 
