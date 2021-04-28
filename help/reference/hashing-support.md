@@ -4,14 +4,14 @@ keywords: ID-Dienst
 seo-description: Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen importieren und Hash-IDs exportieren können. Dies ist eine optionale JavaScript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können auch weiterhin Ihre eigenen Hash-Methoden beim Senden von Kunden-IDs verwenden.
 seo-title: SHA-256-Hash-Unterstützung für setCustomerIDs
 title: SHA-256-Hash-Unterstützung für setCustomerIDs
-translation-type: tm+mt
-source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
-workflow-type: tm+mt
+exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '666'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
-
 
 # SHA-256-Hash-Unterstützung für `setCustomerIDs` {#hashing-support}
 
@@ -23,7 +23,7 @@ Es gibt folgende zwei Möglichkeiten, um Hash-Unterstützung mit setCustomerIDs 
 
 ## Verwenden der `setCustomerIDs`-Methode in ECID {#use-setcustomerids-method}
 
-Die erste Methode nutzt die Methode [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`).
+In der ersten Variante wird die Methode [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) verwendet.
 
 Vor dem Hashing führt die ECID-Bibliothek eine Datennormalisierung der customerIDs durch. Durch diesen Prozess werden die Leerzeichen zu beiden Enden der customerIDs entfernt und alle Zeichen in Kleinbuchstaben umgewandelt. Beispiel: Die E-Mail-Adresse “ ecid@adobe.com “ wird in “ecid@adobe.com“ umgewandelt.
 
@@ -38,7 +38,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Neben der Besucher-ID für Experience Cloud können Sie jedem Kunden eine weitere ID, einen Authentifizierungsstatus und einen Hash-Typ (SHA-256) zuweisen. Wenn Sie keinen Hash-Typ angeben, wird angenommen, dass kein Hashing stattfindet.
 
-Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Sie können diese IDs beispielsweise als [Kundenattribute](https://docs.adobe.com/content/help/de-DE/core-services/interface/customer-attributes/attributes.html) in das Experience Cloud hochladen und auf diese Daten in den verschiedenen Lösungen zugreifen.
+Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Sie können diese IDs beispielsweise als [Kundenattribute](https://docs.adobe.com/content/help/de-DE/core-services/interface/customer-attributes/attributes.html) in Experience Cloud hochladen und aus verschiedenen Lösungen auf die Daten zugreifen.
 
 Kunden-IDs, der Authentifizierungsstatus und der Hash-Typ *werden nicht* in einem Cookie für die spätere Verwendung gespeichert. Stattdessen sollten Kunden-IDs, Authentifizierungsstatus und Hash-Typ in einer Instanzvariablen gespeichert werden, die wie unten dargestellt mithilfe von [`getCustomerIDs`](/help/library/get-set/getcustomerids.md) abgerufen werden kann:
 
@@ -61,7 +61,7 @@ d_cid_ic=email%a6ea4cde5da5ae7cc68baae894d1d6544fca26254433b0fff7c2cb4843b4a097%
 ts=1563299964843
 ```
 
-<br> 
+<br>
 
 In der unten stehenden Tabelle finden Sie eine Beschreibung des `d_cid_ic`-Parameters und des Authentifizierungsstatus.
 
@@ -71,13 +71,13 @@ In der unten stehenden Tabelle finden Sie eine Beschreibung des `d_cid_ic`-Param
 
 ## Hinzufügen einer Aktion in Adobe Experience Platform {#add-action-launch}
 
-Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Lesen Sie mehr über Launch in der [Produktdokumentation starten](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html).
+Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Weitere Informationen über Launch finden Sie in der [Launch-Dokumentation](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html).
 
-Um eine Aktion in Launch hinzuzufügen, lesen Sie die [Regeldokumentation](https://docs.adobe.com/help/de-DE/launch/using/reference/manage-resources/rules.html) in Adobe Launch und sehen Sie sich die Bildschirmaufzeichnung unten an.
+Um eine Aktion in Launch hinzuzufügen, lesen Sie die [Dokumentation zu Regeln](https://docs.adobe.com/help/de-DE/launch/using/reference/manage-resources/rules.html) in Adobe Launch und sehen Sie sich unten den Screenshot an:
 
 ![](/help/reference/assets/hashing-support.png)
 
-<br> 
+<br>
 
 Nachdem Sie Ihre Konfiguration bestätigt haben, werden die Daten wie unten dargestellt von Launch in ein Objekt aufgenommen:
 
