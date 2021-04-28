@@ -5,20 +5,20 @@ seo-description: Eine Übersicht darüber, wie der Experience Cloud Identity-Die
 seo-title: Analytics und Experience Cloud ID-Anforderungen
 title: Analytics und Experience Cloud ID-Anforderungen
 uuid: 28beed16-7ef9-4824-8e82-853930756eca
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '469'
+ht-degree: 100%
 
 ---
-
 
 # Analytics und Experience Cloud ID-Anforderungen {#analytics-and-experience-cloud-id-requests}
 
 Eine Übersicht darüber, wie der Experience Cloud Identity-Dienst mit Legacy-Analytics-IDs funktioniert.
 
-## Zusammenfassung {#section-64d8523ff7634cb987d0c6480f587dd3}
+## Zusammenfassung  {#section-64d8523ff7634cb987d0c6480f587dd3}
 
 In der Vergangenheit war der Experience Cloud Identity-Dienst eng in Adobe Analytics eingebunden. Er ist auch weiterhin zentraler Bestandteil von Analytics, erfüllt jedoch nun wichtige Funktionen für andere Lösungen und Eigenschaften der [!DNL Experience Cloud]. Aufgrund dieses Umstands funktioniert das Suchen oder Schreiben einer Analytics-ID etwas anders als mit dem unter [Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a) beschriebenen allgemeinen Prozess. Weitere Informationen zur Reihenfolge der Vorgänge zum Überprüfen von IDs finden Sie unter [Einrichten von Analytics- und Experience Cloud IDs](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6).
 
@@ -51,7 +51,7 @@ Wenn das [!DNL Experience Cloud]-Cookie (AMCV) nicht vorhanden ist, generiert ei
 
 >[!NOTE]
 >
->Für Benutzer, die durch ein s_fid-Cookie identifiziert werden, findet keine Migration des Legacy-FID-Werts in den AMCV-Cookie statt. Bei einem s_fid-Cookie werden Benutzer migriert, als sei kein s_vi-Cookie vorhanden (siehe oben), und sie werden als neue Besucher Ihrer Site angezeigt. Weitere Informationen finden Sie unter [Analytics-Cookies](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html).
+>Für Benutzer, die durch ein s_fid-Cookie identifiziert werden, findet keine Migration des Legacy-FID-Werts in den AMCV-Cookie statt. Bei einem s_fid-Cookie werden Benutzer migriert, als sei kein s_vi-Cookie vorhanden (siehe oben), und sie werden als neue Besucher Ihrer Site angezeigt. Weitere Informationen finden Sie unter [Analytics-Cookies](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-analytics.html).
 
 ## AMCV-Cookie ist im Browser gesetzt {#section-01c088fc565c4b24ba1722c7cc240310}
 
