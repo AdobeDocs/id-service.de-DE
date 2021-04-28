@@ -4,16 +4,16 @@ seo-description: Aktivieren Sie Opt-in-Dienste mit Dynamic Tag Management (DTM).
 seo-title: Konfigurieren von Opt-in mit DTM
 title: Konfigurieren von Opt-in mit DTM
 uuid: 7a886bc3-c9e5-4eac-85e8-828a83c847c5
-translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: 0e21e73c-aefe-41a5-87e6-499d2164f301
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '64'
+ht-degree: 100%
 
 ---
 
-
-# Konfigurieren von Opt-in mit DTM{#configuring-opt-in-with-dtm}
+# Konfigurieren von Opt-in mit DTM {#configuring-opt-in-with-dtm}
 
 Aktivieren Sie Opt-in-Dienste mit Dynamic Tag Management (DTM).
 
