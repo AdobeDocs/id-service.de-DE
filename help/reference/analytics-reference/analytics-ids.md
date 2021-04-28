@@ -5,14 +5,14 @@ seo-description: Der Experience Cloud Identity-Dienst ersetzt die Legacy ID-Met
 seo-title: Einrichten von Analytics- und Experience Cloud IDs
 title: Einrichten von Analytics- und Experience Cloud IDs
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
+exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '945'
 ht-degree: 100%
 
 ---
-
 
 # Einrichten von Analytics- und Experience Cloud IDs {#setting-analytics-and-experience-cloud-ids}
 
@@ -22,7 +22,7 @@ Nach der Implementierung des ID-Diensts wird dieser Code vor AppMeasurement ausg
 
 Beim Laden von AppMeasurement werden die Werte für Experience Cloud IDs und Analytics-IDs vom ID-Dienst angefordert und mit jedem Server-Aufruf an die Datenerfassung gesendet. Da der ID-Dienst die Besucher-ID bestimmt und sie einfach an AppMeasurement übergibt, muss der ID-Dienst auf jeder Seite vor Ihrer AppMeasurement-JavaScript-Datei eingebunden und implementiert werden.
 
-## Änderungen beim ID-Vorgang für Analytics {#section-79bb86ae63f546419bb1a7ef5e710462}
+## Änderungen beim ID-Vorgang für Analytics  {#section-79bb86ae63f546419bb1a7ef5e710462}
 
 Die wesentliche Änderung bei der Migration auf den [!DNL Experience Cloud] ID-Dienst besteht darin, dass das ID-Cookie nun mit JavaScript gesetzt wird und nicht mehr im HTTP-Header, der vom Datenerfassungs-Webserver zurückgegeben wird. Um diese Änderung zu verstehen, wird in den folgenden Abschnitten beschrieben, wie Cookies mithilfe dieser beiden Methoden gesetzt werden.
 
@@ -42,7 +42,7 @@ JavaScript kann in der Erstanbieterdomäne (der Domäne der aktuellen Website) g
 
 <!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
-## Benutzerdefinierte ID für Analytics {#section-b6a7bd19e9ff432390010062450808f6}
+## Benutzerdefinierte ID für Analytics  {#section-b6a7bd19e9ff432390010062450808f6}
 
 In Analytics können Besucher identifiziert werden, indem eine Kunden-ID mit `s.visitorID` festgelegt wird. Integrationen jedoch, bei denen Daten mithilfe des ID-Dienstes aus Analytics exportiert oder in die Anwendung importiert werden, funktionieren nicht, wenn ein Besucher mithilfe von `s.visitorID`.
 
@@ -83,7 +83,7 @@ Nach der Bereitstellung des Besucher-ID-Diensts gibt es fünf Möglichkeiten, ei
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/de-DE/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/de-DE/analytics/components/metrics/unique-visitors.html" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
    <td colname="col3"> <p>der Browser des Besuchers keine Cookies akzeptiert. </p> </td> 
   </tr> 
  </tbody> 
