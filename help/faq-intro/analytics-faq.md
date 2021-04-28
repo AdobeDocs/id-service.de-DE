@@ -5,14 +5,14 @@ seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität
 seo-title: Häufig gestellte Fragen zu Analytics und zum Identity-Dienst
 title: Häufig gestellte Fragen zu Analytics und zum Identity-Dienst
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '993'
 ht-degree: 100%
 
 ---
-
 
 # Häufig gestellte Fragen zu Analytics und zum Identity-Dienst {#analytics-and-id-service-faqs}
 
@@ -54,7 +54,7 @@ H-Code wird jedoch mit der Code-Version 1.6 (oder höher) von visitorAPI.js nich
 
 **Was ist eine Übergangsphase und wie konfiguriere ich sie?**
 
-Siehe [Übergangsphase beim Identity-Dienst](../reference/analytics-reference/grace-period.md) und wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+Siehe [Übergangsphase beim Identity-Dienst](../reference/analytics-reference/grace-period.md) und wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
 
 **Warum muss ich zur Echtzeit-Datenerfassung (Real-time Data Collection, RDC) migrieren, um den Identity-Dienst zu verwenden?**
 
@@ -69,7 +69,7 @@ Häufige Ursachen für Diskrepanzen bei der Verwendung des Identity-Diensts:
 * Weitere Verwendung des s_vi-Legacy-Cookies. Dies führt zu Diskrepanzen bei der Datenerfassung.
 * Doppelte Zählung von Besuchern, wenn sie von einer Umfrage zu einem Popup navigieren.
 
-## Cookies {#section-b7d5384fbedd47b09e1030211c39a3d1}
+## Cookies  {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
 **Was geschieht in Analytics, wenn der Identity-Dienst keinen AMCV-Cookie setzen kann?**
 
@@ -93,5 +93,5 @@ Es gibt drei mögliche Szenarien, in denen sich dies auf Analytics-Daten für ne
 
 >[!MORELIKETHIS]
 >
->* [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
 
