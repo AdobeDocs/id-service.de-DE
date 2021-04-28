@@ -5,14 +5,14 @@ seo-description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '606'
+ht-degree: 100%
 
 ---
-
 
 # isCoopSafe {#iscoopsafe}
 
@@ -85,7 +85,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## POST-Parameter für Ereignisaufrufe {#section-fcd441933506493faefaa6b51f194a17}
+## POST-Parameter für Ereignisaufrufe  {#section-fcd441933506493faefaa6b51f194a17}
 
 Abhängig von der festgelegten Kennzeichnung (`true` oder `false`) überträgt der ID-Dienst `isCoopSafe` in diese POST-Parameter und sendet sie in einem Ereignisaufruf an [!DNL Adobe]:
 
