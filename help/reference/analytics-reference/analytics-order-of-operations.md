@@ -5,14 +5,14 @@ seo-description: Nach der Bereitstellung des Besucher-ID-Diensts gibt es fünf M
 seo-title: Reihenfolge der Befehle für Analytics-IDs
 title: Reihenfolge der Befehle für Analytics-IDs
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '331'
 ht-degree: 100%
 
 ---
-
 
 # Reihenfolge der Befehle für Analytics-IDs {#order-of-operations-for-analytics-ids}
 
@@ -51,9 +51,8 @@ In vielen Szenarios können für einen Aufruf zwei oder drei verschiedene IDs vo
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5.<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/de-DE/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/de-DE/analytics/components/metrics/unique-visitors.html" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
    <td colname="col3"> <p>der Browser des Besuchers keine Cookies akzeptiert. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
