@@ -5,14 +5,14 @@ seo-description: Versionshinweise und Aktualisierungen für das Jahr 2015
 seo-title: Versionshinweise für 2015
 title: Versionshinweise für 2015
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für 2015 {#release-notes}
 
@@ -26,17 +26,17 @@ Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Online-Er
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
-September 2015
+September 2015
 
 * Es wurde ein Fehler im Safari-Browser behoben, durch den Synchronisierungsdienste nicht funktionierten, wenn Benutzer Drittanbieter-Cookies blockierten. (AAM-20764)
-* Aufrufe des ID-Dienstes enthalten nun die Versions-ID im Parameter `d_visid_ver=`. Die zurückgegebene ID hilft internen Teams bei der Fehlerbehebung und Supportproblemen. (AAM-20824)
+* Aufrufe des ID-Dienstes enthalten nun die Versions-ID im Parameter `d_visid_ver=`. Die zurückgegebene ID hilft internen Teams bei der Fehlerbehebung und Support-Problemen. (AAM-20824)
 
 ## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
-August 2015
+August 2015
 
-* Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst einen iframe anfordert, wenn keine Daten synchronisiert oder ausgelöst werden müssen. (AAM-20164)
-* Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst ein mehrteiliges Top-Level-Domänen-Cookie ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domäne wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
+* Ein Fehler wurde behoben, um zu verhindern, dass der ID-Dienst ein iframe anfordert, wenn keine zu synchronisierenden oder auszulösenden Daten vorhanden sind. (AAM-20164)
+* Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domain-Cookies nicht ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domäne wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
 
    Dies betraf nur einige Clients, die *alle* der folgenden Kriterien erfüllten:
 
@@ -76,7 +76,7 @@ Weitere Informationen finden Sie unter [Experience Cloud](../implementation-guid
 
 Februar 2015
 
-Die Verarbeitung des Timeouts bei Anforderungen für AAM Blob und Location Hint wurde korrigiert. Bei einem Timeout bleiben diese Felder nun für die aktuelle Seite korrekt leer und es werden alle Callbacks ausgeführt. Die Zeitüberschreitung wird als Fehlerbedingung behandelt, daher wird es auf der nächsten Seite erneut versucht. (AN-94473, AN-94474)
+Die Verarbeitung des Timeouts bei Anforderungen für AAM Blob und Location Hint wurde korrigiert. Bei einem Timeout bleiben diese Felder nun für die aktuelle Seite korrekt leer, und es werden alle Callbacks ausgeführt. Die Zeitüberschreitung wird als Fehlerbedingung behandelt, daher wird es auf der nächsten Seite erneut versucht. (AN-94473, AN-94474)
 
 ## Version 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
