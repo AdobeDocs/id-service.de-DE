@@ -5,14 +5,14 @@ seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität
 seo-title: Häufig gestellte Fragen zum ID-Dienst
 title: Häufig gestellte Fragen zum ID-Dienst
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '806'
 ht-degree: 100%
 
 ---
-
 
 # Häufig gestellte Fragen zum ID-Dienst {#id-service-faqs}
 
@@ -22,7 +22,7 @@ Häufig gestellte Fragen zu den Funktionen und Problemen bezüglich des ID-Diens
 
 **Welche Art von Funktionalität oder Funktionen bietet der ID-Dienst?**
 
-Siehe [Übersicht](../introduction/overview.md).
+Siehe  [Übersicht](../introduction/overview.md).
 
 **Warum führt der ID-Dienst keinen Aufruf zum Abruf der Experience Cloud ID aus?**
 
