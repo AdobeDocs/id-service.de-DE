@@ -5,14 +5,14 @@ seo-description: Häufig gestellte Fragen zum Experience Cloud Identity-Dienst s
 seo-title: Häufig gestellte Fragen (FAQ)
 title: Häufig gestellte Fragen (FAQ)
 uuid: b075957b-165f-4087-99ad-bf608b4d4967
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: 930c0849-1d88-408e-a385-214b4d0ffd96
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '88'
 ht-degree: 100%
 
 ---
-
 
 # Häufig gestellte Fragen (FAQ) {#faqs}
 
