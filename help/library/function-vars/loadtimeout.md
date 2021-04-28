@@ -1,30 +1,30 @@
 ---
-description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient zum Ermitteln anderer Lösungen (z. B. Analytics, Audience Manager, Zielgruppe usw.) wie lange auf eine Antwort des ID-Diensts gewartet wird.
+description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient dazu, anderen Lösungen (Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange auf eine Antwort des ID-Diensts gewartet werden soll.
 keywords: ID-Dienst
-seo-description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient zum Ermitteln anderer Lösungen (z. B. Analytics, Audience Manager, Zielgruppe usw.) wie lange auf eine Antwort des ID-Diensts gewartet wird.
+seo-description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient dazu, anderen Lösungen (Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange auf eine Antwort des ID-Diensts gewartet werden soll.
 seo-title: loadTimeout
 title: loadTimeout
 uuid: f627e044-bd73-49a4-8a90-6d19aa566751
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 485264f4-ee24-4042-8be3-259e70462110
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '169'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
+# loadTimeout {#loadtimeout}
 
-# loadTimeout{#loadtimeout}
-
-Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient zum Ermitteln anderer Lösungen (z. B. Analytics, Audience Manager, Zielgruppe usw.) wie lange auf eine Antwort des ID-Diensts gewartet wird.
+Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient dazu, anderen Lösungen (Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange auf eine Antwort des ID-Diensts gewartet werden soll.
 
 **Syntax:** ` loadTimeout: *`Intervall in Millisekunden`*`
 
-Der Standardwert ist 30.000 Millisekunden (30 Sekunden). Es wird dringend empfohlen, den Standardwert nicht zu ändern.**
+Der Standardwert ist 30.000 Millisekunden (30 Sekunden). Es wird dringend empfohlen, den Standardwert *nicht* zu ändern.
 
 >[!NOTE]
 >
->Aufrufe des ID-Dienstes erfolgen asynchron im Verhältnis zu anderem, nicht von Adobe stammendem Code auf der Seite. Infolgedessen ändert die Erhöhung oder Verringerung des Zeitüberschreitungsintervalls nicht die Rate, mit der Ihre Seite Inhalte wiedergibt. Lange Timeout-Intervalle können sich jedoch auf die Seitenladezeit auswirken, die von den üblichen Netzwerküberwachungstools gemessen wird, aber die Wiedergabedauer bleibt hiervon unberührt.
+>Aufrufe des ID-Dienstes erfolgen asynchron im Verhältnis zu anderem, nicht von Adobe stammendem Code auf der Seite. Infolgedessen ändert die Erhöhung oder Verringerung des Zeitüberschreitungsintervalls nicht die Rate, mit der Ihre Seite Inhalte wiedergibt. Lange Zeitüberschreitungsintervalle können sich auf die Seitenladezeit auswirken, die von den üblichen Netzwerküberwachungs-Tools gemessen wird; aber die Wiedergabedauer bleibt jedoch hiervon unberührt.
 
 **Codebeispiel**
 
@@ -41,4 +41,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    loadTimeout:10000 
 });
 ```
-
