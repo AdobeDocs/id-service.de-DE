@@ -5,16 +5,16 @@ seo-description: Diese Funktion wurde hauptsächlich für A4T-Kunden entwickelt,
 seo-title: resetState
 title: resetState
 uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-
-# resetState{#resetstate}
+# resetState {#resetstate}
 
 Diese Funktion wurde hauptsächlich für A4T-Kunden entwickelt, um sie bei der Lösung von Problemen bei der Arbeit mit IDs auf Single-Page-Sites/-Bildschirmen oder -Apps zu unterstützen.
 
@@ -23,7 +23,7 @@ Diese Funktion wurde hauptsächlich für A4T-Kunden entwickelt, um sie bei der L
 Als A4T-Kunde, der den ID-Dienst verwendet, können Sie die Funktion `visitor.resetState()` für folgende Zwecke einsetzen:
 
 * So übergeben Sie eine zusätzliche Daten-ID (SDID) oder eine andere ID über eine Umleitung von einer Seite oder einem Bildschirm an eine andere. Normalerweise übergibt der ID-Dienst diese ID nicht ohne diese Funktion.
-* Verwenden Sie Code, der nur bestimmte Abschnitte einer Seite oder App über Ajax-Aufrufe aktualisiert, und Sie möchten diese Aktionen verfolgen. Angenommen, Sie haben eine Seite, auf der das Klicken auf ein Objekt nur einen bestimmten Abschnitt lädt oder ändert. In diesem Fall kann der ID-Dienst nur dann eine andere ID anfordern, wenn die Seite neu geladen wird. Mit `visitor.resetState()` können Sie eine neue ID unter diesen Bedingungen anfordern.
+* Verwenden Sie Code, der nur bestimmte Abschnitte einer Seite oder eines Programms über Ajax-Aufrufe aktualisiert, wenn Sie diese Aktionen verfolgen möchten. Angenommen Sie haben eine Seite, auf der das Klicken auf ein Objekt nur einen bestimmten Abschnitt lädt oder ändert. In diesem Fall kann der ID-Dienst nur dann eine andere ID anfordern, wenn die Seite neu geladen wird. Mit `visitor.resetState()` können Sie eine neue ID unter diesen Bedingungen anfordern.
 
 Siehe Codebeispiele weiter unten.
 
@@ -66,7 +66,7 @@ visitor.resetState(serverState);
 
 **Benutzerdefinierte Implementierung** (ohne Übergeben einer ID)
 
-In diesem Fall kann mit `visitor.resetState()` eine neue ID generiert werden. Dies kann in einer einseitigen App nützlich sein, wenn ein Benutzer zu einem neuen Bildschirm navigiert, ohne die Seite zu aktualisieren, und Sie eine neue ID benötigen.
+In diesem Fall kann mit `visitor.resetState()` eine neue ID generiert werden. Dies kann in einem einseitigen Programm nützlich sein, wenn ein Benutzer zu einem neuen Bildschirm navigiert, ohne die Seite zu aktualisieren, und Sie eine neue ID benötigen.
 
 ```js
  
