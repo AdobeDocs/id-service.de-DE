@@ -5,16 +5,16 @@ seo-description: Eine optionale boolesche Kennzeichnung, die verhindert, dass de
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
 uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
-translation-type: tm+mt
-source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
+source-wordcount: '157'
+ht-degree: 100%
 
 ---
 
-
-# disableThirdPartyCookies{#disablethirdpartycookies}
+# disableThirdPartyCookies {#disablethirdpartycookies}
 
 Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud Identity-Dienst das Drittanbieter-Cookie demdex.net zurückgibt.
 
@@ -41,4 +41,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableThirdPartyCookies: true 
 });
 ```
-
