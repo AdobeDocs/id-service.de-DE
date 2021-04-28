@@ -5,14 +5,14 @@ seo-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder 
 seo-title: Versionshinweise für 2017
 title: Versionshinweise für 2017
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '762'
 ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für 2017 {#release-notes}
 
@@ -77,7 +77,7 @@ August 2017
 
 **Überarbeitete Dokumentation**
 
-Der Abschnitt [Häufig gestellte Fragen (FAQ)](/help/faq-intro/faq-intro.md) wurde aktualisiert und überarbeitet und enthält jetzt separate häufig gestellte Fragen für unterschiedliche [!DNL Experience Cloud]-Lösungen.
+Der Abschnitt  [Häufig gestellte Fragen (FAQ)](/help/faq-intro/faq-intro.md) wurde aktualisiert und überarbeitet und enthält jetzt separate häufig gestellte Fragen für unterschiedliche [!DNL Experience Cloud]-Lösungen.
 
 ## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -126,7 +126,7 @@ Veröffentlichung: Juni 2017
  </tbody> 
 </table>
 
-## Aktualisierungen der Dokumentation für Mai {#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## Aktualisierungen der Dokumentation für Mai  {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
