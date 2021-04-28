@@ -5,16 +5,16 @@ seo-description: Diese Eigenschaft legt die Container-ID der Datenquelle fest, d
 seo-title: idSyncContainerID
 title: idSyncContainerID
 uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
-translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
-workflow-type: tm+mt
+exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
-
-# idSyncContainerID{#idsynccontainerid}
+# idSyncContainerID {#idsynccontainerid}
 
 Diese Eigenschaft legt die Container-ID der Datenquelle fest, die Sie für ID-Synchronisierungen verwenden möchten.
 
@@ -40,20 +40,20 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 });
 ```
 
-## Was sind Container und wann werden sie verwendet? {#section-6aed44fbe9d6401a8f912cb0d98339a7}
+## Was sind Container und wann werden sie verwendet?  {#section-6aed44fbe9d6401a8f912cb0d98339a7}
 
 **Behälter**
 
-Container sind Objekte, die von [!DNL Audience Manager] erstellt werden. Obwohl sie nicht extern zugänglich sind, werden mit diesem Container alle Datenquellen Liste, die:
+Container sind Objekte, die von [!DNL Audience Manager] erstellt werden. Obwohl kein externer Zugriff möglich ist, listen diese Container alle Datenquellen auf, die
 
-* sind für Sie verfügbar, aber nicht für die ID-Synchronisierung verwendet.
-* werden für die ID-Synchronisierung verwendet.
+* für Sie verfügbar sind, jedoch nicht für die ID-Synchronisierung verwendet werden. 
+* die für die ID-Synchronisierung verwendet werden.
 
 Auch wenn Sie kein [!DNL Audience Manager]-Kunde sind, enthält Ihr Konto diese Container, wenn Sie IDs mit verschiedenen Datenquellen auf unterschiedlichen Seiten in Ihrer Domäne austauschen. Der Grund dafür ist, dass [!DNL Audience Manager] die Technologie und die Backend-Funktionalität zur Verfügung stellt, die eine ID-Synchronisierung ermöglichen.
 
 **Nutzungsszenarios**
 
-Abhängig von Ihrer Situation müssen Sie diese Konfiguration möglicherweise Ihrem ID-Dienst-Code hinzufügen.
+Je nach Situation müssen Sie diese Konfiguration möglicherweise Ihrem ID-Dienst-Code hinzufügen.
 
 <table id="table_48621F343C7F4760A75F6BCC2DB2DA20"> 
  <thead> 
@@ -65,19 +65,19 @@ Abhängig von Ihrer Situation müssen Sie diese Konfiguration möglicherweise Ih
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Nicht erforderlich</b> </p> </td> 
-   <td colname="col2"> <p>Sie müssen diese Konfiguration nicht verwenden, wenn: </p> <p> 
+   <td colname="col2"> <p>Unter folgenden Bedingungen müssen Sie diese Konfiguration nicht verwenden: </p> <p> 
      <ul id="ul_4D6F794CD65C43D0BEFBA6F5DE420C2E"> 
-      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Wenn Sie den ID-Dienst mit einer beliebigen <span class="keyword">Experience Cloud</span>-Lösung verwenden und keine ID-Synchronisierungen mit anderen Datenquellen durchführen. In diesem Fall hat Ihr Konto einen Standard-Container mit der ID 0 und es ist keine Aktion erforderlich. </li> 
+      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Wenn Sie den ID-Dienst mit einer beliebigen <span class="keyword">Experience Cloud</span>-Lösung verwenden und keine ID-Synchronisierungen mit anderen Datenquellen durchführen. In diesem Fall hat Ihr Konto einen Standard-Container mit der ID 0, und es ist keine Aktion erforderlich. </li> 
       <li id="li_5657D64D9406407D9B4DB7D8BE4F8EE4">Alle Ihre Datenquellen befinden sich in einem einzigen Container. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Benötigt</b> </p> </td> 
-   <td colname="col2"> <p>Sie müssen diese Konfiguration verwenden, wenn alle dieser Bedingungen zutreffen: </p> <p> 
+   <td colname="col1"> <p> <b>Erforderlich</b> </p> </td> 
+   <td colname="col2"> <p>Sie müssen diese Konfiguration verwenden, wenn alle der folgenden Bedingungen zutreffen: </p> <p> 
      <ul id="ul_9AFD14FC5A2745F7BD7BE7B64545DA62"> 
       <li id="li_04F0EFBBD71B43608CAAA7E7409D33FE">Sie verwenden <span class="keyword">Audience Manager</span> nicht. </li> 
       <li id="li_4BFA6DC76CE9455EBBC337FD2FE820BF">Sie müssen IDs mit anderen Datenquellen synchronisieren, die von Containern organisiert werden. </li> 
-      <li id="li_731DA5D1CBF244F8BEBE57C0E2EBA713">Sie müssen IDs mit Datenquellen in verschiedenen Containern auf verschiedenen Seiten Ihrer Domäne synchronisieren. </li> 
+      <li id="li_731DA5D1CBF244F8BEBE57C0E2EBA713">Sie müssen IDs mit Datenquellen in unterschiedlichen Containern auf verschiedenen Seiten Ihrer Domain synchronisieren. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -85,8 +85,7 @@ Abhängig von Ihrer Situation müssen Sie diese Konfiguration möglicherweise Ih
 
 ## Einrichten von Container-IDs bei Verwendung von DIL und VisitorAPI.js  {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Wenn Sie [!UICONTROL DIL ]*und* VisitorAPI.js auf derselben Seite bereitgestellt haben:
+Wenn Sie [!UICONTROL DIL ]* und* VisitorAPI.js auf derselben Seite bereitgestellt haben:
 
 * Der Dienstcode für die Besucher-ID hat bei ID-Synchronisierungen Vorrang vor DIL.
 * Legen Sie die `idSyncContainerID`-Konfiguration nur im Code des ID-Diensts fest.
-
