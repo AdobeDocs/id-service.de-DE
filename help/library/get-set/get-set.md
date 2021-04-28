@@ -5,16 +5,16 @@ seo-description: Öffentliche Methoden zur Interaktion mit dem ID-Dienst.
 seo-title: Methoden
 title: Methoden
 uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 59a930f0-c0a8-477e-abad-f019d7d02d3b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
-
-# Methoden{#methods}
+# Methoden {#methods}
 
 Öffentliche Methoden zur Interaktion mit dem ID-Dienst.
 
@@ -37,4 +37,3 @@ Verwandte Artikel:
 + [getVisitorValues](getvisitorvalues.md)
 + [isClientSideMarketingCloudVisitorID](client-side-id.md)
 + [resetState](resetstate.md)
-
