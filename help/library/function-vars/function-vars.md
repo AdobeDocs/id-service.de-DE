@@ -5,22 +5,22 @@ seo-description: Konfigurieren Sie den ID-Dienst, indem Sie diese Eigenschaften 
 seo-title: Konfigurationen
 title: Konfigurationen
 uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: a369f624-d263-4287-bb7e-b89d584fa245
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '100'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-
-# Konfigurationen{#configurations}
+# Konfigurationen {#configurations}
 
 Konfigurieren Sie den ID-Dienst, indem Sie diese Eigenschaften an die statische Methode Visitor.getInstance übergeben.
 
 >[!NOTE]
 >
->Die *Javascript-Bibliotheken des Experience Cloud ID-Diensts* wurden vor Kurzem verschoben. Die neueste Version der ECID JS-Bibliotheken finden Sie unter [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Die *Javascript-Bibliotheken des Experience Cloud ID-Diensts* wurden vor Kurzem verschoben. Die aktuelle Version der ECID JS-Bibliotheken finden Sie unter [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Verwandte Artikel:
 
@@ -41,4 +41,3 @@ Verwandte Artikel:
 + [secureCookie](securecookie.md)
 + [useCORSOnly](use-cors-only.md)
 + [whitelistParentDomain und whitelistIframeDomains](whitelistdomain.md)
-
