@@ -5,14 +5,14 @@ seo-description: Eine Übersicht über den ID-Anforderungs- und -Antwortprozess.
 seo-title: Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst
 title: Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '806'
 ht-degree: 100%
 
 ---
-
 
 # Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst {#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
@@ -64,4 +64,3 @@ Nachdem der DCS die Organisations-ID und die demdex-ID erhalten hat, wird die ko
 In diesem Beispiel verlässt der Besucher die Sites der Food Company und navigiert zur Fußball-Site, die der Sports Company gehört. Wenn der Besucher die Fußball-Site besucht, funktionieren die ID-Überprüfung und der Anforderungsprozess auf die gleiche Weise wie in den vorherigen Beispielen beschrieben. Da die Sports Company jedoch über eine eigene Organisations-ID verfügt, gibt der ID-Dienst eine andere MID zurück. Die neue MID ist für die von der Sports Company verwalteten Domänen eindeutig und ermöglicht es dem Unternehmen, Besucherdaten zu verfolgen und lösungsübergreifend in der [!DNL Experience Cloud] freizugeben. Die demdex-ID bleibt für den Besucher gleich, da sie in einem Drittanbieter-Cookie enthalten ist und domänenübergreifend fortbesteht.
 
 ![](assets/req_resp.png)
-
