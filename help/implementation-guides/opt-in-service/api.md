@@ -4,16 +4,16 @@ seo-description: Referenz für die API der Opt-in-Bibliothek und die Konfigurati
 seo-title: Opt-in-Referenz
 title: Opt-in-Referenz
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
-translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
-workflow-type: tm+mt
+exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
-
-# Opt-in-Referenz{#opt-in-reference}
+# Opt-in-Referenz {#opt-in-reference}
 
 Referenz für die API der Opt-in-Bibliothek und die Konfigurationseinstellungen.
 
@@ -28,7 +28,7 @@ adobe.OptInCategories = {
 }
 ```
 
-## Opt-in-Konfigurationsparameter {#section-d66018342baf401389f248bb381becbf}
+## Opt-in-Konfigurationsparameter  {#section-d66018342baf401389f248bb381becbf}
 
 In diesem Abschnitt wird die Opt-in-Konfiguration mithilfe der API beschrieben. Ein Großteil der Konfiguration und Implementierung kann über die Experience Platform Launch-Erweiterung vorgenommen werden.
 
@@ -36,7 +36,7 @@ Opt-in-Konfigurationen werden in der Visitor JavaScript-Funktion `getInstance()`
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**
 
-Wenn &quot;false&quot;, bedeutet dies, dass Besucher nicht Opt-in müssen. Dies führt dazu, dass Experience Cloud Cookies erstellt, unabhängig von den Kategorien, denen zugestimmt oder die abgelehnt wurden. Diese Konfiguration aktiviert bzw. deaktiviert die Teilnahme.
+„false“ bedeutet, dass für Besucher kein Opt-in erforderlich ist. Dies führt dazu, dass Experience Cloud Cookies erstellt, unabhängig von den Kategorien, denen zugestimmt oder die abgelehnt wurden. Bei dieser Konfiguration wird Opt-in holistisch aktiviert oder deaktiviert.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -60,21 +60,21 @@ Anzahl der Sekunden, um die Standardablaufzeit von 13 Monaten zu überschreiben
 
 ## Änderungen an den Zustimmungsparametern  {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
-Ein Besucher kann seine Voreinstellungen jederzeit während der Erlebnisse auf Ihrer Site zum ersten Mal festlegen oder seine Voreinstellungen mithilfe Ihres CMP ändern. Nachdem Besucher JS mit den ursprünglichen Einstellungen initialisiert wurde, können die Berechtigungen des Besuchers mit den folgenden Funktionen geändert werden:
+Besucher Ihrer Site können Voreinstellungen jederzeit zum ersten Mal festlegen oder ihre Voreinstellungen mithilfe Ihrer CMP ändern. Nachdem Visitor JS mit den Ersteinstellungen initialisiert wurde, können die Berechtigungen des Besuchers mit den folgenden Funktionen geändert werden:
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-Funktion, die alle Kategorien in einer Liste für einen Besucher genehmigt oder zulässt. Weitere Informationen zum Parameter &quot;shouldWaitForComplete&quot;finden Sie unter [Opt-in-Workflow](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
+Funktion, die alle Kategorien in einer Liste für einen Besucher genehmigt oder zulässt. Weitere Informationen zum Parameter „shouldWaitForComplete“ finden Sie unter [Opt-in-Workflow](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5).
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
 Funktion, die alle angegebenen Kategorien für einen Besucher ausschließt oder ablehnt.
 
-**`adobe.optIn.approveAll()`**:
+**`adobe.optIn.approveAll()`**
 
 Wenn Ihre Anfrage nach einer Erlaubnis für die Erstellung Ihrer Website so formuliert ist, dass eine Besucheroberfläche Ihrer Website die Erlaubnis zur Erstellung von Cookies erteilt oder verweigert, verwenden Sie `approveAll()` oder `denyAll()`, bezogen auf deren Antwort.
 
-**`adobe.optIn.denyAll()`**:
+**`adobe.optIn.denyAll()`**
 
 Wenn Ihre Genehmigungsanfrage so formuliert ist, dass Besucher Ihrer Site die Berechtigung zum Erstellen von Cookies pauschal erteilen oder verweigern, verwenden Sie `approveAll()` oder `denyAll()`, je nach Antwort der Besucher.
 
@@ -116,8 +116,8 @@ Ein Objekt, das alle Experience Cloud-Lösungen, die vom Besucher genehmigt oder
 
 **`status`**
 
-* ausstehend
-* geändert
+* Ausstehend
+* Geändert
 * Fertig
 
 **`doesOptInApply`**
@@ -126,11 +126,11 @@ Ein Objekt, das alle Experience Cloud-Lösungen, die vom Besucher genehmigt oder
 
 **`isPending`**
 
-True oder false, je nach Statuswert. Anmeldeberichte für diese Eigenschaft gelten für Besucher, die die Berechtigung noch nicht ausdrücklich akzeptiert oder verweigert haben
+„True“ oder „false“, je nach Statuswert. Opt-in-Berichte für diese Eigenschaft ergeben für Besucher den Wert „true“, die die Berechtigung noch nicht ausdrücklich akzeptiert oder verweigert haben.
 
 **`isComplete`**
 
-True oder false, je nach Statuswert. Bei einer Teilnahme wird für diese Eigenschaft möglicherweise &quot;false&quot;angezeigt, wenn eine Workflow-artige Zustimmung gestartet, aber nicht abgeschlossen wurde.
+„True“ oder „false“, je nach Statuswert. Opt-in meldet für diese Eigenschaft möglicherweise den Wert „false“, wenn ein Workflow-ähnliches Einverständnis gestartet, aber nicht abgeschlossen wurde.
 
 ## Methoden des Opt-in-Objekts  {#section-e0417801a82548d199d833010033e433}
 
@@ -149,8 +149,8 @@ True oder false, je nach Statuswert. Bei einer Teilnahme wird für diese Eigensc
 
 **`deny(categories, shouldWaitForComplete)`**
 
-* Übergeben Sie mindestens 1 Kategorie, um zu prüfen, ob sie genehmigt wurden.
-* Wenn keine Kategorien weitergegeben werden, werden ALLE verfügbaren Kategorien markiert.
+* Übergeben Sie mindestens eine oder mehrere Kategorie, um zu prüfen, ob sie genehmigt wurden.
+* Wenn keine Kategorien übergeben werden, werden ALLE verfügbaren Kategorien überprüft.
 
 **`isApproved(categories)`**
 
@@ -162,7 +162,7 @@ Prüft, ob eine oder mehrere Kategorien vom Kunden vorab genehmigt wurden (d. h
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-Async-API zum Abrufen der Liste von Berechtigungen. Der Rückruf wird mit Liste von Berechtigungen aufgerufen, sobald der Prozess zum Gewähren/Ablehnen von Berechtigungen abgeschlossen ist. **`shouldAutoSubscribe`:** Hilfsdienstprogramm, mit dem dieser Callback automatisch alle zukünftigen Ereignisse abonniert. Das bedeutet, dass der Rückruf jedes Mal aufgerufen wird, wenn eine Genehmigung oder Verweigerung Trigger in Opt-in. So werden Sie immer aktualisiert, ohne die Ereignis selbst abonnieren zu müssen.
+Async-API zum Abrufen der Liste von Berechtigungen. Der Rückruf wird mit Liste von Berechtigungen aufgerufen, sobald der Prozess zum Gewähren/Ablehnen von Berechtigungen abgeschlossen ist. **`shouldAutoSubscribe`:** Hilfsdienstprogramm, mit dem dieser Callback automatisch alle zukünftigen Ereignisse abonniert. Das bedeutet, dass der Rückruf jedes Mal aufgerufen wird, wenn ein Genehmigungs- oder Verweigerungs-Trigger in Opt-in ausgelöst wird. So bleiben Sie immer auf dem aktuellen Stand, ohne die Ereignisse selbst abonnieren zu müssen.
 
 **Beispiel**
 
