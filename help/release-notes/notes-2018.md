@@ -5,14 +5,14 @@ seo-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder 
 seo-title: Versionshinweise für 2018
 title: Versionshinweise für 2018
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
-
 
 # Versionshinweise für 2018 {#release-notes}
 
@@ -30,7 +30,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Erhöhte Sicherheit für AMCV-Cookies </p> </td> 
-   <td colname="col2"> <p>Bei einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek die für die Sitzungsverwaltung verwendeten Cookies keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Um dies zu lösen, haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, den AMCV-Cookie als sicher festzulegen. Siehe <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
+   <td colname="col2"> <p>Bei einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek die für die Sitzungsverwaltung verwendeten Cookies keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Als Lösung hierfür haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, das AMCV-Cookie als sicher festzulegen. Siehe <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -47,15 +47,15 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Erhöhte Sicherheit für AMCV-Cookies </p> </td> 
-   <td colname="col2"> <p>Bei einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek die für die Sitzungsverwaltung verwendeten Cookies keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Um dies zu lösen, haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, den AMCV-Cookie als sicher festzulegen. Siehe secureCookie. </p> </td> 
+   <td colname="col2"> <p>Bei einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek die für die Sitzungsverwaltung verwendeten Cookies keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Als Lösung hierfür haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, das AMCV-Cookie als sicher festzulegen. Siehe secureCookie. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Integrationscode und ID müssen Zahlen oder nicht leere Zeichenfolgen sein </p> </td> 
-   <td colname="col2"> <p>Es wurde ein Problem bei der Validierung von "setCustomerIDs"behoben, das auftrat, wenn Daten einen Integrationscode oder eine Integrations-ID enthielten, der weder eine Zahl noch eine nicht leere Zeichenfolge war. </p> </td> 
+   <td colname="col1"> <p>Integrationscode und ID müssen aus Zahlen oder nicht-leeren Zeichenfolgen bestehen. </p> </td> 
+   <td colname="col2"> <p>Es wurde ein Fehler behoben, der bei der Validierung von „setCustomerIDs“ auftrat, wenn Daten Integrations-Code oder -IDs enthalten, bei denen es sich weder um eine Zahl noch um eine nicht-leere Zeichenfolge handelt. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> ECID JS ist im Public Git Repo verfügbar </td> 
-   <td colname="col2"> ECID JS ist jetzt im Public Git Repo für alle Experience Cloud-Kunden unter https://github.com/Adobe-Marketing-Cloud/id-service/releases verfügbar. </td> 
+   <td colname="col1"> ECID JS ist im Public Git-Repository verfügbar </td> 
+   <td colname="col2"> ECID JS ist jetzt im Public Git-Repository für alle Experience Cloud-Kunden unter https://github.com/Adobe-Marketing-Cloud/id-service/releases verfügbar. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -72,7 +72,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Unrealistischer Anstieg der Unique-Visitor-Anzahl </p> </td> 
-   <td colname="col2"> <p>Bei Version 3.1.0 des Experience Cloud Identity-Diensts haben wir ein Problem erkannt, das bei Implementierung der Version zu einem unrealistischen Anstieg der Unique-Visitor-Anzahl führte. Dieses Verhalten wird nur mit der neuesten Version von ECID, Version 3.1.0, gezeigt und wenn ein Benutzer in den Datenschutzeinstellungen eines Safari-Browsers die Option "Nur von der aktuellen Website zulassen"ausgewählt hat. Version 3.1.2 behebt dieses Problem. </p> </td> 
+   <td colname="col2"> <p>Bei Version 3.1.0 des Experience Cloud Identity-Diensts haben wir ein Problem erkannt, das bei Implementierung der Version zu einem unrealistischen Anstieg der Unique-Visitor-Anzahl führte. Dieses Verhalten tritt nur bei aktuellen Version von ECID, Version 3.1.0, auf, und wenn Benutzer in den Datenschutzeinstellungen des Safari-Browsers die Option „Nur von der aktuellen Website zulassen“ ausgewählt haben. In Version 3.1.2 ist dieses Problem behoben. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -92,8 +92,8 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Cookie auf inkorrekter Domäne eingestellt </p> </td> 
-   <td colname="col2"> <p>Es wurde ein Fehler behoben, durch den das temporäre Besucher-Cookie ein Cookie in der "Standard"-Cookie-Domäne setzte, anstatt es in der in der Konfiguration angegebenen Domäne (initConfig) einzustellen. </p> </td> 
+   <td colname="col1"> <p>Cookie auf inkorrekte Domain eingestellt </p> </td> 
+   <td colname="col2"> <p>Es wurde ein Fehler behoben, durch den das temporäre Visitor-Cookie ein Cookie in der standardmäßigen Cookie-Domain setzte, anstatt es in der in der Konfiguration angegebenen Domain („initConfig“) zu setzen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -110,7 +110,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Thread-Yielding für mehrere ID-Synchronisierungsanfragen </p> </td> 
-   <td colname="col2"> <p><b>Iframe</b> </p> <p>Bei Kunden, die mehrere ID-Synchronisierungen durchführen, wird die Benutzeroberfläche in einigen Fällen blockiert, da kontinuierliche CPU-Berechnungen stattfinden. Wir führen Thread-Ergebnisse ein, um die ID-Synchronisierungsanforderungen jeweils um 100 msec zu trennen. </p> <p>Diese Änderung verbessert die Leistung von Kunden, die Besucher 2.3.0+ und DIL 6.10+ verwenden. </p> </td> 
+   <td colname="col2"> <p><b>Iframe</b> </p> <p>Bei Kunden, die mehrere ID-Synchronisierungen durchführen, wird die Benutzeroberfläche in einigen Fällen blockiert, da fortlaufende CPU-Berechnungen stattfinden. Wir führen eine Thread-Unterbrechung ein, um einen Abstand zwischen ID-Synchronisierungsanforderungen von jeweils 100 ms zu ermöglichen. </p> <p>Diese Änderung verbessert die Leistung für Kunden, die Visitor 2.3.0+ und DIL 6.10+ verwenden.  </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Neue Möglichkeit zur Aktivierung von Drittanbieteraufrufen </td> 
@@ -126,4 +126,3 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
   </tr> 
  </tbody> 
 </table>
-
