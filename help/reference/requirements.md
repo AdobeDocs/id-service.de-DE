@@ -5,14 +5,14 @@ seo-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die ri
 seo-title: Voraussetzungen für den Experience Cloud Identity-Dienst
 title: Voraussetzungen für den Experience Cloud Identity-Dienst
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '783'
 ht-degree: 100%
 
 ---
-
 
 # Voraussetzungen für den Experience Cloud Identity-Dienst {#requirements-for-the-experience-cloud-id-service}
 
@@ -50,7 +50,7 @@ Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderu
  </tbody> 
 </table>
 
-## Experience Cloud-Voraussetzungen: Organisations-ID {#section-a02f537129a64ffbb690d5738d360c26}
+## Experience Cloud-Voraussetzungen: Organisations-ID  {#section-a02f537129a64ffbb690d5738d360c26}
 
 Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Cloud] freigeschaltet sein und über eine Organisations-ID verfügen. Gehen Sie die folgende Liste durch, wenn Sie sich bezüglich des [!DNL Experience Cloud]-Status Ihrer Organisation nicht sicher sind und Ihre Organisations-ID herausfinden möchten.
 
@@ -83,7 +83,7 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
 
 ## Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://docs.adobe.com/content/help/de-DE/analytics/technotes/rdc/regional-data-collection.translate.html)
+Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://docs.adobe.com/content/help/de-DE/analytics/technotes/rdc/regional-data-collection.html)
 
 ## Code-Bibliotheken und Versionsvoraussetzungen {#section-ad7542a4317d430fa79fc6b095beb84d}
 
