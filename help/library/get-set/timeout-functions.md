@@ -5,20 +5,20 @@ seo-description: Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschrei
 seo-title: callTimeOut-Methoden
 title: callTimeOut-Methoden
 uuid: e5047498-11db-4945-b356-c92b7d447573
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '155'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-
-# callTimeOut-Methoden{#calltimeout-methods}
+# callTimeOut-Methoden {#calltimeout-methods}
 
 Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für eine Experience Cloud Identity-Dienst-, Analytics- oder Audience Manager-ID-Anforderung zu ermitteln. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 
-## Zeitüberschreitungsfunktionen {#section-e08228ef5f9b45c9a84139bbb763164a}
+## Zeitüberschreitungsfunktionen  {#section-e08228ef5f9b45c9a84139bbb763164a}
 
 <table id="table_B3ACE584B3224D838070D32A8462EF28"> 
  <thead> 
@@ -67,4 +67,3 @@ Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für 
   </tr> 
  </tbody> 
 </table>
-
