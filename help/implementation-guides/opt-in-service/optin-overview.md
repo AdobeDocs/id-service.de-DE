@@ -4,16 +4,16 @@ seo-description: Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher 
 seo-title: Opt-in-Dienst
 title: Opt-in-Dienst
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
-translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
-workflow-type: tm+mt
+exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-
-# Opt-in-Dienst{#opt-in-service}
+# Opt-in-Dienst {#opt-in-service}
 
 Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie ein Cookie auf dem Gerät oder Browser des Benutzers erstellen können, wenn dieser Ihre Site besucht.
 
@@ -21,7 +21,7 @@ Der Opt-in-Dienst ist eine Erweiterung des Dienstes Experience Cloud ID (ECID) u
 
 Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen einzeln angezeigt werden, um die Zustimmung einzuholen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können Sie die CMP-Besuchergenehmigungen aus allen Adobe-Lösungen abrufen.
 
-Der Dienst für die Teilnahme ist einfach mit [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) mit der [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md) implementiert und konfiguriert. Ebenfalls möglich ist eine Implementierung und Konfiguration mit [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+Der Opt-in-Dienst kann mit [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) mit der [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md) einfach implementiert und konfiguriert werden. Ebenfalls möglich ist eine Implementierung und Konfiguration mit [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Siehe [Einrichtung des Opt-in-Dienstes](../../implementation-guides/opt-in-service/getting-started.md) zu den ersten Schritten.
 
@@ -33,19 +33,19 @@ Siehe [Einrichtung des Opt-in-Dienstes](../../implementation-guides/opt-in-servi
 >
 >Der Inhalt dieses Dokuments ist keine Rechtsberatung und soll keine Rechtsberatung ersetzen. Wenden Sie sich an die Rechtsabteilung Ihres Unternehmens, um sich über die Zustimmung und die Vorgehensweisen bei der Einrichtung Ihrer Opt-in-Implementierung zu informieren.
 
-## Opt-in für mehrere Experience Cloud-Lösungen {#section-053e6224505542cf961896f0ca869e52}
+## Opt-in für mehrere Experience Cloud-Lösungen  {#section-053e6224505542cf961896f0ca869e52}
 
 Der Opt-in-Dienst ist ein Tool zum Einrichten eines Opt-in-Workflows, der Ihren Anforderungen entspricht. Es ermöglicht Ihnen, einen Workflow zu entwerfen, der vor und nach der Zustimmung des Benutzers oder Ihres Zustimmungsverantwortlichen durch Auslösen von Tags reagiert.
 
 Mit dem Opt-in-Dienst können Sie Folgendes für die Zustimmungsverwaltung von Adobe-Lösungen einstellen:
 
-* Geben Sie bitte an, ob die Anforderungen für das Sammeln der Zustimmung im Allgemeinen für einen Benutzer gelten.
+* Geben Sie an, ob die Anforderungen für das Einholen der Zustimmung im Allgemeinen für einen Benutzer gelten.
 * Geben Sie an, welche Lösungen Cookies generieren dürfen.
-* Wenden Sie Standardvoreinstellungen für Lösungen an, deren Kategorie nicht ausdrücklich vom Benutzer genehmigt oder abgelehnt wird.
-* Benutzerdefinierte Trigger-Antworten auf der Grundlage von Änderungen an den Einstellungen für die Einwilligung des Benutzers, mit denen Sie die Benutzereinstellungen beibehalten oder aktualisieren können.
+* Wenden Sie Standardeinstellungen für Lösungen an, deren Kategorie nicht ausdrücklich vom Benutzer zugestimmt oder abgelehnt wurde.
+* Lösen Sie benutzerdefinierte Reaktionen auf der Grundlage von Änderungen an den Einwilligungseinstellungen des Benutzers aus, die es Ihnen erlauben, die Einstellungen des Benutzers beizubehalten oder zu ändern.
 
-Mit dem Opt-in-Dienst können Sie Ihre Site so konfigurieren, dass einige Cookies mit einer Vorabzustimmung geladen werden, bevor der Benutzer eine Auswahl vornimmt. Sie können Opt-in-Dienste für Neukunden so einstellen, dass Cookies nach Zustimmung des Benutzers oder nach Bereitstellung einer Auswahl geladen werden können. Sie können auch Opt-in Zustimmung von Ihrer bestehenden Consent Management-Plattform speichern und abrufen oder einfach Opt-in Berechtigungen in einem Cookie speichern.
+Mit dem Opt-in-Dienst können Sie Ihre Site so konfigurieren, dass einige Cookies mit einer Vorabzustimmung geladen werden, bevor der Benutzer eine Auswahl vornimmt. Sie können Opt-in-Dienste für Neukunden so einstellen, dass Cookies nach Zustimmung des Benutzers oder nach Bereitstellung einer Auswahl geladen werden können. Sie können auch Opt-in-Einwilligungen von Ihrer bestehenden Einverständnisverwaltungs-Plattform speichern und abrufen oder Opt-in-Berechtigungen einfach in einem Cookie speichern.
 
 ![](assets/Opt-in-approval.png)
 
-Adoben-Lösungen können dann prüfen, ob das Tag genehmigt ist, Änderungen abonnieren und dann alle Opt-in-Kunden abrufen. Der Opt-in-Dienst ermöglicht Ihnen, Berechtigungen direkt über die JavaScript-Bibliotheken der Lösung oder über ECID (falls implementiert) abzurufen.
+Adobe-Lösungen können dann prüfen, ob der Tag genehmigt ist und Änderungen regeln und dann alle Opt-in-Kunden abrufen. Der Opt-in-Dienst ermöglicht Ihnen, Berechtigungen direkt über die JavaScript-Bibliotheken der Lösung oder über ECID (falls implementiert) abzurufen.
