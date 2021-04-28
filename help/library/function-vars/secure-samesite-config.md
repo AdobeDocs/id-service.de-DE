@@ -4,14 +4,14 @@ keywords: ID-Dienst
 seo-description: Eine Konfiguration innerhalb der ECID, die zur Unterstützung von AMCV-Cookies auf Google AMP-Seiten verwendet werden kann.
 seo-title: Sichere und SameSite-Konfigurationen
 title: Sichere und SameSite-Konfigurationen
+exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
 translation-type: ht
-source-git-commit: 702d20f3989f7749fb173496765d94c3a5af46dc
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '174'
 ht-degree: 100%
 
 ---
-
 
 # Sichere und SameSite-Konfigurationen
 
