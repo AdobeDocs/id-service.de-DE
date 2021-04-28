@@ -5,22 +5,22 @@ seo-description: Eine optionale boolesche Kennzeichnung, die steuert, wie der Ex
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: 44c45378-f007-4d87-913a-d6bb9961948c
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-
-# idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
+# idSyncAttachIframeOnWindowLoad {#idsyncattachiframeonwindowload}
 
 Eine optionale boolesche Kennzeichnung, die steuert, wie der Experience Cloud Identity-Dienst den ID-Synchronisierungs-iFrame lädt.
 
-**Syntax:** ` `idSyncAttachIframeOnWindowLoad= true|false`` (Standard ist `false`.)
+**Syntax:** ` `idSyncAttachIframeOnWindowLoad= true false`` (Standard ist `false`.)
 
-Bei `idSyncAttachIframeOnWindowLoad: true` lädt der ID-Dienst den iFrame zur ID-Synchronisierung beim Laden des Fensters. Standardmäßig lädt der ID-Dienst den iFrame zur ID-Synchronisierung so schnell wie möglich, anstatt dass das Fenster geladen wird.
+Bei `idSyncAttachIframeOnWindowLoad: true` lädt der ID-Dienst den iFrame zur ID-Synchronisierung beim Laden des Fensters. Standardmäßig lädt der ID-Dienst den iFrame zur ID-Synchronisierung so schnell wie möglich statt erst beim Laden des Fensters.
 
 **Codebeispiel**
 
@@ -37,4 +37,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    idSyncAttachIframeOnWindowLoad: true 
 });
 ```
-
