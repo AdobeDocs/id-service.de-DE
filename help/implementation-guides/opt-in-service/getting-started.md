@@ -4,16 +4,16 @@ seo-description: Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspu
 seo-title: Einrichten des Opt-in-Dienstes
 title: Einrichten des Opt-in-Dienstes
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: tm+mt
-source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
-workflow-type: tm+mt
+exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-
-# Einrichten des Opt-in-Dienstes{#setting-up-opt-in-service}
+# Einrichten des Opt-in-Dienstes {#setting-up-opt-in-service}
 
 Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspunkt für Experience Cloud-Lösungen (bei Opt-in als „Kategorien“ bezeichnet), um zu ermitteln, ob Cookies auf dem Gerät eines Besuchers erstellt werden dürfen.
 
@@ -21,31 +21,31 @@ Der Opt-in-Dienst ist eine JavaScript-Bibliothek, die mit Experience Cloud ID (E
 
 Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen dem Besucher einzeln angezeigt werden, um seine Zustimmung einzuholen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können CMP-Besuchergenehmigungen von allen Adobe-Lösungen abgerufen werden, um mit entsprechenden Zustimmungsaufrufen zu reagieren.
 
-## Voraussetzungen {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
+## Voraussetzungen  {#section-c39246f45e514c8ea9fdbe6f7ffa3ad0}
 
 1. ECID Version 4.0.
 
-   [Die neueste ECID-Version ](https://github.com/Adobe-Marketing-Cloud/id-service/releases) herunterladen.
+   [Laden](https://github.com/Adobe-Marketing-Cloud/id-service/releases) Sie unsere neueste ECID-Version herunter.
 
-1. Unterstützende Bibliotheken:
+1. Unterstützungsbibliotheken:
 
    * ECID 4.0 oder höher
    * AppMeasurement 2.11 oder höher
    * DIL 9.0
    * AT.js Version 1.7.0
-   * AT.js Start extension version 9.0
+   * AT.js Launch-Erweiterung, Version 9.0
    * Für Analytics: App Measurement 2.11 mit Erweiterung 1.6
-   * Zielgruppe, Erweiterung 0.9.1
+   * Für Target: Erweiterung 0.9.1
 
-1. Machen Sie sich mit dem Framework für die Verwaltung von Genehmigungen vertraut, das Sie mit Opt-in verwenden werden, und verstehen Sie alle zusätzlichen Voraussetzungen.
+1. Machen Sie sich mit dem Framework zur Zustimmungsverwaltung vertraut, das Sie mit Opt-in verwenden, und stellen Sie sicher, dass Sie alle zusätzlichen Voraussetzungen überblicken.
 
    <!--
    For IAB, see here for additional pre-reqs.
    -->
 
-1. Die Datenschutzanforderungen Ihrer Firma werden spezifisch sein, wie Sie sich dafür entscheiden, GDPR-konform zu bleiben. Achten Sie darauf, welche Bibliotheken Ihre Firma-Datenschutzteams im Vorhinein verwenden dürfen.
+1. Die Datenschutzanforderungen Ihrer Firma richten sich danach, für welche Art der GDPR-Konformität Sie sich entscheiden. Beachten Sie, welche vordefinierten Bibliotheken für die Datenschutz-Teams Ihrer Firma in Ordnung sind.
 
-Wenn Sie [Adobe Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) verwenden, nutzen Sie die [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md), um den Dienst für die Teilnahme zu konfigurieren.
+Wenn Sie [Adobe Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) verwenden, nutzen Sie die [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md), um den Opt-in-Dienst zu konfigurieren.
 
 ## Opt-in-Kategorien {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -91,9 +91,9 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-**Änderungen der Zustimmung behandeln**
+**Umgang mit Änderungen der Zustimmung**
 
-Während der Erlebnisse eines Besuchers auf Ihrer Site können sie jederzeit Voreinstellungen zum ersten Mal festlegen oder ihre Voreinstellungen mithilfe Ihres CMP ändern. Nachdem Besucher JS mit den ursprünglichen Einstellungen initialisiert wurde, können die Berechtigungen des Besuchers geändert werden. Eine Liste der Funktionen zur Zustimmungsverwaltung finden Sie unter [Änderungen an den Zustimmungsparametern](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc).
+Während Benutzer Ihre Site besuchen, können sie jederzeit Voreinstellungen zum ersten Mal festlegen oder ihre Voreinstellungen mithilfe Ihrer CMP ändern. Nachdem Besucher-JS mit den ursprünglichen Einstellungen initialisiert wurde, können die Berechtigungen des Besuchers geändert werden. Eine Liste der Funktionen zur Zustimmungsverwaltung finden Sie unter [Änderungen an den Zustimmungsparametern](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc).
 
 <!--
 <p> *** <b>sample code block </b>*** </p>
@@ -113,7 +113,7 @@ Siehe [Workflow-Konfigurationseinstellungen](../../implementation-guides/opt-in-
 
 ## Opt-in-Berechtigungen des Benutzers prüfen {#section-f136a9024e054d84881e6667fb7c94eb}
 
-Wenn Besucher ihre Berechtigungen ändern, müssen Sie das Ergebnis dieser Änderungen in Erfahrung bringen, um Ihre gespeicherten Zustimmungen mit den Änderungen am Opt-in-Dienst zu synchronisieren. Inspect Sie die Voreinstellungen Ihres Besuchers mit den Zugriffsfunktionen[a1/>, z. B.:](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)
+Wenn Besucher ihre Berechtigungen ändern, müssen Sie das Ergebnis dieser Änderungen in Erfahrung bringen, um Ihre gespeicherten Zustimmungen mit den Änderungen am Opt-in-Dienst zu synchronisieren. Überprüfen Sie die Voreinstellungen Ihrer Besucher mithilfe der [Berechtigungsfunktionen](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155). Beispiel:
 
 **fetchPermissions-Beispiel**
 
@@ -137,14 +137,13 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-Weitere Informationen zu diesen und allen in diesem Dokument erwähnten Funktionen, Eigenschaften und Konfigurationen finden Sie in der [API-Dokumentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867).
+In der [API-Dokumentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) erhalten Sie weitere Details zu diesen und anderen in diesem Dokument erwähnten Funktionen, Eigenschaften und Konfigurationen.
 
 ## Speichern von Besuchervoreinstellungen {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
 Der Opt-in-Dienst ist eine Möglichkeit zum Speichern von Zustimmungsvoreinstellungen, die für eine Entwicklungs- oder andere Umgebung geeignet ist, in der kein CRM verwendet werden kann. Wenn die Konfigurationseigenschaft `isOptInStorageEnabled` den Wert *true* hat, erstellt der Opt-in-Dienst ein Cookie im System des Besuchers innerhalb Ihrer Domäne.
 
-Das `adobe.optIn`-Objekt ist zustandslos und bietet keinen Speichermechanismus. Stattdessen sollten Sie die Einstellungen für die Adobe-Einwilligung in Ihrer bestehenden CMP (Consent Management Platform) verwalten, wenn dies die Speicherung benutzerdefinierter Daten ermöglicht. Oder Sie können die Voreinstellungen für Besucher in einem Cookie im Browser des Besuchers speichern. Sie haben zwei Möglichkeiten, die Voreinstellungen des Benutzers an den Opt-in-Dienst zu übergeben:
+Das `adobe.optIn`-Objekt ist zustandslos und bietet keinen Speichermechanismus. Stattdessen sollten Sie Adobe-Einverständniseinstellungen auf Ihrer vorhandenen Consent Management Platform (CMP) verwalten, falls diese die Speicherung benutzerdefinierter Daten ermöglicht. Oder Sie können die Besuchervoreinstellungen in einem Cookie im Browser von Besuchern speichern. Sie haben zwei Möglichkeiten, die Voreinstellungen des Benutzers an den Opt-in-Dienst zu übergeben:
 
 * Wenn die Voreinstellungen von Besuchern mit Ihrer Lösung zum Speichern der Zustimmung, also einer CMP oder einem Cookie im Browser des Besuchers, zeitnah abgerufen werden können, dann können Sie diese während der Visitor-Initialisierung an den Opt-in-Dienst übergeben.
 * Wenn das Abrufen der Voreinstellungen jedoch länger dauert oder aus anderen Gründen als asynchroner Prozess durchgeführt werden sollte, können Sie die `approve()` Funktion des Dienstes verwenden, um diese Einstellungen bereitzustellen, nachdem sie erfolgreich geladen wurden.
-
