@@ -5,14 +5,14 @@ seo-description: Diese Anweisungen richten sich an Analytics-, Audience Manager-
 seo-title: Implementieren des Experience Cloud Identity-Diensts für Analytics, Audience Manager und Target
 title: Implementieren des Experience Cloud Identity-Diensts für Analytics, Audience Manager und Target
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '1574'
 ht-degree: 100%
 
 ---
-
 
 # Implementieren des Experience Cloud Identity-Diensts für Analytics, Audience Manager und Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
@@ -144,7 +144,7 @@ Fügen Sie Ihrer `Visitor.getInstance`-Datei die im Folgenden gezeigte `AppMeasu
 
 >[!IMPORTANT]
 >
->An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Anweisungen finden Sie unter [Implementieren der Server-seitigen Weiterleitung](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
+>An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Anweisungen finden Sie unter [Implementieren der Server-seitigen Weiterleitung](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
 
 ***(Optional, jedoch empfohlen)* Erstellung einer benutzerspezifischen Eigenschaft.**
 
@@ -244,4 +244,3 @@ Wenn Sie eine Übergangsphase aktiviert haben:
 
 * Stellen Sie sicher, dass die Bildanforderung die Analytics-ID (AID) und die MID beinhaltet.
 * Denken Sie daran, die Übergangsphase nach Erfüllung der [Kriterien für eine Beendigung der Verwendung](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1) abzubrechen.
-
