@@ -5,14 +5,14 @@ seo-description: Der Children’s Online Privacy Protection Act (COPPA; Gesetz z
 seo-title: COPPA-Unterstützung im Experience Cloud Identity-Dienst
 title: COPPA-Unterstützung im Experience Cloud Identity-Dienst
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
-workflow-type: tm+mt
+exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
-
 
 # COPPA-Unterstützung im Experience Cloud Identity-Dienst {#coppa-support-in-the-experience-cloud-id-service}
 
@@ -26,12 +26,12 @@ Der Children’s Online Privacy Protection Act (COPPA; Gesetz zum Schutz der Pri
 
 Beim Laden einer Webseite wird vom [!DNL Experience Cloud] ID-Dienst ein [!DNL Adobe]-Datenerfassungsserver (DES) aufgerufen. Die DCS-Antwort beinhaltet ein Experience Cloud-Cookie und ein demdex.net-Cookie.
 
-* Das Experience Cloud-Cookie wird in der Erstanbieterdomäne gesetzt. Sie kann nicht zur domänenübergreifenden Verfolgung von Besuchern verwendet werden, es sei denn, diese Domänen arbeiten zusammen, um Zugriff zu gewähren.
-* Das demdex.net-Cookie wird in der Drittanbieterdomäne gesetzt. Er enthält eine eindeutige ID, mit der Besucher domänenübergreifend verfolgt werden können.
+* Das Experience Cloud-Cookie wird in der Erstanbieter-Domain gesetzt. Sie kann nicht zur Verfolgung von Besuchern über Domains hinweg verwendet werden, es sei denn, diese Domains arbeiten zusammen, um Zugriff zu gewähren.
+* Das demdex.net-Cookie wird in der Drittanbieter-Domain gesetzt. Er enthält eine eindeutige ID, mit der Besucher über unterschiedliche Domains hinweg verfolgt werden können.
 
 **Cookies und COPPA-Compliance**
 
-Drittanbieter-Cookies, die domänenübergreifend Besucher auf Websites verfolgen, die an Kinder gerichtet sind (oder hauptsächlich für Kinder bestimmt sind), müssen Trigger-COPPA-Anforderungen für die elterliche Zustimmung erfüllen. Damit die Forderungen von COPPA für interne Website-Analysen problemlos eingehalten werden können, kann – wie unten gezeigt – die Variable `disableThirdPartyCookies:true` der `Visitor.getInstance` Funktion hinzugefügt werden.
+Drittanbieter-Cookies, die Domain-übergreifend Besucher auf Websites verfolgen, die sich (vorwiegend) an Minderjährige richten, lösen COPPA-Anforderungen für die elterliche Zustimmung aus. Damit die Forderungen von COPPA für interne Website-Analysen problemlos eingehalten werden können, kann – wie unten gezeigt – die Variable `disableThirdPartyCookies:true` der `Visitor.getInstance` Funktion hinzugefügt werden.
 
 ```js
 //Call the ID service 
