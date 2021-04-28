@@ -5,14 +5,14 @@ seo-description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfo
 seo-title: CORS-Unterstützung im Experience Cloud Identity-Dienst.
 title: CORS-Unterstützung im Experience Cloud Identity-Dienst.
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '674'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
-
 
 # CORS-Unterstützung im Experience Cloud Identity-Dienst {#cors-support-in-the-experience-cloud-id-service}
 
@@ -20,22 +20,22 @@ Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressour
 
 ## Probleme mit Gleiche-Herkunft-Richtlinien und ID-Dienstanforderungen {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
-Richtlinien derselben Herkunft sind Sicherheitskontrollen oder Einschränkungen, die von einem Webbrowser erzwungen werden. Wenn dies auf dieser Ebene erzwungen wird, bestimmt der Webbrowser selbst, ob eine Anforderung von Ressourcen, die von einer Seite zur anderen gesendet werden, zulässig oder blockiert wird. Um festzustellen, ob es sich bei einer Anforderung um eine Anforderung mit derselben Herkunft handelt, vergleicht der Browser Folgendes:
+Eine Same-Origin-Policy ist eine Sicherheitskontrolle oder Einschränkung, die von einem Webbrowser erzwungen wird. Wenn sie auf dieser Ebene erzwungen wird, bestimmt der Webbrowser selbst, ob eine Anforderung von Ressourcen, die von einer Seite an eine andere gesendet wird, zulässig ist oder blockiert wird. Um festzustellen, ob es sich bei einer Anforderung um eine Anforderung mit derselben Herkunft handelt, vergleicht der Browser Folgendes:
 
 * Uniform Resource Identifiers (URIs)
-* Hostnamen (z. B. http://www.my-webpage-example.com)
-* Anschlussnummern (z. B. Port 80 und 440 für HTTP- und HTTPS-Anforderungen)
+* Hostnamen (beispielsweise http://www.meine-beispielwebsite.com)
+* Port-Nummern (beispielsweise Port 80 und 440 für HTTP- und HTTPS-Anforderungen)
 
-Der Browser ermöglicht eine erfolgreiche Anforderung, wenn beide Seiten dieselben Eigenschaften aufweisen, und blockiert Ressourcenanforderungen, wenn dies nicht der Fall ist.
+Der Browser lässt eine Anforderung zu, wenn beide Seiten dieselben Eigenschaften aufweisen, und blockiert die Ressourcenanforderung, wenn dies nicht der Fall ist.
 
-## CORS behebt Probleme mit Gleiche-Herkunft-Richtlinien {#section-76c87ec3295d447bab220c84f138c235}
+## CORS behebt Probleme mit Gleiche-Herkunft-Richtlinien  {#section-76c87ec3295d447bab220c84f138c235}
 
-CORS bietet eine sichere und effektive Möglichkeit, Ressourcen über verschiedene Domänen hinweg anzufordern. Die CORS-Spezifikation enthält eine Reihe von HTTP-Headern, die Browser zum Senden, Empfangen und Auswerten von Ressourcenanforderungen verwenden. Die Evaluierung einer Ressourcenanforderung heißt *`preflight check`*. Mit dieser Prüfung können Browser und Server bestimmen, welche Anforderungen zulässig oder blockiert sind. Die Preflight-Prüfung ist transparent für die App, API oder das Skript, die/das eine Ressource anfordert. Zwei Header, die für den Ressourcenanforderungsprozess wichtig sind, sind:
+Cross Origin Resource Sharing (CORS) bietet eine sichere und effektive Möglichkeit, Ressourcen über verschiedene Domänen hinweg anzufordern. Die CORS-Spezifikation enthält eine Reihe von HTTP-Headern, die Browser zum Senden, Empfangen und Auswerten von Ressourcenanforderungen verwenden. Die Evaluierung einer Ressourcenanforderung heißt  *`preflight check`*. Mit dieser Prüfung können Browser und Server bestimmen, welche Anforderungen zulässig sind oder blockiert werden sollen. Die Preflight-Prüfung ist transparent für die mobile App bzw. API oder das Skript, die bzw. das eine Ressource anfordert. Zwei Header, die für den Ressourcenanforderungsprozess wichtig sind, sind:
 
 * `Origin`: Ein Anforderungsheader, der die Anforderungsquelle ermittelt.
 * `Access-Control-Allow-Origin`: Ein Antwortheader, der angibt, ob eine Ressource für den Anforderer freigegeben werden kann.
 
-Im Folgenden wird die Funktionsweise dieser Header erläutert. Angenommen, ein Finanzdienstleistungsunternehmen hat den [!DNL Experience Cloud] ID-Dienst auf der eigenen Site www.finance-website.com implementiert. Die folgende Tabelle definiert, wie die CORS-Anforderungs- und Antwortheader den Zugriff auf eine Ressource prüfen.
+Im Folgenden wird die Funktionsweise dieser Header erläutert. Angenommen, ein Finanzdienstleistungsunternehmen hat den [!DNL Experience Cloud] ID-Dienst auf der eigenen Site www.finance-website.com implementiert. Die folgende Tabelle definiert, wie die CORS-Anforderungs- und Antwort-Header den Zugriff auf eine Ressource prüfen.
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
@@ -47,14 +47,14 @@ Im Folgenden wird die Funktionsweise dieser Header erläutert. Angenommen, ein F
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Anfrage</b> </p> </td> 
-   <td colname="col2"> <p>Beim Laden der Seite des Finanzunternehmens stellt der Browser eine Anforderung an <span class="codeph">dpm.demdex.net</span>. Dies ist ein Aufruf an die Domäne der Datenerfassungsserver (DCS), die vom ID-Dienst verwendet wird. Diese domänenübergreifende Anforderung enthält den Header: </p> <p> 
+   <td colname="col2"> <p>Beim Laden der Seite des Finanzunternehmens stellt der Browser eine Anforderung an <span class="codeph">dpm.demdex.net</span>. Dies ist ein Aufruf an die Domain der Datenerfassungs-Server (DCS), die vom ID-Dienst verwendet wird. Diese Domain-übergreifende Anforderung enthält den Header: </p> <p> 
      <ul class="simplelist"> 
       <li> <span class="codeph"> Origin: https://www.finance-website.com</span> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Antwort</b> </p> </td> 
-   <td colname="col2"> <p>Die Antwort der DCS-Domäne enthält die folgenden Header, die der Finance-Firma Zugriff auf die erforderlichen Ressourcen gewähren: </p> <p> 
+   <td colname="col2"> <p>Die Antwort der DCS-Domäne enthält die folgenden Header, die der Website des Finanzunternehmens Zugriff auf die erforderlichen Ressourcen gewähren: </p> <p> 
      <ul class="simplelist"> 
       <li> <span class="codeph"> Access-Control-Allow-Origin: https://www.finance-website.com</span> </li> 
       <li> <span class="codeph"> Access-Control-Allow-Credentials: true</span> </li> 
@@ -79,17 +79,16 @@ In der folgenden Tabelle werden einige der Vorteile beschrieben, die CORS Kunden
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Erhöhte Sicherheit</b> </p> </td> 
-   <td colname="col2"> <p>CORS verwendet <a href="https://developer.mozilla.org/de-DE/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a>, um Daten anzufordern und zu übertragen. Diese Methode ist sicherer als eine JSONP-Anforderung. Es stellt sicher, dass es keine Möglichkeit gibt, beliebigen JavaScript-Code auszuführen, der in der Antwort des DCS enthalten sein könnte. Die CORS XMLHttpRequest-Antwortnutzlast wird vom ID-Dienst-JavaScript analysiert und nicht einfach in einer Rückruffunktion ausgeführt. </p> <p> <p>Hinweis: Zum Akzeptieren von Cookies muss die Eigenschaft <span class="codeph">withCredentials</span> des Objekts <span class="codeph">XMLHttpRequest</span> auf <span class="codeph">true</span> festgelegt sein. Diese Eigenschaft wird in Chrome, Firefox, Internet Explorer (v10+), Opera und Safari unterstützt. </p> </p> </td> 
+   <td colname="col2"> <p>CORS verwendet <a href="https://developer.mozilla.org/de-DE/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a>, um Daten anzufordern und zu übertragen. Diese Methode ist sicherer als eine JSONP-Anfrage. Sie stellt sicher, dass es keine Möglichkeit gibt, beliebigen JavaScript-Code auszuführen, der in der Antwort des DCS enthalten sein könnte. Die Payload der CORS XMLHttpRequest-Antwort wird vom JavaScript des ID-Dienstes analysiert und nicht einfach in einer Rückruffunktion ausgeführt. </p> <p> <p>Hinweis: Zum Akzeptieren von Cookies muss die Eigenschaft <span class="codeph">withCredentials</span> des Objekts <span class="codeph">XMLHttpRequest</span> auf <span class="codeph">true</span> festgelegt sein. Diese Eigenschaft wird in Chrome, Firefox, Internet Explorer (Version 10 und höher), Opera und Safari unterstützt. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Leistungsverbesserungen</b> </p> </td> 
-   <td colname="col2"> <p>CORS hilft, die Leistung zu verbessern, weil: </p> 
+   <td colname="col2"> <p>CORS hilft, die Leistung zu verbessern, denn: </p> 
     <ul id="ul_EC3A178003A94D70883B914050D7C464"> 
      <li id="li_F8B44352BFBB46CDBD07AE40B9F2D0EC">Der Browser verwaltet Ressourcenanforderungen. Der Anforderungsprozess ist für den ID-Dienst transparent. </li> 
-     <li id="li_C63E43A4CAB84210AB6A39100E5864BE">Im Gegensatz zu asynchronen JSONP-Anforderungen depriorisiert der Browser CORS-Anforderungen nicht und stellt sie in Warteschlange. </li> 
+     <li id="li_C63E43A4CAB84210AB6A39100E5864BE">Im Gegensatz zu asynchronen JSONP-Anfragen werden CORS-Anforderungen vom Browser nicht depriorisiert und in eine Warteschlange gestellt. </li> 
      <li id="li_1A2A15F591B84D1BAED3CFAB391EEBEC">Der ID-Dienst reagiert berechtigterweise. Wenn eine URL als <span class="codeph">Origin</span> weitergegeben wird, gewährt der ID-Dienst demnach der Seite Zugriff auf die erforderlichen Ressourcen. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
-
