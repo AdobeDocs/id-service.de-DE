@@ -5,14 +5,14 @@ seo-description: Mit dieser Implementierung können Kunden den ID-Dienst auf Ger
 seo-title: Direkte Integration mit dem Experience Cloud Identity-Dienst
 title: Direkte Integration mit dem Experience Cloud Identity-Dienst
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '714'
 ht-degree: 100%
 
 ---
-
 
 # Direkte Integration mit dem Experience Cloud Identity-Dienst {#direct-integration-with-the-experience-cloud-id-service}
 
@@ -69,7 +69,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ih
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Informationen zum Auffinden dieser ID erhalten Sie unter <a href="../reference/requirements.md" format="dita" scope="local">Voraussetzungen für den Experience Cloud Identity-Dienst</a> </p> </td> 
+   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Informationen zum Auffinden dieser ID erhalten Sie unter  <a href="../reference/requirements.md" format="dita" scope="local">Voraussetzungen für den Experience Cloud Identity-Dienst</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -126,4 +126,3 @@ Einige Antwortparameter sind Teil der Anforderung und wurden im obigen Abschnitt
   </tr> 
  </tbody> 
 </table>
-
