@@ -5,14 +5,14 @@ seo-description: Die Rolle des Experience Cloud Identity-Diensts in Adobe Experi
 seo-title: Über den ID-Dienst
 title: Übersicht
 uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
-translation-type: tm+mt
-source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
-workflow-type: tm+mt
+exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
-
 
 # Über den ID-Dienst {#aboutidservice}
 
@@ -28,17 +28,17 @@ Mit dem Experience Cloud Identity-Dienst wird das allgemeine Identifizierungs-Fr
 
 ![](assets/ecid-new.png)
 
-Darüber hinaus kann der ID-Dienst die verschiedenen lösungsspezifischen IDs (z. B. Analytics-AID) ersetzen. Und mit der Funktion [Kunden-IDs und Authentifizierungsstatus](../reference/authenticated-state.md) können Sie mit dem ID-Dienst Ihre eigenen Kunden-IDs an das [!DNL Experience Cloud] weitergeben. Beachten Sie jedoch, dass der ID-Dienst nur mit den Lösungen funktioniert, die Sie bereits abonniert haben. Es bietet keinen Zugriff auf andere Produkte, wenn Sie nicht für sie angemeldet sind.
+Darüber hinaus kann der ID-Dienst die verschiedenen lösungsspezifischen IDs (beispielsweise Analytics-AID) ersetzen. Mit der Funktion [Kunden-IDs und Authentifizierungsstatus](../reference/authenticated-state.md) ermöglicht es Ihnen der ID-Dienst, eigene Kunden-IDs an [!DNL Experience Cloud] zu übergeben. Beachten Sie jedoch, dass der ID-Dienst nur mit den Lösungen funktioniert, die Sie bereits abonniert haben. Er bietet keinen Zugriff auf andere Produkte, wenn Sie nicht für sie angemeldet sind.
 
 Künftig ist der ID-Dienst eine integrale Komponente von vielen aktuellen und künftigen [!DNL Experience Cloud]-Features, -Erweiterungen und -Services. Der ID-Dienst unterstützt derzeit [Analytics](http://www.adobe.com/de/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/de/marketing-cloud/data-management-platform.html) und [Target](http://www.adobe.com/de/marketing-cloud/testing-targeting.html). Zudem ist er erforderlich, wenn Sie sich an der [!DNL Adobe Experience Cloud]-Gerätekooperation beteiligen möchten. Wenn Sie den ID-Dienst nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen. Weitere Informationen über die Bedeutung und die Rolle des Identity-Dienstes finden Sie unter [Why the Experience Cloud ID Service Should be on Your Radar](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/) (Warum Sie den ID-Dienst im Auge behalten sollten).
 
 ## Funktionszusammenfassung {#section-96555473455c4bf8924c2d56ff4f3255}
 
-Zusammenfassend ist der ID-Dienst:
+Zusammenfassend leistet der ID-Dienst Folgendes:
 
-* Erstellt einen gemeinsamen Schlüssel oder eine gemeinsame ID, die zum Verknüpfen von Profilen und Identitäten verwendet werden kann.
-* Identifiziert ein Gerät eindeutig in mehreren Lösungen.
-* Legt ein Erstanbieter-Cookie in der Domäne des Kunden fest, um sicherzustellen, dass die Verfolgung in derselben Domäne erfolgt. Weitere Informationen finden Sie unter [Experience Cloud](../introduction/cookies.md).
+* Er erstellt einen gemeinsamen Schlüssel oder eine gemeinsame ID, die zum Verknüpfen von Profilen und Identitäten verwendet werden kann.
+* Er identifiziert ein Gerät eindeutig in mehreren Lösungen.
+* Er legt ein Erstanbieter-Cookie in der Domain des Kunden fest, um sicherzustellen, dass die Verfolgung in derselben Domain erfolgt. Weitere Informationen finden Sie unter [Experience Cloud](../introduction/cookies.md).
 * Erhalten von Aliasen und ID-Zuordnungen von [!DNL Experience Cloud]-Kunden und -Partnern.
 * Verwalten der ID-Synchronisierung innerhalb der [!DNL Experience Cloud].
 * Unterstützen der ID-Synchronisierung mit unterschiedlichen Drittanbietern im Anzeigentechnologiesystem.
