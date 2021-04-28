@@ -5,14 +5,14 @@ seo-description: Diese Anweisungen, Tools und Verfahren unterstützen Sie bei de
 seo-title: Testen und Überprüfen des Experience Cloud Identity-Diensts
 title: Testen und Überprüfen des Experience Cloud Identity-Diensts
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '723'
 ht-degree: 100%
 
 ---
-
 
 # Testen und Überprüfen des Experience Cloud Identity-Diensts {#test-and-verify-the-experience-cloud-id-service}
 
@@ -32,11 +32,11 @@ Alternativ können Sie den ID-Dienst in einer anonymen oder Inkognito-Browsersit
 
 Der [Adobe-Debugger](https://docs.adobe.com/content/help/de-DE/analytics/implementation/validate/debugger.html) und der [Charles-HTTP-Proxy](https://www.charlesproxy.com/) können Ihnen dabei helfen festzustellen, ob der ID-Dienst für Analytics richtig konfiguriert wurde. Die Informationen in diesem Abschnitt basieren auf den durch den Adobe-Debugger und Charles zurückgegebenen Ergebnissen. Sie können jedoch frei entscheiden, welches Tool oder welcher Debugger für Sie optimal ist.
 
-## Testen mit dem Adobe-Debugger {#section-861365abc24b498e925b3837ea81d469}
+## Testen mit dem Adobe-Debugger  {#section-861365abc24b498e925b3837ea81d469}
 
 Ihre Dienstintegration ist richtig konfiguriert, wenn in der [!DNL Adobe]-Debugger-Antwort eine [!DNL Experience Cloud ID] (MID) angezeigt wird. Siehe [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md) mit weiteren Informationen zur MID.
 
-So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe][-Debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html):
+So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe] [-Debugger](https://docs.adobe.com/content/help/de-DE/analytics/implementation/validate/debugger.html):
 
 1. Löschen Sie Ihre Browser-Cookies oder öffnen Sie eine anonyme Browser-Sitzung.
 1. Laden Sie Ihre Testseite, die den ID-Dienst-Code enthält.
