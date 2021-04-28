@@ -1,18 +1,18 @@
 ---
-description: Diese Beispiele behandeln zwei gängige Anwendungsfälle im Zusammenhang mit einer direkten Integration und der Experience Cloud-ID (MID). Die MID ist eine eindeutige, beständige ID für Ihre Site-Besucher.
+description: Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer direkten Integration und der Experience Cloud ID (MID) ab. Dies ist eine eindeutige, dauerhafte ID für Ihre Site-Besucher.
 keywords: ID-Dienst
-seo-description: Diese Beispiele behandeln zwei gängige Anwendungsfälle im Zusammenhang mit einer direkten Integration und der Experience Cloud-ID (MID). Die MID ist eine eindeutige, beständige ID für Ihre Site-Besucher.
+seo-description: Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer direkten Integration und der Experience Cloud ID (MID) ab. Dies ist eine eindeutige, dauerhafte ID für Ihre Site-Besucher.
 seo-title: Anwendungsfälle der direkten Integration
 title: Anwendungsfälle der direkten Integration
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
-source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
-workflow-type: tm+mt
+exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '475'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
-
 
 # Nutzungsszenarios im Zusammenhang mit einer direkten Integration {#direct-integration-use-cases}
 
@@ -39,26 +39,26 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Bedingungen</b> </p> </td> 
-   <td colname="col2"> <p>Dieser Anwendungsfall setzt voraus, dass: </p> 
+   <td colname="col2"> <p>Dieser Anwendungsfall setzt Folgendes: </p> 
     <ul id="ul_F20231F83EE84889B78971A64E758757"> 
-     <li id="li_20F3E96493724CD2BAF4B20AEE5CBF23">Verwenden Sie eine MID für den Site-Besucher. Nennen wir diese ID 1234. </li> 
-     <li id="li_A358C58CC58C4FCBB7250F5ED108AA71">Kennen Sie diesen Besucher mit Ihrer eigenen eindeutigen ID. Nennen wir diese ID 9876. </li> 
+     <li id="li_20F3E96493724CD2BAF4B20AEE5CBF23">Sie verwenden eine MID für den Site-Besucher. Nennen wir diese ID 1234. </li> 
+     <li id="li_A358C58CC58C4FCBB7250F5ED108AA71">Identifizieren Sie diesen Besucher mit Ihrer eigenen eindeutigen ID. Nennen wir diese ID 9876. </li> 
      <li id="li_D93CE7182EBE4927A5C7A0BF414C03BC">Sie möchten die MID (1234) mit Ihrer eigenen eindeutigen ID (9876) verknüpfen. </li> 
      <li id="li_4611146E56624C2AB647733487A3F046"> <i>(Optional)</i> Sie möchten einen Authentifizierungsstatus für diesen Besucher festlegen. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Aktionen</b> </p> </td> 
-   <td colname="col2"> <p>Unter diesen Bedingungen können Sie den ID-Dienst aufrufen, der Folgendes umfasst: </p> 
+   <td colname="col2"> <p>Unter diesen Bedingungen rufen Sie den ID-Dienst auf, der Folgendes umfasst: </p> 
     <ul id="ul_9ECB1A65266644E89E949C57D202D5A4"> 
      <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">Die MID (1234). </li> 
-     <li id="li_4869572B40E54C54B88A2474DAC475A8">Ihre Datenanbieter-ID. Diese eindeutige ID wird Ihrer Firma zugewiesen. Nennen wir diese ID 4444. </li> 
+     <li id="li_4869572B40E54C54B88A2474DAC475A8">Ihre Datenanbieter-ID. Dies ist die eindeutige ID, die Ihrer Firma zugewiesen wird. Nennen wir diese ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">Ihre ID für den Besucher (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Optional)</i> Eine Status-ID zum Definieren des Authentifizierungsstatus für diesen Besucher. </li> 
-    </ul> <p>Wenn Sie andere Parameter haben, die im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B. <span class="codeph">d_blob</span> oder <span class="codeph">dcs_region</span> usw.), Es ist ok, diese auch einzureichen. </p> </td> 
+    </ul> <p>Wenn Sie andere Parameter haben, die im  <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B. <span class="codeph">d_blob</span> oder <span class="codeph">dcs_region</span> usw.), können Sie diese auch übergeben. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Beispiel für Lösung und Code</b> </p> </td> 
+   <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 
    <td colname="col2"> <p>Formatieren Sie Ihren Aufruf an den ID-Dienst wie folgt: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Wie Sie sehen, enthält der Beispielaufruf Folgendes: </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
@@ -81,21 +81,20 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Bedingungen</b> </p> </td> 
-   <td colname="col2"> <p>Dieser Anwendungsfall setzt voraus, dass: </p> 
+   <td colname="col2"> <p>Dieser Anwendungsfall setzt Folgendes: </p> 
     <ul id="ul_BF3BD821907B46A4B2EFA63146D35722"> 
-     <li id="li_E658AE0671D14558B65FDD8992F25996">Verwenden Sie keine MID für den Site-Besucher. </li> 
-     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">MID muss vom ID-Dienst angefordert werden. </li> 
-     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">Sie kennen Ihre <a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">Organisations-ID</a>. nennen wir das 5555. </li> 
+     <li id="li_E658AE0671D14558B65FDD8992F25996">Sie verwenden keine MID für den Site-Besucher. </li> 
+     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">Eine MID muss vom ID-Dienst angefordert werden. </li> 
+     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">Sie kennen Ihre <a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">Organisations-ID</a>. Nennen wir diese 5555. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Aktionen</b> </p> </td> 
-   <td colname="col2"> <p>Unter diesen Bedingungen rufen Sie den ID-Dienst mit Ihrer Organisations-ID auf. </p> <p>Wenn Sie andere Parameter haben, die im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B. <span class="codeph">d_blob</span> oder <span class="codeph">dcs_region</span> usw.), Es ist ok, diese auch einzureichen. </p> </td> 
+   <td colname="col2"> <p>Unter diesen Bedingungen rufen Sie den ID-Dienst mit Ihrer Organisations-ID auf. </p> <p>Wenn Sie andere Parameter haben, die im  <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B. <span class="codeph">d_blob</span> oder <span class="codeph">dcs_region</span> usw.), können Sie diese auch übergeben. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Beispiel für Lösung und Code</b> </p> </td> 
+   <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 
    <td colname="col2"> <p>Formatieren Sie Ihren Aufruf an den ID-Dienst wie folgt: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Wie Sie sehen, enthält der Beispielaufruf Ihre Organisations-ID <span class="codeph">d_orgid=5555</span>. Hiermit wird eine <span class="keyword">Experience Cloud</span> ID für diesen Besucher zurückgegeben. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
