@@ -5,14 +5,14 @@ seo-description: Neben der Besucher-ID für Experience Cloud können Sie jedem K
 seo-title: Kunden-IDs und Authentifizierungsstatus
 title: Kunden-IDs und Authentifizierungsstatus
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '661'
 ht-degree: 100%
 
 ---
-
 
 # Kunden-IDs und Authentifizierungsstatus {#customer-ids-and-authentication-states}
 
@@ -55,7 +55,7 @@ Ab der Experience Cloud Identity-Dienstversion 1.5 enthält `setCustomerIDs` das
  </tbody> 
 </table>
 
-## Nutzungsszenarios für Authentifizierungsstatus {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## Nutzungsszenarios für Authentifizierungsstatus  {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
 Sie können Ihren Benutzern Authentifizierungsstatus zuweisen, je nachdem, welche Aktionen sie für Ihre Web-Eigenschaften durchführen und ob sie authentifiziert sind. In der unten stehenden Tabelle finden Sie einige Beispiele:
 
@@ -68,7 +68,7 @@ Sie können Ihren Benutzern Authentifizierungsstatus zuweisen, je nachdem, welch
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Besucher.AuthState.UNKNOWN  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
    <td colname="col2"> <p>Dieser Status kann beispielsweise für folgende Szenarien verwendet werden: </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Lesen einer E-Mail (bei diesem Vorgang ist der Leser der vorgesehene Empfänger, die E-Mail hätte aber auch weitergeleitet werden können). </li> 
@@ -76,11 +76,11 @@ Sie können Ihren Benutzern Authentifizierungsstatus zuweisen, je nachdem, welch
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Besucher.AuthState.AUTHENTICATED  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
    <td colname="col2"> <p>Der Benutzer ist zurzeit in einer aktiven Sitzung auf Ihrer Website oder in Ihrer Applikation authentifiziert. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Besucher.AuthState.LOGGED_OUT  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
    <td colname="col2"> <p>Der Benutzer war authentifiziert, hat sich dann aber aktiv abgemeldet. Der Benutzer beabsichtigte, die Verbindung zum authentifizierten Status zu trennen. Der Benutzer möchte nicht mehr als authentifiziert gehandhabt werden. </p> </td> 
   </tr> 
  </tbody> 
