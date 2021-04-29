@@ -22,7 +22,6 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
 >
 >* Bevor Sie sich mit den Nutzungsszenarios befassen, sollten Sie sichergehen, dass Sie [Codesyntax und Variablen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) verstehen.
 >* Weitere Informationen über die MID finden Sie unter [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
-
 >
 
 
