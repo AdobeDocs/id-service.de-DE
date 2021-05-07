@@ -2,50 +2,20 @@
 description: Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das domänenübergreifende Tracking für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren (z. B. Safari).
 keywords: Reihenfolge der Vorgänge, ID-Dienst
 seo-description: Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das domänenübergreifende Tracking für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren (z. B. Safari).
-seo-title: Datenerfassungs-CNAMEs und domänenübergreifendes Tracking
-title: Datenerfassungs-CNAMEs und domänenübergreifendes Tracking
+seo-title: Übersicht zur CNAME-Implementierung
+title: Übersicht zur CNAME-Implementierung
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: 053d45656e941adc1950d49099c30da1d9a72aa0
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ebeca9e285af71872c05d58ba252ca65bde24f3d
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 28%
 
 ---
 
 
-# Datenerfassungs-CNAMEs und domänenübergreifendes Tracking {#data-collection-cnames-and-cross-domain-tracking}
+# Übersicht zur CNAME-Implementierung{#cname-implementation-overview}
 
-Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das domänenübergreifende Tracking für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren (z. B. Safari).
+Mit CNAME-Implementierungen können Sie die von der Adobe verwendete Erfassungsdomäne so anpassen, dass sie mit Ihrer eigenen Domäne übereinstimmt. Dadurch kann Adobe Erstanbieter-Cookies auf dem Server anstatt auf dem Client mithilfe von JavaScript einstellen. Bisher waren diese serverseitigen Erstanbieter-Cookies keinen Beschränkungen unterworfen, die gemäß der ITP-Richtlinie (Intelligent Tracking Prevention) von Apple vorgeschrieben wurden. Im November 2020 wurden ihre Richtlinien jedoch von [!DNL Apple] aktualisiert, sodass diese Einschränkungen auch auf Cookies angewendet wurden, die über CNAME eingestellt wurden. Zurzeit sind beide Cookies, die auf der Serverseite über CNAME gesetzt werden, und Cookies, die auf der Clientseite über JavaScript gesetzt werden, unter ITP auf einen Ablauf von sieben Tagen oder 24 Stunden beschränkt. Weitere Informationen zur ITP-Richtlinie finden Sie in diesem [!DNL Apple] Dokument [zur Verfolgungsverhütung](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp).
 
-In Browsern, die Drittanbieter-Cookies akzeptieren, wird von den Datenerfassungs-Servern bei der Anforderung einer Besucher-ID ein Cookie gesetzt. Mit diesem Cookie kann der Besucher-ID-Dienst für alle Domänen, die mit derselben Experience Cloud-Organisations-ID konfiguriert sind, dieselbe Experience Cloud-Besucher-ID zurückgeben.
-
-Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domäne eine neue Experience Cloud-Besucher-ID zugewiesen.
-
-Das demdex.net-Cookie aktiviert den Besucher-ID-Dienst, um domänenübergreifendes Tracking auf derselben Ebene wie das s_vi-Cookie in Analytics zu ermöglichen, das von manchen Browsern akzeptiert und domänenübergreifend verwendet, von anderen Browsern dagegen abgelehnt wird.
-
-## Datenerfassungs-CNAMEs {#section-48fd186d376a48079769d12c4bd9f317}
-
-Wenn das Analytics-Cookie durch den Datenerfassungs-Server gesetzt wurde, konfigurieren viele Kunden Datenerfassungs-Server-CNAME-Einträge für die [Implementierung von Erstanbieter-Cookies](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-first-party.html), um Probleme mit Browsern zu verhindern, die Drittanbieter-Cookies zurückweisen. Durch diesen Prozess wird die Domäne des Datenerfassungs-Servers so konfiguriert, dass sie mit Ihrer Website-Domäne übereinstimmt, sodass das Besucher-ID-Cookie als Erstanbieter-Cookie gesetzt wird.
-
-Da der Besucher-ID-Dienst das Besucher-Cookie mithilfe von JavaScript direkt in der Domäne der aktuellen Website setzt, wird diese Konfiguration nicht mehr zum Setzen von Erstanbieter-Cookies benötigt.
-
-Kunden mit nur einer Webeigenschaft (nur einer Domäne) können den Datenerfassungs-CNAME eliminieren und stattdessen den Namen des Datenerfassungshosts verwenden (`omtrdc.net` oder `2o7.net`).
-
-Die Verwendung eines CNAME für die Datenerfassung bietet jedoch einen zusätzlichen Vorteil, da Sie Besucher zwischen einer Haupt-Landing-Domäne und anderen Domänen in Browsern, die keine Drittanbieter-Cookies akzeptieren, verfolgen können. Kunden mit mehreren Web-Eigenschaften (mehreren Domänen) können vom Unterhalt eines Datenerfassungs-CNAME profitieren. Im folgenden Abschnitt wird erläutert, wie domänenübergreifendes Besucher-Tracking funktioniert.
-
-## Domänenübergreifendes Tracking {#section-78925af798e24917b9abed79de290ad9}
-
-Der Besucher-ID-Dienst verwendet „demdex.net“ als Domäne zum domänenübergreifenden Tracking von Besuchern (jedoch innerhalb derselben Eigentümerfirma), sofern die Datenschutzeinstellungen und Browser-Einstellungen des Benutzers dies zulassen.
-
-Ein CNAME bietet keine weiteren domänenübergreifenden Vorteile. Sie haben z. B. eine primäre Website unter `mymainsite.com`. Sie haben den CNAME-Eintrag so konfiguriert, dass er auf Ihren sicheren Datenerfassungsserver zeigt: `smetrics.mymainsite.com`.
-
-Wenn ein Besucher die Domäne `mymainsite.com` besucht, wird der ID-Dienst-Cookie vom Datenerfassungsserver gesetzt. Dies ist zulässig, da die Domäne des Datenerfassungsservers mit der Domäne der Website übereinstimmt. Dabei spricht man von der Verwendung eines Cookies in einem *Erstanbieterkontext* oder einfach von einem *Erstanbieter-Cookie*.
-
-Wenn Sie dieselben Datenerfassungsserver auch für andere Websites verwenden (z. B. `myothersiteA.com` und `myothersiteB.com`), verhält es sich so, dass, wenn ein Besucher diese Websites später besucht, das beim Besuch auf `mymainsite.com` gesetzte Cookie in der HTTP-Anforderung an den Datenerfassungsserver gesendet wird (wie oben beschrieben senden Browser alle Cookies für eine Domäne in allen HTTP-Anforderungen an diese Domäne, selbst wenn die Domäne nicht mit der Domäne der aktuellen Website übereinstimmt). Dies wird als Verwendung eines Cookies in einem *Drittanbieterkontext* oder nur eines *Drittanbieter-Cookies* bezeichnet, auch wenn Sie einen CNAME verwenden. Adobe empfiehlt für jede eindeutige Domäne einen CNAME.
-
-*Hinweis: Safari blockiert alle Cookies im Kontext von Drittanbietern, unabhängig davon, wie sie gesetzt sind.*
-
-## Aktivierung der CNAME-Unterstützung mit dem Experience Cloud Identity-Dienst {#section-25d4feb686d944e3a877d7aad8dbdf9a}
-
-Die CNAME-Unterstützung des Datenerfassungs-Servers wird durch das Setzen der `visitor.marketingCloudServerSecure` Variablen aktiviert.
+Während eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, gibt es möglicherweise einige weitere Vorteile wie Anzeigenblocker und weniger häufige Browser, die verhindern, dass Daten an Domänen gesendet werden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME-Eintrags verhindern, dass die Datenerfassung für Benutzer, die diese Tools verwenden, unterbrochen wird.
