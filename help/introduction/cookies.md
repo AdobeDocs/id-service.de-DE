@@ -6,11 +6,10 @@ seo-title: Cookies und der Experience Cloud Identity-Dienst.
 title: Cookies und der Experience Cloud Identity-Dienst.
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
+workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +27,7 @@ Der ID-Dienst ist auf die AMCV-, AMCVS- und demdex-Cookies angewiesen, um ordnun
 * Diese eindeutige ID beibehalten, damit der ID-Dienst Daten erfassen und für andere Experience Cloud-Lösungen freigeben kann.
 * Benutzer domänenübergreifend verfolgen. Dies setzt jedoch voraus, dass Sie Eigentümer dieser anderen Domänen sind und dass auf ihnen ID-Dienst-Code bereitgestellt wird.
 
-### Was die ID-Dienst-Cookies nicht können
+### Was die ID-Dienst-Cookies nicht tun können
 
 * Computerviren speichern, übertragen und ausführen.
 * Auf personenbezogene Daten (PII) wie Ihre E-Mail-Adresse zugreifen oder speichern.
@@ -52,12 +51,12 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **Inhalt**
 
-Der AMCV-Cookie enthält die Experience Cloud-Besucher-ID oder die MID. Die MID wird in einem Schlüssel-Wert-Paar gespeichert, das dieser Syntax folgt: `mid|<Experience Cloud ID>`.
+Der AMCV-Cookie enthält die Experience Cloud-Besucher-ID oder die MID. Die MID wird in einem Schlüssel-Wert-Paar gespeichert, das dieser Syntax folgt: `MCMID|<Experience Cloud ID>`.
 
 Ein vollständiges Schlüsselwertpaar würde in etwa wie folgt aussehen:
 
 ```
-mid|20265673158980419722735089753036633573
+MCMID|20265673158980419722735089753036633573
 ```
 
 Diese persistente Kennung ermöglicht die lösungsübergreifende Datenfreigabe.
