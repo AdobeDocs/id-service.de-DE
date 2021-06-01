@@ -7,9 +7,9 @@ title: Cookies und der Experience Cloud Identity-Dienst.
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '997'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Der ID-Dienst ist auf die AMCV-, AMCVS- und demdex-Cookies angewiesen, um ordnun
 * Diese eindeutige ID beibehalten, damit der ID-Dienst Daten erfassen und für andere Experience Cloud-Lösungen freigeben kann.
 * Benutzer domänenübergreifend verfolgen. Dies setzt jedoch voraus, dass Sie Eigentümer dieser anderen Domänen sind und dass auf ihnen ID-Dienst-Code bereitgestellt wird.
 
-### Was die ID-Dienst-Cookies nicht tun können
+### Was die ID-Dienst-Cookies nicht können
 
 * Computerviren speichern, übertragen und ausführen.
 * Auf personenbezogene Daten (PII) wie Ihre E-Mail-Adresse zugreifen oder speichern.
