@@ -4,10 +4,9 @@ seo-description: Mit dem Experience Cloud-Identity-Dienst (ehemals Besucher-ID-D
 seo-title: Experience Cloud ID-Dienst – Übersicht
 title: Experience Cloud ID-Dienst – Übersicht
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '615'
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -37,7 +36,7 @@ Zusammenfassend leistet der ID-Dienst Folgendes:
 
 * Er erstellt einen gemeinsamen Schlüssel oder eine gemeinsame ID, die zum Verknüpfen von Profilen und Identitäten verwendet werden kann.
 * Er identifiziert ein Gerät eindeutig in mehreren Lösungen.
-* Er legt ein Erstanbieter-Cookie in der Domain des Kunden fest, um sicherzustellen, dass die Verfolgung in derselben Domain erfolgt. Weitere Informationen finden Sie im Dokument zu [Cookies und Experience Cloud Identity-Dienst](https://docs.adobe.com/content/help/de-DE/id-service/using/intro/cookies.html).
+* Er legt ein Erstanbieter-Cookie in der Domain des Kunden fest, um sicherzustellen, dass die Verfolgung in derselben Domain erfolgt. Weitere Informationen finden Sie im Dokument zu [Cookies und Experience Cloud Identity-Dienst](./cookies.md).
 * Erhalten von Aliasen und ID-Zuordnungen von Experience Cloud-Kunden und -Partnern.
 * Verwalten der ID-Synchronisierung innerhalb der Experience Cloud.
 * Unterstützen der ID-Synchronisierung mit unterschiedlichen Drittanbietern im Anzeigentechnologiesystem.
