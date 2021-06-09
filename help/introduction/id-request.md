@@ -6,11 +6,10 @@ seo-title: Anfordern und Festlegen von IDs durch den Experience Cloud Identity-D
 title: Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +34,7 @@ In den folgenden Beispielen wird dargestellt, wie der ID-Dienst die Experience C
 In diesem Beispiel kommt ein neuer Besucher zur Pizza-Site, die von der Food Company verwaltet wird. Die Food Company hat auf der Pizza-Site ID-Dienst-Code implementiert. Beim Laden der Site wird vom ID-Dienst-Code der AMCV-Cookie in der Pizzadomäne gesucht.
 
 * Ist der AMCV-Cookie gesetzt, verfügt der Site-Besucher über eine Experience Cloud ID. In diesem Fall verfolgt das Cookie den Besucher und teilt Daten mit anderen Experience Cloud-Lösungen.
-* Wenn das AMCV-Cookie nicht gesetzt ist, ruft der ID-Dienst-Code einen regionalen [Datenerfassungsserver](https://docs.adobe.com/content/help/de-DE/analytics/technotes/rdc/regional-data-collection.html) (DCS) unter `dpm.demdex.net/id` auf (siehe auch [Aufrufe an die Domäne „demdex.net“](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.html)). Im Aufruf enthalten ist auch die Organisations-ID der Food Company. Die Organisations-ID wird in der Funktion `Visitor.getInstance` des ID-Dienst-Codes festgelegt.
+* Wenn das AMCV-Cookie nicht gesetzt ist, ruft der ID-Dienst-Code einen regionalen [Datenerfassungsserver](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en) (DCS) unter `dpm.demdex.net/id` auf (siehe auch [Aufrufe an die Domäne &quot;demdex.net&quot;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en). Im Aufruf enthalten ist auch die Organisations-ID der Food Company. Die Organisations-ID wird in der Funktion `Visitor.getInstance` des ID-Dienst-Codes festgelegt.
 
 ![](assets/request1.png)
 
