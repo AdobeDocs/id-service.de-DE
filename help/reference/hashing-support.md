@@ -5,11 +5,10 @@ seo-description: Experience Cloud ID Service (ECID) unterstützt den SHA-256-Has
 seo-title: SHA-256-Hash-Unterstützung für setCustomerIDs
 title: SHA-256-Hash-Unterstützung für setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 97%
 
 ---
 
@@ -61,7 +60,7 @@ d_cid_ic=email%a6ea4cde5da5ae7cc68baae894d1d6544fca26254433b0fff7c2cb4843b4a097%
 ts=1563299964843
 ```
 
-<br>
+<br> 
 
 In der unten stehenden Tabelle finden Sie eine Beschreibung des `d_cid_ic`-Parameters und des Authentifizierungsstatus.
 
@@ -71,13 +70,13 @@ In der unten stehenden Tabelle finden Sie eine Beschreibung des `d_cid_ic`-Param
 
 ## Hinzufügen einer Aktion in Adobe Experience Platform {#add-action-launch}
 
-Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Weitere Informationen über Launch finden Sie in der [Launch-Dokumentation](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html).
+Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Weitere Informationen zum Platform launch finden Sie in der [Launch-Produktdokumentation](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en).
 
 Um eine Aktion in Launch hinzuzufügen, lesen Sie die [Dokumentation zu Regeln](https://docs.adobe.com/help/de-DE/launch/using/reference/manage-resources/rules.html) in Adobe Launch und sehen Sie sich unten den Screenshot an:
 
 ![](/help/reference/assets/hashing-support.png)
 
-<br>
+<br> 
 
 Nachdem Sie Ihre Konfiguration bestätigt haben, werden die Daten wie unten dargestellt von Launch in ein Objekt aufgenommen:
 
