@@ -3,10 +3,10 @@ description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änd
 keywords: ID-Dienst
 title: Versionshinweise für 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 100%
+source-wordcount: '744'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2017.
 
-Diese Änderungen finden Sie auch in den [Experience Cloud-Versionshinweisen](https://docs.adobe.com/content/help/de-DE/release-notes/experience-cloud/current.html).
+Diese Änderungen finden Sie auch in den [Experience Cloud-Versionshinweisen](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de).
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ Es wurde ein Fehler behoben, durch den der ID-Dienst redundante Serveraufrufe f�
 
 **Neue Dokumentation**
 
-[Verwendung des DNS-Vorabrufs für verschiedene Experience Cloud-Lösungen und -Dienste](https://docs.adobe.com/content/help/de-DE/core-services/interface/more-resources/dns-prefetch.html)
+[Verwendung des DNS-Vorabrufs für verschiedene Experience Cloud-Lösungen und -Dienste](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
