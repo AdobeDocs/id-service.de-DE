@@ -1,20 +1,16 @@
 ---
 description: Eine optionale boolesche Kennzeichnung, die steuert, wie Browser Ressourcen vom Experience Cloud Identity-Dienst anfordern.
 keywords: ID-Dienst
-seo-description: Eine optionale boolesche Kennzeichnung, die steuert, wie Browser Ressourcen vom Experience Cloud Identity-Dienst anfordern.
-seo-title: useCORSOnly
 title: useCORSOnly
-uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 exl-id: 049a082a-8e6b-44cc-bd05-c12aaf3cbe4d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '163'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '145'
 ht-degree: 100%
 
 ---
 
-# useCORSOnly {#usecorsonly}
+# useCORSOnly{#usecorsonly}
 
 Eine optionale boolesche Kennzeichnung, die steuert, wie Browser Ressourcen vom Experience Cloud Identity-Dienst anfordern.
 
