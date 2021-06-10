@@ -1,15 +1,11 @@
 ---
 description: Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
 keywords: ID-Dienst
-seo-description: Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
-seo-title: Implementieren des Experience Cloud Identity-Diensts für Target
 title: Implementieren des Experience Cloud Identity-Diensts für Target
-uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '461'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '403'
 ht-degree: 100%
 
 ---
