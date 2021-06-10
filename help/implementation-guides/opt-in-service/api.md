@@ -1,14 +1,10 @@
 ---
 description: Referenz für die API der Opt-in-Bibliothek und die Konfigurationseinstellungen.
-seo-description: Referenz für die API der Opt-in-Bibliothek und die Konfigurationseinstellungen.
-seo-title: Opt-in-Referenz
 title: Opt-in-Referenz
-uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '897'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '886'
 ht-degree: 100%
 
 ---
@@ -58,7 +54,7 @@ Erstanbieterdomäne oder untergeordnete Domäne, die für den Opt-in-Cookie verw
 
 Anzahl der Sekunden, um die Standardablaufzeit von 13 Monaten zu überschreiben.
 
-## Änderungen an den Zustimmungsparametern  {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## Änderungen an den Zustimmungsparametern   {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
 Besucher Ihrer Site können Voreinstellungen jederzeit zum ersten Mal festlegen oder ihre Voreinstellungen mithilfe Ihrer CMP ändern. Nachdem Visitor JS mit den Ersteinstellungen initialisiert wurde, können die Berechtigungen des Besuchers mit den folgenden Funktionen geändert werden:
 
@@ -70,11 +66,11 @@ Funktion, die alle Kategorien in einer Liste für einen Besucher genehmigt oder 
 
 Funktion, die alle angegebenen Kategorien für einen Besucher ausschließt oder ablehnt.
 
-**`adobe.optIn.approveAll()`**
+**`adobe.optIn.approveAll()`**:
 
 Wenn Ihre Anfrage nach einer Erlaubnis für die Erstellung Ihrer Website so formuliert ist, dass eine Besucheroberfläche Ihrer Website die Erlaubnis zur Erstellung von Cookies erteilt oder verweigert, verwenden Sie `approveAll()` oder `denyAll()`, bezogen auf deren Antwort.
 
-**`adobe.optIn.denyAll()`**
+**`adobe.optIn.denyAll()`**:
 
 Wenn Ihre Genehmigungsanfrage so formuliert ist, dass Besucher Ihrer Site die Berechtigung zum Erstellen von Cookies pauschal erteilen oder verweigern, verwenden Sie `approveAll()` oder `denyAll()`, je nach Antwort der Besucher.
 
@@ -132,7 +128,7 @@ Ein Objekt, das alle Experience Cloud-Lösungen, die vom Besucher genehmigt oder
 
 „True“ oder „false“, je nach Statuswert. Opt-in meldet für diese Eigenschaft möglicherweise den Wert „false“, wenn ein Workflow-ähnliches Einverständnis gestartet, aber nicht abgeschlossen wurde.
 
-## Methoden des Opt-in-Objekts  {#section-e0417801a82548d199d833010033e433}
+## Methoden des Opt-in-Objekts   {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
@@ -205,7 +201,7 @@ Genehmigt alle vorhandenen Kategorien.
 
 Lehnt alle vorhandenen Kategorien ab.
 
-## Ereignisse des Opt-in-Objekts  {#section-06f25b33cab54bafb053183e937fb710}
+## Ereignisse des Opt-in-Objekts   {#section-06f25b33cab54bafb053183e937fb710}
 
 **`complete`:**
 
