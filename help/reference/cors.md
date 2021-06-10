@@ -1,15 +1,11 @@
 ---
 description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domäne, die nicht der aktuellen Domäne entspricht. Der Experience Cloud Identity-Dienst unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
 keywords: ID-Dienst
-seo-description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domäne, die nicht der aktuellen Domäne entspricht. Der Experience Cloud Identity-Dienst unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
-seo-title: CORS-Unterstützung im Experience Cloud Identity-Dienst.
 title: CORS-Unterstützung im Experience Cloud Identity-Dienst.
-uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '674'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '616'
 ht-degree: 100%
 
 ---
