@@ -1,14 +1,10 @@
 ---
 description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Dienst wie erwartet funktioniert.
-seo-description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Dienst wie erwartet funktioniert.
-seo-title: Überprüfen des Opt-in-Dienstes
 title: Überprüfen des Opt-in-Dienstes
-uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '471'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '440'
 ht-degree: 100%
 
 ---
@@ -64,7 +60,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 Der einzige Unterschied bei Nutzungsszenario 2 besteht darin, dass Sie *ein neues Cookie* sehen, das die Opt-in-Berechtigungen enthält, die von Ihrem Benutzer erteilt wurden: **adobeujs-optin**
 
-## Nutzungsszenario 3: Opt-in aktivieren und Vorabgenehmigung für Adobe Analytics erteilen  {#section-257fe582b425496cbf986d0ec12d3692}
+## Nutzungsszenario 3: Opt-in aktivieren und Vorabgenehmigung für Adobe Analytics erteilen   {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -84,7 +80,7 @@ und Sie sehen Analytics-Cookies auf der Registerkarte „Anwendung“:
 
 ![](assets/use_case_3_2.png)
 
-## Nutzungsszenario 4: Opt-in und IAB aktivieren  {#section-64331998954d4892960dcecd744a6d88}
+## Nutzungsszenario 4: Opt-in und IAB aktivieren   {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
