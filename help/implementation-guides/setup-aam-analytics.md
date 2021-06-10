@@ -3,10 +3,10 @@ description: Diese Anweisungen richten sich an Analytics- und Audience Manager-K
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 100%
+source-wordcount: '1231'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die de
 
 ## Schritt 1: Serverseitige Weiterleitung planen {#section-880797cc992d4755b29cada7b831f1fc}
 
-Zusätzlich zu den hier beschriebenen Schritten sollten Kunden, die [!DNL Analytics] und [!DNL Audience Manager] verwenden, zur serverseitigen Weiterleitung migrieren. Mit der Server-seitigen Weiterleitung können Sie DIL (den Datenerfassungs-Code von Audience Manager) entfernen und durch das [Audience Management-Modul](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) ersetzen. Weitere Informationen finden Sie in der [Dokumentation zur Server-seitigen Weiterleitung](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
+Zusätzlich zu den hier beschriebenen Schritten sollten Kunden, die [!DNL Analytics] und [!DNL Audience Manager] verwenden, zur serverseitigen Weiterleitung migrieren. Mit der Server-seitigen Weiterleitung können Sie DIL (den Datenerfassungs-Code von Audience Manager) entfernen und durch das [Audience Management-Modul](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) ersetzen. Weitere Informationen finden Sie in der [Dokumentation zur Server-seitigen Weiterleitung](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
 
 Die Migration zur Server-seitigen Weiterleitung erfordert Planung und Koordinierung. Dieser Prozess umfasst externe Änderungen am Site-Code und interne Schritte, die Adobe zur Bereitstellung Ihres Kontos durchführen muss. Tatsächlich müssen viele dieser Migrationsverfahren parallel ablaufen und gemeinsam freigegeben werden. Ihr Implementierungspfad sollte dieser Abfolge von Ereignissen folgen:
 
@@ -140,7 +140,7 @@ Fügen Sie Ihrer `Visitor.getInstance`-Datei die im Folgenden gezeigte `AppMeasu
 
 >[!IMPORTANT]
 >
->An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Anweisungen finden Sie unter [Implementieren der Server-seitigen Weiterleitung](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
+>An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Anweisungen finden Sie unter [Implementieren der Server-seitigen Weiterleitung](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
 
 ***(Optional, jedoch empfohlen)* Erstellung einer benutzerspezifischen Eigenschaft.**
 
@@ -182,7 +182,7 @@ Sie müssen eine Übergangsphase konfigurieren, wenn Sie Daten von einem Clickst
 
 Sobald Ihre Datenverarbeitungsprozesse die Spalten `post_visid_high` und `post_visid_low` einsetzen können, können Sie die Übergangsphase abbrechen.
 
-Siehe auch die [Clickstream-Datenspaltenreferenz](https://docs.adobe.com/content/help/de-DE/analytics/export/analytics-data-feed/data-feed-overview.html).
+Siehe auch die [Clickstream-Datenspaltenreferenz](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
 
 ## Schritt 9: Testen und Bereitstellen des ID-Dienst-Codes {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -193,10 +193,10 @@ Sie können dies wie folgt testen und bereitstellen.
 Prüfen Sie zum Testen Ihrer ID-Dienstimplementierung Folgendes:
 
 * [AMCV-Cookie](../introduction/cookies.md) in der Domäne, auf der Ihre Seiten gehostet werden.
-* MID-Wert in der Analytics-Bildanforderung mit dem [Adobe-Debugger](https://docs.adobe.com/content/help/de-DE/analytics/implementation/validate/debugger.html).
+* MID-Wert in der Analytics-Bildanforderung mit dem [Adobe-Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
 * Siehe auch [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md).
 
-Informationen zum Überprüfen der Server-seitigen Weiterleitung finden Sie unter [Überprüfen der Server-seitigen Weiterleitung](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html).
+Informationen zum Überprüfen der Server-seitigen Weiterleitung finden Sie unter [Überprüfen der Server-seitigen Weiterleitung](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html).
 
 **Bereitstellen**
 
