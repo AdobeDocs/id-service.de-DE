@@ -1,15 +1,11 @@
 ---
 description: Bei manchen Implementierungen werden Besucher-IDs von JavaScript an einen Server übergeben, sodass vom Server weitere Analytics-Ereignisse (z. B. ein Kauf) gesendet werden können.
 keywords: ID-Dienst
-seo-description: Bei manchen Implementierungen werden Besucher-IDs von JavaScript an einen Server übergeben, sodass vom Server weitere Analytics-Ereignisse (z. B. ein Kauf) gesendet werden können.
-seo-title: Serverseitige Implementierung zusammen mit JavaScript
 title: Serverseitige Implementierung zusammen mit JavaScript
-uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '213'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '181'
 ht-degree: 100%
 
 ---
