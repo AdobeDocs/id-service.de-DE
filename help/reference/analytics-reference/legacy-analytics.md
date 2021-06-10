@@ -1,16 +1,12 @@
 ---
 description: Eine Übersicht darüber, wie der Experience Cloud Identity-Dienst mit Legacy-Analytics-IDs funktioniert.
 keywords: ID-Dienst
-seo-description: Eine Übersicht darüber, wie der Experience Cloud Identity-Dienst mit Legacy-Analytics-IDs funktioniert.
-seo-title: Analytics und Experience Cloud ID-Anforderungen
 title: Analytics und Experience Cloud ID-Anforderungen
-uuid: 28beed16-7ef9-4824-8e82-853930756eca
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '469'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +20,7 @@ In der Vergangenheit war der Experience Cloud Identity-Dienst eng in Adobe Analy
 
 ## AMCV-Cookie ist im Browser nicht gesetzt {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
-Wenn das [!DNL Experience Cloud]-Cookie (AMCV) nicht vorhanden ist, generiert ein ID-Dienstaufruf an [!DNL Adobe] eine Antwort, die davon abhängt, ob eine Legacy-Analytics-ID vorhanden ist oder nicht. Die Legacy-[!DNL Analytics] ID ist im [s_vi-Cookie](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-analytics.html) gespeichert. In der folgenden Tabelle wird beschrieben, wie IDs basierend auf dem Status des s_ vi-Cookies in das AMCV-Cookie geschrieben werden.
+Wenn das [!DNL Experience Cloud]-Cookie (AMCV) nicht vorhanden ist, generiert ein ID-Dienstaufruf an [!DNL Adobe] eine Antwort, die davon abhängt, ob eine Legacy-Analytics-ID vorhanden ist oder nicht. Die Legacy-[!DNL Analytics] ID ist im [s_vi-Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) gespeichert. In der folgenden Tabelle wird beschrieben, wie IDs basierend auf dem Status des s_ vi-Cookies in das AMCV-Cookie geschrieben werden.
 
 <table id="table_DC85FECE26DD424E841BA1059AF1E57F"> 
  <thead> 
@@ -51,7 +47,7 @@ Wenn das [!DNL Experience Cloud]-Cookie (AMCV) nicht vorhanden ist, generiert ei
 
 >[!NOTE]
 >
->Für Benutzer, die durch ein s_fid-Cookie identifiziert werden, findet keine Migration des Legacy-FID-Werts in den AMCV-Cookie statt. Bei einem s_fid-Cookie werden Benutzer migriert, als sei kein s_vi-Cookie vorhanden (siehe oben), und sie werden als neue Besucher Ihrer Site angezeigt. Weitere Informationen finden Sie unter [Analytics-Cookies](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-analytics.html).
+>Für Benutzer, die durch ein s_fid-Cookie identifiziert werden, findet keine Migration des Legacy-FID-Werts in den AMCV-Cookie statt. Bei einem s_fid-Cookie werden Benutzer migriert, als sei kein s_vi-Cookie vorhanden (siehe oben), und sie werden als neue Besucher Ihrer Site angezeigt. Weitere Informationen finden Sie unter [Analytics-Cookies](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html).
 
 ## AMCV-Cookie ist im Browser gesetzt {#section-01c088fc565c4b24ba1722c7cc240310}
 
