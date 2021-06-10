@@ -1,20 +1,16 @@
 ---
 description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
 keywords: ID-Dienst
-seo-description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
-seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '449'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 97%
 
 ---
 
-# getVisitorValues {#getvisitorvalues}
+# getVisitorValues{#getvisitorvalues}
 
 Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
 
@@ -63,7 +59,7 @@ Im Beispiel für die standardmäßige Antwort wurden einige Werte zu Demonstrati
 }
 ```
 
-## Nutzungsszenario 2: Benutzerdefinierten Datensatz anfordern  {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Nutzungsszenario 2: Benutzerdefinierten Datensatz anfordern   {#section-467b2f4e513344c89b7332b05f6f59f3}
 
 In diesem Code wird ein optionales Array verwendet, um einen spezifischen Satz von IDs mit der `visitor.FIELDS`-Enumeration zurückzugeben. In diesem Fall möchten wir nur die Experience Cloud ID (MCID) und die Analytics-ID (MCAID) des Besuchers abrufen. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
 
@@ -85,7 +81,7 @@ Die benutzerdefinierte Antwort im Beispiel gibt nur die in der Anforderung angeg
 }
 ```
 
-## Definierte Antwortparameter  {#section-4c4c300167694c6fbff1d6c612f372b5}
+## Definierte Antwortparameter   {#section-4c4c300167694c6fbff1d6c612f372b5}
 
 In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Dies sind auch alle Werte in der `visitor.FIELDS`-Enumeration. Beachten Sie, dass diese Methode eine leere Zeichenfolge zurückgibt, wenn es für eine bestimmte Variable keine Werte gibt.
 
@@ -103,7 +99,7 @@ In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Di
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>Die Regions-ID für die Datenerfassung. Dies ist eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. </p> <p>Siehe <a href="https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS-Regions-IDs, Standorte und Hostnamen </a> und <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
+   <td colname="col2"> <p>Die Regions-ID für die Datenerfassung. Dies ist eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external"> DCS-Regions-IDs, Standorte und Hostnamen </a> und <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
