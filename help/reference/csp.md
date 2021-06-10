@@ -1,15 +1,11 @@
 ---
 description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und über strenge CSPs verfügen, die Whitelists verwenden, um Ressourcen aus vertrauenswürdigen Domänen zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
 keywords: ID-Dienst
-seo-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und über strenge CSPs verfügen, die Whitelists verwenden, um Ressourcen aus vertrauenswürdigen Domänen zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
-seo-title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
-uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '621'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '549'
 ht-degree: 100%
 
 ---
