@@ -1,20 +1,16 @@
 ---
 description: Diese Eigenschaft überschreibt die Experience Cloud- und Analytics-IDs eines Besuchers, wenn dieser von einer Domain zu einer zweiten Domain navigiert. Um eine ID zu überschreiben, müssen Sie den ID-Dienst für jede Domain besitzen und implementiert haben. Mit diesem Code können Sie keine IDs in Domains überschreiben, die Sie nicht steuern.
 keywords: ID-Dienst
-seo-description: Diese Eigenschaft überschreibt die Experience Cloud- und Analytics-IDs eines Besuchers, wenn dieser von einer Domain zu einer zweiten Domain navigiert. Um eine ID zu überschreiben, müssen Sie den ID-Dienst für jede Domain besitzen und implementiert haben. Mit diesem Code können Sie keine IDs in Domains überschreiben, die Sie nicht steuern.
-seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
-uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '448'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
 
-# overwriteCrossDomainMCIDAndAID {#overwritecrossdomainmcidandaid}
+# overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
 Diese Eigenschaft überschreibt die Experience Cloud- und Analytics-IDs eines Besuchers, wenn dieser von einer Domain zu einer zweiten Domain navigiert. Um eine ID zu überschreiben, müssen Sie den ID-Dienst für jede Domain besitzen und implementiert haben. Mit diesem Code können Sie keine IDs in Domains überschreiben, die Sie nicht steuern.
 
