@@ -1,15 +1,11 @@
 ---
 description: Nur in Adobe Analytics vorhandene ID-Dienstfunktionen oder Funktionalitäten.
 keywords: ID-Dienst
-seo-description: Nur in Adobe Analytics vorhandene ID-Dienstfunktionen oder Funktionalitäten.
-seo-title: Analytics-Referenz
 title: Analytics-Referenz
-uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
 exl-id: bfa13677-77e4-4201-94e4-31328523c421
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '76'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '65'
 ht-degree: 100%
 
 ---
