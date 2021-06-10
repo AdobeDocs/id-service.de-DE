@@ -1,17 +1,14 @@
 ---
 description: Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Implementierungen des Experience Cloud ID-Diensts.
 keywords: ID-Dienst
-seo-description: Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Implementierungen des Experience Cloud Identity-Diensts.
-seo-title: Implementierungshandbücher für den ID-Dienst
 solution: Experience Cloud
 title: Implementierungshandbücher
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '207'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 96%
 
 ---
 
@@ -25,13 +22,13 @@ Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Imple
 
 ## Standardmäßige Implementierung
 
-In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) verwendet, um Ihnen bei den ersten Schritten mit dem ID-Dienst und der Integration in andere Experience Cloud-Lösungen zu helfen. Es wird dringend empfohlen, Experience Platform Launch zum Implementieren des ID-Diensts zu verwenden.
+In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) verwendet, um Ihnen bei den ersten Schritten mit dem ID-Dienst und der Integration in andere Experience Cloud-Lösungen zu helfen. Es wird dringend empfohlen, Experience Platform Launch zum Implementieren des ID-Diensts zu verwenden.
 
 ## Ressourcen für die Implementierung
 
 * [Implementierungsmethoden](implementation-methods.md)
 * [Implementieren mit Experience Platform Launch](ecid-implement-with-launch.md)
-* [Implementieren mit Dynamic Tag Management](standard.md)
+* [Implementierung mit Dynamic Tag Management](standard.md)
 * [Implementieren des Experience Cloud Identity-Diensts für Analytics](setup-analytics.md)
 * [Implementieren des Experience Cloud Identity-Diensts für Target](setup-target.md)
 * [Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager](setup-aam-analytics.md)
