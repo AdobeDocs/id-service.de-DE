@@ -1,16 +1,12 @@
 ---
 description: Häufig gestellte Fragen zu den Funktionen und Problemen bezüglich Analytics und des Experience Cloud Identity-Diensts.
 keywords: Experience Cloud Identity-Dienst
-seo-description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bezüglich Analytics und des Identity-Diensts.
-seo-title: Häufig gestellte Fragen zu Analytics und zum Identity-Dienst
 title: Häufig gestellte Fragen zu Analytics und zum Identity-Dienst
-uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '993'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '970'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +34,7 @@ Es ändert sich nichts für Benutzer, die bereits durch den Identity-Dienst iden
 
 Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das domänenübergreifende Tracking für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren (z. B. Safari).
 
-In Browsern, die Cookies von Drittanbietern akzeptieren, wird bei der Anforderung, eine Besucher-ID abzurufen, ein Cookie in der [Domäne demdex.net](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/reference/demdex-calls.html) gesetzt. Mit diesem Cookie kann der Identity-Dienst für alle Domänen, die mit derselben Organisations-ID konfiguriert sind, dieselbe Experience Cloud-Besucher-ID zurückgeben. Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domäne eine neue Experience Cloud-Besucher-ID zugewiesen.
+In Browsern, die Cookies von Drittanbietern akzeptieren, wird bei der Anforderung, eine Besucher-ID abzurufen, ein Cookie in der [Domäne demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) gesetzt. Mit diesem Cookie kann der Identity-Dienst für alle Domänen, die mit derselben Organisations-ID konfiguriert sind, dieselbe Experience Cloud-Besucher-ID zurückgeben. Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domäne eine neue Experience Cloud-Besucher-ID zugewiesen.
 
 Selbst wenn ein CNAME konfiguriert ist und die Haupteinstiegssite nicht zuerst besucht wird, werden Besucher in Browsern, die keine Drittanbieter-Cookies akzeptieren, auf der sekundären Site und auf der Haupt-Site unterschiedlich identifiziert.
 
@@ -54,7 +50,7 @@ H-Code wird jedoch mit der Code-Version 1.6 (oder höher) von visitorAPI.js nich
 
 **Was ist eine Übergangsphase und wie konfiguriere ich sie?**
 
-Siehe [Übergangsphase beim Identity-Dienst](../reference/analytics-reference/grace-period.md) und wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
+Siehe [Übergangsphase beim Identity-Dienst](../reference/analytics-reference/grace-period.md) und wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 **Warum muss ich zur Echtzeit-Datenerfassung (Real-time Data Collection, RDC) migrieren, um den Identity-Dienst zu verwenden?**
 
@@ -93,5 +89,5 @@ Es gibt drei mögliche Szenarien, in denen sich dies auf Analytics-Daten für ne
 
 >[!MORELIKETHIS]
 >
->* [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
+>* [Kundenunterstützung](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
