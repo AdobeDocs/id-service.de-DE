@@ -1,15 +1,11 @@
 ---
 description: Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie ein Cookie auf dem Gerät oder Browser des Benutzers erstellen können, wenn dieser Ihre Site besucht.
-seo-description: Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie ein Cookie auf dem Gerät oder Browser des Benutzers erstellen können, wenn dieser Ihre Site besucht.
-seo-title: Opt-in-Dienst
 title: Opt-in-Dienst
-uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '534'
-ht-degree: 100%
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +17,7 @@ Der Opt-in-Dienst ist eine Erweiterung des Dienstes Experience Cloud ID (ECID) u
 
 Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen einzeln angezeigt werden, um die Zustimmung einzuholen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können Sie die CMP-Besuchergenehmigungen aus allen Adobe-Lösungen abrufen.
 
-Der Opt-in-Dienst kann mit [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/de-DE/launch/using/overview.html) mit der [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md) einfach implementiert und konfiguriert werden. Ebenfalls möglich ist eine Implementierung und Konfiguration mit [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
+Der Opt-in-Dienst kann mit [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) mit der [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md) einfach implementiert und konfiguriert werden. Ebenfalls möglich ist eine Implementierung und Konfiguration mit [DTM](../../implementation-guides/opt-in-service/optin-dtm.md).
 
 Siehe [Einrichtung des Opt-in-Dienstes](../../implementation-guides/opt-in-service/getting-started.md) zu den ersten Schritten.
 
