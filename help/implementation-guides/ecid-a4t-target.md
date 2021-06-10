@@ -1,15 +1,11 @@
 ---
 description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten Server-seitigen und Client-seitigen Implementierungen von Target, Analytics und dem ID-Dienst. Kunden, die den ID-Dienst in einer NodeJS- oder Rhino-Umgebung ausführen müssen, sollten diese Informationen ebenfalls überprüfen. Diese ID-Dienstinstanz verwendet eine gekürzte Version der VisitorAPI.js-Codebibliothek, die Sie über den Node Package Manager (NPM) herunterladen und installieren können. Lesen Sie diesen Abschnitt zu den Installationsanweisungen und anderen Konfigurationsanforderungen.
 keywords: ID-Dienst
-seo-description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten Server-seitigen und Client-seitigen Implementierungen von Target, Analytics und dem ID-Dienst. Kunden, die den ID-Dienst in einer NodeJS- oder Rhino-Umgebung ausführen müssen, sollten diese Informationen ebenfalls überprüfen. Diese ID-Dienstinstanz verwendet eine gekürzte Version der VisitorAPI.js-Codebibliothek, die Sie über den Node Package Manager (NPM) herunterladen und installieren können. Lesen Sie diesen Abschnitt zu den Installationsanweisungen und anderen Konfigurationsanforderungen.
-seo-title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
-uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '915'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '829'
 ht-degree: 100%
 
 ---
