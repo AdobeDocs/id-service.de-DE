@@ -1,20 +1,16 @@
 ---
 description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
 keywords: ID-Dienst
-seo-description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
-seo-title: isCoopSafe
 title: isCoopSafe
-uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '606'
-ht-degree: 100%
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 97%
 
 ---
 
-# isCoopSafe {#iscoopsafe}
+# isCoopSafe{#iscoopsafe}
 
 Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
 
@@ -33,7 +29,7 @@ Inhalt:
 Voraussetzungen zur Verwendung von `isCoopSafe`:
 
 * Verwendung von ID-Dienstcode der Version 2.4 oder höher
-* Nehmen Sie an der [Experience Cloud-Gerätekooperation](https://docs.adobe.com/content/help/de-DE/device-co-op/using/about/overview.html) teil. Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
+* Nehmen Sie an der [Experience Cloud-Gerätekooperation](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html) teil. Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
 
 * Wenden Sie sich an Ihren [!DNL Adobe]-Berater, wenn Sie eine Whitelist- oder Blacklist-Kennzeichnung für Ihr Gerätekooperationskonto erstellen möchten. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
@@ -113,7 +109,7 @@ Anhand der POST-Parameter stellt die [!DNL Experience Cloud]-Gerätekooperation 
  </tbody> 
 </table>
 
-## Post-Instanziierungs-APIs  {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## Post-Instanziierungs-APIs   {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 Mit diesen APIs können Sie den Status von `isCoopSafe` überschreiben. Diese sind erforderlich, damit Sie den Status eines Besuchers nach der Instanziierung/nach der Anmeldung auf einer Website oder in einer Einzelseitenanwendung ändern können, wenn die Seite nicht aktualisiert wird. Beispielsweise müssen Sie diese APIs aufrufen, wenn sich ein Benutzer bei Ihrer Site oder App authentifiziert und später eine Nutzungsrichtlinie akzeptiert, die es der Gerätekooperation ermöglicht, ihre Daten zu verwenden.
 
@@ -142,5 +138,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
