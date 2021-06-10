@@ -1,15 +1,11 @@
 ---
 description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
 keywords: ID-Dienst
-seo-description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
-seo-title: Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager
 title: Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager
-uuid: d46050ae-87de-46cc-911b-d6346c7fd511
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1305'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '1241'
 ht-degree: 100%
 
 ---
@@ -144,7 +140,7 @@ Fügen Sie Ihrer `Visitor.getInstance`-Datei die im Folgenden gezeigte `AppMeasu
 
 >[!IMPORTANT]
 >
->An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Anweisungen finden Sie unter [Implementieren der Server-seitigen Weiterleitung](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
+>An dieser Stelle sollten Sie den [!DNL Audience Manager] DIL-Code entfernen und durch das Audience Management-Modul ersetzen. Anweisungen finden Sie unter [Implementieren der Server-seitigen Weiterleitung](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html).
 
 ***(Optional, jedoch empfohlen)* Erstellung einer benutzerspezifischen Eigenschaft.**
 
