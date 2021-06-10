@@ -1,14 +1,11 @@
 ---
 description: Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und persistente IDs für Ihre Site-Besucher zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
 keywords: Playstation; ID-Dienst
-seo-description: Der ID-Dienst verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und persistente IDs für Ihre Site-Besucher zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Dienst Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
-seo-title: Cookies und der Experience Cloud Identity-Dienst.
 title: Cookies und der Experience Cloud Identity-Dienst.
-uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '932'
 ht-degree: 99%
 
 ---
