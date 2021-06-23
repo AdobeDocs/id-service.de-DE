@@ -6,7 +6,7 @@ exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
 source-wordcount: '606'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mi
 Es gibt folgende zwei Möglichkeiten, um Hash-Unterstützung mit setCustomerIDs zu implementieren:
 
 * [Verwenden der setCustomerIDs-Methode in ECID](/help/reference/hashing-support.md#use-setcustomerids-method)
-* [Hinzufügen einer Aktion in Adobe Experience Platform](/help/reference/hashing-support.md#add-action-launch)
+* [Hinzufügen einer Aktion in Adobe Experience Platform Launch](/help/reference/hashing-support.md#add-action-launch)
 
 ## Verwenden der `setCustomerIDs`-Methode in ECID {#use-setcustomerids-method}
 
 In der ersten Variante wird die Methode [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) verwendet.
 
-Vor dem Hashing führt die ECID-Bibliothek eine Datennormalisierung der customerIDs durch. Durch diesen Prozess werden die Leerzeichen zu beiden Enden der customerIDs entfernt und alle Zeichen in Kleinbuchstaben umgewandelt. Beispiel: Die E-Mail-Adresse “ ecid@adobe.com “ wird in “ecid@adobe.com“ umgewandelt.
+Vor dem Hashing führt die ECID-Bibliothek eine Datennormalisierung der customerIDs durch. Durch diesen Prozess werden die Leerzeichen zu beiden Enden der customerIDs entfernt und alle Zeichen in Kleinbuchstaben umgewandelt. Beispiel: Die E-Mail-Adresse “ecid@adobe.com“ wird in “ecid@adobe.com“ umgewandelt.
 
 Unten finden Sie ein Code-Beispiel dafür, wie eine einzelne Kunden-ID (die oben genannte E-Mail-Adresse) mit SHA -256-Hashing eingerichtet werden kann.
 
@@ -66,9 +66,9 @@ In der unten stehenden Tabelle finden Sie eine Beschreibung des `d_cid_ic`-Param
 |------------|----------|
 | `d_cid_ic` | Übergibt den Integrationscode, die eindeutige Benutzer-ID (DPUUID) und eine Authentifizierungsstatus-ID an den ID-Dienst. Trennen Sie den Integrationscode und die DPUUID mit dem nicht druckbaren Steuerzeichen %01</code>: <br> Beispiel: d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>Authentifizierungsstatus</b> <br> Dies ist eine optionale ID im Parameter d_cid_ic. Sie wird als Ganzzahl ausgedrückt und gibt den Authentifizierungsstatus von Benutzern an, wie unten gezeigt: <br> <ul><li>0 (Unbekannt oder noch nie authentifiziert)</li><li>1 (Aktuell authentifiziert für diese Instanz/Seite/App-Kontext)</li><li>2 (Abgemeldet)</li></ul> <br> Beispiele: <br> <ul><li>Unbekannt: ...d_cid=123%01456%01<b>0</b></li><li>Authentifiziert: ...d_cid=123%01456%01<b>1</b></li><li>Abgemeldet: ...d_cid=123%01456%01<b>2</b></li></ul> |
 
-## Hinzufügen einer Aktion in Adobe Experience Platform {#add-action-launch}
+## Hinzufügen einer Aktion in Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Weitere Informationen zum Platform launch finden Sie in der [Launch-Produktdokumentation](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en).
+Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Weitere Informationen über Platform Launch finden Sie in der [Launch-Produktdokumentation](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=de).
 
 Um eine Aktion in Launch hinzuzufügen, lesen Sie die [Dokumentation zu Regeln](https://docs.adobe.com/help/de-DE/launch/using/reference/manage-resources/rules.html) in Adobe Launch und sehen Sie sich unten den Screenshot an:
 
