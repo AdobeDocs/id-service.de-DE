@@ -3,10 +3,10 @@ description: In älteren Implementierungen wird das Dynamic Tag Management (DTM)
 keywords: ID-Dienst
 title: Implementierung mit Dynamic Tag Management
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 95%
+source-wordcount: '2008'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ In älteren Implementierungen wird das Dynamic Tag Management (DTM) zur Einricht
 
 >[!NOTE]
 >
->Zurzeit ist [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) das bevorzugte und empfohlene Implementierungstool, da es mehr Möglichkeiten als DTM bietet, komplexe Tag-Management-Aufgaben zu vereinfachen und die Codeplatzierung zu automatisieren. Siehe [Implementierung mit Launch](../implementation-guides/ecid-implement-with-launch.md).
+>Zurzeit ist [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=de) das bevorzugte und empfohlene Implementierungstool, da es mehr Möglichkeiten als DTM bietet, komplexe Tag-Management-Aufgaben zu vereinfachen und die Codeplatzierung zu automatisieren. Siehe [Implementierung mit Launch](../implementation-guides/ecid-implement-with-launch.md).
 
 ## Dynamic Tag Management und der ID-Dienst {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
@@ -66,7 +66,7 @@ Kunden müssen einen CNAME bereitstellen oder `*.sc.omtrdc` für die [regionale 
 
 **Konfigurieren von Analytics Report Suites**
 
-Neue [!DNL Analytics]-Kunden sollten eine [Report-Suite](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html) für die Datenerfassung erstellen.
+Neue [!DNL Analytics]-Kunden sollten eine [Report-Suite](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html?lang=de) für die Datenerfassung erstellen.
 
 ## Implementieren des Experience Cloud Identity-Diensts in DTM {#task-a659cf19dea84ad48edabe0b72ef9f5c}
 
@@ -139,7 +139,7 @@ Der Name des für die Analytics-Datenerfassung verwendeten Trackingservers. Dies
 
 Überprüfen Sie die Dateien `s_code.js` oder `AppMeasurement.js`, sofern Sie Ihre Tracking-Server-URLs nicht kennen. Sie möchten, dass die URL durch die `s.trackingServer` Variable festgelegt wird.
 
-Siehe [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Siehe [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=de) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 **Sicherer Trackingserver**
 
@@ -179,7 +179,7 @@ Zusätzliche Felder, mit denen Sie einen Integrationscode oder authentifizierten
 
 **Integrationscode**
 
-Bei einem Integrationscode handelt es sich um eine eindeutige, vom Kunden bereitgestellte ID. Der Integrationscode sollte den von Ihnen zum [Erstellen einer Datenquelle](hhttps://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) in [!DNL Audience Manager] verwendeten Wert enthalten.
+Bei einem Integrationscode handelt es sich um eine eindeutige, vom Kunden bereitgestellte ID. Der Integrationscode sollte den von Ihnen zum [Erstellen einer Datenquelle](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source) in [!DNL Audience Manager] verwendeten Wert enthalten.
 
 **Wert**
 
