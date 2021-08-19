@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: Kunden-IDs und Authentifizierungsstatus
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Sie können Ihren Benutzern Authentifizierungsstatus zuweisen, je nachdem, welch
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
    <td colname="col2"> <p>Dieser Status kann beispielsweise für folgende Szenarien verwendet werden: </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">Lesen einer E-Mail (bei diesem Vorgang ist der Leser der vorgesehene Empfänger, die E-Mail hätte aber auch weitergeleitet werden können). </li> 
@@ -72,11 +72,11 @@ Sie können Ihren Benutzern Authentifizierungsstatus zuweisen, je nachdem, welch
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
    <td colname="col2"> <p>Der Benutzer ist zurzeit in einer aktiven Sitzung auf Ihrer Website oder in Ihrer Applikation authentifiziert. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
    <td colname="col2"> <p>Der Benutzer war authentifiziert, hat sich dann aber aktiv abgemeldet. Der Benutzer beabsichtigte, die Verbindung zum authentifizierten Status zu trennen. Der Benutzer möchte nicht mehr als authentifiziert gehandhabt werden. </p> </td> 
   </tr> 
  </tbody> 
@@ -208,12 +208,12 @@ Object customerIDs = visitor.getCustomerIDs();
  }
 ```
 
-## SDK-Unterstützung   {#section-861c6b3b1ba645dda133dccb22ec7bb0}
+## SDK-Unterstützung  {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
 Der [!DNL Experience Cloud] ID-Dienst unterstützt Kunden-IDs und Authentifizierungsstatus in unserem Android- und iOS-SDK-Code. Siehe die folgenden Code-Bibliotheken:
 
-* [ SDK-Methoden für Android ](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
-* [iOS-SDK-Methoden](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
+* [ SDK-Methoden für Android ](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=de)
+* [iOS-SDK-Methoden](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=de)
 
 ## Hinweise für Kunden von Analytics und Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
