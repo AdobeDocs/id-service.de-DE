@@ -4,13 +4,13 @@ keywords: ID-Dienst
 title: Versionshinweise für 2016
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# 2016 – Versionshinweise {#release-notes}
+# Versionshinweise für 2016 {#release-notes}
 
 Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2016.
 
@@ -76,11 +76,11 @@ August 2016
 
 **Neue und überarbeitete Dokumentation**
 
-Überarbeitet: [Anforderungen an den Experience Cloud Identity-Dienst](../reference/requirements.md)
+Überarbeitet: [Anforderungen an den Experience Cloud Identity-Service](../reference/requirements.md)
 
 **Bekannte Probleme**
 
-Kunden, die [!DNL Audience Manager] DIL-Code und visitorAPI.js-Code auf derselben Seite verwenden, sollten die DIL-Variable `secureDataCollection= false`festlegen. Siehe [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html).
+Kunden, die [!DNL Audience Manager] DIL-Code und visitorAPI.js-Code auf derselben Seite verwenden, sollten die DIL-Variable `secureDataCollection= false`festlegen. Siehe [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=de).
 
 ## Version 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -127,8 +127,8 @@ Juli 2016
 
 **Überarbeitet**
 
-* [Voraussetzungen für den Experience Cloud Identity-Dienst](../reference/requirements.md)
-* [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md)
+* [Voraussetzungen für den Experience Cloud Identity-Service](../reference/requirements.md)
+* [Testen und Überprüfen des Experience Cloud Identity-Service](../implementation-guides/test-verify.md)
 
 ## Version 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -157,17 +157,17 @@ Juni 2016
 
 Die Besucher-API erzwingt keinen zusätzlichen Aufruf zur erneuten Synchronisierung mit Audience Manager mehr, wenn keine Legacy-Analytics-Besucher-ID vorhanden ist.
 
-## Version 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
+## Version 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
 
 Mai 2016
 
 **Dokumentation – Aktualisierungen**
 
 * [SDK-Anforderungen für Android und iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench und der Experience Cloud Identity-Dienst](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md)
+* [Data Workbench und der Experience Cloud Identity-Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Testen und Überprüfen des Experience Cloud Identity-Service](../implementation-guides/test-verify.md)
 
-## Version 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
+## Version 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
 April 2016
 
