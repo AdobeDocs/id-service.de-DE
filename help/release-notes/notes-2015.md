@@ -4,7 +4,7 @@ keywords: ID-Dienst
 title: Versionshinweise für 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '408'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ November 2015
 
 Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Online-Erfassung personenbezogener Daten von Kindern unter 13 Jahren ohne nachprüfbare elterliche Zustimmung. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. Siehe [COPPA-Unterstützung im Experience Cloud Identity-Dienst](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
 
-## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
+## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 September 2015
 
@@ -46,7 +46,7 @@ Dokumentationsüberarbeitungen in dieser Version umfassen:
 * [API-Methoden und Codebibliothek](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Reorganisierter Inhalt und Text. In den meisten Fällen erhält jede Methode eine eigene Seite.
 * [Anforderungen für den Experience Cloud Identity-Dienst](../reference/requirements.md): Überarbeiteter Inhalt und neu organisierter Text.
 
-## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
+## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Juli 2015
 
@@ -74,7 +74,7 @@ Februar 2015
 
 Die Verarbeitung des Timeouts bei Anforderungen für AAM Blob und Location Hint wurde korrigiert. Bei einem Timeout bleiben diese Felder nun für die aktuelle Seite korrekt leer, und es werden alle Callbacks ausgeführt. Die Zeitüberschreitung wird als Fehlerbedingung behandelt, daher wird es auf der nächsten Seite erneut versucht. (AN-94473, AN-94474)
 
-## Version 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
+## Version 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
 Januar 2015
 
