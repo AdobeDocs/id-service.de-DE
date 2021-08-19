@@ -4,7 +4,7 @@ keywords: ID-Dienst
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Diese Funktion wurde hauptsächlich für A4T-Kunden entwickelt, um sie bei der Lösung von Problemen bei der Arbeit mit IDs auf Single-Page-Sites/-Bildschirmen oder -Apps zu unterstützen.
 
-## Anwendungsbeispiele {#section-840b88a5cdb042488b340cad5d7b22a5}
+## Anwendungsfälle {#section-840b88a5cdb042488b340cad5d7b22a5}
 
 Als A4T-Kunde, der den ID-Dienst verwendet, können Sie die Funktion `visitor.resetState()` für folgende Zwecke einsetzen:
 
@@ -27,7 +27,7 @@ Siehe Codebeispiele weiter unten.
 
 **Syntax:** ` visitor.resetState( *`state`*);`
 
-## Codebeispiele {#section-d75b211bb4ea473887eb284de2ad838b}
+## Code-Beispiele {#section-d75b211bb4ea473887eb284de2ad838b}
 
 Die Verwendung dieser Funktion ist von der Implementierung des ID-Diensts abhängig. Beispiele finden Sie in der unten stehenden Tabelle.
 
