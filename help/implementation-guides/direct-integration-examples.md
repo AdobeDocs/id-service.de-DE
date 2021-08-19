@@ -4,13 +4,13 @@ keywords: ID-Dienst
 title: Anwendungsfälle der direkten Integration
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
 ht-degree: 100%
 
 ---
 
-# Nutzungsszenarios im Zusammenhang mit einer direkten Integration {#direct-integration-use-cases}
+# Anwendungsfälle der direkten Integration {#direct-integration-use-cases}
 
 Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer direkten Integration und der Experience Cloud ID (ECID oder MID) ab. Dies ist eine eindeutige, dauerhafte ID für Ihre Site-Besucher.
 
@@ -18,6 +18,7 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
 >
 >* Bevor Sie sich mit den Nutzungsszenarios befassen, sollten Sie sichergehen, dass Sie [Codesyntax und Variablen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) verstehen.
 >* Weitere Informationen über die MID finden Sie unter [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
+
 >
 
 
