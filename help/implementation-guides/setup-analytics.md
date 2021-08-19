@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity-Diensts für Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Für den [!UICONTROL ID-Dienst] ist die Code-Bibliothek `VisitorAPI.js` erforder
 
 1. Entpacken Sie die Code-Datei und öffnen Sie die `VisitorAPI.js` Datei.
 
-## Schritt 2: Hinzufügen der Funktion „Visitor.getInstance“ zum ID-Dienst-Code {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
+## Schritt 2: Hinzufügen der Funktion „Visitor.getInstance“ zum ID-Service-Code {#section-6053a6b7c16c466a9f9fdbf9cb9db3df}
 
 >[!IMPORTANT]
 >
@@ -99,7 +99,7 @@ Ersetzen Sie in der `Visitor.getInstance` Funktion den Ausdruck `INSERT-MARKETIN
 >
 >*Wichtig:* Ändern Sie die Groß- oder Kleinschreibung Ihrer Organisations-ID nicht. Bei der ID wird Groß- und Kleinschreibung beachtet und sie muss so eingegeben werden, wie sie von Adobe angegeben wird.
 
-## Schritt 4: Hinzufügen Ihrer Tracking-Server zu Visitor.getInstance {#section-70ec9ebff47940d8ab520be5ec4728c5}
+## Schritt 4: Hinzufügen Ihrer Tracking-Server zu Visitor.getInstance {#section-70ec9ebff47940d8ab520be5ec4728c5}
 
 Tracking-Server werden für die [!DNL Analytics] Datenerfassung in verwendet.
 
@@ -149,7 +149,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## Schritt 6: Hinzufügen des Besucher-API-Codes zur Seite {#section-d46d6aa324c842f2931d901e38d6db1d}
 
-Platzieren Sie die `VisitorAPI.js` Datei inden `<head>`-Tags auf jeder Seite. Wenn Sie die `VisitorAPI.js` Datei zu Ihrer Seite hinzufügen:
+Platzieren Sie die `VisitorAPI.js`-Datei innerhalb der `<head>`-Tags auf jeder Seite. Wenn Sie die `VisitorAPI.js` Datei zu Ihrer Seite hinzufügen:
 
 * Platzieren Sie sie am Anfang des Abschnitts `<head>`, damit dies vor anderen Lösungstags angezeigt wird.
 * Sie muss vor AppMeasurement und dem Code für andere [!DNL Experience Cloud]-Lösungen ausgeführt werden.
@@ -178,7 +178,7 @@ Sie müssen eine Übergangsphase konfigurieren, wenn Sie Daten von einem Clickst
 
 Sobald Ihre Datenverarbeitungsprozesse die Spalten `post_visid_high` und `post_visid_low` einsetzen können, können Sie die Übergangsphase abbrechen.
 
-Siehe [Clickstream-Datenspaltenreferenz](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html).
+Siehe [Clickstream-Datenspaltenreferenz](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=de).
 
 **Clickstream-Datenverarbeitung**
 
@@ -191,7 +191,7 @@ Sie können dies wie folgt testen und bereitstellen.
 Prüfen Sie zum Testen Ihrer ID-Dienstimplementierung Folgendes:
 
 * [AMCV-Cookie](../introduction/cookies.md) in der Domäne, auf der Ihre Seite gehostet wird.
-* MID-Wert in der [!DNL Analytics]-Bildanforderung mit dem [Adobe-Debuggertool](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html).
+* MID-Wert in der [!DNL Analytics]-Bildanforderung mit dem [Adobe-Debuggertool](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=de).
 
 Siehe [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md).
 
