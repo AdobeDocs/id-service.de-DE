@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Der `aid` Parameter taucht in einer Abfragezeichenfolge unter zweierlei verschie
 Der Parameter `aid` taucht in einer Abfragezeichenfolge auf, wenn:
 
 * der [!DNL Experience Cloud] ID-Dienst ordnungsgemäß bereitgestellt wurde.
-* Im [s_vi-Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) des eine Site besuchenden Benutzers bereits eine [!DNL Analytics]-ID gespeichert ist.
+* Im [s_vi-Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=de#section-5d50a078de444d12b7d927d68ff3b679) des eine Site besuchenden Benutzers bereits eine [!DNL Analytics]-ID gespeichert ist.
 
 **2. Fall**
 
@@ -51,5 +51,5 @@ Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen
 
 >[!MORELIKETHIS]
 >
->* [Cookies in Analytics](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Cookies in Analytics](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html?lang=de)
 
