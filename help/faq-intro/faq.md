@@ -4,13 +4,13 @@ keywords: 'ID-Dienst '
 title: Häufig gestellte Fragen zum ID-Dienst
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '787'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Häufig gestellte Fragen zum ID-Dienst {#id-service-faqs}
+# Häufig gestellte Fragen zum ID-Dienst{#id-service-faqs}
 
 Häufig gestellte Fragen zu den Funktionen und Problemen bezüglich des ID-Diensts.
 
@@ -34,7 +34,7 @@ Möglicherweise treten Probleme auf, wenn Sie die VisitorAPI.js-Datei als lokale
 
 Platzieren Sie die Bibliothek VisitorAPI.js oben auf der Seite in den `<head>` Abschnitt Ihres Codes. Dadurch stellen Sie sicher, dass der Aufruf an eine ID gesendet wird, bevor der Seitentext geladen wird, und die Wahrscheinlichkeit, dass eine ID erfolgreich zurückgegeben wird, erhöht sich.
 
-Der ID-Dienst-Aufruf ist asynchron und der einzige Aufruf zur [Domäne „demdex.net“](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
+Der ID-Dienst-Aufruf ist asynchron und der einzige Aufruf zur [Domäne „demdex.net“](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
 
 Für [!DNL Target]-Kunden kann die Platzierung von ID-Dienst-Code in `<body>` der Seite die Wahrscheinlichkeit erhöhen, dass ein [!DNL Target]-Aufruf blockiert wird. Wenn Sie ID-Dienst-Code im Haupttext Ihrer Seite platzieren müssen, dann sollten Sie ihn nach dem öffnenden `<body>`-Tag einfügen.
 
