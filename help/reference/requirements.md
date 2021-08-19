@@ -1,16 +1,16 @@
 ---
 description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity-Dienst erfordert.
 keywords: ID-Dienst
-title: Voraussetzungen für den Experience Cloud Identity-Dienst
+title: Voraussetzungen für den Experience Cloud Identity-Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Voraussetzungen für den Experience Cloud Identity-Dienst {#requirements-for-the-experience-cloud-id-service}
+# Voraussetzungen für den Experience Cloud Identity-Service {#requirements-for-the-experience-cloud-id-service}
 
 Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity-Dienst erfordert.
 
@@ -37,7 +37,7 @@ Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderu
      <li id="li_1F16C6D412944197BEA56BC24730782C"> einen dieser DTM-Einbettungscodes an einer anderen Stelle im Markup- und/oder Seitencode platzieren. </li> 
      <li id="li_05615C01F3A947BBBD41046E68377224"> DTM-Code mit asynchronen Methoden, Aufrufen/Callback-Methoden oder Wrappern anhängen, hinzufügen oder laden. </li> 
      <li id="li_B2137DFF627B473FA876580449026D2B">mehrere Instanzen von Einbettungscode auf derselben Seite einfügen. </li> 
-    </ul> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html" format="https" scope="external">Hosting – Registerkarte „Einbetten“</a>. </p> </td> 
+    </ul> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html?lang=de" format="https" scope="external">Hosting – Registerkarte „Einbetten“</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Benutzerdefinierte Implementierungen </a> </p> </td> 
@@ -79,7 +79,7 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
 
 ## Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html?lang=de)
 
 ## Code-Bibliotheken und Versionsvoraussetzungen {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -120,22 +120,22 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">Data Integration Library</a> (DIL). </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=de" format="https" scope="external">Data Integration Library</a> (DIL). </p> </td> 
    <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">mbox-Code</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-technical.html?lang=de" format="https" scope="external">mbox-Code</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js/how-atjs-works.html?lang=de" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## SDK-Anforderungen für Android und iOS   {#section-73b2446fba8e463888642c7d7dfd94f1}
+## SDK-Anforderungen für Android und iOS  {#section-73b2446fba8e463888642c7d7dfd94f1}
 
 Für den ID-Dienst sind mindestens die unten aufgeführten SDK-Versionen erforderlich.
 
@@ -148,9 +148,9 @@ Für den ID-Dienst sind mindestens die unten aufgeführten SDK-Versionen erforde
 
 Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Aktivieren und laden Sie den neuesten SDK-Code für jede Anwendung über Ihr [Adobe Mobile Services](https://mobilemarketing.adobe.com/)-Konto herunter. Siehe auch:
 
-* [Optionen für SDK-Besucher-ID-Dienst konfigurieren](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [SDK-Methoden für Android](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [SDK-Methoden für iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [Optionen für SDK-Besucher-ID-Dienst konfigurieren](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html?lang=de)
+* [SDK-Methoden für Android](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html?lang=de)
+* [SDK-Methoden für iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html?lang=de)
 
 >[!MORELIKETHIS]
 >
