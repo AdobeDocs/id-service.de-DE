@@ -4,7 +4,7 @@ keywords: ID-Service
 title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten {#understanding-id-synchronization-and-match-rates}
 
-Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity Service, einschließlich Adobe Media Optimizer und ID-Service.
+Eine Übersicht über die ID-Synchronisierungsprozesse und Übereinstimmungsraten im Experience Cloud Identity-Dienst, einschließlich Adobe Media Optimizer und ID-Dienst.
 
 ## ID-Synchronisierung und Übereinstimmungsraten {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -56,7 +56,7 @@ Siehe auch [ID-Synchronisierung für eingehende Datenübertragungen](https://exp
 
 Synchronisierte IDs werden auf den [Edge- und Core-Daten-Servern gespeichert](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=de).
 
-## Synchronisierungs-Services verwalten die ID-Synchronisierung {#section-cd5784d7ad404a24aa28ad4816a0119a}
+## Synchronisierungsdienste verwalten die ID-Synchronisierung {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
 Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-Technologien, die für die ID-Synchronisation verantwortlich sind. Dieser Service ist standardmäßig aktiviert. Um ihn zu deaktivieren, müssen Sie eine [optionale Variable](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) zur ID-Service-Funktion `Visitor.getInstance` hinzufügen. Die Synchronisierungs-Services gleichen unterschiedliche [!DNL Experience Cloud]-IDs ab, beispielsweise:
 
