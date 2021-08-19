@@ -3,7 +3,7 @@ description: Beispiele für Nutzungsszenarios und Lösungen zur Verwaltung des O
 title: Opt-in-Nutzungsszenarios
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
 ht-degree: 100%
 
