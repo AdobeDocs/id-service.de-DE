@@ -4,7 +4,7 @@ keywords: ID-Dienst
 title: SHA-256-Hash-Unterstützung für setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '606'
 ht-degree: 100%
 
@@ -68,7 +68,8 @@ In der unten stehenden Tabelle finden Sie eine Beschreibung des `d_cid_ic`-Param
 
 ## Hinzufügen einer Aktion in Adobe Experience Platform Launch {#add-action-launch}
 
-Experience Platform Launch ist die nächste Generation der Tag-Management-Funktionen von Adobe. Weitere Informationen über Platform Launch finden Sie in der [Launch-Produktdokumentation](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=de).
+Experience Platform Launch bietet die nächste Generation der Tag-Management-Funktionen von Adobe.
+Weitere Informationen über Platform Launch finden Sie in der [Launch-Produktdokumentation](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=de).
 
 Um eine Aktion in Launch hinzuzufügen, lesen Sie die [Dokumentation zu Regeln](https://docs.adobe.com/help/de-DE/launch/using/reference/manage-resources/rules.html) in Adobe Launch und sehen Sie sich unten den Screenshot an:
 
