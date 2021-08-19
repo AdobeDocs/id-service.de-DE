@@ -4,13 +4,13 @@ keywords: ID-Dienst
 title: whitelistParentDomain und whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
 ht-degree: 100%
 
 ---
 
-# whitelistParentDomain und whitelistIframeDomains {#whitelistparentdomain-and-whitelistiframedomains}
+# whitelistParentDomain und whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
 Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame und auf der übergeordneten Seite implementiert sind, miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in Version 2.2 (oder höher) des VisitorAPI.js-Codes verfügbar.
 
@@ -63,7 +63,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 );
 ```
 
-## Nutzungsszenarios {#section-fc2eeb93546b406fae3b102dbcd11de7}
+## Anwendungsfälle {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
 Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu setzen und eine Besucher-ID zuzuweisen, wenn Browser Drittanbieter-Cookies blockieren und eine der folgenden Bedingungen zutrifft:
 
@@ -143,7 +143,7 @@ Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu set
  </tbody> 
 </table>
 
-## Sicherheit der Konfiguration   {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
+## Sicherheit der Konfiguration  {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
 Sie können diese Konfigurationen aus folgenden Gründen sicher implementieren:
 
@@ -151,7 +151,7 @@ Sie können diese Konfigurationen aus folgenden Gründen sicher implementieren:
 * Diese Konfigurationen kommunizieren nur mit der Domäne und den iFrames, die im Code angegeben sind.
 * Die Kommunikation zwischen dem iFrame und der übergeordneten Seite folgt einem bestimmten Format. Wenn der ID-Dienst auf der übergeordneten Seite keine Anforderung im erwarteten Format erhält, schlägt dieser Freigabeprozess fehl.
 
-## Unterstützte Besucher-API-Methoden   {#section-30c6a9f4dcdc4265a1149260b97cc057}
+## Unterstützte Besucher-API-Methoden  {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
 Der ID-Dienst unterstützt einen begrenzte Anzahl an öffentlichen API-Methoden, wenn Sie diese Whitelist-Konfigurationen implementieren. Die unterstützten Methoden variieren je nach den oben beschriebenen Nutzungsszenarios.
 
@@ -178,7 +178,7 @@ Der ID-Dienst unterstützt einen begrenzte Anzahl an öffentlichen API-Methoden,
    <td colname="col1"> <p> <b>2. Fall</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
       <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
      </ul> </p> </td> 
   </tr> 
