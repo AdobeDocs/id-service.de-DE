@@ -4,7 +4,7 @@ keywords: ID-Dienst
 title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ A4T (und andere Kunden) können diese Version des ID-Diensts verwenden, wenn sie
 
 Wechseln Sie zu [ID service NPM repository](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server), um das serverseitige Codepaket herunterzuladen und die im aktuellen Build enthaltenen Schnittstellen zu überprüfen.
 
-## Arbeitsablauf {#section-56b01017922046ed96536404239a272b}
+## Workflow {#section-56b01017922046ed96536404239a272b}
 
 In den folgenden Diagrammen und Abschnitten wird beschrieben, was Sie bei jedem Schritt des serverseitigen Implementierungsprozesses konfigurieren müssen.
 
