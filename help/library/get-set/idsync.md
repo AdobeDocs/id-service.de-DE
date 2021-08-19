@@ -4,13 +4,13 @@ keywords: ID-Dienst
 title: ID-Synchronisation nach URL oder Datenquelle
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '239'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# ID-Synchronisation nach URL oder Datenquelle {#id-synchronization-by-url-or-data-source}
+# ID-Synchronisation nach URL oder Datenquelle{#id-synchronization-by-url-or-data-source}
 
 Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource können Sie eine ID-Synchronisation manuell im Destination Publishing iFrame implementieren. Diese sind in VisitorAPI.js Version 1.10 oder höher verfügbar.
 
@@ -129,5 +129,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORELIKETHIS]
 >
->* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
+>* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html?lang=de#idsync)
 
