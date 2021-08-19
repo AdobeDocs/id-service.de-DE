@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity-Dienst
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Wenn Sie über mehrere Domänen verfügen, die Daten an *dieselbe Report Suite* 
    <td colname="col1"> <p>Eine Domäne </p> </td> 
    <td colname="col2"> <p>Wenn Sie mit nur einen Domäne arbeiten, können Sie einen Datenerfassungs-CNAME eliminieren, wenn Sie ihn nicht mehr unterhalten möchten. Wenn Ihr CNAME funktioniert, ist dies jedoch nicht notwendig. </p> <p>Wenn Sie den CNAME entfernen: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Sicherstellen, dass der neue Tracking-Server <a href="https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html" format="https" scope="external">RDC-kompatibel</a> ist. </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">Sicherstellen, dass der neue Tracking-Server <a href="https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=de" format="https" scope="external">RDC-kompatibel</a> ist. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Stellen Sie einige Monate vor Ihrer Migration zum <span class="keyword">Experience Cloud</span> ID-Dienst den CNAME auf einen RDC-Tracking-Server um. </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i>Verwenden Sie keinesfalls</i> einen <span class="codeph">*.2o7.net</span>-Tracking-Server. </li> 
      <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">Wenden Sie sich an die <a href="https://helpx.adobe.com/de/marketing-cloud/contact-support.html" format="https" scope="external">Kundenunterstützung</a>, wenn Sie Hilfe bei der Besuchermigration benötigen. Somit werden konsistente Besucherzahlen gewährleistet. </li> 
