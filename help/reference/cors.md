@@ -1,16 +1,16 @@
 ---
 description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domäne, die nicht der aktuellen Domäne entspricht. Der Experience Cloud Identity-Dienst unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
 keywords: ID-Dienst
-title: CORS-Unterstützung im Experience Cloud Identity-Dienst.
+title: CORS-Unterstützung im Experience Cloud Identity-Service.
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
-source-wordcount: '616'
+workflow-type: ht
+source-wordcount: '615'
 ht-degree: 100%
 
 ---
 
-# CORS-Unterstützung im Experience Cloud Identity-Dienst {#cors-support-in-the-experience-cloud-id-service}
+# CORS-Unterstützung im Experience Cloud Identity-Service. {#cors-support-in-the-experience-cloud-id-service}
 
 Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domäne, die nicht der aktuellen Domäne entspricht. Der Experience Cloud Identity-Dienst unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
 
@@ -45,7 +45,7 @@ Im Folgenden wird die Funktionsweise dieser Header erläutert. Angenommen, ein F
    <td colname="col1"> <p> <b>Anfrage</b> </p> </td> 
    <td colname="col2"> <p>Beim Laden der Seite des Finanzunternehmens stellt der Browser eine Anforderung an <span class="codeph">dpm.demdex.net</span>. Dies ist ein Aufruf an die Domain der Datenerfassungs-Server (DCS), die vom ID-Dienst verwendet wird. Diese Domain-übergreifende Anforderung enthält den Header: </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Origin: https://www.finance-website.com</span> </li> 
+      <li> <span class="codeph"> Herkunft:https://www.finance-website.com</span> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
