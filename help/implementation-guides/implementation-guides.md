@@ -6,9 +6,9 @@ title: Implementierungshandbücher
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Imple
 
 ## Standardmäßige Implementierung
 
-In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html) verwendet, um Ihnen bei den ersten Schritten mit dem ID-Dienst und der Integration in andere Experience Cloud-Lösungen zu helfen. Es wird dringend empfohlen, Experience Platform Launch zum Implementieren des ID-Diensts zu verwenden.
+In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=de) verwendet, um Ihnen bei den ersten Schritten mit dem ID-Dienst und der Integration in andere Experience Cloud-Lösungen zu helfen. Es wird dringend empfohlen, Experience Platform Launch zum Implementieren des ID-Diensts zu verwenden.
 
 ## Ressourcen für die Implementierung
 
@@ -34,7 +34,7 @@ In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launc
 * [Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager](setup-aam-analytics.md)
 * [Implementieren des Experience Cloud Identity-Diensts für Analytics, Audience Manager und Target](setup-aam-analytics-target.md)
 * [Verwenden des Experience Cloud Identity-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente](ecid-a4t-target.md)
-* [Direkte Integration mit dem Experience Cloud Identity-Dienst](direct-integration.md)
-* [Nutzungsszenarios im Zusammenhang mit einer direkten Integration](direct-integration-examples.md)
-* [Testen und Überprüfen des Experience Cloud Identity-Diensts](test-verify.md)
+* [Direkte Integration mit dem Experience Cloud Identity-Service](direct-integration.md)
+* [Anwendungsfälle der direkten Integration](direct-integration-examples.md)
+* [Testen und Überprüfen des Experience Cloud Identity-Service](test-verify.md)
 * [Opt-in-Dienst – Übersicht](opt-in-service/optin-overview.md)
