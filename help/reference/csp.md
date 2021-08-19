@@ -1,16 +1,16 @@
 ---
 description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und über strenge CSPs verfügen, die Whitelists verwenden, um Ressourcen aus vertrauenswürdigen Domänen zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
 keywords: ID-Dienst
-title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst
+title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '547'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst {#content-security-policies-and-the-experience-cloud-id-service}
+# Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Service {#content-security-policies-and-the-experience-cloud-id-service}
 
 Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und über strenge CSPs verfügen, die Whitelists verwenden, um Ressourcen aus vertrauenswürdigen Domänen zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
 
@@ -58,7 +58,7 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li></ul></p> <p>Aufrufe der Domain <span class="codeph">demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity-Diensts</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> </tr> 
+   <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li></ul></p> <p>Aufrufe der Domain <span class="codeph">demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity-Diensts</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map-Plugin</b> </p> </td> 
  <td colname="col2"> <p>Nehmen Sie *.adobe.com in Ihre CSP auf. **Hinweis**: Wenn Activity Map bereits vor Januar 2020 installiert wurde, wird im Browser weiterhin zuerst eine Anfrage an *.omniture.com angezeigt, die jedoch an *.adobe.com weitergeleitet wird. </p></td> 
