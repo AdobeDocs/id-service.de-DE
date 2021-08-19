@@ -4,13 +4,13 @@ keywords: ID-Dienst
 title: callTimeOut-Methoden
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '125'
 ht-degree: 100%
 
 ---
 
-# callTimeOut-Methoden {#calltimeout-methods}
+# callTimeOut-Methoden{#calltimeout-methods}
 
 Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für eine Experience Cloud Identity-Dienst-, Analytics- oder Audience Manager-ID-Anforderung zu ermitteln. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 
@@ -25,7 +25,7 @@ Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud Identity-Dienst </p> </td> 
+   <td colname="col1"> <p>Experience Cloud Identity-Service </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
