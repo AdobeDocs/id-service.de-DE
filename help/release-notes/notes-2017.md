@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: Versionshinweise für 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '744'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -191,7 +191,7 @@ Es wurde ein Fehler behoben, durch den der ID-Dienst redundante Serveraufrufe f�
 
 **Neue Dokumentation**
 
-[Verwendung des DNS-Vorabrufs für verschiedene Experience Cloud-Lösungen und -Dienste](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
+[Verwendung des DNS-Vorabrufs für verschiedene Experience Cloud-Lösungen und -Dienste](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=de)
 
 ## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -207,6 +207,6 @@ Januar 2017
 * Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst sofort fehlschlug, wenn ein Besucher einen Werbeblocker aktiviert hatte und dieser Blocker so konfiguriert war, die Domäne demdex.net auszuschließen. Dieser Fehler ist selten und ungewöhnlich, da die meisten Werbeblocker die Domäne „demdex.net“ nicht blockieren. (MCID-233)
 * Es wurde ein Fehler behoben, der durch Interaktionen zwischen dem ID-Dienst-Code und einem benutzerdefinierten Skript auf der Website eines Kunden verursacht wurde. Dieses Problem verhinderte das Laden von Webseiten in Internet Explorer 9. (MCID-206)
 
-## Frühere Jahre   {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
+## Frühere Jahre  {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 Ältere ID-Dienst-Versionshinweise.
