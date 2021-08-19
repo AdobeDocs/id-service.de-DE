@@ -4,13 +4,13 @@ keywords: ID-Dienst
 title: Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
 ht-degree: 100%
 
 ---
 
-# Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen {#faqs-for-other-experience-cloud-solutions}
+# Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen{#faqs-for-other-experience-cloud-solutions}
 
 Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bei der Verwendung von anderen Experience Cloud-Lösungen mit dem ID-Dienst.
 
