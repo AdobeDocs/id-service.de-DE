@@ -4,7 +4,7 @@ keywords: ID-Dienst
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '319'
 ht-degree: 100%
 
@@ -79,7 +79,7 @@ Je nach Situation müssen Sie diese Konfiguration möglicherweise Ihrem ID-Diens
  </tbody> 
 </table>
 
-## Einrichten von Container-IDs bei Verwendung von DIL und VisitorAPI.js   {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Einrichten von Container-IDs bei Verwendung von DIL und VisitorAPI.js  {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
 Wenn Sie [!UICONTROL DIL ]* und* VisitorAPI.js auf derselben Seite bereitgestellt haben:
 
