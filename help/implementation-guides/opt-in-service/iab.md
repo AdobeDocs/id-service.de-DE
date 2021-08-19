@@ -3,13 +3,13 @@ description: Verbinden der Consent Management Platform (CMP) mit dem Audience Ma
 title: Nutzung von Opt-in-Diensten mit IAB Framework
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Nutzung von Opt-in-Diensten mit IAB Framework {#using-opt-in-services-with-iab-framework}
+# Nutzung von Opt-in-Diensten mit IAB Framework{#using-opt-in-services-with-iab-framework}
 
 >[!IMPORTANT]
 >
@@ -55,5 +55,5 @@ Weitere Informationen zum Validieren des IAB-TCF-Plug-ins von Opt-in finden Sie 
 
 * [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) – Hier finden Sie weitere Informationen zum IAB-Standard.
 * [Adobe Opt-in](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) – Hier finden Sie weitere Informationen zu Opt-in, einer erforderlichen Komponente für die Zustimmungsverwaltung in Platform-Lösungen
-* IAB Transparency and Consent Framework (TCF) Support [in Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)
+* IAB Transparency and Consent Framework (TCF) Support [in Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html?lang=de)
 * [Ihre Auswahlmöglichkeiten bezüglich Datenschutz](https://www.adobe.com/de/privacy/opt-out.html#customeruse) – Ihre Benutzer haben auch die Möglichkeit, die Datenerfassung mit anderen globalen Opt-out-Tools abzulehnen. Globales Opt-out hat Vorrang vor der Opt-in- und IAB-TCF-Überprüfung.
