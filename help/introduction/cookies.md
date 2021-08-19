@@ -4,17 +4,17 @@ keywords: Playstation; ID-Service
 title: Cookies und der Experience Cloud Identity-Service.
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 100%
 
 ---
 
-# Cookies und der Experience Cloud Identity-Service {#cookies-and-the-experience-cloud-id-service}
+# Cookies und der Experience Cloud Identity-Service.{#cookies-and-the-experience-cloud-id-service}
 
 Der ID-Service verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und persistente IDs für Ihre Site-Besucher zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Service Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
 
-## Grundlegendes zu ID-Service-Cookies {#section-f438168beaec409ab8b2cc58bd021e26}
+## Grundlegendes zu ID-Dienst-Cookies {#section-f438168beaec409ab8b2cc58bd021e26}
 
 Der ID-Service ist auf die AMCV-, AMCVS- und demdex-Cookies angewiesen, um ordnungsgemäß zu funktionieren. Bei diesen Cookies handelt es sich lediglich um Dateien, in denen vom ID-Service verwendete Daten gespeichert werden. Diese ID-Service-Cookies sind nicht gefährlich, bösartig und unterscheiden sich nicht von anderen Erstanbieter- oder Drittanbieter-Cookies, die von einer Website oder einem Service in einem Browser gespeichert werden. Dabei gelten dieselben Regeln wie für andere Erst- und Drittanbieter-Cookies. Weitere Informationen zu den vom ID-Service verwendeten Cookies erhalten Sie in der nachstehenden Tabelle und den darauf folgenden Abschnitten.
 
@@ -135,4 +135,4 @@ Die folgende Tabelle beschreibt Kennzeichnungen der in Experience Cloud vewendet
 
 ## Nächste Schritte {#section-8db1727a63bc4ff68b495f270315d453}
 
-Siehe [Anfordern und Festlegen von IDs durch den Experience Cloud Identity Service](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Siehe [Anfordern und Festlegen von IDs durch den Experience Cloud Identity-Dienst](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
