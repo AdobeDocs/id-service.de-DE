@@ -1,16 +1,16 @@
 ---
 description: Mit dieser Implementierung können Kunden den ID-Dienst auf Geräten verwenden, die unseren JavaScript- oder SDK-Code nicht akzeptieren oder verwenden können. Dazu gehören Geräte wie Spielekonsolen, Smart-TVs oder andere internetfähige Geräte. Informationen zu Syntax, Codebeispielen und Definitionen finden Sie in diesem Abschnitt.
 keywords: ID-Dienst
-title: Direkte Integration mit dem Experience Cloud Identity-Dienst
+title: Direkte Integration mit dem Experience Cloud Identity-Service
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '656'
+ht-degree: 100%
 
 ---
 
-# Direkte Integration mit dem Experience Cloud Identity-Dienst {#direct-integration-with-the-experience-cloud-id-service}
+# Direkte Integration mit dem Experience Cloud Identity-Service {#direct-integration-with-the-experience-cloud-id-service}
 
 Mit dieser Implementierung können Kunden den ID-Dienst auf Geräten verwenden, die unseren JavaScript- oder SDK-Code nicht akzeptieren oder verwenden können. Dazu gehören Geräte wie Spielekonsolen, Smart-TVs oder andere internetfähige Geräte. Informationen zu Syntax, Codebeispielen und Definitionen finden Sie in diesem Abschnitt.
 
@@ -20,7 +20,7 @@ Geräte, die weder die VisitorAPI.js- noch die SDK-Codebibliothek unterstützen,
 
 ![](assets/directSyntax.png)
 
-In diesem Syntaxbeispiel kennzeichnet das `d_` Präfix die Schlüssel-Wert-Paare im Aufruf als Variablen auf Systemebene. Sie können einige `d_`-Parameter an den ID-Dienst übergeben, konzentrieren Sie sich jedoch auf die Schlüssel-Wert-Paare, wie im Code oben gezeigt. Weitere Informationen zu anderen Variablen finden Sie unter [Unterstützte Attribute für DCS-API-Aufrufe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
+In diesem Syntaxbeispiel kennzeichnet das `d_` Präfix die Schlüssel-Wert-Paare im Aufruf als Variablen auf Systemebene. Sie können einige `d_`-Parameter an den ID-Dienst übergeben, konzentrieren Sie sich jedoch auf die Schlüssel-Wert-Paare, wie im Code oben gezeigt. Weitere Informationen zu anderen Variablen finden Sie unter [Unterstützte Attribute für DCS-API-Aufrufe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html?lang=de).
 
 Der ID-Dienst unterstützt HTTP- und HTTPS-Aufrufe. Verwenden Sie HTTPS, um Daten von einer sicheren Seite weiterzugeben.
 
@@ -57,7 +57,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ih
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Eine ältere von <span class="keyword">Adobe</span> verwaltete Domäne. Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
+   <td colname="col2"> <p>Eine ältere von <span class="keyword">Adobe</span> verwaltete Domäne. Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -87,7 +87,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ih
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>Der ID-Dienst ist ein geografisch verteiltes und lastausgeglichenes System. Die ID identifiziert die Region des Rechenzentrums, in dem der Aufruf verarbeitet wird. Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS Region IDs, Locations, and Host Names</a>. </p> </td> 
+   <td colname="col2"> <p>Der ID-Dienst ist ein geografisch verteiltes und lastausgeglichenes System. Die ID identifiziert die Region des Rechenzentrums, in dem der Aufruf verarbeitet wird. Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=de" format="https" scope="external">DCS Region IDs, Locations, and Host Names</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
