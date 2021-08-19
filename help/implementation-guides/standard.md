@@ -6,7 +6,7 @@ exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
 source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
 workflow-type: tm+mt
 source-wordcount: '2008'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ DTM ist für [!DNL Experience Cloud]-Kunden kostenlos verfügbar.
 
 **Erste Schritte mit DTM**
 
-DTM ist ein einfaches aber leistungsstarkes Tool. Falls Sie es nicht bereits verwenden, raten wir Ihnen dringend dazu. Informationen zum Einstieg in diesen Dienst finden Sie in der [DTM-Dokumentation](https://experienceleague.adobe.com/docs/dtm/using/c-overview.html). Anweisungen zur Einrichtung des ID-Diensts mit DTM finden Sie in den Informationen und Verfahren in den folgenden Abschnitten.
+DTM ist ein einfaches aber leistungsstarkes Tool. Falls Sie es nicht bereits verwenden, raten wir Ihnen dringend dazu. Informationen zum Einstieg in diesen Dienst finden Sie in der [DTM-Dokumentation](https://experienceleague.adobe.com/docs/dtm/using/c-overview.html?lang=de). Anweisungen zur Einrichtung des ID-Diensts mit DTM finden Sie in den Informationen und Verfahren in den folgenden Abschnitten.
 
 ## Implementierungsrichtlinien {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
 
@@ -49,7 +49,7 @@ mcvid-dtm-deployment.xml
 Stellen Sie zunächst sicher, dass Ihre Organisation und Ihre Lösungen für die [!DNL Experience Cloud] bereitgestellt wurden und Sie mit dem [!DNL Dyanamic Tag Management] vertraut sind. Diese Dokumentationen helfen bei den ersten Schritten:
 
 * [Aktivieren Sie Ihre Lösungen für Hauptdienste](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=de): Implementieren Sie Experience Cloud und werden Sie Administrator. Durch diesen Prozess werden Ihre Lösungen für die Hauptdienste, wie etwa für Kundenattribute und Experience Cloud-Zielgruppen, modernisiert.
-* [Dynamic Tag Management – Erste Schritte](https://experienceleague.adobe.com/docs/dtm/using/getting-started/get-started.html).
+* [Dynamic Tag Management – Erste Schritte](https://experienceleague.adobe.com/docs/dtm/using/getting-started/get-started.html?lang=de).
 
 **ID-Dienst-Codeplatzierung und -Ladereihenfolge**
 
@@ -62,7 +62,7 @@ Solange Sie all Ihre [!DNL Adobe]-Lösungen und -Codebibliotheken in DTM aufbewa
 
 **Validieren der regionalen Datenerfassung**
 
-Kunden müssen einen CNAME bereitstellen oder `*.sc.omtrdc` für die [regionale Datenerfassung (Regional Data Collection, RDC)](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html) verwenden. Erfragen Sie die jeweiligen RDC-Einstellungen bei Ihrem [!DNL Adobe]-Berater.
+Kunden müssen einen CNAME bereitstellen oder `*.sc.omtrdc` für die [regionale Datenerfassung (Regional Data Collection, RDC)](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=de) verwenden. Erfragen Sie die jeweiligen RDC-Einstellungen bei Ihrem [!DNL Adobe]-Berater.
 
 **Konfigurieren von Analytics Report Suites**
 
@@ -76,7 +76,7 @@ Führen Sie die folgenden Schritte aus, um den ID-Dienst mit dem Dynamic Tag Man
 
 * Aktivieren Sie Ihre Lösungen für die [!DNL Experience Cloud] und stellen Sie sicher, dass Sie über Administratorberechtigungen verfügen. Siehe [Lösungen für Hauptdienste aktivieren](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html).
 
-* Erstellen Sie eine Webeigenschaft in DTM. Weitere Informationen finden Sie in der DTM-Dokumentation zum [Erstellen von Webeigenschaften](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html).
+* Erstellen Sie eine Webeigenschaft in DTM. Weitere Informationen finden Sie in der DTM-Dokumentation zum [Erstellen von Webeigenschaften](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=de).
 
 <!--
 mcvid-dtm-implement.xml
@@ -189,7 +189,7 @@ Der Wert sollte ein Datenelement sein, das die Benutzer-ID enthält. Datenelemen
 
 Optionen, die Besucher je nach Authentifizierungsstatus (z. B. angemeldet, abgemeldet) definieren oder identifizieren. Siehe [Kunden-IDs und Authentifizierungsstatus](../reference/authenticated-state.md).
 
-## Testen und Überprüfen des Experience Cloud Identity-Diensts {#concept-644fdbef433b46ba9c0634ac95eaa680}
+## Testen und Überprüfen des Experience Cloud Identity-Service {#concept-644fdbef433b46ba9c0634ac95eaa680}
 
 Diese Anweisungen, Tools und Verfahren unterstützen Sie bei der Ermittlung, ob der ID-Dienst ordnungsgemäß funktioniert. Diese Tests gelten für den ID-Dienst im Allgemeinen sowie für andere ID-Dienst- und [!DNL Experience Cloud]-Lösungskombinationen.
 
@@ -209,7 +209,7 @@ Alternativ können Sie den ID-Dienst in einer anonymen oder Inkognito-Browsersit
 
 **Tools**
 
-Der [Adobe-Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) und der [Charles-HTTP-Proxy](https://www.charlesproxy.com/) können Ihnen dabei helfen festzustellen, ob der ID-Dienst für Analytics richtig konfiguriert wurde. Die Informationen in diesem Abschnitt basieren auf den durch den Adobe-Debugger und Charles zurückgegebenen Ergebnissen. Sie können jedoch frei entscheiden, welches Tool oder welcher Debugger für Sie optimal ist.
+Der [Adobe-Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=de) und der [Charles-HTTP-Proxy](https://www.charlesproxy.com/) können Ihnen dabei helfen festzustellen, ob der ID-Dienst für Analytics richtig konfiguriert wurde. Die Informationen in diesem Abschnitt basieren auf den durch den Adobe-Debugger und Charles zurückgegebenen Ergebnissen. Sie können jedoch frei entscheiden, welches Tool oder welcher Debugger für Sie optimal ist.
 
 ## Testen mit dem Adobe-Debugger  {#section-861365abc24b498e925b3837ea81d469}
 
@@ -267,7 +267,7 @@ Ihr ID-Dienst-Code funktioniert ordnungsgemäß, wenn die Funktion `Visitor.getI
 
 ### Erfolgreiche ID-Dienstantworten in Charles
 
-Ihr Konto wurde ordnungsgemäß für den ID-Dienst bereitgestellt, wenn die Antwort von den [Datenerfassungsservern (Data Collection Servers, DCS)](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: visitor Experience Cloud ID`. Auf der Registerkarte [!UICONTROL „Antwort“] findet sich die MID, wie im Folgenden gezeigt.
+Ihr Konto wurde ordnungsgemäß für den ID-Dienst bereitgestellt, wenn die Antwort von den [Datenerfassungsservern (Data Collection Servers, DCS)](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=de) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: visitor Experience Cloud ID`. Auf der Registerkarte [!UICONTROL „Antwort“] findet sich die MID, wie im Folgenden gezeigt.
 
 ![](assets/charles_response_success.png)
 
@@ -277,7 +277,7 @@ Ihr Konto wurde nicht richtig bereitgestellt, wenn die MID in der DCS-Antwort fe
 
 ![](assets/charles_response_unsuccessful.png)
 
-Weitere Informationen zu Fehler-Codes finden Sie unter [DCS-Fehler-Codes, Meldungen und Beispiele](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html).
+Weitere Informationen zu Fehler-Codes finden Sie unter [DCS-Fehler-Codes, Meldungen und Beispiele](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html?lang=de).
 
 >[!MORELIKETHIS]
 >
