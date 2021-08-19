@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: Implementierung mit Dynamic Tag Management
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
 source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2008'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Führen Sie die folgenden Schritte aus, um den ID-Dienst mit dem Dynamic Tag Man
 
 **Voraussetzungen**
 
-* Aktivieren Sie Ihre Lösungen für die [!DNL Experience Cloud] und stellen Sie sicher, dass Sie über Administratorberechtigungen verfügen. Siehe [Lösungen für Hauptdienste aktivieren](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html).
+* Aktivieren Sie Ihre Lösungen für die [!DNL Experience Cloud] und stellen Sie sicher, dass Sie über Administratorberechtigungen verfügen. Siehe [Lösungen für Hauptdienste aktivieren](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=de).
 
 * Erstellen Sie eine Webeigenschaft in DTM. Weitere Informationen finden Sie in der DTM-Dokumentation zum [Erstellen von Webeigenschaften](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=de).
 
@@ -139,7 +139,7 @@ Der Name des für die Analytics-Datenerfassung verwendeten Trackingservers. Dies
 
 Überprüfen Sie die Dateien `s_code.js` oder `AppMeasurement.js`, sofern Sie Ihre Tracking-Server-URLs nicht kennen. Sie möchten, dass die URL durch die `s.trackingServer` Variable festgelegt wird.
 
-Siehe [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=de) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Siehe [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=de) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
 
 **Sicherer Trackingserver**
 
@@ -147,7 +147,7 @@ Der Name des sicheren Trackingservers, der für die Analytics-Datenerfassung ver
 
 Überprüfen Sie die Dateien `s_code.js` oder `AppMeasurement.js`, sofern Sie Ihre Tracking-Server-URLs nicht kennen. Sie möchten, dass die URL durch die `s.trackingServerSecure` Variable festgelegt wird.
 
-Siehe [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+Siehe [trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=de) und [Korrektes Füllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
 
 **Experience Cloud-Server**
 
@@ -215,7 +215,7 @@ Der [Adobe-Debugger](https://experienceleague.adobe.com/docs/analytics/implement
 
 Ihre Dienstintegration ist richtig konfiguriert, wenn in der [!DNL Adobe]-Debugger-Antwort eine [!DNL Experience Cloud ID] (MID) angezeigt wird. Siehe [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md) mit weiteren Informationen zur MID.
 
-So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe] [-Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html):
+So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe] [-Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=de):
 
 1. Löschen Sie Ihre Browser-Cookies oder öffnen Sie eine anonyme Browser-Sitzung.
 1. Laden Sie Ihre Testseite, die den ID-Dienst-Code enthält.
@@ -281,5 +281,5 @@ Weitere Informationen zu Fehler-Codes finden Sie unter [DCS-Fehler-Codes, Meldun
 
 >[!MORELIKETHIS]
 >
->* [Webeigenschaften](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)
+>* [Webeigenschaften](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=de)
 
