@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: Implementierungsmethoden
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '136'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Sie können zwischen einer standardmäßigen [!DNL Experience Cloud ID Service] 
 
 ## Standardmäßige Implementierung {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe empfiehlt dringend, zur Implementierung des ID-Diensts [[!DNL Experience Platform Launch] zu verwenden. ](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html) Diese Methode stellt die Integration mit anderen [!DNL Experience Cloud]-Lösungen sicher, optimiert die Implementierungs-Workflows und sorgt automatisch für die richtige Code-Platzierung und -Sequenzierung.
+Adobe empfiehlt dringend, zur Implementierung des ID-Diensts [[!DNL Experience Platform Launch] zu verwenden. ](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html?lang=de) Diese Methode stellt die Integration mit anderen [!DNL Experience Cloud]-Lösungen sicher, optimiert die Implementierungs-Workflows und sorgt automatisch für die richtige Code-Platzierung und -Sequenzierung.
 
 ## Nicht standardisierte Implementierungen {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
