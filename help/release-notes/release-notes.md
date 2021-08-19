@@ -4,13 +4,13 @@ keywords: ID-Dienst
 title: Versionshinweise für 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud – Versionshinweise 2020 {#release-notes}
+# Versionshinweise zu Experience Cloud – 2020 {#release-notes}
 
 Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts (ECID).
 
