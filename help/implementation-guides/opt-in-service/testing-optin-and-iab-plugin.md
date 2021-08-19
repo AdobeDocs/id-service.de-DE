@@ -3,13 +3,13 @@ description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie
 title: Überprüfen des Opt-in-Dienstes
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
 ht-degree: 100%
 
 ---
 
-# Überprüfen des Opt-in-Dienstes {#validating-opt-in-service}
+# Überprüfen des Opt-in-Dienstes{#validating-opt-in-service}
 
 Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Dienst wie erwartet funktioniert.
 
@@ -60,7 +60,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 Der einzige Unterschied bei Nutzungsszenario 2 besteht darin, dass Sie *ein neues Cookie* sehen, das die Opt-in-Berechtigungen enthält, die von Ihrem Benutzer erteilt wurden: **adobeujs-optin**
 
-## Nutzungsszenario 3: Opt-in aktivieren und Vorabgenehmigung für Adobe Analytics erteilen   {#section-257fe582b425496cbf986d0ec12d3692}
+## Nutzungsszenario 3: Opt-in aktivieren und Vorabgenehmigung für Adobe Analytics erteilen  {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -80,7 +80,7 @@ und Sie sehen Analytics-Cookies auf der Registerkarte „Anwendung“:
 
 ![](assets/use_case_3_2.png)
 
-## Nutzungsszenario 4: Opt-in und IAB aktivieren   {#section-64331998954d4892960dcecd744a6d88}
+## Nutzungsszenario 4: Opt-in und IAB aktivieren  {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
