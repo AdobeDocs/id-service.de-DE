@@ -3,9 +3,9 @@ description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richti
 keywords: ID-Dienst
 title: Voraussetzungen für den Experience Cloud Identity-Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '730'
+source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
+workflow-type: tm+mt
+source-wordcount: '731'
 ht-degree: 100%
 
 ---
@@ -79,7 +79,7 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
 
 ## Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html?lang=de)
+Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=de)
 
 ## Code-Bibliotheken und Versionsvoraussetzungen {#section-ad7542a4317d430fa79fc6b095beb84d}
 
