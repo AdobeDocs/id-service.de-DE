@@ -4,7 +4,7 @@ keywords: ID-Dienst
 title: Voraussetzungen für den Experience Cloud Identity-Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
 ht-degree: 100%
 
@@ -115,7 +115,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
    <td colname="col4"> <p>H.27 </p> <p> <p>Hinweis:<span class="keyword"> Die s_code-Version H.27 von Analytics</span> wird im Zuge der Veröffentlichung des ID-Diensts Version 1.6.0 nicht mehr unterstützt. Nehmen Sie ein Upgrade Ihres Codes auf die neueste Version von AppMeasurement vor. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p>Video Heartbeat </p> <p>Siehe <a href="https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html" format="https" scope="external">Video Heartbeat 2.x für JavaScript</a>. </p> </td> 
+   <td colname="col3"> <p>Video Heartbeat </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de" format="https" scope="external">Video Heartbeat 2.x für JavaScript</a>. </p> </td> 
    <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
