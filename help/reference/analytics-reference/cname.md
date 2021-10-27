@@ -3,15 +3,17 @@ description: Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor de
 keywords: Reihenfolge der Vorgänge, ID-Dienst
 title: CNAME-Implementierung – Übersicht
 exl-id: f95dda3c-7bb2-4c7d-a25a-a4d20b58fe27
-source-git-commit: 1ec0c5d3261143e4b0ec4cf0585d98bc1057130c
-workflow-type: ht
-source-wordcount: '221'
-ht-degree: 100%
+source-git-commit: 61f9f1888430ff0fdbb90a8cf6561bf23d204a45
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 45%
 
 ---
 
 # CNAME-Implementierung – Übersicht{#cname-implementation-overview}
 
-Mit der CNAME-Implementierungen können Sie die von Adobe verwendete Sammel-Domain so anpassen, dass sie mit Ihrer eigenen Domain übereinstimmt. Dadurch kann Adobe First-Party-Cookies mithilfe von JavaScript Server-seitig anstatt Client-seitig setzen. In der Vergangenheit waren diese Server-seitigen First-Party-Cookies nicht den Einschränkungen unterworfen, die mit der ITP-Richtlinie (Intelligent Tracking Prevention) von Apple eingeführt wurden. Im November 2020 aktualisierte [!DNL Apple] jedoch diese Richtlinie, sodass diese Einschränkungen jetzt auch auf Cookies angewendet werden, die über CNAME gesetzt werden. Zurzeit sind sowohl Cookies, die auf der Server-Seite über CNAME gesetzt werden, als auch Cookies, die auf der Client-Seite über JavaScript gesetzt werden, gemäß der ITP-Richtlinie auf die Gültigkeitsdauer von sieben Tagen bzw. 24 Stunden beschränkt. Weitere Informationen zur ITP-Richtlinie finden Sie in diesem [!DNL Apple] Dokument [zur Tracking-Vermeidung](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp).
+Mit der CNAME-Implementierungen können Sie die von Adobe verwendete Sammel-Domain so anpassen, dass sie mit Ihrer eigenen Domain übereinstimmt. Diese Domänen werden auch als Erstanbieter-Erfassungsdomänen bezeichnet. Diese Implementierungen ermöglichen es der Adobe, Erstanbieter-Cookies Server-seitig und nicht Client-seitig mit JavaScript festzulegen. In der Vergangenheit waren diese Server-seitigen First-Party-Cookies nicht den Einschränkungen unterworfen, die mit der ITP-Richtlinie (Intelligent Tracking Prevention) von Apple eingeführt wurden. Im November 2020 aktualisierte [!DNL Apple] jedoch diese Richtlinie, sodass diese Einschränkungen jetzt auch auf Cookies angewendet werden, die über CNAME gesetzt werden. Derzeit sind beide Cookies, die serverseitig über CNAME gesetzt werden, und die auf der Clientseite über JavaScript gesetzten Cookies unter ITP auf einen Ablauf von sieben Tagen oder 24 Stunden beschränkt. Weitere Informationen zur ITP-Richtlinie finden Sie in diesem [!DNL Apple] Dokument [zur Tracking-Vermeidung](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp).
 
-Während eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, gibt es möglicherweise andere Vorteile wie bei Werbe-Blockern und weniger gängigen Browsern, die verhindern, dass Daten an Domains gesendet werden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME-Eintrags verhindern, dass Ihre Datenerfassung bei Benutzern unterbunden wird, die diese Tools verwenden.
+Auch wenn eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, kann es einige weitere Vorteile geben. Zu diesen Vorteilen gehören Anzeigensperren und seltener verwendete Browser, die verhindern, dass Daten an Domänen gesendet werden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME verhindern, dass die Datenerfassung für Benutzer, die diese Tools verwenden, unterbrochen wird.
+
+Darüber hinaus können Sie bei CNAME-Implementierungen **[!UICONTROL Benutzerdefinierten RDC-Typ auswählen]** , die steuert, wohin die Treffer der Benutzer ursprünglich weitergeleitet werden. Die meisten Kunden verwenden keine benutzerdefinierten RDC-Typen.
