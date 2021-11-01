@@ -4,16 +4,16 @@ keywords: Reihenfolge der Vorgänge, ID-Dienst
 title: CNAME-Implementierung – Übersicht
 exl-id: f95dda3c-7bb2-4c7d-a25a-a4d20b58fe27
 source-git-commit: 61f9f1888430ff0fdbb90a8cf6561bf23d204a45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
-# CNAME-Implementierung – Übersicht{#cname-implementation-overview}
+# CNAME-Implementierung – Übersicht {#cname-implementation-overview}
 
-Mit der CNAME-Implementierungen können Sie die von Adobe verwendete Sammel-Domain so anpassen, dass sie mit Ihrer eigenen Domain übereinstimmt. Diese Domänen werden auch als Erstanbieter-Erfassungsdomänen bezeichnet. Diese Implementierungen ermöglichen es der Adobe, Erstanbieter-Cookies Server-seitig und nicht Client-seitig mit JavaScript festzulegen. In der Vergangenheit waren diese Server-seitigen First-Party-Cookies nicht den Einschränkungen unterworfen, die mit der ITP-Richtlinie (Intelligent Tracking Prevention) von Apple eingeführt wurden. Im November 2020 aktualisierte [!DNL Apple] jedoch diese Richtlinie, sodass diese Einschränkungen jetzt auch auf Cookies angewendet werden, die über CNAME gesetzt werden. Derzeit sind beide Cookies, die serverseitig über CNAME gesetzt werden, und die auf der Clientseite über JavaScript gesetzten Cookies unter ITP auf einen Ablauf von sieben Tagen oder 24 Stunden beschränkt. Weitere Informationen zur ITP-Richtlinie finden Sie in diesem [!DNL Apple] Dokument [zur Tracking-Vermeidung](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp).
+Mit der CNAME-Implementierungen können Sie die von Adobe verwendete Sammel-Domain so anpassen, dass sie mit Ihrer eigenen Domain übereinstimmt. Diese Domains werden auch als Erstanbieter-Erfassungs-Domains bezeichnet. Diese Implementierungen ermöglichen es Adobe, Erstanbieter-Cookies Server-seitig und nicht Client-seitig mit JavaScript zu setzen. In der Vergangenheit waren diese Server-seitigen First-Party-Cookies nicht den Einschränkungen unterworfen, die mit der ITP-Richtlinie (Intelligent Tracking Prevention) von Apple eingeführt wurden. Im November 2020 aktualisierte [!DNL Apple] jedoch diese Richtlinie, sodass diese Einschränkungen jetzt auch auf Cookies angewendet werden, die über CNAME gesetzt werden. Zurzeit sind sowohl Cookies, die auf der Server-Seite über CNAME gesetzt werden, als auch Cookies, die auf der Client-Seite über JavaScript gesetzt werden, gemäß der ITP-Richtlinie auf die Gültigkeitsdauer von sieben Tagen bzw. 24 Stunden beschränkt. Weitere Informationen zur ITP-Richtlinie finden Sie in diesem [!DNL Apple] Dokument [zur Tracking-Vermeidung](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp).
 
-Auch wenn eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, kann es einige weitere Vorteile geben. Zu diesen Vorteilen gehören Anzeigensperren und seltener verwendete Browser, die verhindern, dass Daten an Domänen gesendet werden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME verhindern, dass die Datenerfassung für Benutzer, die diese Tools verwenden, unterbrochen wird.
+Auch wenn eine CNAME-Implementierung keine Vorteile hinsichtlich der Cookie-Lebensdauer bietet, kann sie andere Vorteile haben. Zu den Vorteilen gehört die Umgehung der Funktionen von Ad-Blockern und selten verwendeten Browser, die keine Daten an Domains senden, die sie als Tracker klassifizieren. In diesen Fällen kann die Verwendung eines CNAME-Eintrags verhindern, dass Ihre Datenerfassung bei Benutzern unterbunden wird, die diese Tools verwenden.
 
-Darüber hinaus können Sie bei CNAME-Implementierungen **[!UICONTROL Benutzerdefinierten RDC-Typ auswählen]** , die steuert, wohin die Treffer der Benutzer ursprünglich weitergeleitet werden. Die meisten Kunden verwenden keine benutzerdefinierten RDC-Typen.
+Darüber hinaus können Sie bei CNAME-Implementierungen einen **[!UICONTROL benutzerdefinierten RDC-Typ auswählen]**, der steuert, wohin die Treffer der Benutzer zunächst weitergeleitet werden. Die meisten Kunden verwenden keine benutzerdefinierten RDC-Typen.
