@@ -3,9 +3,9 @@ description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und
 keywords: ID-Dienst
 title: Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '186'
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '156'
 ht-degree: 100%
 
 ---
@@ -14,17 +14,9 @@ ht-degree: 100%
 
 Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bei der Verwendung von anderen Experience Cloud-Lösungen mit dem ID-Dienst.
 
-## Dynamic Tag Management (DTM) {#section-7ac4b9c1f1fd45a5a03eac3fb5968af7}
-
-**Kann ich das Dynamic Tag Management verwenden, um den Besucher-ID-Dienst bereitzustellen?**
-
-Ja, dies ist die bevorzugte und empfohlene Implementierungsoption.
-
-Siehe [Standardimplementierung mit DTM](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445).
-
 ## Analytics und Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**Wird der Besuchsverlauf eines Benutzers aus [!DNL Adobe Analytics] in den Export für [!DNL Audience Manager] aufgenommen, nachdem ich den Experience Cloud Identity-Dienst implementiert habe?**
+**Wird der Besuchsverlauf eines Benutzers aus [!DNL Adobe Analytics] in den Export für [!DNL Audience Manager] aufgenommen, nachdem ich den Experience Cloud Identity Service implementiert habe?**
 
 Hierbei gibt es zwei Möglichkeiten:
 

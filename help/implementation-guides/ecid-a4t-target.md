@@ -3,9 +3,9 @@ description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten Serve
 keywords: ID-Dienst
 title: Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '829'
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '820'
 ht-degree: 100%
 
 ---
@@ -164,8 +164,6 @@ Fügen Sie dem Abschnitt **[!UICONTROL Allgemein > Einstellungen]** Ihrer ID-Di
 Die konfigurierten Einstellungen sollten wie folgt aussehen:
 
 ![](assets/server_side_dtm.png)
-
-Siehe auch [Experience Cloud Identity-Dienst-Einstellungen für DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 **Abrufen des Serverstatus ohne DTM**
 

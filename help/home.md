@@ -3,10 +3,10 @@ description: 'Der Experience Cloud Identity Service bietet eine universelle, bes
 keywords: ID-Service
 title: Experience Cloud Identity-Service
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '262'
+ht-degree: 98%
 
 ---
 
@@ -20,8 +20,8 @@ Der Adobe Experience Cloud Identity Service (ID-Service) bietet eine universelle
    <td colname="col1"> <p> <b>Erste Schritte</b> </p> <p> 
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> Übersicht </a> </li> 
-      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local"> Voraussetzungen für den Experience Cloud Identity Service</a> </li> 
-      <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Standardimplementierung mit DTM </a> </li> 
+      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local">Voraussetzungen für den Experience Cloud Identity Service</a> </li> 
+      <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=de" format="html" scope="external"> Standardimplementierung mit Platform-Tags </a> </li> 
      </ul> </p> <p><b>JavaScript-Bibliotheken des Experience Cloud ID-Service</b> </p> <p>JavaScript-Dateien für den Experience Cloud Identity Service befinden sich unter: <a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> </p> <p> <b>Neue oder vorgestellte Funktionen</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local"> Opt-in-Service</a> </li> 

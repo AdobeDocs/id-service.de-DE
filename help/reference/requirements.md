@@ -1,50 +1,30 @@
 ---
-description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity-Dienst erfordert.
+description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity Service erfordert.
 keywords: ID-Dienst
 title: Voraussetzungen für den Experience Cloud Identity-Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 98%
 
 ---
 
 # Voraussetzungen für den Experience Cloud Identity-Service {#requirements-for-the-experience-cloud-id-service}
 
-Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity-Dienst erfordert.
+Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity Service erfordert.
 
 ## Anforderungen für die Gewährleistung einer erfolgreichen und unterstützten Implementierung {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
 Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderungen erfüllt (oder übertroffen) und die in der [!DNL Adobe]-Hilfe aufgeführten Anweisungen befolgt. Eine nicht unterstützte Implementierung führt zu unerwarteten Ergebnissen und hindert die Kundenunterstützung und unsere Technikerteams daran, Sie bei der Fehlersuche und Lösung Ihrer Probleme mit dem ID-Dienst zu unterstützen.
 
-<table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Art der Implementierung </th> 
-   <th colname="col2" class="entry"> Beschreibung </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> Standard</a> </p> </td> 
-   <td colname="col2"> <p>Für eine Standardimplementierung im Dynamic Tag Management (DTM) müssen Sie: </p> 
-    <ul id="ul_59CDE179566844B494F3068FF6333809"> 
-     <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> den Einbettungskopfzeilencode im Abschnitt <span class="codeph">&lt;head&gt;</span> auf Ihrer Seite platzieren. </li> 
-     <li id="li_13962F2CB1764091A84863BE499675A2">den Einbettungsfußzeilencode vor dem schließenden <span class="codeph">&lt;/body&gt;</span>-Tag platzieren. </li> 
-    </ul> <p>Eine Standardimplementierung wird nicht unterstützt, wenn Sie: </p> 
-    <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> einen dieser DTM-Einbettungscodes an einer anderen Stelle im Markup- und/oder Seitencode platzieren. </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> DTM-Code mit asynchronen Methoden, Aufrufen/Callback-Methoden oder Wrappern anhängen, hinzufügen oder laden. </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">mehrere Instanzen von Einbettungscode auf derselben Seite einfügen. </li> 
-    </ul> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html?lang=de" format="https" scope="external">Hosting – Registerkarte „Einbetten“</a>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> Benutzerdefinierte Implementierungen </a> </p> </td> 
-   <td colname="col2"> <p>Bei nicht standardmäßigen oder manuellen Implementierungen müssen Sie den ID-Dienst gemäß den in diesem Handbuch beschriebenen Verfahren einrichten. Wie bei den oben genannten DTM-Richtlinien führt unsachgemäßes Platzieren und Laden von Code zu einer nicht unterstützten Implementierung. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+### Standardimplementierungen
+
+Siehe [Experience Platform-Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) für Ihre Standardimplementierung.
+
+### Nicht standardisierte Implementierungen
+
+Bei nicht standardmäßigen oder manuellen Implementierungen müssen Sie den ID-Dienst gemäß den in diesem Handbuch beschriebenen Verfahren einrichten. Wie bei den oben genannten DTM-Richtlinien führt unsachgemäßes Platzieren und Laden von Code zu einer nicht unterstützten Implementierung.
 
 ## Experience Cloud-Voraussetzungen: Organisations-ID  {#section-a02f537129a64ffbb690d5738d360c26}
 

@@ -1,20 +1,20 @@
 ---
-description: Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Implementierungen des Experience Cloud ID-Diensts.
+description: Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Implementierungen des Experience Cloud Identity Services.
 keywords: ID-Dienst
 solution: Experience Cloud
 title: Implementierungshandbücher
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '190'
+source-git-commit: 8b8615b65dd3ea0427ba585a6707f059148d05e2
+workflow-type: tm+mt
+source-wordcount: '185'
 ht-degree: 100%
 
 ---
 
 # Implementierungshandbücher
 
-Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Implementierungen des Experience Cloud Identity-Diensts.
+Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Implementierungen des Experience Cloud Identity Services.
 
 >[!IMPORTANT]
 >
@@ -28,12 +28,11 @@ In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launc
 
 * [Implementierungsmethoden](implementation-methods.md)
 * [Implementieren mit Experience Platform Launch](ecid-implement-with-launch.md)
-* [Implementierung mit Dynamic Tag Management](standard.md)
-* [Implementieren des Experience Cloud Identity-Diensts für Analytics](setup-analytics.md)
-* [Implementieren des Experience Cloud Identity-Diensts für Target](setup-target.md)
-* [Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager](setup-aam-analytics.md)
-* [Implementieren des Experience Cloud Identity-Diensts für Analytics, Audience Manager und Target](setup-aam-analytics-target.md)
-* [Verwenden des Experience Cloud Identity-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente](ecid-a4t-target.md)
+* [Implementieren des Experience Cloud Identity Services für Analytics](setup-analytics.md)
+* [Implementieren des Experience Cloud Identity Services für Target](setup-target.md)
+* [Implementieren des Experience Cloud Identity Services für Analytics und Audience Manager](setup-aam-analytics.md)
+* [Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target](setup-aam-analytics-target.md)
+* [Verwenden des Experience Cloud Identity Services mit A4T und einer serverseitigen Implementierung der Target-Komponente](ecid-a4t-target.md)
 * [Direkte Integration mit dem Experience Cloud Identity-Service](direct-integration.md)
 * [Anwendungsfälle der direkten Integration](direct-integration-examples.md)
 * [Testen und Überprüfen des Experience Cloud Identity-Service](test-verify.md)

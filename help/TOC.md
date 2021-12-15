@@ -1,20 +1,19 @@
 ---
 cloud: platform-cloud
 audience: end-user
-user-guide-title: Hilfe zum Experience Cloud Identity-Dienst
+user-guide-title: Hilfe zum Experience Cloud Identity Service
 breadcrumb-title: Identity Service-Anleitung
 user-guide-description: Der ID-Dienst bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Experience Cloud-Lösungen hinweg. Sie kann ID-Generierungs-Code für Services wie Analytics, Audience Manager, Target und andere Experience Cloud-Lösungen oder -Funktionen ersetzen.
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
 
-# Hilfe zum Experience Cloud Identity-Dienst {#using}
+# Hilfe zum Experience Cloud Identity Service {#using}
 
 + [ID-Dienst Hilfe](home.md)
 + Übersicht {#intro}
@@ -26,20 +25,19 @@ ht-degree: 100%
 + Implementierung {#implementation}
    + [Implementierungsmethoden](implementation-guides/implementation-methods.md)
    + [Implementierungshandbücher](implementation-guides/implementation-guides.md)
-   + [Implementieren mit Experience Platform Launch](implementation-guides/ecid-implement-with-launch.md)
-   + [Implementierung mit DTM](implementation-guides/standard.md)
+   + [Implementieren mit Experience Platform-Tags](implementation-guides/ecid-implement-with-launch.md)
    + [Implementieren für Analytics](implementation-guides/setup-analytics.md)
    + [Implementieren für Target](implementation-guides/setup-target.md)
    + [Implementieren für Analytics und Audience Manager](implementation-guides/setup-aam-analytics.md)
    + [Implementieren für Analytics, Audience Manager und Target](implementation-guides/setup-aam-analytics-target.md)
    + [Verwenden des ID-Diensts mit A4T und einer serverseitigen Implementierung der Target-Komponente](implementation-guides/ecid-a4t-target.md)
    + [Direkte Integration mit dem ID-Dienst](implementation-guides/direct-integration.md)
-   + [Nutzungsszenarios im Zusammenhang mit einer direkten Integration](implementation-guides/direct-integration-examples.md)
+   + [Anwendungsfälle der direkten Integration](implementation-guides/direct-integration-examples.md)
    + [Testen und Überprüfen des ID-Diensts](implementation-guides/test-verify.md)
    + Opt-in-Dienst {#opt-in-service}
       + [Opt-in-Dienst – Übersicht](implementation-guides/opt-in-service/optin-overview.md)
-      + [Einrichtung des Opt-in-Dienstes](implementation-guides/opt-in-service/getting-started.md)
-      + [Überprüfung des Opt-in-Dienstes](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
+      + [Einrichten des Opt-in-Dienstes](implementation-guides/opt-in-service/getting-started.md)
+      + [Überprüfen des Opt-in-Dienstes](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [Konfigurieren von Opt-in mit Experience Platform Launch](implementation-guides/opt-in-service/launch.md)
       + [Konfigurieren von Opt-in mit DTM](implementation-guides/opt-in-service/optin-dtm.md)
       + [Experience Cloud-Aktivitäten auf Basis des Benutzereinverständnisses steuern](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
@@ -64,7 +62,7 @@ ht-degree: 100%
       + [overwriteCrossDomainMCIDAndAID](library/function-vars/overwrite-visitor-id.md)
       + [resetBeforeVersion](library/function-vars/resetbeforeversion.md)
       + [sdidParamExpiry](library/function-vars/sdidparamexpiry.md)
-      + [Secure- und SameSite-Konfigurationen](library/function-vars/secure-samesite-config.md)
+      + [Sichere und SameSite-Konfigurationen](library/function-vars/secure-samesite-config.md)
       + [secureCookie](library/function-vars/securecookie.md)
       + [useCORSOnly](library/function-vars/use-cors-only.md)
       + [whitelistParentDomain und whitelistIframeDomains](library/function-vars/whitelistdomain.md)
@@ -100,13 +98,13 @@ ht-degree: 100%
    + [COPPA-Unterstützung im ID-Dienst](reference/coppa.md)
    + [CORS-Unterstützung im ID-Dienst](reference/cors.md)
    + [Kunden-IDs und Authentifizierungsstatus](reference/authenticated-state.md)
-   + [ECID-Bibliotheksmethoden in einer Safari-ITP-Umgebung](reference/ecid-library-methods.md)
+   + [Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung](reference/ecid-library-methods.md)
    + [Identifizieren von Unique Visitors](reference/unique-vis-method.md)
    + [Abrufen von Regions- und Benutzer-IDs vom AMCV-Cookie oder dem ID-Dienst](reference/regions.md)
    + [Voraussetzungen für den ID-Dienst](reference/requirements.md)
    + [Video Heartbeat und der ID-Dienst](reference/heartbeat.md)
    + [Data Workbench und der ID-Dienst](reference/dwb.md)
-   + [SHA-256-Hashing-Unterstützung für setCustomerIDs](reference/hashing-support.md)
+   + [SHA-256-Hash-Unterstützung für setCustomerIDs](reference/hashing-support.md)
 + Häufig gestellte Fragen (FAQ) {#faqs}
    + [FAQ Übersicht](faq-intro/faq-intro.md)
    + [Häufig gestellte Fragen zum ID-Dienst](faq-intro/faq.md)
