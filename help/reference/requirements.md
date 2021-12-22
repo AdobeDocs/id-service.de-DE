@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: Voraussetzungen für den Experience Cloud Identity-Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen
 
 Bei einer erfolgreichen, unterstützten Implementierung werden die Codeanforderungen erfüllt (oder übertroffen) und die in der [!DNL Adobe]-Hilfe aufgeführten Anweisungen befolgt. Eine nicht unterstützte Implementierung führt zu unerwarteten Ergebnissen und hindert die Kundenunterstützung und unsere Technikerteams daran, Sie bei der Fehlersuche und Lösung Ihrer Probleme mit dem ID-Dienst zu unterstützen.
 
-### Standardimplementierungen
+### Standardmäßige Implementierungen
 
-Siehe [Experience Platform-Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) für Ihre Standardimplementierung.
+Siehe [Tags in Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) für Ihre standardmäßige Implementierung.
 
-### Nicht standardisierte Implementierungen
+### Nicht-standardmäßige Implementierungen
 
 Bei nicht standardmäßigen oder manuellen Implementierungen müssen Sie den ID-Dienst gemäß den in diesem Handbuch beschriebenen Verfahren einrichten. Wie bei den oben genannten DTM-Richtlinien führt unsachgemäßes Platzieren und Laden von Code zu einer nicht unterstützten Implementierung.
 
-## Experience Cloud-Voraussetzungen: Organisations-ID  {#section-a02f537129a64ffbb690d5738d360c26}
+## Experience Cloud-Voraussetzungen: Organisations-ID {#section-a02f537129a64ffbb690d5738d360c26}
 
 Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Cloud] freigeschaltet sein und über eine Organisations-ID verfügen. Gehen Sie die folgende Liste durch, wenn Sie sich bezüglich des [!DNL Experience Cloud]-Status Ihrer Organisation nicht sicher sind und Ihre Organisations-ID herausfinden möchten.
 
@@ -115,7 +115,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
  </tbody> 
 </table>
 
-## SDK-Anforderungen für Android und iOS  {#section-73b2446fba8e463888642c7d7dfd94f1}
+## SDK-Anforderungen für Android und iOS {#section-73b2446fba8e463888642c7d7dfd94f1}
 
 Für den ID-Dienst sind mindestens die unten aufgeführten SDK-Versionen erforderlich.
 
