@@ -2,17 +2,17 @@
 description: Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Implementierungen des Experience Cloud Identity Services.
 keywords: ID-Dienst
 solution: Experience Cloud
-title: Implementierungshandbücher
+title: Handbücher zur Implementierung
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
 source-git-commit: 8b8615b65dd3ea0427ba585a6707f059148d05e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
 ht-degree: 100%
 
 ---
 
-# Implementierungshandbücher
+# Handbücher zur Implementierung
 
 Anweisungen und Codebeispiele für standardmäßige und benutzerdefinierte Implementierungen des Experience Cloud Identity Services.
 
@@ -26,7 +26,7 @@ In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launc
 
 ## Ressourcen für die Implementierung
 
-* [Implementierungsmethoden](implementation-methods.md)
+* [Methoden der Implementierung](implementation-methods.md)
 * [Implementieren mit Experience Platform Launch](ecid-implement-with-launch.md)
 * [Implementieren des Experience Cloud Identity Services für Analytics](setup-analytics.md)
 * [Implementieren des Experience Cloud Identity Services für Target](setup-target.md)
@@ -34,6 +34,6 @@ In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launc
 * [Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target](setup-aam-analytics-target.md)
 * [Verwenden des Experience Cloud Identity Services mit A4T und einer serverseitigen Implementierung der Target-Komponente](ecid-a4t-target.md)
 * [Direkte Integration mit dem Experience Cloud Identity-Service](direct-integration.md)
-* [Anwendungsfälle der direkten Integration](direct-integration-examples.md)
+* [Direkte Integration – Anwendungsfälle](direct-integration-examples.md)
 * [Testen und Überprüfen des Experience Cloud Identity-Service](test-verify.md)
-* [Opt-in-Dienst – Übersicht](opt-in-service/optin-overview.md)
+* [Opt-in-Service – Übersicht](opt-in-service/optin-overview.md)
