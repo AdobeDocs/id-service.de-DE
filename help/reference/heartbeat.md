@@ -1,5 +1,5 @@
 ---
-description: Video Heartbeat erfordert den Experience Cloud Identity-Dienst. Bei der Videomessung für JavaScript oder Flash stellen Sie mit der Implementierung des ID-Diensts für die Seiten Ihrer Website und die Videowiedergabe sicher, dass Besucher bei der Videowiedergabe nicht neu gezählt werden.
+description: Video Heartbeat erfordert den Experience Cloud Identity Service. Bei der Videomessung für JavaScript oder Flash stellen Sie mit der Implementierung des ID-Diensts für die Seiten Ihrer Website und die Videowiedergabe sicher, dass Besucher bei der Videowiedergabe nicht neu gezählt werden.
 keywords: ID-Dienst
 title: Video Heartbeat und der Experience Cloud Identity-Service
 exl-id: 5e905925-54ba-43ce-ae87-a9bf193d7b95
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Video Heartbeat und der Experience Cloud Identity-Service {#video-heartbeat-and-the-experience-cloud-id-service}
 
-Video Heartbeat erfordert den Experience Cloud Identity-Dienst. Bei der Videomessung für JavaScript oder Flash stellen Sie mit der Implementierung des ID-Diensts für die Seiten Ihrer Website und die Videowiedergabe sicher, dass Besucher bei der Videowiedergabe nicht neu gezählt werden.
+Video Heartbeat erfordert den Experience Cloud Identity Service. Bei der Videomessung für JavaScript oder Flash stellen Sie mit der Implementierung des ID-Diensts für die Seiten Ihrer Website und die Videowiedergabe sicher, dass Besucher bei der Videowiedergabe nicht neu gezählt werden.
 
 >[!MORELIKETHIS]
 >
