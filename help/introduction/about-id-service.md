@@ -12,13 +12,13 @@ ht-degree: 100%
 
 # Über den ID-Dienst{#aboutidservice}
 
-Die Rolle des Experience Cloud Identity-Diensts in Adobe Experience Cloud.
+Die Rolle des Experience Cloud Identity Services in Adobe Experience Cloud.
 
 <!--
 mcvid-functionality.xml
 -->
 
-## Der Experience Cloud Identity-Dienst: Ein Grundelement der Core Services {#section-2de0eb1d65664e92a4d8bbb167b84bde}
+## Der Experience Cloud Identity Service: Ein Grundelement der Core Services {#section-2de0eb1d65664e92a4d8bbb167b84bde}
 
 Mit dem Experience Cloud Identity Service werden das allgemeine Identifizierungs-Framework für die Experience Cloud Core Services, Lösungen sowie benutzerdefinierte Attribute und Zielgruppen ermöglicht. Der ID-Service funktioniert durch die Zuweisung einer eindeutigen, dauerhaften ID zu einem Site-Besucher. Wenn Ihr Unternehmen den ID-Service implementiert, können Sie mit dieser ID denselben Site-Besucher und dessen Daten in unterschiedlichen Experience Cloud-Lösungen identifizieren.
 
