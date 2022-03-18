@@ -22,7 +22,7 @@ Siehe  [Übersicht](../introduction/overview.md).
 
 **Warum führt der ID-Dienst keinen Aufruf zum Abruf der Experience Cloud ID aus?**
 
-Das kann schwer zu diagnostizieren sein. Sie können die Header der Inhaltssicherheitsrichtlinien auf Ihrer Site überprüfen. Wenn Sie über eine strenge Sicherheitsrichtlinie verfügen, können diese Einstellungen die vom ID-Dienst ausgeführten Aufrufe von Drittanbietern blockieren. Siehe [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+Das kann schwer zu diagnostizieren sein. Sie können die Header der Inhaltssicherheitsrichtlinien auf Ihrer Site überprüfen. Wenn Sie über eine strenge Sicherheitsrichtlinie verfügen, können diese Einstellungen die vom ID-Dienst ausgeführten Aufrufe von Drittanbietern blockieren. Siehe [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **Speicherung der VisitorAPI.js-Datei**
 
@@ -34,7 +34,7 @@ Möglicherweise treten Probleme auf, wenn Sie die VisitorAPI.js-Datei als lokale
 
 Platzieren Sie die Bibliothek VisitorAPI.js oben auf der Seite in den `<head>` Abschnitt Ihres Codes. Dadurch stellen Sie sicher, dass der Aufruf an eine ID gesendet wird, bevor der Seitentext geladen wird, und die Wahrscheinlichkeit, dass eine ID erfolgreich zurückgegeben wird, erhöht sich.
 
-Der ID-Dienst-Aufruf ist asynchron und der einzige Aufruf zur [Domäne „demdex.net“](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
+Der ID-Dienst-Aufruf ist asynchron und der einzige Aufruf zur [Domain „demdex.net“](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de). Der Aufruf des ID-Diensts verhindert nicht, dass andere Elemente auf der Seite geladen werden.
 
 Für [!DNL Target]-Kunden kann die Platzierung von ID-Dienst-Code in `<body>` der Seite die Wahrscheinlichkeit erhöhen, dass ein [!DNL Target]-Aufruf blockiert wird. Wenn Sie ID-Dienst-Code im Haupttext Ihrer Seite platzieren müssen, dann sollten Sie ihn nach dem öffnenden `<body>`-Tag einfügen.
 
@@ -66,13 +66,13 @@ Diese Änderung verbessert die Leistung für Kunden, die Visitor 2.3.0+ und DIL 
 
 Ressourcenanforderungen mit CORS sind im Allgemeinen besser geeignet als Anforderungen mit JSONP. Bei JSONP weisen einige Browser Anforderungen eine geringere Priorität zu als anderen synchronen und asynchronen Abrufen, wenn sie diese in die Warteschlange stellen. Mit CORS wird sichergestellt, dass diese Anforderungen im Browser-Aufrufstapel mit einer höheren Priorität behandelt werden.
 
-Siehe [CORS-Unterstützung im Experience Cloud Identity-Dienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Siehe [CORS-Unterstützung im Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## Sicherheit {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **Unterstützt der ID-Dienst CORS?**
 
-Ja. Siehe [CORS-Unterstützung im Experience Cloud Identity-Dienst](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+Ja. Siehe [CORS-Unterstützung im Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **Was ist CORS?**
 
