@@ -16,8 +16,8 @@ Nur in Adobe Analytics vorhandene ID-Dienstfunktionen oder Funktionalitäten.
 
 + [Einrichten von Analytics- und Experience Cloud IDs](analytics-ids.md)
 + [Reihenfolge der Befehle für Analytics-IDs](analytics-order-of-operations.md)
-+ [Entscheidungspunkte bei der Migration zum Experience Cloud Identity-Dienst](migration-decisions.md)
-+ [Migrationsszenarios für den Experience Cloud Identity-Dienst](migration-scenarios.md)
++ [Entscheidungspunkte bei der Migration zum Experience Cloud Identity Service](migration-decisions.md)
++ [Migrationsszenarios für den Experience Cloud Identity Service](migration-scenarios.md)
 + [Analytics und Experience Cloud ID-Anforderungen](legacy-analytics.md)
 + [Serverseitige Implementierung zusammen mit JavaScript](server-side.md)
 + [Übergangsphase für den ID-Dienst](grace-period.md)
