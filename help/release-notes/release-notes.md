@@ -1,5 +1,5 @@
 ---
-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
+description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity Services.
 keywords: ID-Dienst
 title: Versionshinweise für 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Versionshinweise zu Experience Cloud – 2020 {#release-notes}
 
-Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts (ECID).
+Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity Services (ECID).
 
 ## Version 4.6
 
