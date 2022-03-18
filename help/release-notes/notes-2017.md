@@ -1,5 +1,5 @@
 ---
-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2017.
+description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity Services im Jahr 2017.
 keywords: ID-Dienst
 title: Versionshinweise für 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Versionshinweise für 2017 {#release-notes}
 
-Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2017.
+Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity Services im Jahr 2017.
 
 Diese Änderungen finden Sie auch in den [Experience Cloud-Versionshinweisen](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de).
 
@@ -50,7 +50,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Es wurde ein Chrome-spezifischer Fehler behoben, der dazu führte, dass der ID-Dienst einen Fehler auslöste, wenn in diesem Browser auf die Schaltfläche „Zurück“ geklickt wurde.
 * Der ID-Dienst löst jetzt die ID-Synchronisierungen erneut aus, wenn sich die Regions-ID in der Antwort des Ereignisaufrufs ändert.
-* Es wurde eine neue Dokumentation hinzugefügt: [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Dienst](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3). Darin wird erklärt, wie Sie Aufrufe an Adobe-Domänen, die vom ID-Dienst verwendet werden, auf die Whitelist setzen können.
+* Es wurde eine neue Dokumentation hinzugefügt: [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3). Darin wird erklärt, wie Sie Aufrufe an Adobe-Domänen, die vom ID-Dienst verwendet werden, auf die Whitelist setzen können.
 
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -117,7 +117,7 @@ Veröffentlichung: Juni 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain und whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame und auf der übergeordneten Seite implementiert sind, miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. </p> </td> 
+   <td colname="col2"> <p>Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame und auf der übergeordneten Seite implementiert sind, miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domain verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domain geladen wird. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -151,7 +151,7 @@ Veröffentlichung: Juni 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md#reference-8ad017b3e5d24d34b3da25e8f8a56196" format="dita" scope="local"> audienceManagerServer und audienceManagerServerSecure </a> </p> </td> 
-   <td colname="col2"> <p>Der <span class="keyword">Audience Manager</span>-Dokumentation wurden Links zu Informationen hinzugefügt, die Aufrufe an die <span class="codeph">demdex.net</span>-Domäne beschreiben. </p> </td> 
+   <td colname="col2"> <p>Der <span class="keyword">Audience Manager</span>-Dokumentation wurden Links zu Informationen hinzugefügt, die Aufrufe an die <span class="codeph">demdex.net</span>-Domain beschreiben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten </a> </p> </td> 
@@ -199,12 +199,12 @@ Januar 2017
 
 >[!IMPORTANT]
 >
->Der ID-Dienst-Code v2.0 synchronisiert IDs standardmäßig automatisch mit Adobe Media Optimizer. Das bedeutet, dass die Seite `cm.eversttech.net`, eine ältere [!DNL Media Optimizer]-Domäne, die von [!DNL Adobe] verwaltet wird, aufruft. Weitere Informationen finden Sie unter [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
+>Der ID-Dienst-Code v2.0 synchronisiert IDs standardmäßig automatisch mit Adobe Media Optimizer. Das bedeutet, dass die Seite `cm.eversttech.net`, eine ältere [!DNL Media Optimizer]-Domain, die von [!DNL Adobe] verwaltet wird, aufruft. Weitere Informationen finden Sie unter [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Fehlerbehebungen und Verbesserungen**
 
 * Es wurde ein Fehler behoben, durch den AppMeasurement keine Tracking-Aufrufe an Analytics senden konnte. (MCID-254, MCID-256, MCID-286)
-* Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst sofort fehlschlug, wenn ein Besucher einen Werbeblocker aktiviert hatte und dieser Blocker so konfiguriert war, die Domäne demdex.net auszuschließen. Dieser Fehler ist selten und ungewöhnlich, da die meisten Werbeblocker die Domäne „demdex.net“ nicht blockieren. (MCID-233)
+* Es wurde ein Fehler behoben, der verhinderte, dass der ID-Dienst sofort fehlschlug, wenn ein Besucher einen Werbeblocker aktiviert hatte und dieser Blocker so konfiguriert war, die Domain demdex.net auszuschließen. Dieser Fehler ist selten und ungewöhnlich, da die meisten Werbeblocker die Domain „demdex.net“ nicht blockieren. (MCID-233)
 * Es wurde ein Fehler behoben, der durch Interaktionen zwischen dem ID-Dienst-Code und einem benutzerdefinierten Skript auf der Website eines Kunden verursacht wurde. Dieses Problem verhinderte das Laden von Webseiten in Internet Explorer 9. (MCID-206)
 
 ## Frühere Jahre  {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
