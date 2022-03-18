@@ -23,8 +23,8 @@ Weitere Informationen zu SameSite-Attributen finden Sie im [Dokument zu Cookie-S
 
 | SameSite-Attributwert | Beschreibungen |
 | ------ | ------------ |
-| `strict` | Cookies mit dieser Einstellung werden nur gesendet, wenn sowohl die verweisende Seite als auch die Landingpage zur gleichen Domäne wie das Cookie gehören. |
-| `lax` | Cookies mit dieser Einstellung werden nur gesendet, wenn die in der URL des Browsers angezeigte Domäne mit der Domäne des Cookies übereinstimmt. Dies ist die neue Standardeinstellung für Cookies in Chrome. |
+| `strict` | Cookies mit dieser Einstellung werden nur gesendet, wenn sowohl die verweisende Seite als auch die Landingpage zur gleichen Domain wie das Cookie gehören. |
+| `lax` | Cookies mit dieser Einstellung werden nur gesendet, wenn die in der URL des Browsers angezeigte Domain mit der Domain des Cookies übereinstimmt. Dies ist die neue Standardeinstellung für Cookies in Chrome. |
 | `none` | Cookies mit dieser Einstellung stehen für den externen Zugriff oder den Zugriff durch Drittanbieter zur Verfügung, z. B. „site-übergreifend“. Vor dieser Änderung war `none` die standardmäßige SameSite-Einstellung für Cookies, so dass die Verhaltensweise eines Cookies bei Verwendung dieser Einstellung am ehesten der herkömmlichen Funktionsweise ähnelt. Google verlangt jedoch, dass alle Cookies mit dieser Einstellung jetzt das Flag „Sicher“ angeben. Das heißt, das Cookie wird nur erstellt und mit Anforderungen über HTTPS gesendet. Alle site-übergreifenden Cookies ohne das Flag „Sicher“ werden von Google abgelehnt. |
 
 ## Was Sie als Adobe Experience Cloud-Kunde wissen müssen
@@ -55,7 +55,7 @@ Adobe hat zwar die Kontrolle über die Aktualisierung von Cookies, kann Partner 
 
 **Analytics-freundliche Drittanbieter-Cookies (nur Analytics `s_vi`-Cookies)**
 
-Einige Analytics-Implementierungen verwenden einen Analytics-CNAME-Alias, um die Erstellung des `s_vi`-Cookies in der Domäne dieses CNAME zu ermöglichen. Wenn sich der CNAME in derselben Domäne wie Ihre Website befindet, wird dieses Cookie als Erstanbieter-Cookie bezeichnet. Wenn Sie jedoch über mehrere Domänen verfügen und denselben CNAME für die Datenerfassung in all Ihren Domänen verwenden, wird er in diesen anderen Domänen als Drittanbieter-Cookie designiert.
+Einige Analytics-Implementierungen verwenden einen Analytics-CNAME-Alias, um die Erstellung des `s_vi`-Cookies in der Domain dieses CNAME zu ermöglichen. Wenn sich der CNAME in derselben Domain wie Ihre Website befindet, wird dieses Cookie als Erstanbieter-Cookie bezeichnet. Wenn Sie jedoch über mehrere Domänen verfügen und denselben CNAME für die Datenerfassung in all Ihren Domänen verwenden, wird er in diesen anderen Domänen als Drittanbieter-Cookie designiert.
 
 Mit `lax` als neuer standardmäßiger SameSite-Einstellung in Chrome ist der CNAME nicht mehr auf anderen Domänen sichtbar.
 
