@@ -1,7 +1,7 @@
 ---
-description: Vor Verwendung des Experience Cloud Identity-Diensts sollten Sie wissen, wie dieser Dienst das Besucher-Tracking auf mehreren Domänen beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
+description: Vor Verwendung des Experience Cloud Identity Services sollten Sie wissen, wie dieser Service das Besucher-Tracking auf mehreren Domänen beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
 keywords: ID-Dienst
-title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity-Dienst
+title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity Service
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: ht
@@ -10,9 +10,9 @@ ht-degree: 100%
 
 ---
 
-# Entscheidungspunkte bei der Migration zum Experience Cloud Identity-Dienst
+# Entscheidungspunkte bei der Migration zum Experience Cloud Identity Service
 
-Vor Verwendung des Experience Cloud Identity-Diensts sollten Sie wissen, wie dieser Dienst das Besucher-Tracking auf mehreren Domänen beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
+Vor Verwendung des Experience Cloud Identity Services sollten Sie wissen, wie dieser Service das Besucher-Tracking auf mehreren Domänen beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
 
 Ihre Antworten auf die Fragen in diesem Abschnitt helfen Ihnen dabei, weitere Migrationsschritte zu bestimmen.
 
@@ -41,7 +41,7 @@ Viele Kunden können im Rahmen der ID-Dienst-Migration einen Datenerfassungs-CNA
 
 ## Wenn ein Datenerfassungs-CNAME vorhanden ist: Verfügen Sie über mehrere Domänen?
 
-Wenn Sie über mehrere Domänen verfügen, die Daten an *dieselbe Report Suite* senden, wird die Datenerfassung mit einem CNAME empfohlen. Auf diese Weise können Sie Besucher domänenübergreifend verfolgen. Wenn Sie Daten in einer Domäne erfassen, bietet der Unterhalt eines Datenerfassungs-CNAME keinen Vorteil.
+Wenn Sie über mehrere Domänen verfügen, die Daten an *dieselbe Report Suite* senden, wird die Datenerfassung mit einem CNAME empfohlen. Auf diese Weise können Sie Besucher domänenübergreifend verfolgen. Wenn Sie Daten in einer Domain erfassen, bietet der Unterhalt eines Datenerfassungs-CNAME keinen Vorteil.
 
 <table id="table_D132BCA243E54657AEC930559343FDD3"> 
  <thead> 
@@ -56,8 +56,8 @@ Wenn Sie über mehrere Domänen verfügen, die Daten an *dieselbe Report Suite* 
    <td colname="col2"> <p>Wenn Sie Besucher domänenübergreifend verfolgen und außerdem über eine Haupteinstiegs-Site verfügen, auf der Kunden identifiziert werden können, bevor sie andere Domänen besuchen, sollten Sie Ihren Datenerfassungs-CNAME weiterhin verwenden. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Beachten Sie, dass Sie zwei zusätzliche Tracking-Server-Parameter (<span class="codeph">visitor.marketingCloudServer</span> und <span class="codeph">visitor.marketingCloudServerSecure</span>) angeben müssen, um einen CNAME mit dem ID-Dienst zu konfigurieren. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Eine Domäne </p> </td> 
-   <td colname="col2"> <p>Wenn Sie mit nur einen Domäne arbeiten, können Sie einen Datenerfassungs-CNAME eliminieren, wenn Sie ihn nicht mehr unterhalten möchten. Wenn Ihr CNAME funktioniert, ist dies jedoch nicht notwendig. </p> <p>Wenn Sie den CNAME entfernen: </p> 
+   <td colname="col1"> <p>Eine Domain </p> </td> 
+   <td colname="col2"> <p>Wenn Sie mit nur einen Domain arbeiten, können Sie einen Datenerfassungs-CNAME eliminieren, wenn Sie ihn nicht mehr unterhalten möchten. Wenn Ihr CNAME funktioniert, ist dies jedoch nicht notwendig. </p> <p>Wenn Sie den CNAME entfernen: </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
      <li id="li_32E2CD3E58454E20A642BADE507AE86E">Sicherstellen, dass der neue Tracking-Server <a href="https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=de" format="https" scope="external">RDC-kompatibel</a> ist. </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762">Stellen Sie einige Monate vor Ihrer Migration zum <span class="keyword">Experience Cloud</span> ID-Dienst den CNAME auf einen RDC-Tracking-Server um. </li> 
