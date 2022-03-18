@@ -1,5 +1,5 @@
 ---
-description: Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für eine Experience Cloud Identity-Dienst-, Analytics- oder Audience Manager-ID-Anforderung zu ermitteln. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
+description: Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für eine Experience Cloud Identity Service-, Analytics- oder Audience Manager-ID-Anforderung zu ermitteln. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 keywords: ID-Dienst
 title: callTimeOut-Methoden
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
@@ -12,20 +12,20 @@ ht-degree: 100%
 
 # callTimeOut-Methoden{#calltimeout-methods}
 
-Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für eine Experience Cloud Identity-Dienst-, Analytics- oder Audience Manager-ID-Anforderung zu ermitteln. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
+Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für eine Experience Cloud Identity Service-, Analytics- oder Audience Manager-ID-Anforderung zu ermitteln. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 
 ## Zeitüberschreitungsfunktionen  {#section-e08228ef5f9b45c9a84139bbb763164a}
 
 <table id="table_B3ACE584B3224D838070D32A8462EF28"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Lösung oder Dienst </th> 
+   <th colname="col1" class="entry"> Lösung oder Service </th> 
    <th colname="col2" class="entry"> Funktionssyntax </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud Identity-Service </p> </td> 
+   <td colname="col1"> <p>Experience Cloud Identity Service </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
