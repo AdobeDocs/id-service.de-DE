@@ -56,7 +56,7 @@ Zum Nachverfolgen von Sitebesuchern schreibt der ID-Dienst eine [!DNL Experience
    <td colname="col2"> <p>Angenommen, Ihnen gehören die Domänen A und B. In diesem Fall können Sie <span class="codeph">Visitor.overwriteCrossDomainMCIDAndAID: true</span> festlegen, sofern: </p> 
     <ul id="ul_7BEBFD523A2F47AFB6963536E43692D0"> 
      <li id="li_71586080489340E2A6C0B263F231E3DE">Domain A ist eine Landingpage. </li> 
-     <li id="li_4E3D3CB380EE4F1BAC4CD752194AE8DE">Domäne B eine separate Konversions-, Buchungs- oder andere Ende-des-Workflows-Seite ist, </li> 
+     <li id="li_4E3D3CB380EE4F1BAC4CD752194AE8DE">Domain B eine separate Konversions-, Buchungs- oder andere Ende-des-Workflows-Seite ist, </li> 
      <li id="li_FB393B16CFAC4D2D9B2328EBA4573C1A">Ein Besucher verfügt bereits über ein Cookie (und eine MID), das bei einem vorherigen Besuch von Domain B gesetzt wurde, und Sie wissen, dass es sich hierbei nicht um Server-seitige MIDs, sondern um weniger wünschenswerte Client-seitige MIDs handelt. </li> 
      <li id="li_36FC138530A4476A995C0F9FD73C41DE">Sie möchten Besucher einheitlich identifizieren, wenn diese von Domain A zu Domain B wechseln. </li> 
     </ul> </td> 
