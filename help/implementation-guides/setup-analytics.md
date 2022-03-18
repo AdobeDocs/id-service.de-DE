@@ -1,7 +1,7 @@
 ---
-description: Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+description: Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
 keywords: ID-Dienst
-title: Implementieren des Experience Cloud Identity-Diensts für Analytics
+title: Implementieren des Experience Cloud Identity Services für Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: ht
@@ -10,9 +10,9 @@ ht-degree: 100%
 
 ---
 
-# Implementieren des Experience Cloud Identity-Diensts für Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# Implementieren des Experience Cloud Identity Services für Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Sie müssen eine Übergangsphase konfigurieren, wenn neue Besucher nach der Migr
 
 Beenden Sie die Übergangsphase, nachdem Ihre Implementierung die MID erfassen kann, anstatt das s_vi-Cookie zu lesen.
 
-Siehe [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
+Siehe [Cookies und der Experience Cloud Identity Service](../introduction/cookies.md).
 
 Sie müssen eine Übergangsphase konfigurieren, wenn Sie Daten von einem Clickstream-Datenfeed an ein internes System senden und bei der Verarbeitung die Spalten `visid_high` und `visid_low` verwendet werden.
 
@@ -190,10 +190,10 @@ Sie können dies wie folgt testen und bereitstellen.
 
 Prüfen Sie zum Testen Ihrer ID-Dienstimplementierung Folgendes:
 
-* [AMCV-Cookie](../introduction/cookies.md) in der Domäne, auf der Ihre Seite gehostet wird.
+* [AMCV-Cookie](../introduction/cookies.md) in der Domain, auf der Ihre Seite gehostet wird.
 * MID-Wert in der [!DNL Analytics]-Bildanforderung mit dem [Adobe-Debuggertool](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=de).
 
-Siehe [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md).
+Siehe [Testen und Überprüfen des Experience Cloud Identity Services](../implementation-guides/test-verify.md).
 
 **Bereitstellungscode**
 
