@@ -1,5 +1,5 @@
 ---
-description: Der Experience Cloud Identity-Dienst ersetzt die Legacy ID-Methoden für Analytics.
+description: Der Experience Cloud Identity Service ersetzt die Legacy ID-Methoden für Analytics.
 keywords: ID-Dienst
 title: Einrichten von Analytics- und Experience Cloud IDs
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Einrichten von Analytics- und Experience Cloud IDs{#setting-analytics-and-experience-cloud-ids}
 
-Der Experience Cloud Identity-Dienst ersetzt die Legacy ID-Methoden für Analytics.
+Der Experience Cloud Identity Service ersetzt die Legacy ID-Methoden für Analytics.
 
 Nach der Implementierung des ID-Diensts wird dieser Code vor AppMeasurement ausgeführt. Der ID-Dienst ruft die Experience Cloud IDs und Analytics-IDs ab, damit diese Werte beim Laden von AppMeasurement verfügbar sind.
 
@@ -28,13 +28,13 @@ Eine HTTP-Antwort eines Webservers setzt Cookies in einem Browser. So wird das `
 
 Wenn eine Anforderung an den Adobe-Datenerfassungsserver gesendet wird, wird geprüft, ob der Header einen `s_vi`-Cookie enthält. Wenn der Cookie in der Anforderung enthalten ist, wird er zur Identifizierung des Besuchers verwendet. Wenn der Cookie nicht in der Anforderung enthalten ist, generiert der Server eine eindeutige [!DNL Experience Cloud] ID, setzt sie als Cookie im HTTP-Antwort-Header und sendet diesen mit der Anforderung zurück. Das Cookie wird im Browser gespeichert und bei nachfolgenden Besuchen der Site an den Datenerfassungs-Server zurückgesendet. Dadurch kann der Besucher besuchsübergreifend identifiziert werden.
 
-Einige Browser wie Apple Safari akzeptieren jedoch keine Drittanbieter-Cookies. Hierbei handelt es sich um Cookies, die im Browser von anderen Domänen als der aktuellen Website gesetzt werden. Zusätzlich blockiert Safari Cookies auf Drittanbieterdomänen, wenn ein Besucher diese Domäne noch nie zuvor besucht hat. Wenn Ihre Domäne z. B. `mysite.com` ist und sich Ihr Datenerfassungsserver unter der Domäne `mysite.omtrdc.net` befindet, wird der von `mysite.omtrdc.net` im HTTP-Header zurückgegebene Cookie möglicherweise vom Browser abgewiesen.
+Einige Browser wie Apple Safari akzeptieren jedoch keine Drittanbieter-Cookies. Hierbei handelt es sich um Cookies, die im Browser von anderen Domänen als der aktuellen Website gesetzt werden. Zusätzlich blockiert Safari Cookies auf Drittanbieterdomänen, wenn ein Besucher diese Domain noch nie zuvor besucht hat. Wenn Ihre Domain z. B. `mysite.com` ist und sich Ihr Datenerfassungsserver unter der Domain `mysite.omtrdc.net` befindet, wird der von `mysite.omtrdc.net` im HTTP-Header zurückgegebene Cookie möglicherweise vom Browser abgewiesen.
 
-Damit dies umgangen werden kann, haben viele Kunden CNAME-Einträge für ihre Datenerfassungsserver implementiert. Dies kann ein effektiver Bestandteil einer [Erstanbieter-Cookie-Implementierungsstrategie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=de) sein. Wenn ein CNAME-Eintrag so konfiguriert wurde, dass ein Hostname unter der Domäne des Kunden einem Datenerfassungsserver zugeordnet wird (z. B. die Zuordnung von `metrics.mysite.com` zu `mysite.omtrdc.net`), wird das [!DNL Experience Cloud] ID-Cookie gespeichert, da die Datenerfassungsdomäne nun mit der Domäne der Website übereinstimmt. Somit erhöht sich die Wahrscheinlicheit, dass das Cookie des ID-Diensts gespeichert wird. Auf der anderen Seite verursacht diese Strategie Zusatzaufwand, da CNAME-Einträge erstellt und SSL-Zertifikate der Datenerfassungsserver gepflegt werden müssen.
+Damit dies umgangen werden kann, haben viele Kunden CNAME-Einträge für ihre Datenerfassungsserver implementiert. Dies kann ein effektiver Bestandteil einer [Erstanbieter-Cookie-Implementierungsstrategie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=de) sein. Wenn ein CNAME-Eintrag so konfiguriert wurde, dass ein Hostname unter der Domain des Kunden einem Datenerfassungsserver zugeordnet wird (z. B. die Zuordnung von `metrics.mysite.com` zu `mysite.omtrdc.net`), wird das [!DNL Experience Cloud] ID-Cookie gespeichert, da die Datenerfassungsdomäne nun mit der Domain der Website übereinstimmt. Somit erhöht sich die Wahrscheinlicheit, dass das Cookie des ID-Diensts gespeichert wird. Auf der anderen Seite verursacht diese Strategie Zusatzaufwand, da CNAME-Einträge erstellt und SSL-Zertifikate der Datenerfassungsserver gepflegt werden müssen.
 
 **JavaScript**
 
-JavaScript kann in der Erstanbieterdomäne (der Domäne der aktuellen Website) gesetzte Cookies lesen und schreiben. Der [!DNL Experience Cloud] ID-Dienst verwendet diese Methode, um den Cookie `AMCV_###@AdobeOrg` zu setzen, der sämtliche Besucher-IDs enthält. Die Domäne des Tracking-Servers muss dabei nicht mehr mit der Domäne der Website übereinstimmen, damit der Besucher-ID-Cookie gespeichert wird. In den meisten Fällen ist dies die bevorzugte Methode zum Setzen des ID-Dienst-Cookies, da dadurch der Mehraufwand für CNAME-Einträge und SSL-Zertifikate entfällt.
+JavaScript kann in der Erstanbieterdomäne (der Domain der aktuellen Website) gesetzte Cookies lesen und schreiben. Der [!DNL Experience Cloud] ID-Dienst verwendet diese Methode, um den Cookie `AMCV_###@AdobeOrg` zu setzen, der sämtliche Besucher-IDs enthält. Die Domain des Tracking-Servers muss dabei nicht mehr mit der Domain der Website übereinstimmen, damit der Besucher-ID-Cookie gespeichert wird. In den meisten Fällen ist dies die bevorzugte Methode zum Setzen des ID-Dienst-Cookies, da dadurch der Mehraufwand für CNAME-Einträge und SSL-Zertifikate entfällt.
 
 <!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
@@ -79,7 +79,7 @@ Nach der Bereitstellung des Besucher-ID-Diensts gibt es fünf Möglichkeiten, ei
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html?lang=de" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
    <td colname="col3"> <p>der Browser des Besuchers keine Cookies akzeptiert. </p> </td> 
   </tr> 
  </tbody> 
@@ -89,5 +89,5 @@ In vielen Szenarios können für einen Aufruf zwei oder drei verschiedene IDs vo
 
 >[!MORELIKETHIS]
 >
->* [Reihenfolge der Befehle für Analytics-IDs](../../reference/analytics-reference/analytics-order-of-operations.md#concept-b92935b4fff545adb4773f3728bc15ef)
+>* [Reihenfolge der Operationen für Analytics-IDs](../../reference/analytics-reference/analytics-order-of-operations.md#concept-b92935b4fff545adb4773f3728bc15ef)
 
