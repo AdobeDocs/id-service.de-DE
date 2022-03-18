@@ -24,14 +24,14 @@ Inhalt:
 
 ## Domänenübergreifendes Tracking von Benutzern, wenn Browser Drittanbieter-Cookies blockieren {#section-7251d88befd440b4b79520e33c5aa44a}
 
-Der ID-Dienst schreibt ein Cookie von Drittanbietern in den Browser, wenn eine Person Ihre Site besucht (siehe [Cookies und der Experience Cloud Identity-Dienst](../../introduction/cookies.md)). Das Erstanbieter-Cookie enthält die MID, eine eindeutige ID für diesen Besucher. Das Drittanbieter-Cookie enthält eine andere ID, die vom ID-Dienst verwendet wird, um die MID zu generieren. Wenn ein Browser diesen Drittanbieter-Cookie blockiert, kann der Dienst folgende Aktionen nicht durchführen:
+Der ID-Dienst schreibt ein Cookie von Drittanbietern in den Browser, wenn eine Person Ihre Site besucht (siehe [Cookies und der Experience Cloud Identity Service](../../introduction/cookies.md)). Das Erstanbieter-Cookie enthält die MID, eine eindeutige ID für diesen Besucher. Das Drittanbieter-Cookie enthält eine andere ID, die vom ID-Dienst verwendet wird, um die MID zu generieren. Wenn ein Browser diesen Drittanbieter-Cookie blockiert, kann der Service folgende Aktionen nicht durchführen:
 
-* Erneutes Generieren der eindeutigen ID für diesen Site-Besucher, wenn dieser zu einer anderen Domäne navigiert.
+* Erneutes Generieren der eindeutigen ID für diesen Site-Besucher, wenn dieser zu einer anderen Domain navigiert.
 * Verfolgen von Besuchern über verschiedene Domänen Ihres Unternehmens hinweg.
 
 Um dieses Problem zu lösen, implementieren Sie ` Visitor.appendVisitorIDsTo( *`url`*)`. Mit dieser Eigenschaft kann der ID-Dienst Site-Besucher über mehrere Domänen hinweg verfolgen, selbst wenn deren Browser Drittanbieter-Cookies blockieren. Funktionsweise:
 
-* Wenn ein Besucher zu Ihren anderen Domänen navigiert, fügt ` Visitor.appendVisitorIDsTo( *`url`*)` die MID als Abfrageparameter in der URL-Umleitung von der ursprünglichen Domäne zur Zieldomäne hinzu.
+* Wenn ein Besucher zu Ihren anderen Domänen navigiert, fügt ` Visitor.appendVisitorIDsTo( *`url`*)` die MID als Abfrageparameter in der URL-Umleitung von der ursprünglichen Domain zur Zieldomäne hinzu.
 * Der ID-Dienst-Code auf der Zieldomäne extrahiert die MID aus der URL, statt bei Adobe eine neue Besucher-ID anzufordern. Diese Anforderung schließt die Drittanbieter-Cookie-ID ein, die in diesem Fall nicht verfügbar ist.
 * Der ID-Dienst-Code auf der Zielseite verwendet die übergebene MID, um den Besucher zu verfolgen.
 
