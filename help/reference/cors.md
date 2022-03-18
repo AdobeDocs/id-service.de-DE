@@ -1,5 +1,5 @@
 ---
-description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domäne, die nicht der aktuellen Domäne entspricht. Der Experience Cloud Identity-Dienst unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
+description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domain, die nicht der aktuellen Domain entspricht. Der Experience Cloud Identity Service unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
 keywords: ID-Dienst
 title: CORS-Unterstützung im Experience Cloud Identity-Service.
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # CORS-Unterstützung im Experience Cloud Identity-Service. {#cors-support-in-the-experience-cloud-id-service}
 
-Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domäne, die nicht der aktuellen Domäne entspricht. Der Experience Cloud Identity-Dienst unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
+Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domain, die nicht der aktuellen Domain entspricht. Der Experience Cloud Identity Service unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
 
 ## Probleme mit Gleiche-Herkunft-Richtlinien und ID-Dienstanforderungen {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
