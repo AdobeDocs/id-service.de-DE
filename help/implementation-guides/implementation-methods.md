@@ -20,7 +20,7 @@ Sie können zwischen einer standardmäßigen [!DNL Experience Cloud ID Service] 
 
 ## Standardmäßige Implementierung {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-Adobe empfiehlt dringend, zur Implementierung des ID-Diensts [[!DNL Experience Platform Launch] zu verwenden. ](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html?lang=de) Diese Methode stellt die Integration mit anderen [!DNL Experience Cloud]-Lösungen sicher, optimiert die Implementierungs-Workflows und sorgt automatisch für die richtige Code-Platzierung und -Sequenzierung.
+Adobe empfiehlt dringend, zur Implementierung des ID-Diensts [[!DNL Experience Platform Launch]](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html?lang=de) zu verwenden. Diese Methode stellt die Integration mit anderen [!DNL Experience Cloud]-Lösungen sicher, optimiert die Implementierungs-Workflows und sorgt automatisch für die richtige Code-Platzierung und -Sequenzierung.
 
 ## Nicht standardisierte Implementierungen {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
