@@ -100,4 +100,4 @@ setCustomerIDs(Ingeration code: {
 });
 ```
 
-Ähnlich wie bei der im ersten Abschnitt beschriebenen `setCustomerIDs`-Methode führt dies zu einem Aufruf des Experience Cloud ID-Diensts, wobei der Abfrageparameter `d_cid_ic` hinzugefügt wird.
+Ähnlich wie bei der im ersten Abschnitt beschriebenen `setCustomerIDs`-Methode führt dies zu einem Aufruf des Experience Cloud ID-Service, wobei der Abfrageparameter `d_cid_ic` hinzugefügt wird.
