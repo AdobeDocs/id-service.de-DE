@@ -1,7 +1,7 @@
 ---
 description: Enthält Beispiel-Serverkonfigurationen und führt die erforderlichen Migrationsschritte auf.
 keywords: ID-Dienst
-title: Migrationsszenarios für den Experience Cloud Identity-Dienst
+title: Migrationsszenarios für den Experience Cloud Identity Service
 exl-id: 419532bf-399f-4646-a95f-31c35535d6fc
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: ht
@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Migrationsszenarios für den Experience Cloud Identity-Dienst {#experience-cloud-id-service-migration-scenarios}
+# Migrationsszenarios für den Experience Cloud Identity Service {#experience-cloud-id-service-migration-scenarios}
 
 Enthält Beispiel-Serverkonfigurationen und führt die erforderlichen Migrationsschritte auf.
 
