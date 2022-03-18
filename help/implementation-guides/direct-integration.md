@@ -57,15 +57,15 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ih
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p>Eine ältere von <span class="keyword">Adobe</span> verwaltete Domäne. Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> 
+   <td colname="col2"> <p>Eine ältere von <span class="keyword">Adobe</span> verwaltete Domain. Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Aufrufe an die Domain „demdex.net“</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Die Experience Cloud-Besucher-ID. Siehe <a href="../introduction/cookies.md" format="dita" scope="local">Cookies und der Experience Cloud Identity-Dienst </a>. </p> </td> 
+   <td colname="col2"> <p>Die Experience Cloud-Besucher-ID. Siehe <a href="../introduction/cookies.md" format="dita" scope="local">Cookies und der Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Informationen zum Auffinden dieser ID erhalten Sie unter  <a href="../reference/requirements.md" format="dita" scope="local">Voraussetzungen für den Experience Cloud Identity-Dienst</a> </p> </td> 
+   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Informationen zum Auffinden dieser ID erhalten Sie unter  <a href="../reference/requirements.md" format="dita" scope="local">Voraussetzungen für den Experience Cloud Identity Service</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
