@@ -22,7 +22,7 @@ Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besuc
 >
 >`setCustomerIDs` (Synchronisierung der Kunden-ID) ist für Kundenattribute und die Funktionalität der Kerndienste erforderlich. Die Synchronisierung der Kunden-IDs ist eine optionale Identifikationsmethode für [!DNL Analytics]. Für [!DNL Target] ist `Visitor.AuthState.AUTHENTICATED` erforderlich, damit die Kundenattribute funktionieren. Beispiele hierzu finden Sie unter [Kerndienste – Aktivierung Ihrer Lösungen](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=de).
 
-Ab der Experience Cloud Identity-Dienstversion 1.5 enthält `setCustomerIDs` das optionale Objekt `AuthState`. `AuthState` identifiziert Benutzer anhand ihres Authentifizierungsstatus (z. B. angemeldet, abgemeldet). Sie legen den Authentifizierungsstatus mit einem in der Tabelle aufgeführten Statuswert fest. Der Authentifizierungsstatus wird als Ganzzahl zurückgegeben.
+Ab der Experience Cloud Identity Serviceversion 1.5 enthält `setCustomerIDs` das optionale Objekt `AuthState`. `AuthState` identifiziert Benutzer anhand ihres Authentifizierungsstatus (z. B. angemeldet, abgemeldet). Sie legen den Authentifizierungsstatus mit einem in der Tabelle aufgeführten Statuswert fest. Der Authentifizierungsstatus wird als Ganzzahl zurückgegeben.
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
