@@ -17,9 +17,8 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
 >[!TIP]
 >
 >* Bevor Sie sich mit den Nutzungsszenarios befassen, sollten Sie sichergehen, dass Sie [Codesyntax und Variablen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) verstehen.
->* Weitere Informationen über die MID finden Sie unter [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md).
+>* Weitere Informationen über die MID finden Sie unter [Cookies und der Experience Cloud Identity Service](../introduction/cookies.md).
 >
-
 
 
 ## Nutzungsszenario 1: Ich habe eine Experience Cloud ID (MID), möchte jedoch meine eigenen Besucher-IDs verwenden und einen Authentifizierungsstatus festlegen {#section-a67d89a343754d1286d03cf08d34b806}
