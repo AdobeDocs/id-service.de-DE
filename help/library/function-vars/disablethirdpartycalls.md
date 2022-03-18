@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Eine optionale boolesche Kennzeichnung, die verhindert, dass der ID-Dienst andere Domänen aufruft.
 
-**Syntax:** ` `disableThirdPartyCalls: true false`` (Standard ist `false`.)
+**Syntax:** ` `disableThirdPartyCalls: true|false`` (Standard ist `false`.)
 
 Bei `disableThirdPartyCalls: true` gibt der ID-Dienst keine Aufrufe an andere Domänen aus.
 
