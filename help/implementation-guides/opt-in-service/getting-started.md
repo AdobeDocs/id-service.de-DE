@@ -39,7 +39,7 @@ Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösung
    For IAB, see here for additional pre-reqs.
    -->
 
-1. Die Datenschutzanforderungen Ihrer Firma richten sich danach, für welche Art der GDPR-Konformität Sie sich entscheiden. Beachten Sie, welche vordefinierten Bibliotheken für die Datenschutz-Teams Ihrer Firma in Ordnung sind.
+1. Die Datenschutzanforderungen Ihrer Firma richten sich danach, für welche Art der DSGVO-Konformität Sie sich entscheiden. Beachten Sie, welche vordefinierten Bibliotheken für die Datenschutz-Teams Ihrer Firma in Ordnung sind.
 
 Wenn Sie [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=de) verwenden, nutzen Sie die [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md), um den Opt-in-Dienst zu konfigurieren.
 
@@ -137,7 +137,7 @@ In der [API-Dokumentation](../../implementation-guides/opt-in-service/api.md#ref
 
 ## Speichern von Besuchervoreinstellungen {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
-Der Opt-in-Dienst ist eine Möglichkeit zum Speichern von Zustimmungsvoreinstellungen, die für eine Entwicklungs- oder andere Umgebung geeignet ist, in der kein CRM verwendet werden kann. Wenn die Konfigurationseigenschaft `isOptInStorageEnabled` den Wert *true* hat, erstellt der Opt-in-Dienst ein Cookie im System des Besuchers innerhalb Ihrer Domäne.
+Der Opt-in-Dienst ist eine Möglichkeit zum Speichern von Zustimmungsvoreinstellungen, die für eine Entwicklungs- oder andere Umgebung geeignet ist, in der kein CRM verwendet werden kann. Wenn die Konfigurationseigenschaft `isOptInStorageEnabled` den Wert *true* hat, erstellt der Opt-in-Dienst ein Cookie im System des Besuchers innerhalb Ihrer Domain.
 
 Das `adobe.optIn`-Objekt ist zustandslos und bietet keinen Speichermechanismus. Stattdessen sollten Sie Adobe-Einverständniseinstellungen auf Ihrer vorhandenen Consent Management Platform (CMP) verwalten, falls diese die Speicherung benutzerdefinierter Daten ermöglicht. Oder Sie können die Besuchervoreinstellungen in einem Cookie im Browser von Besuchern speichern. Sie haben zwei Möglichkeiten, die Voreinstellungen des Benutzers an den Opt-in-Dienst zu übergeben:
 
