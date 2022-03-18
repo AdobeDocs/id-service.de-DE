@@ -18,7 +18,7 @@ Versionshinweise und Aktualisierungen für das Jahr 2015
 
 November 2015
 
-Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Online-Erfassung personenbezogener Daten von Kindern unter 13 Jahren ohne nachprüfbare elterliche Zustimmung. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. Siehe [COPPA-Unterstützung im Experience Cloud Identity-Dienst](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
+Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Online-Erfassung personenbezogener Daten von Kindern unter 13 Jahren ohne nachprüfbare elterliche Zustimmung. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. Siehe [COPPA-Unterstützung im Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -32,7 +32,7 @@ September 2015
 August 2015
 
 * Ein Fehler wurde behoben, um zu verhindern, dass der ID-Dienst ein iframe anfordert, wenn keine zu synchronisierenden oder auszulösenden Daten vorhanden sind. (AAM-20164)
-* Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domain-Cookies nicht ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domäne wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
+* Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domain-Cookies nicht ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domain wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
 
    Dies betraf nur einige Clients, die *alle* der folgenden Kriterien erfüllten:
 
@@ -44,7 +44,7 @@ August 2015
 Dokumentationsüberarbeitungen in dieser Version umfassen:
 
 * [API-Methoden und Codebibliothek](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Reorganisierter Inhalt und Text. In den meisten Fällen erhält jede Methode eine eigene Seite.
-* [Anforderungen für den Experience Cloud Identity-Dienst](../reference/requirements.md): Überarbeiteter Inhalt und neu organisierter Text.
+* [Anforderungen für den Experience Cloud Identity Service](../reference/requirements.md): Überarbeiteter Inhalt und neu organisierter Text.
 
 ## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
