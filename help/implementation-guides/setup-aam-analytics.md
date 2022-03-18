@@ -1,7 +1,7 @@
 ---
-description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
 keywords: ID-Dienst
-title: Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager
+title: Implementieren des Experience Cloud Identity Services für Analytics und Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: ht
@@ -10,9 +10,9 @@ ht-degree: 100%
 
 ---
 
-# Implementieren des Experience Cloud Identity-Diensts für Analytics und Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Implementieren des Experience Cloud Identity Services für Analytics und Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
 
 >[!IMPORTANT]
 >
@@ -192,9 +192,9 @@ Sie können dies wie folgt testen und bereitstellen.
 
 Prüfen Sie zum Testen Ihrer ID-Dienstimplementierung Folgendes:
 
-* [AMCV-Cookie](../introduction/cookies.md) in der Domäne, auf der Ihre Seiten gehostet werden.
+* [AMCV-Cookie](../introduction/cookies.md) in der Domain, auf der Ihre Seiten gehostet werden.
 * MID-Wert in der Analytics-Bildanforderung mit dem [Adobe-Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=de).
-* Siehe auch [Testen und Überprüfen des Experience Cloud Identity-Diensts](../implementation-guides/test-verify.md).
+* Siehe auch [Testen und Überprüfen des Experience Cloud Identity Services](../implementation-guides/test-verify.md).
 
 Informationen zum Überprüfen der Server-seitigen Weiterleitung finden Sie unter [Überprüfen der Server-seitigen Weiterleitung](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html?lang=de).
 
