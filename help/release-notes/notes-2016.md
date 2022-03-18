@@ -1,5 +1,5 @@
 ---
-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2016.
+description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity Services im Jahr 2016.
 keywords: ID-Dienst
 title: Versionshinweise für 2016
 exl-id: f96b9869-6282-4090-b392-797608e25a51
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Versionshinweise für 2016 {#release-notes}
 
-Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2016.
+Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity Services im Jahr 2016.
 
 Diese Änderungen finden Sie auch in den [Experience Cloud-Versionshinweisen](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de).
 
@@ -23,7 +23,7 @@ November 2016
 >[!IMPORTANT]
 >
 >* Für Version 1.10 wird [!UICONTROL AppMeasurement] 1.8.0 benötigt.
->* Ab Experience Cloud Identity-Dienst-Bibliothek 2.0.0 beginnt die ID-Synchronisierung für Adobe Media Optimizer automatisch. Weitere Informationen finden Sie unter [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](/help/introduction/match-rates.md).
+>* Ab Experience Cloud Identity Service-Bibliothek 2.0.0 beginnt die ID-Synchronisierung für Adobe Media Optimizer automatisch. Weitere Informationen finden Sie unter [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](/help/introduction/match-rates.md).
 
 
 **Fehlerbehebungen und Verbesserungen**
@@ -76,7 +76,7 @@ August 2016
 
 **Neue und überarbeitete Dokumentation**
 
-Überarbeitet: [Anforderungen an den Experience Cloud Identity-Service](../reference/requirements.md)
+Überarbeitet: [Anforderungen an den Experience Cloud Identity Service](../reference/requirements.md)
 
 **Bekannte Probleme**
 
@@ -100,9 +100,9 @@ Juli 2016
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Cross-Origin Resource Sharing (CORS) </p> </td> 
-   <td colname="col2"> <p>Mit CORS können Browser Ressourcen von einer anderen Domäne als der aktuellen anfordern. Der Experience Cloud Identity-Dienst bietet Unterstützung für CORS-Standards und ermöglicht somit clientseitige, ursprungsübergreifende Ressourcenanforderungen. Der ID-Dienst greift bei Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück. </p> <p>Siehe: </p> 
+   <td colname="col2"> <p>Mit CORS können Browser Ressourcen von einer anderen Domain als der aktuellen anfordern. Der Experience Cloud Identity Service bietet Unterstützung für CORS-Standards und ermöglicht somit clientseitige, ursprungsübergreifende Ressourcenanforderungen. Der ID-Dienst greift bei Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück. </p> <p>Siehe: </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">CORS-Unterstützung im Experience Cloud Identity-Dienst</a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">CORS-Unterstützung im Experience Cloud Identity Service</a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -122,8 +122,8 @@ Juli 2016
 
 **Neu**
 
-* [Implementieren des Experience Cloud Identity-Diensts für Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Implementieren des Experience Cloud Identity-Diensts für Analytics, Audience Manager und Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Implementieren des Experience Cloud Identity Services für Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Überarbeitet**
 
@@ -173,7 +173,7 @@ April 2016
 
 **Dokumentation – Aktualisierungen**
 
-[Implementieren des Experience Cloud Identity-Diensts für Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Implementieren des Experience Cloud Identity Services für Target](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## Version 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -193,16 +193,16 @@ März 2016
   </tr> 
   <tr> 
    <td colname="col1"> <p> Änderung des ID-Synchronisierungsintervalls </p> </td> 
-   <td colname="col2"> <p>Der <span class="keyword">Experience Cloud ID</span>-Dienst führt ID-Synchronisierungsaufrufe nun bei jedem Aufruf der Datenerfassungsserver durch. Zuvor gab der ID-Dienst nur eine Anforderung beim ersten Aufruf auf, um eine <span class="keyword">Experience Cloud</span> ID zu erhalten. </p> </td> 
+   <td colname="col2"> <p>Der <span class="keyword">Experience Cloud ID</span>-Service führt ID-Synchronisierungsaufrufe nun bei jedem Aufruf der Datenerfassungsserver durch. Zuvor gab der ID-Dienst nur eine Anforderung beim ersten Aufruf auf, um eine <span class="keyword">Experience Cloud</span> ID zu erhalten. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Dokumentation – Aktualisierungen**
 
-* [Implementierung des Experience Cloud Identity-Diensts für](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd): Neue Vorgehensweise, die die Einrichtung des ID-Diensts mit Analytics [!DNL Analytics] beschreibt.
+* [Implementierung des Experience Cloud Identity Services für](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd): Neue Vorgehensweise, die die Einrichtung des ID-Diensts mit Analytics [!DNL Analytics] beschreibt.
 
-* [Entscheidungspunkte zur Experience Cloud Identity-Dienstmigration](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): Überarbeiteter Text für mehr Klarheit. Wenn Sie mit nur einen Domäne arbeiten, können Sie einen Datenerfassungs-CNAME eliminieren, wenn Sie ihn nicht mehr unterhalten möchten. Wenn Ihr CNAME funktioniert, ist dies jedoch nicht notwendig.
+* [Entscheidungspunkte zur Experience Cloud Identity Servicemigration](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): Überarbeiteter Text für mehr Klarheit. Wenn Sie mit nur einen Domain arbeiten, können Sie einen Datenerfassungs-CNAME eliminieren, wenn Sie ihn nicht mehr unterhalten möchten. Wenn Ihr CNAME funktioniert, ist dies jedoch nicht notwendig.
 
 ## Version 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
