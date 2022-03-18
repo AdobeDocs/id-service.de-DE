@@ -1,7 +1,7 @@
 ---
-description: Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+description: Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
 keywords: ID-Dienst
-title: Implementieren des Experience Cloud Identity-Diensts für Target
+title: Implementieren des Experience Cloud Identity Services für Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: ht
@@ -10,9 +10,9 @@ ht-degree: 100%
 
 ---
 
-# Implementieren des Experience Cloud Identity-Diensts für Target{#implement-the-experience-cloud-id-service-for-target}
+# Implementieren des Experience Cloud Identity Services für Target{#implement-the-experience-cloud-id-service-for-target}
 
-Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
 
 >[!IMPORTANT]
 >
@@ -71,10 +71,10 @@ Sie können dies wie folgt testen und bereitstellen.
 
 So testen Sie Ihre ID-Dienstimplementierung:
 
-* Suchen Sie in der Domäne, auf der Ihre Seite gehostet wird, nach dem AMCV-Cookie.
+* Suchen Sie in der Domain, auf der Ihre Seite gehostet wird, nach dem AMCV-Cookie.
 * Sicherstellen, dass `mboxMCGVID` in Ihrer [!DNL Target]-Anforderung erscheint und dass es die [!DNL Experience Cloud]-ID (MID) enthält.
 
-Weitere Informationen zu AMCV-Cookie und MID siehe [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md)
+Weitere Informationen zu AMCV-Cookie und MID siehe [Cookies und der Experience Cloud Identity Service](../introduction/cookies.md)
 
 **Bereitstellen**
 
