@@ -1,5 +1,5 @@
 ---
-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2018.
+description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity Services im Jahr 2018.
 keywords: ID-Dienst
 title: Versionshinweise für 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Versionshinweise für 2018 {#release-notes}
 
-Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts im Jahr 2018.
+Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity Services im Jahr 2018.
 
 ## Version 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -68,7 +68,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Unrealistischer Anstieg der Unique-Visitor-Anzahl </p> </td> 
-   <td colname="col2"> <p>Bei Version 3.1.0 des Experience Cloud Identity-Diensts haben wir ein Problem erkannt, das bei Implementierung der Version zu einem unrealistischen Anstieg der Unique-Visitor-Anzahl führte. Dieses Verhalten tritt nur bei aktuellen Version von ECID, Version 3.1.0, auf, und wenn Benutzer in den Datenschutzeinstellungen des Safari-Browsers die Option „Nur von der aktuellen Website zulassen“ ausgewählt haben. In Version 3.1.2 ist dieses Problem behoben. </p> </td> 
+   <td colname="col2"> <p>Bei Version 3.1.0 des Experience Cloud Identity Services haben wir ein Problem erkannt, das bei Implementierung der Version zu einem unrealistischen Anstieg der Unique-Visitor-Anzahl führte. Dieses Verhalten tritt nur bei aktuellen Version von ECID, Version 3.1.0, auf, und wenn Benutzer in den Datenschutzeinstellungen des Safari-Browsers die Option „Nur von der aktuellen Website zulassen“ ausgewählt haben. In Version 3.1.2 ist dieses Problem behoben. </p> </td> 
   </tr> 
  </tbody> 
 </table>
