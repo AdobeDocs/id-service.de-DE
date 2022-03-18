@@ -1,5 +1,5 @@
 ---
-description: Häufig gestellte Fragen zu den Funktionen und Problemen bezüglich Analytics und des Experience Cloud Identity-Diensts.
+description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und den Problemen bezüglich Analytics und des Experience Cloud Identity Services.
 keywords: Experience Cloud Identity-Service
 title: Häufig gestellte Fragen zu Analytics und zum Identity-Dienst
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
@@ -34,7 +34,7 @@ Es ändert sich nichts für Benutzer, die bereits durch den Identity-Dienst iden
 
 Wenn eine Haupteinstiegssite vorhanden ist, über die Kunden vor dem Besuch weiterer Domänen identifiziert werden können, besteht die Möglichkeit, per CNAME das domänenübergreifende Tracking für Browser zu aktivieren, die keine Drittanbieter-Cookies akzeptieren (z. B. Safari).
 
-In Browsern, die Cookies von Drittanbietern akzeptieren, wird bei der Anforderung, eine Besucher-ID abzurufen, ein Cookie in der [Domäne demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de) gesetzt. Mit diesem Cookie kann der Identity-Dienst für alle Domänen, die mit derselben Organisations-ID konfiguriert sind, dieselbe Experience Cloud-Besucher-ID zurückgeben. Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domäne eine neue Experience Cloud-Besucher-ID zugewiesen.
+In Browsern, die Cookies von Drittanbietern akzeptieren, wird bei der Anforderung, eine Besucher-ID abzurufen, ein Cookie in der [Domain demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de) gesetzt. Mit diesem Cookie kann der Identity-Dienst für alle Domänen, die mit derselben Organisations-ID konfiguriert sind, dieselbe Experience Cloud-Besucher-ID zurückgeben. Für Browser, die keine Drittanbieter-Cookies akzeptieren, wird für jede Domain eine neue Experience Cloud-Besucher-ID zugewiesen.
 
 Selbst wenn ein CNAME konfiguriert ist und die Haupteinstiegssite nicht zuerst besucht wird, werden Besucher in Browsern, die keine Drittanbieter-Cookies akzeptieren, auf der sekundären Site und auf der Haupt-Site unterschiedlich identifiziert.
 
