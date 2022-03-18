@@ -16,7 +16,7 @@ Konfigurieren Sie den ID-Dienst, indem Sie diese Eigenschaften an die statische 
 
 >[!NOTE]
 >
->Die *Javascript-Bibliotheken des Experience Cloud ID-Diensts* wurden vor Kurzem verschoben. Die aktuelle Version der ECID JS-Bibliotheken finden Sie unter [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>Die *Javascript-Bibliotheken des Experience Cloud ID-Service* wurden vor Kurzem verschoben. Die aktuelle Version der ECID JS-Bibliotheken finden Sie unter [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
 
 Verwandte Artikel:
 
