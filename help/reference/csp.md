@@ -33,7 +33,7 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloud-Lösung oder -Dienst </th> 
+   <th colname="col1" class="entry"> Experience Cloud-Lösung oder -Service </th> 
    <th colname="col2" class="entry"> Beschreibung </th> 
   </tr> 
  </thead>
@@ -58,7 +58,7 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li></ul></p> <p>Aufrufe der Domain <span class="codeph">demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity-Diensts</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Aufrufe an die Domäne „demdex.net“</a>. </p> </td> </tr> 
+   <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li></ul></p> <p>Aufrufe der Domain <span class="codeph">demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity Services</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Aufrufe an die Domain „demdex.net“</a>. </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map-Plugin</b> </p> </td> 
  <td colname="col2"> <p>Nehmen Sie *.adobe.com in Ihre CSP auf. **Hinweis**: Wenn Activity Map bereits vor Januar 2020 installiert wurde, wird im Browser weiterhin zuerst eine Anfrage an *.omniture.com angezeigt, die jedoch an *.adobe.com weitergeleitet wird. </p></td> 
