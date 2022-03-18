@@ -1,5 +1,5 @@
 ---
-description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Dienst wie erwartet funktioniert.
+description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Service wie erwartet funktioniert.
 title: Überprüfen des Opt-in-Dienstes
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Überprüfen des Opt-in-Dienstes{#validating-opt-in-service}
 
-Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Dienst wie erwartet funktioniert.
+Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Service wie erwartet funktioniert.
 
 ## Nutzungsszenario 1: Opt-in aktivieren {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
