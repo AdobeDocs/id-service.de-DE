@@ -20,7 +20,7 @@ Stellen Sie sicher, dass sowohl die Experience Cloud-Besucher-ID als auch die An
 
 >[!IMPORTANT]
 >
->AppMeasurement for Java unterstützt den Experience Cloud Identity-Dienst derzeit nicht.
+>AppMeasurement for Java unterstützt den Experience Cloud Identity Service derzeit nicht.
 
 ## Dateneinfüge-API {#section-955ce7664a4646d38b3005cb2df40baf}
 
@@ -32,4 +32,4 @@ Siehe [Unterstützte XML-Tags](https://www.adobe.io).
 
 ## AppMeasurement für Java {#section-d664b94934924d048300d9c2b6560085}
 
-Der Experience Cloud Identity-Dienst wird von AppMeasurement für Java derzeit nicht unterstützt.
+Der Experience Cloud Identity Service wird von AppMeasurement für Java derzeit nicht unterstützt.
