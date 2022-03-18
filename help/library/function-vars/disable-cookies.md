@@ -1,5 +1,5 @@
 ---
-description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud Identity-Dienst das Drittanbieter-Cookie demdex.net zurückgibt.
+description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud Identity Service das Drittanbieter-Cookie demdex.net zurückgibt.
 keywords: ID-Dienst
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # disableThirdPartyCookies{#disablethirdpartycookies}
 
-Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud Identity-Dienst das Drittanbieter-Cookie demdex.net zurückgibt.
+Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Cloud Identity Service das Drittanbieter-Cookie demdex.net zurückgibt.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Eine optionale boolesche Kennzeichnung, die verhindert, dass der Experience Clou
 
 **Syntax:** `disableThirdPartyCookies: true|false` (Standard ist `false`.) Für `VisitorAPI.js` Version 3.0.0 oder höher.
 
-Wenn `disableThirdPartyCookies: true`, gibt der ID-Dienst das Drittanbieter-Cookie demdex.net nicht zurück (siehe [Cookies und der Experience Cloud Identity-Dienst](../../introduction/cookies.md)). Sollte der Cookie bereits im Browser des Besuchers gespeichert sein, wird dieser vom ID-Dienst nicht zur Erstellung einer neuen Experience Cloud ID (MID) oder Ausgabe einer bestehenden ID eingesetzt. Stattdessen wird vom ID-Dienst eine neue, zufällige MID im Erstanbieter-Cookie erstellt. Nach der Aktivierung können Sie mit dem ID-Dienst Daten erfassen und sie über verschiedene Experience Cloud-Lösungen hinweg freigeben.
+Wenn `disableThirdPartyCookies: true`, gibt der ID-Dienst das Drittanbieter-Cookie demdex.net nicht zurück (siehe [Cookies und der Experience Cloud Identity Service](../../introduction/cookies.md)). Sollte der Cookie bereits im Browser des Besuchers gespeichert sein, wird dieser vom ID-Dienst nicht zur Erstellung einer neuen Experience Cloud ID (MID) oder Ausgabe einer bestehenden ID eingesetzt. Stattdessen wird vom ID-Dienst eine neue, zufällige MID im Erstanbieter-Cookie erstellt. Nach der Aktivierung können Sie mit dem ID-Dienst Daten erfassen und sie über verschiedene Experience Cloud-Lösungen hinweg freigeben.
 
 **Codebeispiel**
 
