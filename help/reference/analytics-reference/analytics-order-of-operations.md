@@ -47,7 +47,7 @@ In vielen Szenarios können für einen Aufruf zwei oder drei verschiedene IDs vo
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5.<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html?lang=de" format="http" scope="external"> IP-Adresse, Benutzeragent, Gateway-IP-Adresse</a> </p> </td> 
    <td colname="col3"> <p>der Browser des Besuchers keine Cookies akzeptiert. </p> </td> 
   </tr> 
  </tbody> 
