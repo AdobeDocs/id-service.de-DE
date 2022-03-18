@@ -44,11 +44,11 @@ Die vom Besucher ausdrücklich festgelegten Voreinstellungen. Die Berechtigungen
 
 **`isOptInStorageEnabled (boolean)`**
 
-Ermöglicht Opt-in, die Berechtigungen in einem Erstanbieter-Cookie (in der Domäne des aktuellen Kunden) zu speichern.
+Ermöglicht Opt-in, die Berechtigungen in einem Erstanbieter-Cookie (in der Domain des aktuellen Kunden) zu speichern.
 
 (Optional) **`optInCookiesDomain (string)`**
 
-Erstanbieterdomäne oder untergeordnete Domäne, die für den Opt-in-Cookie verwendet wird (wenn für `isOptInStorageEnabled` „true“ festgelegt wurde).
+Erstanbieterdomäne oder untergeordnete Domain, die für den Opt-in-Cookie verwendet wird (wenn für `isOptInStorageEnabled` „true“ festgelegt wurde).
 
 (Optional) **`optInStorageExpiry (integer)`**
 
