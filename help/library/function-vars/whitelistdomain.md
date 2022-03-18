@@ -1,5 +1,5 @@
 ---
-description: Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame und auf der übergeordneten Seite implementiert sind, miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in Version 2.2 (oder höher) des VisitorAPI.js-Codes verfügbar.
+description: Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame und auf der übergeordneten Seite implementiert sind, miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domain verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domain geladen wird. Sie sind in Version 2.2 (oder höher) des VisitorAPI.js-Codes verfügbar.
 keywords: ID-Dienst
 title: whitelistParentDomain und whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # whitelistParentDomain und whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
-Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame und auf der übergeordneten Seite implementiert sind, miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domäne verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domäne geladen wird. Sie sind in Version 2.2 (oder höher) des VisitorAPI.js-Codes verfügbar.
+Mit diesen Konfigurationen können verschiedene Instanzen des ID-Dienst-Codes, die in einem iFrame und auf der übergeordneten Seite implementiert sind, miteinander kommunizieren. Sie sollen dabei helfen, Probleme in zwei konkreten Nutzungsszenarios zu lösen, in denen Sie die übergeordnete Seite/Domain verwalten oder auch nicht und bei denen ID-Dienstcode im iFrame einer von Ihnen verwalteten Domain geladen wird. Sie sind in Version 2.2 (oder höher) des VisitorAPI.js-Codes verfügbar.
 
 Inhalt:
 
@@ -67,7 +67,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu setzen und eine Besucher-ID zuzuweisen, wenn Browser Drittanbieter-Cookies blockieren und eine der folgenden Bedingungen zutrifft:
 
-* Sie steuern die übergeordnete Seite/Domäne oder steuern sie nicht.
+* Sie steuern die übergeordnete Seite/Domain oder steuern sie nicht.
 * Der ID-Dienst-Code wird nicht auf der übergeordneten Seite installiert, sondern in einem iFrame implementiert.
 
 >[!TIP]
@@ -124,7 +124,7 @@ Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu set
    <td colname="col2"> <p>Dieses Nutzungsszenario schließt die folgenden Bedingungen ein: </p> <p> 
      <ul id="ul_356E8FB0B1D14F46A844FE5281967E28"> 
       <li id="li_1285D945361842268B46FB492A3B5AA5">Firma A verwendet den ID-Dienst nicht. </li> 
-      <li id="li_880D6D473F8342FF9BB49FCE111FD61A">Firma A lädt einen iFrame auf die Seite. Dieser iFrame gehört Firma B und wird in einer anderen Domäne als Firma A geladen. </li> 
+      <li id="li_880D6D473F8342FF9BB49FCE111FD61A">Firma A lädt einen iFrame auf die Seite. Dieser iFrame gehört Firma B und wird in einer anderen Domain als Firma A geladen. </li> 
       <li id="li_7988F0272B094FE0B398006AD4E6F81B">Der Browser blockiert Drittanbieter-Cookies. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -133,7 +133,7 @@ Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu set
    <td colname="col2"> <p>Unter diesen Bedingungen gilt für den ID-Dienst: </p> <p> 
      <ul id="ul_A92D90896E5A42C5804AC5CE83E8EB25"> 
       <li id="li_9734EA9C5D9D4F908DE783188C9E5530">Funktioniert nicht im iFrame. Dies liegt daran, dass der Browser den iFrame als Drittanbieterdomäne ansieht und den ID-Dienst daran hindert, das AMCV-Cookie zu setzen. </li> 
-      <li id="li_3F4BE9048E774902A867D67E5A80674D">Es kann keine Besucher-ID von der übergeordneten Seite abgerufen werden, da Firma A diesen Dienst nicht verwendet. </li> 
+      <li id="li_3F4BE9048E774902A867D67E5A80674D">Es kann keine Besucher-ID von der übergeordneten Seite abgerufen werden, da Firma A diesen Service nicht verwendet. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
@@ -147,8 +147,8 @@ Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu set
 
 Sie können diese Konfigurationen aus folgenden Gründen sicher implementieren:
 
-* Der in der übergeordneten Domäne implementierte ID-Dienst und die iFrame-Domäne müssen dieselbe Organisations-ID verwenden. Diese Whitelist-Konfigurationen funktionieren nicht, wenn die Organisations-IDs auf der übergeordneten Seite oder im iFrame unterschiedlich sind.
-* Diese Konfigurationen kommunizieren nur mit der Domäne und den iFrames, die im Code angegeben sind.
+* Der in der übergeordneten Domain implementierte ID-Dienst und die iFrame-Domäne müssen dieselbe Organisations-ID verwenden. Diese Whitelist-Konfigurationen funktionieren nicht, wenn die Organisations-IDs auf der übergeordneten Seite oder im iFrame unterschiedlich sind.
+* Diese Konfigurationen kommunizieren nur mit der Domain und den iFrames, die im Code angegeben sind.
 * Die Kommunikation zwischen dem iFrame und der übergeordneten Seite folgt einem bestimmten Format. Wenn der ID-Dienst auf der übergeordneten Seite keine Anforderung im erwarteten Format erhält, schlägt dieser Freigabeprozess fehl.
 
 ## Unterstützte Besucher-API-Methoden  {#section-30c6a9f4dcdc4265a1149260b97cc057}
