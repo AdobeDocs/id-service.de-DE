@@ -1,5 +1,5 @@
 ---
-description: Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vor der Implementierung des Experience Cloud Identity-Diensts im s_vi-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
+description: Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vor der Implementierung des Experience Cloud Identity Services im s_vi-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
 keywords: ID-Dienst
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vor der Implementierung des Experience Cloud Identity-Diensts im s_vi-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
+Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vor der Implementierung des Experience Cloud Identity Services im s_vi-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
 
 **Syntax** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
