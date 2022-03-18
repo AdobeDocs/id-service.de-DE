@@ -1,5 +1,5 @@
 ---
-description: Informationen über andere Funktionen des Experience Cloud Identity-Diensts.
+description: Informationen über andere Funktionen des Experience Cloud Identity Services.
 keywords: ID-Dienst
 title: Referenz
 exl-id: 9a14300c-206c-4960-b594-517809f7e979
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Referenz {#reference}
 
-Informationen über andere Funktionen des Experience Cloud Identity-Diensts.
+Informationen über andere Funktionen des Experience Cloud Identity Services.
 
 * [Analytics-Referenzübersicht](analytics-reference/analytics-reference.md)
 * [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Service](csp.md)
