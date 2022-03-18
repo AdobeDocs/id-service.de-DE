@@ -41,7 +41,7 @@ Im Folgenden werden das Verhalten der ECID-Bibliothek mit ITP 2.1 und die neuest
 
 **Design**
 
-Sobald eine ID-Anforderung an demdex.net gesendet und eine ECID abgerufen wird, wird eine ID-Anforderung an die Domäne des Kunden gesendet, sofern ein Trackingserver in Ihrer ECID-Bibliothek eingerichtet ist. Dieser Endpunkt liest den ecid-Parameter aus der Abfragezeichenfolge und setzt ein neues [Cookie](/help/introduction/cookies.md), das nur die ECID und ein Ablaufdatum umfasst, das zwei Jahre in der Zukunft liegt. Jedes Mal, wenn dieser Endpunkt auf diese Weise aufgerufen wird, wird das `s_ecid`-Cookie mit einem Ablaufdatum von zwei Jahren ab dem Zeitpunkt dieses Aufrufs umgeschrieben. Die ECID-Bibliothek muss auf Version 4.3.0 aktualisiert werden, damit der Wert dieses Cookies abgerufen werden kann.
+Sobald eine ID-Anforderung an demdex.net gesendet und eine ECID abgerufen wird, wird eine ID-Anforderung an die Domain des Kunden gesendet, sofern ein Trackingserver in Ihrer ECID-Bibliothek eingerichtet ist. Dieser Endpunkt liest den ecid-Parameter aus der Abfragezeichenfolge und setzt ein neues [Cookie](/help/introduction/cookies.md), das nur die ECID und ein Ablaufdatum umfasst, das zwei Jahre in der Zukunft liegt. Jedes Mal, wenn dieser Endpunkt auf diese Weise aufgerufen wird, wird das `s_ecid`-Cookie mit einem Ablaufdatum von zwei Jahren ab dem Zeitpunkt dieses Aufrufs umgeschrieben. Die ECID-Bibliothek muss auf Version 4.3.0 aktualisiert werden, damit der Wert dieses Cookies abgerufen werden kann.
 
 >[!IMPORTANT]
 >
@@ -65,7 +65,7 @@ Mit dieser Funktion können Sie die ECID domänenübergreifend freigeben, wenn B
 
 * Wenn ein Besucher zu Ihren anderen Domänen navigiert, gibt Visitor.appendVisitorIDsTo(url) eine URL zurück, bei der ECID als Abfrageparameter angehängt ist.
 
-   Verwenden Sie diese URL zur Umleitung von der ursprünglichen Domäne zur Zieldomäne.
+   Verwenden Sie diese URL zur Umleitung von der ursprünglichen Domain zur Zieldomäne.
 
 * Der ID-Dienstcode auf der Zieldomäne extrahiert die ECID aus der URL, statt bei Adobe eine neue Besucher-ID anzufordern.
 
