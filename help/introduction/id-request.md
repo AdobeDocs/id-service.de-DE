@@ -4,7 +4,7 @@ keywords: ID-Service
 title: Anfordern und Festlegen von IDs durch den Experience Cloud Identity Service
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ In den folgenden Beispielen wird dargestellt, wie der ID-Service die Experience 
 
 **Erste Anfrage**
 
-In diesem Beispiel kommt ein neuer Besucher zur Pizza-Site, die von der Food Company verwaltet wird. Die Food Company hat auf der Pizza-Site ID-Service-Code implementiert. Beim Laden der Site wird vom ID-Service-Code das AMCV-Cookie in der Pizzadomäne gesucht.
+In diesem Beispiel kommt ein neuer Besucher zur Pizza-Site, die von der Food Company verwaltet wird. Die Food Company hat auf der Pizza-Site ID-Service-Code implementiert. Beim Laden der Site wird vom ID-Dienst-Code das AMCV-Cookie in der Pizzadomäne gesucht.
 
 * Ist das AMCV-Cookie gesetzt, verfügt der Site-Besucher über eine Experience Cloud ID. In diesem Fall verfolgt das Cookie den Besucher und teilt Daten mit anderen Experience Cloud-Lösungen.
 * Wenn das AMCV-Cookie nicht gesetzt ist, ruft der ID-Servicecode einen regionalen [Datenerfassungs-Server](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=de) (DCS) unter `dpm.demdex.net/id` auf (siehe auch [Aufrufe an die Domain Demdex](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de)). Im Aufruf enthalten ist auch die Organisations-ID der Food Company. Die Organisations-ID wird in der Funktion `Visitor.getInstance` des ID-Service-Codes festgelegt.
@@ -47,7 +47,7 @@ Wie Sie im nächsten Beispiel sehen werden, ermöglichen die demdex-ID und die O
 
 In diesem Beispiel navigiert der Besucher der Food Company von der Pizza-Site zur Taco-Site. Die Food Company hat auf der Taco-Site ID-Service-Code implementiert. Der Besucher war noch nie auf der Taco-Website.
 
-Unter diesen Bedingungen gibt es auf der Taco-Site kein AMCV-Cookie. Der ID-Service kann das auf der Pizza-Site festgelegte AMCV-Cookie nicht verwenden, da es spezifisch für die Pizzadomäne ist. Daher muss der ID-Service den DCS aufrufen, um eine Besucher-ID zu suchen und anzufordern. In diesem Fall enthält der DCS-Aufruf die Organisations-ID der Food Company *und* die demdex-ID. Denken Sie daran, dass die demdex-ID von der Pizza-Site abgerufen und als Drittanbieter-Cookie unter der Domäne „demdex.net“ gespeichert wird.
+Unter diesen Bedingungen gibt es auf der Taco-Site kein AMCV-Cookie. Der ID-Service kann das auf der Pizza-Site festgelegte AMCV-Cookie nicht verwenden, da es spezifisch für die Pizzadomäne ist. Daher muss der ID-Service den DCS aufrufen, um eine Besucher-ID zu suchen und anzufordern. In diesem Fall enthält der DCS-Aufruf die Organisations-ID der Food Company *und* die demdex-ID. Denken Sie daran, dass die demdex-ID von der Pizza-Site abgerufen und als Drittanbieter-Cookie unter der Domain „demdex.net“ gespeichert wird.
 
 ![](assets/request2.png)
 
