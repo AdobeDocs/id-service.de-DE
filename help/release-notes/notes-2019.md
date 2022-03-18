@@ -1,5 +1,5 @@
 ---
-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
+description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity Services.
 keywords: ID-Dienst
 title: Versionshinweise für 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Versionshinweise zu Experience Cloud – 2019 {#release-notes}
 
-Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity-Diensts.
+Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity Services.
 
 ## Version 4.4.1
 
