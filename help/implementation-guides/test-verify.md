@@ -28,9 +28,9 @@ Alternativ können Sie den ID-Dienst in einer anonymen oder Inkognito-Browsersit
 
 Der [Adobe-Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=de) und der [Charles-HTTP-Proxy](https://www.charlesproxy.com/) können Ihnen dabei helfen festzustellen, ob der ID-Dienst für Analytics richtig konfiguriert wurde. Die Informationen in diesem Abschnitt basieren auf den durch den Adobe-Debugger und Charles zurückgegebenen Ergebnissen. Sie können jedoch frei entscheiden, welches Tool oder welcher Debugger für Sie optimal ist.
 
-## Testen mit dem Adobe-Debugger  {#section-861365abc24b498e925b3837ea81d469}
+## Testen mit dem Adobe-Debugger {#section-861365abc24b498e925b3837ea81d469}
 
-Ihre Dienstintegration ist richtig konfiguriert, wenn in der [!DNL Adobe]-Debugger-Antwort eine [!DNL Experience Cloud ID] (MID) angezeigt wird. Siehe [Cookies und der Experience Cloud Identity-Dienst](../introduction/cookies.md) mit weiteren Informationen zur MID.
+Ihre Dienstintegration ist richtig konfiguriert, wenn in der [!DNL Adobe]-Debugger-Antwort eine [!DNL Experience Cloud ID] (MID) angezeigt wird. Siehe [Cookies und der Experience Cloud Identity Service](../introduction/cookies.md) mit weiteren Informationen zur MID.
 
 So überprüfen Sie den Status des ID-Diensts mit dem [!DNL Adobe] [-Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=de):
 
