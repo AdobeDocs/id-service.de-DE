@@ -45,7 +45,7 @@ Container sind Objekte, die von [!DNL Audience Manager] erstellt werden. Obwohl 
 * für Sie verfügbar sind, jedoch nicht für die ID-Synchronisierung verwendet werden. 
 * die für die ID-Synchronisierung verwendet werden.
 
-Auch wenn Sie kein [!DNL Audience Manager]-Kunde sind, enthält Ihr Konto diese Container, wenn Sie IDs mit verschiedenen Datenquellen auf unterschiedlichen Seiten in Ihrer Domäne austauschen. Der Grund dafür ist, dass [!DNL Audience Manager] die Technologie und die Backend-Funktionalität zur Verfügung stellt, die eine ID-Synchronisierung ermöglichen.
+Auch wenn Sie kein [!DNL Audience Manager]-Kunde sind, enthält Ihr Konto diese Container, wenn Sie IDs mit verschiedenen Datenquellen auf unterschiedlichen Seiten in Ihrer Domain austauschen. Der Grund dafür ist, dass [!DNL Audience Manager] die Technologie und die Backend-Funktionalität zur Verfügung stellt, die eine ID-Synchronisierung ermöglichen.
 
 **Nutzungsszenarios**
 
