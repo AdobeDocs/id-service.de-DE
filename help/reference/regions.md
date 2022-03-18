@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Das AMCV-Cookie enthält die Experience Cloud ID (MID) und eine Regions-ID für Ihre Sitebesucher. Diese IDs werden als Schlüssel-Wert-Paare gespeichert. Die mid:user-ID enthält die Experience Cloud ID des Besuchers. Die aamlh:region-ID enthält die Regions-ID Ihrer Sitebesucher. Sie können diese Informationen durch Analyse des AMCV-Cookies wiederherstellen.
 
-Weitere Informationen finden Sie unter [Abrufen von Benutzer-IDs und Regionen über den Experience Cloud Identity-Dienst](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-mcid-ids.html?lang=de).
+Weitere Informationen finden Sie unter [Abrufen von Benutzer-IDs und Regionen über den Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-mcid-ids.html?lang=de).
 
 Als [!DNL Audience Manager]-Kunde können Sie die Regions-ID aus der Antwort abrufen, die durch den Datenerfassungsserver (Data Collection Server, DCS) gesendet wurde. Siehe [Abrufen von Benutzer-IDs und Regionen aus einer DCS-Antwort](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-aam-ids.html?lang=de).
 
