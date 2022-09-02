@@ -1,16 +1,16 @@
 ---
 description: Konfigurieren Sie den ID-Dienst, indem Sie diese Eigenschaften an die statische Methode Visitor.getInstance übergeben.
-keywords: Organisations-ID, ID-Dienst
+keywords: Organisations-ID;ID-Dienst
 title: Konfigurationen
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '85'
+ht-degree: 100%
 
 ---
 
-# Konfigurationen{#configurations}
+# Konfigurationen {#configurations}
 
 Konfigurieren Sie den ID-Dienst, indem Sie diese Eigenschaften an die statische Methode Visitor.getInstance übergeben.
 
