@@ -6,7 +6,7 @@ breadcrumb-title: Identity Service-Anleitung
 user-guide-description: Der ID-Dienst bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Experience Cloud-Lösungen hinweg. Sie kann ID-Generierungs-Code für Services wie Analytics, Audience Manager, Target und andere Experience Cloud-Lösungen oder -Funktionen ersetzen.
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
 ht-degree: 100%
 
