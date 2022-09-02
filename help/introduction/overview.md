@@ -3,9 +3,9 @@ description: Die Rolle des Experience Cloud Identity Services in Adobe Experienc
 title: Experience Cloud ID-Dienst – Übersicht
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '527'
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Zusammenfassend leistet der ID-Service Folgendes:
 
 * Er erstellt einen gemeinsamen Schlüssel oder eine gemeinsame ID, die zum Verknüpfen von Profilen und Identitäten verwendet werden kann.
 * Er identifiziert ein Gerät eindeutig in mehreren Lösungen.
-* Legt ein Erstanbieter-Cookie in der Domäne des Kunden fest, um das Tracking in derselben Domäne sicherzustellen. Weitere Informationen finden Sie im Dokument zu [Cookies und Experience Cloud Identity Service](./cookies.md).
+* Setzt ein First-Party-Cookie in der Domain des Kunden, um das Tracking auf derselben Domain sicherzustellen. Weitere Informationen finden Sie im Dokument zu [Cookies und Experience Cloud Identity Service](./cookies.md).
 * Erhalten von Aliasen und ID-Zuordnungen von Experience Cloud-Kunden und -Partnern.
 * Verwalten der ID-Synchronisierung innerhalb der Experience Cloud.
 * Unterstützen der ID-Synchronisierung mit unterschiedlichen Drittanbietern im Anzeigentechnologiesystem.
