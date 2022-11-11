@@ -3,9 +3,9 @@ description: Eine Übersicht über den ID-Anforderungs- und -Antwortprozess. Die
 keywords: ID-Service
 title: Anfordern und Festlegen von IDs durch den Experience Cloud Identity Service
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: ht
-source-wordcount: '762'
+source-wordcount: '746'
 ht-degree: 100%
 
 ---
@@ -17,8 +17,6 @@ Eine Übersicht über den ID-Anforderungs- und -Antwortprozess. Diese Beispiele 
 >[!NOTE]
 >
 >Wenn Sie nicht genau wissen, wie der Experience Cloud Identity Service die Besucher-ID erstellt, lesen Sie in [Experience Cloud](../introduction/cookies.md) nach.
-
-**Tipp:** Siehe auch unser [ID-Service-Video zum domänenübergreifenden Tracking](https://helpx.adobe.com/de/marketing-cloud-core/kb/MCID/CrossDomain.html).
 
 ## Anfordern einer Experience Cloud ID {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
