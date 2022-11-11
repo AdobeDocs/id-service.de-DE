@@ -3,8 +3,8 @@ description: Bei manchen Implementierungen werden Besucher-IDs von JavaScript an
 keywords: ID-Dienst
 title: Serverseitige Implementierung zusammen mit JavaScript
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Schließen Sie die Analytics-Besucher-ID (sofern festgelegt) in das Element `<vi
 
 Schließen Sie die Experience Cloud-Besucher-ID in das Element `<marketingCloudVisitorID>` ein.
 
-Siehe [Unterstützte XML-Tags](https://www.adobe.io).
+Siehe [Unterstützte XML-Tags](https://developer.adobe.com/).
 
 ## AppMeasurement für Java {#section-d664b94934924d048300d9c2b6560085}
 
