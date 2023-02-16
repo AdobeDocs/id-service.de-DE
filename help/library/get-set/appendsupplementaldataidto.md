@@ -4,13 +4,13 @@ keywords: ID-Dienst
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '348'
+ht-degree: 100%
 
 ---
 
-# appendSupplementalDataIDTo{#appendsupplementaldataidto}
+# appendSupplementalDataIDTo {#appendsupplementaldataidto}
 
 Bei dieser Helfermethode wird die Zusatzdaten-ID (Supplemental Data ID/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den ID-Dienst mit derselben Organisations-ID für die Quell- und Zieldomänen implementiert haben.
 
@@ -40,7 +40,7 @@ var pageB = "www.domain.com/pageB";
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 ```
 
-## Beispielausgabe   {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
+## Beispielausgabe {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
 Wie im Folgenden gezeigt, enthält die URL-Umleitung die SDID des Besuchers, Ihre Organisations-ID und einen UNIX-Zeitstempel im Aufruf an die empfangende Seite.
 
