@@ -3,10 +3,10 @@ description: Mit dieser Funktion können Sie die Experience Cloud ID eines Besuc
 keywords: ID-Dienst
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: 622f785384386e108f54b7e5381cc80f53b3ef8e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -38,6 +38,10 @@ Um dieses Problem zu lösen, implementieren Sie ` Visitor.appendVisitorIDsTo( *`
 Weitere Informationen finden Sie im Codebeispiel.
 
 ## Codebeispiel für das Anhängen von Besucher-IDs  {#section-62d55f7f986542b0b9238e483d50d7b0}
+
+>[!IMPORTANT]
+>
+>Damit die Werte, die über appendVisitorsIDsTo an die URL übergeben werden, erfasst werden, muss die Variable [overwriteCrossDomainMDCIDAndAID](../function-vars/overwrite-visitor-id.md) muss auf &quot;true&quot;gesetzt sein.
 
 Das folgende Beispiel hilft Ihnen bei den ersten Schritten mit ` Visitor.appendVisitorIDsTo( *`url`*)`. Wenn dies richtig implementiert wird, sollte Ihr JavaScript-Code etwa wie im folgenden Beispiel aussehen.
 
