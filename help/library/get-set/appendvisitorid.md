@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: 7d37d9ca44db9d7a8d3b32d9a5d5a47d3fa137ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Weitere Informationen finden Sie im Codebeispiel.
 
 >[!IMPORTANT]
 >
->Damit die Werte, die über appendVisitorsIDsTo an die URL übergeben werden, erfasst werden, muss die Variable [overwriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) muss auf &quot;true&quot;gesetzt sein.
+>Damit die Werte erfasst werden, die über appendVisitorsIDsTo in der URL übergeben werden, muss die Variable [overwriteCrossDomainMDCIDAndAID](../function-vars/overwrite-visitor-id.md) auf „true“ gesetzt sein.
 
 Das folgende Beispiel hilft Ihnen bei den ersten Schritten mit ` Visitor.appendVisitorIDsTo( *`url`*)`. Wenn dies richtig implementiert wird, sollte Ihr JavaScript-Code etwa wie im folgenden Beispiel aussehen.
 
