@@ -3,10 +3,10 @@ description: Der ID-Service verwendet Ihre Organisations-ID, das Experience Clou
 keywords: Playstation; ID-Service
 title: Cookies und der Experience Cloud Identity-Service.
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 96%
 
 ---
 
@@ -113,7 +113,9 @@ In der folgenden Tabelle werden einige wichtige Attribute des demdex-Cookies auf
  </tbody> 
 </table>
 
-Weitere Informationen finden Sie unter [Aufrufe an die Domain „demdex.net“](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de).
+Informationen zu Demdex-Offenlegungen finden Sie im [Angaben zur Aufbewahrung von Audience Managern](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+
+Weitere Informationen finden Sie in der Dokumentation unter [Aufrufe an die Domäne &quot;demdex.net&quot;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de).
 
 ## Generieren der Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
