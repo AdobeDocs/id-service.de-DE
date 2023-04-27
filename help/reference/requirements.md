@@ -3,9 +3,9 @@ description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richti
 keywords: ID-Dienst
 title: Voraussetzungen für den Experience Cloud Identity-Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
-source-wordcount: '649'
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '650'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Nicht sicher</b> </p> </td> 
-   <td colname="col2"> <p> Sollten Sie sich nicht sicher sein, welchen <span class="keyword">Experience Cloud</span>-Status Ihr Unternehmen hat, fragen Sie die das Adobe-Konto verwaltende Person, ob das Unternehmen sich unter <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a> mit einer Adobe ID anmelden kann. Funktioniert die Anmeldung, ist das Unternehmen freigeschaltet, und ein Administrator kann die Organisations-ID lesen. Die Organisations-ID finden Sie im Abschnitt „Administrationsseite“ in der <a href="https://docs.adobe.com/help/de-DE/core-services/interface/experience-cloud.html" format="https" scope="external">Experience Cloud-Verwaltung</a>. </p> </td> 
+   <td colname="col2"> <p> Sollten Sie sich nicht sicher sein, welchen <span class="keyword">Experience Cloud</span>-Status Ihr Unternehmen hat, fragen Sie die das Adobe-Konto verwaltende Person, ob das Unternehmen sich unter <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a> mit einer Adobe ID anmelden kann. Funktioniert die Anmeldung, ist das Unternehmen freigeschaltet, und ein Administrator kann die Organisations-ID lesen. Die Organisations-ID finden Sie im Abschnitt „Administrationsseite“ in der <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=de" format="https" scope="external">Experience Cloud-Verwaltung</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Nicht aktiviert</b> </p> </td> 

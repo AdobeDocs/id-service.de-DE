@@ -2,10 +2,10 @@
 description: Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspunkt für Experience Cloud-Lösungen (bei Opt-in als „Kategorien“ bezeichnet), um zu ermitteln, ob Cookies auf dem Gerät eines Besuchers erstellt werden dürfen.
 title: Einrichten des Opt-in-Dienstes
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '908'
-ht-degree: 100%
+source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösung
 
 1. Die Datenschutzanforderungen Ihrer Firma richten sich danach, für welche Art der DSGVO-Konformität Sie sich entscheiden. Beachten Sie, welche vordefinierten Bibliotheken für die Datenschutz-Teams Ihrer Firma in Ordnung sind.
 
-Wenn Sie [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=de) verwenden, nutzen Sie die [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md), um den Opt-in-Dienst zu konfigurieren.
+Wenn Sie [Tags in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de), nutzen Sie die [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md) , um den Opt-in-Dienst zu konfigurieren.
 
 ## Opt-in-Kategorien {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 

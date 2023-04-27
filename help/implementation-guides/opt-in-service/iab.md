@@ -2,10 +2,10 @@
 description: Verbinden Sie seine Consent Management Platform (CMP) mit dem Audience Manager-Plug-in des Opt-ins für das IAB Transparency and Consent Framework (TCF).
 title: Nutzung von Opt-in-Diensten mit IAB Framework
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
-workflow-type: ht
-source-wordcount: '465'
-ht-degree: 100%
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Sobald die Einstellungen korrekt konfiguriert sind, werden die ECID- und DIL-Bib
 
 >[!IMPORTANT]
 >
->Audience Manager benötigt eine Zustimmung für die *Zwecke 1 und 10 und die Zustimmung des Anbieters*, um Cookies bereitzustellen und ID-Synchronisationen zu starten bzw. zu berücksichtigen. Weitere Informationen zum IAB-TCF-Plugin des Opt-ins finden Sie in der [Audience Manager-Dokumentation](https://docs.adobe.com/content/help/de-DE/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html).
+>Audience Manager benötigt eine Zustimmung für die *Zwecke 1 und 10 und die Zustimmung des Anbieters*, um Cookies bereitzustellen und ID-Synchronisationen zu starten bzw. zu berücksichtigen. Weitere Informationen zum IAB-TCF-Plugin des Opt-ins finden Sie in der [Audience Manager-Dokumentation](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html?lang=de).
 
 Weitere Informationen zum Validieren des IAB-TCF-Plug-ins von Opt-in finden Sie [hier in Nutzungsszenario 4 des Validierungsleitfadens](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
 

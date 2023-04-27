@@ -3,10 +3,10 @@ description: Mit dieser Funktion können Sie die Experience Cloud ID eines Besuc
 keywords: ID-Dienst
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,6 +42,10 @@ Weitere Informationen finden Sie im Codebeispiel.
 ## Codebeispiel für das Anhängen von Besucher-IDs  {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 Der folgende Beispiel-Code kann Ihnen bei den ersten Schritten mit der Funktion `appendVisitorIDsTo` helfen:
+
+>[!TIP]
+>
+>Dieser Code kann im Editor für benutzerspezifischen Code platziert werden, der Teil der Adobe Analytics-Erweiterung ist, oder oben in [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=de).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];
