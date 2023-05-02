@@ -4,32 +4,32 @@ keywords: ID-Dienst
 title: Versionshinweise für 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Versionshinweise zu Experience Cloud – 2020 {#release-notes}
 
-Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity Services.
+Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity Service.
 
 ## Version 5.1.1
 
-* Patch-Korrektur für das Setzen des AMCV-Cookies mit `SameSite=None` wenn VisitorJS in einen iFrame geladen wird.
+* Patch-Fehlerbehebung für das Setzen des AMCV-Cookies mit `SameSite=None`, wenn VisitorJS in einen iFrame geladen wird.
 
 ## Version 5.1.0
 
-* Hinzufügen `sameSiteCookie` Konfiguration zum Angeben der `SameSite` -Attribut für AMCV-Cookie. Diese Konfiguration unterstützt die folgenden Werte für die `SameSite` Attribut:
+* Hinzufügen der Konfiguration `sameSiteCookie`, um das `SameSite`-Attribut des AMCV-Cookies zu spezifizieren. Diese Konfiguration unterstützt die folgenden Werte für das `SameSite`-Attribut:
    * `Strict`
    * `Lax`
    * `None`
 
-Weitere Informationen zu diesen Attributwerten finden Sie unter [web.dev](https://web.dev/samesite-cookies-explained/) und [SameSite-Aktualisierungen durch die Chrome-Projekte](https://www.chromium.org/updates/same-site/).
+Weitere Informationen zu diesen Attributwerten finden Sie unter [web.dev](https://web.dev/samesite-cookies-explained/) und [SameSite-Aktualisierungen durch die Chromium-Projekte](https://www.chromium.org/updates/same-site/).
 
 ## Version 5.0.1
 
-* Patch-Fehlerbehebung für einschließen `d_cf` kennzeichnen, wenn eine neue IAB-Zustimmungszeichenfolge an die Datenerfassungs-Edges der Adobe gesendet wird.
+* Patch-Fehlerbehebung für das Einschließen eines Flags `d_cf`, wenn eine neue Zeichenfolge für IAB-Einverständnis an die Datenerfassungs-Edges von Adobe gesendet wird.
 
 ## Version 5.0.0
 
