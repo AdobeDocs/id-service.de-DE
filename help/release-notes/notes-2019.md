@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: Versionshinweise für 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '415'
+ht-degree: 100%
 
 ---
 
