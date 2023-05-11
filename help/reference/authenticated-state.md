@@ -4,9 +4,9 @@ keywords: ID-Dienst
 title: Kunden-IDs und Authentifizierungsstatus
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '629'
+ht-degree: 100%
 
 ---
 
@@ -217,4 +217,4 @@ Der [!DNL Experience Cloud] ID-Dienst unterstützt Kunden-IDs und Authentifizier
 
 ## Hinweise für Kunden von Analytics und Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Sollten Sie deklarierte IDs an [!DNL Audience Manager] weiterleiten, muss das Objekt `userid` dem mit einer Datenquelle verknüpften Integrations-Code entsprechen. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Besucher-ID-Dienst] in der Dokumentation [Konfiguration von Regelverschmelzungs-Code](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code).
+Sollten Sie deklarierte IDs an [!DNL Audience Manager] weiterleiten, muss das Objekt `userid` dem mit einer Datenquelle verknüpften Integrations-Code entsprechen. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Besucher-ID-Dienst] in der Dokumentation [Konfiguration von Regelverschmelzungs-Code](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=de#configure-merge-rule-code).
