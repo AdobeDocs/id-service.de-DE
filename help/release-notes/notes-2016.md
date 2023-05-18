@@ -6,7 +6,7 @@ feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
 ht-degree: 100%
 
@@ -150,7 +150,7 @@ Juni 2016
   </tr> 
   <tr> 
    <td colname="col1"> <p>Verschlüsseln der Experience Cloud ID (MID) </p> </td> 
-   <td colname="col2"> <p>Der ID-Dienst verschlüsselt den MID-Wert, der vom Server zurückgegeben oder von der Funktion <span class="codeph">visitor.setMarketingCloudVisitorID()</span> festgelegt wird. Weitere Informationen zu MID finden Sie unter <a href="../introduction/cookies.md" format="dita" scope="local">Cookies und die Experience Cloud ID</a>. </p> </td> 
+   <td colname="col2"> <p>Der ID-Service verschlüsselt den MID-Wert, der vom Server zurückgegeben oder von der Funktion <span class="codeph">visitor.setMarketingCloudVisitorID()</span> festgelegt wird. Weitere Informationen zu MID finden Sie unter <a href="../introduction/cookies.md" format="dita" scope="local">Cookies und die Experience Cloud ID</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
