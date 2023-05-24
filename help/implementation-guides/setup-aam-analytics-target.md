@@ -4,7 +4,7 @@ keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1499'
 ht-degree: 100%
 
@@ -230,7 +230,7 @@ Wenn Ihre Tests eine mboxMCAVID zurückgeben, weist dies auf eine der folgenden 
 
 Wenn Sie eine mboxMCAVID sehen, vergleichen Sie den zugehörigen Wert mit der [!DNL Analytics]-AID. Diese Werte sind identisch, wenn der ID-Dienst korrekt implementiert wurde.
 
-**Implemenierung**
+**Bereitstellung**
 
 ## Schritt 10: Bereitstellen {#section-4188fa95e7dc455a986b48a6c517c1c9}
 

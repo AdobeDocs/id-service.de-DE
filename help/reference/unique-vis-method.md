@@ -3,8 +3,8 @@ title: Identifizieren von Unique Visitors
 description: Dokumentation für Adobe ECID (ID-Dienst)
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
 source-git-commit: c65816530ae2269b216f60b9b0450077e5aaac2f
-workflow-type: ht
-source-wordcount: '253'
+workflow-type: tm+mt
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -22,6 +22,6 @@ Die Methode zur Identifizierung von Unique Visitors in unterschiedlichen Kontext
 |  5  |  [HTTP-Kopfzeile für Mobilteilnehmer](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=de)  |  2  |  das Gerät als Mobilgerät erkannt wird.  |
 |  6  |  [IP-Adresse, Benutzer-Agent, Gateway-IP-Adresse](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=de)  |  1  |  der Browser des Besuchers keine Cookies akzeptiert. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Informationen zur Berichterstattung über Unique Visitors finden Sie unter [Unique Visitors in Analytics](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=de).

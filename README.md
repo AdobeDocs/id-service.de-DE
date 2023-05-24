@@ -1,6 +1,6 @@
 ---
 source-git-commit: cadd9fab972936106a48a117022ed473b3614e09
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 100%
 
@@ -58,5 +58,5 @@ Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie m
 
 Im öffentlichen Repository werden automatisierte Bezeichnungen Pull-Anforderungen zugewiesen, damit wir den Arbeitsablauf für Pull-Anforderungen verwalten und Ihnen mitteilen können, was mit Ihrer Pull-Anforderung passiert:
 
-* **Änderung an Autor gesendet**: Der Autor wurde über die ausstehende Pull-Anforderung informiert.
-* **Bereit zum Zusammenführen**: Bereit zur Überprüfung durch unser Pull-Anforderung-Überprüfungsteam.
+* **Change sent to author**: Der Autor wurde über die ausstehende Pull-Anforderung informiert.
+* **ready-to-merge**: Bereit zur Überprüfung durch unser Pull-Anforderung-Überprüfungsteam.

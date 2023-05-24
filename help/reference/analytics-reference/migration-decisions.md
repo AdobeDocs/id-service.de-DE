@@ -1,10 +1,10 @@
 ---
-description: Vor Verwendung des Experience Cloud Identity Services sollten Sie wissen, wie dieser Service das Besucher-Tracking auf mehreren Domänen beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
+description: Vor Bereitstellung des Experience Cloud Identity Services sollten Sie wissen, wie dieser Service das Besucher-Tracking auf mehreren Domains beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
 keywords: ID-Dienst
 title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity Service
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Entscheidungspunkte bei der Migration zum Experience Cloud Identity Service
 
-Vor Verwendung des Experience Cloud Identity Services sollten Sie wissen, wie dieser Service das Besucher-Tracking auf mehreren Domänen beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
+Vor Bereitstellung des Experience Cloud Identity Services sollten Sie wissen, wie dieser Service das Besucher-Tracking auf mehreren Domains beeinflusst, und die potenziellen Probleme bei der Datenerfassung mit verschiedenen Methoden oder mittels JavaScript-Dateien kennen.
 
 Ihre Antworten auf die Fragen in diesem Abschnitt helfen Ihnen dabei, weitere Migrationsschritte zu bestimmen.
 

@@ -4,7 +4,7 @@ keywords: ID-Dienst
 title: Implementierung mit Dynamic Tag Management
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2008'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ DTM ist für [!DNL Experience Cloud]-Kunden kostenlos verfügbar.
 
 DTM ist ein einfaches aber leistungsstarkes Tool. Falls Sie es nicht bereits verwenden, raten wir Ihnen dringend dazu. Informationen zum Einstieg in diesen Service finden Sie in der [DTM-Dokumentation](https://experienceleague.adobe.com/docs/dtm/using/c-overview.html?lang=de). Anweisungen zur Einrichtung des ID-Diensts mit DTM finden Sie in den Informationen und Verfahren in den folgenden Abschnitten.
 
-## Implementierungsrichtlinien {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
+## Bereitstellungsrichtlinien {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
 
 Lesen Sie diese Anforderungen und Verfahren, bevor Sie versuchen, den Experience Cloud Identity Service im Dynamic Tag Management (DTM) zu integrieren.
 
