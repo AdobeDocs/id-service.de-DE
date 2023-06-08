@@ -2,10 +2,10 @@
 title: Kennzeichnungs-Änderungen für Google Chrome SameSite
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 100%
+source-wordcount: '1064'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Weitere Informationen zu SameSite-Attributen finden Sie im [Dokument zu Cookie-S
 | ------ | ------------ |
 | `strict` | Cookies mit dieser Einstellung werden nur gesendet, wenn sowohl die verweisende Seite als auch die Landingpage zur gleichen Domain wie das Cookie gehören. |
 | `lax` | Cookies mit dieser Einstellung werden nur gesendet, wenn die in der URL des Browsers angezeigte Domain mit der Domain des Cookies übereinstimmt. Dies ist die neue Standardeinstellung für Cookies in Chrome. |
-| `none` | Cookies mit dieser Einstellung stehen für den externen Zugriff oder den Zugriff durch Drittanbieter zur Verfügung, z. B. „site-übergreifend“. Vor dieser Änderung war `none` die standardmäßige SameSite-Einstellung für Cookies, so dass die Verhaltensweise eines Cookies bei Verwendung dieser Einstellung am ehesten der herkömmlichen Funktionsweise ähnelt. Google verlangt jedoch, dass alle Cookies mit dieser Einstellung jetzt das Flag „Sicher“ angeben. Das heißt, das Cookie wird nur erstellt und mit Anforderungen über HTTPS gesendet. Alle site-übergreifenden Cookies ohne das Flag „Sicher“ werden von Google abgelehnt. |
+| `none` | Cookies mit dieser Einstellung stehen für den externen Zugriff oder den Zugriff auf Drittanbieter zur Verfügung, z. B. &quot;Site-übergreifend&quot;. Vor dieser Änderung war `none` die standardmäßige SameSite-Einstellung für Cookies, so dass die Verhaltensweise eines Cookies bei Verwendung dieser Einstellung am ehesten der herkömmlichen Funktionsweise ähnelt. Google verlangt jedoch, dass alle Cookies mit dieser Einstellung jetzt das Flag „Sicher“ angeben. Das heißt, das Cookie wird nur erstellt und mit Anforderungen über HTTPS gesendet. Alle site-übergreifenden Cookies ohne das Flag „Sicher“ werden von Google abgelehnt. |
 
 ## Was Sie als Adobe Experience Cloud-Kunde wissen müssen
 
@@ -51,7 +51,7 @@ Bei den meisten Adobe-Produkten sind Cookies bereits die entsprechenden Flags zu
 
 **Mögliche Verringerung der Cookie-Übereinstimmung für Ziel- und Marketplace-Partner (nur Audience Manager)**
 
-Adobe hat zwar die Kontrolle über die Aktualisierung von Cookies, kann Partner jedoch nicht zwingen, die erforderlichen Änderungen vorzunehmen. Die Cookie-Übereinstimmung verringert sich möglicherweise für Audience Manager-Kunden mit Ziel- oder Marketplace-Partnern, die diese Aktualisierungen noch nicht durchgeführt haben.
+Während Adobe die Kontrolle über die Aktualisierung seiner Cookies hat, kann die Adobe Partner nicht zwingen, die erforderlichen Änderungen vorzunehmen. Die Cookie-Übereinstimmung verringert sich möglicherweise für Audience Manager-Kunden mit Ziel- oder Marketplace-Partnern, die diese Aktualisierungen noch nicht durchgeführt haben.
 
 **Analytics-freundliche Drittanbieter-Cookies (nur Analytics `s_vi`-Cookies)**
 
@@ -117,6 +117,6 @@ In der folgenden Tabelle sind nur die gebräuchlichen standardmäßigen Besucher
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Kundenseitiger Erstanbieter | Kein Wert hinzugefügt; *Chrome übernimmt standardmäßig die Einstellung `lax` | Für externe Seiten konfigurierbar |
 
-> !![IMPORTANT] Drittanbieter-Cookies von Adobe werden serverseitig eingestellt
+>  Drittanbieter-Cookies von Adobe werden serverseitig eingestellt.
 
-Weitere Informationen finden Sie im Dokument zu den [Target-Google Chrome SameSite-Richtlinien](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html?lang=de).
+Weitere Informationen finden Sie im Dokument zu den [Target-Google Chrome SameSite-Richtlinien](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html).
