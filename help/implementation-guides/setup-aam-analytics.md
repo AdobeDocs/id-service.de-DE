@@ -1,25 +1,24 @@
 ---
-description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+description: Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Datenerfassungs-Tags. Es wird jedoch dringend empfohlen, Tags zur Implementierung des ID-Diensts zu verwenden. Tags optimiert den Implementierungs-Workflow und stellt automatisch die korrekte Codeplatzierung und -sequenzierung sicher.
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Analytics und Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 100%
+source-wordcount: '1183'
+ht-degree: 91%
 
 ---
 
 # Implementieren des Experience Cloud Identity Services für Analytics und Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+Diese Anweisungen richten sich an Analytics- und Audience Manager-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber [Datenerfassungstags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de). Es wird jedoch dringend empfohlen, Tags zur Implementierung des ID-Diensts zu verwenden. Tags optimiert den Implementierungs-Workflow und stellt automatisch die korrekte Codeplatzierung und -sequenzierung sicher.
 
 >[!IMPORTANT]
 >
 >* [Lesen Sie sich die Anforderungen durch,](../reference/requirements.md) bevor Sie beginnen.
 >* Dieses Verfahren erfordert AppMeasurement. Kunden, die s_code verwenden, können dieses Verfahren nicht durchführen.
 >* Konfigurieren und testen Sie den Code in einer Entwicklungsumgebung, bevor er in das Produktivsystem übernommen wird.
-
 
 ## Schritt 1: Serverseitige Weiterleitung planen {#section-880797cc992d4755b29cada7b831f1fc}
 
@@ -49,7 +48,6 @@ Für den ID-Dienst ist die `VisitorAPI.js` Code-Bibliothek erforderlich. Zum Her
 >
 >* In früheren Versionen der ID-Dienst-API wurde diese Funktion an einer anderen Stelle und es war eine andere Syntax erforderlich. Wenn Sie von einer Version vor [Version 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) migrieren, beachten Sie die hier beschriebene neue Platzierung und Syntax.
 >* Code in GROSSBUCHSTABEN dient als Platzhalter für tatsächliche Werte. Ersetzen Sie diesen Text durch Ihre Organisations-ID, die Trackingserver-URL oder einen anderen benannten Wert.
-
 
 **Teil 1: Kopieren Sie die Visitor.getInstance -Funktion unten**
 
