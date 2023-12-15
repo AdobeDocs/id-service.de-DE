@@ -1,24 +1,23 @@
 ---
-description: Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+description: Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Datenerfassungs-Tags. Es wird jedoch dringend empfohlen, Tags zur Implementierung des ID-Diensts zu verwenden. Tags optimiert den Implementierungs-Workflow und stellt automatisch die korrekte Codeplatzierung und -sequenzierung sicher.
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Analytics
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 100%
+source-wordcount: '1007'
+ht-degree: 90%
 
 ---
 
 # Implementieren des Experience Cloud Identity Services für Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+Diese Anweisungen richten sich an Analytics-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht [Datenerfassungstags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de). Es wird jedoch dringend empfohlen, Tags zur Implementierung des ID-Diensts zu verwenden. Tags optimiert den Implementierungs-Workflow und stellt automatisch die korrekte Codeplatzierung und -sequenzierung sicher.
 
 >[!IMPORTANT]
 >
 >* [Lesen Sie sich die Anforderungen durch,](../reference/requirements.md) bevor Sie beginnen.
 >* Konfigurieren und testen Sie den Code in einer Entwicklungsumgebung, bevor er in das Produktivsystem übernommen wird.
-
 
 Führen Sie die folgenden Schritte aus, um den ID-Dienst für Adobe Analytics zu implementieren:
 
@@ -48,7 +47,6 @@ Für den [!UICONTROL ID-Dienst] ist die Code-Bibliothek `VisitorAPI.js` erforder
 >
 >* In früheren Versionen der ID-Dienst-API wurde diese Funktion an einer anderen Stelle und es war eine andere Syntax erforderlich. Wenn Sie von einer Version vor [Version 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) migrieren, beachten Sie die hier beschriebene neue Platzierung und Syntax.
 >* Code in GROSSBUCHSTABEN dient als Platzhalter für tatsächliche Werte. Ersetzen Sie diesen Text durch Ihre Organisations-ID, die Trackingserver-URL oder einen anderen benannten Wert.
-
 
 **Teil 1: Kopieren Sie die Visitor.getInstance -Funktion unten**
 
@@ -126,7 +124,6 @@ So legen Sie fest, welche Trackingserver-Variablen verwendet werden sollen:
 >
 >* [!DNL Experience Cloud]-Server-URL = Tracking-Server-URL
 >* Sichere [!DNL Experience Cloud]-Server-URL = sichere Tracking-Server-URL
-
 
 Wenn Sie nicht genau wissen, wie Sie Ihren Trackingserver finden, lesen Sie die [FAQ](../faq-intro/faq.md) und [Korrektes Ausfüllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
 

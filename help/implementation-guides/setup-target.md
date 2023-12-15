@@ -1,24 +1,23 @@
 ---
-description: Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+description: Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Datenerfassungs-Tags. Es wird jedoch dringend empfohlen, Tags zur Implementierung des ID-Diensts zu verwenden. Tags optimiert den Implementierungs-Workflow und stellt automatisch die korrekte Codeplatzierung und -sequenzierung sicher.
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 75%
 
 ---
 
 # Implementieren des Experience Cloud Identity Services für Target{#implement-the-experience-cloud-id-service-for-target}
 
-Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity Service verwenden möchten, nicht aber Dynamic Tag Management (DTM). Es wird allerdings dringend empfohlen, DTM zum Implementieren des ID-Diensts zu verwenden. DTM optimiert den Implementierungs-Workflow und stellt automatisch die richtige Code-Platzierung und -Sequenzierung sicher.
+Diese Anweisungen richten sich an Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht [Datenerfassungstags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de). Es wird jedoch dringend empfohlen, Tags zur Implementierung des ID-Diensts zu verwenden. Tags optimiert den Implementierungs-Workflow und stellt automatisch die korrekte Codeplatzierung und -sequenzierung sicher.
 
 >[!IMPORTANT]
 >
 >* [Lesen Sie sich die Anforderungen durch,](../reference/requirements.md) bevor Sie beginnen.
 >* Konfigurieren und testen Sie den Code in einer Entwicklungsumgebung, bevor er in das Produktivsystem übernommen wird.
-
 
 ## Schritt 1: Herunterladen des ID-Dienst-Codes {#section-b32ba0548aa546a79dd38be59832a53e}
 
