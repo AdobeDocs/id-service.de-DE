@@ -1,18 +1,18 @@
 ---
-description: Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber Datenerfassungs-Tags. Es wird jedoch dringend empfohlen, Tags zur Implementierung des ID-Diensts zu verwenden. Tags optimiert den Implementierungs-Workflow und stellt automatisch die korrekte Codeplatzierung und -sequenzierung sicher.
+description: Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kundinnen und Kunden, die den Identity Service von Experience Cloud verwenden möchten und keine Datenerfassungs-Tags verwenden. Es wird allerdings dringend empfohlen, Tags zum Implementieren des ID-Diensts zu verwenden. Tags vereinheitlichen den Implementierungs-Workflow und stellen automatisch sicher, dass der Code korrekt platziert und sequenziert wird.
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1450'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
-Diese Anweisungen richten sich an Analytics-, Audience Manager- und Target-Kunden, die den Experience Cloud Identity-Dienst verwenden möchten, nicht aber [Datenerfassungstags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de). Es wird jedoch dringend empfohlen, Tags zur Implementierung des ID-Diensts zu verwenden. Tags optimiert den Implementierungs-Workflow und stellt automatisch die korrekte Codeplatzierung und -sequenzierung sicher.
+Diese Anweisungen richten sich an Analytics-, Audience Manager und Target-Kundinnen und Kunden, die den Identity Service von Experience Cloud verwenden möchten und keine [Datenerfassungs-Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) verwenden. Es wird allerdings dringend empfohlen, Tags zum Implementieren des ID-Diensts zu verwenden. Tags vereinheitlichen den Implementierungs-Workflow und stellen automatisch sicher, dass der Code korrekt platziert und sequenziert wird.
 
 >[!IMPORTANT]
 >
