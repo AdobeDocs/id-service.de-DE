@@ -5,8 +5,8 @@ title: Versionshinweise für 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 100%
+source-wordcount: '714'
+ht-degree: 98%
 
 ---
 
@@ -175,7 +175,7 @@ Veröffentlichungsdatum: Februar 2017
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> ID-Dienst-API-Eigenschaft, <span class="codeph">idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> ID-Dienst-API-Eigenschaft, <span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>Durch diese Eigenschaft wird die Container-ID festgelegt, die von <span class="keyword">Audience Manager</span> für ID-Synchronisationen verwendet wird. Weitere Details unter <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 

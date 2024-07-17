@@ -5,8 +5,8 @@ title: Entscheidungspunkte bei der Migration zum Experience Cloud Identity Servi
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 94%
 
 ---
 
@@ -53,7 +53,7 @@ Wenn Sie über mehrere Domänen verfügen, die Daten an *dieselbe Report Suite* 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Mehrere Domänen </p> </td> 
-   <td colname="col2"> <p>Wenn Sie Besucher domänenübergreifend verfolgen und außerdem über eine Haupteinstiegs-Site verfügen, auf der Kunden identifiziert werden können, bevor sie andere Domänen besuchen, sollten Sie Ihren Datenerfassungs-CNAME weiterhin verwenden. <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>Beachten Sie, dass Sie zwei zusätzliche Tracking-Server-Parameter (<span class="codeph">visitor.marketingCloudServer</span> und <span class="codeph">visitor.marketingCloudServerSecure</span>) angeben müssen, um einen CNAME mit dem ID-Dienst zu konfigurieren. </p> </td> 
+   <td colname="col2"> <p>Wenn Sie Besucher domänenübergreifend verfolgen und außerdem über eine Haupteinstiegssite verfügen, auf der Kunden identifiziert werden können, bevor sie andere Domänen besuchen, sollten Sie weiterhin Ihren Datenerfassungs-CNAME <!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> verwenden. </p> <p>Beachten Sie, dass Sie zwei zusätzliche Tracking-Server-Parameter (<span class="codeph">visitor.marketingCloudServer</span> und <span class="codeph">visitor.marketingCloudServerSecure</span>) angeben müssen, um einen CNAME mit dem ID-Dienst zu konfigurieren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Eine Domain </p> </td> 

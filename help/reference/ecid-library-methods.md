@@ -4,7 +4,7 @@ description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '785'
 ht-degree: 100%
 
 ---
@@ -65,15 +65,15 @@ Mit dieser Funktion können Sie die ECID domänenübergreifend freigeben, wenn B
 
 * Wenn ein Besucher zu Ihren anderen Domänen navigiert, gibt Visitor.appendVisitorIDsTo(url) eine URL zurück, bei der ECID als Abfrageparameter angehängt ist.
 
-   Verwenden Sie diese URL zur Umleitung von der ursprünglichen Domain zur Zieldomäne.
+  Verwenden Sie diese URL zur Umleitung von der ursprünglichen Domain zur Zieldomäne.
 
 * Der ID-Dienstcode auf der Zieldomäne extrahiert die ECID aus der URL, statt bei Adobe eine neue Besucher-ID anzufordern.
 
-   Diese Anforderung schließt die Drittanbieter-Cookie-ID ein, die in diesem Fall nicht verfügbar ist.
+  Diese Anforderung schließt die Drittanbieter-Cookie-ID ein, die in diesem Fall nicht verfügbar ist.
 
 * Der ID-Dienstcode auf der Zielseite verwendet die übergebene ECID zum Tracken des Besuchers.
 
-   >[!NOTE]
-   >Wenn die Zielseite bereits über eine ECID aus vorherigen Besuchen verfügt, wird die Entscheidung, das vorhandene Cookie zu überschreiben, von der Konfiguration overwriteCrossDomainMCIDAndAID gesteuert. Weitere Informationen zu dieser Konfiguration finden Sie unter [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md).
-   >
-   >Weitere Informationen zu dieser Methode finden Sie auf der Seite [appendVisitorIDsTo (Cross Domain Tracking)](/help/library/get-set/appendvisitorid.md).
+  >[!NOTE]
+  >Wenn die Zielseite bereits über eine ECID aus vorherigen Besuchen verfügt, wird die Entscheidung, das vorhandene Cookie zu überschreiben, von der Konfiguration overwriteCrossDomainMCIDAndAID gesteuert. Weitere Informationen zu dieser Konfiguration finden Sie unter [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md).
+  >
+  >Weitere Informationen zu dieser Methode finden Sie auf der Seite [appendVisitorIDsTo (Cross Domain Tracking)](/help/library/get-set/appendvisitorid.md).

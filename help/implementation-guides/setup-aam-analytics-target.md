@@ -4,7 +4,7 @@ keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
 
@@ -172,7 +172,7 @@ Sie müssen eine Übergangsphase konfigurieren, wenn neue Besucher nach der Migr
 
 Beenden Sie die Übergangsphase, nachdem Ihre Implementierung die MID erfassen kann, anstatt das s_vi-Cookie zu lesen.
 
-Siehe auch [Cookies und der Experience Cloud ID-Dienst](../introduction/cookies.md).
+Siehe auch [Cookies und der Experience Cloud Identity Service](../introduction/cookies.md).
 
 **Clickstream-Datenintegration**
 

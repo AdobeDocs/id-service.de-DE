@@ -4,7 +4,7 @@ title: Konfigurieren von Opt-in mit Launch
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
 source-git-commit: 5858933e9d51ec97b1ba7a8fbe483f1919954543
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '158'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,6 @@ Wenn die Experience Cloud ID-Erweiterung noch nicht installiert ist, öffnen Sie
 
 Um die Erweiterung zu konfigurieren, öffnen Sie den Tab *Erweiterungen* und halten den Mauszeiger über die Erweiterung. Klicken Sie dann auf *Konfigurieren*.
 
-Weitere Referenzinformationen finden Sie im Abschnitt [Übersicht über die Erweiterung Adobe Experience Cloud Identity](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de).
+Weitere Referenzinformationen finden Sie im Abschnitt [Übersicht über die Erweiterung Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de).
 
 ![](assets/optin-launch.jpg)

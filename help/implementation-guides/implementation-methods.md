@@ -1,11 +1,11 @@
 ---
-description: Standardmäßige und nicht standardmäßige Implementierungsmethoden des Experience Cloud-Identity-Diensts.
+description: Standardmäßige und nicht standardmäßige Implementierungsmethoden des Experience Cloud Identity Service.
 keywords: ID-Dienst
 title: Implementierungsmethoden
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '129'
 ht-degree: 100%
 
 ---

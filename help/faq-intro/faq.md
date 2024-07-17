@@ -5,8 +5,8 @@ title: Häufig gestellte Fragen zum ID-Dienst
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ Häufig gestellte Fragen zu den Funktionen und Problemen bezüglich des ID-Diens
 
 **Welche Art von Funktionalität oder Funktionen bietet der ID-Dienst?**
 
-Siehe  [Übersicht](../introduction/overview.md).
+Siehe [Überblick](../introduction/overview.md).
 
 **Warum führt der ID-Dienst keinen Aufruf zum Abruf der Experience Cloud ID aus?**
 
@@ -46,23 +46,23 @@ Siehe [Übersicht](../introduction/overview.md).
 
 **Was kann bei Verwendung des ID-Diensts zu langsamen Seitenladezeiten oder zu Beeinträchtigungen des Kundenerlebnisses führen?**
 
-Es ist schwierig, alle möglichen Bedingungen zu katalogisieren. Milliarden von Verbraucher-Clients verbinden sich mit unseren Diensten, und die enorme Vielfalt, wo und wie sie sich verbinden, wirkt sich auf die Leistung aus. Beispiel:
+Es ist schwierig, alle möglichen Bedingungen zu katalogisieren. Milliarden von Verbraucher-Clients verbinden sich mit unseren Diensten, und die enorme Vielfalt, wo und wie sie sich verbinden, wirkt sich auf die Performance aus. Beispiel:
 
 * Die Geschwindigkeiten in Mobilfunknetzen sind sehr unterschiedlich. Diese Netzwerke leiden auch unter Signal- und Daten- oder Sprachpaketverlusten.
 * Die Konnektivität leidet bei Geräten, die unter verschiedenen Bedingungen eine Verbindung über WLAN herstellen. Beispielsweise treten Paketverluste und Geschwindigkeitsprobleme häufig an öffentlichen Orten wie Cafés oder in anderen Umgebungen wie Flugzeugen auf, wo Pakete über Satelliten geleitet werden müssen, bevor sie terrestrische Netzwerke erreichen.
 * Schlecht konfigurierte lokale Netzwerke können die Konnektivität und Geschwindigkeit negativ beeinflussen.
 * Client-Geräte können ihre eigenen Probleme haben, wie z. B. zu wenig Arbeitsspeicher, übermäßiger Speicheraustausch oder begrenzte CPU-Leistung im Verhältnis zur aktuellen Arbeitslast.
-* Browser verwenden je nach Hersteller und Version verschiedene Regeln, um Remote-Server-Aufrufe in die Warteschlange zu stellen, auszuführen und zu verarbeiten. Dieses Verhalten wirkt sich auf Geschwindigkeit und Leistung aus.
+* Browser verwenden je nach Hersteller und Version verschiedene Regeln, um Remote-Server-Aufrufe in die Warteschlange zu stellen, auszuführen und zu verarbeiten. Dieses Verhalten wirkt sich auf Geschwindigkeit und Performance aus.
 
 **Können Sie einige Verbesserungen nennen, die Sie vorgenommen haben, um die Seitenladezeit zu verkürzen?**
 
 Beispiel: Thread-Yielding. Wir haben das Thread-Yielding für den Fall mehrerer ID-Synchronisationsanforderungen eingeführt. Aus Laborberichten ging hervor, dass bei Kunden, die mehrere ID-Synchronisierungen durchführen, die Benutzeroberfläche aufgrund vieler kontinuierlicher CPU-Berechnungen blockiert wird. Infolgedessen haben wir Thread-Yielding eingeführt, um die ID-Synchronisierungsanforderungen jeweils um 100 ms zu trennen.
 
-Diese Änderung verbessert die Leistung für Kunden, die Visitor 2.3.0+ und DIL 6.10+ verwenden. Die Verbesserungen bei den Seitenladezeiten sind in der folgenden Abbildung dargestellt:
+Diese Änderung verbessert die Performance für Kunden, die Visitor 2.3.0+ und DIL 6.10+ verwenden. Die Verbesserungen bei den Seitenladezeiten sind in der folgenden Abbildung dargestellt:
 
 ![](assets/id_sync_improvements_copy.png)
 
-**Beeinträchtigen Browser-Anforderungen mit CORS im Vergleich zu JSON-P die Seitenleistung?**
+**Beeinträchtigen Browser-Anforderungen mit CORS im Vergleich zu JSON-P die Seiten-Performance?**
 
 Ressourcenanforderungen mit CORS sind im Allgemeinen besser geeignet als Anforderungen mit JSONP. Bei JSONP weisen einige Browser Anforderungen eine geringere Priorität zu als anderen synchronen und asynchronen Abrufen, wenn sie diese in die Warteschlange stellen. Mit CORS wird sichergestellt, dass diese Anforderungen im Browser-Aufrufstapel mit einer höheren Priorität behandelt werden.
 
@@ -87,4 +87,3 @@ Siehe [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2
 >[!MORELIKETHIS]
 >
 >* [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
-

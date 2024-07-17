@@ -21,4 +21,4 @@ Nur in Adobe Analytics vorhandene ID-Dienstfunktionen oder Funktionalitäten.
 + [Analytics und Experience Cloud ID-Anforderungen](legacy-analytics.md)
 + [Serverseitige Implementierung zusammen mit JavaScript](server-side.md)
 + [Übergangsphase für den ID-Dienst](grace-period.md)
-   <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
+  <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->

@@ -15,11 +15,11 @@ ht-degree: 100%
 Informationen über andere Funktionen des Experience Cloud Identity Services.
 
 * [Analytics-Referenzübersicht](analytics-reference/analytics-reference.md)
-* [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity-Service](csp.md)
-* [COPPA-Unterstützung im Experience Cloud Identity-Service](coppa.md)
-* [CORS-Unterstützung im Experience Cloud Identity-Service.](cors.md)
+* [Inhaltssicherheitsrichtlinien und der Experience Cloud Identity Service](csp.md)
+* [COPPA-Unterstützung im Experience Cloud Identity Service](coppa.md)
+* [CORS-Unterstützung im Experience Cloud Identity Service.](cors.md)
 * [Kunden-IDs und Authentifizierungsstatus](authenticated-state.md)
 * [Abrufen von Regions- und Benutzer-IDs vom AMCV-Cookie oder dem ID-Dienst](regions.md)
-* [Voraussetzungen für den Experience Cloud Identity-Service](requirements.md)
-* [Video Heartbeat und der Experience Cloud Identity-Service](heartbeat.md)
-* [Data Workbench und der Experience Cloud Identity-Service](dwb.md)
+* [Voraussetzungen für den Experience Cloud Identity Service](requirements.md)
+* [Video Heartbeat und der Experience Cloud Identity Service](heartbeat.md)
+* [Data Workbench und der Experience Cloud Identity Service](dwb.md)

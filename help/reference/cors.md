@@ -1,16 +1,16 @@
 ---
 description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domain, die nicht der aktuellen Domain entspricht. Der Experience Cloud Identity Service unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
 keywords: ID-Dienst
-title: CORS-Unterstützung im Experience Cloud Identity-Service.
+title: CORS-Unterstützung im Experience Cloud Identity Service.
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 100%
+source-wordcount: '609'
+ht-degree: 98%
 
 ---
 
-# CORS-Unterstützung im Experience Cloud Identity-Service. {#cors-support-in-the-experience-cloud-id-service}
+# CORS-Unterstützung im Experience Cloud Identity Service. {#cors-support-in-the-experience-cloud-id-service}
 
 Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressourcen von einer Domain, die nicht der aktuellen Domain entspricht. Der Experience Cloud Identity Service unterstützt CORS-Standards, die diese clientseitigen, ursprungsübergreifenden Ressourcenanforderungen ermöglichen. Der ID-Dienst greift bei älteren Browsern oder Browsern ohne CORS-Unterstützung auf JSONP-Anforderungen zurück.
 
@@ -26,7 +26,7 @@ Der Browser lässt eine Anforderung zu, wenn beide Seiten dieselben Eigenschafte
 
 ## CORS behebt Probleme mit Gleiche-Herkunft-Richtlinien  {#section-76c87ec3295d447bab220c84f138c235}
 
-Cross Origin Resource Sharing (CORS) bietet eine sichere und effektive Möglichkeit, Ressourcen über verschiedene Domänen hinweg anzufordern. Die CORS-Spezifikation enthält eine Reihe von HTTP-Headern, die Browser zum Senden, Empfangen und Auswerten von Ressourcenanforderungen verwenden. Die Evaluierung einer Ressourcenanforderung heißt  *`preflight check`*. Mit dieser Prüfung können Browser und Server bestimmen, welche Anforderungen zulässig sind oder blockiert werden sollen. Die Preflight-Prüfung ist transparent für die mobile App bzw. API oder das Skript, die bzw. das eine Ressource anfordert. Zwei Header, die für den Ressourcenanforderungsprozess wichtig sind, sind:
+Cross Origin Resource Sharing (CORS) bietet eine sichere und effektive Möglichkeit, Ressourcen über verschiedene Domänen hinweg anzufordern. Die CORS-Spezifikation enthält eine Reihe von HTTP-Headern, die Browser zum Senden, Empfangen und Auswerten von Ressourcenanforderungen verwenden. Das Auswerten einer Ressourcenanforderung wird als *`preflight check`* bezeichnet. Mit dieser Prüfung können Browser und Server bestimmen, welche Anforderungen zulässig sind oder blockiert werden sollen. Die Preflight-Prüfung ist transparent für die mobile App bzw. API oder das Skript, die bzw. das eine Ressource anfordert. Zwei Header, die für den Ressourcenanforderungsprozess wichtig sind, sind:
 
 * `Origin`: Ein Anforderungsheader, der die Anforderungsquelle ermittelt.
 * `Access-Control-Allow-Origin`: Ein Antwortheader, der angibt, ob eine Ressource für den Anforderer freigegeben werden kann.
@@ -78,8 +78,8 @@ In der folgenden Tabelle werden einige der Vorteile beschrieben, die CORS Kunden
    <td colname="col2"> <p>CORS verwendet <a href="https://developer.mozilla.org/de-DE/docs/Web/API/XMLHttpRequest" format="https" scope="external"> XMLHttpRequest</a>, um Daten anzufordern und zu übertragen. Diese Methode ist sicherer als eine JSONP-Anfrage. Sie stellt sicher, dass es keine Möglichkeit gibt, beliebigen JavaScript-Code auszuführen, der in der Antwort des DCS enthalten sein könnte. Die Payload der CORS XMLHttpRequest-Antwort wird vom JavaScript des ID-Dienstes analysiert und nicht einfach in einer Rückruffunktion ausgeführt. </p> <p> <p>Hinweis: Zum Akzeptieren von Cookies muss die Eigenschaft <span class="codeph">withCredentials</span> des Objekts <span class="codeph">XMLHttpRequest</span> auf <span class="codeph">true</span> festgelegt sein. Diese Eigenschaft wird in Chrome, Firefox, Internet Explorer (Version 10 und höher), Opera und Safari unterstützt. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Leistungsverbesserungen</b> </p> </td> 
-   <td colname="col2"> <p>CORS hilft, die Leistung zu verbessern, denn: </p> 
+   <td colname="col1"> <p><b>Performance-Verbesserungen</b> </p> </td> 
+   <td colname="col2"> <p>CORS hilft, die Performance zu verbessern, denn: </p> 
     <ul id="ul_EC3A178003A94D70883B914050D7C464"> 
      <li id="li_F8B44352BFBB46CDBD07AE40B9F2D0EC">Der Browser verwaltet Ressourcenanforderungen. Der Anforderungsprozess ist für den ID-Dienst transparent. </li> 
      <li id="li_C63E43A4CAB84210AB6A39100E5864BE">Im Gegensatz zu asynchronen JSONP-Anfragen werden CORS-Anforderungen vom Browser nicht depriorisiert und in eine Warteschlange gestellt. </li> 

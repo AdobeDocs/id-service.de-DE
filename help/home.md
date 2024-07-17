@@ -1,16 +1,16 @@
 ---
 description: Das allgemeine Identifizierungs-Framework für Experience Cloud-Anwendungen und -Services beruht auf dem Experience Cloud Identity Service. Zu diesem Zweck wird einem Site-Besucher eine eindeutige, persistente ID, die als Experience Cloud-ID (ECID) bezeichnet wird, zugewiesen.
 keywords: ID-Service; Identity Service; Experience Cloud Identity Service
-title: Experience Cloud Identity-Service
+title: Experience Cloud Identity Service
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
 source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '355'
 ht-degree: 100%
 
 ---
 
-# Adobe Experience Cloud Identity-Service {#experience-cloud-id-service}
+# Adobe Experience Cloud Identity Service {#experience-cloud-id-service}
 
 Das allgemeine Identifizierungs-Framework für Experience Cloud-Anwendungen und -Services beruht auf dem Experience Cloud Identity Service. Zu diesem Zweck wird einem Site-Besucher eine eindeutige, persistente ID, die als Experience Cloud-ID (ECID) bezeichnet wird, zugewiesen.
 

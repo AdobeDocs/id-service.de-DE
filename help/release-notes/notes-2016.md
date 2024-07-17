@@ -7,7 +7,7 @@ feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1175'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,6 @@ November 2016
 >
 >* Für Version 1.10 wird [!UICONTROL AppMeasurement] 1.8.0 benötigt.
 >* Ab Experience Cloud Identity Service-Bibliothek 2.0.0 beginnt die ID-Synchronisierung für Adobe Media Optimizer automatisch. Weitere Informationen finden Sie unter [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](/help/introduction/match-rates.md).
-
 
 **Fehlerbehebungen und Verbesserungen**
 
@@ -49,7 +48,7 @@ Oktober 2016
 **Fehlerbehebungen und Verbesserungen**
 
 * Es wurde ein Fehler behoben, der eindeutige Benutzer-IDs von Audience Manager (AAMUUIDs) als Experience Cloud IDs an den ID-Dienst weitergeleitet hatte.
-* Wenn die Time-To-Live (TTL) für ein AMCV-Cookie abgelaufen ist, gibt der ID-Service die Information trotzdem an den Server weiter, sofern das Cookie eine Experience Cloud ID hat. Nach diesem Aufruf startet der ID-Dienst einen asynchronen Aufruf, um das Cookie zu aktualisieren. Damit wird die Leistung verbessert, da der ID-Dienst nicht mehr auf eine Antwort des Servers warten muss. So kann ein bestehender AMCV-Cookiewert verwendet und eine Aktualisierung angefordert werden.
+* Wenn die Time-To-Live (TTL) für ein AMCV-Cookie abgelaufen ist, gibt der ID-Service die Information trotzdem an den Server weiter, sofern das Cookie eine Experience Cloud ID hat. Nach diesem Aufruf startet der ID-Dienst einen asynchronen Aufruf, um das Cookie zu aktualisieren. Damit wird die Performance verbessert, da der ID-Dienst nicht mehr auf eine Antwort des Servers warten muss. So kann ein bestehender AMCV-Cookiewert verwendet und eine Aktualisierung angefordert werden.
 * Der ID-Dienst synchronisiert Experience Cloud IDs (MIDs) automatisch mit Adobe Media Optimizer und anderen internen Adobe-Domänen direkt auf der Seite. Die automatische Synchronisierung ist für alle vorhandenen und neuen Konten aktiviert. Dies trägt zur Verbesserung der Übereinstimmungsraten für Media Optimizer bei. Für VisitorAPI.js Version 1.8 oder höher. Weitere Informationen finden Sie unter [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab).
 
 **Neue und überarbeitete Dokumentation**
@@ -129,8 +128,8 @@ Juli 2016
 
 **Überarbeitet**
 
-* [Voraussetzungen für den Experience Cloud Identity-Service](../reference/requirements.md)
-* [Testen und Überprüfen des Experience Cloud Identity-Service](../implementation-guides/test-verify.md)
+* [Voraussetzungen für den Experience Cloud Identity Service](../reference/requirements.md)
+* [Testen und Überprüfen des Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
 ## Version 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -166,8 +165,8 @@ Mai 2016
 **Dokumentation – Aktualisierungen**
 
 * [SDK-Anforderungen für Android und iOS](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench und der Experience Cloud Identity-Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [Testen und Überprüfen des Experience Cloud Identity-Service](../implementation-guides/test-verify.md)
+* [Data Workbench und der Experience Cloud Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Testen und Überprüfen des Experience Cloud Identity Service](../implementation-guides/test-verify.md)
 
 ## Version 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 

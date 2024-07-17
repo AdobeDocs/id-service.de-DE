@@ -5,7 +5,7 @@ title: Versionshinweise für 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '500'
 ht-degree: 100%
 
 ---
@@ -106,7 +106,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Thread-Yielding für mehrere ID-Synchronisierungsanfragen </p> </td> 
-   <td colname="col2"> <p><b>Iframe</b> </p> <p>Bei Kunden, die mehrere ID-Synchronisierungen durchführen, wird die Benutzeroberfläche in einigen Fällen blockiert, da fortlaufende CPU-Berechnungen stattfinden. Wir führen eine Thread-Unterbrechung ein, um einen Abstand zwischen ID-Synchronisierungsanforderungen von jeweils 100 ms zu ermöglichen. </p> <p>Diese Änderung verbessert die Leistung für Kunden, die Visitor 2.3.0+ und DIL 6.10+ verwenden.  </p> </td> 
+   <td colname="col2"> <p><b>Iframe</b> </p> <p>Bei Kunden, die mehrere ID-Synchronisierungen durchführen, wird die Benutzeroberfläche in einigen Fällen blockiert, da fortlaufende CPU-Berechnungen stattfinden. Wir führen eine Thread-Unterbrechung ein, um einen Abstand zwischen ID-Synchronisierungsanforderungen von jeweils 100 ms zu ermöglichen. </p> <p>Diese Änderung verbessert die Performance für Kunden, die Visitor 2.3.0+ und DIL 6.10+ verwenden.  </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Neue Möglichkeit zur Aktivierung von Drittanbieteraufrufen </td> 

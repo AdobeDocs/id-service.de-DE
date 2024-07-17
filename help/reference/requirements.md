@@ -1,16 +1,16 @@
 ---
 description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity Service erfordert.
 keywords: ID-Dienst
-title: Voraussetzungen für den Experience Cloud Identity-Service
+title: Voraussetzungen für den Experience Cloud Identity Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
-workflow-type: ht
-source-wordcount: '653'
+workflow-type: tm+mt
+source-wordcount: '572'
 ht-degree: 100%
 
 ---
 
-# Voraussetzungen für den Experience Cloud Identity-Service {#requirements-for-the-experience-cloud-id-service}
+# Voraussetzungen für den Experience Cloud Identity Service {#requirements-for-the-experience-cloud-id-service}
 
 Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richtigen Lösungen, Dienste und Codeversionen verwenden, die der Experience Cloud Identity Service erfordert.
 
@@ -135,4 +135,3 @@ Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Aktivieren und laden Sie 
 >[!MORELIKETHIS]
 >
 >* [Code-Bibliothek](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
-

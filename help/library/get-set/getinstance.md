@@ -5,8 +5,8 @@ title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 100%
+source-wordcount: '219'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-Wenn von `getInstance` keine bestehende Instanz gefunden wird, wird eine neue Instanz erstellt und zurückgegeben. Dies ähnelt der [ `s_gi()`-Funktion ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=de) in [!DNL AppMeasurement].
+Wenn von `getInstance` keine bestehende Instanz gefunden wird, wird eine neue Instanz erstellt und zurückgegeben. Dies ähnelt der Funktion [`s_gi()` ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=de) in [!DNL AppMeasurement].
 
 **Häufige Anwendung**
 

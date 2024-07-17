@@ -5,8 +5,8 @@ title: Nutzung des ID-Service mit A4T und Server-seitige Implementierung der Tar
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '807'
+ht-degree: 98%
 
 ---
 
@@ -157,9 +157,9 @@ Fügen Sie dem Abschnitt **[!UICONTROL Allgemein > Einstellungen]** Ihrer ID-Di
 * **[!UICONTROL Name:]** serverState
 * **[!UICONTROL Wert:]** %serverState%
 
-   >[!IMPORTANT]
-   >
-   >Der Wertname muss mit dem Variablennamen übereinstimmen, den Sie für `serverState` in Ihrem Seitencode festgelegt haben.
+  >[!IMPORTANT]
+  >
+  >Der Wertname muss mit dem Variablennamen übereinstimmen, den Sie für `serverState` in Ihrem Seitencode festgelegt haben.
 
 Die konfigurierten Einstellungen sollten wie folgt aussehen:
 
@@ -197,4 +197,3 @@ Zu diesem Zeitpunkt sendet der Webserver Seiteninhalt an den Browser des Besuche
 >[!MORELIKETHIS]
 >
 >* [Serverseitiges ID-Dienstpaket von Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
-

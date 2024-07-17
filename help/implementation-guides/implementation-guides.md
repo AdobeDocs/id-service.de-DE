@@ -7,7 +7,7 @@ uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
 source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '179'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launc
 * [Implementieren des Experience Cloud Identity Services für Analytics und Audience Manager](setup-aam-analytics.md)
 * [Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target](setup-aam-analytics-target.md)
 * [Verwenden des Experience Cloud Identity Services mit A4T und einer serverseitigen Implementierung der Target-Komponente](ecid-a4t-target.md)
-* [Direkte Integration mit dem Experience Cloud Identity-Service](direct-integration.md)
+* [Direkte Integration mit dem Experience Cloud Identity Service](direct-integration.md)
 * [Direkte Integration – Anwendungsfälle](direct-integration-examples.md)
-* [Testen und Überprüfen des Experience Cloud Identity-Service](test-verify.md)
+* [Testen und Überprüfen des Experience Cloud Identity Service](test-verify.md)
 * [Opt-in-Service – Übersicht](opt-in-service/optin-overview.md)

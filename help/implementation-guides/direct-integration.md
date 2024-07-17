@@ -1,16 +1,16 @@
 ---
 description: Mit dieser Implementierung können Kunden den ID-Dienst auf Geräten verwenden, die unseren JavaScript- oder SDK-Code nicht akzeptieren oder verwenden können. Dazu gehören Geräte wie Spielekonsolen, Smart-TVs oder andere internetfähige Geräte. Informationen zu Syntax, Codebeispielen und Definitionen finden Sie in diesem Abschnitt.
 keywords: ID-Dienst
-title: Direkte Integration mit dem Experience Cloud Identity-Service
+title: Direkte Integration mit dem Experience Cloud Identity Service
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 97%
 
 ---
 
-# Direkte Integration mit dem Experience Cloud Identity-Service {#direct-integration-with-the-experience-cloud-id-service}
+# Direkte Integration mit dem Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 Mit dieser Implementierung können Kunden den ID-Dienst auf Geräten verwenden, die unseren JavaScript- oder SDK-Code nicht akzeptieren oder verwenden können. Dazu gehören Geräte wie Spielekonsolen, Smart-TVs oder andere internetfähige Geräte. Informationen zu Syntax, Codebeispielen und Definitionen finden Sie in diesem Abschnitt.
 
@@ -65,7 +65,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ih
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Informationen zum Auffinden dieser ID erhalten Sie unter  <a href="../reference/requirements.md" format="dita" scope="local">Voraussetzungen für den Experience Cloud Identity Service</a> </p> </td> 
+   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Hilfe zum Auffinden dieser ID finden Sie unter <a href="../reference/requirements.md" format="dita" scope="local"> Voraussetzungen für den Experience Cloud Identity-Dienst</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 

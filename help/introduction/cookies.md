@@ -1,16 +1,16 @@
 ---
 description: Der ID-Service verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und persistente IDs für Ihre Site-Besucher zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Service Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
 keywords: Playstation; ID-Service
-title: Cookies und der Experience Cloud Identity-Service.
+title: Cookies und der Experience Cloud Identity Service.
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '941'
 ht-degree: 100%
 
 ---
 
-# Cookies und der Experience Cloud Identity-Service.{#cookies-and-the-experience-cloud-id-service}
+# Cookies und der Experience Cloud Identity Service.{#cookies-and-the-experience-cloud-id-service}
 
 Der ID-Service verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und persistente IDs für Ihre Site-Besucher zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Service Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
 
@@ -29,7 +29,7 @@ Der ID-Service ist auf die AMCV-, AMCVS- und demdex-Cookies angewiesen, um ordnu
 * Computerviren speichern, übertragen und ausführen.
 * Auf personenbezogene Daten (PII) wie Ihre E-Mail-Adresse zugreifen oder speichern.
 * Computerhardware oder -software steuern.
-* Computer-Instabilitäten oder Leistungsprobleme verursachen.
+* Computer-Instabilitäten oder Performance-Probleme verursachen.
 * Benutzer auf Sites verfolgen, die den ID-Service nicht verwenden.
 
 ## AMCV-Cookie {#section-c55af54828dc4cce89f6118655d694c8}

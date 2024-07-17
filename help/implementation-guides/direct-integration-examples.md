@@ -5,8 +5,8 @@ title: Anwendungsfälle der direkten Integration
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,6 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
 >* Bevor Sie sich mit den Nutzungsszenarios befassen, sollten Sie sichergehen, dass Sie [Codesyntax und Variablen](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) verstehen.
 >* Weitere Informationen über die MID finden Sie unter [Cookies und der Experience Cloud Identity Service](../introduction/cookies.md).
 >
-
 
 ## Nutzungsszenario 1: Ich habe eine Experience Cloud ID (MID), möchte jedoch meine eigenen Besucher-IDs verwenden und einen Authentifizierungsstatus festlegen {#section-a67d89a343754d1286d03cf08d34b806}
 
@@ -49,7 +48,7 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
      <li id="li_4869572B40E54C54B88A2474DAC475A8">Ihre Datenanbieter-ID. Dies ist die eindeutige ID, die Ihrer Firma zugewiesen wird. Nennen wir diese ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">Ihre ID für den Besucher (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Optional)</i> Eine Status-ID zum Definieren des Authentifizierungsstatus für diesen Besucher. </li> 
-    </ul> <p>Wenn Sie andere Parameter haben, die im  <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B. <span class="codeph">d_blob</span> oder <span class="codeph">dcs_region</span> usw.), können Sie diese auch übergeben. </p> </td> 
+    </ul> <p>Und wenn einer der anderen Parameter im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> direkten Integrationsleitfaden</a> aufgeführt ist (z. B. <span class="codeph"> d_blob</span> oder <span class="codeph"> dcs_region</span> usw.) können Sie diese auch übergeben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 
@@ -84,7 +83,7 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Aktionen</b> </p> </td> 
-   <td colname="col2"> <p>Unter diesen Bedingungen rufen Sie den ID-Dienst mit Ihrer Organisations-ID auf. </p> <p>Wenn Sie andere Parameter haben, die im  <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">Leitfaden zur direkten Integration</a> aufgeführt werden (z. B. <span class="codeph">d_blob</span> oder <span class="codeph">dcs_region</span> usw.), können Sie diese auch übergeben. </p> </td> 
+   <td colname="col2"> <p>Unter diesen Bedingungen rufen Sie den ID-Dienst mit Ihrer Organisations-ID auf. </p> <p>Und wenn einer der anderen Parameter im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> direkten Integrationsleitfaden</a> aufgeführt ist (z. B. <span class="codeph"> d_blob</span> oder <span class="codeph"> dcs_region</span> usw.) können Sie diese auch übergeben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 

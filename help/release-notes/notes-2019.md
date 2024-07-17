@@ -5,7 +5,7 @@ title: Versionshinweise für 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '422'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Ein Kontrollkästchen für die Genehmigung vor dem Opt-in für Medienanalysen in
 **Fehlerbehebungen**
 
 * Problem mit dem Parsen der Eingabe-Zeichenfolge für die ECID Launch-Erweiterung preOptInApprovals.
-* Leistungsabfall bei Verwendung von trackingServer.
+* Performance-Abfall bei Verwendung von trackingServer.
 
 ## Version 4.4 {#version-4point4}
 

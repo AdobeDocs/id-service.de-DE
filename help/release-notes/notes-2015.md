@@ -5,7 +5,7 @@ title: Versionshinweise für 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ August 2015
 * Ein Fehler wurde behoben, um zu verhindern, dass der ID-Dienst ein iframe anfordert, wenn keine zu synchronisierenden oder auszulösenden Daten vorhanden sind. (AAM-20164)
 * Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domain-Cookies nicht ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domain wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
 
-   Dies betraf nur einige Clients, die *alle* der folgenden Kriterien erfüllten:
+  Dies betraf nur einige Clients, die *alle* der folgenden Kriterien erfüllten:
 
    * Verwenden des ID-Diensts.
    * Aktivierung einer [Schonfrist ](../reference/analytics-reference/grace-period.md)*oder* Verwendung von Cookies von Erstanbietern und Benutzer blockieren Cookies von Drittanbietern.
