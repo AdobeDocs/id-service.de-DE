@@ -3,7 +3,7 @@ description: Mit dieser Funktion können Sie die Experience Cloud ID eines Besuc
 keywords: ID-Dienst
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: fc630f3a161b65edab1c34ec3b3f07938bf13aaf
+source-git-commit: f185ae10dac686b6986b171aef8a46a574484283
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 88%
@@ -14,7 +14,7 @@ ht-degree: 88%
 
 >[!TIP]
 >
->Das domänenübergreifende Tracking funktioniert nicht wie gewünscht, wenn die ECID anfangs (oder früher) abgelehnt wird. Die vorhandenen IDs, die entweder über URL übergeben oder zuvor im Cookie vorhanden waren, werden nicht überprüft. Dies gilt auch für die IDs, bei denen die Zustimmung auf &quot;NO&quot;gesetzt wurde.
+>Das domänenübergreifende Tracking funktioniert nicht wie gewünscht, wenn die ECID anfangs (oder früher) abgelehnt wird. Die vorhandenen IDs, die entweder über URL weitergegeben oder zuvor im Cookie vorhanden waren, werden nicht überprüft. Dabei wird berücksichtigt, dass es sich um die IDs handelte, als die Zustimmung auf &quot;NO&quot;gesetzt wurde.
 
 Mit dieser Funktion können Sie die Experience Cloud ID eines Besuchers domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst implementiert haben und Inhaber der Quell- und Zieldomäne sein. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
 
