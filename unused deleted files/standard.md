@@ -5,8 +5,8 @@ title: Implementierung mit Dynamic Tag Management
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '2008'
-ht-degree: 100%
+source-wordcount: '1874'
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ mcvid-dtm-implement.xml
 1. Geben Sie den Namen Ihres Trackingservers im Feld **[!UICONTROL Trackingserver]** ein. Wenn Sie nicht genau wissen, wie Sie Ihren Trackingserver finden, lesen Sie die [Häufig gestellte Fragen (FAQ)](../faq-intro/faq.md) und [Korrektes Ausfüllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
 1. Klicken Sie auf **[!UICONTROL Tool erstellen]** und auf **[!UICONTROL Änderungen speichern]**.
 
-   Nach dem Speichern wird der ID-Dienst als ein Tool in DTM eingerichtet. Er kann jedoch noch nicht verwendet werden. Ihr DTM-Tool muss zunächst den DTM-Veröffentlichungs-/Genehmigungsprozess durchlaufen. Zudem können Sie zusätzliche Parameter konfigurieren. Informationen zu den zusätzlichen Parametern, die Sie zum DTM hinzufügen können, finden Sie unter [Experience Cloud-Identity-Diensteinstellungen für DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
+   Nach dem Speichern wird der ID-Dienst als ein Tool in DTM eingerichtet. Er kann jedoch noch nicht verwendet werden. Ihr DTM-Tool muss zunächst den DTM-Veröffentlichungs-/Genehmigungsprozess durchlaufen. Zudem können Sie zusätzliche Parameter konfigurieren. Informationen zu den zusätzlichen Parametern, die Sie zum DTM hinzufügen können, finden Sie unter [Experience Cloud Identity Service-Einstellungen für DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 ## Experience Cloud Identity Serviceeinstellungen für DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -163,7 +163,7 @@ Legt die Version der gewünschten ID-Dienstcodebibliothek (`VisitorAPI.js`) fest
 
 **Einstellungen**
 
-Mithilfe dieser Felder können Sie [Funktionsvariablen](../library/function-vars/function-vars.md) als Schlüssel-Wert-Paare hinzufügen. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um Ihrer ID-Dienstimplementierung mindestens eine Variable hinzuzufügen.
+In diesen Feldern können Sie [Funktionsvariablen](../library/function-vars/function-vars.md) als Schlüssel-Wert-Paare hinzufügen. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um Ihrer ID-Dienstimplementierung mindestens eine Variable hinzuzufügen.
 
 ![](assets/dtmVars.png)
 
@@ -189,7 +189,7 @@ Der Wert sollte ein Datenelement sein, das die Benutzer-ID enthält. Datenelemen
 
 Optionen, die Besucher je nach Authentifizierungsstatus (z. B. angemeldet, abgemeldet) definieren oder identifizieren. Siehe [Kunden-IDs und Authentifizierungsstatus](../reference/authenticated-state.md).
 
-## Testen und Überprüfen des Experience Cloud Identity-Service {#concept-644fdbef433b46ba9c0634ac95eaa680}
+## Testen und Überprüfen des Experience Cloud Identity Service {#concept-644fdbef433b46ba9c0634ac95eaa680}
 
 Diese Anweisungen, Tools und Verfahren unterstützen Sie bei der Ermittlung, ob der ID-Dienst ordnungsgemäß funktioniert. Diese Tests gelten für den ID-Dienst im Allgemeinen sowie für andere ID-Dienst- und [!DNL Experience Cloud]-Lösungskombinationen.
 
@@ -282,4 +282,3 @@ Weitere Informationen zu Fehler-Codes finden Sie unter [DCS-Fehler-Codes, Meldun
 >[!MORELIKETHIS]
 >
 >* [Webeigenschaften](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=de)
-

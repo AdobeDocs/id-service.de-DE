@@ -65,7 +65,7 @@ Der ID-Dienst gibt Daten in einem JSON-Objekt zurück, wie unten dargestellt. Ih
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Hilfe zum Auffinden dieser ID finden Sie unter <a href="../reference/requirements.md" format="dita" scope="local"> Voraussetzungen für den Experience Cloud Identity-Dienst</a>. </p> </td> 
+   <td colname="col2"> <p>Ihre Experience Cloud-Organisations-ID. Hilfe bei der Suche nach dieser ID finden Sie unter <a href="../reference/requirements.md" format="dita" scope="local"> für den Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 

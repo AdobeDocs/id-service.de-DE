@@ -6,7 +6,7 @@ exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 90%
+ht-degree: 86%
 
 ---
 
@@ -48,7 +48,7 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
      <li id="li_4869572B40E54C54B88A2474DAC475A8">Ihre Datenanbieter-ID. Dies ist die eindeutige ID, die Ihrer Firma zugewiesen wird. Nennen wir diese ID 4444. </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">Ihre ID für den Besucher (9876). </li> 
      <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>(Optional)</i> Eine Status-ID zum Definieren des Authentifizierungsstatus für diesen Besucher. </li> 
-    </ul> <p>Und wenn einer der anderen Parameter im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> direkten Integrationsleitfaden</a> aufgeführt ist (z. B. <span class="codeph"> d_blob</span> oder <span class="codeph"> dcs_region</span> usw.) können Sie diese auch übergeben. </p> </td> 
+    </ul> <p>Und wenn Sie einen der anderen im Handbuch zur <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> Direct Integration aufgelisteten Parameter haben</a> (z. B. <span class="codeph"> d_blob</span> oder <span class="codeph"> dcs_region</span> usw.), ist es in Ordnung, diese ebenfalls zu übergeben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 
@@ -83,7 +83,7 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Aktionen</b> </p> </td> 
-   <td colname="col2"> <p>Unter diesen Bedingungen rufen Sie den ID-Dienst mit Ihrer Organisations-ID auf. </p> <p>Und wenn einer der anderen Parameter im <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> direkten Integrationsleitfaden</a> aufgeführt ist (z. B. <span class="codeph"> d_blob</span> oder <span class="codeph"> dcs_region</span> usw.) können Sie diese auch übergeben. </p> </td> 
+   <td colname="col2"> <p>Unter diesen Bedingungen rufen Sie den ID-Dienst mit Ihrer Organisations-ID auf. </p> <p>Und wenn Sie einen der anderen im Handbuch zur <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> Direct Integration aufgelisteten Parameter haben</a> (z. B. <span class="codeph"> d_blob</span> oder <span class="codeph"> dcs_region</span> usw.), ist es in Ordnung, diese ebenfalls zu übergeben. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 

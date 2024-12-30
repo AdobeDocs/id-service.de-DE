@@ -1,7 +1,7 @@
 ---
 description: Bei dieser Helfermethode wird die Zusatzdaten-ID (Supplemental Data ID/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den ID-Dienst mit derselben Organisations-ID für die Quell- und Zieldomänen implementiert haben.
 keywords: ID-Dienst
-title: appendSupplementalDataIDTo
+title: 'appendSupplementalDataIDTo '
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
 workflow-type: tm+mt

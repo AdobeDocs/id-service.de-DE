@@ -117,6 +117,6 @@ In der folgenden Tabelle sind nur die gebräuchlichen standardmäßigen Besucher
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Kundenseitiger Erstanbieter | Kein Wert hinzugefügt; *Chrome übernimmt standardmäßig die Einstellung `lax` | Für externe Seiten konfigurierbar |
 
->  Adobe Drittanbieter-Cookies werden serverseitig gesetzt.
+>  Adobe-Cookies von Drittanbietern werden Server-seitig gesetzt.
 
 Weitere Informationen finden Sie im Dokument zu den [Target-Google Chrome SameSite-Richtlinien](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html?lang=de).

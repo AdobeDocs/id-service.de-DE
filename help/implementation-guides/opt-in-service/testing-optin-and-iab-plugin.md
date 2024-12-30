@@ -43,7 +43,7 @@ Sie sollten keine Anfragen an Adobe-Server sehen:
 >
 >Möglicherweise wird ein Aufruf von `http://dpm.demdex.net/optOutStatus` angezeigt. Auf diesem SCHREIBGESCHÜTZTEN Endpunkt wird der Opt-out-Status des Benutzers abgerufen. Dieser Endpunkt führt nicht zur Erstellung von Drittanbieter-Cookies und erfasst keine Informationen von der Seite.
 
-Von den Adobe-Tags erstellte Cookies sollten nicht angezeigt werden: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
+Sie sollten keine Cookies sehen, die von den Adobe-Tags erstellt wurden: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
 
 Wechseln Sie in Chrome zur Registerkarte *Anwendung*, erweitern Sie den Abschnitt *Cookies* unter *Datenspeicherung* und wählen Sie den Domänennamen Ihrer Website aus:
 

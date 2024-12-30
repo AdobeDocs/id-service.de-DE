@@ -35,7 +35,7 @@ In den folgenden Diagrammen und Abschnitten wird beschrieben, was Sie bei jedem 
 
 ## Schritt 1: Anforderungsseite {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-Die serverseitige Aktivität beginnt, wenn ein Besucher eine HTTP-Anforderung zum Laden einer Webseite erstellt. Während dieses Schritts empfängt Ihr Server diese Anforderung und sucht nach dem [AMCV-Cookie](../introduction/cookies.md). Das AMCV-Cookie enthält die [!DNL Experience Cloud] ID (MID) des Besuchers.
+Die serverseitige Aktivität beginnt, wenn ein Besucher eine HTTP-Anforderung zum Laden einer Webseite erstellt. Während dieses Schritts empfängt Ihr Server diese Anfrage und sucht nach dem [AMCV-Cookie](../introduction/cookies.md). Das AMCV-Cookie enthält die [!DNL Experience Cloud] ID (MID) des Besuchers.
 
 ## Schritt 2: ID-Dienstnutzlast generieren {#section-c86531863db24bd9a5b761c1a2e0d964}
 

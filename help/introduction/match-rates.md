@@ -36,7 +36,7 @@ Wenn ein Besucher auf Ihre Site kommt und eine Seite lädt, führt die Funktion 
 
 **Schritt 2: iFrame laden**
 
-Während der Seitentext geladen wird, lädt der ID-Dienst einen iFrame mit dem Namen *`Destination Publishing iFrame`*. Der [!UICONTROL Destination Publishing iFrame] wird in einer Domain geladen, die von der übergeordneten Seite getrennt ist. Dieses Design trägt zur Gewährleistung der Seiten-Performance bei und verbessert die Sicherheit, da der iFrame:
+Während der Seitentext geladen wird, lädt der ID-Service einen iFrame namens *`Destination Publishing iFrame`*. Der [!UICONTROL Destination Publishing iFrame] wird in einer Domain geladen, die von der übergeordneten Seite getrennt ist. Dieses Design trägt zur Gewährleistung der Seiten-Performance bei und verbessert die Sicherheit, da der iFrame:
 
 * asynchron in Bezug auf die übergeordnete Seite geladen wird. Die übergeordnete Seite kann demnach unabhängig vom [!UICONTROL Destination Publishing iFrame] geladen werden. Das Laden des iFrames und das Laden der ID-Synchronisierungspixel aus dem iFrame wirken sich nicht auf die übergeordnete Seite oder das Kundenerlebnis aus.
 * so schnell wie möglich lädt. Wenn dies zu schnell ist, können Sie den iFrame nach dem Fensterladeereignis laden (nicht empfohlen). Weitere Informationen finden Sie unter [idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4).
@@ -58,7 +58,7 @@ Synchronisierte IDs werden auf den [Edge- und Core-Daten-Servern gespeichert](ht
 
 ## Synchronisierungsdienste verwalten die ID-Synchronisierung {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-Technologien, die für die ID-Synchronisation verantwortlich sind. Dieser Service ist standardmäßig aktiviert. Um sie zu deaktivieren, fügen Sie der ID-Dienst-Funktion `Visitor.getInstance` eine [optionale Variable](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) hinzu. Die Synchronisierungs-Services gleichen unterschiedliche [!DNL Experience Cloud]-IDs ab, beispielsweise:
+Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-Technologien, die für die ID-Synchronisation verantwortlich sind. Dieser Service ist standardmäßig aktiviert. Um sie zu deaktivieren, fügen Sie [ ID-Service-`Visitor.getInstance` eine ](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414)optionale Variable“ hinzu. Die Synchronisierungs-Services gleichen unterschiedliche [!DNL Experience Cloud]-IDs ab, beispielsweise:
 
 * [!DNL Experience Cloud]-Cookie-IDs von Drittanbietern mit [!DNL Experience Cloud]-IDs von Erstanbietern.
 

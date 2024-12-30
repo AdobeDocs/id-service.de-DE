@@ -179,7 +179,7 @@ Veröffentlichungsdatum: Februar 2017
    <td colname="col2"> <p>Durch diese Eigenschaft wird die Container-ID festgelegt, die von <span class="keyword">Audience Manager</span> für ID-Synchronisationen verwendet wird. Weitere Details unter <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>ID-Dienst-API-Methode, <span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>ID-Service-API-Methode<span class="codeph"> (appendSupplementalDataIDTo(<span class="varname"> URL</span>,<span class="varname"> SDID</span>)</span></p> </td> 
    <td colname="col2"> <p>Bei dieser öffentlichen Methode wird die Zusatzdaten-ID (<span class="wintitle">Supplemental Data ID</span>/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Siehe <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local">appendSupplementalDataIDTo</a>. (MCID-285) </p> </td> 
   </tr> 
  </tbody> 

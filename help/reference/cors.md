@@ -26,7 +26,7 @@ Der Browser lässt eine Anforderung zu, wenn beide Seiten dieselben Eigenschafte
 
 ## CORS behebt Probleme mit Gleiche-Herkunft-Richtlinien  {#section-76c87ec3295d447bab220c84f138c235}
 
-Cross Origin Resource Sharing (CORS) bietet eine sichere und effektive Möglichkeit, Ressourcen über verschiedene Domänen hinweg anzufordern. Die CORS-Spezifikation enthält eine Reihe von HTTP-Headern, die Browser zum Senden, Empfangen und Auswerten von Ressourcenanforderungen verwenden. Das Auswerten einer Ressourcenanforderung wird als *`preflight check`* bezeichnet. Mit dieser Prüfung können Browser und Server bestimmen, welche Anforderungen zulässig sind oder blockiert werden sollen. Die Preflight-Prüfung ist transparent für die mobile App bzw. API oder das Skript, die bzw. das eine Ressource anfordert. Zwei Header, die für den Ressourcenanforderungsprozess wichtig sind, sind:
+Cross Origin Resource Sharing (CORS) bietet eine sichere und effektive Möglichkeit, Ressourcen über verschiedene Domänen hinweg anzufordern. Die CORS-Spezifikation enthält eine Reihe von HTTP-Headern, die Browser zum Senden, Empfangen und Auswerten von Ressourcenanforderungen verwenden. Die Auswertung einer Ressourcenanforderung wird als *`preflight check`* bezeichnet. Mit dieser Prüfung können Browser und Server bestimmen, welche Anforderungen zulässig sind oder blockiert werden sollen. Die Preflight-Prüfung ist transparent für die mobile App bzw. API oder das Skript, die bzw. das eine Ressource anfordert. Zwei Header, die für den Ressourcenanforderungsprozess wichtig sind, sind:
 
 * `Origin`: Ein Anforderungsheader, der die Anforderungsquelle ermittelt.
 * `Access-Control-Allow-Origin`: Ein Antwortheader, der angibt, ob eine Ressource für den Anforderer freigegeben werden kann.

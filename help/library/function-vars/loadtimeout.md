@@ -1,18 +1,18 @@
 ---
-description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient dazu, anderen Lösungen (Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange auf eine Antwort des ID-Diensts gewartet werden soll.
+description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Wird verwendet, um anderen Lösungen (z. B. Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange auf eine Antwort des ID-Service gewartet werden soll.
 keywords: ID-Dienst
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
 # loadTimeout{#loadtimeout}
 
-Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Dient dazu, anderen Lösungen (Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange auf eine Antwort des ID-Diensts gewartet werden soll.
+Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Wird verwendet, um anderen Lösungen (z. B. Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange auf eine Antwort des ID-Service gewartet werden soll.
 
 **Syntax:** ` loadTimeout: *`Intervall in Millisekunden`*`
 
