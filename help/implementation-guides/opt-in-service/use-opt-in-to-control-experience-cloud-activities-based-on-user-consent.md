@@ -29,7 +29,7 @@ Mit [!UICONTROL Opt-in] können Sie auch entscheiden, ob Tags vor dem Benutzerei
 
 [!UICONTROL Opt-in] lässt sich am einfachsten mit Adobe Experience Platform-Tags (ehemals Launch) konfigurieren. Im folgenden kurzen Videos finden Sie eine Anleitung.
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40334/?quality=12&captions=ger)
 
 Wenn Sie keine Experience Platform-Tags verwenden, können Sie die Konfiguration des [!UICONTROL Opt-in] bei der Initialisierung des globalen Besucherobjekts festlegen, wie in der [Dokumentation](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=de) dargestellt.
 
@@ -43,7 +43,7 @@ Beim Einrichten einer Benutzeroberfläche für die Verwendung von [!UICONTROL Op
 
 Im folgenden Video sehen Sie eine kurze Demo dazu, wie das [!UICONTROL Opt-in] auf einer Seite funktioniert und wie es beeinflusst, ob die Experience Cloud-Lösungen Cookies setzen können, Beacons starten können usw.
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40339/?quality=12&captions=ger)
 
 **HINWEIS:** Es ist wichtig zu beachten, dass zum Zeitpunkt der Erstellung dieses Artikels das [!UICONTROL Opt-in] nicht in den Bibliotheken aller Experience Cloud-Lösungen integriert war. Folgende Bibliotheken werden derzeit für [!UICONTROL Opt-in] unterstützt:
 
