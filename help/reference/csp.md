@@ -1,24 +1,24 @@
 ---
-description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und über strenge CSPs verfügen, die Whitelists verwenden, um Ressourcen aus vertrauenswürdigen Domänen zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
+description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt , wenn Sie den ID-Service verwenden und über strikte CSPs verfügen, die Zulassungslisten verwenden, um Ressourcen von vertrauenswürdigen Domains zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domains zu Ihren CSP-Zulassungslisten hinzufügen.
 keywords: ID-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: 2bb47b56b26ce6ea17297a9ee0200f2623e44e71
+source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 81%
+ht-degree: 62%
 
 ---
 
 # Inhaltssicherheitsrichtlinien und der Experience Cloud Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
 
-Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt, wenn Sie den ID-Dienst verwenden und über strenge CSPs verfügen, die Whitelists verwenden, um Ressourcen aus vertrauenswürdigen Domänen zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domänen zu Ihren CSP-Whitelists hinzufügen.
+Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) ist eine HTTP-Header- und Sicherheitsfunktion, mit der Browser steuern können, welche Ressourcen auf einer Webseite geladen werden. Lesen Sie diesen Abschnitt , wenn Sie den ID-Service verwenden und über strikte CSPs verfügen, die Zulassungslisten verwenden, um Ressourcen von vertrauenswürdigen Domains zu akzeptieren. Sie müssen die hier aufgeführten Adobe-Domains zu Ihren CSP-Zulassungslisten hinzufügen.
 
 ## CSP-Übersicht  {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSPs verwenden den HTTP-Header `Content-Security-Policy`, um die Art der Ressourcen zu steuern, die ein Browser zulässt oder die auf einer Seite geladen werden. Durch die Anwendung eines CSP können Sie Folgendes verhindern:
 
-* Das Laden von JavaScript-Dateien, wenn die Quelle unbekannt oder nicht in einer Whitelist enthalten ist.
+* Laden von JavaScript-Dateien, wenn die Quelle unbekannt oder nicht in einer Zulassungsliste enthalten ist.
 * Cross-Site-Scripting-(XXS-) Angriffe.
 * Angriffe durch Dateninjektion.
 * Angriffe durch Site-Verunstaltung.
@@ -26,7 +26,7 @@ CSPs verwenden den HTTP-Header `Content-Security-Policy`, um die Art der Ressour
 
 Die Verwendung von CSPs ist üblich und gut verstanden. Es ist nicht der Zweck dieser Dokumentation, CSPs im Detail zu erläutern (weitere Informationen finden Sie unter den entsprechenden Links weiter unten). Wichtig ist, dass Sie wissen, welche Adobe-Domänennamen Sie zu einem CSP hinzufügen sollten, wenn Sie diese verwenden und strenge Sicherheitsrichtlinien haben. Durch das Hinzufügen dieser Domänen können Besucher-Browser, die auf Ihre Website zugreifen, die von Ihnen verwendeten Experience Cloud-Ressourcen aufrufen.
 
-## Experience Cloud-Domänen für Whitelists {#section-30693e9a96834edfbf04de9e698cf2aa}
+## Experience Cloud-Domains zur Zulassungsauflistung {#section-30693e9a96834edfbf04de9e698cf2aa}
 
 Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgelisteten Experience Cloud-Lösungen und -Dienste zu Ihrem CSP hinzu.
 
@@ -87,12 +87,12 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
     <p><b>Advertising Analytics</b></p>
    </td>
    <td colname="col2">
-    <p>Wenn Sie Abfragezeichenfolgenparameter einschränken, setzen Sie die folgenden Parameter auf die Zulassungsliste:</p>
+    <p>Auf die Zulassungsliste setzen Wenn Sie Abfragezeichenfolgenparameter einschränken, überprüfen Sie die folgenden Parameter:</p>
     <ul>
      <li><code>s_kwcid</code> (das <code>!</code> verwendet)</li>
      <li><code>ef_id</code> (das <code>:</code> verwendet)</li>
     </ul>
-    <p>Wenn Sie das <code>!</code> in URLs blockieren, setzen Sie es ebenfalls auf die Whitelist.</p>
+    <p>Auf die Zulassungsliste setzen Wenn Sie das <code>!</code> in URLs blockieren, können Sie es auch ändern.</p>
     <p>Advertising Analytics verwendet nur <code>s_kwcid</code>, aber auch Advertising Search, Social, und Commerce und Advertising DSP verwenden <code>ef_id</code>.</p>
    </td>
   </tr>
