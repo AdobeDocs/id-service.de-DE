@@ -3,10 +3,10 @@ description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) is
 keywords: ID-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 2bb47b56b26ce6ea17297a9ee0200f2623e44e71
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '501'
+ht-degree: 81%
 
 ---
 
@@ -30,44 +30,85 @@ Die Verwendung von CSPs ist üblich und gut verstanden. Es ist nicht der Zweck d
 
 Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgelisteten Experience Cloud-Lösungen und -Dienste zu Ihrem CSP hinzu.
 
-<table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Experience Cloud-Lösung oder -Service </th> 
-   <th colname="col2" class="entry"> Beschreibung </th> 
-  </tr> 
+<table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry">Experience Cloud-Lösung oder -Service</th>
+   <th colname="col2" class="entry">Beschreibung</th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <b>AppMeasurement</b> </p> </td> 
-   <td colname="col2"> <p>Nehmen Sie Folgendes in Ihre CSP auf: </p> <p> 
-     <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B"> 
-      <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"> <span class="codeph"> *.2o7.net</span> </li> 
-      <li id="li_4B12A283716746949201528CD6AF529E"> <span class="codeph"> *.omtrdc.net</span> </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b>Target</b> </p> </td> 
-   <td colname="col2"> <p>Nehmen Sie <span class="codeph">*.tt.omtrdc.net</span> in Ihre CSP auf. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b>Experience Cloud ID-Dienst und Audience Manager</b> </p> </td> 
-   <td colname="col2"> <p>Nehmen Sie die folgenden Domänen in Ihre CSP auf.</p> 
-   <p><ul>
-   <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li></ul></p> <p>Aufrufe der Domain <span class="codeph">demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies und des Experience Cloud Identity Services</a> sowie zur ID-Synchronisation verwendet. Siehe auch <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Aufrufe an die Domain „demdex.net“</a>. </p> </td> </tr> 
- <tr>
- <td colname="col1"> <p> <b>Activity Map-Plugin</b> </p> </td> 
- <td colname="col2"> <p>Nehmen Sie *.adobe.com in Ihre CSP auf. **Hinweis**: Wenn Activity Map bereits vor Januar 2020 installiert wurde, wird im Browser weiterhin zuerst eine Anfrage an *.omniture.com angezeigt, die jedoch an *.adobe.com weitergeleitet wird. </p></td> 
- </tr>
- <tr>
- <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>Wenn Sie über Steuerelemente für Abfragezeichenfolge-Parameter verfügen, nehmen Sie die Parameter „s_kwcid“ und „ef_id“ in die Whilist auf. Technisch gesehen verwendet Advertising Analytics nur „s_kwcid“, wenn Sie aber Ad Cloud Search oder DSP abrufen, wird auch „ef_id“ verwendet. Diese Abfragezeichenfolge-Parameter sind alphanumerisch. Der Parameter „s_kwcid“ verwendet das Zeichen „!“ und der Parameter „ef_id“ verwendet das Zeichen „:“. Wenn das Zeichen „!“ in der URL gesperrt ist, müssen Sie auch dieses in die Whitelist aufnehmen.</p></td> 
- </tr>
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1">
+    <p><b>AppMeasurement</b></p>
+   </td>
+   <td colname="col2">
+    <p>Nehmen Sie Folgendes in Ihre CSP auf:</p>
+    <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B">
+     <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"><span class="codeph">*.2o7.net</span></li>
+     <li id="li_4B12A283716746949201528CD6AF529E"><span class="codeph">*.omtrdc.net</span></li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Target</b></p>
+   </td>
+   <td colname="col2">
+    <p>Ändern Sie Ihre CSP, um <span class="codeph">*.tt.omtrdc.net</span> einzuschließen.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Experience Cloud ID-Service und Audience Manager</b></p>
+   </td>
+   <td colname="col2">
+    <p>Nehmen Sie die folgenden Domänen in Ihre CSP auf.</p>
+    <ul>
+     <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
+     <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li>
+    </ul>
+    <p>Aufrufe der Domain <span class="codeph">demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local">Cookies und des Experience Cloud Identity Service</a> und zur ID-Synchronisation verwendet. Siehe auch <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Aufrufe an die Domain „demdex.net“</a>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Activity Map-Plug-in</b></p>
+   </td>
+   <td colname="col2">
+    <p>Nehmen Sie *.adobe.com in Ihre CSP auf. **Hinweis**: Wenn Activity Map bereits vor Januar 2020 installiert wurde, wird im Browser weiterhin zuerst eine Anfrage an *.omniture.com angezeigt, die jedoch an *.adobe.com weitergeleitet wird.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Advertising Analytics</b></p>
+   </td>
+   <td colname="col2">
+    <p>Wenn Sie Abfragezeichenfolgenparameter einschränken, setzen Sie die folgenden Parameter auf die Zulassungsliste:</p>
+    <ul>
+     <li><code>s_kwcid</code> (das <code>!</code> verwendet)</li>
+     <li><code>ef_id</code> (das <code>:</code> verwendet)</li>
+    </ul>
+    <p>Wenn Sie das <code>!</code> in URLs blockieren, setzen Sie es ebenfalls auf die Whitelist.</p>
+    <p>Advertising Analytics verwendet nur <code>s_kwcid</code>, aber auch Advertising Search, Social, und Commerce und Advertising DSP verwenden <code>ef_id</code>.</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Adobe Advertising</b></p>
+   </td>
+   <td colname="col2">
+    <p>Ändern Sie Ihren CSP, um die folgenden Domains einzuschließen:</p>
+    <ul>
+     <li><code>.everestjs.net</code></li>
+     <li><code>.everesttech.net</code></li>
+    </ul>
+   </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!MORELIKETHIS]
