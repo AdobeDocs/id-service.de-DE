@@ -5,8 +5,8 @@ title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -52,15 +52,15 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Target</b></p>
+    <p><b>Ziel</b></p>
    </td>
    <td colname="col2">
-    <p>Ändern Sie Ihre CSP, um <span class="codeph">*.tt.omtrdc.net</span> einzuschließen.</p>
+    <p>Nehmen Sie <span class="codeph">*.tt.omtrdc.net</span> in Ihre CSP auf.</p>
    </td>
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Experience Cloud ID-Service und Audience Manager</b></p>
+    <p><b>Experience Cloud ID Service und Audience Manager</b></p>
    </td>
    <td colname="col2">
     <p>Nehmen Sie die folgenden Domänen in Ihre CSP auf.</p>
@@ -71,7 +71,7 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
      <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
      <li>Wenn Sie Tags mit Adobe Launch bereitstellen, müssen Sie der Liste der Domänen auch <code>https://assets.adobedtm.com</code> hinzufügen.</li>
     </ul>
-    <p>Aufrufe der Domain <span class="codeph">demdex.net</span> werden zur Generierung der <a href="../introduction/cookies.md" format="dita" scope="local">Cookies und des Experience Cloud Identity Service</a> und zur ID-Synchronisation verwendet. Siehe auch <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Aufrufe an die Domain „demdex.net“</a>.</p>
+    <p>Aufrufe an die Domain <span class="codeph">demdex.net</span> werden zur Generierung von <a href="../introduction/cookies.md" format="dita" scope="local">Cookies und dem Experience Cloud Identity Service</a> sowie zur ID-Synchronisierung verwendet. Siehe auch <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de" format="https" scope="external">Verstehen von Aufrufen an die Demdex-Domain</a>.</p>
    </td>
   </tr>
   <tr>
@@ -89,11 +89,11 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
    <td colname="col2">
     <p>Auf die Zulassungsliste setzen Wenn Sie Abfragezeichenfolgenparameter einschränken, überprüfen Sie die folgenden Parameter:</p>
     <ul>
-     <li><code>s_kwcid</code> (das <code>!</code> verwendet)</li>
-     <li><code>ef_id</code> (das <code>:</code> verwendet)</li>
+     <li><code>s_kwcid</code> (wobei <code>!</code>verwendet wird)</li>
+     <li><code>ef_id</code> (wobei <code>:</code>verwendet wird)</li>
     </ul>
     <p>Auf die Zulassungsliste setzen Wenn Sie das <code>!</code> in URLs blockieren, können Sie es auch ändern.</p>
-    <p>Advertising Analytics verwendet nur <code>s_kwcid</code>, aber auch Advertising Search, Social, und Commerce und Advertising DSP verwenden <code>ef_id</code>.</p>
+    <p>Advertising Analytics verwendet ausschließlich <code>s_kwcid</code>, aber Advertising Search, Social und Commerce sowie Advertising DSP verwenden auch <code>ef_id</code>.</p>
    </td>
   </tr>
   <tr>
@@ -101,7 +101,7 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
     <p><b>Adobe Advertising</b></p>
    </td>
    <td colname="col2">
-    <p>Ändern Sie Ihren CSP, um die folgenden Domains einzuschließen:</p>
+    <p>Nehmen Sie die folgenden Domains in Ihre CSP auf:</p>
     <ul>
      <li><code>.everestjs.net</code></li>
      <li><code>.everesttech.net</code></li>
