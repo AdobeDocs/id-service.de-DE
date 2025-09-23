@@ -4,10 +4,10 @@ user-guide-title: Hilfe zum Experience Cloud Identity Service
 breadcrumb-title: Identity Service-Handbuch
 user-guide-description: Der Adobe Experience Cloud Identity Service bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Experience Cloud-Lösungen hinweg. Es hilft dabei, den alten Code zur ID-Generierung für Experience Cloud-Lösungen und -Services zu ersetzen.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
+source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '407'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
    + [Direkte Integration mit dem ID-Service](implementation-guides/direct-integration.md)
    + [Direkte Integration – Anwendungsfälle](implementation-guides/direct-integration-examples.md)
    + [Testen und Überprüfen des ID-Service](implementation-guides/test-verify.md)
-   + Opt-in-Service {#opt-in-service}
+   + Opt-in-Dienst {#opt-in-service}
       + [Opt-in-Service – Übersicht](implementation-guides/opt-in-service/optin-overview.md)
       + [Einrichten des Opt-in-Service](implementation-guides/opt-in-service/getting-started.md)
       + [Validieren des Opt-in-Service](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
@@ -43,7 +43,7 @@ ht-degree: 100%
       + [Opt-in-Nutzungsszenarios](implementation-guides/opt-in-service/use-cases.md)
       + [Opt-in-Referenz](implementation-guides/opt-in-service/api.md)
       + [Nutzen von Opt-in-Services mithilfe von IAB Framework nutzen](implementation-guides/opt-in-service/iab.md)
-+ ID-Service-API {#id-service-api}
++ ID-Dienst-API {#id-service-api}
    + [ID-Service-API – Übersicht](library/library.md)
    + Konfiguration {#configurations}
       + [Konfigurationsübersicht](library/function-vars/function-vars.md)
@@ -91,7 +91,7 @@ ht-degree: 100%
       + [Analytics- und Identitätsanfragen](reference/analytics-reference/legacy-analytics.md)
       + [Serverseitige Implementierung zusammen mit JavaScript](reference/analytics-reference/server-side.md)
       + [Übergangsphase für den ID-Dienst](reference/analytics-reference/grace-period.md)
-   + [Änderungen von Kennzeichnungen für Google Chrome SameSite](reference/chrome-samesite-labelling.md)
+   + [Änderungen von Labels für Google Chrome SameSite](reference/chrome-samesite-labelling.md)
    + [Richtlinien zur Inhaltssicherheit und der ID-Service](reference/csp.md)
    + [COPPA-Unterstützung im ID-Service](reference/coppa.md)
    + [CORS-Unterstützung im ID-Service](reference/cors.md)
@@ -118,3 +118,4 @@ ht-degree: 100%
    + [Versionshinweise für 2016](release-notes/notes-2016.md)
    + [Versionshinweise für 2015](release-notes/notes-2015.md)
 + [Analysetest im Inhaltsverzeichnis ausgeblendet](analytics-test-file-hidetoc.md)
++ [Ausgeblendete Testdatei](hidden-file.md)
