@@ -5,9 +5,9 @@ breadcrumb-title: Identity Service-Handbuch
 user-guide-description: Der Adobe Experience Cloud Identity Service bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Experience Cloud-Lösungen hinweg. Es hilft dabei, den alten Code zur ID-Generierung für Experience Cloud-Lösungen und -Services zu ersetzen.
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 98%
    + [Direkte Integration mit dem ID-Service](implementation-guides/direct-integration.md)
    + [Direkte Integration – Anwendungsfälle](implementation-guides/direct-integration-examples.md)
    + [Testen und Überprüfen des ID-Service](implementation-guides/test-verify.md)
-   + Opt-in-Dienst {#opt-in-service}
+   + Opt-in-Service {#opt-in-service}
       + [Opt-in-Service – Übersicht](implementation-guides/opt-in-service/optin-overview.md)
       + [Einrichten des Opt-in-Service](implementation-guides/opt-in-service/getting-started.md)
       + [Validieren des Opt-in-Service](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
@@ -43,7 +43,7 @@ ht-degree: 98%
       + [Opt-in-Nutzungsszenarios](implementation-guides/opt-in-service/use-cases.md)
       + [Opt-in-Referenz](implementation-guides/opt-in-service/api.md)
       + [Nutzen von Opt-in-Services mithilfe von IAB Framework nutzen](implementation-guides/opt-in-service/iab.md)
-+ ID-Dienst-API {#id-service-api}
++ ID-Service-API {#id-service-api}
    + [ID-Service-API – Übersicht](library/library.md)
    + Konfiguration {#configurations}
       + [Konfigurationsübersicht](library/function-vars/function-vars.md)
@@ -108,7 +108,7 @@ ht-degree: 98%
    + [Häufig gestellte Fragen zum ID-Service](faq-intro/faq.md)
    + [Häufig gestellte Fragen zu Analytics und zum ID-Dienst](faq-intro/analytics-faq.md)
    + [Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen](faq-intro/other-faq.md)
-+ Versionshinweise für ID-Service {#release-notes}
++ Versionshinweise für ID-Dienst {#release-notes}
    + [Versionshinweise für 2022](release-notes/notes-2022.md)
    + [Versionshinweise für 2021](release-notes/notes-2021.md)
    + [Versionshinweise für 2020](release-notes/notes-2020.md)
