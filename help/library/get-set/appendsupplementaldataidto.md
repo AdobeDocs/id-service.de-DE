@@ -3,7 +3,7 @@ description: Bei dieser Helfermethode wird die Zusatzdaten-ID (Supplemental Data
 keywords: ID-Dienst
 title: 'appendSupplementalDataIDTo '
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Inhalt:
 
 ## Syntax und Codebeispiel {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**Syntax:** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
+**Syntax:** `appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **Codebeispiel**
 
@@ -54,7 +54,7 @@ Die [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-c
 
 Wenn Sie die SDID-Standardzeitüberschreitung ändern müssen, fügen Sie `sdidParamExpiry` der `Visitor.getInstance` Funktion mit der folgenden Syntax hinzu:
 
-**Syntax:** ` sdidParamExpiry: *`Zeit in Sekunden`*`
+**Syntax:** `sdidParamExpiry: *`Zeit in Sekunden`*`
 
 **Codebeispiel**
 

@@ -2,10 +2,10 @@
 description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Service wie erwartet funktioniert.
 title: Überprüfen des Opt-in-Dienstes
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 95%
+source-wordcount: '434'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Sie sollten keine Anfragen an Adobe-Server sehen:
 >
 >Möglicherweise wird ein Aufruf von `http://dpm.demdex.net/optOutStatus` angezeigt. Auf diesem SCHREIBGESCHÜTZTEN Endpunkt wird der Opt-out-Status des Benutzers abgerufen. Dieser Endpunkt führt nicht zur Erstellung von Drittanbieter-Cookies und erfasst keine Informationen von der Seite.
 
-Sie sollten keine Cookies sehen, die von den Adobe-Tags erstellt wurden: (AMCV_{{YOUR_ORG_ID}}, mbox, demdex, s_cc, s_sq, everest_g_v2, everest_session_v2)
+Es sollten keine Cookies angezeigt werden, die von den Adobe-Tags erstellt wurden: (`AMCV_{{YOUR_ORG_ID}}`, `mbox`, `demdex`, `s_cc`, `s_sq`, `everest_g_v2`, `everest_session_v2`)
 
 Wechseln Sie in Chrome zur Registerkarte *Anwendung*, erweitern Sie den Abschnitt *Cookies* unter *Datenspeicherung* und wählen Sie den Domänennamen Ihrer Website aus:
 

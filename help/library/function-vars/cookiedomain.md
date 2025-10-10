@@ -3,7 +3,7 @@ description: Erforderlich für mehrteilige Top-Level-Domänen, bei denen einer d
 keywords: ID-Dienst
 title: cookieDomain
 exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Erforderlich für mehrteilige Top-Level-Domänen, bei denen einer der letzten zwei Teile der URL mehr als 2 Zeichen umfasst.
 
-**Syntax:** ` cookieDomain: " *`URL`*"` (Das `www` Präfix ist nicht erforderlich.)
+**Syntax:** `cookieDomain: "*`URL`*"` (Das `www` Präfix ist nicht erforderlich.)
 
 **Anwendungsfall**
 

@@ -3,7 +3,7 @@ description: Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Wird 
 keywords: ID-Dienst
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 69%
@@ -14,7 +14,7 @@ ht-degree: 69%
 
 Legt ein Zeitüberschreitungsintervall in Millisekunden fest. Wird verwendet, um anderen Lösungen (z. B. Analytics, Audience Manager, Target usw.) mitzuteilen, wie lange auf eine Antwort des ID-Service gewartet werden soll.
 
-**Syntax:** ` loadTimeout: *`Intervall in Millisekunden`*`
+**Syntax:** `loadTimeout: *`Intervall in Millisekunden`*`
 
 Der Standardwert ist 30.000 Millisekunden (30 Sekunden). Es wird dringend empfohlen, den Standardwert *nicht* zu ändern.
 

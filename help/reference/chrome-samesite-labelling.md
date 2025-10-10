@@ -1,15 +1,15 @@
 ---
-title: Kennzeichnungs-Änderungen für Google Chrome SameSite
+title: Label-Änderungen für Google Chrome SameSite
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 99%
 
 ---
 
-# Kennzeichnungs-Änderungen für Google Chrome SameSite {#google-chrome-samesite-labelling-changes}
+# Label-Änderungen für Google Chrome SameSite {#google-chrome-samesite-labelling-changes}
 
 Das SameSite-Attribut teilt Browsern mit, wann und wie Cookies in Erstanbieter- und Drittanbieterszenarien ausgelöst werden. Das SameSite-Attribut kann einen von drei Werten haben: `strict`, `lax` oder `none`. Chrome, Firefox, Edge, Safari und Opera unterstützen `strict` und `lax` seit November 2017, während `none` 2018 eingeführt wurde. Einige ältere Browser unterstützen diese Einstellung jedoch nicht.
 
@@ -41,7 +41,7 @@ Alle Kunden sollten sicherstellen, dass ihre JavaScript-Konfiguration HTTPS für
 
 Solange Cookies korrekt gekennzeichnet sind, ergreifen Browser keine Maßnahmen, um sie zu blockieren. Die Verbraucher haben die Möglichkeit, bestimmte Cookie-Typen zu blockieren, aber derzeit scheint es sich hierbei lediglich um eine „Opt-in“-Einstellung zu handeln.
 
-**Vorhandene Drittanbieter-Cookies ohne aktualisierte Kennzeichnungen werden ignoriert**
+**Vorhandene Drittanbieter-Cookies ohne aktualisierte Labels werden ignoriert**
 
 Drittanbieter-Cookies, die erstellt wurden, bevor Chrome 80 mit der Erzwingung von SameSite=`none` und Einstellungen mit dem Flag „Sicher“ begonnen hat, werden von Chrome 80 ignoriert, wenn diese Flags nicht vorhanden sind.
 
@@ -117,6 +117,8 @@ In der folgenden Tabelle sind nur die gebräuchlichen standardmäßigen Besucher
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Kundenseitiger Erstanbieter | Kein Wert hinzugefügt; *Chrome übernimmt standardmäßig die Einstellung `lax` | Für externe Seiten konfigurierbar |
 
->  Adobe-Cookies von Drittanbietern werden Server-seitig gesetzt.
+>
+>
+>Adobe-Drittanbieter-Cookies werden Server-seitig gesetzt.
 
 Weitere Informationen finden Sie im Dokument zu den [Target-Google Chrome SameSite-Richtlinien](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html?lang=de).

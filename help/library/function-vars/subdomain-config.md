@@ -3,7 +3,7 @@ description: Mit diesen Konfigurationen ändern Sie den Standard-Domänennamen, 
 keywords: ID-Dienst
 title: audienceManagerServer und audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 100%
@@ -16,8 +16,8 @@ Mit diesen Konfigurationen ändern Sie den Standard-Domänennamen, der bei Aufru
 
 **Syntax:**
 
-* ` audienceManagerServer: " *`Name Ihrer untergeordneten Domain`*.demdex.net"`
-* ` audienceManagerServerSecure: " *`Name Ihrer untergeordneten Domain`*.demdex.net"`
+* `audienceManagerServer: " *`Name Ihrer untergeordneten Domain`*.demdex.net"`
+* `audienceManagerServerSecure: " *`Name Ihrer untergeordneten Domain`*.demdex.net"`
 
 **Zielsetzung**
 
@@ -27,13 +27,13 @@ Normalerweise führt der [!DNL Experience Cloud] ID-Dienst Aufrufe an [!DNL Adob
 
 Für diese Konfigurationen müssen Sie Folgendes verwenden:
 
-* Den Namen der untergeordneten [!DNL Audience Manager]-Domain für den Datensatz Ihres Unternehmens. Überprüfen Sie den Namen oder fragen Sie Ihren Berater danach.
+* Den archivierbaren Namen der untergeordneten [!DNL Audience Manager]-Domain Ihres Unternehmens. Überprüfen Sie den Namen oder fragen Sie Ihren Berater danach.
 * Den untergeordneten Domänenname, der Ihrer [!UICONTROL Organisations-ID] zugewiesen ist.
 * *Beide* Konfigurationsparameter mit demselben Subdomänennamen.
 
 **Codebeispiel**
 
-In diesem Beispiel nehmen wir an, dass ein Unternehmen für Unterhaltungsmedien rechtliche Bedenken bei Aufrufen an `dpm.demdex.net` hat. In [!DNL Audience Manager] lautet der untergeordnete Domänenname des Unternehmens „Music1“. Das folgende Codebeispiel zeigt, wie der Datenaufruf des ID-Diensts mit diesem kundenspezifischen untergeordneten Domänennamen versehen wird.
+In diesem Beispiel nehmen wir an, dass ein Unternehmen für Unterhaltungsmedien rechtliche Bedenken bei Aufrufen an `dpm.demdex.net` hat. In [!DNL Audience Manager] lautet der archivierbare untergeordnete Domänenname des Unternehmens „Music1“. Das folgende Codebeispiel zeigt, wie der Datenaufruf des ID-Diensts mit diesem kundenspezifischen untergeordneten Domänennamen versehen wird.
 
 ```
 //Instantiate Visitor 

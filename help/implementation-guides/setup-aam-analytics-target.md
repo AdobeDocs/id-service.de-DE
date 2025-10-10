@@ -3,7 +3,7 @@ description: Diese Anweisungen richten sich an Analytics-, Audience Manager- und
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
@@ -151,7 +151,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## Schritt 7: Hinzufügen des Besucher-API-Codes zur Seite {#section-c2bd096a3e484872a72967b6468d3673}
 
-Platzieren Sie die ` [!UICONTROL VisitorAPI.js]`-Datei innerhalb der `<head>`-Tags auf jeder Seite. Wenn Sie die `VisitorAPI.js` Datei zu Ihrer Seite hinzufügen:
+Platzieren Sie die `[!UICONTROL VisitorAPI.js]`-Datei innerhalb der `<head>`-Tags auf jeder Seite. Wenn Sie die `VisitorAPI.js` Datei zu Ihrer Seite hinzufügen:
 
 * Platzieren Sie sie am Anfang des Abschnitts `<head>`, damit dies vor anderen Lösungstags angezeigt wird.
 * Sie muss vor AppMeasurement und dem Code für andere [!DNL Experience Cloud]-Lösungen ausgeführt werden.

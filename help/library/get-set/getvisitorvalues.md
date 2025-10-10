@@ -1,9 +1,9 @@
 ---
-description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
+description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Aufzählungswert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
 keywords: ID-Dienst
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # getVisitorValues{#getvisitorvalues}
 
-Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
+Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Aufzählungswert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
 
 Inhalt:
 
@@ -25,12 +25,12 @@ Inhalt:
 
 ## Syntax {#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-Diese Funktion verwendet die folgende Syntax (kursiv stellt einen Platzhalter für eine Variable dar): ` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
+Diese Funktion verwendet die folgende Syntax (kursiv stellt einen Platzhalter für eine Variable dar): `var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
 
 In den Funktionsparametern:
 
-* ` *`callback`*` entspricht Ihrem eigenen Rückrufcode, der die zurückgegebenen IDs erhält.
-* *(Optional)* ` visitor.FIELDS. *`ID type`*` ist eine Enumeration, mit der Sie [ID-Werte](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) angeben können, die von dieser Funktion zurückgegeben werden sollen.
+* `*`callback`*` entspricht Ihrem eigenen Rückrufcode, der die zurückgegebenen IDs erhält.
+* *(Optional)* `visitor.FIELDS. *`ID type`*` ist eine Enumeration, mit der Sie [ID-Werte](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) angeben können, die von dieser Funktion zurückgegeben werden sollen.
 
 Weitere Informationen finden Sie in den folgenden Nutzungsszenarios und Definitionen.
 
@@ -61,7 +61,7 @@ Im Beispiel für die standardmäßige Antwort wurden einige Werte zu Demonstrati
 
 ## Nutzungsszenario 2: Benutzerdefinierten Datensatz anfordern  {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-In diesem Code wird ein optionales Array verwendet, um einen spezifischen Satz von IDs mit der `visitor.FIELDS`-Enumeration zurückzugeben. In diesem Fall möchten wir nur die Experience Cloud ID (MCID) und die Analytics-ID (MCAID) des Besuchers abrufen. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
+In diesem Code wird ein optionales Array verwendet, um einen spezifischen Satz von IDs mit der `visitor.FIELDS`-Aufzählung zurückzugeben. In diesem Fall möchten wir nur die Experience Cloud ID (MCID) und die Analytics-ID (MCAID) des Besuchers abrufen. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
 
 ```js
 //Call the ID service 
@@ -83,7 +83,7 @@ Die benutzerdefinierte Antwort im Beispiel gibt nur die in der Anforderung angeg
 
 ## Definierte Antwortparameter  {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Dies sind auch alle Werte in der `visitor.FIELDS`-Enumeration. Beachten Sie, dass diese Methode eine leere Zeichenfolge zurückgibt, wenn es für eine bestimmte Variable keine Werte gibt.
+In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Dies sind auch alle Werte in der `visitor.FIELDS`-Aufzählung. Beachten Sie, dass diese Methode eine leere Zeichenfolge zurückgibt, wenn es für eine bestimmte Variable keine Werte gibt.
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
