@@ -211,7 +211,7 @@ Object customerIDs = visitor.getCustomerIDs();
 
 Der [!DNL Experience Cloud] ID-Dienst unterstützt Kunden-IDs und Authentifizierungsstatus in unserem Android- und iOS-SDK-Code. Siehe die folgenden Code-Bibliotheken:
 
-* [ SDK-Methoden für Android ](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=de)
+* [&#x200B; SDK-Methoden für Android &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=de)
 * [iOS-SDK-Methoden](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=de)
 
 ## Hinweise für Kunden von Analytics und Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}

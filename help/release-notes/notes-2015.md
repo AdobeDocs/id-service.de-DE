@@ -37,7 +37,7 @@ August 2015
   Dies betraf nur einige Clients, die *alle* der folgenden Kriterien erfüllten:
 
    * Verwenden des ID-Diensts.
-   * Aktivierung einer [Schonfrist ](../reference/analytics-reference/grace-period.md)*oder* Verwendung von Cookies von Erstanbietern und Benutzer blockieren Cookies von Drittanbietern.
+   * Aktivierung einer [Schonfrist &#x200B;](../reference/analytics-reference/grace-period.md)*oder* Verwendung von Cookies von Erstanbietern und Benutzer blockieren Cookies von Drittanbietern.
 
    * Besitz von Seiten mit mehrteiligen Top-Level-Domains.
 

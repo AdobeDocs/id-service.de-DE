@@ -18,4 +18,4 @@ Video Heartbeat erfordert den Experience Cloud Identity Service. Bei der Videome
 
 >[!MORELIKETHIS]
 >
->* [Messen von Audio und Video in Adobe Analytics ](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html)
+>* [Messen von Audio und Video in Adobe Analytics &#x200B;](https://docs.adobe.com/content/help/de-DE/experience-cloud/user-guides/home.translate.html)

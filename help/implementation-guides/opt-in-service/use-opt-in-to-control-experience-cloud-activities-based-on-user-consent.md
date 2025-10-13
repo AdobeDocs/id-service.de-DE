@@ -17,7 +17,7 @@ Das [!UICONTROL Opt-in]-Objekt von Adobe ist eine Erweiterung des [!UICONTROL Ad
 
 Ein wichtiger Aspekt der Datenschutzbestimmungen ist der Erwerb und die Übermittlung des Einverständnisses der Benutzer darüber, wie und von wem ihre personenbezogenen Daten verwendet werden dürfen. Die neueste Version des [!UICONTROL Identity Service] umfasst Funktionen, die bedingte Auslösung von Experience Cloud-Lösungs-Tags (z. B. vor und nach der Zustimmung) bereitstellen, je nachdem, ob die Zustimmung des Endbenutzers eingeholt wurde. Dies wird in der folgenden Abbildung verdeutlicht:
 
-![Abbildung der Funktionsweise von [!UICONTROL Opt-in] ](assets/opt-in.png)
+![Abbildung der Funktionsweise von [!UICONTROL Opt-in] &#x200B;](assets/opt-in.png)
 
 [!UICONTROL Opt-in] funktioniert wie folgt:
 
