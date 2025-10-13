@@ -2,7 +2,7 @@
 title: Label-Änderungen für Google Chrome SameSite
 description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 99%
@@ -117,7 +117,7 @@ In der folgenden Tabelle sind nur die gebräuchlichen standardmäßigen Besucher
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | Kundenseitiger Erstanbieter | Kein Wert hinzugefügt; *Chrome übernimmt standardmäßig die Einstellung `lax` | Für externe Seiten konfigurierbar |
 
->
+>[!IMPORTANT]
 >
 >Adobe-Drittanbieter-Cookies werden Server-seitig gesetzt.
 
