@@ -3,10 +3,10 @@ description: Diese Anweisungen richten sich an Analytics-, Audience Manager- und
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 100%
+source-wordcount: '1443'
+ht-degree: 97%
 
 ---
 
@@ -37,8 +37,8 @@ Die Migration zur Server-seitigen Weiterleitung erfordert Planung und Koordinier
 
 Für den ID-Dienst ist die `VisitorAPI.js` Code-Bibliothek erforderlich. Zum Herunterladen dieser Code-Bibliothek tun Sie Folgendes:
 
-1. Rufen Sie **[!UICONTROL Admin > Code-Manager auf]**.
-1. Klicken Sie im Code-Manager entweder auf **[!UICONTROL JavaScript (Neu)]** oder **[!UICONTROL JavaScript (Legacy)]**. Dies leitet das Herunterladen der komprimierten Code-Bibliotheken ein.
+1. Gehe zu **[!UICONTROL Admin > Code Manager]**.
+1. Klicken Sie im Code-Manager entweder auf **[!UICONTROL JavaScrpt (New)]** oder auf **[!UICONTROL JavaScript (Legacy)]**. Dies leitet das Herunterladen der komprimierten Code-Bibliotheken ein.
 
 1. Entpacken Sie die Code-Datei und öffnen Sie die `VisitorAPI.js` Datei.
 
@@ -130,7 +130,7 @@ Wenn Sie nicht genau wissen, wie Sie Ihren Trackingserver finden, lesen Sie die 
 
 ## Schritt 6: Aktualisieren der AppMeasurement.js-Datei {#section-5517e94a09bc44dfb492ebca14b43048}
 
-Dieser Schritt erfordert [!UICONTROL AppMeasurement]. Sie können nicht fortfahren, wenn Sie weiterhin s_code verwenden.
+Für diesen Schritt ist [!UICONTROL AppMeasurement] erforderlich. Sie können nicht fortfahren, wenn Sie weiterhin s_code verwenden.
 
 Fügen Sie Ihrer `Visitor.getInstance`-Datei die im Folgenden gezeigte `AppMeasurement.js`-Funktion hinzu. Platzieren Sie sie in dem Abschnitt, in dem Konfigurationen wie `linkInternalFilters`, `charSet`, `trackDownloads` usw. enthalten sind:
 
@@ -158,7 +158,7 @@ Platzieren Sie die `[!UICONTROL VisitorAPI.js]`-Datei innerhalb der `<head>`-Tag
 
 ## Schritt 8: (Optional) Konfigurieren einer Übergangsphase {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Wenn eines dieser Nutzungsszenarios auf Ihre Situation zutrifft, bitten Sie die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), eine temporäre [Übergangsphase](../reference/analytics-reference/grace-period.md) einzurichten. Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
+Wenn einer dieser Anwendungsfälle auf Ihre Situation zutrifft, bitten Sie [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), eine vorübergehende Übergangsphase einzurichten. Übergangsphasen können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
 
 **Partielle Implementierung**
 
@@ -206,7 +206,7 @@ Suchen Sie in der JavaScript-Anforderung nach der SDID-Kennung. Die Analytics-SD
 Wenn Ihre Tests eine AID zurückgeben, weist dies auf eine der folgenden Möglichkeiten hin:
 
 * Sie sind ein wiederkehrender Besucher im Prozess der Migration von alten [!DNL Analytics]-IDs.
-* Sie haben eine [Übergangsphase](../reference/analytics-reference/grace-period.md) aktiviert.
+* Sie haben eine [Übergangsphase](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) aktiviert.
 
 Wenn Sie eine AID sehen, vergleichen Sie den zugehörigen Wert mit der [!DNL Target] mboxMCAVID von. Diese Werte sind identisch, wenn der ID-Dienst korrekt implementiert wurde.
 

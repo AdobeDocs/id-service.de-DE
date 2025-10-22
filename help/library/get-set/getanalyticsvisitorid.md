@@ -3,10 +3,10 @@ description: Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vor de
 keywords: ID-Dienst
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 100%
+source-wordcount: '277'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ Der Parameter `aid` taucht in einer Abfragezeichenfolge auf, wenn:
 
 **2. Fall**
 
-Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen eine [Übergangsphase](../../reference/analytics-reference/grace-period.md) verwendet, bevor es den ID-Dienst vollständig implementiert. Hat der aktuelle Besucher Ihre Seite zuvor noch nie aufgerufen und sollten Sie keine Übergangsphase festgelegt haben, erhält der Besucher den Parameter `mid` ([!DNL Experience Cloud] ID).
+Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen eine [Übergangsphase](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) verwendet, bevor es den ID-Dienst vollständig implementiert. Hat der aktuelle Besucher Ihre Seite zuvor noch nie aufgerufen und sollten Sie keine Übergangsphase festgelegt haben, erhält der Besucher den Parameter `mid` ([!DNL Experience Cloud] ID).
 
 >[!MORELIKETHIS]
 >

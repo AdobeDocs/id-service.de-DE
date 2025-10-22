@@ -5,9 +5,9 @@ title: Versionshinweise für 2016
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1099'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ November 2016
 
 >[!IMPORTANT]
 >
->* Für Version 1.10 wird [!UICONTROL AppMeasurement] 1.8.0 benötigt.
+>* Version 1.10 erfordert [!UICONTROL AppMeasurement] 1.8.0.
 >* Ab Experience Cloud Identity Service-Bibliothek 2.0.0 beginnt die ID-Synchronisierung für Adobe Media Optimizer automatisch. Weitere Informationen finden Sie unter [Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten](/help/introduction/match-rates.md).
 
 **Fehlerbehebungen und Verbesserungen**
@@ -123,7 +123,6 @@ Juli 2016
 
 **Neu**
 
-* [Implementieren des Experience Cloud Identity Services für Analytics](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
 * [Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **Überarbeitet**
@@ -198,12 +197,6 @@ März 2016
   </tr> 
  </tbody> 
 </table>
-
-**Dokumentation – Aktualisierungen**
-
-* [Implementierung des Experience Cloud Identity Services für](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd): Neue Vorgehensweise, die die Einrichtung des ID-Diensts mit Analytics [!DNL Analytics] beschreibt.
-
-* [Entscheidungspunkte zur Experience Cloud Identity Servicemigration](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257): Überarbeiteter Text für mehr Klarheit. Wenn Sie mit nur einen Domain arbeiten, können Sie einen Datenerfassungs-CNAME eliminieren, wenn Sie ihn nicht mehr unterhalten möchten. Wenn Ihr CNAME funktioniert, ist dies jedoch nicht notwendig.
 
 ## Version 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 

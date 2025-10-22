@@ -5,9 +5,9 @@ solution: Experience Cloud
 title: Handbücher zur Implementierung
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '171'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launc
 
 * [Methoden der Implementierung](implementation-methods.md)
 * [Implementieren mit Experience Platform Launch](ecid-implement-with-launch.md)
-* [Implementieren des Experience Cloud Identity Services für Analytics](setup-analytics.md)
 * [Implementieren des Experience Cloud Identity Services für Target](setup-target.md)
 * [Implementieren des Experience Cloud Identity Services für Analytics und Audience Manager](setup-aam-analytics.md)
 * [Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target](setup-aam-analytics-target.md)
