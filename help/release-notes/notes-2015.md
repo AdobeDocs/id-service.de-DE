@@ -37,7 +37,7 @@ August 2015
   Dies betraf nur einige Clients, die *alle* der folgenden Kriterien erfüllten:
 
    * Verwenden des ID-Diensts.
-   * Eine [Übergangsphase](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *oder* wurde aktiviert, da Erstanbieter-Cookies verwendet und Benutzer Drittanbieter-Cookies blockieren.
+   * Eine [Übergangsphase](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) *oder* wurde aktiviert, da Erstanbieter-Cookies verwendet und Benutzer Drittanbieter-Cookies blockieren.
    * Besitz von Seiten mit mehrteiligen Top-Level-Domains.
 
 Dokumentationsüberarbeitungen in dieser Version umfassen:
