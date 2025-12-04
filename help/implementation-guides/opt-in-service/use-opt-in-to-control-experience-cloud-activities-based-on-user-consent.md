@@ -31,7 +31,7 @@ Ein wichtiger Aspekt der Datenschutzbestimmungen ist der Erwerb und die Übermit
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-Wenn Sie keine Experience Platform-Tags verwenden, können Sie die Konfiguration von [!UICONTROL Opt-in] bei der Initialisierung des globalen Besucherobjekts festlegen, wie in der [Dokumentation) ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=de).
+Wenn Sie keine Experience Platform-Tags verwenden, können Sie die Konfiguration von [!UICONTROL Opt-in] bei der Initialisierung des globalen Besucherobjekts festlegen, wie in der [Dokumentation) &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=de).
 
 ## Implementieren von [!UICONTROL Opt-In] auf der Seite
 

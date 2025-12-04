@@ -58,7 +58,7 @@ Synchronisierte IDs werden auf den [Edge- und Core-Daten-Servern gespeichert](ht
 
 ## Synchronisierungsdienste verwalten die ID-Synchronisierung {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-Technologien, die für die ID-Synchronisation verantwortlich sind. Dieser Service ist standardmäßig aktiviert. Um sie zu deaktivieren, fügen Sie [ ID-Service-](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) eine `Visitor.getInstance`optionale Variable“ hinzu. Die Synchronisierungs-Services gleichen unterschiedliche [!DNL Experience Cloud]-IDs ab, beispielsweise:
+Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-Technologien, die für die ID-Synchronisation verantwortlich sind. Dieser Service ist standardmäßig aktiviert. Um sie zu deaktivieren, fügen Sie [&#x200B; ID-Service-](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) eine `Visitor.getInstance`optionale Variable“ hinzu. Die Synchronisierungs-Services gleichen unterschiedliche [!DNL Experience Cloud]-IDs ab, beispielsweise:
 
 * [!DNL Experience Cloud]-Cookie-IDs von Drittanbietern mit [!DNL Experience Cloud]-IDs von Erstanbietern.
 
