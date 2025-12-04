@@ -3,7 +3,7 @@ description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des
 keywords: ID-Dienst
 title: Versionshinweise für 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 99%
@@ -47,3 +47,4 @@ Fehlerbehebung für ein Performance-Problem in `Internet-Explorer (IE) 11`, wenn
 * Es wurde ein Problem behoben, bei dem der Opt-in als `doesOptInApply=false` und `isIabContext=true` konfiguriert wurde.
 
 Die monatlichen Versionshinweise zu allen Produkten finden Sie unter [Versionshinweise für Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de).
+

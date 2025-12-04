@@ -3,9 +3,9 @@ description: Eine Übersicht über die ID-Synchronisierungsprozesse und Überein
 keywords: ID-Service
 title: Grundlegendes zu ID-Synchronisierung und Übereinstimmungsraten
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '747'
 ht-degree: 96%
 
 ---
@@ -58,7 +58,7 @@ Synchronisierte IDs werden auf den [Edge- und Core-Daten-Servern gespeichert](ht
 
 ## Synchronisierungsdienste verwalten die ID-Synchronisierung {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-Technologien, die für die ID-Synchronisation verantwortlich sind. Dieser Service ist standardmäßig aktiviert. Um sie zu deaktivieren, fügen Sie [&#x200B; ID-Service-`Visitor.getInstance` eine &#x200B;](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414)optionale Variable“ hinzu. Die Synchronisierungs-Services gleichen unterschiedliche [!DNL Experience Cloud]-IDs ab, beispielsweise:
+Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-Technologien, die für die ID-Synchronisation verantwortlich sind. Dieser Service ist standardmäßig aktiviert. Um sie zu deaktivieren, fügen Sie [ ID-Service-](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) eine `Visitor.getInstance`optionale Variable“ hinzu. Die Synchronisierungs-Services gleichen unterschiedliche [!DNL Experience Cloud]-IDs ab, beispielsweise:
 
 * [!DNL Experience Cloud]-Cookie-IDs von Drittanbietern mit [!DNL Experience Cloud]-IDs von Erstanbietern.
 
@@ -69,8 +69,9 @@ Der Begriff *`Sync Services`* bezieht sich auf interne [!DNL Experience Cloud]-T
 
 ## ID-Synchronisierung mit Adobe Advertising Cloud {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Advertising Cloud] (früher [!DNL Adobe Media Optimizer] genannt) bildet eine Ausnahme zum iFrame-basierten ID-Synchronisierungsprozess. Da es sich bei [!DNL Advertising Cloud] um eine vertrauenswürdige Domain handelt, erfolgt die ID-Synchronisierung von der übergeordneten Seite aus statt im [!UICONTROL Destination Publishing iFrame]. Bei der Synchronisierung ruft der ID-Service [!DNL Advertising Cloud] unter `cm.eversttech.net` den älteren Domänennamen auf, der von [!DNL Advertising Cloud] vor der Akquise durch Adobe verwendet wurde. Das Senden von Daten an [!DNL Advertising Cloud] kann Übereinstimmungsraten verbessern und wird für Kunden mit Version 2.0 des ID-Service (oder höher) automatisch durchgeführt. Siehe auch [Advertising Cloud-Cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=de).
+[!DNL Adobe Advertising Cloud] (früher [!DNL Adobe Media Optimizer] genannt) bildet eine Ausnahme zum iFrame-basierten ID-Synchronisierungsprozess. Da es sich bei [!DNL Advertising Cloud] um eine vertrauenswürdige Domain handelt, erfolgt die ID-Synchronisierung von der übergeordneten Seite aus statt im [!UICONTROL Destination Publishing iFrame]. Bei der Synchronisierung ruft der ID-Dienst [!DNL Advertising Cloud] unter `cm.eversttech.net` den älteren Domänennamen auf, der von [!DNL Advertising Cloud] vor der Akquise durch Adobe verwendet wurde. Das Senden von Daten an [!DNL Advertising Cloud] kann Übereinstimmungsraten verbessern und wird für Kunden mit Version 2.0 des ID-Service (oder höher) automatisch durchgeführt. Siehe auch [Advertising Cloud-Cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=de).
 
 >[!MORELIKETHIS]
 >
 >* [Aufrufe an die Domain „demdex.net“](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de)
+

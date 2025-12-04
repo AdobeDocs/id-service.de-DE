@@ -3,9 +3,9 @@ description: Mit diesen Konfigurationen ändern Sie den Standard-Domänennamen, 
 keywords: ID-Dienst
 title: audienceManagerServer und audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '210'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Normalerweise führt der [!DNL Experience Cloud] ID-Dienst Aufrufe an [!DNL Adob
 Für diese Konfigurationen müssen Sie Folgendes verwenden:
 
 * Den archivierbaren Namen der untergeordneten [!DNL Audience Manager]-Domain Ihres Unternehmens. Überprüfen Sie den Namen oder fragen Sie Ihren Berater danach.
-* Den untergeordneten Domänenname, der Ihrer [!UICONTROL Organisations-ID] zugewiesen ist.
+* Den Namen der untergeordneten Domain, der Ihrer [!UICONTROL Organization ID] zugewiesen ist.
 * *Beide* Konfigurationsparameter mit demselben Subdomänennamen.
 
 **Codebeispiel**
@@ -45,3 +45,4 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
      } 
 );
 ```
+

@@ -3,10 +3,10 @@ description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änd
 keywords: ID-Dienst
 title: Versionshinweise für 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -89,7 +89,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Cookie auf inkorrekte Domain eingestellt </p> </td> 
-   <td colname="col2"> <p>Es wurde ein Fehler behoben, durch den das temporäre Visitor-Cookie ein Cookie in der standardmäßigen Cookie-Domain setzte, anstatt es in der in der Konfiguration angegebenen Domain („initConfig“) zu setzen. </p> </td> 
+   <td colname="col2"> <p>Es wurde ein Fehler behoben, durch den das temporäre Besucher-Cookie ein Cookie in der Cookie-Domain „default“ setzte, anstatt es in der in config (initConfig) bereitgestellten Domain festzulegen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -122,3 +122,4 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
   </tr> 
  </tbody> 
 </table>
+

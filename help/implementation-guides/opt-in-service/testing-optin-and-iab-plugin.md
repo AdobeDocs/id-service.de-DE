@@ -2,7 +2,7 @@
 description: Nachdem Sie Opt-in auf Ihrer Website aktiviert haben, verwenden Sie die Validierungsmethoden, um mit den Entwicklertools in Ihrem Browser zu testen, ob der Service wie erwartet funktioniert.
 title: Überprüfen des Opt-in-Dienstes
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 97%
@@ -113,3 +113,4 @@ Wenn einer der folgenden Werte ungültig ist, werden keine Anfragen an Adobe-Ser
 
 * Die Zwecke 1, 2 ODER 5 werden nicht genehmigt.
 * Die Anbieter-ID von Audience Manager wurde nicht genehmigt.
+

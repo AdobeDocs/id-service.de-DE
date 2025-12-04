@@ -2,7 +2,7 @@
 description: Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspunkt für Experience Cloud-Lösungen (bei Opt-in als „Kategorien“ bezeichnet), um zu ermitteln, ob Cookies auf dem Gerät eines Besuchers erstellt werden dürfen.
 title: Einrichten des Opt-in-Dienstes
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -97,7 +97,7 @@ Während Benutzer Ihre Site besuchen, können sie jederzeit Voreinstellungen zum
 
 ## Opt-in-Workflows {#section-70cd243dec834c8ea096488640ae20a5}
 
-Der Opt-in-Dienst unterstützt einen Workflow, bei dem Berechtigungen über mehrere Anfragezyklen erfasst werden können und Voreinstellungen einzeln festgelegt werden. Mit folgenden Funktionen und durch Festlegen von *true* für `shouldWaitForComplete` kann Ihre Lösung zunächst die Zustimmung für eine Kategorie oder Untergruppe von Kategorien erfassen und dann für die nächste Kategorie oder Untergruppe von Kategorien. Beim ersten Aufruf hat die Eigenschaft `adobe.optIn.status` den Wert *pending*, bis `adobe.optIn.complete()` am Ende des Workflows aufgerufen wird. Danach lautet der Status *complete*.
+Der Opt-in-Dienst unterstützt einen Workflow, bei dem Berechtigungen über mehrere Anfragezyklen erfasst werden können und Voreinstellungen einzeln festgelegt werden. Mit folgenden Funktionen und durch Festlegen von *true* für `shouldWaitForComplete` kann Ihre Lösung zunächst die Zustimmung für eine Kategorie oder Teilmenge von Kategorien erfassen und dann für die nächste Kategorie oder Teilmenge von Kategorien. Beim ersten Aufruf hat die Eigenschaft `adobe.optIn.status` den Wert *pending*, bis `adobe.optIn.complete()` am Ende des Workflows aufgerufen wird. Danach lautet der Status *complete*.
 
 ```
 adobe.optIn.approve(['AAM', 'ECID'], true); 
@@ -143,3 +143,4 @@ Das `adobe.optIn`-Objekt ist zustandslos und bietet keinen Speichermechanismus. 
 
 * Wenn die Voreinstellungen von Besuchern mit Ihrer Lösung zum Speichern der Zustimmung, also einer CMP oder einem Cookie im Browser des Besuchers, zeitnah abgerufen werden können, dann können Sie diese während der Visitor-Initialisierung an den Opt-in-Dienst übergeben.
 * Wenn das Abrufen der Voreinstellungen jedoch länger dauert oder aus anderen Gründen als asynchroner Prozess durchgeführt werden sollte, können Sie die `approve()` Funktion des Dienstes verwenden, um diese Einstellungen bereitzustellen, nachdem sie erfolgreich geladen wurden.
+

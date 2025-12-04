@@ -3,7 +3,7 @@ description: Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenh
 keywords: ID-Dienst
 title: Anwendungsfälle der direkten Integration
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 86%
@@ -52,7 +52,7 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 
-   <td colname="col2"> <p>Formatieren Sie Ihren Aufruf an den ID-Dienst wie folgt: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>Wie Sie sehen, enthält der Beispielaufruf Folgendes: </p> 
+   <td colname="col2"> <p>Formatieren Sie Ihren Aufruf an den ID-Dienst wie folgt: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>Wie Sie sehen, enthält der Beispielaufruf Folgendes: </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID: <span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">MID in Verbindung mit Ihrer eindeutigen ID für den Besucher: <span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,7 +87,8 @@ Diese Beispiele decken zwei gängige Nutzungsszenarios im Zusammenhang mit einer
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Lösung und Codebeispiel</b> </p> </td> 
-   <td colname="col2"> <p>Formatieren Sie Ihren Aufruf an den ID-Dienst wie folgt: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>Wie Sie sehen, enthält der Beispielaufruf Ihre Organisations-ID <span class="codeph">d_orgid=5555</span>. Hiermit wird eine <span class="keyword">Experience Cloud</span> ID für diesen Besucher zurückgegeben. </p> </td> 
+   <td colname="col2"> <p>Formatieren Sie Ihren Aufruf an den ID-Dienst wie folgt: </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>Wie Sie sehen, enthält der Beispielaufruf Ihre Organisations-ID <span class="codeph">d_orgid=5555</span>. Hiermit wird eine <span class="keyword">Experience Cloud</span> ID für diesen Besucher zurückgegeben. </p> </td> 
   </tr> 
  </tbody> 
 </table>
+

@@ -3,9 +3,9 @@ description: Diese Anweisungen richten sich an Target-Kundinnen und Kunden, die 
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Target
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '396'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Diese Anweisungen richten sich an Analytics-Kundinnen und Kunden, die den Identi
 
 ## Schritt 1: Herunterladen des ID-Dienst-Codes {#section-b32ba0548aa546a79dd38be59832a53e}
 
-Für den [!UICONTROL ID-Dienst] ist die Code-Bibliothek `VisitorAPI.js` erforderlich. Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um diesen Code zu erhalten.
+Für den [!UICONTROL ID Service] ist die `VisitorAPI.js` Code-Bibliothek erforderlich. Wenden Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), um diesen Code zu erhalten.
 
 ## Schritt 2: Hinzufügen der Funktion „Visitor.getInstance“ zum ID-Dienst-Code {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -78,3 +78,4 @@ Weitere Informationen zu AMCV-Cookie und MID siehe [Cookies und der Experience C
 **Bereitstellen**
 
 Stellen Sie Ihren Code nach Abschluss der Tests bereit.
+

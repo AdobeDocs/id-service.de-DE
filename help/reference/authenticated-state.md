@@ -3,10 +3,10 @@ description: Neben der Besucher-ID für Experience Cloud können Sie jedem Kunde
 keywords: ID-Dienst
 title: Kunden-IDs und Authentifizierungsstatus
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 100%
+source-wordcount: '592'
+ht-degree: 97%
 
 ---
 
@@ -211,9 +211,10 @@ Object customerIDs = visitor.getCustomerIDs();
 
 Der [!DNL Experience Cloud] ID-Dienst unterstützt Kunden-IDs und Authentifizierungsstatus in unserem Android- und iOS-SDK-Code. Siehe die folgenden Code-Bibliotheken:
 
-* [&#x200B; SDK-Methoden für Android &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=de)
+* [ SDK-Methoden für Android ](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=de)
 * [iOS-SDK-Methoden](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=de)
 
 ## Hinweise für Kunden von Analytics und Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-Sollten Sie deklarierte IDs an [!DNL Audience Manager] weiterleiten, muss das Objekt `userid` dem mit einer Datenquelle verknüpften Integrations-Code entsprechen. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Besucher-ID-Dienst] in der Dokumentation [Konfiguration von Regelverschmelzungs-Code](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=de#configure-merge-rule-code).
+Sollten Sie deklarierte IDs an [!DNL Audience Manager] weiterleiten, muss das Objekt `userid` dem mit einer Datenquelle verknüpften Integrations-Code entsprechen. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Visitor ID Service] in der Dokumentation [Konfigurieren von Zusammenführungsregeln](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=de#configure-merge-rule-code).
+

@@ -3,7 +3,7 @@ description: Konfigurieren Sie den ID-Dienst, indem Sie diese Eigenschaften an d
 keywords: Organisations-ID;ID-Dienst
 title: Konfigurationen
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
-source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 100%
@@ -36,3 +36,4 @@ Verwandte Artikel:
 + [secureCookie](securecookie.md)
 + [useCORSOnly](use-cors-only.md)
 + [whitelistParentDomain und whitelistIframeDomains](whitelistdomain.md)
+

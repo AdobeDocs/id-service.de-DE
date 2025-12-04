@@ -3,10 +3,10 @@ description: Diese Anweisungen richten sich an A4T-Kunden mit kombinierten Serve
 keywords: ID-Dienst
 title: Nutzung des ID-Service mit A4T und Server-seitige Implementierung der Target-Komponente
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 98%
+source-wordcount: '803'
+ht-degree: 96%
 
 ---
 
@@ -152,10 +152,10 @@ Response.send("
 
 **DTM-Einstellungen**
 
-Fügen Sie dem Abschnitt **[!UICONTROL Allgemein > Einstellungen]** Ihrer ID-Dienstinstanz diese als Namens-Wert-Paare hinzu:
+Fügen Sie diese als Name-Wert-Paare zum **[!UICONTROL General > Settings]** Abschnitt Ihrer ID-Service-Instanz hinzu:
 
 * **[!UICONTROL Name:]** serverState
-* **[!UICONTROL Wert:]** %serverState%
+* **[!UICONTROL Value:]** %serverState%
 
   >[!IMPORTANT]
   >
@@ -196,4 +196,5 @@ Zu diesem Zeitpunkt sendet der Webserver Seiteninhalt an den Browser des Besuche
 
 >[!MORELIKETHIS]
 >
->* [Serverseitiges ID-Dienstpaket von Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Server-seitiges ID-Dienstpaket von Node Package Manager](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+

@@ -3,9 +3,9 @@ description: Diese Eigenschaft legt die Container-ID der Datenquelle fest, die S
 keywords: ID-Dienst
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-source-git-commit: d8b230331d983bc95f96516243c3a65037dea7f0
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '319'
 ht-degree: 96%
 
 ---
@@ -81,7 +81,8 @@ Je nach Situation müssen Sie diese Konfiguration möglicherweise Ihrem ID-Diens
 
 ## Einrichten von Container-IDs bei Verwendung von DIL und VisitorAPI.js  {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Wenn Sie [!UICONTROL DIL].*and* VisitorAPI.js auf derselben Seite bereitgestellt haben:
+Wenn Sie VisitorAPI[!UICONTROL DIL]js *und* auf derselben Seite bereitgestellt haben:
 
 * Der Dienstcode für die Besucher-ID hat bei ID-Synchronisierungen Vorrang vor DIL.
 * Legen Sie die `idSyncContainerID`-Konfiguration nur im Code des ID-Diensts fest.
+

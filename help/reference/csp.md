@@ -3,8 +3,8 @@ description: Eine Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) is
 keywords: ID-Dienst
 title: Inhaltssicherheitsrichtlinien und der Experience Cloud Identity Service
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
-workflow-type: ht
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
 
@@ -116,3 +116,4 @@ Fügen Sie diese Domainnamen oder URLs für die von Ihnen verwendeten aufgeliste
 >* [Content Security Policy Reference](https://content-security-policy.com/)
 >* [MDN: Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 >* [Wikipedia: Content Security Policy](https://de.wikipedia.org/wiki/Content_Security_Policy)
+

@@ -3,7 +3,7 @@ description: Eine optionale boolesche Kennzeichnung, die verhindert, dass der Ex
 keywords: ID-Dienst
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 94%
@@ -37,3 +37,4 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableThirdPartyCookies: true 
 });
 ```
+

@@ -3,7 +3,7 @@ description: Diese Anweisungen richten sich an Analytics-, Audience Manager- und
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Analytics, Audience Manager und Target
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 97%
@@ -206,7 +206,7 @@ Suchen Sie in der JavaScript-Anforderung nach der SDID-Kennung. Die Analytics-SD
 Wenn Ihre Tests eine AID zurückgeben, weist dies auf eine der folgenden Möglichkeiten hin:
 
 * Sie sind ein wiederkehrender Besucher im Prozess der Migration von alten [!DNL Analytics]-IDs.
-* Sie haben eine [Übergangsphase](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) aktiviert.
+* Sie haben eine [Übergangsphase](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) aktiviert.
 
 Wenn Sie eine AID sehen, vergleichen Sie den zugehörigen Wert mit der [!DNL Target] mboxMCAVID von. Diese Werte sind identisch, wenn der ID-Dienst korrekt implementiert wurde.
 
@@ -238,3 +238,4 @@ Wenn Sie eine Übergangsphase aktiviert haben:
 
 * Stellen Sie sicher, dass die Bildanforderung die Analytics-ID (AID) und die MID beinhaltet.
 * Denken Sie daran, die Übergangsphase nach Erfüllung der [Kriterien für eine Beendigung der Verwendung](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1) abzubrechen.
+

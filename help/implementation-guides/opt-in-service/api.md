@@ -2,7 +2,7 @@
 description: Referenz für die API der Opt-in-Bibliothek und die Konfigurationseinstellungen.
 title: Opt-in-Referenz
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 100%
@@ -76,7 +76,7 @@ Wenn Ihre Genehmigungsanfrage so formuliert ist, dass Besucher Ihrer Site die Be
 
 ## Parameter für Opt-in-Workflows {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
-Opt-in unterstützt einen Workflow, bei dem Berechtigungen über mehrere Anfragezyklen erfasst werden können, z. B. wenn Voreinstellungen einzeln festgelegt werden. Mit den folgenden Funktionen und durch Festlegen von *true* für `shouldWaitForComplete` kann Ihre Lösung zunächst die Zustimmung für eine Kategorie oder Untergruppe von Kategorien erfassen und dann für die nächste Kategorie oder Untergruppe von Kategorien. Beim ersten Aufruf hat die Eigenschaft `adobe.optIn.status` den Wert „pending“, bis `adobe.optIn.complete()` am Ende des Workflows aufgerufen wird. Danach lautet der Status *Complete*.
+Opt-in unterstützt einen Workflow, bei dem Berechtigungen über mehrere Anfragezyklen erfasst werden können, z. B. wenn Voreinstellungen einzeln festgelegt werden. Mit den folgenden Funktionen und durch Festlegen von *true* für `shouldWaitForComplete` kann Ihre Lösung zunächst die Zustimmung für eine Kategorie oder Teilmenge von Kategorien erfassen und dann für die nächste Kategorie oder Teilmenge von Kategorien. Beim ersten Aufruf hat die Eigenschaft `adobe.optIn.status` den Wert „pending“, bis `adobe.optIn.complete()` am Ende des Workflows aufgerufen wird. Danach lautet der Status *Complete*.
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
@@ -214,3 +214,4 @@ Das Complete-Ereignis wird ausgelöst, wenn der Genehmigungsprozess abgeschlosse
   adobe.optIn.on("complete", callback); 
 </codeph>
 ```
+

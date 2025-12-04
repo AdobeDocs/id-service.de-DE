@@ -3,7 +3,7 @@ description: Der ID-Service verwendet Ihre Organisations-ID, das Experience Clou
 keywords: Playstation; ID-Service
 title: Cookies und der Experience Cloud Identity Service.
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 100%
@@ -138,3 +138,4 @@ Die folgende Tabelle beschreibt Kennzeichnungen der in Experience Cloud vewendet
 ## Nächste Schritte {#section-8db1727a63bc4ff68b495f270315d453}
 
 Siehe [Anfordern und Festlegen von IDs durch den Experience Cloud Identity Service](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+

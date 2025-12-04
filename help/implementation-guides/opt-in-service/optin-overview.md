@@ -2,7 +2,7 @@
 description: Mit dem Opt-in-Dienst können Sie Protokolle für den Besucher einrichten, um zu bestimmen, ob Sie ein Cookie auf dem Gerät oder Browser des Benutzers erstellen können, wenn dieser Ihre Site besucht.
 title: Opt-in-Dienst
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 100%
@@ -45,3 +45,4 @@ Mit dem Opt-in-Dienst können Sie Ihre Site so konfigurieren, dass einige Cookie
 ![](assets/Opt-in-approval.png)
 
 Adobe-Lösungen können dann prüfen, ob der Tag genehmigt ist und Änderungen regeln und dann alle Opt-in-Kunden abrufen. Der Opt-in-Dienst ermöglicht Ihnen, Berechtigungen direkt über die JavaScript-Bibliotheken der Lösung oder über ECID (falls implementiert) abzurufen.
+

@@ -4,7 +4,7 @@ title: Mit Launch implementieren
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: cf197fde-3b93-4578-b24e-2db5633f043c
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 100%
@@ -22,3 +22,4 @@ Tags in Adobe Experience Platform ist das vorrangige Tool zur Einrichtung, Berei
 * Client-seitige Web-Produkte unter Verwendung von Integrationen bereitstellen, die als _Erweiterungen_ bezeichnet werden.
 * Daten konsistent erfassen, definieren, verwalten und für Marketing- und Werbeprodukte von anderen Anbietern und von Adobe freigeben.
 * Tags in Platform sind ein erweitertes JavaScript-Bereitstellungssystem, das Bedingungen und ausgeführte Aktionen auswertet, damit Client-seitige Bibliotheken und Produkte effizient und wirkungsvoll bereitgestellt werden können. Tags bieten einen hochgradig skalierbaren Ansatz für die Verwaltung und Erstellung von Erweiterungen – zusammen mit einem robusten Satz von APIs für die programmgesteuerte Interaktion mit Adobe Experience Cloud.
+

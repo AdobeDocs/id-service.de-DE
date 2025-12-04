@@ -3,7 +3,7 @@ description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änd
 keywords: ID-Dienst
 title: Versionshinweise für 2017
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 98%
@@ -41,7 +41,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Enum-Wert <span class="codeph"> visitor.FIELDS</span> steuern, welche IDs zurückgegeben werden. Siehe <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
+   <td colname="col2"> <p>Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Aufzählungswert <span class="codeph"> visitor.FIELDS</span> steuern, welche IDs zurückgegeben werden. Siehe <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -210,3 +210,4 @@ Januar 2017
 ## Frühere Jahre  {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
 Ältere ID-Dienst-Versionshinweise.
+

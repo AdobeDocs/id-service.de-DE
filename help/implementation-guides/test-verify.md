@@ -3,9 +3,9 @@ description: Diese Anweisungen, Tools und Verfahren unterstützen Sie bei der Er
 keywords: ID-Dienst
 title: Testen und Überprüfen des Experience Cloud Identity Service
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 100%
 
 ---
@@ -78,20 +78,21 @@ Lesen Sie diesen Abschnitt, um Informationen dahingehend zu erhalten, wo und won
 
 **Erfolgreiche ID-Dienstanforderungen in Charles**
 
-Ihr ID-Dienst-Code funktioniert ordnungsgemäß, wenn die Funktion `Visitor.getInstance` einen JavaScript-Aufruf zu `dpm.demdex.net` startet. Eine erfolgreiche Anforderung enthält Ihre [Organisations-ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). Die Organisations-ID wird als Schlüssel-Wert-Paar weitergegeben, das folgende Syntax verwendet: `d_orgid= *`d_orgid`*`. Die `dpm.demdex.net`- und JavaScript-Aufrufe finden Sie auf der Registerkarte [!UICONTROL Struktur]. Die Organisations-ID finden Sie auf der Registerkarte [!UICONTROL „Anforderung“].
+Ihr ID-Dienst-Code funktioniert ordnungsgemäß, wenn die Funktion `Visitor.getInstance` einen JavaScript-Aufruf zu `dpm.demdex.net` startet. Eine erfolgreiche Anforderung enthält Ihre [Organisations-ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). Die Organisations-ID wird als Schlüssel-Wert-Paar weitergegeben, das folgende Syntax verwendet: `d_orgid= *`d_orgid`*`. Die `dpm.demdex.net`- und die JavaScript-Aufrufe finden Sie auf Registerkarte [!UICONTROL Structure]. Ihre Organisations-ID finden Sie auf der Registerkarte [!UICONTROL Request].
 
 ![](assets/charles_request.png)
 
 **Erfolgreiche ID-Dienstantworten in Charles**
 
-Ihr Konto wurde ordnungsgemäß für den ID-Dienst bereitgestellt, wenn die Antwort von den [Datenerfassungsservern (Data Collection Servers, DCS)](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=de) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: *`visitor Experience Cloud ID`*`. Auf der Registerkarte [!UICONTROL „Antwort“] findet sich die MID, wie im Folgenden gezeigt.
+Ihr Konto wurde ordnungsgemäß für den ID-Dienst bereitgestellt, wenn die Antwort von den [Datenerfassungsservern (Data Collection Servers, DCS)](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=de) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: *`visitor Experience Cloud ID`*`. Auf der Registerkarte [!UICONTROL Response] finden Sie die MID wie nachstehend dargestellt.
 
 ![](assets/charles_response_success.png)
 
 **Fehlerhafte ID-Dienstantworten in Charles**
 
-Ihr Konto wurde nicht richtig bereitgestellt, wenn die MID in der DCS-Antwort fehlt. Bei einer fehlerhaften Antwort werden auf der Registerkarte [!UICONTROL Antwort] ein Fehler-Code und eine Fehlermeldung zurückgegeben, wie im Folgenden gezeigt. Wenden Sie sich an die Kundenunterstützung, wenn diese Fehlermeldung in der DCS-Antwort angezeigt wird.
+Ihr Konto wurde nicht richtig bereitgestellt, wenn die MID in der DCS-Antwort fehlt. Bei einer fehlerhaften Antwort werden auf der Registerkarte [!UICONTROL Response] ein Fehlercode und eine Fehlermeldung zurückgegeben wie nachstehend dargestellt. Wenden Sie sich an die Kundenunterstützung, wenn diese Fehlermeldung in der DCS-Antwort angezeigt wird.
 
 ![](assets/charles_response_unsuccessful.png)
 
 Weitere Informationen zu Fehler-Codes finden Sie unter [DCS-Fehler-Codes, Meldungen und Beispiele](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html?lang=de).
+

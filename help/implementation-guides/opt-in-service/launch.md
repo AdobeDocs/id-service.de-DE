@@ -2,7 +2,7 @@
 description: Adobe Experience Platform Launch ermöglicht die einfache Einrichtung einer Opt-in-Funktion in Experience Cloud-Lösungen.
 title: Konfigurieren von Opt-in mit Launch
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
-source-git-commit: 5858933e9d51ec97b1ba7a8fbe483f1919954543
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 100%
@@ -26,3 +26,4 @@ Um die Erweiterung zu konfigurieren, öffnen Sie den Tab *Erweiterungen* und hal
 Weitere Referenzinformationen finden Sie im Abschnitt [Übersicht über die Erweiterung Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=de).
 
 ![](assets/optin-launch.jpg)
+

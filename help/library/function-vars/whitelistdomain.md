@@ -3,9 +3,9 @@ description: Mit diesen Konfigurationen können verschiedene Instanzen des ID-Di
 keywords: ID-Dienst
 title: whitelistParentDomain und whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '859'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,7 @@ Beide Konfigurationselemente sind erforderlich, wenn Sie diesen Code verwenden.
 
 ## Codebeispiel  {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-Der konfigurierte [!UICONTROL ID-Dienstcode] sollte in etwa wie im folgenden Beispiel aussehen.
+Der konfigurierte [!UICONTROL ID service]-Code sollte in etwa wie im folgenden Beispiel aussehen.
 
 ```js
 //Instantiate Visitor 
@@ -184,3 +184,4 @@ Der ID-Dienst unterstützt einen begrenzte Anzahl an öffentlichen API-Methoden,
   </tr> 
  </tbody> 
 </table>
+

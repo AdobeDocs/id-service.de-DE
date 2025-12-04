@@ -3,7 +3,7 @@ description: Diese Anweisungen richten sich an Analytics- und Audience Manager-K
 keywords: ID-Dienst
 title: Implementieren des Experience Cloud Identity Services für Analytics und Audience Manager
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 98%
@@ -158,7 +158,7 @@ Platzieren Sie die `[!UICONTROL VisitorAPI.js]`-Datei innerhalb der `<head>`-Tag
 
 ## Schritt 8: (Optional) Konfigurieren einer Übergangsphase {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-Wenn eines dieser Nutzungsszenarios auf Ihre Situation zutrifft, bitten Sie die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), eine temporäre [Übergangsphase](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) einzurichten. Übergangsperioden können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
+Wenn eines dieser Nutzungsszenarios auf Ihre Situation zutrifft, bitten Sie die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html), eine temporäre [Übergangsphase](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) einzurichten. Übergangsperioden können bis zu 180 Tage dauern. Bei Bedarf kann eine Übergangsphase verlängert werden.
 
 **Partielle Implementierung**
 
@@ -204,3 +204,4 @@ Wenn Sie eine Übergangsphase aktiviert haben:
 
 * Stellen Sie sicher, dass die Bildanforderung die Analytics-ID (AID) und die MID beinhaltet.
 * Denken Sie daran, die Übergangsphase nach Erfüllung der Kriterien für eine Beendigung der Verwendung abzubrechen.
+

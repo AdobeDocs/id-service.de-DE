@@ -3,7 +3,7 @@ description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des
 keywords: ID-Dienst
 title: Versionshinweise für 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-source-git-commit: 503683b66b6022b7c1fecbfb197fe17e05ae9c64
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 100%
@@ -39,7 +39,7 @@ Ein Kontrollkästchen für die Genehmigung vor dem Opt-in für Medienanalysen in
 
 ## Version 4.3 {#version-4point3}
 
-**Unterstützung für ITP 2.1**. Wenn ein Trackingserver mit einem Erstanbieter-CNAME eingerichtet ist, wird ein neues Cookie (s_ecid) zum ECID-Wert hinzugefügt. Die ECID-Bibliothek referenziert den Wert, damit die ID über 7 Tage hinaus erhalten bleibt. Siehe [ECID-Bibliotheksmethoden in einer Safari-ITP-Umgebung](/help/reference/ecid-library-methods.md).
+**Unterstützung für ITP 2.1**. Wenn ein Trackingserver mit einem Erstanbieter-CNAME eingerichtet ist, wird ein neues Cookie (s_ecid) zum ECID-Wert hinzugefügt. Die ECID-Bibliothek verweist auf den Wert, damit die ID über 7 Tage hinaus erhalten bleibt. Siehe [ECID-Bibliotheksmethoden in einer Safari-ITP-Umgebung](/help/reference/ecid-library-methods.md).
 
 **Fehlerbehebung für secureCookie config.**
 
@@ -67,3 +67,4 @@ Unterstützung für das Audience Manager-Plug-in für IAB TCF, das über das Obj
 |---|---|
 | Die Kennzeichnung `disableIdSyncs` funktioniert nicht, nachdem eine Zeichenfolge übergeben wurde. | Behoben. Werte, die für den `disableidSyncs` Parameter in der `getInstance` Funktion festgelegt wurden, werden jetzt berücksichtigt. |
 | iFrames von Drittanbietern erhalten kein ECID | Nicht funktionierendes ECID auf Safari Mobile und nicht funktionierende ECIDs in verschiedenen iFrames wurden behoben. |
+

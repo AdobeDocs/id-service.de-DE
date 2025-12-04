@@ -5,7 +5,7 @@ solution: Experience Cloud
 title: Handbücher zur Implementierung
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
@@ -36,3 +36,4 @@ In einer standardmäßigen Implementierung wird [Adobe Experience Platform Launc
 * [Direkte Integration – Anwendungsfälle](direct-integration-examples.md)
 * [Testen und Überprüfen des Experience Cloud Identity Service](test-verify.md)
 * [Opt-in-Service – Übersicht](opt-in-service/optin-overview.md)
+

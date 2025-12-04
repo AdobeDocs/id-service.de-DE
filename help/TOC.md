@@ -4,7 +4,7 @@ user-guide-title: Hilfe zum Experience Cloud Identity Service
 breadcrumb-title: Identity Service-Handbuch
 user-guide-description: Der Adobe Experience Cloud Identity Service bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Experience Cloud-Lösungen hinweg. Es hilft dabei, den alten Code zur ID-Generierung für Experience Cloud-Lösungen und -Services zu ersetzen.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 99%
@@ -25,7 +25,7 @@ ht-degree: 99%
    + [Methoden der Implementierung](implementation-guides/implementation-methods.md)
    + [Handbücher zur Implementierung](implementation-guides/implementation-guides.md)
    + [Mit Experience Platform Tags implementieren](implementation-guides/ecid-implement-with-launch.md)
-   + [Implementieren für Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/overview)
+   + [Implementieren für Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [Für Target implementieren](implementation-guides/setup-target.md)
    + [Für Analytics und Audience Manager implementieren](implementation-guides/setup-aam-analytics.md)
    + [Für Analytics, Audience Manager und Target implementieren](implementation-guides/setup-aam-analytics-target.md)

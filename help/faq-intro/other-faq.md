@@ -3,7 +3,7 @@ description: Häufig gestellte Fragen zu den Funktionen, der Funktionalität und
 keywords: ID-Dienst
 title: Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 100%
@@ -22,3 +22,4 @@ Hierbei gibt es zwei Möglichkeiten:
 
 * Wenn für den Besucher eine Besuchsaktivität nach der Implementierung des ID-Diensts festgestellt wird, dann werden der Besucher und der jeweilige Verlauf in den Datenexport für [!DNL Audience Manager] aufgenommen.
 * Weist ein Benutzer nach der Implementierung des ID-Diensts keine Besucheraktivität auf, werden der Besucher und sein Verlauf nicht in den Datenexport nach Audience Manager einbezogen. Da keine neue Aktivität vorhanden ist, kann die Analytics-ID nicht mit der Experience Cloud ID verknüpft werden.
+

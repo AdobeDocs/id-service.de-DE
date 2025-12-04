@@ -3,7 +3,7 @@ description: Versionshinweise und Aktualisierungen für das Jahr 2015
 keywords: ID-Dienst
 title: Versionshinweise für 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 96%
@@ -37,7 +37,7 @@ August 2015
   Dies betraf nur einige Clients, die *alle* der folgenden Kriterien erfüllten:
 
    * Verwenden des ID-Diensts.
-   * Eine [Übergangsphase](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) *oder* wurde aktiviert, da Erstanbieter-Cookies verwendet und Benutzer Drittanbieter-Cookies blockieren.
+   * Eine [Übergangsphase](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *oder* wurde aktiviert, da Erstanbieter-Cookies verwendet und Benutzer Drittanbieter-Cookies blockieren.
    * Besitz von Seiten mit mehrteiligen Top-Level-Domains.
 
 Dokumentationsüberarbeitungen in dieser Version umfassen:
@@ -76,3 +76,4 @@ Die Verarbeitung des Timeouts bei Anforderungen für AAM Blob und Location Hint 
 Januar 2015
 
 Überarbeitete `<head>/<body>` Tag-Suche für JSONP-Request `<script>` Tag-Container, sowie die Erstellung des `<script>`-Tags zur Berücksichtigung verschiedener DOM-Implementierungen (HTML vs. XHTML) mit möglicherweise unterschiedlichen Groß-/Kleinschreibungseinstellungen. (AN-9355)
+

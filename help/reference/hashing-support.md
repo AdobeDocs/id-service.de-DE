@@ -3,7 +3,7 @@ description: Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Al
 keywords: ID-Dienst
 title: SHA-256-Hash-Unterstützung für setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 97%
@@ -101,3 +101,4 @@ setCustomerIDs(Ingeration code: {
 ```
 
 Ähnlich wie bei der im ersten Abschnitt beschriebenen `setCustomerIDs`-Methode führt dies zu einem Aufruf des Experience Cloud ID-Service, wobei der Abfrageparameter `d_cid_ic` hinzugefügt wird.
+

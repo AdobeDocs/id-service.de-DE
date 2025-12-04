@@ -3,7 +3,7 @@ description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anforder
 keywords: ID-Dienst
 title: CORS-Unterstützung im Experience Cloud Identity Service.
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 98%
@@ -88,3 +88,4 @@ In der folgenden Tabelle werden einige der Vorteile beschrieben, die CORS Kunden
   </tr> 
  </tbody> 
 </table>
+

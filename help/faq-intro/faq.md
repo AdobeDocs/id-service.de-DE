@@ -3,10 +3,10 @@ description: Häufig gestellte Fragen zu den Funktionen und Problemen bezüglich
 keywords: 'ID-Dienst '
 title: Häufig gestellte Fragen zum ID-Dienst
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -80,10 +80,11 @@ Ja. Siehe [CORS-Unterstützung im Experience Cloud Identity Service](../referenc
 
 **Was geschieht, wenn meine Sicherheitsanforderungen so streng sind, dass ich JSONP nie verwenden möchte?**
 
-Wenn Sie strenge Sicherheitsanforderungen haben, legen Sie in der Konfiguration der ID-Dienst-API `useCORSOnly: true` fest. Sie sollten diesen Modus nur dann aktivieren, wenn Sie davon überzeugt sind, dass Ihre Site-Besucher Browser verwenden, die CORS unterstützen.
+Wenn Sie strenge Sicherheitsanforderungen haben, legen Sie in der Konfiguration der ID-Dienst-API `useCORSOnly: true` fest. Sie sollten diesen Modus nur aktivieren, wenn Sie sicher sind, dass Ihre Site-Besucher Browser verwenden, die CORS unterstützen.
 
 Siehe [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) und [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa).
 
 >[!MORELIKETHIS]
 >
 >* [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
+

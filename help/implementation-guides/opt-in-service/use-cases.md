@@ -2,10 +2,10 @@
 description: Beispiele für Nutzungsszenarios und Lösungen zur Verwaltung des Opt-in-Dienstes.
 title: Opt-in-Nutzungsszenarios
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -33,13 +33,13 @@ Diese Nutzungsszenarios sind Beispiele für die Verwendung des Opt-in-Dienstes.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Analytics kann zwar eine Erfassung vor einem Einverständnis durchführen, aber alle anderen Bibliotheken können erst dann geladen werden, wenn das Einverständnis eingegangen ist. </p> </td> 
+   <td colname="col1"> <p>Analytics kann im Status vor dem Einverständnis erfasst werden, aber alle anderen Bibliotheken können erst geladen werden, wenn das Einverständnis eingeht </p> </td> 
    <td colname="col2"> <p>Verwenden Sie Opt-in zur Aktivierung der Analytics-Kategorie vor dem Einverständnis </p> </td> 
    <td colname="col3"> <p>Analytics verwendet die Analytics-ID anstelle der ECID bei einer Erfassung vor dem Einverständnis. Nach der Genehmigung der ECID wird eine neue ID verwendet, und der Besucher erhält eine ECID, die für Aktivierungen und Integrationen verwendet werden kann. </p> <p>Im Zustand vor und nach dem Einverständnis ist eine Besucherfragmentierung zu erwarten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Für eine Erfassung vor dem Einverständnis ist Erstanbietermessung zulässig. Jegliche andere Art von Datennutzung wird verhindert, bis das Einverständnis eingeht. </p> </td> 
-   <td colname="col2"> <p>Verwenden Sie Opt-in zur Aktivierung von Analytics+ ECID-Bibliotheken vor dem Einverständnis. </p> <p>Fügen Sie der ECID-Bibliothek die Konfiguration „disablethirdpartycookies“ hinzu, um Drittanbieter-Cookies und ID-Synchronisierungen vor dem Einverständnis zu blockieren. </p> </td> 
+   <td colname="col2"> <p>Verwenden Sie Opt-in zur Aktivierung von Analytics+ ECID-Bibliotheken vor dem Einverständnis. </p> <p>Fügen Sie die Konfiguration „disableThirdPartyCookies“ zur ECID-Bibliothek hinzu, um die Synchronisierung von Drittanbieter-Cookie und IDs im Status vor der Zustimmung zu blockieren </p> </td> 
    <td colname="col3"> <p>Adobe Demdex-Aufrufe lösen zwar einen ECID-Abruf aus, jedoch sind keine Demdex-Cookies, andere Drittanbieter-Cookies oder ID-Synchronisierungen vorhanden. </p> <p>Der Besucher bleibt im Status vor/nach der Zustimmung für Analytics konsistent. Die Erfassung vor dem Einverständnis ist an die Datenerfassung nach dem Einverständnis gebunden. </p> </td> 
   </tr> 
   <tr> 
@@ -54,3 +54,4 @@ Diese Nutzungsszenarios sind Beispiele für die Verwendung des Opt-in-Dienstes.
   </tr> 
  </tbody> 
 </table>
+
