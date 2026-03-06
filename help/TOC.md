@@ -4,10 +4,10 @@ user-guide-title: Hilfe zum Experience Cloud Identity Service
 breadcrumb-title: Identity Service-Handbuch
 user-guide-description: Der Adobe Experience Cloud Identity Service bietet eine universelle, beständige ID zum Identifizieren Ihrer Besucher über alle Experience Cloud-Lösungen hinweg. Es hilft dabei, den alten Code zur ID-Generierung für Experience Cloud-Lösungen und -Services zu ersetzen.
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 99%
 # Hilfe zum Experience Cloud Identity Service {#using}
 
 + [Hilfe zum Identity Service](home.md)
-+ Übersicht {#intro}
-   + [Übersicht](introduction/overview.md)
++ Überblick {#intro}
+   + [Überblick](introduction/overview.md)
    + [Über den ID-Dienst](introduction/about-id-service.md)
    + [Cookies und der ID-Service](introduction/cookies.md)
    + [Anfordern und Festlegen von IDs durch den ID-Service](introduction/id-request.md)
@@ -25,7 +25,7 @@ ht-degree: 99%
    + [Methoden der Implementierung](implementation-guides/implementation-methods.md)
    + [Handbücher zur Implementierung](implementation-guides/implementation-guides.md)
    + [Mit Experience Platform Tags implementieren](implementation-guides/ecid-implement-with-launch.md)
-   + [Implementieren für Analytics](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/overview){target=_blank}
+   + [Implementieren für Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [Für Target implementieren](implementation-guides/setup-target.md)
    + [Für Analytics und Audience Manager implementieren](implementation-guides/setup-aam-analytics.md)
    + [Für Analytics, Audience Manager und Target implementieren](implementation-guides/setup-aam-analytics-target.md)
@@ -106,5 +106,5 @@ ht-degree: 99%
    + [Versionshinweise für 2017](release-notes/notes-2017.md)
    + [Versionshinweise für 2016](release-notes/notes-2016.md)
    + [Versionshinweise für 2015](release-notes/notes-2015.md)
-+ [Analysetest im Inhaltsverzeichnis ausgeblendet](analytics-test-file-hidetoc.md)
-+ [Ausgeblendete Testdatei](hidden-file.md)
++ {hide-from-toc}[Analysetest im Inhaltsverzeichnis ausgeblendet](analytics-test-file-hidetoc.md)
++ {hide-from-toc}[Ausgeblendete Testdatei](hidden-file.md)
