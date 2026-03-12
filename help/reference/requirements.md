@@ -3,10 +3,10 @@ description: Lesen Sie diesen Abschnitt, um sicherzustellen, dass Sie die richti
 keywords: ID-Dienst
 title: Voraussetzungen für den Experience Cloud Identity Service
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 3c230d158e3094ebb13b0fa4f1eddb25eecde0b4
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 100%
+source-wordcount: '707'
+ht-degree: 88%
 
 ---
 
@@ -59,7 +59,7 @@ Zur Verwendung des ID-Diensts muss Ihr Unternehmen für die [!DNL Experience Clo
 
 ## Analytics-Voraussetzungen: Regionale Datenerfassung (Regional Data Collection, RDC) {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-Alle Tracking-Server wurden auf RDC umgestellt, so dass es nicht notwendig ist, den Analytics-Tracking-Server zu wechseln. [Weitere Infos...](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=de)
+Alle Tracking-Server wurden in RDC konvertiert, sodass kein Wechsel des Analytics-Tracking-Servers erforderlich ist. [Weitere Infos…](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=de)
 
 ## Code-Bibliotheken und Versionsvoraussetzungen {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -92,7 +92,7 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
   </tr> 
   <tr> 
    <td colname="col3"> <p> <span class="codeph"> „s_code.js“</span> </p> </td> 
-   <td colname="col4"> <p>H.27 </p> <p> <p>Hinweis:<span class="keyword"> Die s_code-Version H.27 von Analytics</span> wird im Zuge der Veröffentlichung des ID-Diensts Version 1.6.0 nicht mehr unterstützt. Nehmen Sie ein Upgrade Ihres Codes auf die neueste Version von AppMeasurement vor. </p> </p> </td> 
+   <td colname="col4"> <p>H.27 </p> <p> <p>Hinweis: <span class="keyword"> Analytics</span> s_code Version H.27 wird mit der Version 1.6.0 des ID-Service nicht mehr unterstützt. Aktualisieren Sie Ihren Code auf die neueste Version von AppMeasurement. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col3"> <p>Video Heartbeat </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de" format="https" scope="external">Video Heartbeat 2.x für JavaScript</a>. </p> </td> 
@@ -105,11 +105,11 @@ In den folgenden Abschnitten sind die minimalen Code-Versionen aufgeführt, die 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b> <span class="keyword"> Target </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/overview.html?lang=de" format="https" scope="external">mbox-Code</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p>Siehe <a href="https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/at-js/overview" format="https" scope="external">mbox-Code</a>. </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=de" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p>Siehe <a href="https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works" format="https" scope="external">at.js-Implementierung</a>. </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -130,9 +130,8 @@ Ihr SDK-Code muss für den ID-Dienst aktiviert werden. Aktivieren und laden Sie 
 
 * [Optionen für SDK-Besucher-ID-Dienst konfigurieren](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html?lang=de)
 * [SDK-Methoden für Android](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html?lang=de)
-* [SDK-Methoden für iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html?lang=de)
+* [iOS SDK-Methoden](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html?lang=de)
 
 >[!MORELIKETHIS]
 >
 >* [Code-Bibliothek](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
-
