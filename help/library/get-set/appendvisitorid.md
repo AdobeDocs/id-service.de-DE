@@ -3,9 +3,9 @@ description: Mit dieser Funktion können Sie die Experience Cloud ID eines Besuc
 keywords: ID-Dienst
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '429'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,7 @@ Um dieses Problem zu lösen, implementieren Sie `Visitor.appendVisitorIDsTo( *`u
 
 Weitere Informationen finden Sie im Codebeispiel.
 
-## Codebeispiel für das Anhängen von Besucher-IDs  {#section-62d55f7f986542b0b9238e483d50d7b0}
+## Codebeispiel für das Anhängen von Besucher-IDs {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 Der folgende Beispiel-Code kann Ihnen bei den ersten Schritten mit der Funktion `appendVisitorIDsTo` helfen:
 
@@ -73,7 +73,8 @@ adbeDomains.forEach(function(domain) {
 });
 ```
 
-<!-- >[!IMPORTANT]
+<!-- 
+>[!IMPORTANT]
 >
 >In order for the values passed in the URL via appendVisitorsIDsTo to be picked up, the [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) variable must be set to true.
 
@@ -91,9 +92,11 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
      //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
      "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
-``` -->
+``` 
+-->
 
-<!-- ## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
+<!--
+## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
@@ -116,5 +119,6 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
     </ul> </td> 
   </tr> 
  </tbody> 
-</table> -->
+</table> 
+-->
 

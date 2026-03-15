@@ -3,10 +3,10 @@ description: Browser verwenden Cross Origin Resource Sharing (CORS) zum Anforder
 keywords: ID-Dienst
 title: CORS-Unterstützung im Experience Cloud Identity Service.
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 3c230d158e3094ebb13b0fa4f1eddb25eecde0b4
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 98%
+source-wordcount: '630'
+ht-degree: 95%
 
 ---
 
@@ -19,19 +19,19 @@ Browser verwenden Cross Origin Resource Sharing (CORS) zum Anfordern von Ressour
 Eine Same-Origin-Policy ist eine Sicherheitskontrolle oder Einschränkung, die von einem Webbrowser erzwungen wird. Wenn sie auf dieser Ebene erzwungen wird, bestimmt der Webbrowser selbst, ob eine Anforderung von Ressourcen, die von einer Seite an eine andere gesendet wird, zulässig ist oder blockiert wird. Um festzustellen, ob es sich bei einer Anforderung um eine Anforderung mit derselben Herkunft handelt, vergleicht der Browser Folgendes:
 
 * Uniform Resource Identifiers (URIs)
-* Hostnamen (beispielsweise http://www.meine-beispielwebsite.com)
+* Host-Namen (z. B. `http://www.my-webpage-example.com`)
 * Port-Nummern (beispielsweise Port 80 und 440 für HTTP- und HTTPS-Anforderungen)
 
 Der Browser lässt eine Anforderung zu, wenn beide Seiten dieselben Eigenschaften aufweisen, und blockiert die Ressourcenanforderung, wenn dies nicht der Fall ist.
 
-## CORS behebt Probleme mit Gleiche-Herkunft-Richtlinien  {#section-76c87ec3295d447bab220c84f138c235}
+## CORS behebt Probleme mit Gleiche-Herkunft-Richtlinien {#section-76c87ec3295d447bab220c84f138c235}
 
 Cross Origin Resource Sharing (CORS) bietet eine sichere und effektive Möglichkeit, Ressourcen über verschiedene Domänen hinweg anzufordern. Die CORS-Spezifikation enthält eine Reihe von HTTP-Headern, die Browser zum Senden, Empfangen und Auswerten von Ressourcenanforderungen verwenden. Die Auswertung einer Ressourcenanforderung wird als *`preflight check`* bezeichnet. Mit dieser Prüfung können Browser und Server bestimmen, welche Anforderungen zulässig sind oder blockiert werden sollen. Die Preflight-Prüfung ist transparent für die mobile App bzw. API oder das Skript, die bzw. das eine Ressource anfordert. Zwei Header, die für den Ressourcenanforderungsprozess wichtig sind, sind:
 
 * `Origin`: Ein Anforderungsheader, der die Anforderungsquelle ermittelt.
 * `Access-Control-Allow-Origin`: Ein Antwortheader, der angibt, ob eine Ressource für den Anforderer freigegeben werden kann.
 
-Im Folgenden wird die Funktionsweise dieser Header erläutert. Angenommen, ein Finanzdienstleistungsunternehmen hat den [!DNL Experience Cloud] ID-Dienst auf der eigenen Site www.finance-website.com implementiert. Die folgende Tabelle definiert, wie die CORS-Anforderungs- und Antwort-Header den Zugriff auf eine Ressource prüfen.
+Im Folgenden wird die Funktionsweise dieser Header erläutert. Angenommen, in diesem Beispiel haben wir ein Finanzdienstleistungsunternehmen, das den [!DNL Experience Cloud] ID-Service auf seiner Website `www.finance-website.com` implementiert hat. Die folgende Tabelle definiert, wie die CORS-Anforderungs- und Antwort-Header den Zugriff auf eine Ressource prüfen.
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
@@ -45,7 +45,7 @@ Im Folgenden wird die Funktionsweise dieser Header erläutert. Angenommen, ein F
    <td colname="col1"> <p> <b>Anfrage</b> </p> </td> 
    <td colname="col2"> <p>Beim Laden der Seite des Finanzunternehmens stellt der Browser eine Anforderung an <span class="codeph">dpm.demdex.net</span>. Dies ist ein Aufruf an die Domain der Datenerfassungs-Server (DCS), die vom ID-Dienst verwendet wird. Diese Domain-übergreifende Anforderung enthält den Header: </p> <p> 
      <ul class="simplelist"> 
-      <li> <span class="codeph"> Herkunft:https://www.finance-website.com</span> </li> 
+      <li> <code> Origin:https://www.finance-website.com</code> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
