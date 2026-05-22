@@ -3,9 +3,17 @@ description: Mit den ID-Dienstfunktionen idSyncByURL und idSyncByDataSource kön
 keywords: ID-Dienst
 title: ID-Synchronisation nach URL oder Datenquelle
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/93OKTlZcEibGqbwDnXIH90KyRT2S6Q7P50HgRATEenI
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: 248
 ht-degree: 100%
 
 ---
@@ -62,7 +70,7 @@ In der folgenden Tabelle werden die für beide Funktionen verfügbaren Eigenscha
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
-   <td colname="col2"> Zahl </td> 
+   <td colname="col2"> Nummer </td> 
    <td colname="col3"> <p> <i>(Optional)</i> Legt die Ablaufzeit des Cookies fest. Muss eine Ganzzahl sein. Der Standardwert ist 20.160 Minuten (14 Tage). </p> </td> 
   </tr> 
   <tr valign="top"> 

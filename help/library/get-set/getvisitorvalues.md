@@ -3,9 +3,20 @@ description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig
 keywords: ID-Dienst
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/CF9G6wKlDxjklwedJk8KVmYH7KjA7CRkxtNu-mQ-Kjs
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: 421
 ht-degree: 100%
 
 ---
@@ -34,7 +45,7 @@ In den Funktionsparametern:
 
 Weitere Informationen finden Sie in den folgenden Nutzungsszenarios und Definitionen.
 
-## Nutzungsszenario 1: Standarddatensatz anfordern  {#section-36a31683558742a5915db3a391e09f7b}
+## Nutzungsszenario 1: Standarddatensatz anfordern {#section-36a31683558742a5915db3a391e09f7b}
 
 Dieser Code gibt den Standarddatensatz zurück. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
 
@@ -59,7 +70,7 @@ Im Beispiel für die standardmäßige Antwort wurden einige Werte zu Demonstrati
 }
 ```
 
-## Nutzungsszenario 2: Benutzerdefinierten Datensatz anfordern  {#section-467b2f4e513344c89b7332b05f6f59f3}
+## Nutzungsszenario 2: Benutzerdefinierten Datensatz anfordern {#section-467b2f4e513344c89b7332b05f6f59f3}
 
 In diesem Code wird ein optionales Array verwendet, um einen spezifischen Satz von IDs mit der `visitor.FIELDS`-Aufzählung zurückzugeben. In diesem Fall möchten wir nur die Experience Cloud ID (MCID) und die Analytics-ID (MCAID) des Besuchers abrufen. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
 
@@ -81,7 +92,7 @@ Die benutzerdefinierte Antwort im Beispiel gibt nur die in der Anforderung angeg
 }
 ```
 
-## Definierte Antwortparameter  {#section-4c4c300167694c6fbff1d6c612f372b5}
+## Definierte Antwortparameter {#section-4c4c300167694c6fbff1d6c612f372b5}
 
 In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Dies sind auch alle Werte in der `visitor.FIELDS`-Aufzählung. Beachten Sie, dass diese Methode eine leere Zeichenfolge zurückgibt, wenn es für eine bestimmte Variable keine Werte gibt.
 

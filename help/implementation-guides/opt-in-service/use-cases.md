@@ -2,9 +2,22 @@
 description: Beispiele für Nutzungsszenarios und Lösungen zur Verwaltung des Opt-in-Dienstes.
 title: Opt-in-Nutzungsszenarios
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/ssSKMn1pEhduempV4zjCqi4Pol1U0oEBU6l36SkUTH4
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: 460
 ht-degree: 91%
 
 ---
@@ -19,7 +32,7 @@ Beispiele für Nutzungsszenarios und Lösungen zur Verwaltung des Opt-in-Dienste
 * Bei Opt-in handelt es sich um eine Implementierung pro Domain. Domain-übergreifende Implementierungen werden nicht verarbeitet.
 * Um Aufrufe von Drittanbietern für eine bestimmte Bibliothek zu deaktivieren, müssen Sie diese Voreinstellung in jeder Bibliothek separat konfigurieren.
 
-## Opt-in-Szenarios   {#section-1178053c065c430bba26f82ef383a71c}
+## Opt-in-Szenarios {#section-1178053c065c430bba26f82ef383a71c}
 
 Diese Nutzungsszenarios sind Beispiele für die Verwendung des Opt-in-Dienstes.
 

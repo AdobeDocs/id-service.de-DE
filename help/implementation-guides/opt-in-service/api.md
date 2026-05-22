@@ -2,10 +2,20 @@
 description: Referenz für die API der Opt-in-Bibliothek und die Konfigurationseinstellungen.
 title: Opt-in-Referenz
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/Fmah6TphSbKa3W6s6ew97Diz59Brj-2tpYKcxwzEj1o
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 100%
+source-wordcount: 916
+ht-degree: 99%
 
 ---
 
@@ -24,7 +34,7 @@ adobe.OptInCategories = {
 }
 ```
 
-## Opt-in-Konfigurationsparameter  {#section-d66018342baf401389f248bb381becbf}
+## Opt-in-Konfigurationsparameter {#section-d66018342baf401389f248bb381becbf}
 
 In diesem Abschnitt wird die Opt-in-Konfiguration mithilfe der API beschrieben. Ein Großteil der Konfiguration und Implementierung kann über die Experience Platform Launch-Erweiterung vorgenommen werden.
 
@@ -54,7 +64,7 @@ Erstanbieterdomäne oder untergeordnete Domain, die für den Opt-in-Cookie verwe
 
 Anzahl der Sekunden, um die Standardablaufzeit von 13 Monaten zu überschreiben.
 
-## Änderungen an den Zustimmungsparametern  {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## Änderungen an den Zustimmungsparametern {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
 Besucher Ihrer Site können Voreinstellungen jederzeit zum ersten Mal festlegen oder ihre Voreinstellungen mithilfe Ihrer CMP ändern. Nachdem Visitor JS mit den Ersteinstellungen initialisiert wurde, können die Berechtigungen des Besuchers mit den folgenden Funktionen geändert werden:
 
@@ -128,12 +138,12 @@ Ein Objekt, das alle Experience Cloud-Lösungen, die vom Besucher genehmigt oder
 
 „True“ oder „false“, je nach Statuswert. Opt-in meldet für diese Eigenschaft möglicherweise den Wert „false“, wenn ein Workflow-ähnliches Einverständnis gestartet, aber nicht abgeschlossen wurde.
 
-## Methoden des Opt-in-Objekts  {#section-e0417801a82548d199d833010033e433}
+## Methoden des Opt-in-Objekts {#section-e0417801a82548d199d833010033e433}
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`**: Eine oder mehrere Kategorien, die genehmigt werden sollen. Zum Beispiel: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
-**`shouldWaitForComplete`**: (optional) boolescher Parameter, standardmäßig falsch. Wenn Sie „true“ übergeben, schließt Opt-in den Genehmigungsprozess erst beim Aufruf von `adobe.optIn.complete()` ab. Dieser Prozess ist einem Workflow ähnlich.
+**`categories`**: Eine oder mehrere Kategorien, die genehmigt werden sollen. Beispiel: `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`shouldWaitForComplete`**: (optional) Boolescher Parameter, standardmäßig false. Wenn Sie „true“ übergeben, schließt Opt-in den Genehmigungsprozess erst beim Aufruf von `adobe.optIn.complete()` ab. Dieser Prozess ist einem Workflow ähnlich.
 
 ```
 <codeblock>
@@ -201,7 +211,7 @@ Genehmigt alle vorhandenen Kategorien.
 
 Lehnt alle vorhandenen Kategorien ab.
 
-## Ereignisse des Opt-in-Objekts  {#section-06f25b33cab54bafb053183e937fb710}
+## Ereignisse des Opt-in-Objekts {#section-06f25b33cab54bafb053183e937fb710}
 
 **`complete`:**
 

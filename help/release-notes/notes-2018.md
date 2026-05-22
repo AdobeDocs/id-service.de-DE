@@ -3,9 +3,21 @@ description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änd
 keywords: ID-Dienst
 title: Versionshinweise für 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/1vrVFuFbQiLL9XYnZwEf0WkElW-qhsklHbrem-mo5LE
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: 503
 ht-degree: 94%
 
 ---
@@ -106,7 +118,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Thread-Yielding für mehrere ID-Synchronisierungsanfragen </p> </td> 
-   <td colname="col2"> <p><b>Iframe</b> </p> <p>Bei Kunden, die mehrere ID-Synchronisierungen durchführen, wird die Benutzeroberfläche in einigen Fällen blockiert, da fortlaufende CPU-Berechnungen stattfinden. Wir führen eine Thread-Unterbrechung ein, um einen Abstand zwischen ID-Synchronisierungsanforderungen von jeweils 100 ms zu ermöglichen. </p> <p>Diese Änderung verbessert die Performance für Kunden, die Visitor 2.3.0+ und DIL 6.10+ verwenden.  </p> </td> 
+   <td colname="col2"> <p><b>Iframe</b> </p> <p>Bei Kunden, die mehrere ID-Synchronisierungen durchführen, wird die Benutzeroberfläche in einigen Fällen blockiert, da fortlaufende CPU-Berechnungen stattfinden. Wir führen eine Thread-Unterbrechung ein, um einen Abstand zwischen ID-Synchronisierungsanforderungen von jeweils 100 ms zu ermöglichen. </p> <p>Diese Änderung verbessert die Performance für Kunden, die Visitor 2.3.0+ und DIL 6.10+ verwenden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Neue Möglichkeit zur Aktivierung von Drittanbieteraufrufen </td> 
