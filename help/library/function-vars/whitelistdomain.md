@@ -3,9 +3,13 @@ description: Mit diesen Konfigurationen können verschiedene Instanzen des ID-Di
 keywords: ID-Dienst
 title: whitelistParentDomain und whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/rlm1XMAy74wSMv4RS-WjyMVHd7DM703j0pP2vOyMAM0
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: 874
 ht-degree: 100%
 
 ---
@@ -47,7 +51,7 @@ Beide Konfigurationselemente sind erforderlich, wenn Sie diesen Code verwenden.
  </tbody> 
 </table>
 
-## Codebeispiel  {#section-09d0049fe88a473baa69d404c50bf8ae}
+## Codebeispiel {#section-09d0049fe88a473baa69d404c50bf8ae}
 
 Der konfigurierte [!UICONTROL ID service]-Code sollte in etwa wie im folgenden Beispiel aussehen.
 
@@ -143,7 +147,7 @@ Diese Konfigurationen helfen, das Problem zu lösen, ein ID-Dienst-Cookie zu set
  </tbody> 
 </table>
 
-## Sicherheit der Konfiguration  {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
+## Sicherheit der Konfiguration {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
 Sie können diese Konfigurationen aus folgenden Gründen sicher implementieren:
 
@@ -151,7 +155,7 @@ Sie können diese Konfigurationen aus folgenden Gründen sicher implementieren:
 * Diese Konfigurationen kommunizieren nur mit der Domain und den iFrames, die im Code angegeben sind.
 * Die Kommunikation zwischen dem iFrame und der übergeordneten Seite folgt einem bestimmten Format. Wenn der ID-Dienst auf der übergeordneten Seite keine Anforderung im erwarteten Format erhält, schlägt dieser Freigabeprozess fehl.
 
-## Unterstützte Besucher-API-Methoden  {#section-30c6a9f4dcdc4265a1149260b97cc057}
+## Unterstützte Besucher-API-Methoden {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
 Der ID-Dienst unterstützt einen begrenzte Anzahl an öffentlichen API-Methoden, wenn Sie diese Whitelist-Konfigurationen implementieren. Die unterstützten Methoden variieren je nach den oben beschriebenen Nutzungsszenarios.
 

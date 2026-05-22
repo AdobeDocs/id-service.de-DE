@@ -2,10 +2,14 @@
 description: Verbinden Sie seine Consent Management Platform (CMP) mit dem Audience Manager-Plug-in des Opt-ins für das IAB Transparency and Consent Framework (TCF).
 title: Nutzung von Opt-in-Diensten mit IAB Framework
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/70QH1BoRSSbiw7cMfRjrHmiSxQLbuiHcWAG5b-xVOLw
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: 518
+ht-degree: 96%
 
 ---
 
@@ -13,7 +17,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->Das folgende Dokument gilt nur für IAB 2.0, für dessen Verwendung Visitor.js-Version 5.0 erforderlich ist.
+>Das folgende Dokument gilt nur für IAB 2.0. Benutzer müssen Visitor.js Version 5.0 verwenden, um mit IAB 2.0 arbeiten zu können.
 
 Verbinden Sie die Einverständnisverwaltungs-Plattform (CMP) mit dem Opt-in-IAB Transparency and Consent Framework (TCF)-Plug-in.
 

@@ -2,9 +2,12 @@
 description: Die Rolle des Experience Cloud Identity Services in Adobe Experience Cloud.
 title: Übersicht über den Experience Cloud Identity Service
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/fkT81V3iLEz2irg-3SDoyx733RNhqa2zWV1FgiXoYO4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: 505
 ht-degree: 100%
 
 ---
@@ -13,7 +16,7 @@ ht-degree: 100%
 
 Das allgemeine Identifizierungs-Framework für Experience Cloud Application Services beruht auf dem Experience Cloud Identity Service. Sie können den Experience Cloud Identity Service verwenden, um die [Experience Cloud-ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=de) festzulegen.
 
-Die ECID ist ein gemeinsamer Identitäts-Namespace, der in allen Adobe Experience Platform- und Experience Cloud-Anwendungen verwendet wird, um das Besucherverhalten zu verfolgen und sicherzustellen, dass jedes Gerät über eine eindeutige ID verfügt, die sitzungsübergreifend bestehen kann.
+Die ECID ist ein gemeinsamer Identity-Namespace, der in allen Adobe Experience Platform- und Experience Cloud-Anwendungen verwendet wird, um das Besucherverhalten zu verfolgen und sicherzustellen, dass jedes Gerät über eine eindeutige ID verfügt, die sitzungsübergreifend bestehen kann.
 
 >[!TIP]
 >
@@ -28,7 +31,7 @@ Der Experience Cloud Identity Service kann verschiedene anwendungsspezifische ID
 Der Experience Cloud Identity Service unterstützt die folgenden Anwendungen:
 
 * [Adobe Analytics](https://business.adobe.com/de/products/analytics/web-analytics.html)
-* [Audience Manager](https://business.adobe.com/de/products/audience-manager/adobe-audience-manager.html)
+* [Audience Manager](https://business.adobe.com/de/products/audience-manager/adobe-audience-manager.html)
 * [Adobe Target](https://business.adobe.com/de/products/target/adobe-target.html)
 
 Künftig ist der ID-Service eine integrale Komponente von vielen aktuellen und künftigen Experience Cloud-Features, -Erweiterungen und -Services. Der ID-Dienst unterstützt derzeit [Analytics](http://www.adobe.com/de/marketing-cloud/web-analytics.html), [Audience Manager](http://www.adobe.com/de/marketing-cloud/data-management-platform.html) und [Target](http://www.adobe.com/de/marketing-cloud/testing-targeting.html). Wenn Sie den ID-Service nicht implementiert haben, ist es nun an der Zeit, eine Migrationsstrategie in Erwägung zu ziehen.

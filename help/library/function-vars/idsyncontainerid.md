@@ -3,9 +3,12 @@ description: Diese Eigenschaft legt die Container-ID der Datenquelle fest, die S
 keywords: ID-Dienst
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/bDW5Z4LKbLW2igmRsJ-QxajnBj8KyvoTypUjUekElj4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: 320
 ht-degree: 96%
 
 ---
@@ -36,13 +39,13 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 });
 ```
 
-## Was sind Container und wann werden sie verwendet?  {#section-6aed44fbe9d6401a8f912cb0d98339a7}
+## Was sind Container und wann werden sie verwendet? {#section-6aed44fbe9d6401a8f912cb0d98339a7}
 
 **Behälter**
 
 Container sind Objekte, die von [!DNL Audience Manager] erstellt werden. Obwohl kein externer Zugriff möglich ist, listen diese Container alle Datenquellen auf, die
 
-* für Sie verfügbar sind, jedoch nicht für die ID-Synchronisierung verwendet werden. 
+* für Sie verfügbar sind, jedoch nicht für die ID-Synchronisierung verwendet werden.
 * die für die ID-Synchronisierung verwendet werden.
 
 Auch wenn Sie kein [!DNL Audience Manager]-Kunde sind, enthält Ihr Konto diese Container, wenn Sie IDs mit verschiedenen Datenquellen auf unterschiedlichen Seiten in Ihrer Domain austauschen. Der Grund dafür ist, dass [!DNL Audience Manager] die Technologie und die Backend-Funktionalität zur Verfügung stellt, die eine ID-Synchronisierung ermöglichen.
@@ -79,7 +82,7 @@ Je nach Situation müssen Sie diese Konfiguration möglicherweise Ihrem ID-Diens
  </tbody> 
 </table>
 
-## Einrichten von Container-IDs bei Verwendung von DIL und VisitorAPI.js  {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Einrichten von Container-IDs bei Verwendung von DIL und VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
 Wenn Sie VisitorAPI[!UICONTROL DIL]js *und* auf derselben Seite bereitgestellt haben:
 
