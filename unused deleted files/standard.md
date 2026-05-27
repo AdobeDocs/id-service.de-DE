@@ -5,8 +5,8 @@ title: Implementierung mit Dynamic Tag Management
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 99%
+source-wordcount: '2057'
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ mcvid-dtm-deployment.xml
 Stellen Sie zunächst sicher, dass Ihre Organisation und Ihre Lösungen für die [!DNL Experience Cloud] bereitgestellt wurden und Sie mit dem [!DNL Dyanamic Tag Management] vertraut sind. Diese Dokumentationen helfen bei den ersten Schritten:
 
 * [Aktivieren Sie Ihre Lösungen für Hauptdienste](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=de): Implementieren Sie Experience Cloud und werden Sie Administrator. Durch diesen Prozess werden Ihre Lösungen für die Hauptdienste, wie etwa für Kundenattribute und Experience Cloud-Zielgruppen, modernisiert.
-* [Dynamic Tag Management – Erste Schritte](https://experienceleague.adobe.com/docs/dtm/using/getting-started/get-started.html?lang=de).
+* [Erste Schritte mit Dynamic Tag Management](https://experienceleague.adobe.com/docs/dtm/using/getting-started/get-started.html?lang=de)
 
 **ID-Dienst-Codeplatzierung und -Ladereihenfolge**
 
@@ -82,24 +82,24 @@ Führen Sie die folgenden Schritte aus, um den ID-Dienst mit dem Dynamic Tag Man
 mcvid-dtm-implement.xml
 -->
 
-**Implementierungsschritte** zum Implementieren des ID-Diensts in DTM:
+**Implementierungsschritte** So implementieren Sie den ID-Dienst in DTM:
 
 1. Klicken Sie im DTM-[!UICONTROL Dashboard] auf die gewünschte Webeigenschaft.
-1. Klicken Sie auf der Registerkarte **[!UICONTROL Überblick]** Ihrer ausgewählten Webeigenschaft auf **[!UICONTROL Tool hinzufügen]**.
-1. Klicken Sie in der Liste **[!UICONTROL Tooltyp]** auf **[!UICONTROL Experience Cloud Identity Service]**.
+1. Klicken Sie auf der Registerkarte **[!UICONTROL Overview]** der ausgewählten Web-Eigenschaft auf **[!UICONTROL Add a Tool]**.
+1. Klicken Sie in der **[!UICONTROL Tool Type]** auf **[!UICONTROL Experience Cloud Identity Service]**.
 
    >[!NOTE]
    >
-   >Durch diese Aktion wird das Feld **[!UICONTROL Experience Cloud-Organisations-ID]** mit Ihrer Organisations-ID ausgefüllt. Wenn Ihr DTM-Konto nicht mit [!DNL Experience Cloud] verknüpft ist, müssen Sie diese ID angeben. Informationen zum Verknüpfen von Konten finden Sie im Abschnitt über das [Verknüpfen von Konten in der Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de). Informationen zum Auffinden Ihrer Organisations-ID finden Sie bei diesen [Anforderungen](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26).
+   >Durch diese Aktion wird das **[!UICONTROL Experience Cloud Organization ID]** mit Ihrer Organisations-ID ausgefüllt. Wenn Ihr DTM-Konto nicht mit [!DNL Experience Cloud] verknüpft ist, müssen Sie diese ID angeben. Informationen zum Verknüpfen von Konten finden Sie im Abschnitt über das [Verknüpfen von Konten in der Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de). Informationen zum Auffinden Ihrer Organisations-ID finden Sie bei diesen [Anforderungen](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26).
 
-1. Geben Sie den Namen Ihres Trackingservers im Feld **[!UICONTROL Trackingserver]** ein. Wenn Sie nicht genau wissen, wie Sie Ihren Trackingserver finden, lesen Sie die [Häufig gestellte Fragen (FAQ)](../faq-intro/faq.md) und [Korrektes Ausfüllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
-1. Klicken Sie auf **[!UICONTROL Tool erstellen]** und auf **[!UICONTROL Änderungen speichern]**.
+1. Geben Sie den Namen Ihres Tracking-Servers in das Feld **[!UICONTROL Tracking Server]** ein. Wenn Sie nicht genau wissen, wie Sie Ihren Trackingserver finden, lesen Sie die [FAQ](../faq-intro/faq.md) und [Korrektes Ausfüllen der Variablen „trackingServer“ und „trackingServerSecure“](https://helpx.adobe.com/de/analytics/kb/determining-data-center.html#).
+1. Klicken Sie auf **[!UICONTROL Create Tool]** und **[!UICONTROL Save Changes]**.
 
    Nach dem Speichern wird der ID-Dienst als ein Tool in DTM eingerichtet. Er kann jedoch noch nicht verwendet werden. Ihr DTM-Tool muss zunächst den DTM-Veröffentlichungs-/Genehmigungsprozess durchlaufen. Zudem können Sie zusätzliche Parameter konfigurieren. Informationen zu den zusätzlichen Parametern, die Sie zum DTM hinzufügen können, finden Sie unter [Experience Cloud Identity Service-Einstellungen für DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
 
 ## Experience Cloud Identity Serviceeinstellungen für DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
-Beschreibt die Felder [!UICONTROL Organisations-ID], [!UICONTROL Allgemein] und [!UICONTROL Kundeneinstellungen] und ihre Verwendung durch den [!DNL Experience Cloud] ID-Dienst.
+Beschreibt die Felder [!UICONTROL Organization ID], [!UICONTROL General] und [!UICONTROL Customer Settings] und wie sie vom ID-Dienst [!DNL Experience Cloud] verwendet werden.
 
 <!--
 mcvid-dtm-settings.xml
@@ -107,7 +107,7 @@ mcvid-dtm-settings.xml
 
 ## Wie finde ich diese Einstellungen? {#section-c5b2d1c928944ae2b8565c1b182fe575}
 
-Die Einstellungen stehen nach dem Hinzufügen und Speichern des ID-Dienstes als ein Tool im Dynamic Tag Management (DTM) zur Verfügung. Sie können auf diese Einstellungen auch zugreifen, indem Sie im Abschnitt [!UICONTROL Installierte Tools] Ihrer DTM-Webeigenschaft auf das Zahnradsymbol klicken.
+Die Einstellungen stehen nach dem Hinzufügen und Speichern des ID-Dienstes als ein Tool im Dynamic Tag Management (DTM) zur Verfügung. Sie können auch auf diese Einstellungen zugreifen, indem Sie im Abschnitt [!UICONTROL Installed Tools] Ihrer DTM-Webeigenschaft auf das Zahnradsymbol klicken.
 
 ![](assets/installedTools.png)
 
@@ -125,7 +125,7 @@ Mit diesen Einstellungen können Sie Tracking-Server angeben, Versionen codieren
 
 ![](assets/generalSettings.png)
 
-In der folgenden Tabelle sind die [!UICONTROL allgemeinen] Einstellungen aufgeführt und definiert.
+In der folgenden Tabelle sind die [!UICONTROL General]-Einstellungen aufgeführt und definiert.
 
 **Besucher-ID automatisch anfordern**
 
@@ -163,7 +163,7 @@ Legt die Version der gewünschten ID-Dienstcodebibliothek (`VisitorAPI.js`) fest
 
 **Einstellungen**
 
-In diesen Feldern können Sie [Funktionsvariablen](../library/function-vars/function-vars.md) als Schlüssel-Wert-Paare hinzufügen. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um Ihrer ID-Dienstimplementierung mindestens eine Variable hinzuzufügen.
+In diesen Feldern können Sie [Funktionsvariablen](../library/function-vars/function-vars.md) als Schlüssel-Wert-Paare hinzufügen. Klicken Sie auf **[!UICONTROL Add]** , um eine oder mehrere Variablen zu Ihrer ID-Service-Implementierung hinzuzufügen.
 
 ![](assets/dtmVars.png)
 
@@ -261,19 +261,19 @@ Lesen Sie diesen Abschnitt, um Informationen dahingehend zu erhalten, wo und won
 
 ### Erfolgreiche ID-Dienstanforderungen in Charles
 
-Ihr ID-Dienst-Code funktioniert ordnungsgemäß, wenn die Funktion `Visitor.getInstance` einen JavaScript-Aufruf zu `dpm.demdex.net` startet. Eine erfolgreiche Anforderung enthält Ihre [Organisations-ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). Die Organisations-ID wird als Schlüssel-Wert-Paar weitergegeben, das folgende Syntax verwendet: `d_orgid= *`d_orgid`*`. Die `dpm.demdex.net`- und JavaScript-Aufrufe finden Sie auf der Registerkarte [!UICONTROL Struktur]. Die Organisations-ID finden Sie auf der Registerkarte [!UICONTROL „Anforderung“].
+Ihr ID-Dienst-Code funktioniert ordnungsgemäß, wenn die Funktion `Visitor.getInstance` einen JavaScript-Aufruf zu `dpm.demdex.net` startet. Eine erfolgreiche Anforderung enthält Ihre [Organisations-ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26). Die Organisations-ID wird als Schlüssel-Wert-Paar weitergegeben, das folgende Syntax verwendet: `d_orgid= *`d_orgid`*`. Die `dpm.demdex.net`- und die JavaScript-Aufrufe finden Sie auf Registerkarte [!UICONTROL Structure]. Ihre Organisations-ID finden Sie auf der Registerkarte [!UICONTROL Request].
 
 ![](assets/charles_request.png)
 
 ### Erfolgreiche ID-Dienstantworten in Charles
 
-Ihr Konto wurde ordnungsgemäß für den ID-Dienst bereitgestellt, wenn die Antwort von den [Datenerfassungsservern (Data Collection Servers, DCS)](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=de) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: visitor Experience Cloud ID`. Auf der Registerkarte [!UICONTROL „Antwort“] findet sich die MID, wie im Folgenden gezeigt.
+Ihr Konto wurde ordnungsgemäß für den ID-Dienst bereitgestellt, wenn die Antwort von den [Datenerfassungsservern (Data Collection Servers, DCS)](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=de) eine MID zurückgibt. Die MID wird als ein Schlüssel-Wert-Paar zurückgegeben, das die folgende Syntax verwendet: `d_mid: visitor Experience Cloud ID`. Auf der Registerkarte [!UICONTROL Response] finden Sie die MID wie nachstehend dargestellt.
 
 ![](assets/charles_response_success.png)
 
 ### Fehlerhafte ID-Dienstantworten in Charles
 
-Ihr Konto wurde nicht richtig bereitgestellt, wenn die MID in der DCS-Antwort fehlt. Bei einer fehlerhaften Antwort werden auf der Registerkarte [!UICONTROL Antwort] ein Fehler-Code und eine Fehlermeldung zurückgegeben, wie im Folgenden gezeigt. Wenden Sie sich an die Kundenunterstützung, wenn diese Fehlermeldung in der DCS-Antwort angezeigt wird.
+Ihr Konto wurde nicht richtig bereitgestellt, wenn die MID in der DCS-Antwort fehlt. Bei einer fehlerhaften Antwort werden auf der Registerkarte [!UICONTROL Response] ein Fehlercode und eine Fehlermeldung zurückgegeben wie nachstehend dargestellt. Wenden Sie sich an die Kundenunterstützung, wenn diese Fehlermeldung in der DCS-Antwort angezeigt wird.
 
 ![](assets/charles_response_unsuccessful.png)
 
