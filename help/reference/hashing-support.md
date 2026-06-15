@@ -4,24 +4,19 @@ keywords: ID-Dienst
 title: SHA-256-Hash-Unterstützung für setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 TQID: https://experienceleague.adobe.com/-JBVon-Qf2jtfd5f4UdWcHVyO7c887p1w-k3GnntUCA
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 618
-ht-degree: 97%
+source-wordcount: 574
+ht-degree: 92%
 
 ---
 
 # SHA-256-Hash-Unterstützung für `setCustomerIDs` {#hashing-support}
 
-Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen importieren und Hash-IDs exportieren können. Dies ist eine optionale JavaScript-Methode zum Senden von Hash-Identifikatoren an Experience Cloud. Sie können auch weiterhin Ihre eigenen Hash-Methoden beim Senden von Kunden-IDs verwenden.
-Es gibt folgende zwei Möglichkeiten, um Hash-Unterstützung mit setCustomerIDs zu implementieren:
+Der Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen eingeben und Hash-IDs weitergeben können. Dies ist eine optionale JavaScript-Methode zum Senden von Hash-Kennungen an Experience Cloud. Sie können vor dem Senden von Kunden-IDs weiterhin Ihre eigenen Hash-Methoden verwenden.
+Es gibt zwei Möglichkeiten, die Hashing-Unterstützung mit setCustomerIDs zu implementieren, wie in den folgenden Abschnitten beschrieben:
 
 * [Verwenden der setCustomerIDs-Methode in ECID](/help/reference/hashing-support.md#use-setcustomerids-method)
 * [Hinzufügen einer Aktion in Adobe Experience Platform Launch](/help/reference/hashing-support.md#add-action-launch)

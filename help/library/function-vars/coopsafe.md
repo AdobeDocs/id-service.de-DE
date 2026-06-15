@@ -5,7 +5,7 @@ title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '612'
 ht-degree: 100%
 
 ---
@@ -81,7 +81,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 });
 ```
 
-## POST-Parameter für Ereignisaufrufe  {#section-fcd441933506493faefaa6b51f194a17}
+## POST-Parameter für Ereignisaufrufe {#section-fcd441933506493faefaa6b51f194a17}
 
 Abhängig von der festgelegten Kennzeichnung (`true` oder `false`) überträgt der ID-Dienst `isCoopSafe` in diese POST-Parameter und sendet sie in einem Ereignisaufruf an [!DNL Adobe]:
 
@@ -109,7 +109,7 @@ Anhand der POST-Parameter stellt die [!DNL Experience Cloud]-Gerätekooperation 
  </tbody> 
 </table>
 
-## Post-Instanziierungs-APIs  {#section-9281c39c8b6249d7864100b5cbca7dc6}
+## Post-Instanziierungs-APIs {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
 Mit diesen APIs können Sie den Status von `isCoopSafe` überschreiben. Diese sind erforderlich, damit Sie den Status eines Besuchers nach der Instanziierung/nach der Anmeldung auf einer Website oder in einer Einzelseitenanwendung ändern können, wenn die Seite nicht aktualisiert wird. Beispielsweise müssen Sie diese APIs aufrufen, wenn sich ein Benutzer bei Ihrer Site oder App authentifiziert und später eine Nutzungsrichtlinie akzeptiert, die es der Gerätekooperation ermöglicht, ihre Daten zu verwenden.
 

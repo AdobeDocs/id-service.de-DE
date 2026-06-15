@@ -4,15 +4,9 @@ keywords: ID-Dienst
 title: Versionshinweise für 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 TQID: https://experienceleague.adobe.com/KnO04dnP6z7gKrr8vkFiiToDSBfClpiOJkGq8949ahA
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
 source-wordcount: 438
@@ -28,7 +22,7 @@ Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience C
 
 Ein Kontrollkästchen für die Genehmigung vor dem Opt-in für Medienanalysen in der ECID Launch-Erweiterung wurde hinzugefügt.
 
-**Fehlerbehebungen**
+**Fehlerkorrekturen**
 
 * Problem mit dem Parsen der Eingabe-Zeichenfolge für die ECID Launch-Erweiterung preOptInApprovals.
 * Performance-Abfall bei Verwendung von trackingServer.
@@ -61,7 +55,7 @@ Aktualisierung von `publishDestinations` durch die Änderung in der neuen API. M
 
 Unterstützung für das Audience Manager-Plug-in für IAB TCF, das über das Objekt „ECID Opt-in“ verfügbar ist.
 
-**Fehlerbehebungen**
+**Fehlerkorrekturen**
 
 * IAB + Opt-in kann keine MID für den erneuten Besuch von Kunden abrufen.
 * Ein Fehler bei der Konfiguration des Opt-ins doesOptInApply in wurde in DTM behoben.
