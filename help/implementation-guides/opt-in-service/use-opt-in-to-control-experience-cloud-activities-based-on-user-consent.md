@@ -26,13 +26,13 @@ Das Adobe [!UICONTROL Opt-in]-Objekt ist eine Erweiterung des Adobe-[!UICONTROL 
 
 ## Die Grundlagen der [!UICONTROL Opt-In]
 
-Ein wichtiger Aspekt der Datenschutzbestimmungen ist der Erwerb und die Übermittlung des Einverständnisses der Benutzer darüber, wie und von wem ihre personenbezogenen Daten verwendet werden dürfen. Die neueste Version des [!UICONTROL Identity Service] enthält Funktionen, die bedingte Auslösung von Experience Cloud-Lösungs-Tags (z. B. vor und nach der Zustimmung) bereitstellen, je nachdem, ob die Zustimmung des Endbenutzers eingeholt wurde. Dies wird in der folgenden Abbildung verdeutlicht:
+Ein wichtiger Aspekt der Datenschutzbestimmungen ist der Erwerb und die Übermittlung des Einverständnisses der Benutzer darüber, wie und von wem ihre personenbezogenen Daten verwendet werden dürfen. Die neueste Version des [!UICONTROL Identity Service] umfasst Funktionen, die bedingte Auslösung von Experience Cloud-Lösungs-Tags (z. B. vor und nach der Zustimmung) bereitstellen, je nachdem, ob die Zustimmung des Endbenutzers eingeholt wurde. Dies wird in der folgenden Abbildung verdeutlicht:
 
 ![Abbildung der Funktionsweise von [!UICONTROL Opt-in]](assets/opt-in.png)
 
 [!UICONTROL Opt-in] funktioniert wie folgt:
 
-**Wenn [!UICONTROL Opt-in] im Identity Service aktiviert ist (über eine boolesche Variable), werden die Experience Cloud-Lösungsbibliotheken daran gehindert, Tags auszulösen oder Cookies zu setzen, bis ein Einverständnis für diese Lösung erteilt wurde.**
+**Wenn [!UICONTROL Opt-in] im Identity Service aktiviert ist (über eine boolesche Variable), werden die Bibliotheken der Experience Cloud-Lösung daran gehindert, Tags auszulösen oder Cookies zu setzen, bis ein Einverständnis für diese Lösung erteilt wurde.**
 
 [!UICONTROL Opt-in] können Sie auch entscheiden, ob Tags vor dem Benutzereinverständnis ausgelöst werden. Diese Einverständnisinformationen werden dann (zusammen mit der Einwilligung des Endbenutzers) gespeichert, damit sie bei nachfolgenden Hits verwendet werden können. Die Speicherung des Einverständnisses ist in den [!UICONTROL Opt-in] Optionen verfügbar. Sie können aber auch eine CMP integrieren und das Einverständnis speichern lassen.
 
@@ -48,7 +48,7 @@ Wenn Sie keine Experience Platform-Tags verwenden, können Sie die Konfiguration
 
 All diese Setup- und Backend-Dinge sind nur zur Vorbereitung, um Website-Besuchern eine Schnittstelle mit Einverständnisoptionen zu präsentieren. Diese Benutzeroberfläche kann von Ihnen selbst erstellt werden. Sie können aber auch einen CMP-Partner (Consent Management Platform) beauftragen, um die Benutzeroberfläche zu erstellen.
 
-Wenn Sie eine Benutzeroberfläche einrichten, um [!UICONTROL Opt-in] zur Einholung von Einverständnissen zu verwenden, sollte diese so konfiguriert sein, dass sie APIs aufruft, die sich mit [!UICONTROL Opt-in] verbinden, und sie darüber informiert, dass sie einigen oder allen Adobe Experience Cloud-Lösungen zustimmt. Ausführliche Informationen zu diesen APIs finden Sie in der [Opt-in-Referenzdokumentation](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=de). Weitere Informationen zum Opt-in finden Sie auch auf den umliegenden Dokumentationsseiten.
+Wenn Sie eine Benutzeroberfläche einrichten, um [!UICONTROL Opt-in] zur Einholung von Einverständnissen zu verwenden, sollte diese so konfiguriert sein, dass sie APIs aufruft, die sich mit [!UICONTROL Opt-in] verbinden, und sie darüber informiert, dass sie einigen oder allen Adobe Experience Cloud-Lösungen ihr Einverständnis erteilt. Ausführliche Informationen zu diesen APIs finden Sie in der [Opt-in-Referenzdokumentation](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=de). Weitere Informationen zum Opt-in finden Sie auch auf den umliegenden Dokumentationsseiten.
 
 ## [!UICONTROL Opt-In] Demo
 

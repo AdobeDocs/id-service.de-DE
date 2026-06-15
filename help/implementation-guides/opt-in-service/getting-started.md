@@ -16,8 +16,8 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: 960
-ht-degree: 100%
+source-wordcount: 849
+ht-degree: 97%
 
 ---
 
@@ -71,8 +71,8 @@ adobe.OptInCategories = {
 };
 ```
 
-Mit dem Opt-in-Dienst können Sie die Berechtigungsvoreinstellungen der Besucher für jede Adobe-Lösung auf Ihrer Site festlegen. Das Objekt umfasst eine Bibliothek zum Speichern der Einstellungen eines Besuchers nach genehmigter Kategorie und unterstützt einen sequenziellen Ablauf, bei dem der Genehmigungsprozess Voreinstellungen zum Bestätigen oder Ablehnen jeder Kategorie erhält. Sie können festlegen, dass den Lösungen/Kategorien gleichzeitig oder einzeln zugestimmt wird.
-Die clientseitigen Bibliotheken aller Adobe-Lösungen sind vom Opt-in-Dienst abhängig. Es werden nur Cookies generiert, wenn eine Berechtigung dafür erteilt wurde. Opt-in unterstützt verschiedene Ansätze zur Bereitstellung und Aktualisierung von Zustimmungseinstellungen für den aktuellen Besucher. Dieser Abschnitt enthält Beispiele für die Festlegung von Opt-in-Dienstvoreinstellungen. Eine vollständige Liste der Funktionen und Parameter finden Sie in der [Opt-in-API-Referenz](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867).
+Mit dem Opt-in-Dienst können Sie die Berechtigungseinstellungen von Besuchern für jede auf Ihrer Site verwendete Adobe-Lösung festlegen. Es enthält eine Bibliothek zum Speichern der Einstellungen einer Besucherin oder eines Besuchers nach genehmigter Kategorie und unterstützt einen sequenziellen Fluss, bei dem der Genehmigungsprozess die Voreinstellungen „Bestätigen“ oder „Ablehnen“ für jede Kategorie einzeln erhält. Sie können Lösungen/Kategorien so einrichten, dass sie sich als Ganzes oder als einzelne Lösung anmelden.
+Alle Client-seitigen Bibliotheken der Adobe-Lösungen hängen vom Opt-in-Service ab und generieren keine Cookies, es sei denn, der Lösung wurde die Berechtigung erteilt. Opt-in unterstützt verschiedene Ansätze zum Bereitstellen und Aktualisieren der Einverständniseinstellungen für den aktuellen Besucher. In diesem Abschnitt finden Sie Beispiele zum Festlegen von Voreinstellungen für den Opt-in-Service. Eine vollständige Liste der Funktionen [&#x200B; Parameter finden Sie in &#x200B;](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) Opt-in-API-Referenz .
 
 Opt-in-Dienstkonfigurationen werden in der Visitor `getInstance()` JS-Funktion bereitgestellt, die das globale `adobe`-Objekt instanziiert. Im Folgenden werden die Visitor JS-[Konfigurationseinstellungen](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) für den Opt-in-Dienst aufgeführt.
 
