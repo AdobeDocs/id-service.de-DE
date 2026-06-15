@@ -58,7 +58,7 @@ Der Parameter `aid` taucht in einer Abfragezeichenfolge auf, wenn:
 
 **2. Fall**
 
-Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen eine [Übergangsphase](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) verwendet, bevor es den ID-Dienst vollständig implementiert. Hat der aktuelle Besucher Ihre Site zuvor noch nie aufgerufen und sollten Sie keine Übergangsphase festgelegt haben, erhält der Besucher den Parameter `mid` ([!DNL Experience Cloud] ID).
+Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen eine [Übergangsphase](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) verwendet, bevor es den ID-Dienst vollständig implementiert. Hat der aktuelle Besucher Ihre Site zuvor noch nie aufgerufen und sollten Sie keine Übergangsphase festgelegt haben, erhält der Besucher den Parameter `mid` ([!DNL Experience Cloud] ID).
 
 >[!MORELIKETHIS]
 >

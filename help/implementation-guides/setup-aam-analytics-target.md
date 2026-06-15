@@ -220,7 +220,7 @@ Suchen Sie in der JavaScript-Anforderung nach der SDID-Kennung. Die Analytics-SD
 Wenn Ihre Tests eine AID zurückgeben, weist dies auf eine der folgenden Möglichkeiten hin:
 
 * Sie sind ein wiederkehrender Besucher im Prozess der Migration von alten [!DNL Analytics]-IDs.
-* Sie haben eine [Übergangsphase](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) aktiviert.
+* Sie haben eine [Übergangsphase](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) aktiviert.
 
 Wenn Sie eine AID sehen, vergleichen Sie den zugehörigen Wert mit der [!DNL Target] mboxMCAVID von. Diese Werte sind identisch, wenn der ID-Dienst korrekt implementiert wurde.
 
