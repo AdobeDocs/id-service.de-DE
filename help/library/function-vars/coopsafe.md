@@ -1,18 +1,18 @@
 ---
-description: Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
-keywords: ID-Dienst
+description: Eine optionale boolesche Konfiguration, die bestimmt, ob der Besucher-ID-Service Daten an die Adobe Device Co-op sendet (oder nicht sendet).
+keywords: Besucher-ID-Service
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '618'
+ht-degree: 69%
 
 ---
 
 # isCoopSafe{#iscoopsafe}
 
-Eine optionale boolesche Konfiguration, die festlegt, ob der ID-Dienst Daten an die Adobe Experience Cloud-Gerätekooperation sendet oder nicht.
+Eine optionale boolesche Konfiguration, die bestimmt, ob der Besucher-ID-Service Daten an die Adobe Device Co-op sendet (oder nicht sendet).
 
 Inhalt:
 
@@ -28,10 +28,10 @@ Inhalt:
 
 Voraussetzungen zur Verwendung von `isCoopSafe`:
 
-* Verwendung von ID-Dienstcode der Version 2.4 oder höher
-* Nehmen Sie an der [Experience Cloud-Gerätekooperation](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=de) teil. Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
+* Verwenden Sie den Visitor ID Service-Code der Version 2.4 oder höher.
+* Beteiligen Sie sich an der [Adobe Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=de). Zukünftige Mitglieder der Gerätekooperation sollten diese Dokumentation ebenfalls lesen, um festzustellen, ob `isCoopSafe` mögliche Fragen über die Verwendung der Daten zur Erstellung eines Gerätediagramms beantwortet.
 
-* Wenden Sie sich an Ihren [!DNL Adobe]-Berater, wenn Sie eine Whitelist- oder Blacklist-Kennzeichnung für Ihr Gerätekooperationskonto erstellen möchten. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
+* Arbeiten Sie mit Ihrem Adobe-Berater zusammen, um für Ihr Device Co-op-Konto eine Whitelist- oder eine Blacklist-Markierung festzulegen. Es gibt keinen Self-Service-Pfad zum Aktivieren dieser Kennzeichnungen.
 
 ## Anwendungsfälle {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
@@ -47,11 +47,11 @@ Voraussetzungen zur Verwendung von `isCoopSafe`:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>Authentifizierte Besucher</b> </p> </td> 
-   <td colname="col2"> <p>Fügen Sie <span class="codeph">isCoopSafe</span> Ihrem ID-Dienstcode hinzu, um zu steuern, wie Daten authentifizierter Besucher, die die Nutzungsvereinbarungen akzeptiert haben oder auch nicht, von der Gerätekooperation zum Erstellen des Gerätediagramms verwendet werden. </p> </td> 
+   <td colname="col2"> <p>Fügen Sie <span class="codeph"> isCoopSafe-</span> zu Ihrem Besucher-ID-Service-Code hinzu, um zu steuern, wie Daten für authentifizierte Besucher, die Nutzungsbedingungen akzeptiert haben oder nicht akzeptiert haben, von der Gerätekooperation zum Erstellen des Gerätediagramms verwendet werden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>DIL auf Drittanbieter-Sites</b> </p> </td> 
-   <td colname="col2"> <p>Fügen Sie <span class="codeph">isCoopSafe</span> Ihrem ID-Dienstcode auf Drittanbieter-Sites hinzu, wenn Folgendes zutrifft: </p> <p> 
+   <td colname="col2"> <p>Fügen Sie <span class="codeph"> isCoopSafe-</span> zu Ihrem Besucher-ID-Service-Code hinzu, um sie auf Websites von Drittanbietern zu verwenden, auf denen Sie: </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">Es kann nicht sichergestellt werden, dass authentifizierte Besucher Nutzungsvereinbarungen akzeptiert oder nicht akzeptiert haben. </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">Es muss gesteuert werden, wie diese Daten von der Gerätekooperation zum Erstellen des Gerätediagramms verwendet werden. </li> 
@@ -72,10 +72,10 @@ Die booleschen Optionen bestimmen, ob Kundendaten von der Gerätekooperation ver
 
 **Codebeispiel**
 
-Legen Sie dies fest, wenn Ihr ID-Dienst-Code instanziiert:
+Legen Sie dies fest, wenn Ihr Besucher-ID-Service-Code instanziiert:
 
 ```js
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE",{ 
      ... 
      isCoopSafe: true 
 });
@@ -83,12 +83,12 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 
 ## POST-Parameter für Ereignisaufrufe {#section-fcd441933506493faefaa6b51f194a17}
 
-Abhängig von der festgelegten Kennzeichnung (`true` oder `false`) überträgt der ID-Dienst `isCoopSafe` in diese POST-Parameter und sendet sie in einem Ereignisaufruf an [!DNL Adobe]:
+Je nach festgelegtem Flag (`true` oder `false`) übersetzt der Besucher-ID-Dienst `isCoopSafe` in diese POST-Parameter und sendet sie in einem Ereignisaufruf an Adobe:
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-Anhand der POST-Parameter stellt die [!DNL Experience Cloud]-Gerätekooperation fest, ob Benutzerdaten in das Gerätediagramm aufgenommen werden dürfen oder nicht. Die folgende Tabelle definiert die Beziehung zwischen den booleschen Kennzeichnungen von `isCoopSafe` und den im Ereignisaufruf übergebenen POST-Parametern. Wenn Sie `isCoopSafe` nicht verwenden, wird keiner von ihnen in einem Ereignisaufruf übergeben.
+Die POST-Parameter teilen der Adobe-Gerätekooperation mit, ob Benutzerdaten in das Gerätediagramm aufgenommen werden können oder nicht. Die folgende Tabelle definiert die Beziehung zwischen den booleschen Kennzeichnungen von `isCoopSafe` und den im Ereignisaufruf übergebenen POST-Parametern. Wenn Sie `isCoopSafe` nicht verwenden, wird keiner von ihnen in einem Ereignisaufruf übergeben.
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 

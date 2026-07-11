@@ -1,52 +1,47 @@
 ---
-description: Der ID-Service verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und persistente IDs für Ihre Site-Besucher zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Service Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
-keywords: Playstation; ID-Service
-title: Cookies und der Experience Cloud Identity Service.
+description: Der Besucher-ID-Dienst verwendet Ihre IMS-Organisations-ID, das AMCV-Cookie von CX Enterprise und ein demdex-Cookie, um eindeutige und persistente IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der Besucher-ID-Service Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen verschiedenen CX Enterprise-Lösungen ermöglichen.
+keywords: Playstation;Besucher-ID-Service
+title: Cookies und der Besucher-ID-Dienst von Adobe
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 TQID: https://experienceleague.adobe.com/iLOFGQ9t-DqYfqOZs3K5yZI7903dMPEjANaJ7lH8K0o
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 968
-ht-degree: 100%
+source-wordcount: 990
+ht-degree: 42%
 
 ---
 
-# Cookies und der Experience Cloud Identity Service.{#cookies-and-the-experience-cloud-id-service}
+# Cookies und der Besucher-ID-Dienst von Adobe{#cookies-and-the-experience-cloud-id-service}
 
-Der ID-Service verwendet Ihre Organisations-ID, das Experience Cloud-AMCV-Cookie und ein demdex-Cookie, um eindeutige und persistente IDs für Ihre Site-Besucher zu erstellen und zu speichern. Mit diesen Cookies kann der ID-Service Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen unterschiedlichen Experience Cloud-Lösungen ermöglichen.
+Der Besucher-ID-Dienst verwendet Ihre IMS-Organisations-ID, das AMCV-Cookie von CX Enterprise und ein demdex-Cookie, um eindeutige und persistente IDs für die Besucher Ihrer Site zu erstellen und zu speichern. Mit diesen Cookies kann der Besucher-ID-Service Besucher domänenübergreifend verfolgen und die Datenfreigabe zwischen verschiedenen CX Enterprise-Lösungen ermöglichen.
 
-## Grundlegendes zu ID-Dienst-Cookies {#section-f438168beaec409ab8b2cc58bd021e26}
+## Cookies des Besucher-ID-Service {#section-f438168beaec409ab8b2cc58bd021e26}
 
-Der ID-Service ist auf die AMCV-, AMCVS- und demdex-Cookies angewiesen, um ordnungsgemäß zu funktionieren. Bei diesen Cookies handelt es sich lediglich um Dateien, in denen vom ID-Service verwendete Daten gespeichert werden. Diese ID-Dienst-Cookies sind nicht gefährlich, bösartig und unterscheiden sich nicht von anderen Erstanbieter- oder Drittanbieter-Cookies, die von einer Website oder einem Service in einem Browser gespeichert werden. Dabei gelten dieselben Regeln wie für andere Erst- und Drittanbieter-Cookies. Weitere Informationen zu den vom ID-Service verwendeten Cookies erhalten Sie in der nachstehenden Tabelle und den darauf folgenden Abschnitten.
+Der Besucher-ID-Dienst ist auf die AMCV-, AMCVS- und demdex-Cookies angewiesen, um ordnungsgemäß zu funktionieren. Bei diesen Cookies handelt es sich lediglich um Dateien, in denen vom Besucher-ID-Dienst verwendete Daten gespeichert werden. Diese Besucher-ID-Dienst-Cookies sind nicht gefährlich, bösartig und unterscheiden sich nicht von anderen Erstanbieter- oder Drittanbieter-Cookies, die von einer Website oder einem Service in einem Browser gespeichert werden. Dabei gelten dieselben Regeln wie für andere Erst- und Drittanbieter-Cookies. Weitere Informationen zu den vom Besucher-ID-Dienst verwendeten Cookies finden Sie in den folgenden Abschnitten.
 
-### Was die ID-Service-Cookies können
+### Was die Besucher-ID-Service-Cookies können
 
 * Eine eindeutige ID für Ihre Site-Besucher (die MID) festlegen und speichern.
-* Diese eindeutige ID beibehalten, damit der ID-Service Daten erfassen und für andere Experience Cloud-Lösungen freigeben kann.
-* Benutzer domänenübergreifend verfolgen. Dies setzt jedoch voraus, dass Sie Eigentümer dieser anderen Domänen sind und dass auf ihnen ID-Service-Code bereitgestellt wird.
+* Behalten Sie diese eindeutige ID bei, damit der Besucher-ID-Service Daten erfassen und für andere CX Enterprise-Lösungen freigeben kann.
+* Benutzer domänenübergreifend verfolgen. Dazu müssen Sie jedoch Eigentümer dieser anderen Domains sein und den Besucher-ID-Service-Code auf ihnen bereitstellen.
 
-### Was die ID-Service-Cookies nicht können
+### Was die Besucher-ID-Service-Cookies nicht können
 
 * Computerviren speichern, übertragen und ausführen.
 * Auf personenbezogene Daten (PII) wie Ihre E-Mail-Adresse zugreifen oder speichern.
 * Computerhardware oder -software steuern.
 * Computer-Instabilitäten oder Performance-Probleme verursachen.
-* Benutzer auf Sites verfolgen, die den ID-Service nicht verwenden.
+* Tracken Sie Benutzer auf Sites, die den Besucher-ID-Service nicht verwenden.
 
 ## AMCV-Cookie {#section-c55af54828dc4cce89f6118655d694c8}
 
-Die folgenden Attribute des Cookies werden vom ID-Service gesetzt.
+Die folgenden Attribute des Cookies werden vom Besucher-ID-Service gesetzt.
 
 **Name**
 
-Der Name des AMCV-Cookies folgt der Syntax `AMCV_<variable name>@AdobeOrg`. Im Namen sind die `<variable name>` Elemente Platzhalter für einen Teil Ihrer Experience Cloud Organisations-ID. Diese ID wird von der `Visitor.getInstance` Funktion im ID-Service-Code an den DES weitergeleitet.
+Der Name des AMCV-Cookies folgt der Syntax `AMCV_<variable name>@AdobeOrg`. Im Namen sind die `<variable name>`-Elemente Platzhalter für einen Teil Ihrer IMS-Organisations-ID. Diese ID wird von der `Visitor.getInstance` im Code des Besucher-ID-Service an den DCS weitergeleitet.
 
 Ein vollständiger Cookie-Name würde in etwa wie folgt aussehen:
 
@@ -56,7 +51,7 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **Inhalt**
 
-Das AMCV-Cookie enthält die Experience Cloud-Besucher-ID oder die MID. Die MID wird in einem Schlüssel-Wert-Paar gespeichert, das dieser Syntax folgt: `MCMID|<Experience Cloud ID>`.
+Das AMCV-Cookie enthält die ECID oder MID. Die MID wird in einem Schlüssel-Wert-Paar gespeichert, das dieser Syntax folgt: `MCMID|<ECID>`.
 
 Ein vollständiges Schlüsselwertpaar würde in etwa wie folgt aussehen:
 
@@ -68,15 +63,15 @@ Diese persistente Kennung ermöglicht die lösungsübergreifende Datenfreigabe.
 
 **Domain**
 
-Das AMCV-Cookie wird in der Erstanbieterdomäne eines Browsers gesetzt. Das bedeutet, dass es in der Domain der Site festgelegt ist, die derzeit von einem Benutzer besucht wird. Daher können ID-Service-Code und andere Experience Cloud-Code-Bibliotheken die im AMCV-Cookie gespeicherte MID lesen.
+Das AMCV-Cookie wird in der Erstanbieterdomäne eines Browsers gesetzt. Das bedeutet, dass es in der Domain der Site festgelegt ist, die derzeit von einem Benutzer besucht wird. Daher können der Besucher-ID-Dienst-Code und andere CX Enterprise-Code-Bibliotheken die im AMCV-Cookie gespeicherte MID lesen.
 
-Da das AMCV-Cookie jedoch in der Erstanbieterdomäne gesetzt ist, kann es nicht zum domänenübergreifenden Tracking oder zur domänenübergreifenden Identifizierung von Benutzern verwendet werden. Stattdessen verwendet der ID-Service die Organisations-ID und die demdex-ID, um die richtige MID zurückzugeben, wenn ein Site-Besucher zu einer anderen Domain navigiert.
+Da das AMCV-Cookie jedoch in der Erstanbieterdomäne gesetzt ist, kann es nicht zum domänenübergreifenden Tracking oder zur domänenübergreifenden Identifizierung von Benutzern verwendet werden. Stattdessen verwendet der Besucher-ID-Dienst die IMS-Organisations-ID und die demdex-ID, um die richtige MID zurückzugeben, wenn ein Site-Besucher zu einer anderen Domain navigiert.
 
 ## AMCVS-Cookie {#section-92a9454f1ac645948f9059b9fad928bf}
 
 **Name**
 
-Der Name des AMCVS-Cookies folgt der Syntax `AMCVS_####@AdobeOrg`. Die Zeichen #### im Namen sind Platzhalter für einen Teil Ihrer Experience Cloud-Organisations-ID. Diese ID wird von der `theVisitor.getInstance` Funktion im ID-Service-Code an den DCS weitergeleitet.
+Der Name des AMCVS-Cookies folgt der Syntax `AMCVS_####@AdobeOrg`. Im Namen sind die ####-Elemente Platzhalter für einen Teil Ihrer IMS-Organisations-ID. Diese ID wird von `theVisitor.getInstance` Funktion im Code des Besucher-ID-Service an den DCS weitergeleitet.
 
 Ein vollständiger Cookie-Name würde in etwa wie folgt aussehen:
 
@@ -116,7 +111,7 @@ In der folgenden Tabelle werden einige wichtige Attribute des demdex-Cookies auf
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Domain</b> </p> </td> 
-   <td colname="col2"> <p>Das demdex-Cookie wird in der Drittanbieterdomäne „demdex.net“ im Browser gesetzt. Diese Domain ist nicht mit der Site identisch, die derzeit von einem Benutzer besucht wird. </p> <p>Im Gegensatz zum Erstanbieter-AMCV-Cookie bestehen demdex-Cookie und -ID über verschiedene Domänen hinweg. Die demdex-ID und Ihre Organisations-ID sind die gemeinsamen Werte, die es dem ID-Service ermöglichen, einen Site-Besucher mit der richtigen Besucher-ID zurückzugeben und zu identifizieren. </p> </td> 
+   <td colname="col2"> <p>Das demdex-Cookie wird in der Drittanbieterdomäne „demdex.net“ im Browser gesetzt. Diese Domain ist nicht mit der Site identisch, die derzeit von einem Benutzer besucht wird. </p> <p>Im Gegensatz zum Erstanbieter-AMCV-Cookie bestehen demdex-Cookie und -ID über verschiedene Domänen hinweg. Die demdex-ID und Ihre IMS-Organisations-ID sind die gemeinsamen Werte, die es dem Besucher-ID-Service ermöglichen, einen Site-Besucher mit der richtigen Besucher-ID zurückzugeben und zu identifizieren. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -125,15 +120,15 @@ Informationen zu Demdex-Offenlegungen finden Sie in den [Offenlegungen zum Audie
 
 Weitere Informationen finden Sie in der Dokumentation zum [Verstehen von Aufrufen an die Demdex-Domain](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=de).
 
-## Generieren der Experience Cloud ID {#section-15f69c0bac394b4b9966a23fbc586d17}
+## Generieren der ECID {#section-15f69c0bac394b4b9966a23fbc586d17}
 
-Die Experience Cloud ID (MID) wird mathematisch aus Ihrer Organisations-ID und der demdex-ID abgeleitet. Solange diese IDs konstant bleiben, ist die Erzeugung der richtigen MID für einen bestimmten Benutzer einfach ein mathematisches Problem. Dieselbe Organisations-ID und dieselbe demdex-ID ergeben immer denselben MID-Wert. Auf diese Weise kann der ID-Service Besucher in über Domänen hinweg verfolgen, die Sie steuern und mit dem ID-Service-Code konfiguriert haben.
+Die ECID wird mathematisch aus Ihrer IMS-Organisations-ID und der demdex-ID abgeleitet. Solange diese IDs konstant bleiben, ist die Erzeugung der richtigen MID für einen bestimmten Benutzer einfach ein mathematisches Problem. Bei gleicher IMS-Organisations-ID und demdex-ID erhalten Sie jedes Mal denselben MID-Wert. Dadurch kann der Besucher-ID-Service Besucher über Domänen hinweg verfolgen, die Sie steuern und mit dem Besucher-ID-Service-Code konfiguriert haben.
 
-Der ID-Service erstellt beim Laden Ihrer Seite eine MID. Bei diesem Vorgang sendet der von der `visitorAPI.js` Code-Bibliothek bereitgestellte Code Ihre Organisations-ID in einem Ereignisaufruf an den ID-Service. Der ID-Service erstellt die MID und eine demdex-ID und gibt sie im AMCV- bzw. demdex-Cookie zurück.
+Der Besucher-ID-Service erstellt beim Laden Ihrer Seite eine MID. Während dieses Vorgangs sendet der von der `VisitorAPI.js` Code-Bibliothek bereitgestellte Code Ihre IMS-Organisations-ID in einem Ereignisaufruf an den Besucher-ID-Service. Der Besucher-ID-Dienst erstellt die MID und eine demdex-ID und gibt sie im AMCV- bzw. demdex-Cookie zurück.
 
 ## Cookie-Kennzeichnungen
 
-Die folgende Tabelle beschreibt Kennzeichnungen der in Experience Cloud vewendeten Cookies.
+In der folgenden Tabelle werden Flags für CX Enterprise-Cookies beschrieben:
 
 | Cookie (gesetzt von) | httpOnly | Secure | SameSite |
 |--- |--- |--- |--- |
@@ -145,5 +140,5 @@ Die folgende Tabelle beschreibt Kennzeichnungen der in Experience Cloud vewendet
 
 ## Nächste Schritte {#section-8db1727a63bc4ff68b495f270315d453}
 
-Siehe [Anfordern und Festlegen von IDs durch den Experience Cloud Identity Service](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+Siehe [Anfordern und Festlegen von IDs durch den Besucher-ID-Service](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
 

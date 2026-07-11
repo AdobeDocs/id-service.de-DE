@@ -1,26 +1,21 @@
 ---
-description: Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für eine Experience Cloud Identity Service-, Analytics- oder Audience Manager-ID-Anforderung zu ermitteln. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
-keywords: ID-Dienst
+description: Rufen Sie diese Funktionen des Besucher-ID-Service auf, um den Zeitüberschreitungsstatus für eine Besucher-ID-Service-, Analytics- oder Audience Manager ID-Anfrage zu ermitteln. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
+keywords: Besucher-ID-Service
 title: callTimeOut-Methoden
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
 TQID: https://experienceleague.adobe.com/DIis78iaPQ7qpawlKwWCwReXbh5Mt0K8J3w-5KYdhmg
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 127
-ht-degree: 100%
+source-wordcount: 129
+ht-degree: 33%
 
 ---
 
 # callTimeOut-Methoden{#calltimeout-methods}
 
-Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für eine Experience Cloud Identity Service-, Analytics- oder Audience Manager-ID-Anforderung zu ermitteln. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
+Rufen Sie diese Funktionen des Besucher-ID-Service auf, um den Zeitüberschreitungsstatus für eine Besucher-ID-Service-, Analytics- oder Audience Manager ID-Anfrage zu ermitteln. Verfügbar in `VisitorAPI.js` Version 1.7.0 oder höher.
 
 ## Zeitüberschreitungsfunktionen {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -33,7 +28,7 @@ Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud Identity Service </p> </td> 
+   <td colname="col1"> <p>Besucher-ID-Service </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
@@ -59,15 +54,15 @@ Rufen Sie diese ID-Dienstfunktionen auf, um den Zeitüberschreitungsstatus für 
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> TRUE</span> </p> </td> 
-   <td colname="col2"> <p>Der ID-Dienst hat eine Anforderung gesendet, bei der eine Zeitüberschreitung aufgetreten ist. </p> </td> 
+   <td colname="col2"> <p>Der Besucher-ID-Service hat eine Anfrage gesendet und die Anfrage hat das Zeitlimit überschritten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> FALSE</span> </p> </td> 
-   <td colname="col2"> <p>Der ID-Dienst hat eine Anforderung gesendet und vom Server eine erfolgreiche Antwort erhalten. </p> </td> 
+   <td colname="col2"> <p>Der Besucher-ID-Dienst hat eine Anfrage gesendet und eine erfolgreiche Antwort vom Server erhalten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> NULL</span> </p> </td> 
-   <td colname="col2"> <p>Der ID-Dienst hat keine Anforderung gesendet. </p> </td> 
+   <td colname="col2"> <p>Der Besucher-ID-Service hat keine Anfrage gesendet. </p> </td> 
   </tr> 
  </tbody> 
 </table>

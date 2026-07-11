@@ -1,30 +1,22 @@
 ---
-description: Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity Services im Jahr 2018.
-keywords: ID-Dienst
+description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Besucher-ID-Service im Jahr 2018.
+keywords: Besucher-ID-Service
 title: Versionshinweise für 2018
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 TQID: https://experienceleague.adobe.com/1vrVFuFbQiLL9XYnZwEf0WkElW-qhsklHbrem-mo5LE
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 94%
+source-wordcount: 486
+ht-degree: 66%
 
 ---
 
 # Versionshinweise für 2018 {#release-notes}
 
-Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des Experience Cloud Identity Services im Jahr 2018.
+Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Besucher-ID-Service im Jahr 2018.
 
 ## Version 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -38,7 +30,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Erhöhte Sicherheit für AMCV-Cookies </p> </td> 
-   <td colname="col2"> <p>Bei einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek die für die Sitzungsverwaltung verwendeten Cookies keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Als Lösung hierfür haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, das AMCV-Cookie als sicher festzulegen. Siehe <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
+   <td colname="col2"> <p>Bei einer internen Sicherheitsüberprüfung wurde festgestellt, dass Cookies, die für die Sitzungsverwaltung verwendet werden, keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Als Lösung hierfür haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, das AMCV-Cookie als sicher festzulegen. Siehe <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -55,7 +47,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Erhöhte Sicherheit für AMCV-Cookies </p> </td> 
-   <td colname="col2"> <p>Bei einer internen Sicherheitsprüfung wurde festgestellt, dass bei der Verwendung der DTM-Bibliothek die für die Sitzungsverwaltung verwendeten Cookies keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Als Lösung hierfür haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, das AMCV-Cookie als sicher festzulegen. Siehe secureCookie. </p> </td> 
+   <td colname="col2"> <p>Bei einer internen Sicherheitsüberprüfung wurde festgestellt, dass Cookies, die für die Sitzungsverwaltung verwendet werden, keine ordnungsgemäßen Attribute angeben. Dies könnte dazu führen, dass Cookie-Informationen versehentlich freigegeben werden. Als Lösung hierfür haben wir eine Konfiguration eingeführt, die es dem Kunden ermöglicht, das AMCV-Cookie als sicher festzulegen. Siehe secureCookie. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Integrationscode und ID müssen aus Zahlen oder nicht-leeren Zeichenfolgen bestehen. </p> </td> 
@@ -63,7 +55,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
   </tr> 
   <tr> 
    <td colname="col1"> ECID JS ist im Public Git-Repository verfügbar </td> 
-   <td colname="col2"> ECID JS ist jetzt im Public Git-Repository für alle Experience Cloud-Kunden unter https://github.com/Adobe-Marketing-Cloud/id-service/releases verfügbar. </td> 
+   <td colname="col2"> ECID JS ist jetzt im öffentlichen Git-Repository für alle CX Enterprise-Kunden unter https://github.com/Adobe-Marketing-Cloud/id-service/releases verfügbar. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -80,7 +72,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Unrealistischer Anstieg der Unique-Visitor-Anzahl </p> </td> 
-   <td colname="col2"> <p>Bei Version 3.1.0 des Experience Cloud Identity Services haben wir ein Problem erkannt, das bei Implementierung der Version zu einem unrealistischen Anstieg der Unique-Visitor-Anzahl führte. Dieses Verhalten tritt nur bei aktuellen Version von ECID, Version 3.1.0, auf, und wenn Benutzer in den Datenschutzeinstellungen des Safari-Browsers die Option „Nur von der aktuellen Website zulassen“ ausgewählt haben. In Version 3.1.2 ist dieses Problem behoben. </p> </td> 
+   <td colname="col2"> <p>Mit der Veröffentlichung von Visitor ID Service 3.1.0 haben wir ein Problem festgestellt, das bei Implementierung dieser Version zu einem unrealistischen Anstieg der Unique-Visitor-Anzahl führte. Dieses Verhalten tritt nur bei aktuellen Version von ECID, Version 3.1.0, auf, und wenn Benutzer in den Datenschutzeinstellungen des Safari-Browsers die Option „Nur von der aktuellen Website zulassen“ ausgewählt haben. In Version 3.1.2 ist dieses Problem behoben. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,7 +81,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
 
 >[!NOTE]
 >
->Es wird empfohlen, von Version 3.1.0 umgehend auf die neueste Version zu aktualisieren. Siehe Beschreibung für Version 3.1.2. Das neueste Bundle ist über Adobe Experience Platform Launch, DTM und AppMeasurement verfügbar.
+>Es wird empfohlen, von Version 3.1.0 umgehend auf die neueste Version zu aktualisieren. Siehe Beschreibung für Version 3.1.2. Das neueste Bundle ist in Tags und AppMeasurement verfügbar.
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -126,7 +118,7 @@ Veröffentlichungen von Funktionen sowie Aktualisierungen oder Änderungen des E
   </tr> 
   <tr> 
    <td colname="col1"> <p>Unterstützung für Internet Explorer </p> </td> 
-   <td colname="col2"> <p>Der ID-Dienst unterstützt Internet Explorer 6, 7, 8 und 9 nicht mehr. </p> </td> 
+   <td colname="col2"> <p>Der Besucher-ID-Dienst unterstützt Internet Explorer 6, 7, 8 und 9 nicht mehr. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Aktualisierung der getInstance-Dokumentation </p> </td> 

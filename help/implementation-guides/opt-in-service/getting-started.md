@@ -1,31 +1,23 @@
 ---
-description: Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspunkt für Experience Cloud-Lösungen (bei Opt-in als „Kategorien“ bezeichnet), um zu ermitteln, ob Cookies auf dem Gerät eines Besuchers erstellt werden dürfen.
+description: Implementieren Sie den Opt-in-Dienst als zentralen Bezugspunkt für CX Enterprise-Lösungen (beim Opt-in als Kategorien bezeichnet), um zu bestimmen, ob Cookies auf dem Gerät eines Besuchers erstellt werden sollen oder nicht.
 title: Einrichten des Opt-in-Dienstes
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 TQID: https://experienceleague.adobe.com/Nq3mYoy0U-0RK8MHzsu-yCIVwbCbaAJnIUR8QZDCKcs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 97%
+source-wordcount: 965
+ht-degree: 84%
 
 ---
 
 # Einrichten des Opt-in-Dienstes{#setting-up-opt-in-service}
 
-Implementieren Sie den Opt-in-Dienst als einheitlichen Bezugspunkt für Experience Cloud-Lösungen (bei Opt-in als „Kategorien“ bezeichnet), um zu ermitteln, ob Cookies auf dem Gerät eines Besuchers erstellt werden dürfen.
+Implementieren Sie den Opt-in-Dienst als zentralen Bezugspunkt für CX Enterprise-Lösungen (beim Opt-in als Kategorien bezeichnet), um zu bestimmen, ob Cookies auf dem Gerät eines Besuchers erstellt werden sollen oder nicht.
 
-Der Opt-in-Dienst ist eine JavaScript-Bibliothek, die mit Experience Cloud ID (ECID) verknüpft ist und in Visitor JS im globalen `adobe`-Objekt als `adobe.optIn`-Objekt enthalten ist. Nachdem Sie den Opt-in-Dienst installiert haben, können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen dem Besucher einzeln angezeigt werden, um seine Zustimmung einzuholen. Der Opt-in-Dienst zur Zustimmungsverwaltung kann mit verschiedenen Konfigurationen abhängig von Ihren speziellen Datenschutzanforderungen implementiert werden.
+Der Opt-in-Dienst ist eine mit ECID gebündelte JavaScript-Bibliothek, die in Visitor JS im globalen `adobe` als `adobe.optIn` vorhanden ist. Nachdem Sie den Opt-in-Dienst installiert haben, können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen dem Besucher einzeln angezeigt werden, um seine Zustimmung einzuholen. Der Opt-in-Dienst zur Zustimmungsverwaltung kann mit verschiedenen Konfigurationen abhängig von Ihren speziellen Datenschutzanforderungen implementiert werden.
 
 Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösungen gleichzeitig zustimmen kann oder die Lösungen dem Besucher einzeln angezeigt werden, um seine Zustimmung einzuholen. Sobald der Genehmigungsprozess abgeschlossen und vom Kunden aufgezeichnet wurde, können CMP-Besuchergenehmigungen von allen Adobe-Lösungen abgerufen werden, um mit entsprechenden Zustimmungsaufrufen zu reagieren.
 
@@ -41,7 +33,7 @@ Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösung
    * AppMeasurement 2.11 oder höher
    * DIL 9.0
    * AT.js Version 1.7.0
-   * AT.js Launch-Erweiterung, Version 9.0
+   * AT.js-Tag-Erweiterung, Version 9.0
    * Für Analytics: App Measurement 2.11 mit Erweiterung 1.6
    * Für Target: Erweiterung 0.9.1
 
@@ -53,13 +45,13 @@ Mit dem Opt-in-Dienst können Sie festlegen, ob ein Besucher allen Adobe-Lösung
 
 1. Die Datenschutzanforderungen Ihrer Firma richten sich danach, für welche Art der DSGVO-Konformität Sie sich entscheiden. Beachten Sie, welche vordefinierten Bibliotheken für die Datenschutz-Teams Ihrer Firma in Ordnung sind.
 
-Wenn Sie [Tags in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) verwenden, nutzen Sie die [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md), um den Opt-in-Dienst zu konfigurieren.
+Wenn Sie [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) verwenden, nutzen Sie die [Opt-in-Erweiterung](../../implementation-guides/opt-in-service/launch.md) um den Opt-in-Dienst zu konfigurieren.
 
 ## Opt-in-Kategorien {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
-Die Opt-in-Voreinstellungen eines Besuchers beziehen sich auf eine Adobe Experience Cloud-Lösung, wobei jede Lösung einer Kategorie entspricht. Kategorien werden durch das `adobe.OptInCategories` Objekt bereitgestellt. Die ECID-Komponente entspricht beispielsweise `adobe.OptInCategories`. `ECID`. Die Definition von `adobe.OptInCategories` lautet:
+Die Opt-in-Voreinstellungen eines Besuchers beziehen sich auf eine Adobe CX Enterprise-Lösung, bei der jede Lösung als Kategorie dargestellt wird. Kategorien werden durch das `adobe.OptInCategories` Objekt bereitgestellt. Die ECID-Komponente entspricht beispielsweise `adobe.OptInCategories`. `ECID`. Die Definition von `adobe.OptInCategories` lautet:
 
-Opt-in-Einstellungen werden pro Kategorie verwaltet, wobei jede Experience Cloud-Lösung einer Kategorie entspricht:
+Opt-in-Einstellungen werden für jede Kategorie beibehalten, wobei jede CX Enterprise-Lösung durch eine Kategorie dargestellt wird:
 
 ```
 adobe.OptInCategories = { 
@@ -71,8 +63,7 @@ adobe.OptInCategories = {
 };
 ```
 
-Mit dem Opt-in-Dienst können Sie die Berechtigungseinstellungen von Besuchern für jede auf Ihrer Site verwendete Adobe-Lösung festlegen. Es enthält eine Bibliothek zum Speichern der Einstellungen einer Besucherin oder eines Besuchers nach genehmigter Kategorie und unterstützt einen sequenziellen Fluss, bei dem der Genehmigungsprozess die Voreinstellungen „Bestätigen“ oder „Ablehnen“ für jede Kategorie einzeln erhält. Sie können Lösungen/Kategorien so einrichten, dass sie sich als Ganzes oder als einzelne Lösung anmelden.
-Alle Client-seitigen Bibliotheken der Adobe-Lösungen hängen vom Opt-in-Service ab und generieren keine Cookies, es sei denn, der Lösung wurde die Berechtigung erteilt. Opt-in unterstützt verschiedene Ansätze zum Bereitstellen und Aktualisieren der Einverständniseinstellungen für den aktuellen Besucher. In diesem Abschnitt finden Sie Beispiele zum Festlegen von Voreinstellungen für den Opt-in-Service. Eine vollständige Liste der Funktionen [&#x200B; Parameter finden Sie in &#x200B;](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) Opt-in-API-Referenz .
+Mit dem Opt-in-Dienst können Sie die Berechtigungsvoreinstellungen der Besucher für jede Adobe-Lösung auf Ihrer Site festlegen. Das Objekt umfasst eine Bibliothek zum Speichern der Einstellungen eines Besuchers nach genehmigter Kategorie und unterstützt einen sequenziellen Ablauf, bei dem der Genehmigungsprozess Voreinstellungen zum Bestätigen oder Ablehnen jeder Kategorie erhält. Sie können festlegen, dass den Lösungen/Kategorien gleichzeitig oder einzeln zugestimmt wird.Die clientseitigen Bibliotheken aller Adobe-Lösungen sind vom Opt-in-Dienst abhängig. Es werden nur Cookies generiert, wenn eine Berechtigung dafür erteilt wurde. Opt-in unterstützt verschiedene Ansätze zur Bereitstellung und Aktualisierung von Zustimmungseinstellungen für den aktuellen Besucher. Dieser Abschnitt enthält Beispiele für die Festlegung von Opt-in-Dienstvoreinstellungen. Eine vollständige Liste der Funktionen und Parameter finden Sie in der [Opt-in-API-Referenz](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867).
 
 Opt-in-Dienstkonfigurationen werden in der Visitor `getInstance()` JS-Funktion bereitgestellt, die das globale `adobe`-Objekt instanziiert. Im Folgenden werden die Visitor JS-[Konfigurationseinstellungen](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf) für den Opt-in-Dienst aufgeführt.
 

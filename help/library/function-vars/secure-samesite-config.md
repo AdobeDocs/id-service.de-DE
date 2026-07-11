@@ -1,22 +1,16 @@
 ---
 description: Eine Konfiguration innerhalb der ECID, die zur Unterstützung von AMCV-Cookies auf Google AMP-Seiten verwendet werden kann.
-keywords: ID-Dienst
+keywords: Besucher-ID-Service
 title: Sichere und SameSite-Konfigurationen
 exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
 TQID: https://experienceleague.adobe.com/qT9et54-InwTH7usPnjGN8mdBeMMrqK-qjxGOwqsXBA
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 156
-ht-degree: 100%
+source-wordcount: 151
+ht-degree: 54%
 
 ---
 
@@ -24,7 +18,7 @@ ht-degree: 100%
 
 Mit dieser Konfiguration können Sie die Einstellungen für Ihre Cookies ändern und [AMCV-Cookies](../../introduction/cookies.md) auf Google AMP-Seiten unterstützen.
 
-Der Adobe-Besucher-ID-Service stellt ECID-Cookies mit der Browser-Standardeinstellung `SameSite = Lax` ein, auf die nicht zugegriffen werden kann, wenn die Seite wie eine Google AMP-Seite in einen Iframe geladen wird. Um auf ECID-Cookies zuzugreifen, verwenden Sie die folgenden Konfigurationen, um die SameSite-Einstellung auf `SameSite = None` zu aktualisieren.
+Der Besucher-ID-Dienst von Adobe setzt ECID-Cookies mit der Browser-Standardeinstellung `SameSite = Lax`, auf die nicht zugegriffen werden kann, wenn die Seite in einen iframe wie eine Google AMP-Seite geladen wird. Um auf ECID-Cookies zuzugreifen, verwenden Sie die folgenden Konfigurationen, um die SameSite-Einstellung auf `SameSite = None` zu aktualisieren.
 
 >[!NOTE]
 >
@@ -32,9 +26,9 @@ Der Adobe-Besucher-ID-Service stellt ECID-Cookies mit der Browser-Standardeinste
 
 **Implementierung**:
 
-Wenn Sie Adobe Experience Platform Launch verwenden, aktualisieren Sie Ihre Experience Cloud ID-Erweiterung auf Version 5.1.0 und konfigurieren Sie `secureCookie: true` und `sameSiteCookie: none`.
+Wenn Sie Tags verwenden, aktualisieren Sie Ihre [!UICONTROL Experience Cloud ID Service] Tag-Erweiterung auf Version 5.1.0 und konfigurieren Sie `secureCookie: true` und `sameSiteCookie: none`.
 
-Wenn Sie Experience Platform Launch nicht verwenden, aktualisieren Sie auf die neueste Besucher 5.1.0-Bibliothek und befolgen Sie bei der Initialisierung der Besucher-Instanz die folgenden Konfigurationen:
+Wenn Sie keine Tags verwenden, aktualisieren Sie auf die neueste Visitor 5.1.0-Bibliothek und folgen Sie den unten stehenden Konfigurationen, während Sie die Besucherinstanz initialisieren:
 
 **Codebeispiel**
 
