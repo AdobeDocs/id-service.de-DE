@@ -58,7 +58,7 @@ Der Parameter `aid` taucht in einer Abfragezeichenfolge auf, wenn:
 
 **2. Fall**
 
-Der `aid`-Parameter wird in einer Abfragezeichenfolge angezeigt, wenn Ihr Unternehmen eine [&#x200B; Übergangsphase verwendet, &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) den Besucher-ID-Service vollständig zu implementieren. Wenn der Besucher Ihrer Site neu ist und Sie keine Übergangsphase verwenden, erhält der Besucher den `mid` (ECID)-Parameter.
+Der `aid`-Parameter wird in einer Abfragezeichenfolge angezeigt, wenn Ihr Unternehmen eine [&#x200B; Übergangsphase verwendet, &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) den Besucher-ID-Service vollständig zu implementieren. Wenn der Besucher Ihrer Site neu ist und Sie keine Übergangsphase verwenden, erhält der Besucher den `mid` (ECID)-Parameter.
 
 >[!MORELIKETHIS]
 >

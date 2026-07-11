@@ -25,7 +25,7 @@ ht-degree: 45%
    + [Methoden der Implementierung](implementation-guides/implementation-methods.md)
    + [Handbücher zur Implementierung](implementation-guides/implementation-guides.md)
    + [Mit Tags implementieren](implementation-guides/ecid-implement-with-launch.md)
-   + [Für Analytics implementieren](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
+   + [Für Analytics implementieren](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/overview){target=_blank}
    + [Für Target implementieren](implementation-guides/setup-target.md)
    + [Für Analytics und Audience Manager implementieren](implementation-guides/setup-aam-analytics.md)
    + [Für Analytics, Audience Manager und Target implementieren](implementation-guides/setup-aam-analytics-target.md)

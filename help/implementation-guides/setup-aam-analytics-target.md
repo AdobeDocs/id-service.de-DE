@@ -220,7 +220,7 @@ Suchen Sie in der JavaScript-Anforderung nach der SDID-Kennung. Die Analytics-SD
 Wenn Ihre Tests eine AID zurückgeben, weist dies auf eine der folgenden Möglichkeiten hin:
 
 * Sie sind wiederkehrender Besucher und migrieren veraltete Analytics IDs.
-* Sie haben eine [Übergangsphase](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) aktiviert.
+* Sie haben eine [Übergangsphase](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) aktiviert.
 
 Wenn eine AID angezeigt wird, überprüfen Sie deren Wert mit der Ziel-mboxMCAVID. Diese Werte sind identisch, wenn der Besucher-ID-Dienst korrekt implementiert wurde.
 

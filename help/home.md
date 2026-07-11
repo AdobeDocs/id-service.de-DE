@@ -36,7 +36,7 @@ Der Besucher-ID-Service von Adobe ermöglicht das allgemeine Identifizierungs-Fr
 Um besser zu verstehen, wie Adobe die eindeutige Identifizierung von Besuchenden erleichtert und Identitätsinformationen auflöst, lesen Sie die folgende Aufschlüsselung:
 
 * **Besucher-ID-**: Der Besucher-ID **Dienst ist für das Festlegen der ECID**. Weitere Informationen finden Sie im Abschnitt [Übersicht über den Besucher-ID-Service](./introduction/overview.md).
-* **ECID**: Die ECID ist ein gemeinsamer Identity-Namespace, der in Adobe Experience Platform und Adobe CX Enterprise-Anwendungen zur Identifizierung von Personen und Geräten verwendet wird. Weitere Informationen zur ECID finden Sie in der [ECID-Übersicht](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid).
+* **ECID**: Die ECID ist ein gemeinsamer Identity-Namespace, der in Adobe Experience Platform und Adobe CX Enterprise-Anwendungen zur Identifizierung von Personen und Geräten verwendet wird. Weitere Informationen zur ECID finden Sie in der [ECID-Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/identity/features/ecid).
 * **Experience Platform Identity Service**: Der Experience Platform Identity Service bietet Ihnen einen umfassenden Überblick über Ihre Kunden und deren Verhalten, indem er Identitäten geräte- und systemübergreifend zusammenführt. Weitere Informationen finden Sie unter [Übersicht über den Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=de).
 
 ## Erste Schritte
