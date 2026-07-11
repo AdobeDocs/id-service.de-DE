@@ -1,6 +1,6 @@
 ---
-description: Häufig gestellte Fragen zum Experience Cloud Identity Service selbst und Abschnitte zum ID-Dienst sowie weiteren Experience Cloud-Lösungskombinationen.
-keywords: ID-Dienst
+description: Häufig gestellte Fragen zum Besucher-ID-Service selbst sowie Abschnitte zum Besucher-ID-Service und anderen CX Enterprise-Lösungskombinationen.
+keywords: Besucher-ID-Service
 title: Häufig gestellte Fragen (FAQ)
 feature-set: Experience Cloud Services
 feature: TK421
@@ -13,17 +13,17 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 59
-ht-degree: 100%
+source-wordcount: 61
+ht-degree: 8%
 
 ---
 
 # Häufig gestellte Fragen (FAQ) {#faqs}
 
-Häufig gestellte Fragen zum Experience Cloud Identity Service selbst und Abschnitte zum ID-Dienst sowie weiteren Experience Cloud-Lösungskombinationen.
+Häufig gestellte Fragen zum Besucher-ID-Service selbst sowie Abschnitte zum Besucher-ID-Service und anderen CX Enterprise-Lösungskombinationen.
 
-* [Häufig gestellte Fragen zum ID-Service](faq.md)
-* [Häufig gestellte Fragen zu anderen Experience Cloud-Lösungen](other-faq.md)
+* [Häufig gestellte Fragen zum Besucher-ID-Service](faq.md)
+* [Häufig gestellte Fragen zu anderen CX Enterprise-Lösungen](other-faq.md)
 

@@ -1,6 +1,6 @@
 ---
-description: Bei dieser Helfermethode wird die Zusatzdaten-ID (Supplemental Data ID/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den ID-Dienst mit derselben Organisations-ID für die Quell- und Zieldomänen implementiert haben.
-keywords: ID-Dienst
+description: Bei dieser Helfermethode wird die Zusatzdaten-ID (Supplemental Data ID/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den Besucher-ID-Service mit derselben IMS-Organisations-ID in den Quell- und Ziel-Domains implementiert haben.
+keywords: Besucher-ID-Service
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 TQID: https://experienceleague.adobe.com/oR2LCiVk5N-Xnt3wTOKMt7UYFXzwEGFwJpKoz-ikzh8
@@ -11,16 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 345
-ht-degree: 100%
+source-wordcount: 354
+ht-degree: 61%
 
 ---
 
 # appendSupplementalDataIDTo{#appendsupplementaldataidto}
 
-Bei dieser Helfermethode wird die Zusatzdaten-ID (Supplemental Data ID/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den ID-Dienst mit derselben Organisations-ID für die Quell- und Zieldomänen implementiert haben.
+Bei dieser Helfermethode wird die Zusatzdaten-ID (Supplemental Data ID/SDID) als Abfragezeichenfolgenparameter an eine Umleitungs-URL angehängt. Dies ist nützlich, wenn Sie A4T verwenden und die SDID von einer Seite zur nächsten beibehalten und diese separaten Besuche miteinander verbinden müssen. Um diese Funktion verwenden zu können, müssen Sie den Besucher-ID-Service mit derselben IMS-Organisations-ID in den Quell- und Ziel-Domains implementiert haben.
 
 Inhalt:
 
@@ -38,7 +38,7 @@ Inhalt:
 **Codebeispiel**
 
 ```js
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"); 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE"); 
 
 //Get current supplemental data id
 var theCurrentSDID = visitor._supplementalDataIDCurrent ? visitor._supplementalDataIDCurrent : "";
@@ -50,7 +50,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 ## Beispielausgabe {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
-Wie im Folgenden gezeigt, enthält die URL-Umleitung die SDID des Besuchers, Ihre Organisations-ID und einen UNIX-Zeitstempel im Aufruf an die empfangende Seite.
+Wie unten gezeigt, enthält die URL-Umleitung die SDID des Besuchers, Ihre IMS-Organisations-ID und einen UNIX-Zeitstempel im Aufruf an die empfangende Seite.
 
 <ul class="simplelist"> 
  <li> <span class="codeph"> www.domain.com/pageB?adobe_mc_sdid=SDID=7996F0B028999505-13DA591039D6226|MCORGID=123456789@AdobeOrg|TS=1498569322 </span> </li> 
@@ -58,7 +58,7 @@ Wie im Folgenden gezeigt, enthält die URL-Umleitung die SDID des Besuchers, Ihr
 
 ## Ändern der SDID-Zeitüberschreitung mit sdidParamExpiry {#section-99946715cefa4acc95200b093db5297e}
 
-Die [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458)-Konfiguration ermöglicht es Ihnen, das standardmäßige SDID-Ablaufintervall zu ändern, wenn Sie die ID mit der Hilfsfunktion `appendSupplementalDataIDTo` an eine andere Seite übergeben. Standardmäßig hat der ID-Dienst-Code auf der empfangenden Seite 30 Sekunden, um die SDID von der URL abzurufen, die von der verweisenden Seite gesendet wird. Wenn der ID-Dienst-Code auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, wird eine neue SDID angefordert. Diese Funktion ist vor allem für A4T-Kunden gedacht, die die SDID von einer Seite zur nächsten weiterleiten müssen und Kontrolle über dieses Zeitüberschreitungsintervall haben möchten.
+Die [sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458)-Konfiguration ermöglicht es Ihnen, das standardmäßige SDID-Ablaufintervall zu ändern, wenn Sie die ID mit der Hilfsfunktion `appendSupplementalDataIDTo` an eine andere Seite übergeben. Standardmäßig verfügt der Besucher-ID-Dienst-Code auf der empfangenden Seite über 30 Sekunden, um die SDID aus der URL abzurufen, die von der verweisenden Seite gesendet wurde. Wenn der Besucher-ID-Dienst-Code auf der empfangenden Seite die SDID nicht in weniger als 30 Sekunden abrufen kann, fordert er eine neue SDID an. Diese Funktion ist vor allem für A4T-Kunden gedacht, die die SDID von einer Seite zur nächsten weiterleiten müssen und Kontrolle über dieses Zeitüberschreitungsintervall haben möchten.
 
 Wenn Sie die SDID-Standardzeitüberschreitung ändern müssen, fügen Sie `sdidParamExpiry` der `Visitor.getInstance` Funktion mit der folgenden Syntax hinzu:
 
@@ -66,10 +66,10 @@ Wenn Sie die SDID-Standardzeitüberschreitung ändern müssen, fügen Sie `sdidP
 
 **Codebeispiel**
 
-Nach der Konfiguration könnte der ID-Dienst-Code ähnlich aussehen wie in diesem Beispiel. In diesem Beispiel wird die SDID-Zeitüberschreitung auf 15 Sekunden eingestellt.
+Nach der Konfiguration könnte Ihr Besucher-ID-Dienst-Code in etwa wie im folgenden Beispiel aussehen. In diesem Beispiel wird die SDID-Zeitüberschreitung auf 15 Sekunden eingestellt.
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    ... 
    //Change the default SDID timeout to 15 seconds 
    sdidParamExpiry: 15 

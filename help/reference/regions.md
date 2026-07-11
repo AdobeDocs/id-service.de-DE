@@ -1,7 +1,7 @@
 ---
-description: Das AMCV-Cookie enthält die Experience Cloud ID (MID) und eine Regions-ID für Ihre Sitebesucher. Diese IDs werden als Schlüssel-Wert-Paare gespeichert. Die mid user-ID enthält die Experience Cloud ID des Besuchers. Die aamlh:region-ID enthält die Regions-ID für Ihre Sitebesucher. Sie können diese Informationen durch Analyse des AMCV-Cookies wiederherstellen.
-keywords: ID-Dienst
-title: Abrufen von Regions- und Benutzer-IDs vom AMCV-Cookie oder dem ID-Dienst
+description: Das AMCV-Cookie enthält die ECID und eine Regions-ID für die Besucher Ihrer Site. Diese IDs werden als Schlüssel-Wert-Paare gespeichert. Die Mid-User-ID enthält die ECID des Besuchers. Die aamlh:region-ID enthält die Regions-ID für Ihre Sitebesucher. Sie können diese Informationen durch Analyse des AMCV-Cookies wiederherstellen.
+keywords: Besucher-ID-Service
+title: Abrufen von Regions- und Benutzer-IDs vom AMCV-Cookie oder dem Besucher-ID-Service
 exl-id: 986e761e-4bc7-4511-86b7-7d13a7761a2b
 TQID: https://experienceleague.adobe.com/OBzPrrLffDFgRisA27XIIl33x-4aWmj0krXF3prLPUk
 product_v2:
@@ -13,20 +13,20 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 240
-ht-degree: 91%
+source-wordcount: 235
+ht-degree: 42%
 
 ---
 
-# Abrufen von Regions- und Benutzer-IDs vom AMCV-Cookie oder dem ID-Dienst {#get-region-and-user-ids-from-the-amcv-cookie-or-the-id-service}
+# Abrufen von Regions- und Benutzer-IDs vom AMCV-Cookie oder dem Besucher-ID-Service {#get-region-and-user-ids-from-the-amcv-cookie-or-the-id-service}
 
-Das AMCV-Cookie enthält die Experience Cloud ID (MID) und eine Regions-ID für Ihre Sitebesucher. Diese IDs werden als Schlüssel-Wert-Paare gespeichert. Die Mid:user-ID enthält die Experience Cloud-ID des Besuchers. Die aamlh:region ID enthält die Regions-ID für die Besucher Ihrer Site. Sie können diese Informationen durch Analyse des AMCV-Cookies wiederherstellen.
+Das AMCV-Cookie enthält die ECID und eine Regions-ID für die Besucher Ihrer Site. Diese IDs werden als Schlüssel-Wert-Paare gespeichert. Die Mid:user-ID enthält die ECID des Besuchers. Die aamlh:region ID enthält die Regions-ID für die Besucher Ihrer Site. Sie können diese Informationen durch Analyse des AMCV-Cookies wiederherstellen.
 
-Weitere Informationen finden Sie unter [Abrufen von Benutzer-IDs und Regionen über den Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-mcid-ids.html?lang=de).
+Weitere Informationen finden Sie unter [Abrufen von Benutzer-IDs und Regionen über den Besucher-ID-Service](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-mcid-ids.html?lang=de).
 
-Als [!DNL Audience Manager]-Kunde können Sie die Regions-ID aus der Antwort abrufen, die durch den Datenerfassungsserver (Data Collection Server, DCS) gesendet wurde. Siehe [Abrufen von Benutzer-IDs und Regionen aus einer DCS-Antwort](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-aam-ids.html?lang=de).
+Wenn Sie Audience Manager-Kunde sind, können Sie die Regions-ID aus der vom Datenerfassungsserver (DCS) gesendeten Antwort abrufen. Siehe [Abrufen von Benutzer-IDs und Regionen aus einer DCS-Antwort](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-aam-ids.html?lang=de).
 
-Sie können die Regions-ID auch mit einer durch den ID-Dienst bereitgestellten `GET`-Methode abrufen. Siehe [Abrufen von Regions-IDs (Standorthinweis)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
+Sie können die Regions-ID auch mit einer vom Besucher-ID-Service bereitgestellten `GET` abrufen. Siehe [Abrufen von Regions-IDs (Standorthinweis)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
 

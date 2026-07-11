@@ -1,6 +1,6 @@
 ---
-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity Services.
-keywords: ID-Dienst
+description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Besucher-ID-Service.
+keywords: Besucher-ID-Service
 title: Versionshinweise für 2020
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 TQID: https://experienceleague.adobe.com/hqAMIyXTeLBPU-4B6AVRXhcWux3bkyViMCrbjoGiRwk
@@ -13,16 +13,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 216
-ht-degree: 91%
+source-wordcount: 236
+ht-degree: 71%
 
 ---
 
-# Versionshinweise zu Experience Cloud – 2020 {#release-notes}
+# Versionshinweise für 2020 {#release-notes}
 
-Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity Service.
+Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Besucher-ID-Service.
 
 ## Version 5.1.1
 
@@ -47,14 +47,13 @@ Weitere Informationen zu diesen Attributwerten finden Sie unter [web.dev](https:
 
 ## Version 4.6
 
-* Markierung `loadSSL` standardmäßig aktiviert. Alle Aufrufe von Identity Service sind standardmäßig auf `https` gesetzt.  Kunden können den Wert auf „false“ setzen, wenn sie Identity Services auf HTTP von ihren `non-ssl`-Seiten aufrufen möchten.
-* Die Funktion zur Erkennung `Internet-Explorer (IE)` Version wurde aktualisiert, um ein von `ESLint` gemeldetes Problem zu beheben.
-Behebung von Leistungsproblemen bei `Internet-Explorer (IE) 11`, wenn ECID Opt-in-`pre-approval` erhält und später aktualisiert wird.
+* Markierung `loadSSL` standardmäßig aktiviert. Alle Aufrufe an den Besucher-ID-Dienst sind standardmäßig `https`.  Kunden können dies auf „false“ setzen, wenn sie den Besucher-ID-Dienst auf HTTP über ihre `non-ssl` aufrufen möchten.
+* Die Funktion zur Erkennung der `Internet-Explorer (IE)`-Version wurde aktualisiert, um ein von `ESLint` gemeldetes Problem zu beheben.Fehlerbehebung für ein Performance-Problem in `Internet-Explorer (IE) 11`, wenn ECID mit der OptIn-`pre-approval` versehen und später aktualisiert wurde.
 
 ## Version 4.5
 
 * Ab Version 4.5 lehnt ECID alle leeren IDs ab, die an die `setCustomerIDs`-Methode gesendet werden.
 * Es wurde ein Problem behoben, bei dem der Opt-in als `doesOptInApply=false` und `isIabContext=true` konfiguriert wurde.
 
-Die monatlichen Versionshinweise zu allen Produkten finden Sie unter [Versionshinweise für Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de).
+Monatliche Versionshinweise zu [CX Enterprise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=de) finden Sie in den Versionshinweisen zu allen Produkten.
 

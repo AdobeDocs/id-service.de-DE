@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 916
-ht-degree: 99%
+source-wordcount: 928
+ht-degree: 92%
 
 ---
 
@@ -36,13 +36,13 @@ adobe.OptInCategories = {
 
 ## Opt-in-Konfigurationsparameter {#section-d66018342baf401389f248bb381becbf}
 
-In diesem Abschnitt wird die Opt-in-Konfiguration mithilfe der API beschrieben. Ein Großteil der Konfiguration und Implementierung kann über die Experience Platform Launch-Erweiterung vorgenommen werden.
+In diesem Abschnitt wird die Opt-in-Konfiguration mithilfe der API beschrieben. Ein Großteil der Konfiguration und Implementierung kann mithilfe der Tag-Erweiterung durchgeführt werden.
 
 Opt-in-Konfigurationen werden in der Visitor JavaScript-Funktion `getInstance()` bereitgestellt, die das globale `adobe`-Objekt instanziiert. Im Folgenden werden die Konfigurationen von Visitor JS im Zusammenhang mit dem Opt-in-Dienst aufgelistet.
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**
 
-„false“ bedeutet, dass für Besucher kein Opt-in erforderlich ist. Dies führt dazu, dass Experience Cloud Cookies erstellt, unabhängig von den Kategorien, denen zugestimmt oder die abgelehnt wurden. Bei dieser Konfiguration wird Opt-in holistisch aktiviert oder deaktiviert.
+„false“ bedeutet, dass für Besucher kein Opt-in erforderlich ist. Dies führt dazu, dass CX Enterprise Cookies erstellt, unabhängig von den Kategorien, die an- oder abgemeldet wurden. Bei dieser Konfiguration wird Opt-in holistisch aktiviert oder deaktiviert.
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -106,7 +106,7 @@ Erfassen Sie die Opt-in-Berechtigungen eines Besuchers jederzeit mit einer der B
 
 `adobe.optIn.permissions`
 
-Ein Objekt, das alle Experience Cloud-Lösungen, die vom Besucher genehmigt oder abgelehnt wurden, als Kategorien aufführt.
+Ein Objekt, das alle CX Enterprise-Lösungen als Kategorien auflistet, die vom Besucher gewährt oder verweigert wurden.
 
 `adobe.optIn.isApproved(categories)`
 
@@ -118,7 +118,7 @@ Rufen Sie die Liste der Berechtigungen asynchron ab. Der Rückruf wird mit Liste
 
 **`permissions`**
 
-Ein Objekt, das alle Experience Cloud-Lösungen, die vom Besucher genehmigt oder abgelehnt wurden, als Kategorien aufführt. Beispiel: `{ aa: true, ecid: false, aam: true... }`
+Ein Objekt, das alle CX Enterprise-Lösungen als Kategorien auflistet, die vom Besucher gewährt oder verweigert wurden. Beispiel: `{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 

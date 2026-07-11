@@ -1,6 +1,6 @@
 ---
-description: Mit dieser Funktion können Sie die Experience Cloud ID eines Besuchers domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst implementiert haben und Inhaber der Quell- und Zieldomäne sein. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
-keywords: ID-Dienst
+description: Mit dieser Funktion können Sie die ECID domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion verwenden zu können, müssen Sie den Besucher-ID-Service implementiert haben und Eigentümer der Quell- und Ziel-Domains sein. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
+keywords: Besucher-ID-Service
 title: appendVisitorIDsTo (domänenübergreifendes Tracking)
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 TQID: https://experienceleague.adobe.com/F4rWmYj6NidX861-qU8KI9RRbdwNdzP0x4CZUxPZfYw
@@ -14,10 +14,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 429
-ht-degree: 100%
+source-wordcount: 432
+ht-degree: 61%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 >
 >Das Domain-übergreifende Tracking funktioniert nicht wie gewünscht, wenn die ECID anfangs (oder zuvor) abgelehnt wird. Die vorhandenen IDs, die entweder per URL übergeben oder zuvor im Cookie vorhanden waren, werden nicht überprüft, da davon ausgegangen wird, dass es sich hierbei um die IDs handelt, bei denen die Zustimmung auf „NEIN“ gesetzt war.
 
-Mit dieser Funktion können Sie die Experience Cloud ID eines Besuchers domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst implementiert haben und Inhaber der Quell- und Zieldomäne sein. In VisitorAPI.js Version 1.7.0 oder höher verfügbar.
+Mit dieser Funktion können Sie die ECID domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion verwenden zu können, müssen Sie den Besucher-ID-Service implementiert haben und Eigentümer der Quell- und Ziel-Domains sein. Verfügbar in `VisitorAPI.js` Version 1.7.0 oder höher.
 
 Inhalt:
 
@@ -37,20 +37,18 @@ Inhalt:
  </a> </li> 
 </ul>
 
-<!-- <li> <a href="../../library/get-set/appendvisitorid.md#section-168e313df6054af0a7e27b9fa0d69640" format="dita" scope="local"> Dynamic Tag Management (DTM) and SDK Support -->
-
 ## Domänenübergreifendes Tracking von Benutzern, wenn Browser Drittanbieter-Cookies blockieren {#section-7251d88befd440b4b79520e33c5aa44a}
 
-Der ID-Dienst schreibt ein Cookie von Drittanbietern in den Browser, wenn eine Person Ihre Site besucht (siehe [Cookies und der Experience Cloud Identity Service](../../introduction/cookies.md)). Das Erstanbieter-Cookie enthält die MID, eine eindeutige ID für diesen Besucher. Das Drittanbieter-Cookie enthält eine andere ID, die vom ID-Dienst verwendet wird, um die MID zu generieren. Wenn ein Browser diesen Drittanbieter-Cookie blockiert, kann der Service folgende Aktionen nicht durchführen:
+Der Besucher-ID-Dienst schreibt ein Cookie von Drittanbietern in den Browser, wenn eine Person Ihre Site besucht (siehe [Cookies und der Besucher-ID-Dienst](../../introduction/cookies.md) ). Das Erstanbieter-Cookie enthält die MID, eine eindeutige ID für diesen Besucher. Das Drittanbieter-Cookie enthält eine weitere ID, die vom Besucher-ID-Service zum Generieren der MID verwendet wird. Wenn ein Browser dieses Drittanbieter-Cookie blockiert, kann der Besucher-ID-Dienst:
 
 * Erneutes Generieren der eindeutigen ID für diesen Site-Besucher, wenn dieser zu einer anderen Domain navigiert.
 * Verfolgen von Besuchern über verschiedene Domänen Ihres Unternehmens hinweg.
 
-Um dieses Problem zu lösen, implementieren Sie `Visitor.appendVisitorIDsTo( *`url`*)`. Mit dieser Eigenschaft kann der ID-Dienst Site-Besucher über mehrere Domänen hinweg verfolgen, selbst wenn deren Browser Drittanbieter-Cookies blockieren. Funktionsweise:
+Um dieses Problem zu lösen, implementieren Sie `Visitor.appendVisitorIDsTo( *`url`*)`. Mit dieser Eigenschaft kann der Besucher-ID-Dienst Website-Besucher über mehrere Domains hinweg verfolgen, selbst wenn ihre Browser Drittanbieter-Cookies blockieren. Funktionsweise:
 
 * Wenn ein Besucher zu Ihren anderen Domänen navigiert, fügt `Visitor.appendVisitorIDsTo( *`url`*)` die MID als Abfrageparameter in der URL-Umleitung von der ursprünglichen Domain zur Zieldomäne hinzu.
-* Der ID-Dienst-Code auf der Zieldomäne extrahiert die MID aus der URL, statt bei Adobe eine neue Besucher-ID anzufordern. Diese Anforderung schließt die Drittanbieter-Cookie-ID ein, die in diesem Fall nicht verfügbar ist.
-* Der ID-Dienst-Code auf der Zielseite verwendet die übergebene MID, um den Besucher zu verfolgen.
+* Der Besucher-ID-Dienst-Code in der Ziel-Domain extrahiert die MID aus der URL, anstatt eine Anfrage für die ID dieses Besuchers an Adobe zu senden. Diese Anforderung schließt die Drittanbieter-Cookie-ID ein, die in diesem Fall nicht verfügbar ist.
+* Der Besucher-ID-Dienst-Code auf der Zielseite verwendet die übergebene MID, um den Besucher zu verfolgen.
 
 Weitere Informationen finden Sie im Codebeispiel.
 
@@ -95,19 +93,19 @@ The following example can help you get started with `Visitor.appendVisitorIDsTo(
 //Code on Domain A 
 var destinationURL = "www.destination.com"; 
  
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance(...); 
  
 //Append visitor IDs to the destination URL 
 var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL); 
-     //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
+     //Result of appendVisitorIDsTo includes destination URL, ECID (MCMID), and Analytics ID (MCAID) 
      "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
 ``` 
 -->
 
 <!--
-## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
+## SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
@@ -118,15 +116,11 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>DTM</b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://helpx.adobe.com/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> Set the appendVisitorIDTo Function in DTM </a> </p> </td> 
-  </tr> 
-  <tr> 
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html?lang=de" format="https" scope="external"> Android ID Service Methods </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html?lang=de" format="https" scope="external"> iOS ID Service Methods </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html?lang=de" format="https" scope="external"> Android Visitor ID Service Methods </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html?lang=de" format="https" scope="external"> iOS Visitor ID Service Methods </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

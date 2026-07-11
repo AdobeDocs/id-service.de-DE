@@ -1,6 +1,6 @@
 ---
-description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity Services.
-keywords: ID-Dienst
+description: Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Besucher-ID-Service.
+keywords: Besucher-ID-Service
 title: Versionshinweise für 2019
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 TQID: https://experienceleague.adobe.com/KnO04dnP6z7gKrr8vkFiiToDSBfClpiOJkGq8949ahA
@@ -13,31 +13,31 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 438
-ht-degree: 100%
+source-wordcount: 426
+ht-degree: 67%
 
 ---
 
-# Versionshinweise zu Experience Cloud – 2019 {#release-notes}
+# Versionshinweise für 2019 {#release-notes}
 
-Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Experience Cloud Identity Services.
+Funktionsveröffentlichungen, Aktualisierungen oder Änderungen des Besucher-ID-Service.
 
 ## Version 4.4.1
 
-Ein Kontrollkästchen für die Genehmigung vor dem Opt-in für Medienanalysen in der ECID Launch-Erweiterung wurde hinzugefügt.
+Checkbox für die Pre-Opt-in-Genehmigung für Media Analytics in der [!UICONTROL Experience Cloud ID Service] Tag-Erweiterung hinzufügen.
 
 **Fehlerkorrekturen**
 
-* Problem mit dem Parsen der Eingabe-Zeichenfolge für die ECID Launch-Erweiterung preOptInApprovals.
+* Problem mit dem Parsen der Eingabezeichenfolge für [!UICONTROL Experience Cloud ID Service] Tag-Erweiterung „preOptInApprovals“.
 * Performance-Abfall bei Verwendung von trackingServer.
 
 ## Version 4.4 {#version-4point4}
 
 **Neue Funktion**
 
-[SHA-256-Hash-Unterstützung für setCustomerIDs](/help/reference/hashing-support.md). Experience Cloud ID Service (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen importieren und Hash-IDs exportieren können.
+[SHA-256-Hash-Unterstützung für setCustomerIDs](/help/reference/hashing-support.md). Der Besucher-ID-Dienst (ECID) unterstützt den SHA-256-Hash-Algorithmus, mit dem Sie Kunden-IDs oder E-Mail-Adressen eingeben und Hash-IDs weitergeben können.
 
 **Korrekturen und Verbesserungen**
 
@@ -64,12 +64,12 @@ Unterstützung für das Audience Manager-Plug-in für IAB TCF, das über das Obj
 **Fehlerkorrekturen**
 
 * IAB + Opt-in kann keine MID für den erneuten Besuch von Kunden abrufen.
-* Ein Fehler bei der Konfiguration des Opt-ins doesOptInApply in wurde in DTM behoben.
+* Es wurde ein Fehler bei der doOptInApply-Opt-in-Konfiguration behoben.
 * ECID-Opt-out deaktiviert ID-Synchronisationen.
 
 ## Version 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**Opt-in-Dienst**. Opt-in ist eine Erweiterung der Experience Cloud ID (ECID), mit der Sie steuern können, ob (und welche) Experience Cloud-Bibliotheken Cookies auf Webseiten für Besucher erstellen können. Mit [Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) können Sie die Zustimmung von Besuchern zu Experience Cloud-Lösungen einfacher einholen, indem Sie Analytics, Target, Audience Manager und anderen oder allen ausgewählten Experience Cloud-Lösungen die Nutzung Ihres Zustimmungsverwaltungssystems ermöglichen.
+**Opt-in-Dienst**. Opt-in ist eine Erweiterung der ECID, mit der Sie steuern können, ob (und welche) CX Enterprise-Bibliotheken Cookies auf Web-Seiten für Besucher erstellen können. Mit [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=de) können Sie die Einholung von Einverständniserklärungen für Besucher zur CX Enterprise-Lösung vereinfachen, indem Sie Analytics, Target, Audience Manager und andere oder alle ausgewählten CX Enterprise-Lösungen für das Opt-in bei Ihrem Einverständnisverwaltungssystem aktivieren.
 
 ## Version 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 

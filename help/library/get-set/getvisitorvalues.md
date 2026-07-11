@@ -1,6 +1,6 @@
 ---
-description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Aufzählungswert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
-keywords: ID-Dienst
+description: Hierbei handelt es sich um eine asynchrone API, die standardmäßig Kennungen für Analytics, den Besucher-ID-Service, das Opt-out von der Datenerfassung, den geografischen Standort und „Blob“-Inhalte von Metadaten zurückgibt. Sie können auch mit dem optionalen Aufzählungswert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
+keywords: Besucher-ID-Service
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 TQID: https://experienceleague.adobe.com/CF9G6wKlDxjklwedJk8KVmYH7KjA7CRkxtNu-mQ-Kjs
@@ -14,16 +14,16 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 421
-ht-degree: 100%
+source-wordcount: 420
+ht-degree: 77%
 
 ---
 
 # getVisitorValues{#getvisitorvalues}
 
-Hierbei handelt es sich um eine asynchrone API, die standardmäßig IDs für Analytics, den ID-Dienst, die Abmeldung von der Datenerfassung, den geografischen Standort und Metadateninhalte („Blob“) zurückgibt. Sie können auch mit dem optionalen Aufzählungswert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
+Hierbei handelt es sich um eine asynchrone API, die standardmäßig Kennungen für Analytics, den Besucher-ID-Service, das Opt-out von der Datenerfassung, den geografischen Standort und „Blob“-Inhalte von Metadaten zurückgibt. Sie können auch mit dem optionalen Aufzählungswert visitor.FIELDS steuern, welche IDs zurückgegeben werden.
 
 Inhalt:
 
@@ -50,8 +50,8 @@ Weitere Informationen finden Sie in den folgenden Nutzungsszenarios und Definiti
 Dieser Code gibt den Standarddatensatz zurück. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{...}); 
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{...}); 
    
 //Add your callback to the GET method to return IDs and data. 
 visitor.getVisitorValues(visitorIdsCallback);
@@ -72,11 +72,11 @@ Im Beispiel für die standardmäßige Antwort wurden einige Werte zu Demonstrati
 
 ## Nutzungsszenario 2: Benutzerdefinierten Datensatz anfordern {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-In diesem Code wird ein optionales Array verwendet, um einen spezifischen Satz von IDs mit der `visitor.FIELDS`-Aufzählung zurückzugeben. In diesem Fall möchten wir nur die Experience Cloud ID (MCID) und die Analytics-ID (MCAID) des Besuchers abrufen. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
+In diesem Code wird ein optionales Array verwendet, um einen spezifischen Satz von IDs mit der `visitor.FIELDS`-Aufzählung zurückzugeben. In diesem Fall benötigen wir nur die ECID (MCID) und Analytics ID (MCAID) des Besuchers. Ihre Anforderung und Ihre Antwort könnten den folgenden Beispielen ähneln.
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here", { ... });
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE", { ... });
 
 // Add an optional array to specify which IDs you want to return. 
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
@@ -110,7 +110,7 @@ In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Di
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>Die Regions-ID für die Datenerfassung. Dies ist eine numerische ID für den geografischen Standort eines bestimmten ID-Dienst-Rechenzentrums. </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=de" format="https" scope="external"> DCS-Regions-IDs, Standorte und Hostnamen </a> und <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
+   <td colname="col2"> <p>Die Regions-ID für die Datenerfassung. Dies ist eine numerische Kennung für den geografischen Standort eines bestimmten Besucher-ID-Service-Rechenzentrums. </p> <p>Siehe <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=de" format="https" scope="external"> DCS-Regions-IDs, Standorte und Hostnamen </a> und <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -118,7 +118,7 @@ In der folgenden Tabelle sind die Antwortparameter aufgeführt und definiert. Di
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>Die Experience Cloud ID des Besuchers. </p> <p>Siehe <a href="../../introduction/cookies.md" format="dita" scope="local">Cookies und der Experience Cloud Identity Service</a>. </p> </td> 
+   <td colname="col2"> <p>Die ECID des Besuchers. </p> <p>Siehe <a href="../../introduction/cookies.md" format="dita" scope="local"> von Cookies und die </a> des Besucher-ID-Diensts . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 

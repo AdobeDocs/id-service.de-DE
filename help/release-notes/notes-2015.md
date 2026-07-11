@@ -1,6 +1,6 @@
 ---
 description: Versionshinweise und Aktualisierungen für das Jahr 2015
-keywords: ID-Dienst
+keywords: Besucher-ID-Service
 title: Versionshinweise für 2015
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
@@ -15,10 +15,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 94%
+source-wordcount: 454
+ht-degree: 61%
 
 ---
 
@@ -30,38 +30,38 @@ Versionshinweise und Aktualisierungen für das Jahr 2015
 
 November 2015
 
-Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Online-Erfassung personenbezogener Daten von Kindern unter 13 Jahren ohne nachprüfbare elterliche Zustimmung. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem [!DNL Experience Cloud] ID-Dienstcode eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers verwendet werden. Siehe [COPPA-Unterstützung im Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
+Der Children&#39;s Online Privacy Protection Act (COPPA) verbietet die Online-Erfassung personenbezogener Daten von Kindern unter 13 Jahren ohne nachprüfbare elterliche Zustimmung. Kunden, die Bedenken im Hinblick auf COPPA haben, können ihrem Besucher-ID-Dienst-Code eine optionale Variable hinzufügen, die verhindert, dass Cookies in der Drittanbieterdomäne eines Browsers gesetzt werden. Siehe [COPPA-Unterstützung im Besucher-ID-Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). Nur bei Version 1.5.3 oder neuer.
 
 ## Version 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 September 2015
 
 * Es wurde ein Fehler im Safari-Browser behoben, durch den Synchronisierungsdienste nicht funktionierten, wenn Benutzer Drittanbieter-Cookies blockierten. (AAM-20764)
-* Aufrufe des ID-Dienstes enthalten nun die Versions-ID im Parameter `d_visid_ver=`. Die zurückgegebene ID hilft internen Teams bei der Fehlerbehebung und Support-Problemen. (AAM-20824)
+* Aufrufe des Besucher-ID-Service enthalten jetzt die Versions-ID im `d_visid_ver=`. Die zurückgegebene ID hilft internen Teams bei der Fehlerbehebung und Support-Problemen. (AAM-20824)
 
 ## Version 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 August 2015
 
-* Ein Fehler wurde behoben, um zu verhindern, dass der ID-Dienst ein iframe anfordert, wenn keine zu synchronisierenden oder auszulösenden Daten vorhanden sind. (AAM-20164)
-* Ein Fehler wurde behoben, durch den der ID-Dienst mehrteilige Top-Level-Domain-Cookies nicht ordnungsgemäß setzte. Wenn Sie beispielsweise eine Domain wie `my_company.co.uk` haben, würde der ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
+* Es wurde ein Fehler behoben, der verhinderte, dass der Besucher-ID-Dienst einen iframe anforderte, wenn keine zu synchronisierenden oder auszulösenden Daten vorhanden waren. (AAM-20164)
+* Es wurde ein Fehler behoben, durch den der Besucher-ID-Dienst ein mehrteiliges Domain-Cookie der obersten Ebene nicht ordnungsgemäß setzen konnte. Wenn Sie beispielsweise eine Domain wie `my_company.co.uk` haben, würde der Besucher-ID-Dienst unter bestimmten Umständen ein Cookie nur in `co.uk` setzen. (AN-104683)
 
   Dies betraf nur einige Clients, die *alle* der folgenden Kriterien erfüllten:
 
-   * Verwenden des ID-Diensts.
+   * Verwenden des Besucher-ID-Service.
    * Eine [Übergangsphase](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) *oder* wurde aktiviert, da Erstanbieter-Cookies verwendet und Benutzer Drittanbieter-Cookies blockieren.
    * Besitz von Seiten mit mehrteiligen Top-Level-Domains.
 
 Dokumentationsüberarbeitungen in dieser Version umfassen:
 
 * [API-Methoden und Codebibliothek](../library/library.md#concept-ff27497375644a898d47984aefb21c97): Reorganisierter Inhalt und Text. In den meisten Fällen erhält jede Methode eine eigene Seite.
-* [Anforderungen für den Experience Cloud Identity Service](../reference/requirements.md): Überarbeiteter Inhalt und neu organisierter Text.
+* [Anforderungen für den Besucher-ID-](../reference/requirements.md): Überarbeiteter Inhalt und neu organisierter Text.
 
 ## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 Juli 2015
 
-Der [!DNL Experience Cloud] ID-Dienst unterstützt mehrere IDs und Authentifizierungsstatus. Diese Änderung macht zudem die veraltete Unterstützung von [!DNL Audience Manager]-DPID-Zuordnungen zu Benutzern überflüssig, die von der `setCustomerIDs` Funktion verwendet wurden. Siehe [Kunden-IDs und Authentifizierungsstatus](../reference/authenticated-state.md).
+Der Besucher-ID-Dienst unterstützt mehrere IDs und Authentifizierungsstatus. Durch diese Änderung wird auch die veraltete Unterstützung für Audience Manager DPID-Zuordnungen zu Benutzer-IDs entfernt, die von der `setCustomerIDs` verwendet werden. Siehe [Kunden-IDs und Authentifizierungsstatus](../reference/authenticated-state.md).
 
 ## Version 1.4 {#section-f5c596f355b14da28f45c798df513572}
 

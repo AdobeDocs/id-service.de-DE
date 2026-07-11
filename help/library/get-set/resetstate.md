@@ -1,6 +1,6 @@
 ---
 description: Diese Funktion wurde hauptsächlich für A4T-Kunden entwickelt, um sie bei der Lösung von Problemen bei der Arbeit mit IDs auf Single-Page-Sites/-Bildschirmen oder -Apps zu unterstützen.
-keywords: ID-Dienst
+keywords: Besucher-ID-Service
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
 TQID: https://experienceleague.adobe.com/ud8yTufRC6V5T58oh20G65MYNTCZvMlK5FdHVrrZFpU
@@ -13,10 +13,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 377
-ht-degree: 100%
+ht-degree: 54%
 
 ---
 
@@ -26,10 +26,10 @@ Diese Funktion wurde hauptsächlich für A4T-Kunden entwickelt, um sie bei der L
 
 ## Anwendungsfälle {#section-840b88a5cdb042488b340cad5d7b22a5}
 
-Als A4T-Kunde, der den ID-Dienst verwendet, können Sie die Funktion `visitor.resetState()` für folgende Zwecke einsetzen:
+Als A4T-Kunde, der den Besucher-ID-Service verwendet, empfiehlt es sich möglicherweise, die `visitor.resetState()`-Funktion zu verwenden, wenn Folgendes erforderlich ist:
 
-* So übergeben Sie eine zusätzliche Daten-ID (SDID) oder eine andere ID über eine Umleitung von einer Seite oder einem Bildschirm an eine andere. Normalerweise übergibt der ID-Dienst diese ID nicht ohne diese Funktion.
-* Verwenden Sie Code, der nur bestimmte Abschnitte einer Seite oder eines Programms über Ajax-Aufrufe aktualisiert, wenn Sie diese Aktionen verfolgen möchten. Angenommen Sie haben eine Seite, auf der das Klicken auf ein Objekt nur einen bestimmten Abschnitt lädt oder ändert. In diesem Fall kann der ID-Dienst nur dann eine andere ID anfordern, wenn die Seite neu geladen wird. Mit `visitor.resetState()` können Sie eine neue ID unter diesen Bedingungen anfordern.
+* So übergeben Sie eine zusätzliche Daten-ID (SDID) oder eine andere ID über eine Umleitung von einer Seite oder einem Bildschirm an eine andere. Normalerweise gibt der Besucher-ID-Dienst diese ID ohne diese Funktion nicht weiter.
+* Verwenden Sie Code, der nur bestimmte Abschnitte einer Seite oder eines Programms über Ajax-Aufrufe aktualisiert, wenn Sie diese Aktionen verfolgen möchten. Angenommen Sie haben eine Seite, auf der das Klicken auf ein Objekt nur einen bestimmten Abschnitt lädt oder ändert. In diesem Fall kann der Besucher-ID-Service keine andere ID anfordern, es sei denn, die Seite wird neu geladen. Mit `visitor.resetState()` können Sie eine neue ID unter diesen Bedingungen anfordern.
 
 Siehe Codebeispiele weiter unten.
 
@@ -39,20 +39,20 @@ Siehe Codebeispiele weiter unten.
 
 ## Code-Beispiele {#section-d75b211bb4ea473887eb284de2ad838b}
 
-Die Verwendung dieser Funktion ist von der Implementierung des ID-Diensts abhängig. Beispiele finden Sie in der unten stehenden Tabelle.
+Die Implementierung des Besucher-ID-Service wirkt sich darauf aus, wie Sie diese Funktion verwenden. Beispiele finden Sie in der unten stehenden Tabelle.
 
 **Serverseitige Implementierung**
 
-Serverseitige Implementierung ist für A4T-Kunden mit gemischten server- und clientseitigen Implementierungen von [!DNL Target], [!DNL Analytics] und dem ID-Dienst geeignet. Wenn Sie den ID-Dienst mit dieser Methode eingerichtet haben, müssen Sie nur `visitor.resetState()` zur Seite hinzufügen. Aufrufe an den ID-Dienst geben automatisch eine neue ID und einen Serverstatus zurück.
+Eine Server-seitige Implementierung ist für A4T-Kunden mit gemischten Server- und Client-seitigen Implementierungen von Target, Analytics und dem Besucher-ID-Service vorgesehen. Wenn Sie den Besucher-ID-Dienst mit dieser Methode eingerichtet haben, müssen Sie lediglich `visitor.resetState()` zur Seite hinzufügen. Aufrufe des Besucher-ID-Service geben automatisch eine neue ID und einen neuen Server-Status zurück.
 
 **Benutzerdefinierte Implementierung** (mit ID)
 
-Wenn Sie den ID-Dienst mit einer [benutzerdefinierten Implementierung](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113) einrichten, müssen Sie ein Variablenobjekt zur Aufnahme der SDID (oder anderer IDs) konfigurieren, die Sie mit übergeben möchten`visitor.resetState()`. Wie unten gezeigt, schließt dies Ihre [Organisations-ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) und die ID ein, die Sie übergeben möchten. Ihr Code sollte dem folgenden Beispiel ähneln.
+Wenn Sie den Besucher-ID-Dienst mit einer [Nicht-Standardimplementierung](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113) eingerichtet haben, müssen Sie ein variables Objekt konfigurieren, das die SDID (oder andere IDs) enthält, die Sie mit `visitor.resetState()` übergeben möchten. Wie unten dargestellt, enthält dies Ihre [IMS-Organisations-ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) und die ID, die Sie übergeben möchten. Ihr Code sollte dem folgenden Beispiel ähneln.
 
 ```js
 //Instantiate server state variable 
 var serverState = { 
-     "Insert Experience Cloud organization ID here": { 
+     "INSERT-IMS-ORG-ID-HERE": { 
           //Specify the SDID or other ID 
           supplementalDataIDCurrent: "1234", 
           supplementalDataIDCurrentConsumed: { 
@@ -61,8 +61,8 @@ var serverState = {
      } 
 }; 
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -76,8 +76,8 @@ In diesem Fall kann mit `visitor.resetState()` eine neue ID generiert werden. Di
 
 ```js
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -95,8 +95,4 @@ var sdid1 = visitor.getSupplementalDataID("consumer3"); // sdid1: 5678
  
 var sdid2 = visitor.getSupplementalDataID("consumer4"); // sdid2: 5678
 ```
-
-**Dynamischer Tag-Manager (DTM)**
-
-Zurzeit gibt es keinen DTM-Konfigurationspfad für `visitor.resetState()`.
 

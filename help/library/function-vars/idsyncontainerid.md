@@ -1,6 +1,6 @@
 ---
 description: Diese Eigenschaft legt die Container-ID der Datenquelle fest, die Sie für ID-Synchronisierungen verwenden möchten.
-keywords: ID-Dienst
+keywords: Besucher-ID-Service
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 TQID: https://experienceleague.adobe.com/bDW5Z4LKbLW2igmRsJ-QxajnBj8KyvoTypUjUekElj4
@@ -11,10 +11,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 320
-ht-degree: 96%
+source-wordcount: 328
+ht-degree: 60%
 
 ---
 
@@ -37,7 +37,7 @@ Inhalt:
 **Codebeispiel:**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    ... 
    //Set container ID 
    idSyncContainerID:80 
@@ -48,16 +48,16 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 **Behälter**
 
-Container sind Objekte, die von [!DNL Audience Manager] erstellt werden. Obwohl kein externer Zugriff möglich ist, listen diese Container alle Datenquellen auf, die
+Container sind Objekte, die von Audience Manager erstellt werden. Obwohl kein externer Zugriff möglich ist, listen diese Container alle Datenquellen auf, die
 
 * für Sie verfügbar sind, jedoch nicht für die ID-Synchronisierung verwendet werden.
 * die für die ID-Synchronisierung verwendet werden.
 
-Auch wenn Sie kein [!DNL Audience Manager]-Kunde sind, enthält Ihr Konto diese Container, wenn Sie IDs mit verschiedenen Datenquellen auf unterschiedlichen Seiten in Ihrer Domain austauschen. Der Grund dafür ist, dass [!DNL Audience Manager] die Technologie und die Backend-Funktionalität zur Verfügung stellt, die eine ID-Synchronisierung ermöglichen.
+Auch wenn Sie kein Audience Manager-Kunde sind, enthält Ihr Konto diese Container, wenn Sie IDs mit verschiedenen Datenquellen auf verschiedenen Seiten in Ihrer Domain austauschen. Dies liegt daran, dass Audience Manager die Technologie und Backend-Funktionen bereitstellt, die die ID-Synchronisierung ermöglichen.
 
-**Nutzungsszenarios**
+**Anwendungsfälle**
 
-Je nach Situation müssen Sie diese Konfiguration möglicherweise Ihrem ID-Dienst-Code hinzufügen.
+Abhängig von Ihrer Situation müssen Sie diese Konfiguration möglicherweise zu Ihrem Besucher-ID-Service-Code hinzufügen.
 
 <table id="table_48621F343C7F4760A75F6BCC2DB2DA20"> 
  <thead> 
@@ -71,7 +71,7 @@ Je nach Situation müssen Sie diese Konfiguration möglicherweise Ihrem ID-Diens
    <td colname="col1"> <p> <b>Nicht erforderlich</b> </p> </td> 
    <td colname="col2"> <p>Unter folgenden Bedingungen müssen Sie diese Konfiguration nicht verwenden: </p> <p> 
      <ul id="ul_4D6F794CD65C43D0BEFBA6F5DE420C2E"> 
-      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Wenn Sie den ID-Dienst mit einer beliebigen <span class="keyword">Experience Cloud</span>-Lösung verwenden und keine ID-Synchronisierungen mit anderen Datenquellen durchführen. In diesem Fall hat Ihr Konto einen Standard-Container mit der ID 0, und es ist keine Aktion erforderlich. </li> 
+      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">Sie verwenden den Besucher-ID-Service mit einer beliebigen CX Enterprise-Lösung und führen keine ID-Synchronisierungen mit anderen Datenquellen durch. In diesem Fall hat Ihr Konto einen Standard-Container mit der ID 0, und es ist keine Aktion erforderlich. </li> 
       <li id="li_5657D64D9406407D9B4DB7D8BE4F8EE4">Alle Ihre Datenquellen befinden sich in einem einzigen Container. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -87,10 +87,10 @@ Je nach Situation müssen Sie diese Konfiguration möglicherweise Ihrem ID-Diens
  </tbody> 
 </table>
 
-## Einrichten von Container-IDs bei Verwendung von DIL und VisitorAPI.js {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## Festlegen von Container-IDs bei Verwendung von DIL und `VisitorAPI.js` {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-Wenn Sie VisitorAPI[!UICONTROL DIL]js *und* auf derselben Seite bereitgestellt haben:
+[!UICONTROL DIL] Wenn Sie *und* auf derselben Seite bereitgestellt `VisitorAPI.js`:
 
-* Der Dienstcode für die Besucher-ID hat bei ID-Synchronisierungen Vorrang vor DIL.
-* Legen Sie die `idSyncContainerID`-Konfiguration nur im Code des ID-Diensts fest.
+* Der Besucher-ID-Dienst-Code hat bei ID-Synchronisationen Vorrang vor DIL.
+* Legen Sie die `idSyncContainerID`-Konfiguration nur im Besucher-ID-Dienst-Code fest.
 

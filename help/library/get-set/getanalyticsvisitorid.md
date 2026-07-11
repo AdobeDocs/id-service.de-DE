@@ -1,6 +1,6 @@
 ---
-description: Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vor der Implementierung des Experience Cloud Identity Services im s_vi-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
-keywords: ID-Dienst
+description: Gibt die Legacy-Analytics-ID (falls vorhanden) zurück, die vor der Implementierung des Besucher-ID-Service im s_vi-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
+keywords: Besucher-ID-Service
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
 TQID: https://experienceleague.adobe.com/xJRR3qXoJpCnyFqKuEZqvEs0MpPCCA0brWOT6WbngX4
@@ -14,27 +14,27 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 306
-ht-degree: 97%
+source-wordcount: 313
+ht-degree: 46%
 
 ---
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Gibt die Legacy-Analytics-ID (sofern vorhanden) zurück, die vor der Implementierung des Experience Cloud Identity Services im s_vi-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
+Gibt die Legacy-Analytics-ID (falls vorhanden) zurück, die vor der Implementierung des Besucher-ID-Service im s_vi-Cookie gespeichert war. Wurde einem Besucher niemals eine Analytics-ID zugewiesen, wird eine leere Zeichenfolge zurückgegeben.
 
 **Syntax** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-Diese Funktion wird in der Regel bei benutzerdefinierten Lösungen verwendet, bei denen die Besucher-ID gelesen werden muss. Sie wird nicht von einer Standardimplementierung verwendet. `getAnalyticsVisitorID` kann auch bei Callback-Funktionen zum Lesen von [!DNL Analytics]-IDs und deren Übernahme in Ihr System oder Ihre Anwendung eingesetzt werden.
+Diese Funktion wird in der Regel bei benutzerdefinierten Lösungen verwendet, bei denen die Besucher-ID gelesen werden muss. Sie wird nicht von einer Standardimplementierung verwendet. `getAnalyticsVisitorID` funktioniert auch mit Callback-Funktionen, um Analytics-IDs zu lesen und sie in Ihr System oder Ihr Programm einzubringen.
 
 **Beispielcode**
 
 ```js
 //callback function 
 var useAnalyticsVisitorID = function(id){ 
-     //whatever your function does with the Experience Cloud ID 
+     //whatever your function does with the ECID 
 }; 
  
 //get Analytics ID and pass it to the function 
@@ -43,7 +43,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->Wenn Sie [!DNL Analytics]-Kunde sind, suchen Sie nach der [!DNL Analytics]-ID und senden Sie diese an Ihre Funktion. Beispielsweise ist es wünschenswert, bei der Weiterleitung einer Besucher-ID in versteckter Form an eine serverseitige Anwendung, die die Dateneingabe-API verwendet, beide Identifikatoren zur Verfügung zu haben. In diesem Fall sollten Sie die [!DNL Experience Cloud]- und [!DNL Analytics]-Besucher-IDs erfassen und zurückgeben. Siehe [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md).
+>Wenn Sie Analytics-Kunde sind, prüfen Sie auch, ob die Analytics-ID vorhanden ist, und senden Sie sie an Ihre Funktion. Beispielsweise ist es wünschenswert, bei der Weiterleitung einer Besucher-ID in versteckter Form an eine serverseitige Anwendung, die die Dateneingabe-API verwendet, beide Identifikatoren zur Verfügung zu haben. In diesem Fall sollten Sie die ECID- und Analytics-Besucher-IDs erfassen und zurückgeben. Siehe [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md).
 
 **Der Parameter „aid“ ist ein veralteter Wert**
 
@@ -53,12 +53,12 @@ Der `aid` Parameter taucht in einer Abfragezeichenfolge unter zweierlei verschie
 
 Der Parameter `aid` taucht in einer Abfragezeichenfolge auf, wenn:
 
-* der [!DNL Experience Cloud] ID-Dienst ordnungsgemäß bereitgestellt wurde.
-* Im [s_vi-Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=de#section-5d50a078de444d12b7d927d68ff3b679) des eine Site besuchenden Benutzers bereits eine [!DNL Analytics]-ID gespeichert ist.
+* Der Besucher-ID-Dienst wird ordnungsgemäß bereitgestellt.
+* Der Benutzer, der eine Site besucht, verfügt über eine bereits vorhandene Analytics ID, die in seinem [s_vi-Cookie gespeichert &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=de#section-5d50a078de444d12b7d927d68ff3b679).
 
 **2. Fall**
 
-Sie sehen den `aid` Parameter in einer Abfragezeichenfolge, wenn Ihr Unternehmen eine [Übergangsphase](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) verwendet, bevor es den ID-Dienst vollständig implementiert. Hat der aktuelle Besucher Ihre Site zuvor noch nie aufgerufen und sollten Sie keine Übergangsphase festgelegt haben, erhält der Besucher den Parameter `mid` ([!DNL Experience Cloud] ID).
+Der `aid`-Parameter wird in einer Abfragezeichenfolge angezeigt, wenn Ihr Unternehmen eine [&#x200B; Übergangsphase verwendet, &#x200B;](https://experienceleague.adobe.com/de/docs/analytics/implementation/id/migration) den Besucher-ID-Service vollständig zu implementieren. Wenn der Besucher Ihrer Site neu ist und Sie keine Übergangsphase verwenden, erhält der Besucher den `mid` (ECID)-Parameter.
 
 >[!MORELIKETHIS]
 >

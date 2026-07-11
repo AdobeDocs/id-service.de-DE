@@ -1,6 +1,6 @@
 ---
 title: Methoden für die ECID-Bibliothek in einer Safari-ITP-Umgebung
-description: Dokumentation für die Adobe ECID-Bibliothek (ID-Dienst).
+description: Dokumentation für die Adobe ECID-Bibliothek (Besucher-ID-Dienst).
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 TQID: https://experienceleague.adobe.com/GwI5LkCBXGiKyfjGm6bOqbyGbHQ2GwW64PeyLIrl3Ck
 product_v2:
@@ -13,10 +13,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 833
-ht-degree: 93%
+source-wordcount: 825
+ht-degree: 75%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 93%
 
 Da Safari per ITP das domänenübergreifende Tracking einschränkt, setzt Adobe für Bibliotheken Best Practices ein, die einerseits Kunden unterstützen und andererseits auch den Datenschutz und die Wahlfreiheit der Konsumenten berücksichtigen.
 
-Seit dem 10. November 2020 ist der Ablauf aller persistenten First-Party-Cookies, die über die document.cookie-API, häufig als „Client-seitige“ Cookies bezeichnet, und Cookies, die über First-Party-CNAME-Implementierungen in Safari- und mobilen iOS-Browsern gesetzt werden, auf sieben Tage begrenzt. Drittanbieter-Cookies werden, wie in früheren Versionen von ITP beschrieben, weiterhin blockiert. Weitere Informationen zu ITP 2.1 seinen Auswirkungen auf Adobe-Lösungen finden Sie im Artikel [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+Seit dem 10. November 2020 ist der Ablauf aller persistenten First-Party-Cookies, die über die document.cookie-API, häufig als „Client-seitige“ Cookies bezeichnet, und Cookies, die über First-Party-CNAME-Implementierungen in Safari- und mobilen iOS-Browsern gesetzt werden, auf sieben Tage begrenzt. Drittanbieter-Cookies werden, wie in früheren Versionen von ITP beschrieben, weiterhin blockiert. Weitere Informationen zu ITP 2.1 und den Auswirkungen von Adobe-Lösungen finden Sie unter [Auswirkungen von Safari ITP 2.1 auf Adobe Experience Platform-Kunden](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
 
 ## Änderungen, Methoden und Konfigurationen in Verbindung mit ITP
 
@@ -42,7 +42,7 @@ Unten finden Sie weitere Informationen zu ITP und zur Nutzung der ECID-Bibliothe
 
 ## Aktuelles Verhalten der ECID-Bibliothek mit ITP und dem WebKit von Apple
 
-ITP 2.1 beeinträchtigt die Möglichkeit, clientseitige Cookies zu schreiben, wodurch Kunden keine präzisen Besucher-Trackinginformationen bereitgestellt werden können. Daher wurden die CNAME-Trackingserver von Adobe dahingehend angepasst, dass die Experience Cloud ID (ECID) eines Besuchers jetzt in einem Erstanbieter-Cookie gespeichert wird.
+ITP 2.1 beeinträchtigt die Möglichkeit, clientseitige Cookies zu schreiben, wodurch Kunden keine präzisen Besucher-Trackinginformationen bereitgestellt werden können. Daher wird eine Änderung an den CNAME-Tracking-Servern von Adobe vorgenommen, um die ECID des Besuchers in einem Erstanbieter-Cookie zu speichern.
 
 Diese Änderung ist nur für ECID-Kunden hilfreich, die einen Analytics-CNAME im Erstanbieterkontext verwenden. Wenn Sie Analytics-Kunde sind, der derzeit keinen CNAME verwendet, oder kein Analytics-Kunde sind, sind Sie dennoch zu einem CNAME-Eintrag berechtigt. Wenden Sie sich an die Kundenunterstützung oder Ihren Kundenbetreuer, um sich für einen [CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=de) zu registrieren.
 
@@ -70,7 +70,7 @@ Wenn Sie sich gegen diese Methode entscheiden, fügen Sie Ihrer ECID-Bibliotheks
 
 ## Verwendung der appendVisitorIDsTo-Methode für das domänenübergreifende Tracking (innerhalb der Domänen Ihres Unternehmens)
 
-Mit dieser Funktion können Sie die ECID domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion zu verwenden, müssen Sie den ID-Dienst implementiert haben und Inhaber der Quell- und Zieldomäne sein. Verfügbar in VisitorAPI.js-Version 1.7.0 oder höher (jedoch nicht in Version 1.10.0).
+Mit dieser Funktion können Sie die ECID domänenübergreifend freigeben, wenn Browser Drittanbieter-Cookies blockieren. Um diese Funktion verwenden zu können, müssen Sie den Besucher-ID-Service implementiert haben und Eigentümer der Quell- und Ziel-Domains sein. Verfügbar in `VisitorAPI.js` Version 1.7.0 oder höher (aber nicht in Version 1.10.0).
 
 **Design**
 
@@ -78,14 +78,14 @@ Mit dieser Funktion können Sie die ECID domänenübergreifend freigeben, wenn B
 
   Verwenden Sie diese URL zur Umleitung von der ursprünglichen Domain zur Zieldomäne.
 
-* Der ID-Dienstcode auf der Zieldomäne extrahiert die ECID aus der URL, statt bei Adobe eine neue Besucher-ID anzufordern.
+* Der Besucher-ID-Dienst-Code in der Ziel-Domain extrahiert die ECID aus der URL, anstatt eine Anfrage für die ID dieses Besuchers an Adobe zu senden.
 
   Diese Anforderung schließt die Drittanbieter-Cookie-ID ein, die in diesem Fall nicht verfügbar ist.
 
-* Der ID-Dienstcode auf der Zielseite verwendet die übergebene ECID zum Tracken des Besuchers.
+* Der Besucher-ID-Dienst-Code auf der Zielseite verwendet die übergebene ECID, um den Besucher zu verfolgen.
 
   >[!NOTE]
-  >Wenn die Zielseite bereits über eine ECID aus vorherigen Besuchen verfügt, wird die Entscheidung, das vorhandene Cookie zu überschreiben, von der Konfiguration overwriteCrossDomainMCIDAndAID gesteuert. Weitere Informationen zu dieser Konfiguration finden Sie unter [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md).
+  >Wenn die Zielseite bereits eine ECID aus vorherigen Besuchen hat, wird die Entscheidung zum Überschreiben des vorhandenen Cookies durch diese Konfiguration gesteuert: overwriteCrossDomainMCIDAndAID. Weitere Informationen zu dieser Konfiguration finden Sie unter [overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md).
   >
   >Weitere Informationen zu dieser Methode finden Sie auf der Seite [appendVisitorIDsTo (Cross Domain Tracking)](/help/library/get-set/appendvisitorid.md).
 

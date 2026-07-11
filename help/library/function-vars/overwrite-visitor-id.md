@@ -1,6 +1,6 @@
 ---
-description: Diese Eigenschaft überschreibt die Experience Cloud- und Analytics-IDs eines Besuchers, wenn dieser von einer Domain zu einer zweiten Domain navigiert. Um eine ID zu überschreiben, müssen Sie den ID-Dienst für jede Domain besitzen und implementiert haben. Mit diesem Code können Sie keine IDs in Domains überschreiben, die Sie nicht steuern.
-keywords: ID-Dienst
+description: Diese Eigenschaft überschreibt die ECID- und Analytics-IDs eines Besuchers beim Navigieren von einer Domain zu einer zweiten Domain. Um eine ID zu überschreiben, müssen Sie den Besucher-ID-Service für jede Domain besitzen und implementiert haben. Mit diesem Code können Sie keine IDs in Domains überschreiben, die Sie nicht steuern.
+keywords: Besucher-ID-Service
 title: overwriteCrossDomainMCIDAndAID
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
 TQID: https://experienceleague.adobe.com/dJUuTbc9zspC93WZrRaxBsp2BgpbE-z-iUuePQXGTeY
@@ -11,16 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 401
-ht-degree: 100%
+source-wordcount: 404
+ht-degree: 71%
 
 ---
 
 # overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
-Diese Eigenschaft überschreibt die Experience Cloud- und Analytics-IDs eines Besuchers, wenn dieser von einer Domain zu einer zweiten Domain navigiert. Um eine ID zu überschreiben, müssen Sie den ID-Dienst für jede Domain besitzen und implementiert haben. Mit diesem Code können Sie keine IDs in Domains überschreiben, die Sie nicht steuern.
+Diese Eigenschaft überschreibt die ECID- und Analytics-IDs eines Besuchers beim Navigieren von einer Domain zu einer zweiten Domain. Um eine ID zu überschreiben, müssen Sie den Besucher-ID-Service für jede Domain besitzen und implementiert haben. Mit diesem Code können Sie keine IDs in Domains überschreiben, die Sie nicht steuern.
 
 **Syntax:** `Visitor.overwriteCrossDomainMCIDAndAID: true|false` (Standard ist `false`)
 
@@ -29,7 +29,7 @@ Diese Eigenschaft überschreibt die Experience Cloud- und Analytics-IDs eines Be
 Ihr JavaScript-Code sollte dem folgenden Beispiel ähneln.
 
 ```js
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", { 
      ... 
  
@@ -40,7 +40,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
 
 **Nutzungsszenarios**
 
-Zum Nachverfolgen von Sitebesuchern schreibt der ID-Dienst eine [!DNL Experience Cloud] ID (oder MID) in einen Browsercookie. In der folgenden Tabelle werden die gängigen Anwendungsfälle beschrieben, in denen Sie eine MID, die vom ID-Dienst in einer anderen Domain festgelegt wurde, überschreiben möchten.
+Zum Nachverfolgen von Website-Besuchern schreibt der Besucher-ID-Dienst eine ECID (oder MID) in ein Browser-Cookie. In der folgenden Tabelle werden gängige Anwendungsfälle aufgelistet und beschrieben, in denen Sie eine vorhandene MID überschreiben können, die vom Besucher-ID-Service in einer anderen Domain festgelegt wurde.
 
 <table id="table_FC1AF6551D6646E0BF1C4FB7C1316EBB"> 
  <thead> 
