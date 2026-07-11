@@ -3,9 +3,16 @@ title: Opt-in zur Steuerung von CX Enterprise-Aktivitäten auf Basis des Benutze
 description: Das Opt-in-Objekt von Adobe ist eine Erweiterung des Besucher-ID-Service von Adobe, mit dem Sie steuern können, ob und welche CX Enterprise-Lösungen basierend auf der Zustimmung des Endbenutzers auf Web-Seiten Cookies erstellen oder Beacons auslösen können.
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 TQID: https://experienceleague.adobe.com/YfYkXzK8wKw6JC3-EB2ljIOfXGXQV5r6Nw2-XYsGW6c
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 518
@@ -35,7 +42,7 @@ Ein wichtiger Aspekt der Datenschutzbestimmungen ist der Erwerb und die Übermit
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-Wenn Sie keine Tags verwenden, können Sie die Konfiguration von [!UICONTROL Opt-in] bei der Initialisierung des globalen Besucherobjekts festlegen, wie in der [Dokumentation) ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=de).
+Wenn Sie keine Tags verwenden, können Sie die Konfiguration von [!UICONTROL Opt-in] bei der Initialisierung des globalen Besucherobjekts festlegen, wie in der [Dokumentation) &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=de).
 
 ## Implementieren von [!UICONTROL Opt-In] auf der Seite
 

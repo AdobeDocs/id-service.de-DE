@@ -4,8 +4,13 @@ keywords: Besucher-ID-Service
 title: Kunden-IDs und Authentifizierungsstatus
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 TQID: https://experienceleague.adobe.com/0z2HaRyNYcuJhE6WMkTZVXK-DiPu2S5bdnOiYsZwxYg
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 642
@@ -19,7 +24,7 @@ Neben der ECID können Sie jedem Besucher zusätzliche Kunden-IDs und einen Auth
 
 ## Authentifizierungsstatus {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Beispielsweise können Sie diese IDs als „Kundenattribute[ in ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) Enterprise hochladen und lösungsübergreifend auf diese Daten zugreifen.
+Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Beispielsweise können Sie diese IDs als „Kundenattribute[&#x200B; in &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) Enterprise hochladen und lösungsübergreifend auf diese Daten zugreifen.
 
 >[!IMPORTANT]
 >
@@ -214,7 +219,7 @@ Object customerIDs = visitor.getCustomerIDs();
 
 Der Besucher-ID-Dienst unterstützt Kunden-IDs und Authentifizierungszustände in unserem Android- und iOS SDK-Code. Siehe die folgenden Code-Bibliotheken:
 
-* [ SDK-Methoden für Android ](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=de)
+* [&#x200B; SDK-Methoden für Android &#x200B;](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=de)
 * [iOS SDK-Methoden](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=de)
 
 ## Hinweise für Kunden von Analytics und Audience Manager {#section-3a8e9d51e71c4c6e865184b81ed9d99b}

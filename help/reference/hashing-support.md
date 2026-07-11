@@ -4,8 +4,13 @@ keywords: Besucher-ID-Service
 title: SHA-256-Hash-Unterstützung für setCustomerIDs
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 TQID: https://experienceleague.adobe.com/-JBVon-Qf2jtfd5f4UdWcHVyO7c887p1w-k3GnntUCA
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 580
@@ -35,7 +40,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 Neben der ECID können Sie jedem Besucher weitere Kunden-IDs, einen Authentifizierungsstatus und einen Hash-Typ (SHA-256) zuweisen. Wenn Sie keinen Hash-Typ angeben, wird angenommen, dass kein Hashing stattfindet.
 
-Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Beispielsweise können Sie diese IDs als „Kundenattribute[ in ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) Enterprise hochladen und lösungsübergreifend auf diese Daten zugreifen.
+Bei der `setCustomerIDs` Methode sind mehrere Kunden-IDs für den gleichen Besucher zulässig. Somit können Sie individuelle Benutzer über verschiedene Dienste hinweg einfacher identifizieren oder gezielt ansprechen. Beispielsweise können Sie diese IDs als „Kundenattribute[&#x200B; in &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=de) Enterprise hochladen und lösungsübergreifend auf diese Daten zugreifen.
 
 Kunden-IDs, der Authentifizierungsstatus und der Hash-Typ *werden nicht* in einem Cookie für die spätere Verwendung gespeichert. Stattdessen sollten Kunden-IDs, Authentifizierungsstatus und Hash-Typ in einer Instanzvariablen gespeichert werden, die wie unten dargestellt mithilfe von [`getCustomerIDs`](/help/library/get-set/getcustomerids.md) abgerufen werden kann:
 

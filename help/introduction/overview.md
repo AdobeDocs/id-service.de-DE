@@ -3,8 +3,13 @@ description: Die Rolle des Besucher-ID-Service in Adobe CX Enterprise.
 title: Übersicht über den Adobe-Besucher-ID-Service
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 TQID: https://experienceleague.adobe.com/fkT81V3iLEz2irg-3SDoyx733RNhqa2zWV1FgiXoYO4
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 497
@@ -14,7 +19,7 @@ ht-degree: 18%
 
 # Übersicht über den Adobe-Besucher-ID-Service
 
-Der Adobe Visitor ID Service ermöglicht das allgemeine Identifizierungs-Framework für CX Enterprise Application Services. Sie können den Besucher-ID-Dienst verwenden, um die [ECID“ ](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=de).
+Der Adobe Visitor ID Service ermöglicht das allgemeine Identifizierungs-Framework für CX Enterprise Application Services. Sie können den Besucher-ID-Dienst verwenden, um die [ECID“ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=de).
 
 Die ECID ist ein gemeinsamer Identity-Namespace, der in Adobe Experience Platform- und CX Enterprise-Anwendungen verwendet wird, um das Besucherverhalten zu verfolgen und sicherzustellen, dass jedes Gerät über eine eindeutige Kennung verfügt, die sitzungsübergreifend bestehen kann.
 
