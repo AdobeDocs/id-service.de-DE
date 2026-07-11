@@ -40,7 +40,7 @@ Ein wichtiger Aspekt der Datenschutzbestimmungen ist der Erwerb und die Übermit
 
 [!UICONTROL Opt-in] lässt sich am einfachsten mit Tags konfigurieren. Im folgenden kurzen Videos finden Sie eine Anleitung.
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40334/?captions=ger&quality=12)
 
 Wenn Sie keine Tags verwenden, können Sie die Konfiguration von [!UICONTROL Opt-in] bei der Initialisierung des globalen Besucherobjekts festlegen, wie in der [Dokumentation) &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=de).
 
@@ -54,7 +54,7 @@ Wenn Sie eine Benutzeroberfläche einrichten, um [!UICONTROL Opt-in] zur Einholu
 
 Im folgenden Video sehen Sie eine kurze Demo dazu, wie [!UICONTROL Opt-in] auf der Seite arbeiten und wie es beeinflusst, ob die CX Enterprise-Lösungen Cookies setzen können, Beacons starten können usw.
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40339/?captions=ger&quality=12)
 
 **HINWEIS:** Es ist wichtig zu beachten, dass zum Zeitpunkt der Erstellung dieses Artikels [!UICONTROL Opt-in] nicht in den Bibliotheken aller CX Enterprise-Anwendungen integriert war. Die Bibliotheken, die derzeit für [!UICONTROL Opt-in] unterstützt werden, sind:
 
